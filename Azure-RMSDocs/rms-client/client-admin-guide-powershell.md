@@ -12,12 +12,12 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 32880671c46efb9cb82f13235f98ac42566b65fc
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 6099773aa4c9b634cf225b570ac4e1ad8bebf38e
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048895"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86868988"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
 
@@ -54,12 +54,6 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection**** 进行安装�
 
 目前，必须先运行 `Import-Module AzureInformationProtection` 命令，才可以某个用户身份安装该模块，再以另一个用户身份在同一台计算机上运行 cmdlet。 在这种情况下，首次运行 cmdlet 时，模块不会自动加载。
 
-AzureInformationProtection 模块的当前版本具有以下限制：
-
-- 可以取消保护 Outlook 个人文件夹（.pst 文件），但当前无法使用 PowerShell 模块本机保护这些文件或其他容器文件。
-
-- 可以取消保护位于 Outlook 个人文件夹 (.pst) 中的 Outlook 受保护电子邮件（.rpmsg 文件），但不能取消保护个人文件夹外的 .rpmsg 文件。
-
 在开始使用这些 cmdlet 之前，请参阅与你的部署对应的其他先决条件和说明：
 
 - [Azure 信息保护和 Azure 权限管理服务](#azure-information-protection-and-azure-rights-management-service)
@@ -71,13 +65,14 @@ AzureInformationProtection 模块的当前版本具有以下限制：
 
     - 将仅保护用于 Azure 权限管理的本地版本时适用；Active Directory Rights Management Services (AD RMS)。
 
+有关详细信息，请参阅[Azure 信息保护已知问题](../known-issues.md#powershell-support-for-the-azure-information-protection-client)的相关集合。
 
 ## <a name="azure-information-protection-and-azure-rights-management-service"></a>Azure 信息保护和 Azure 权限管理服务
 
 如果组织使用 Azure 信息保护进行分类和保护，或仅使用 Azure 权限管理服务进行数据保护，请先阅读本部分，再开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护标签和 Azure 权限管理数据保护服务还有其他先决条件：
 
@@ -390,7 +385,7 @@ C:\Test.docx                          C:\Test.docx
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，用于保护或取消保护文件的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 

@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: aadbd0cb27878d33c6e9822660a404e82eeeb222
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 4213be53fe21491118b4771c22ed43255d5c342d
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048963"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86868937"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
 
@@ -242,13 +242,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>容器文件（如 .zip 文件）的限制
 
-容器文件是包括其他文件的文件，典型示例是包括压缩文件的 .zip 文件。 其他示例包括 .rar、.7z、.msg 文件和包含附件的 PDF 文档。
-
-可对这些容器文件进行分类和保护，但分类和保护不会应用到容器内每个文件。
-
-如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。 但是，使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet，可删除受支持容器文件中所有文件的保护。
-
-Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 在这种情况下，在查看器中打开文档时，附件不可见。
+有关详细信息，请参阅[Azure 信息保护限制的集合](../known-issues.md#client-support-for-container-files-such-as-zip-files)。
 
 ## <a name="file-types-supported-for-inspection"></a>支持检查的文件类型
 

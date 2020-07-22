@@ -1,10 +1,10 @@
 ---
 title: 刷新 Azure RMS 模板 - AIP
 description: 使用 Azure Rights Management 服务时，模板会自动下载到客户端计算机，因而用户能够从他们的应用程序选择这些模板。 但是，如果对模板进行了更改，可能还需要执行附加步骤。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f4bb3bcf13def75a90945757203a3b2cd5d05d5d
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: a5afc20e616809a41d1e724ba657bb99667da858
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047688"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927618"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -39,7 +39,7 @@ ms.locfileid: "86047688"
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分[：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
-|带有[内置标记](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus 应用|此内置标签客户端不会下载模板，而是联机访问模板-无需执行其他步骤。|
+|通过[内置标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps) [Microsoft 365 适用于企业的应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)|此内置标签客户端不会下载模板，而是联机访问模板-无需执行其他步骤。|
 
 当客户端应用程序需要下载模板（最初或刷新了更改）时，请准备好等待30分钟后下载完成，新的或更新的模板完全可操作。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 

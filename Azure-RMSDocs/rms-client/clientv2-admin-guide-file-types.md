@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f011f71bfe330a4ec559fba600aca7a7a1e2ae12
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 779eb6e3847aaccaef47753bd75c1052a56c1180
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048844"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86868887"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
 
@@ -72,7 +72,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 示例：
 
-- 如果 "**常规**敏感度" 标签应用分类并且不应用保护：可以将 "**常规**" 标签应用到名为 sales.pdf 的文件，但不能将此标签应用于名为 sales.txt 的文件。 
+- 如果 "**常规**敏感度" 标签应用分类并且不应用保护：可以将 "**常规**" 标签应用到名为 sales.pdf 的文件，但不能将此标签应用于名为 sales.txt 的文件。
 
 - 如果 "**机密 \ 所有员工**" 敏感度标签应用分类和保护：可以将此标签应用于名为 sales.pdf 的文件和名为 sales.txt 的文件。 还可以只对这些文件应用保护，而不应用分类。
 
@@ -88,7 +88,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 不能更改 Azure 信息保护统一标签客户端或扫描程序应用的默认保护级别。 但是，您可以更改受保护的文件类型。 有关详细信息，请参阅[更改要保护的文件类型](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
 
-当用户选择管理员配置的敏感度标签，或者用户可以使用[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)指定自己的自定义保护设置时，可以自动应用保护。 
+当用户选择管理员配置的敏感度标签，或者用户可以使用[权限级别](../configure-usage-rights.md#rights-included-in-permissions-levels)指定自己的自定义保护设置时，可以自动应用保护。
 
 ### <a name="file-sizes-supported-for-protection"></a>支持保护的文件大小
 
@@ -96,15 +96,13 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 - **Office 文件：**
 
-
   |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
   |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
   |             Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 位：512 MB<br /><br />64 位：512 MB                                          |
   |           Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制                       |
   | PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制 |
 
-
-- **对于其他所有文件**： 
+- **对于其他所有文件**：
 
   - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
 
@@ -114,7 +112,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
 
-下表列出了支持 Azure 信息保护统一标签客户端的本机保护的文件类型的子集，还可以进行分类。 
+下表列出了支持 Azure 信息保护统一标签客户端的本机保护的文件类型的子集，还可以进行分类。
 
 这些文件类型单独进行标识，因为它们受到本机保护时，原始文件扩展名将更改，这些文件将变为只读。 请注意，以常规形式保护文件时，原始文件扩展名将始终更改为 .pfile。
 
@@ -144,18 +142,16 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-
 ## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
 
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护统一标签客户端来分类或保护这些文件，则会看到一条排除的消息。
 
 - **排除的文件类型**：.lnk、.exe、.com、.cmd、.bat、.dll、.ini、.pst、.sca、.drm、.sys、.cpl、.inf、.drv、.dat、.tmp、.msp、.msi、.pdb、.jar
-    
 
-- **排除的文件夹**： 
+- **排除的文件夹**：
     - Windows
     - Program Files（\Program Files 和 \Program Files (x86)）
-    - \ProgramData 
+    - \ProgramData
     - \AppData（适用于所有用户）
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure 信息保护扫描程序从分类和保护中排除的文件类型
@@ -169,7 +165,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 - 通过[使用 Azure 门户](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”****。
     
     > [!NOTE]
-    > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。 
+    > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。
 
 默认情况下，扫描程序仅保护 Office 文件类型，以及 PDF 文件（使用 ISO PDF 加密标准进行保护时）。 若要为扫描程序更改此行为，请使用 PowerShell 高级设置**PFileSupportedExtensions**。 有关详细信息，请参阅使用 PowerShell 更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect)。
 
@@ -179,13 +175,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>容器文件（如 .zip 文件）的限制
 
-容器文件是包括其他文件的文件，典型示例是包括压缩文件的 .zip 文件。 其他示例包括 .rar、.7z、.msg 文件和包含附件的 PDF 文档。
-
-可对这些容器文件进行分类和保护，但分类和保护不会应用到容器内每个文件。
-
-如果容器文件包括已分类和受保护的文件，必须先提取这些文件，以更改其分类或保护设置。
-
-Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 在这种情况下，在查看器中打开文档时，附件不可见。
+有关详细信息，请参阅[Azure 信息保护已知问题](../known-issues.md#client-support-for-container-files-such-as-zip-files)。
 
 ## <a name="file-types-supported-for-inspection"></a>支持检查的文件类型
 
@@ -213,10 +203,9 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定 .zip 文件扩展名，如使用 powershell 更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect)中所述。
 
+执行这些步骤后的示例方案：
 
-执行这些步骤后的示例方案： 
-
-名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格****。 你有一个名为 "**机密 \ 财务**" 的敏感度标签，该标签配置为发现信用卡号，并自动应用带有限制访问财务组的保护的标签。 
+名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格****。 你有一个名为 "**机密 \ 财务**" 的敏感度标签，该标签配置为发现信用卡号，并自动应用带有限制访问财务组的保护的标签。
 
 检查文件后，来自 PowerShell 会话的统一标签客户端会将此文件归类为**机密 \ 财务**，并对该文件应用常规保护，以便只有财务组的成员可以将该文件解压缩，并将该文件重命名**accounts.zip .pfile**。
 
@@ -227,6 +216,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置**PFileSupportedExtensions**指定此文件扩展名，如使用 powershell 更改从扫描程序部署说明中[保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect)中所述。
 
 ## <a name="next-steps"></a>后续步骤
+
 现在，已确定 Azure 信息保护统一标签客户端支持的文件类型，请参阅以下资源，了解支持此客户端所需的其他信息：
 
 - [自定义](clientv2-admin-guide-customizations.md)
@@ -234,4 +224,3 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 - [客户端文件和使用情况日志记录](clientv2-admin-guide-files-and-logging.md)
 
 - [PowerShell 命令](clientv2-admin-guide-powershell.md)
-

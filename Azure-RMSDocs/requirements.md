@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 05/25/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bcb3006bdd7575385d37be066b627ef49f770c70
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: ebe0b506862e87e8dc99b9995eb0529f10805207
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047705"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927652"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -27,7 +27,7 @@ ms.locfileid: "86047705"
 在部署 Azure 信息保护之前，请确保你的系统满足以下先决条件：
 
 - [Azure 信息保护订阅](#subscription-for-azure-information-protection)
-- [Azure Active Directory](#azure-active-directory)
+- Azure Active Directory
 - [客户端设备](#client-devices)
 - [应用程序](#applications)
 - [防火墙和网络基础结构](#firewalls-and-network-infrastructure)
@@ -126,19 +126,19 @@ ms.locfileid: "86047705"
 
 Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **PowerPoint**和**Outlook**的任何以下 Office 版本来标记并保护文档和电子邮件：
 
-- **Office 应用最小版本 1805**，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 
+- **Office 应用最小版本 1805**，从[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)生成9330.2078。 
 
     仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
-- **Office 365 ProPlus**
+- **[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **Office Professional Plus 2019**
+- **[适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **Office Professional Plus 2016**
+- **[适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **带有 Service Pack 1 的 Office Professional Plus 2013**
+- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2013 Service Pack 1 的应用**
 
-- **带有 Service Pack 2 的 Office Professional Plus 2010**
+- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2010 Service Pack 2 的应用**
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护，而不会为用户显示应用保护的标签。 
 

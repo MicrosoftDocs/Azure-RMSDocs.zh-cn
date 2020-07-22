@@ -1,22 +1,22 @@
 ---
 title: 为用户安装 Azure 信息保护统一标签客户端
 description: 管理员用于在企业网络上部署 Azure 信息保护统一标签客户端的说明和信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 06/16/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fd0ca7caa2a32e35774bccedee867d0f7cafee68
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 24471ecb326009495082e697f96ea241eafd9d39
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048793"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927635"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -80,7 +80,13 @@ ms.locfileid: "86048793"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-Office 应用最小版本1805，在为用户分配 Azure Rights Management 的许可证（也称为 Azure 信息保护 for Office 365）时，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 office 365 ProPlus Office professional Plus 2019 Office 专业版 Plus 2016
+Office 应用最小版本1805，在向用户分配 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，从[Microsoft 365 的应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)构建9330.2078
+
+- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2013 Service Pack 1 的应用
+- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2010 Service Pack 2 的应用
 
 Office 的其他版本（如**标准**）无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行**标记**。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
 

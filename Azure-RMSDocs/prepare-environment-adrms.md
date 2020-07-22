@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cbb72857b460dc223a9bb7504ecb52d21f1fb70f
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 9196f02e63f7eb433237613fe44c43cf74ab3262
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136939"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869022"
 ---
 # <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>在 AD RMS 时为 Azure Rights Management 准备环境
 
@@ -41,7 +41,7 @@ ms.locfileid: "86136939"
 
 如果为组织部署了 AD RMS，请考虑能否迁移到 Azure 信息保护。 与 AD RMS 相比，Azure 信息保护有许多优势。 例如，可以更好地支持移动设备，并与 Office 365 服务以及 Exchange Server 和 SharePoint Server 集成。 有关详细信息，请参阅[比较 Azure 信息保护和 AD RMS](compare-on-premise.md)。
 
-迁移到 Azure 信息保护后，不会失去对以前受保护内容的访问权限，也不必取消保护或重新保护内容。 即使在取消预配 AD RMS 后，仍可以打开受 AD RMS 保护的文档和电子邮件。
+迁移到 Azure 信息保护时，你将不会失去对以前受保护内容的访问权限，并且你无需取消保护内容。 即使已取消预配 AD RMS，仍可打开 AD RMS 保护的文档和电子邮件。
 
 无论决定是迁移到 Azure 信息保护，还是接受使用当前 AD RMS 部署存在的限制，都必须先确保已停用 Azure Rights Management 服务。 有关说明，请按照适用的方案步骤操作：
 
@@ -76,9 +76,9 @@ ms.locfileid: "86136939"
 
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>从 Azure 门户停用 Rights Management
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
     
     如果你之前未访问过 Azure 信息保护窗格，请参阅将此窗格添加到门户中的一次性[附加步骤](configure-policy.md#to-access-the-azure-information-protection-pane-for-the-first-time)。
 

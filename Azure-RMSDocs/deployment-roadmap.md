@@ -12,19 +12,19 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9852c792e732a0d84326e7dfc6f8b291af56fcad
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: 63a3fcc9ee6b7e59ceab31eb63455d53929d028c
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84665854"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927805"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure 信息保护部署路线图
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 建议使用以下步骤，为组织准备、实施和管理 Azure 信息保护。
 
@@ -121,7 +121,7 @@ ms.locfileid: "84665854"
 
 ### <a name="step-5-configure-labels-and-settings-applications-and-services-for-data-protection"></a>步骤5：为数据保护配置标签和设置、应用程序和服务
 
-1. 更新标签以应用保护
+1. **更新标签以应用保护**
     
     对于 Azure 信息保护客户端（经典），请参阅[如何为 Rights Management 保护配置标签](./configure-policy-protection.md)。
     
@@ -129,25 +129,30 @@ ms.locfileid: "84665854"
     
     请注意，即使没有为信息权限管理 (IRM) 配置 Exchange，用户也可以在应用 Rights Management 保护的 Outlook 中应用标签。 但是，在为 IRM 或[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)配置 Exchange 之前，你的组织将无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 此附加配置包含在以下列表中（对于 Exchange Online，则为 2；对于 Exchange 本地，则为 5）。 
 
-2. 配置 Office 应用程序和服务
+2. **配置 Office 应用程序和服务**
     
     为 Microsoft SharePoint 或 Exchange Online 中的信息权限管理（IRM）功能配置 Office 应用程序和服务。 有关详细信息，请参阅[配置适用于 Azure Rights Management 的应用程序](configure-applications.md)。
 
-3. 为数据恢复配置超级用户功能
+3. **为数据恢复配置超级用户功能**
     
     如果现有 IT 服务（例如数据泄露防护 (DLP) 解决方案、内容加密网关 (CEG) 和反恶意软件产品）需要检查 Azure 信息保护将保护的文件，请将服务帐户配置为 Azure Rights Management 的超级用户。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](./configure-super-users.md)。
 
-4. 批量分类和保护现有文件
+4. **批量分类和保护现有文件**
     
-    对于本地数据存储，现在以强制模式运行 [Azure 信息保护扫描程序](deploy-aip-scanner.md)，以便自动标记文件。 对于基于云的数据存储，请使用 [Azure Cloud App Security](https://docs.microsoft.com/cloud-app-security)。
+    对于本地数据存储，现在以强制模式运行 [Azure 信息保护扫描程序](deploy-aip-scanner.md)，以便自动标记文件。
     
-    对于电脑上的文件，可以使用 PowerShell cmdlet 对其进行分类和保护。 有关详细信息，请参阅以下管理指南：
+    对于 Pc 上的文件，请使用 PowerShell cmdlet 来分类和保护文件。 有关详细信息，请参阅以下管理指南：
     
     - Azure 信息保护客户端（经典）：[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)
     
     - Azure 信息保护统一标签客户端：[将 PowerShell 与 Azure 信息保护统一标签客户端配合使用](./rms-client/clientv2-admin-guide-powershell.md)
 
-6. 在 SharePoint Server 上部署受 IRM 保护的库的连接器，为本地 Exchange 部署受 IRM 保护的电子邮件
+    对于基于云的数据存储，请使用 [Azure Cloud App Security](https://docs.microsoft.com/cloud-app-security)。 
+
+    > [!TIP]
+    > 虽然批量分类和保护现有文件不是 cloud app security 的主要用例之一，但[文档记录的解决方法](https://docs.microsoft.com/cloud-app-security/azip-integration#enable-azure-information-protection)可帮助你将文件分类并保护。
+
+6. **在 SharePoint Server 上部署受 IRM 保护的库的连接器，为本地 Exchange 部署受 IRM 保护的电子邮件**
     
     如果具有本地 SharePoint 和 Exchange 并希望使用其信息权限管理 (IRM) 功能，请安装和配置 Rights Management 连接器。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](./deploy-rms-connector.md)。
 

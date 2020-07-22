@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9543490585d01e9592ec63d53775ff46ad3fc415
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: ced3f46a5050a60ae33a1a0caab2375bd27d9ee7
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86049099"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869124"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -109,6 +109,8 @@ ms.locfileid: "86049099"
 - 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”**** 选项卡。 
 
 ### <a name="migration-limitations"></a>迁移限制
+
+<!--These aren't actually limitations, but really just a description of how this feature works. Shouldn't be doc'd as lims, but rather simplified and clarified. Leaving this here, take a new look at this page. -->
 
 - 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看[Azure 信息保护的要求](./requirements.md)中的 "支持的应用程序和客户端" 部分。
 

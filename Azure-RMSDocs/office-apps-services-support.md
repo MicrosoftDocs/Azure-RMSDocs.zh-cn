@@ -12,12 +12,12 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b453bde76cfc8709d955e3fc6e0b25f35ce02c4f
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 4d935e797e4f08c2d8f82d4e797f9d60cc97a5d4
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136988"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869107"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -32,9 +32,12 @@ ms.locfileid: "86136988"
 
 如果已准备好配置 Office 应用，请参阅[office 应用：客户端配置](configure-office-apps.md)。
 
+有关相关的已知问题，请参阅[AIP Office 应用程序中的已知问题](known-issues.md#aip-known-issues-in-office-applications)。
+
+<!-->
 > [!NOTE]
 > 由于最新的 Windows 更新中的限制，在打开文件后，附加到电子邮件的文件当前可能被锁定。
-
+-->
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
 使用 Exchange Online 或 Exchange 服务器 时，可以配置 Azure 信息保护的选项。 此配置允许 Exchange 提供以下保护解决方案：
 

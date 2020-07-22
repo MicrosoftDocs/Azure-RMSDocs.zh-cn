@@ -1,10 +1,10 @@
 ---
 title: 使用 Azure RMS 帮助用户保护文件 - AIP
 description: 此信息可帮助你在部署和配置 Azure 信息保护中的 Azure Rights Management 之后，为用户、管理员和技术支持提供指导。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 11/23/2019
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0c828903f4849dd63de95a401b88acdc4f92dd7e
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 833659878def719263d0410f086eb3445a6531d1
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136585"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927414"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
@@ -82,7 +82,7 @@ ms.locfileid: "86136585"
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
 
-#### <a name="to-protect-a-document-in-wordfrom-office-365-proplus"></a>使用 Office 365 专业增强版保护 Word 文档的具体步骤
+#### <a name="to-protect-a-document-in-wordfrom-microsoft-365-apps-for-enterprise"></a>使用适用于企业的 Microsoft 365 应用保护 Word 中的文档
 
 1.  在 Microsoft Word 中，创建一个文档。
 
@@ -101,7 +101,7 @@ ms.locfileid: "86136585"
 
 这些使用权限以限制横幅方式显示在文档顶部。 该横幅可能显示适用于文档的权限，或者提供显示权限的链接。
 
-#### <a name="to-protect-an-email-message-using-outlookfrom-office-365-proplus-connecting-to-exchange-online"></a>若要使用 Office 365 专业增强版中的 Outlook 保护电子邮件，请连接到 Exchange Online
+#### <a name="to-protect-an-email-message-using-outlookfrom-microsoft-365-apps-for-enterprise-connecting-to-exchange-online"></a>使用 Outlook Microsoft 365 适用于企业的应用程序保护电子邮件，连接到 Exchange Online
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 

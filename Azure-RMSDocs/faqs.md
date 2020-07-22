@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: a62ebab99a6cf9672942dcc7b447c29365c6440b
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 82280d50bdd16139e53d4906e908f7efcb9b6281
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048472"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927380"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -132,7 +132,7 @@ Azure 信息保护（AIP）为组织的文档和电子邮件提供分类、标�
 
 使用 Azure Rights Management 服务（现为 AIP 的组件）保护内容。 
 
-有关详细信息，请参阅[数据的保护方式](what-is-information-protection.md#how-data-is-protected)和[Azure Rights Management？](what-is-azure-rms.md)。
+有关详细信息，请参阅[数据的保护方式](what-is-information-protection.md#how-aip-protects-your-data)和[Azure Rights Management？](what-is-azure-rms.md)。
 
 ## <a name="whats-the-role-of-identity-management-for-azure-information-protection"></a>Azure 信息保护的身份管理的作用是什么？
 
@@ -150,7 +150,7 @@ Azure 信息保护（AIP）为组织的文档和电子邮件提供分类、标�
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
-不能。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
+不是。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
 
 如果在未安装 Azure 信息保护策略的情况下安装经典客户端，客户端将自动在[仅保护模式下](./rms-client/client-protection-only-mode.md)运行，这使用户可以应用 Rights Management 模板和自定义权限。 
 
@@ -245,7 +245,7 @@ Azure 信息保护（AIP）为组织的文档和电子邮件提供分类、标�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-是的。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
+是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
 如果你有 Exchange Server、SharePoint Server 和 Windows 文件服务器，请使用以下方法中的一种或两种：
 
@@ -285,7 +285,7 @@ Azure 信息保护可以分类和保护电子邮件和文档，无论它们是�
 |**管理员帐户**     |建议你不要将管理员帐户添加到条件访问策略，因为这些帐户将无法访问 Azure 门户中的 "Azure 信息保护" 窗格。         |
 |**MFA 和 B2B 协作**     | 如果在条件访问策略中使用 MFA 与其他组织展开协作 (B2B)，则必须使用 [Azure AD B2B 协作](/azure/active-directory/b2b/what-is-b2b)，并为要在其他组织中共享的用户创建来宾帐户。        |
 |**使用条款提示**     |  使用 Azure AD 12 月2018预览版，你现在可以提示用户在首次打开受保护文档之前[接受使用条款](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Updates-to-Azure-AD-Terms-of-Use-functionality-within/ba-p/294822)。       |
-|云应用      |  如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择****。 </br></br>在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择****。        |
+|**云应用**     |  如果针对条件访问使用许多云应用，则列表中可能不会显示“Microsoft Azure 信息保护”选项，因此无法进行选择****。 </br></br>在这种情况下，可使用列表顶部的搜索框。 开始键入“Microsoft Azure 信息保护”，筛选可用应用。 如果已有受支持的订阅，则可以看到“Microsoft Azure 信息保护”选项，可进行选择****。        |
 
 
 ## <a name="i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive"></a>我看到 Azure 信息保护被列为 Microsoft Graph 安全提供商，它是如何工作的？我将收到哪些警报？

@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ab32ff15dc64476e5958c94bc3ce7424713ccf85
-ms.sourcegitcommit: 89e3434c5c6486b1adb6f91739a1e6b24687e367
+ms.openlocfilehash: ad63ebcb4ab5be291d669ac6939279740be6efc1
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86471717"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86868784"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -95,17 +95,23 @@ Azure 信息保护统一标签客户端的每个正式发行版（GA）在发布
 
 **统一标签客户端的新功能：**
 
-- 现在，在对统一标签客户端中的默认标签所做的更改时，将显示[对齐弹出窗口](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
+- 现在，在对统一标签客户端中的默认标签所做的更改时，将显示[**对齐弹出窗口**](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
     
 - 与 Office 应用的视觉内容标记更流畅地集成。 有关在 Office 文档中配置内容标记的详细信息，请参阅[如何为 Azure 信息保护配置用于视觉标记的标签](../configure-policy-markings.md)。
 
 - 新的**WordShapeNameToRemove** advanced 属性允许删除第三方应用程序进行的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。
 
+- 支持**双重密钥加密（DKE）** （公共预览版）。 
+
+    现在，你可以使用统一的标签客户端来保护高度敏感的内容，同时保持对密钥的完全控制。 DKE 要求使用两个密钥来访问受保护的内容：一个密钥存储在 Azure 中，另一个密钥由客户持有。 
+
+    有关默认的基于云的租户根密钥的详细信息，请参阅[计划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)。 有关实现双重密钥加密的信息，请参阅 Microsoft 365 文档中的[双密钥加密](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption)。
+
 **为删除的文件生成的新审核日志**
 
 现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
 
-有关详细信息，请参阅：
+有关详情，请参阅：
 - [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
 - [Azure 信息保护的中央报告](../reports-aip.md)
 

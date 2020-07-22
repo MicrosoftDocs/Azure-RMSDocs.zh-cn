@@ -1,10 +1,10 @@
 ---
 title: 配置 Azure 信息保护的使用权限
 description: 了解和确定在使用 Azure 信息保护中的 Rights Management 保护来保护文件或电子邮件时使用的特定权限。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 01/08/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 585f962f3da6fbb3cb2373a8ac3d355e1d97aef6
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 779d527df4b95b985ae72b41414f5c91d7775d01
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136761"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927312"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
@@ -43,7 +43,7 @@ ms.locfileid: "86136761"
 
 |使用权限|说明|实现|
 |-------------------------------|---------------------------|-----------------|
-|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或排序。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，除非 Office 365 专业增强版的最低版本为 [1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25)，否则此权限不足，无法启用或禁用“跟踪更改”，也无法以审阅者身份使用所有跟踪更改功能****。 必须拥有“完全控制”**** 权限，才能使用所有跟踪更改选项。 |Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />标记管理中心和 Azure 门户中的名称：**编辑内容、编辑（DOCEDIT）**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
+|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或排序。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，除非你具有最低版本为[1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25)的[Microsoft 365 适用于企业的应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)，否则，此权限不足以打开或关闭**跟踪更改**，或将所有跟踪更改功能作为审阅者使用。 必须拥有“完全控制”**** 权限，才能使用所有跟踪更改选项。 |Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />标记管理中心和 Azure 门户中的名称：**编辑内容、编辑（DOCEDIT）**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
 |公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，如果所选文件格式以本机方式支持 Rights Management 保护，则此权限还允许用户修改文档并以新名称将其保存到新位置。 文件格式限制可确保无法从文件中删除原始保护。|Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />标记管理中心和 Azure 门户中的名称：**保存（编辑）**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它并未广泛使用，并且不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />标记管理中心和 Azure 门户：未实现的名称。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
 |公用名：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote”****。|Office 自定义权限：作为“完全控制”选项的一部分****。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />标记管理中心和 Azure 门户中的名称：**另存为、导出（导出）**<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
@@ -124,7 +124,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”****。
 
-此选项可供使用 Exchange Online 的租户使用，可以在网页版 Outlook 中作为邮件流规则的另一个权限保护选项（作为 Office 365 DLP 操作）选择，如果安装了最低版本为 [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) 的 Office 365 专业增强版，且具有[支持 Azure RMS 的 Office 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)的最低版本为 1805 时，还可以从 Outlook 中选择。 有关 "仅加密" 选项的详细信息，请参阅以下博客文章： Office 团队中的 "[仅加密 365"](https://aka.ms/omefeb2018)。
+此选项适用于使用 Exchange Online 的租户，可以在 web 上的 Outlook 中选择，作为邮件流规则的另一权限保护选项，作为 Office 365 DLP 操作，而从 Outlook （适用于[企业的 Microsoft 365 应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)的最低版本[1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) ，而在拥有[支持 Azure RMS 的 Office 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)时则为最低版本1805。 有关 "仅加密" 选项的详细信息，请参阅以下博客文章： Office 团队中的 "[仅加密 365"](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除“另存为，导出”和“完全控制”以外的所有使用权限********。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 
 
@@ -154,7 +154,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 - 撤消权限后，Rights Management 颁发者仍可打开文档。 
 
-默认情况下，此帐户也是该内容的“Rights Management 所有者”****，当创建文档或电子邮件的用户启动保护时便是如此。 但是，某些情况下，管理员或服务可以代表用户保护内容。 例如:
+默认情况下，此帐户也是该内容的“Rights Management 所有者”****，当创建文档或电子邮件的用户启动保护时便是如此。 但是，某些情况下，管理员或服务可以代表用户保护内容。 例如：
 
 - 管理员批量保护文件共享上的文件：Azure AD 中的管理员帐户保护用户文档。
 

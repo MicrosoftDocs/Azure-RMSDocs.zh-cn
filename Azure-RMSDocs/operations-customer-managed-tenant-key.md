@@ -13,12 +13,12 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 14b3c9d4db202abb18555eb695fe7e3e0769af40
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 5e6cffeb02cb22f65a5108e96ffa1b0cc8974142
+ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136320"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86869090"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
@@ -57,7 +57,8 @@ ms.locfileid: "86136320"
 
 关于每个步骤的详细信息：
 
-- 若要将密钥重新生成为所管理的其他密钥，请参阅[为 Azure 信息保护租户密钥实现 BYOK](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)。
+- 若要重新生成到你管理的其他密钥，请参阅[计划和实现你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
+
     
     如果你重新生成在本地创建的受 HSM 保护的密钥并传输到密钥保管库，则可以使用与当前密钥相同的安全环境和访问卡。
 
