@@ -4,13 +4,9 @@
   items:
     - name: 什么是 Azure 信息保护？
       href: what-is-information-protection.md
-    - name: Azure 信息保护和 AD RMS
-      items:
-        - name: 比较本地解决方案和 AD RMS
-          href: compare-on-premise.md
-        - name: 管理 Active Directory 移动设备扩展
-          href: active-directory-rights-manage-mobile-device.md
-    - name: 要求
+    - name: Azure 信息保护权限管理
+      href: what-is-azure-rms.md
+    - name: AIP 要求
       items:
         - name: 概述
           href: requirements.md
@@ -22,6 +18,8 @@
           href: requirements-applications.md
         - name: 针对保护措施的本地设备支持
           href: requirements-servers.md
+    - name: AIP 也称为…
+      href: aka.md
 - name: 快速入门
   expanded: true
   items:
@@ -43,13 +41,9 @@
       href: infoprotect-oversharing-tutorial.md
 - name: 概念
   items:
-    - name: Azure 信息保护策略概述
-      href: overview-policy.md
     - name: Rights Management 保护
       items:
-        - name: 概述
-          href: what-is-azure-rms.md
-        - name: 工作原理
+        - name: Rights Management 保护的工作原理
           href: how-does-it-work.md
         - name: 应用程序如何支持 Azure Rights Management 保护
           items:
@@ -63,16 +57,12 @@
               href: api-support.md
     - name: 个人 RMS 和 Azure 信息保护
       href: rms-for-individuals.md
-    - name: 也称为...
-      href: aka.md
-- name: 操作指南
-  items:
-    - name: 常见方案操作说明
-      href: how-to-guides.md
-    - name: 为服务进行规划并做好准备
+    - name: Azure 信息保护和 AD RMS
       items:
-        - name: 部署路线图
-          href: deployment-roadmap.md
+        - name: 比较本地解决方案和 AD RMS
+          href: compare-on-premise.md
+        - name: 管理 Active Directory 移动设备扩展
+          href: active-directory-rights-manage-mobile-device.md
         - name: 从 AD RMS 迁移
           items:
             - name: 概述
@@ -95,12 +85,26 @@
               href: migrate-from-ad-rms-phase4.md
             - name: 迁移后任务
               href: migrate-from-ad-rms-phase5.md
+    - name: Azure 信息保护策略
+      href: overview-policy.md
+- name: 操作指南
+  items:
+    - name: 常见方案操作说明
+      href: how-to-guides.md
+    - name: 为服务进行规划并做好准备
+      items:
+        - name: 部署路线图
+          href: deployment-roadmap.md
         - name: 计划和实现你的租户密钥
           items:
-            - name: 概述
+            - name: 支持的密钥类型
               href: plan-implement-tenant-key.md
-            - name: BYOK 详细信息
+            - name: 配置创建自己的密钥 (BYOK) 保护
               href: byok-price-restrictions.md
+            - name: 配置保留自己的密钥 (BYOK) 保护
+              href: configure-adrms-restrictions.md
+            - name: 开始使用租户根钥
+              href: get-started-tenant-root-keys.md
         - name: 准备用户和组
           href: prepare.md
     - name: 配置和使用该服务
@@ -144,11 +148,7 @@
             - name: 更改标签
               href: configure-policy-change-label.md
             - name: 配置保护
-              items:
-                - name: 概述
-                  href: configure-policy-protection.md
-                - name: HYOK
-                  href: configure-adrms-restrictions.md
+              href: configure-policy-protection.md
             - name: 配置可视标记
               href: configure-policy-markings.md
             - name: 配置条件
@@ -322,17 +322,7 @@
             - name: 开始使用 AIP 移动应用
               href: ./rms-client/mobile-app-get-started.md
         - name: 受保护的 PDF 阅读器
-          items:
-            - name: 概述
-              href: ./rms-client/protected-pdf-readers.md
-            - name: Windows
-              href: ./rms-client/protected-pdf-readers-windows.md
-            - name: macOS
-              href: ./rms-client/protected-pdf-readers-mac.md
-            - name: iOS
-              href: ./rms-client/protected-pdf-readers-ios.md
-            - name: Android
-              href: ./rms-client/protected-pdf-readers-android.md
+          href: ./rms-client/protected-pdf-readers.md
         - name: RMS 客户端部署说明
           href: ./rms-client/client-deployment-notes.md
         - name: 使用 Windows Server FCI 的 RMS 保护
@@ -491,6 +481,8 @@
           href: faqs-infoprotect.md
         - name: FAQ - 数据保护
           href: faqs-rms.md
+    - name: 已知问题
+      href: known-issues.md
     - name: 信息和支持
       href: information-support.md
     - name: 合规性和支持信息
