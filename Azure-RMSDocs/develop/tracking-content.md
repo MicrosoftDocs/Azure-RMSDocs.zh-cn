@@ -16,16 +16,16 @@ ms.suite: ems
 ms.custom: dev
 experimental: true
 experiment_id: priyamo-test-20160729
-ms.openlocfilehash: cd70cecf84a6f346d3e88e3a7aa9cc28406fd265
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: aee6442d79c39172f6b082fb2531588ce50c8cf2
+ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792023"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87135600"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
 
-本主题涵盖实现文档内容跟踪的基本指导，并提供用于元数据更新和为应用创建 **“跟踪使用情况”按钮**的示例代码。
+本主题涵盖实现文档内容跟踪的基本指导，并提供用于元数据更新和为应用创建“**跟踪使用情况按钮**(#跟踪使用情况按钮)”的示例代码。
 
 ## <a name="steps-to-implement-document-tracking"></a>实现文档跟踪的步骤
 
@@ -94,7 +94,9 @@ ms.locfileid: "68792023"
 
 以下是代码段，显示了设置文档跟踪元数据的示例和对跟踪系统中注册的调用。
 
-      C++
+**C + +**：
+
+  ```cpp
       HRESULT hr = S_OK;
       LPCWSTR wszOutputFile = NULL;
       wstring wszWorkingFile;
@@ -124,7 +126,7 @@ ms.locfileid: "68792023"
      /* the context to use for the call */
      PCIPC_PROMPT_CTX pContext;
 
-     wstring wstrContentName(“MyDocument.txt”);
+     wstring wstrContentName("MyDocument.txt");
      bool sendLicenseRegistrationNotificationEmail = FALSE;
 
      hr = IpcRegisterLicense( pSerializedLicense,
@@ -132,6 +134,7 @@ ms.locfileid: "68792023"
                         pContext,
                         wstrContentName.c_str(),
                         sendLicenseRegistrationNotificationEmail);
+  ```
 
 ## <a name="add-a-track-usage-button-to-your-app"></a>向应用添加**跟踪使用情况**按钮
 
@@ -139,11 +142,11 @@ ms.locfileid: "68792023"
 
 - 使用内容 ID
   - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](https://msdn.microsoft.com/library/hh535265.aspx) 或 [IpcGetSerializedLicenseProperty](https://msdn.microsoft.com/library/hh995038.aspx) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](https://msdn.microsoft.com/library/hh535287.aspx)。
-  - 对于 **ContentId** 和 **Issuer** 元数据，使用以下格式：`https://track.azurerms.com/#/{ContentId}/{Issuer}`
+  - 对于**id 为**和**Issuer**元数据，使用以下格式：`https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     示例 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
 
-- 如果无权访问该元数据（即检查文档的不受保护版本时），可以使用 **Content_Name**，其格式如下：`https://track.azurerms.com/#/?q={ContentName}`
+- 如果无权访问该元数据（即检查文档的不受保护的版本），可以使用以下格式的**Content_Name** ：`https://track.azurerms.com/#/?q={ContentName}`
 
   示例 - https://track.azurerms.com/#/?q=Secret!.txt
 
@@ -151,9 +154,9 @@ ms.locfileid: "68792023"
 
 ## <a name="related-topics"></a>相关主题
 
-* [License metadata property types](https://msdn.microsoft.com/library/dn974062.aspx)（许可证元数据属性类型）
-* [Notification preference](https://msdn.microsoft.com/library/dn974063.aspx)（通知引用）
-* [Notification type](https://msdn.microsoft.com/library/dn974064.aspx)（通知类型）
+* [许可证元数据属性类型](https://msdn.microsoft.com/library/dn974062.aspx)
+* [通知参考](https://msdn.microsoft.com/library/dn974063.aspx)
+* [通知类型](https://msdn.microsoft.com/library/dn974064.aspx)
 * [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
 * [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
 * [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)

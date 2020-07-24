@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 53bfc93ce31322922fdadcc0f5bcc7a92e242bed
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 09823af031db2968c951c6c3610bc14e6a31bd17
+ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971837"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87135634"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -82,7 +82,7 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
 **Android 用户身份验证** - 有关详细信息，请参阅 [Android 代码示例](android-code.md) 中第一个方案“使用受 RMS 保护的文件”的 **步骤 2**。
 
-
+```java
     class MsipcAuthenticationCallback implements AuthenticationRequestCallback
     {
     ...
@@ -94,8 +94,8 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
         String authority = authenticationParametersMap.get("oauth2.authority");
         String resource = authenticationParametersMap.get("oauth2.resource");
         String userId = authenticationParametersMap.get("userId");
-        mClientId = “12345678-ABCD-ABCD-ABCD-ABCDEFGHIJ”; // get your registered Azure AD application ID here
-        mRedirectUri = “urn:ietf:wg:oauth:2.0:oob”;
+        mClientId = "12345678-ABCD-ABCD-ABCD-ABCDEFGH12"; // get your registered Azure AD application ID here
+        mRedirectUri = "urn:ietf:wg:oauth:2.0:oob";
         final String userHint = (userId == null)? "" : userId;
         AuthenticationContext authenticationContext = App.getInstance().getAuthenticationContext();
         if (authenticationContext == null || !authenticationContext.getAuthority().equalsIgnoreCase(authority))
@@ -153,11 +153,11 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
                             }
                         });
                          }
-
+```
 
 **iOS/OS X 用户身份验证** - 有关详细信息，请参阅 [iOS/OS X 代码示例](ios-os-x-code-examples.md)*第一个方案“使用受 RMS 保护的文件”的步骤 2*。
 
-
+```objectivec
     // AuthenticationCallback holds the necessary information to retrieve an access token.
     @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
 
@@ -173,11 +173,11 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
     ADAuthenticationError *error;
     ADAuthenticationContext* context = [ADAuthenticationContext authenticationContextWithAuthority:authenticationParameters.authority error:&error];
 
-    NSString *appClientId = @”12345678-ABCD-ABCD-ABCD-ABCDEFGHIJ”;
+    NSString *appClientId = @"12345678-ABCD-ABCD-ABCD-ABCDEFGH12";
 
     // get your registered Azure AD application ID here
 
-    NSURL *redirectURI = [NSURL URLWithString:@”ms-sample://com.microsoft.sampleapp”];
+    NSURL *redirectURI = [NSURL URLWithString:@"ms-sample://com.microsoft.sampleapp"];
 
     // get your <app-scheme>://<bundle-id> here
     // Retrieve token using ADAL
@@ -200,13 +200,12 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
         ];
     }
-
-
+```
 
 **Linux 用户身份验证** - 有关详细信息，请参阅 [Linux 代码示例](linux-c-code-examples.md)。
 
 
-
+```cpp
     // Class Header
     class AuthCallback : public IAuthenticationCallback {
     private:
@@ -266,3 +265,4 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
         throw;
       }
     }
+```
