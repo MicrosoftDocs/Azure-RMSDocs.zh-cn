@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/14/2020
 ms.author: v-anikep
-ms.openlocfilehash: 0e269238333a23da5b0b61f77f6be361838e8a17
-ms.sourcegitcommit: a1feede30ac1f54e900e52eb45b3e6634e0f13f3
+ms.openlocfilehash: f50613340cc4c977239910d5047943d25239b1bc
+ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84548133"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "86403283"
 ---
 # <a name="microsoft-information-protection-sdk-file-api---action-justification-for-lowering-a-sensitivity-label-on-a-file-c"></a>Microsoft 信息保护 SDK 文件 API - 降低文件上敏感度标签的级别的操作理由 (C++)
 
@@ -28,7 +28,7 @@ ms.locfileid: "84548133"
 
 使用 `mip::FileHandler` 对象，添加逻辑以对文件设置敏感度标签。
 
-1. 打开在前面的“快速入门：设置/获取敏感度标签 (C++)。
+1. 打开在前面的[快速入门：设置/获取敏感度标签 (C++)](quick-file-set-get-label-cpp.md) 中创建的 Visual Studio 解决方案。
 
 2. 使用“解决方案资源管理器”，打开项目中包含 `main()` 方法的实现的 .cpp 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
@@ -47,108 +47,108 @@ ms.locfileid: "84548133"
 
 5. 在 `main()` 正文的末尾，于 `system("pause");` 之下和关闭块之上（在上一快速入门中离开的位置），插入以下代码：
 
-    ```cpp
+```cpp
 
-    // Downgrade label
-    // Set paths and lower label ID
-    // Set a new label on input file.
+// Downgrade label
+// Set paths and lower label ID
+// Set a new label on input file.
 
-    string lowerlabelId = "<lower-label-id>";
-    cout << "\nApplying new Label ID " << lowerlabelId << " to " << filePathOut << endl;
+string lowerlabelId = "<lower-label-id>";
+cout << "\nApplying new Label ID " << lowerlabelId << " to " << filePathOut << endl;
+mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED);
+
+// Try to apply a label with lower sensitivity.
+try
+{
+    handler->SetLabel(engine->GetLabelById(lowerlabelId), labelingOptions, mip::ProtectionSettings());
+}
+
+catch (const mip::JustificationRequiredError& e)
+{
+    // Request justification from user.
+    cout<<"Please provide justification for downgrading a label: "<<endl;
+    string justification;
+    cin >> justification;
+
+    // Set Justification provided flag
+    bool isDowngradeJustified = true;
     mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED);
+    labelingOptions.SetDowngradeJustification(isDowngradeJustified,justification);
 
-    // Try to apply a label with lower sensitivity.
-    try
-    {
-        handler->SetLabel(engine->GetLabelById(lowerlabelId), labelingOptions, mip::ProtectionSettings());
-    }
+    //Set new label.
+    handler->SetLabel(engine->GetLabelById(lowerlabelId), labelingOptions, mip::ProtectionSettings());
+}
 
-    catch (const mip::JustificationRequiredError& e)
-    {
-        // Request justification from user.
-        cout<<"Please provide justification for downgrading a label: "<<endl;
-        string justification;
-        cin >> justification;
-
-        // Set Justification provided flag
-        bool isDowngradeJustified = true;
-        mip::LabelingOptions labelingOptions(mip::AssignmentMethod::PRIVILEGED);
-        labelingOptions.SetDowngradeJustification(isDowngradeJustified,justification);
-
-        //Set new label.
-        handler->SetLabel(engine->GetLabelById(lowerlabelId), labelingOptions, mip::ProtectionSettings());
-    }
-
-    catch (const std::exception& e)
-    {
-        cout << "An exception occurred... did you specify a valid label ID?\n\n" << e.what() << "'\n";
-        system("pause");
-        return 1;
-    }
-
-    // Commit changes, save as a different output file
-    string lowerFilePathOut = "<lower-output-file-path>";
-    try
-    {
-        cout << "Committing changes" << endl;
-        auto commitPromise = std::make_shared<std::promise<bool>>();
-        auto commitFuture = commitPromise->get_future();
-        handler->CommitAsync(lowerFilePathOut, commitPromise);
-        if (commitFuture.get()) {
-            cout << "\nLabel committed to file: " << lowerFilePathOut << endl;
-        }
-        else {
-            cout << "Failed to label: " + lowerFilePathOut << endl;
-            return 1;
-        }
-    }
-    catch (const std::exception& e)
-    {
-        cout << "An exception occurred... did you specify a valid commit file path?\n\n" << e.what() << "'\n";
-        system("pause");
-        return 1;
-    }
+catch (const std::exception& e)
+{
+    cout << "An exception occurred... did you specify a valid label ID?\n\n" << e.what() << "'\n";
     system("pause");
+    return 1;
+}
 
-    // Set up async FileHandler for output file operations
-    string lowerActualFilePath = "<lower-content-identifier>";
-    try
-    {
-        auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
-        auto handlerFuture = handlerPromise->get_future();
-        engine->CreateFileHandlerAsync(
-            lowerFilePathOut,
-            lowerActualFilePath,
-            true,
-            std::make_shared<FileHandlerObserver>(),
-            handlerPromise);
-
-        handler = handlerFuture.get();
+// Commit changes, save as a different output file
+string lowerFilePathOut = "<lower-output-file-path>";
+try
+{
+    cout << "Committing changes" << endl;
+    auto commitPromise = std::make_shared<std::promise<bool>>();
+    auto commitFuture = commitPromise->get_future();
+    handler->CommitAsync(lowerFilePathOut, commitPromise);
+    if (commitFuture.get()) {
+        cout << "\nLabel committed to file: " << lowerFilePathOut << endl;
     }
-    catch (const std::exception& e)
-    {
-        cout << "An exception occurred... did you specify a valid output file path?\n\n" << e.what() << "'\n";
-        system("pause");
+    else {
+        cout << "Failed to label: " + lowerFilePathOut << endl;
         return 1;
     }
-
-    // Get the lowered label from output file
-    try
-    {
-        cout << "\nGetting the label committed to file: " << lowerFilePathOut << endl;
-        auto lowerLabel = handler->GetLabel();
-        cout << "Name: " + lowerLabel->GetLabel()->GetName() << endl;
-        cout << "Id: " + lowerLabel->GetLabel()->GetId() << endl;
-    }
-    catch (const std::exception& e)
-    {
-        cout << "An exception occurred... did you specify a valid label ID?\n\n" << e.what() << "'\n";
-        system("pause");
-        return 1;
-    }
+}
+catch (const std::exception& e)
+{
+    cout << "An exception occurred... did you specify a valid commit file path?\n\n" << e.what() << "'\n";
     system("pause");
+    return 1;
+}
+system("pause");
 
-    ```
+// Set up async FileHandler for output file operations
+string lowerActualFilePath = "<lower-content-identifier>";
+try
+{
+    auto handlerPromise = std::make_shared<std::promise<std::shared_ptr<FileHandler>>>();
+    auto handlerFuture = handlerPromise->get_future();
+    engine->CreateFileHandlerAsync(
+        lowerFilePathOut,
+        lowerActualFilePath,
+        true,
+        std::make_shared<FileHandlerObserver>(),
+        handlerPromise);
+
+    handler = handlerFuture.get();
+}
+catch (const std::exception& e)
+{
+    cout << "An exception occurred... did you specify a valid output file path?\n\n" << e.what() << "'\n";
+    system("pause");
+    return 1;
+}
+
+// Get the lowered label from output file
+try
+{
+    cout << "\nGetting the label committed to file: " << lowerFilePathOut << endl;
+    auto lowerLabel = handler->GetLabel();
+    cout << "Name: " + lowerLabel->GetLabel()->GetName() << endl;
+    cout << "Id: " + lowerLabel->GetLabel()->GetId() << endl;
+}
+catch (const std::exception& e)
+{
+    cout << "An exception occurred... did you specify a valid label ID?\n\n" << e.what() << "'\n";
+    system("pause");
+    return 1;
+}
+system("pause");
+
+```
 
 6. 使用以下值替换源代码中的占位符值：
 
