@@ -12,19 +12,19 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 21a174d8daca5376cd4071d579a50628e1a4d91c
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: c88186c163d1f712c657d9270a7a738289fac6b4
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84665786"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298234"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）**** 和标签管理**** 将于 2021 年 3 月 31 日**** 弃用****。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 是否有关于 Azure 信息保护中数据保护服务 Azure Rights Management 的问题？ 请查看此处是否有答案。
 
@@ -59,7 +59,7 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>在哪里可以找到与 Azure RMS 集成的第三方解决方案的相关信息？
 
-许多软件供应商已经具备或正在实施与 Azure Rights Management 集成的解决方案，并且这一数量正在快速增长。 你可能会发现，查看[启用 RMS 的解决方案](requirements-applications.md#rms-enlightened-solutions)列表，并在 Twitter 上从 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility) 了解最新更新非常有用。 此外，请查看[开发人员指南](./develop/developers-guide.md)并在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上发布任何特定的集成问题。
+许多软件供应商已经具备或正在实施与 Azure Rights Management 集成的解决方案，并且这一数量正在快速增长。 你可能会发现，查看[启用应用程序](requirements-applications.md#)列表并从 Twitter 上的[ Mobility@MSFTMobility Microsoft](https://twitter.com/MSFTMobility)获取最新更新非常有用。 此外，请查看[开发人员指南](./develop/developers-guide.md)并在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上发布任何特定的集成问题。
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 连接器是否有管理包或类似的监视机制？
 
@@ -139,7 +139,8 @@ Azure 信息保护上下文中出现**自带密钥** (BYOK) 时，则表示应�
 若要详细了解新功能（包括在所有设备上支持所有电子邮件帐户），请参阅以下博客文章：[Announcing new capabilities available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)（宣布在 Office 365 邮件加密中推出新功能）。
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS 支持哪些设备和哪种文件类型？
-有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](./requirements-client-devices.md)。 由于并非所有受支持的设备目前都能支持全部的 Rights Management 功能，因此，还请务必查看[启用 RMS 的应用程序](./requirements-applications.md#rms-enlightened-applications)表。
+
+有关支持 Azure Rights Management 服务的设备的列表，请参阅[支持 Azure Rights Management 数据保护的客户端设备](./requirements.md#client-devices)。 由于并非所有受支持的设备目前都能支持所有 Rights Management 功能，请务必查看[enlighted 应用程序](./requirements-applications.md)表。
 
 Azure Rights Management 服务支持所有文件类型。 对于文字、图像、Microsoft Office（Word、Excel、PowerPoint）文件、.pdf 文件和一些其他应用程序文件类型，Azure Rights Management 提供的本地保护包括对权利（权限）的加密和执行。 对于其他应用程序和文件类型，通用保护提供文件封装和验证以确认用户是否授权打开文件。
 
@@ -162,7 +163,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](./rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
-不是。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
+不能。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能似乎不适用于 SharePoint 受保护的库，是否支持对我的功能进行计划？
 目前，Microsoft SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，这些库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅[Office 应用程序和服务](./office-apps-services-support.md)一文[中 Microsoft 365 和 sharepoint Server 中的 sharepoint](./office-apps-services-support.md#sharepoint-in-microsoft-365-and-sharepoint-server)部分。

@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 405989dae3fb7f37edc4fdd8b213ae5dae3ac592
-ms.sourcegitcommit: f32928f7dcc03111fc72d958cda9933d15065a2b
+ms.openlocfilehash: f69c7071c7e4bb257d4325f4404c51a6e0a81046
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "84665905"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298268"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>部署 Azure Rights Management 连接器
 
@@ -42,7 +42,7 @@ RMS 连接器支持下列本地服务器：Exchange Server、SharePoint Server�
 > [!NOTE]
 > 如果想要通过使用文件分类基础结构保护多个文件类型（不仅是 Office 文档），请勿使用 RMS 连接器，而是使用 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)。
 
-有关这些受 RMS 连接器支持的本地服务器的版本，请参阅[支持 Azure RMS 的本地服务器](requirements-servers.md)。
+有关这些受 RMS 连接器支持的本地服务器的版本，请参阅[支持 Azure RMS 的本地服务器](requirements.md#supported-on-premises-servers-for-azure-rights-management-data-protection)。
 
 
 ### <a name="support-for-hybrid-scenarios"></a>支持混合方案

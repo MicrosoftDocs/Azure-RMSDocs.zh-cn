@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 84bc3b4f6fea5ed898b0b1aed9f33748b9b2b2a7
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 3abfb2f7c008f8573f0fef87b83c350145161139
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046549"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298098"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
@@ -37,7 +37,7 @@ ms.locfileid: "86046549"
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 
-必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 要按类型和受支持的设备查看应用程序列表，请参阅[启用 RMS 的应用程序](../requirements-applications.md#rms-enlightened-applications)表格。 
+必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 若要按类型和受支持的设备查看应用程序列表，请参阅[启用应用程序](../requirements-applications.md)表。 
 
 ## <a name="messagerpmsg-as-an-email-attachment"></a>作为电子邮件附件的 Message.rpmsg
 
@@ -75,5 +75,5 @@ ms.locfileid: "86046549"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
+- [您希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 

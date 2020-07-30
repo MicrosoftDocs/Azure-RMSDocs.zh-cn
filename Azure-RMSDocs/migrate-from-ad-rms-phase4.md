@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5e1bdf52fd8d73231e9084d36d5d648a2e1ee88c
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 01cf998fc6d4c872339d5bfa241eed4f1c9f4b6b
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048623"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298149"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -53,7 +53,7 @@ ms.locfileid: "86048623"
 此步骤包括安装和配置连接器、对 Exchange 和 SharePoint 禁用 IRM，以及配置这些服务器以使用该连接器。 最后，如果你已将用于保护电子邮件的 AD RMS 数据配置文件 (.xml) 导入到 Azure 信息保护，则必须手动编辑 Exchange Server 计算机上的注册表，将所有受信任的发布域 URL 重定向到 RMS 连接器。
 
 > [!NOTE]
-> 在开始之前，请从[支持 Azure RMS 的本地服务器](./requirements-servers.md)中核实 Azure Rights Management 服务所支持的本地服务器的版本。
+> 在开始之前，请从[支持 Azure RMS 的本地服务器](requirements.md#supported-on-premises-servers-for-azure-rights-management-data-protection)中核实 Azure Rights Management 服务所支持的本地服务器的版本。
 
 ### <a name="install-and-configure-the-rms-connector"></a>安装并配置 RMS 连接器
 

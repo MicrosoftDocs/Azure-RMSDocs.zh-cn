@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a038d70cfbeb75f4bcabbfab0391582cdb0b5e87
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 58d96afe47d6d3fc993c7c7e213e64097777b21e
+ms.sourcegitcommit: edd0614ef6f687ff2745f56e4171cd72e03edc9c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047365"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87438187"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
 
@@ -980,9 +980,9 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此高级客户端设置不会更改发送到 Azure 信息保护用于[集中报告](../reports-aip.md)的信息，也不会更改写入本地[事件日志](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)的信息。
 
-## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>与 Exchange 邮件分类集成以实现移动设备标记解决方案
+## <a name="integration-with-the-legacy-exchange-message-classification"></a>与旧版 Exchange 消息分类的集成
 
-Web 上的 Outlook 现在支持 Exchange Online 的内置标签，这是在 web 上的 Outlook 中标记电子邮件的建议方法。 但是，如果尚未使用从 Office 365 Security & 相容性中心发布的敏感度标签，请 Microsoft 365 安全中心 "或" Microsoft 符合性中心 "，则可以使用 Exchange 邮件分类将 Azure 信息保护标签扩展到移动用户（当他们使用 web 上的 Outlook 时）。 你还可以将此方法用于 Exchange Server。 
+Web 上的 Outlook 现在支持 Exchange Online 的内置标签，这是在 web 上的 Outlook 中标记电子邮件的建议方法。 但是，如果需要在 OWA 中标记电子邮件并使用不支持敏感度标签的 Exchange Server，则可以使用 Exchange 邮件分类将 Azure 信息保护标签扩展到 web 上的 Outlook。
 
 Outlook Mobile 不支持 Exchange 邮件分类。
 

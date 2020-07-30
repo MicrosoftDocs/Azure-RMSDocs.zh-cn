@@ -4,19 +4,19 @@ description: 了解 Active Directory 适用于 AIP 的移动设备扩展
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/17/2020
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f20ebed9647570e1f9395791f346eb175a3a8c5e
-ms.sourcegitcommit: 43c9a5c3130a3a8e2ee2644207d07382bed09679
+ms.openlocfilehash: 4351fbd3a7cbbcfbc49df69c1103a6d3a90fb920
+ms.sourcegitcommit: ee51eb341666fa91439e1c8496a880ae5c20195d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84879999"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87255142"
 ---
 # <a name="active-directory-rights-management-services-mobile-device-extension"></a>Active Directory Rights Management Services 移动设备扩展
 
@@ -45,7 +45,7 @@ ms.locfileid: "84879999"
 安装 AD RMS 移动设备扩展之前，请确保已准备好以下依赖项。
 
 
-|要求|详细信息|
+|要求|更多信息|
 |---------------|------------------------|
 |Windows Server 2019、2016、2012 R2 或2012上的现有 AD RMS 部署，包括以下各项：<br /><br /> -您的 AD RMS 群集必须可从 Internet 访问。 <br /><br /> -AD RMS 必须在单独的服务器上使用完全基于 Microsoft SQL Server 的数据库，而不是通常用于在同一服务器上测试的 Windows 内部数据库。 <br /><br />-用于安装移动设备扩展的帐户必须对用于 AD RMS 的 SQL Server 实例具有 sysadmin 权限。 <br /><br />-必须将 AD RMS 服务器配置为使用 SSL/TLS，其中包含移动设备客户端信任的有效 x.509 证书。<br /><br /> -如果 AD RMS 服务器位于防火墙后面或使用反向代理发布，则除了将 **/_wmcs**文件夹发布到 Internet 外，还必须发布/my 文件夹（例如： **_https： \/ \/ RMSserver.contoso.com/my**）。|有关 AD RMS 先决条件和部署信息的详细信息，请参阅本文的先决条件部分。|
 |Windows Server 上部署的 AD FS：<br /><br /> -必须可从 Internet 访问你的 AD FS 服务器场（你已部署了联合服务器代理）。 <br /><br />-不支持基于窗体的身份验证;必须使用 Windows 集成身份验证 <br /><br /> **重要说明**： AD FS 必须在运行 AD RMS 的计算机和移动设备扩展上运行不同的计算机。|有关 AD FS 的文档，请参阅 Windows Server 库中的[Windows server AD FS 部署指南](https://docs.microsoft.com/office365/troubleshoot/active-directory/set-up-adfs-for-single-sign-on)。<br /><br /> 必须为移动设备扩展配置 AD FS。 有关说明，请参阅本主题中的**配置 AD RMS 移动设备扩展的 AD FS**部分。|
@@ -82,7 +82,7 @@ $TransformRules = @"
 @RuleTemplate = "LdapClaims"
 @RuleName = "Jwt Token"
 c:[Type ==
-"https://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname",
+"http://schemas.microsoft.com/ws/2008/06/identity/claims/windowsaccountname",
 Issuer == "AD AUTHORITY"]
  => issue(store = "Active Directory", types =
 ("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",
@@ -222,20 +222,20 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\<portn
 
 |字段|值|
 |------|------|
-|域|_tcp contoso .com
+|Domain|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|优先级|0
+|Priority|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com
 
 |字段|值|
 |------|------|
-|域|_tcp fabrikam
+|Domain|_tcp fabrikam
 |服务|_rmsdisco
 |协议|_http
-|优先级|0
+|Priority|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|
@@ -248,10 +248,10 @@ SRV 记录采用以下格式： _rmsdisco _http。 _tcp。 \<emailsuffix>\<portn
 
 |字段|值|
 |------|------|
-|域|_tcp contoso .com
+|Domain|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|优先级|0
+|Priority|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|

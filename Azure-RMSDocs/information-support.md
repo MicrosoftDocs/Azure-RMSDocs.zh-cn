@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 7530329b1f3e25eabb622087a575d5c6e34c66b3
-ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
+ms.openlocfilehash: 5c90580a099d1eab3d6d9cca297fda24d7339820
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869141"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298200"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure 信息保护的信息和支持
 
@@ -38,7 +38,7 @@ ms.locfileid: "86869141"
 |检查订阅信息和支持的功能|请利用 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)页面上的订阅信息和功能列表。|
 |请参阅有关许可的常见问题解答|仔细阅读许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)。|
 |搜索或浏览当前已知问题的列表 | 请参阅[已知问题-Azure 信息保护](known-issues.md)页。
-|请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://msip.uservoice.com) 网站，并使用公司电子邮件地址登录。|
+|请求新功能或更改功能|请访问适用于 Azure 信息保护的 [UserVoice](https://office365.uservoice.com/forums/928576-microsoft-information-protection-mip) 网站，并使用公司电子邮件地址登录。|
 |与产品团队和同行沟通|访问 Azure 信息保护的 [Yammer 站点](https://www.yammer.com/AskIPTeam)。|
 |了解 Azure 信息保护专用术语|请在[术语](terminology.md)页上搜索术语或缩写。|
 
@@ -46,7 +46,7 @@ ms.locfileid: "86869141"
 
 Azure 信息保护的官方路线图现在位于[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?&filters=Azure%20Information%20Protection%2CO365%20Information%20Protection#owRoadmapMainContent)上。
 
-Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)上发布主要新版本的公告。 次要版本的公告发布在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上。还可以查看 [UserVoice 网站](https://msip.uservoice.com)，了解请求获取的功能的状态。
+Azure 信息保护产品团队在[企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)上发布主要新版本的公告。 次要版本的公告发布在 Azure 信息保护 [Yammer 网站](https://www.yammer.com/AskIPTeam)上。还可以查看 [UserVoice 网站](https://office365.uservoice.com/forums/928576-microsoft-information-protection-mip)，了解请求获取的功能的状态。
 
 可以在 [Azure 信息保护技术博客](https://aka.ms/AIPblog)上找到其他更详细的信息。 
 

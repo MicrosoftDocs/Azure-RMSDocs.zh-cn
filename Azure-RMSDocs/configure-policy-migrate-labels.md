@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7d6589022c400851d413325de51af26912af3cc4
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 02fa3ec554ef0f05079cdf0c940dff10f87b9eec
+ms.sourcegitcommit: edd0614ef6f687ff2745f56e4171cd72e03edc9c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048198"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87438173"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -55,7 +55,7 @@ ms.locfileid: "86048198"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备阶段
 
 标签迁移具有很多优点，但不可逆，因此请确保你已了解以下更改和注意事项：
 
@@ -142,9 +142,9 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 必须是符合性管理员、合规性数据管理员、安全管理员或全局管理员才能迁移标签。
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
 2. 从 "**管理**" 菜单选项中，选择 "**统一标签**"。
 
@@ -204,13 +204,15 @@ Azure 信息保护客户端（经典）可以使用列出的所有标签设置�
 
 ##### <a name="services-that-currently-support-unified-labeling-include"></a>当前支持统一标签的服务包括：
 
-- [Power BI （预览版）](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)
+- [Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)
 
-- Office Online （预览中）和 Outlook 网页
+- Web 上的 Office Online 和 Outlook
 
-- Microsoft SharePoint、OneDrive for work 或 school、OneDrive for home、团队和 Office 365 组（预览版）
+    有关详细信息，请参阅[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+
+- Microsoft SharePoint、OneDrive for work 或 school、OneDrive for home、团队和 Office 365 组
     
-    有关详细信息，请参阅[将敏感度标签与 Microsoft 团队、Office 365 组和 sharepoint 网站（公共预览版）配合使用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)和[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+    有关详细信息，请参阅[将敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 站点配合使用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 - Microsoft Defender 高级威胁防护
 

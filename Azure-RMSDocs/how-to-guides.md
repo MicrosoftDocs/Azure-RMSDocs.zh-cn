@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1a6f657db4cce2d62562ff7f20c28aae2f6e8af3
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 6308234bb778969c8e5d3b8e55260f042e501906
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136233"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298217"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
@@ -71,6 +71,6 @@ ms.locfileid: "86136233"
 
 ## <a name="next-steps"></a>后续步骤
 
-没有列出你的应用场景？ 请查看[部署路线图](deployment-roadmap.md)，了解有关规划和部署步骤的完整列表。
+没有列出你的应用场景？ 有关规划和部署步骤的完整列表，请查看[部署路线图](deployment-roadmap.md)。
 
 如果你是初次接触 Azure 信息保护，请查看[什么是 Azure 信息保护？](what-is-information-protection.md)，快速了解服务，以便开始部署。

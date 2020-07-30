@@ -12,12 +12,12 @@ ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 4b50f89c9f8d0a965b630c82461f1190bb893938
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 622786bc1192d6727ef748df970adeb53733f4f8
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048691"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298078"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>适用于 iOS 和 Android 的 Microsoft Azure 信息保护应用入门
 
@@ -37,7 +37,7 @@ ms.locfileid: "86048691"
 
 |文件类型  |说明  |
 |---------|---------|
-|**.Rpmsg 文件**     | 受权限保护的电子邮件消息。 如果你的移动电子邮件应用不以本机方式支持 rights management 数据保护，受保护的电子邮件将显示为电子邮件附件。 </br></br>使用其他设备（如 Windows 计算机上的 Outlook）向自己发送受权限保护的电子邮件，可以从移动设备访问该邮件。 </br></br>**注意：** 有关以本机方式支持 rights management 的电子邮件客户端的列表，请参阅[启用应用程序](../requirements-applications.md#rms-enlightened-applications)中的**电子邮件**列。 |
+|**.Rpmsg 文件**     | 受权限保护的电子邮件消息。 如果你的移动电子邮件应用不以本机方式支持 rights management 数据保护，受保护的电子邮件将显示为电子邮件附件。 </br></br>使用其他设备（如 Windows 计算机上的 Outlook）向自己发送受权限保护的电子邮件，可以从移动设备访问该邮件。 </br></br>**注意：** 有关以本机方式支持 rights management 的电子邮件客户端的列表，请参阅[支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)中的**电子邮件**行。 |
 |**受权限保护的 PDF 文件**     | 1. 从 Windows 计算机中，使用 AIP[经典](client-classify-protect.md)或[统一标签客户](clientv2-classify-protect.md)端客户端保护 PDF 文件。 </br>2. 向自己发送受保护的 PDF，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。        |
 |**.Ptxt 或 .pjpg 或 .ppng**     | 1. 从 Windows 计算机上，使用 AIP[经典](client-classify-protect.md)或[统一标签客户](clientv2-classify-protect.md)端客户端保护文本或图像文件。 </br></br>2. 向自己发送受保护的文件，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。 </br></br>**注意：** 有关详细信息，请参阅[分类和保护支持的文件类型](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)   |
 | | |

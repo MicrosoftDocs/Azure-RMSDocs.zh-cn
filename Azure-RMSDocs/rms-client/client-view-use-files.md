@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: f5b0ab0eacd7c95edf53135c81fe3184e9f3c46d
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: fe3309ac4ca51668b0c351f90baa79c97607e96a
+ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047280"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87298030"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-viewer"></a>用户指南：通过 Azure 信息保护查看器查看受保护的文件
 
@@ -37,7 +37,8 @@ ms.locfileid: "86047280"
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 
-必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 要按类型和受支持的设备查看应用程序列表，请参阅[启用 RMS 的应用程序](../requirements-applications.md#rms-enlightened-applications)表格。  
+必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 若要按类型和受支持的设备查看应用程序列表，请参阅[启用应用程序](../requirements-applications.md)表。
+  
 ## <a name="messagerpmsg-as-an-email-attachment"></a>作为电子邮件附件的 Message.rpmsg
 
 如果在电子邮件中看到 message.rpmsg**** 文件附件，表明此文件不是受保护文档，而是作为附件显示的受保护电子邮件。 不能使用适用于 Windows 的 Azure 信息保护查看器来查看 Windows 电脑上受保护的电子邮件。 而是需要一个支持 Rights Management 保护的 Windows 电子邮件应用程序，如 Office Outlook。 或者可以使用 Outlook 网页版。
@@ -84,5 +85,5 @@ ms.locfileid: "86047280"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
--   [你希望做什么？](client-user-guide.md#what-do-you-want-to-do)
+-   [您希望做什么？](client-user-guide.md#what-do-you-want-to-do)
 

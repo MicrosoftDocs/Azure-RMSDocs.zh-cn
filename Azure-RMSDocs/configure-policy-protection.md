@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 561997dd0807730379954c0b9eddacc8098bab93
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 141a8e6642745dc36dfd596d11b8153e20c09e69
+ms.sourcegitcommit: 58e7d6e5c1cd3f21af03fe873076f282b684fd98
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048130"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87334158"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -56,7 +56,7 @@ ms.locfileid: "86048130"
 标签应用保护时，受保护的文档不适合保存在 SharePoint 或 OneDrive 中。 对于受保护的文件，这些位置不支持以下功能：共同创作、Office 用于 web、搜索、文档预览、缩略图、电子数据展示和数据丢失防护（DLP）。
 
 > [!TIP]
-> [当你将标签迁移到](configure-policy-migrate-labels.md)统一的敏感性标签，并从标签管理中心（例如 Microsoft 365 合规中心）将其发布时，这些位置支持应用保护的标签。 有关详细信息，请参阅[在 SharePoint 和 OneDrive 中为 Office 文件启用敏感性标签（公共预览版）](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+> [当你将标签迁移到](configure-policy-migrate-labels.md)统一的敏感性标签，并从标签管理中心（例如 Microsoft 365 合规中心）将其发布时，这些位置支持应用保护的标签。 有关详细信息，请参阅[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
 用户不必事先为 Azure 信息保护配置 Exchange 即可在 Outlook 中应用标签保护其电子邮件。 但是，在为 Azure 信息保护配置 Exchange 之前，你无法获得将 Exchange 与 Azure Rights Management 保护配合使用的完整功能。 例如，用户无法在移动电话上或通过 Outlook 网页版查看受保护的电子邮件，无法将受保护的电子邮件编入索引用于搜索，并且无法为 Rights Management 保护配置 Exchange Online DLP。 若要确保 Exchange 支持这些其他方案，请参阅以下资源：
 
@@ -66,9 +66,9 @@ ms.locfileid: "86048130"
 
 ## <a name="to-configure-a-label-for-protection-settings"></a>若要配置保护设置标签
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。 
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。 
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择要更改的标签。 
 
