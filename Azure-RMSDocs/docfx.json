@@ -1,6 +1,5 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -35,7 +34,7 @@
       "feedback_system": "GitHub",
       "uhfHeaderId": "azure",
       "feedback_github_repo": "MicrosoftDocs/azure-rmsdocs.zh-cn",
-      "feedback_product_url": "https://msip.uservoice.com/",
+      "feedback_product_url": "https://office365.uservoice.com/forums/928576-microsoft-information-protection-mip",
       "layout": "Conceptual",
       "breadcrumb_path": "/azure/information-protection/bread/toc.json",
       "searchScope": [
@@ -47,6 +46,7 @@
         "MTE95",
         "Blank"
       ]
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }
