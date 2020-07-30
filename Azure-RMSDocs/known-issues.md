@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/02/2020
+ms.date: 07/28/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cec682216c07f93b36d189f3c385dc935b2f887d
-ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
+ms.openlocfilehash: 25b0b9eb6c59235bc880e5997c4698932230d387
+ms.sourcegitcommit: 3ad75dade373a0651d636533e85350cfece75120
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869629"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "87378278"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
@@ -84,14 +84,14 @@ The following known issues apply for [Protection-only mode for the Azure Informa
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|功能  |已知问题  |
+|Feature  |已知问题  |
 |---------|---------|
-|多个版本的 Office    | Azure 信息保护客户端（包括经典标签和统一标签）在同一台计算机上不支持多个 Office 版本，或在 Office 中切换用户帐户。       |
-|Office 2016 中的 IRM 支持 | Azure 信息保护标签不支持在 Office 2016 中控制元数据加密的[DRMEncryptProperty](https://docs.microsoft.com/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options)注册表设置。|
-|Word 中的内容标记    | 当页脚中还包含一个表时，Azure 信息保护内容[标记](configure-policy-markings.md)可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅[何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
-|电子邮件中的内容标记 | 仅当使用 Azure 信息保护客户端时，才支持使用动态内容标记，例如，使用宏向电子邮件添加标头/页脚。 </br></br>本机 Outlook 应用程序或 Outlook online 不支持动态内容标记。 |
-|附加到电子邮件的文件 |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
-|邮件合并    |  Azure 信息保护功能不支持 Office[邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能。       |
+|**多个版本的 Office**    | Azure 信息保护客户端（包括经典标签和统一标签）在同一台计算机上不支持多个 Office 版本，或在 Office 中切换用户帐户。       |
+|**多显示器** |如果使用多个显示器并打开 Office 应用程序，则 Azure 信息保护栏可能会显示为在办公室屏幕中间显示的浮动，其中一种或两种显示。 </br></br>若要确保栏保持在正确的位置，请打开 Office 应用程序的 "**选项**" 对话框，并在 "**常规"** 下选择 "**优化兼容性**而不是**优化以获得最佳外观"。**    |
+|**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的[DRMEncryptProperty](https://docs.microsoft.com/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options)注册表设置。|
+|**Word 中的内容标记**    | 当页脚中还包含一个表时，Azure 信息保护内容[标记](configure-policy-markings.md)可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅[何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
+|**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
+|**邮件合并**    |  Azure 信息保护功能不支持 Office[邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能。       |
 | | |
 
 <!-- removing b/c this is relevant for classic only. for UL, labels are configured in m365. so this is basically irrelevant for us.
@@ -114,7 +114,7 @@ Depending on your policy rule size limit, configuring more than 200 users or use
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详情，请参阅：
+    有关详细信息，请参阅：
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)

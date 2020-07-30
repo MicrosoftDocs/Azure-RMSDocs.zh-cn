@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 82280d50bdd16139e53d4906e908f7efcb9b6281
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: c72d1764ace998b21c17be97639239da2a6a6c19
+ms.sourcegitcommit: 58e7d6e5c1cd3f21af03fe873076f282b684fd98
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927380"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87334175"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -150,7 +150,7 @@ Azure 信息保护（AIP）为组织的文档和电子邮件提供分类、标�
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
-不是。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
+不能。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
 
 如果在未安装 Azure 信息保护策略的情况下安装经典客户端，客户端将自动在[仅保护模式下](./rms-client/client-protection-only-mode.md)运行，这使用户可以应用 Rights Management 模板和自定义权限。 
 
@@ -245,7 +245,7 @@ Azure 信息保护（AIP）为组织的文档和电子邮件提供分类、标�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
+是的。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
 如果你有 Exchange Server、SharePoint Server 和 Windows 文件服务器，请使用以下方法中的一种或两种：
 
@@ -267,7 +267,7 @@ Azure 信息保护可以分类和保护电子邮件和文档，无论它们是�
 > 
 
 > [!TIP]
-> Power BI 现在支持通过使用敏感度标签进行分类，并且可以将这些标签中的保护应用于导出为以下文件格式的数据： .pdf、.xls 和 .ppt。 有关详细信息，请参阅[Power BI （预览版）中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)。
+> Power BI 现在支持通过使用敏感度标签进行分类，并且可以将这些标签中的保护应用于导出为以下文件格式的数据： .pdf、.xls 和 .ppt。 有关详细信息，请参阅 [Power BI 中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)。
 > 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 
