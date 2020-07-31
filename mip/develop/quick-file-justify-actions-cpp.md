@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/14/2020
 ms.author: v-anikep
-ms.openlocfilehash: f50613340cc4c977239910d5047943d25239b1bc
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
+ms.openlocfilehash: 96bd94398c2a5c0bbe2cd87c12ec8e6a0af7e18b
+ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403283"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87135668"
 ---
 # <a name="microsoft-information-protection-sdk-file-api---action-justification-for-lowering-a-sensitivity-label-on-a-file-c"></a>Microsoft 信息保护 SDK 文件 API - 降低文件上敏感度标签的级别的操作理由 (C++)
 
@@ -220,4 +220,4 @@ system("pause");
     Press any key to continue . . .
    ```
 
-请注意，若根据标签策略，要从文件中删除的标签需要一个理由，则 `DeleteLabel()` 操作应遵循类似方法。`DeleteLabel()` 函数引发 `mip::JustificationRequiredError` 异常。 在成功删除该标签之前，应在异常处理中将 `isDowngradeJustified` 标记设置为 true。
+请注意，若根据标签策略，要从文件中删除的标签需要一个理由，则 `DeleteLabel()` 操作应遵循类似方法。 `DeleteLabel()` 函数引发 `mip::JustificationRequiredError` 异常。 在成功删除该标签之前，应在异常处理中将 `isDowngradeJustified` 标记设置为 true。

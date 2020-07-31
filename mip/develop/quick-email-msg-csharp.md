@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/08/2020
 ms.author: v-anikep
-ms.openlocfilehash: e9bbbde050f868fda5a31d5bab25e02280e5e826
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
+ms.openlocfilehash: 9dca0317e80f1b09331132988aad69bb5f259697
+ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403302"
+ms.lasthandoff: 07/24/2020
+ms.locfileid: "87135685"
 ---
 # <a name="file-api---process-email-msg-files-c"></a>文件 API - 处理电子邮件 .msg 文件 (C#)
 
@@ -154,5 +154,5 @@ ms.locfileid: "86403302"
 
 | “摘要” | 错误消息 | 解决方案 |
 |---------|---------------|----------|
-| NetworkException：RMS 服务在请求中检测到错误输入。 RMS 错误代码：Microsoft.RightsManagement.Exceptions.BadInputException | * * 参数 TemplateId 和 Policy 无效，它们不能为 Null。CorrelationId=f265b189-ebf6-4b30-a191-41539cdff215，CorrelationId.Description=FileHandler，HttpRequest.Id=04990d53-cf12-4969-9c80-06e365b312f2；d5fb4794-ac84-4445-abc6-647e41df62b2，HttpRequest.SanitizedUrl=https://api.aadrm.com/my/v2/publishinglicenses HttpResponse.StatusCode=400，NetworkError.Category=FailureResponseCode* | 如果项目成功生成，但出现类似于左侧的输出，则表示 templateID 可能无效。 返回到代码块并更正保护模板 ID，然后重新生成/重新测试。 |
+| NetworkException：RMS 服务在请求中检测到错误输入。 RMS 错误代码：Microsoft.RightsManagement.Exceptions.BadInputException | * 如果 TemplateID 和 Policy 均为 Null，则参数无效。CorrelationId=f265b189-ebf6-4b30-a191-41539cdff215, CorrelationId.Description=FileHandler, HttpRequest.Id=04990d53-cf12-4969-9c80-06e365b312f2;d5fb4794-ac84-4445-abc6-647e41df62b2, HttpRequest.SanitizedUrl=https://api.aadrm.com/my/v2/publishinglicenses, HttpResponse.StatusCode=400, NetworkError.Category=FailureResponseCode* | 如果项目成功生成，但出现类似于左侧的输出，则表示 templateID 可能无效。 返回到代码块并更正保护模板 ID，然后重新生成/重新测试。 |
 | TemplateNotFoundException | 无法识别模板 ID。CorrelationId=abb2ef59-ad09-4aa0-b731-f59a92711dad，CorrelationId.Description=FileHandler，HttpRequest.Id=8c688752-ccd2-4dca-ace3-b67b44176689；78538a57-a9fd-4717-8924-33581a04598b | 如果项目成功生成，但出现类似于左侧的输出，则表示 templateID 可能无效。 返回到代码块并更正保护模板 ID，然后重新生成/重新测试。 |

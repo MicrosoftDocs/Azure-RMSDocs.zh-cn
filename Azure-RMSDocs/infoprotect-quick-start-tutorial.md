@@ -1,21 +1,21 @@
 ---
 title: 教程 - 编辑 Azure 信息保护策略 - AIP
 description: 介绍如何为组织编辑 Azure 信息保护策略的入门教程，大概需要 15 分钟完成。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/13/2020
+ms.date: 07/20/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 114da5bb9c37669a478d01c9637dc06a7f5d1b85
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 239b441705ce7d90b7960babf44ac32513db4bfd
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048453"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927499"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -56,17 +56,17 @@ ms.locfileid: "86048453"
 
 4. 你已从下列类别之一登录到 Office 应用：
     
-    - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
+    - Office 应用最低版本 1805，[Microsoft 365 商业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
-    - Office 365 专业增强版。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)。
     
-    - Office 专业增强版 2019。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2019。
     
-    - Office Professional Plus 2016。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2016。
     
-    - Office Professional Plus 2013 Service Pack 1。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1。
     
-    - Office Professional Plus 2010 Service Pack 2。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2。
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
 

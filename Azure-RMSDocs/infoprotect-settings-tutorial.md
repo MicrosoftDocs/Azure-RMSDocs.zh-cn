@@ -1,21 +1,21 @@
 ---
 title: 教程 - 使用 Azure 信息保护策略设置进行数据分类
 description: 本入门教程介绍如何配置 Azure 信息保护策略设置，从而帮助对组织的文档和电子邮件进行分类。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 07/20/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 1cffeff37cde8f3241b4f91997125efb0467fd1a
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 78132da7a22264af3412197f1bf8c42da61e8740
+ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047858"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "86927516"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -60,17 +60,17 @@ ms.locfileid: "86047858"
 
 4. 你已从下列类别之一登录到 Office 应用：
     
-    - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
+    - Office 应用最低版本 1805，[Microsoft 365 商业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
-    - Office 365 专业增强版。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)。
     
-    - Office 专业增强版 2019。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2019。
     
-    - Office Professional Plus 2016。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2016。
     
-    - Office Professional Plus 2013 Service Pack 1。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1。
     
-    - Office Professional Plus 2010 Service Pack 2。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2。
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
 
@@ -100,7 +100,7 @@ ms.locfileid: "86047858"
     |-------|-----|-----|
     |**选择默认标签**|**常规**|“常规”  标签是 Azure 信息保护可为你创建的默认标签之一。 [创建和发布标签](quickstart-viewpolicy.md#create-and-publish-labels)快速入门中介绍了此步骤。 如果没有名为“常规”  的标签，可以从下拉列表中选择另一个标签。 未标记的文档和电子邮件将自动应用此标签作为基本分类。 不过，用户可以将所选标签更改为其他标签。|
     |**强制所有文档和电子邮件都具有标签**|**开**|此设置通常称为强制标记，因为它可以防止用户保存文档或发送未标记的电子邮件。 连同默认标签，文档和电子邮件将具有你设置的默认标签或它们选择的标签。
-    |**对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**|推荐 |如果用户附加的文档的分类级别高于所选默认标签，此设置会提示用户为其电子邮件选择更高级别的分类标签。
+    |**对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签**|推荐|如果用户附加的文档的分类级别高于所选默认标签，此设置会提示用户为其电子邮件选择更高级别的分类标签。
     |**在 Office 应用程序中显示“信息保护”栏**|**开**|显示“信息保护”栏后，用户可以更轻松地查看和更改默认标签。
     
     设置现在应如下所示：
