@@ -10,14 +10,10 @@
       items:
         - name: 概述
           href: requirements.md
-        - name: Azure Active Directory 要求
+        - name: 附加 Active Directory 要求
           href: requirements-azure-ad.md
-        - name: 针对保护措施的客户端设备支持
-          href: requirements-client-devices.md
         - name: 针对保护措施的应用程序支持
           href: requirements-applications.md
-        - name: 针对保护措施的本地设备支持
-          href: requirements-servers.md
     - name: AIP 也称为…
       href: aka.md
 - name: 快速入门
@@ -94,7 +90,13 @@
     - name: 为服务进行规划并做好准备
       items:
         - name: 部署路线图
-          href: deployment-roadmap.md
+          items:
+            - name: 概述
+              href: deployment-roadmap.md
+            - name: 用于分类、标签和保护的路线图
+              href: deployment-roadmap-classify-label-protect.md
+            - name: 仅用于保护的路线图（经典客户端）
+              href: deployment-roadmap-protect-only.md
         - name: 计划和实现你的租户密钥
           items:
             - name: 支持的密钥类型
