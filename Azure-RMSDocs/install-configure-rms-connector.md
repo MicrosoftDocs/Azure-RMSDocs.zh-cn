@@ -4,7 +4,7 @@ description: 可以参考本文中的信息来安装和配置 Azure Rights Manag
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 12/05/2019
+ms.date: 07/28/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,36 +13,40 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1a9bab55999334830c94f64bc32339135db70c5a
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 0a02d5bb811bd18698a0ca4ec0a797ff4e31ffa4
+ms.sourcegitcommit: a495476a439a57cf6a4b3446575e344504b3fefb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136842"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87554929"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装和配置 Azure Rights Management 连接器
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
+>*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、2016、2012 R2 和 Windows server 2012*
 
 可以参考以下信息来安装和配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
 在开始之前，请确保已查看并检查此部署的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
+请确保你已了解连接器的正确 Azure 主权云实例才能完成安装和配置： 
+- **AzureCloud**： Azure 的商业产品
+- **AzureChinaCloud**：由世纪互联运营的 Azure
+- **AzureUSGovernment**： Azure 政府 (GCC 高/DoD) 
+- **AzureUSGovernment2**： Azure 政府版2
+- **AzureUSGovernment3**： Azure 政府版3
 
 ## <a name="installing-the-rms-connector"></a>安装 RMS 连接器
 
-1.  标识运行 RMS 连接器的计算机（最少两台）。 这些计算机必须满足先决条件中列出的最低规格。
+1.  确定 (两个) 的计算机运行 RMS 连接器。 这些计算机必须满足先决条件中列出的最低规格。
 
     > [!NOTE]
-    > 备注为每个租户（Office 365 租户或 Azure AD 租户）安装单个 RMS 连接器（包含多个服务器以实现高可用性）。 与 Active Directory RMS 不同，无需在每个林中安装 RMS 连接器。
+    > 安装单个 RMS 连接器 (包含多个服务器以实现高可用性) 每个租户 (Microsoft 365 租户或 Azure AD 租户) 。 与 Active Directory RMS 不同，无需在每个林中安装 RMS 连接器。
 
 2.  从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载 RMS 连接器的源文件。
 
     若要安装 RMS 连接器，请下载 RMSConnectorSetup.exe。
 
     此外：
-
-    -   如果以后要从 32 位计算机配置连接器，请下载 RMSConnectorAdminToolSetup_x86.exe。
 
     -   若要使用 RMS 连接器的服务器配置工具以自动执行本地服务器上的注册表设置的配置，另请下载 GenConnectorConfig.ps1。
 
@@ -52,20 +56,25 @@ ms.locfileid: "86136842"
 
 5.  阅读并同意 RMS 连接器许可条款，然后单击 **“下一步”**。
 
-若要继续，请输入帐户和密码以配置 RMS 连接器。
 
 ## <a name="entering-credentials"></a>输入凭据
-在能够配置 RMS 连接器之前，必须输入具有足够 RMS 连接器配置权限的帐户的凭据。 例如，你可以键入 <strong>admin@contoso.com</strong> ，然后指定此帐户的密码。
 
-此帐户不得要求进行多重身份验证（MFA），因为 Microsoft Rights Management 连接器安装程序不支持 MFA。 此外，如果使用 Azure AD 条件性访问，则不要阻止对此帐户的[旧身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)。
+在配置 RMS 连接器之前，必须先选择与解决方案匹配的云环境。   
+- **AzureCloud**： Azure 的商业产品
+- **AzureChinaCloud**：由世纪互联运营的 Azure
+- **AzureUSGovernment**： Azure 政府 (GCC 高/DoD) 
+- **AzureUSGovernment2**： Azure 政府版2
+- **AzureUSGovernment3**： Azure 政府版3
 
-连接器设置对于此密码还有一些字符限制。 不能使用包含以下任何字符的密码： & 号（ **&** ）、左尖括号（ **[** ）、右尖括号（ **]** ）、直引号（ **"** ）;和撇号（ **'** ）。 如果你的密码包含上述任一字符，则 RMS 连接器设置的身份验证将失败，并且你会看到错误消息 "**用户名" 和 "密码" 组合不正确**，即使你可以使用此帐户和密码在其他情况下成功登录也是如此。 如果方案适用于密码，请使用密码不包含上述任一特殊字符的其他帐户，或者重置密码使其不包含上述任一特殊字符。
+:::image type="content" source="media/authenticate_tenant_rms_connector.png" alt-text="选择正确的 Azure 环境以对新的 AAD RM 连接器进行身份验证":::
 
-此外，如果实施了[加入控制机制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果不是，则会看到错误消息：**尝试发现管理服务和组织的位置失败。请确保为你的组织启用 Microsoft Rights Management 服务。**
+进行云环境选择后，请输入**用户名**和**密码**。 请确保输入的凭据具有足够的权限来配置 RMS 连接器。 例如，你可以键入 <strong>admin@contoso.com</strong> ，然后指定此帐户的密码。
+
+此外，如果实施了[加入控制机制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果没有，你将看到错误消息：**发现管理服务和组织位置的尝试失败。请确保为你的组织启用 Microsoft Rights Management 服务。**
 
 可以使用具有以下某一种权限的帐户：
 
--   **租户的全局管理员**：作为 Office 365 租户或 Azure AD 租户全局管理员的帐户。
+-   **租户的全局管理员**：作为 Microsoft 365 租户或 Azure AD 租户全局管理员的帐户。
 
 -   **Azure Rights Management 全局管理员**：Azure Active Directory 中已分配为 Azure RMS 全局管理员角色的帐户。
 
@@ -81,7 +90,7 @@ ms.locfileid: "86136842"
     >     使用 "以**管理员身份运行**" 命令启动 Windows PowerShell，并使用[AipService](/powershell/module/aipservice/connect-aipservice)命令连接到保护服务：
     >
     >     ```
-    >     Connect-AipService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
+    >     Connect-AipService                   //provide Microsoft 365 tenant administrator or Azure RMS global administrator credentials
     >     ```
     > 2.  然后，仅使用以下参数之一运行[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)命令：
     >
@@ -102,7 +111,7 @@ ms.locfileid: "86136842"
 
 在 RMS 连接器安装过程中，将会验证和安装所有必备软件。如果还没有 Internet Information Services (IIS)，则会安装该服务。另外还要安装并配置连接器软件。 此外，还会创建以下各项，做好配置 Azure RMS 的准备：
 
--   一个空表，用于列出被授权使用连接器与 Azure RMS 通信的服务器。 以后可将服务器添加至此表。
+-   一个空表，用于列出被授权使用连接器与 Azure RMS 通信的服务器。 稍后将服务器添加到此表中。
 
 -   一组连接器安全令牌，授权对 Azure RMS 所进行的操作。 可从 Azure RMS 下载这些令牌，并安装在注册表中的本地计算机上。 它们通过使用数据保护应用程序编程接口 (DPAPI) 和本地系统帐户凭据得到保护。
 
@@ -225,7 +234,7 @@ ms.locfileid: "86136842"
 ## <a name="installing-the-rms-connector-administration-tool-on-administrative-computers"></a>在管理计算机上安装 RMS 连接器管理工具
 可以在未安装 RMS 连接器的计算机上运行 RMS 连接器管理工具，前提是该计算机符合以下要求：
 
--   运行 Windows Server 2012 或 Windows Server 2012 R2 （所有版本）、Windows 8.1、Windows 8 的物理或虚拟计算机。
+-   运行 Windows Server 2019、2016、2012或 Windows Server 2012 R2 的物理或虚拟计算机 (所有版本) 、Windows 10、Windows 8.1、Windows 8。
 
 -   至少 1 GB 的 RAM。
 
@@ -233,11 +242,9 @@ ms.locfileid: "86136842"
 
 -   至少一个网络接口。
 
--   通过防火墙（或 web 代理）访问 internet。
+-   通过防火墙 (或 web 代理) 访问 internet。
 
 若要安装 RMS 连接器管理工具，请运行以下文件：
-
--   对于 32 位计算机：运行 RMSConnectorAdminToolSetup_x86.exe
 
 -   对于 64 位计算机：运行 RMSConnectorSetup.exe
 
