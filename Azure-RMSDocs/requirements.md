@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 758e3ed214815393206ebe04085c9d61b5116d80
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: cb55fb0acedc56c2b866d7ce681320c2dc9c2fcd
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298115"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802109"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -36,7 +36,7 @@ ms.locfileid: "87298115"
 
 根据要使用的 Azure 信息保护功能，必须执行以下操作之一：
 
-- ** [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)**。 需要使用 Azure 信息保护扫描程序或客户端进行分类、标记和保护（经典或统一标签）
+- ** [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)**。 使用 Azure 信息保护扫描程序或客户端 (经典或统一标签) 进行分类、标记和保护所必需的
 
 - **[包含 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)**。 仅用于保护。
 
@@ -57,17 +57,17 @@ ms.locfileid: "87298115"
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-若要支持 Azure 信息保护的身份验证和授权，必须有 Azure Active Directory （AD）。 若要使用本地控制器（AD DS）中的用户帐户，还必须配置目录集成。
+若要支持 Azure 信息保护的身份验证和授权，必须 (AD) Azure Active Directory。 若要从本地控制器使用用户帐户 (AD DS) ，还必须配置目录集成。
 
-- Azure 信息保护支持**单一登录（SSO）** ，以便不会重复提示用户输入其凭据。 如果使用其他供应商解决方案进行联合身份验证，请咨询该供应商，了解如何配置它以进行 Azure AD。 WS-Trust 是这些解决方案支持单一登录所需满足的常见要求。 
+- Azure 信息保护支持**单一登录 (SSO) ** ，因此不会重复提示用户输入其凭据。 如果使用其他供应商解决方案进行联合身份验证，请咨询该供应商，了解如何配置它以进行 Azure AD。 WS-Trust 是这些解决方案支持单一登录所需满足的常见要求。 
 
-- 如果你具有所需的客户端软件并正确配置了 MFA 支持的基础结构，则 Azure 信息保护支持**多重身份验证（MFA）** 。
+- 如果你具有所需的客户端软件并正确配置了 MFA 支持基础结构，则 Azure 信息保护支持**多重身份验证 (MFA) ** 。
 
 预览版支持按条件访问受 Azure 信息保护进行保护的文档。 有关详细信息，请参阅：[我看到 Azure 信息保护被列为可用于条件访问的云应用-这是如何工作的？](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 特定方案需要其他先决条件，如使用 Office 2010、基于证书或多重身份验证时，或者 UPN 值与用户电子邮件地址不匹配时。 有关详细信息，请参阅[Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 - 将[本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
@@ -85,9 +85,9 @@ ms.locfileid: "87298115"
 
 以下操作系统支持 Azure 信息保护统一标签和 Azure 信息保护客户端： 
 
-- **Windows 10** （x86、x64）。 Windows 10 RS4 build 和更高版本不支持手写。
+- **Windows 10** (x86、x64) 。 Windows 10 RS4 build 和更高版本不支持手写。
  
-- **Windows 8.1** （x86、x64）
+- **Windows 8.1** (x86、x64) 
 
 - **Windows 8** (x86, x64)
 
@@ -108,7 +108,7 @@ ms.locfileid: "87298115"
 ### <a name="virtual-machines"></a>虚拟机
 如果使用的是虚拟机，请检查虚拟桌面解决方案的软件供应商是否为运行 Azure 信息保护统一标签或 Azure 信息保护客户端所需的其他配置。 
 
-例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office、Azure 信息保护统一标签客户端或 Azure 信息保护客户端的[Citrix 应用程序编程接口（API）挂钩](https://support.citrix.com/article/CTX107825)。 
+例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)、Azure 信息保护统一标签客户端或 Azure 信息保护客户端。 
 
 这些应用程序分别使用以下文件： **winword.exe**、 **excel.exe**、 **outlook.exe**、 **powerpnt.exe**、 **msip.app.exe**、 **msip.viewer.exe**
 
@@ -132,23 +132,23 @@ ms.locfileid: "87298115"
 
 Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **PowerPoint**和**Outlook**的任何以下 Office 版本来标记并保护文档和电子邮件：
 
-- **Office 应用最小版本 1805**，从[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)生成9330.2078。 
+- **Office 应用最小版本 1805**，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 
 
     仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
-- **[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office 365 ProPlus**
 
-- **[适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office Professional Plus 2019**
 
-- **[适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office Professional Plus 2016**
 
-- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2013 Service Pack 1 的应用**
+- **带有 Service Pack 1 的 Office Professional Plus 2013**
 
-- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2010 Service Pack 2 的应用**
+- **带有 Service Pack 2 的 Office Professional Plus 2010**
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护，而不会为用户显示应用保护的标签。 
 
-这些标签会在 Azure 信息保护栏上或在 Office 功能区的统一标签客户端中显示（通过经典客户端中的 "**保护**" 按钮或统一标签客户端中的 "**敏感度**" 按钮）。 
+这些标签在 Azure 信息保护栏上或在 Office 功能区的统一标签客户端中显示， (从经典客户端中的 "**保护**" 按钮或在统一标签客户端) 中的 "**敏感度**" 按钮上。 
 
 有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
@@ -183,11 +183,11 @@ Azure 信息保护具有以下附加要求：
     
     如果你看到的颁发 CA 名称不是 Microsoft，则可能是安全客户端到服务连接被终止，需要在防火墙上重新配置。
 
-- **TLS 版本1.2 或更高版本**（仅限统一标签客户端）。 统一标签客户端需要1.2 或更高版本的 TLS 版本，以确保使用加密的安全协议，并与 Microsoft 安全指南保持一致。
+- **TLS 版本1.2 或更高版本** (仅) 的统一标签客户端。 统一标签客户端需要1.2 或更高版本的 TLS 版本，以确保使用加密的安全协议，并与 Microsoft 安全指南保持一致。
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
-在同一个组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容，**只**支持使用 Azure 信息保护在[HYOK （拥有自己的密钥）保护](configure-adrms-restrictions.md)的 AD RMS。
+在同一个组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容，**仅**支持 AD RMS 在 HYOK (使用 Azure 信息保护[保留你自己的密钥) 保护](configure-adrms-restrictions.md)。
 
 [迁移](migrate-from-ad-rms-to-azure-rms.md)期间*不*支持此方案。
 支持的迁移路径包括：
@@ -233,7 +233,7 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
 |---------|---------|
 |**Exchange Server**     | -Exchange Server 2016 </br>-Exchange Server 2013 </br>-Exchange Server 2010       |
 |**Office SharePoint Server**     |-Office SharePoint Server 2016 </br>-Office SharePoint Server 2013 </br>-Office SharePoint Server 2010         |
-|**运行 Windows Server 和使用文件分类基础结构（FCI）的文件服务器**     |- Windows Server 2016 </br>- Windows Server 2012 R2 </br>- Windows Server 2012       |
+|**运行 Windows Server 并使用文件分类基础结构的文件服务器 (FCI) **     |- Windows Server 2016 </br>- Windows Server 2012 R2 </br>- Windows Server 2012       |
 | | |
 
 <!-- i think that half of this note was removed at some point, without this other half. keeping it here in case we ever need it..>
@@ -246,9 +246,9 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
 
 以下操作系统支持 Azure Rights Management 服务，该服务为 AIP 提供数据保护：
 
-|(OS)  |支持的版本  |
+|OS  |支持的版本  |
 |---------|---------|
-|**Windows 计算机**     |-Windows 7 （x86、x64） </br>- Windows 8（x86、x64） </br>- Windows 8.1（x86、x64） </br>- Windows 10（x86、x64）       | 
+|**Windows 计算机**     |-Windows 7 (x86、x64)  </br>- Windows 8（x86、x64） </br>- Windows 8.1（x86、x64） </br>- Windows 10（x86、x64）       | 
 |**macOS**     |   最低版本为 macOS 10.8 (Mountain Lion)      |
 |**Android 手机和平板电脑**     | 最小版本的 Android 6。0        |
 |**iPhone 和 iPad**     | 最小版本的 iOS 11。0        |

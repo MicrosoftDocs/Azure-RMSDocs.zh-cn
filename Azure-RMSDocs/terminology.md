@@ -1,10 +1,10 @@
 ---
-title: Azure 信息保护的术语（AIP）
-description: 与 Microsoft Azure 信息保护（AIP）相关的单词、短语或首字母缩写词有混淆吗？ 在此处查找特定于 AIP 的术语和缩写的定义，或者在此服务的上下文中使用时具有特定含义。
+title: 'Azure 信息保护的术语 (AIP) '
+description: 与 Microsoft Azure 信息保护 (AIP) 相关的单词、短语或首字母缩写词感到困惑？ 在此处查找特定于 AIP 的术语和缩写的定义，或者在此服务的上下文中使用时具有特定含义。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,19 +14,19 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 0dafc8df5e9c48517b13c9d0204c8d4b159783a3
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 352e41b1ca511e3ef0487eb680a331339ce457dd
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927346"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802192"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。
 
@@ -37,7 +37,7 @@ ms.locfileid: "86927346"
 ### <a name="a"></a>A
 |术语|定义|
 |--------|--------------|
-|**AADRM**|保护服务的第一个 PowerShell 模块（Azure Rights Management）的名称，它是以前命名（Windows） Azure Active Directory Rights Management 时，派生自 Azure Rights Management 的非正式缩写。 </br></br>此 PowerShell 模块现已替换为 AIPService 模块。|
+|**AADRM**|保护服务的第一个 PowerShell 模块的名称 (Azure Rights Management) ，它派生自以前在 Azure Rights Management 的非正式缩写中 () Azure Active Directory Rights Management。 </br></br>此 PowerShell 模块现已替换为 AIPService 模块。|
 |**启用**|启用 Azure Rights Management 保护服务，使组织可以保护其文档和电子邮件。 </br></br>此操作还会在 Exchange Online 和 Microsoft SharePoint 中启用 IRM 功能。|
 |**Active Directory 权限管理服务**|往往缩写为 *AD RMS*。<br /><br />一个 Windows Server 角色，它使用加密和策略来提供权限管理保护以帮助保护文档、文件和电子邮件。|
 |**AD RMS**|请参阅 *Active Directory Rights Management 服务*。|
@@ -133,10 +133,10 @@ ms.locfileid: "86927346"
 
 |术语|定义|
 |--------|--------------|
-|**Microsoft 信息保护**| 有时缩写为*MIP*。<br /><br /> 一个框架，适用于产品和集成功能，使用相同的标记存储（"统一标签"），有助于保护组织的敏感信息。|
+|**Microsoft 信息保护**| 有时缩写为*MIP*。<br /><br /> 一种框架，适用于使用相同标签存储 ( "统一标签" 的产品和集成功能 ) 并帮助你保护组织的敏感信息。|
 |**MIP**| 请参阅*Microsoft 信息保护*|
 |**MSDRM**|有时在 RMS 客户端 1.0（现已被新的客户端 MSIPC 取代）的参考信息中出现。 </br></br>这个旧版客户端支持使用 RMS SDK 1.0 开发的应用程序，并支持 Office 2010 和 Office 2007、Exchange 2010 和 Exchange 2013 以及 SharePoint 2010 和 SharePoint 2007。|
-|**MSIPC**|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 </br></br>此更高版本的客户端支持开发 RMS SDK 2.0 的应用程序，并支持企业、Office 2019、Office 2016、Office 2013、SharePoint 2013 和 Azure 信息保护客户端 Microsoft 365 应用。|
+|**MSIPC**|有时在 RMS 客户端 2.0（取代了旧版 RMS 客户端 MSDRM）的参考信息中出现。 </br></br>这个较新版客户端支持使用 RMS SDK 2.0 开发的应用程序，并支持 Office 365 专业增强版、Office 2019、Office 2016、Office 2013、SharePoint 2013 和 Azure 信息保护客户端。|
 | | |
 
 ### <a name="n"></a>N
@@ -191,7 +191,7 @@ ms.locfileid: "86927346"
 
 |术语|定义|
 |--------|--------------|
-|**租户密钥**|也称为*服务器许可方证书（SLC）密钥*。<br /><br />组织独有的密钥，可为链接到此租户密钥的所有 Rights Management 加密功能提供终极保护。|
+|**租户密钥**|也称为*服务器许可方证书 (SLC) 密钥*。<br /><br />组织独有的密钥，可为链接到此租户密钥的所有 Rights Management 加密功能提供终极保护。|
 
 ### <a name="u"></a>U
 

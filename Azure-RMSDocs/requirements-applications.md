@@ -1,10 +1,10 @@
 ---
 title: 适用于 Azure 信息保护的 RMS 数据保护的应用程序支持
-description: 确定对 Azure Rights Management （Azure RMS）服务的本机支持的应用程序和解决方案。 Azure RMS 为 Azure 信息保护提供数据保护（AIP）。
+description: 确定对 Azure Rights Management (Azure RMS) 服务的本机支持的应用程序和解决方案。 Azure RMS 为 Azure 信息保护提供数据保护 (AIP) 。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9ed56f635c4210c9989fb0e02209f4e3c29129a3
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: 37cb3b1f3c3eb60459cabe813f0cb00fb69b7d5b
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298166"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802158"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-此页上列出的应用程序和解决方案对 Azure Rights Management （Azure RMS）服务提供本机支持，该服务为 Azure 信息保护提供数据保护。
+此页上列出的应用程序和解决方案对 Azure Rights Management (提供对 Azure 信息保护的数据保护的 Azure) Azure RMS 的本机支持。
 
 这些应用程序和解决方案称为 "enlighted"，并使用 Rights Management Api 紧密集成 Rights Management 和[使用限制](configure-usage-rights.md)。
 
@@ -38,8 +38,8 @@ ms.locfileid: "87298166"
 
 |类型  |支持的应用程序   |
 |---------|---------|
-|**Word、Excel、PowerPoint**    | - [Office 365 应用](#office-365-app-support) <br />- Office 2010 <br />-Office 2013<br />- Office 2016 <br />-Office 2019 <br />- [用于 web 的 Office （查看受保护的文档）](#viewing-protected-documents-in-office-for-the-web)<br />- [Web 浏览器](#web-browser-support)        |
-|[**电子邮件**](#viewing-protected-content-in-email-clients)      |   -Outlook 2010<br />-Outlook 2013<br />-Outlook 2016 <br />-Outlook 2019 <br />-来自适用于企业 Microsoft 365 应用的 Office 中的 Outlook<br />- [Web 浏览器](#web-browser-support)<br />- [Windows Mail](#email-clients-using-exchange-activesync-irm)|
+|**Word、Excel、PowerPoint**    | - [Office 365 应用](#office-365-app-support) <br />- Office 2010 <br />-Office 2013<br />- Office 2016 <br />-Office 2019 <br />- [Office for web (查看受保护的文档) ](#viewing-protected-documents-in-office-for-the-web)<br />- [Web 浏览器](#web-browser-support)        |
+|[**电子邮件**](#viewing-protected-content-in-email-clients)      |   -Outlook 2010<br />-Outlook 2013<br />-Outlook 2016 <br />-Outlook 2019 <br />-Office 365 ProPlus 中的 Outlook<br />- [Web 浏览器](#web-browser-support)<br />- [Windows Mail](#email-clients-using-exchange-activesync-irm)|
 |[**其他文件类型**](#supported-text-and-image-file-types)    |  -Office 365 应用、Office 2019 和 Office 2016： **. .vsdm、** **.vsdx、** **. .vssm**、 **.vstm**、 **.vssx**、 **.vstx** <br />-适用于 Windows 的 Azure 信息保护客户端：文本、图像、 **.pfile** <br />-用于 AutoCAD 的 SealPath RMS 插件： **。 dwg**       |
 | | |
 
@@ -56,8 +56,8 @@ ms.locfileid: "87298166"
 
 |类型  |支持的应用程序   |
 |---------|---------|
-|**Word、Excel、PowerPoint**    |-适用于 Android 的 GigaTrust 应用<br />- [适用于 web 的 Office](#viewing-protected-documents-in-office-for-the-web)<br />-Office Mobile （除非使用敏感度标签，仅限于查看和编辑受保护的文档） <br />- [Web 浏览器](#web-browser-support)      |
-|[**电子邮件**](#viewing-protected-content-in-email-clients)     | - [9Folders](#email-clients-using-exchange-activesync-irm)<br />-Azure 信息保护应用（查看受保护的电子邮件）<br />-BlackBerry 工作 <br />- [适用于 Android 的 GigaTrust 应用](#email-clients-using-exchange-activesync-irm) <br />-Citrix WorxMail <br />- [NitroDesk](#email-clients-using-exchange-activesync-irm)<br />- [适用于 Android 的 Outlook](#email-clients-using-exchange-activesync-irm)<br />- [Samsung Email （S3 及更高版本）](#email-clients-using-exchange-activesync-irm)<br />-移动的 TITUS 分类 <br /><br />- [Web 浏览器](#web-browser-support)       |
+|**Word、Excel、PowerPoint**    |-适用于 Android 的 GigaTrust 应用<br />- [适用于 web 的 Office](#viewing-protected-documents-in-office-for-the-web)<br />-Office Mobile (，除非使用敏感度标签，仅限于查看和编辑受保护的文档)  <br />- [Web 浏览器](#web-browser-support)      |
+|[**电子邮件**](#viewing-protected-content-in-email-clients)     | - [9Folders](#email-clients-using-exchange-activesync-irm)<br />-Azure 信息保护应用 (查看受保护的电子邮件) <br />-BlackBerry 工作 <br />- [适用于 Android 的 GigaTrust 应用](#email-clients-using-exchange-activesync-irm) <br />-Citrix WorxMail <br />- [NitroDesk](#email-clients-using-exchange-activesync-irm)<br />- [适用于 Android 的 Outlook](#email-clients-using-exchange-activesync-irm)<br />- [Samsung Email (S3 及更高版本) ](#email-clients-using-exchange-activesync-irm)<br />-移动的 TITUS 分类 <br /><br />- [Web 浏览器](#web-browser-support)       |
 |[**其他文件类型**](#supported-text-and-image-file-types)    |  Azure 信息保护应用（查看受保护的文本和图像）  |
 | | |
 
@@ -67,16 +67,16 @@ ms.locfileid: "87298166"
 |类型  |支持的应用程序   |
 |---------|---------|
 |**Word、Excel、PowerPoint**    |  -GigaTrust<br />-Office Mobile <br />- [适用于 web 的 Office](#viewing-protected-documents-in-office-for-the-web)<br />-TITUS 文档<br />- [Web 浏览器](#web-browser-support)    |
-|[**电子邮件**](#viewing-protected-content-in-email-clients)     |   -Azure 信息保护应用（查看受保护的电子邮件）<br />-BlackBerry 工作<br />-Citrix WorxMail <br />- [NitroDesk](#email-clients-using-exchange-activesync-irm)<br />- [适用于 iPad 和 iPhone 的 Outlook](#email-clients-using-exchange-activesync-irm)<br />-TITUS Mail <br />- [Web 浏览器](#web-browser-support)     |
-|[**其他文件类型**](#supported-text-and-image-file-types)     | -Azure 信息保护应用（查看保护文本和图像）<br />-TITUS 文档： **.pfile**  |
+|[**电子邮件**](#viewing-protected-content-in-email-clients)     |   -Azure 信息保护应用 (查看受保护的电子邮件) <br />-BlackBerry 工作<br />-Citrix WorxMail <br />- [NitroDesk](#email-clients-using-exchange-activesync-irm)<br />- [适用于 iPad 和 iPhone 的 Outlook](#email-clients-using-exchange-activesync-irm)<br />-TITUS Mail <br />- [Web 浏览器](#web-browser-support)     |
+|[**其他文件类型**](#supported-text-and-image-file-types)     | -Azure 信息保护应用 (查看保护文本和图像) <br />-TITUS 文档： **.pfile**  |
 | | |
 
 ## <a name="windows-10-mobile-rms-enlightened-applications"></a>Windows 10 移动版 RMS-启用应用程序
 
 |类型  |支持的应用程序   |
 |---------|---------|
-|**Word、Excel、PowerPoint**    | -Office 移动应用（使用 Azure RMS 查看受保护的文档） <br />- [Web 浏览器](#web-browser-support)    |
-|[**电子邮件**](#viewing-protected-content-in-email-clients)    |  -Citrix WorxMail <br />-Outlook Mail （查看受保护的电子邮件） <br />- [Web 浏览器](#web-browser-support)     |
+|**Word、Excel、PowerPoint**    | -Office 移动应用 (使用 Azure RMS) 查看受保护的文档 <br />- [Web 浏览器](#web-browser-support)    |
+|[**电子邮件**](#viewing-protected-content-in-email-clients)    |  -Citrix WorxMail <br />-Outlook Mail (查看受保护的电子邮件)  <br />- [Web 浏览器](#web-browser-support)     |
 |[**其他文件类型**](#supported-text-and-image-file-types)    | 不支持   |
 | | |
 
@@ -99,7 +99,7 @@ ms.locfileid: "87298166"
 - [Office 365 应用支持](#office-365-app-support)
 - [在 Office for web 中查看受保护的文档](#viewing-protected-documents-in-office-for-the-web)
 - [Web 浏览器支持](#web-browser-support)
-- [使用 Exchange ActiveSync 信息 Rights Management （IRM）的电子邮件客户端](#email-clients-using-exchange-activesync-irm)
+- [使用 Exchange ActiveSync 信息 Rights Management (IRM) 的电子邮件客户端](#email-clients-using-exchange-activesync-irm)
 
 ### <a name="viewing-protected-content-in-email-clients"></a>查看电子邮件客户端中的受保护内容
 
@@ -123,8 +123,8 @@ Office 文件和电子邮件消息以外的文件类型包括文本和图像文�
 ### <a name="office-365-app-support"></a>Office 365 应用支持
 
 包括： 
-- Office 应用最小版本1805，从[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)生成9330.2078。 仅当向用户分配 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时才支持此功能。
-- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)。
+- Office 应用最小版本1805，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 仅在向用户分配 Azure Rights Management 的许可证时才受支持 (也称为 Azure 信息保护 "Office 365) "。
+- Office 365 ProPlus 应用。
 
 ### <a name="viewing-protected-documents-in-office-for-the-web"></a>在 Office for web 中查看受保护的文档
 
@@ -170,16 +170,25 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 以下 Office 客户端套件支持使用 Azure Rights Management 服务保护 Windows 计算机上的文件和电子邮件：
 
-|Office 版本  |支持详细信息  |
-|---------|---------|
-|[**适用于企业的 Microsoft 365 应用**](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)     |  为用户分配 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，Office 应用最低版本1805，版本9330.2078。       |
-|[**适用于企业的 Microsoft 365 应用**](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)     | 大多数（但不是全部） Office 365 订阅都包含以下 Office 版本，其中包括来自 Azure 信息保护的数据保护。 </br>检查你的订阅信息，查看是否包含适用于企业的 Microsoft 365 应用。 你还可以在 [Azure 信息保护数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。 </br></br>-适用于企业2019的 Microsoft 365 应用 </br>-适用于企业2016的 Microsoft 365 应用 </br>-适用于企业2013的 Microsoft 365 应用 </br>-Microsoft 365 适用于企业 2010 Service Pack 2 的应用       |
+- **Office 应用最小版本1805，在向用户分配 azure Rights Management 许可证时，从 office 365 Business 或 Microsoft 365 商业版生成 9330.2078**)  (也称为 azure 信息365保护
+
+- **Office 365 ProPlus**
+
+    包含 Azure 信息保护数据保护的大多数 Office 365 订阅（并非所有）都附带这些版本的 Office。 检查你的订阅信息，确定是否包含 Office 365 专业增强版。 你还可以在 [Azure 信息保护数据表](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)中找到此信息。
+
+- **Office Professional Plus 2019**
+
+- **Office Professional Plus 2016**
+
+- **Office Professional Plus 2013**
+
+- **带有 Service Pack 2 的 Office Professional Plus 2010**
 
 所有版本的 Office（不包括 Office 2007）都支持使用受保护的内容。
 
-#### <a name="azure-rights-management-service-with-microsoft-365-apps-for-enterprise-2010"></a>适用于企业2010的 Microsoft 365 应用的 Azure Rights Management 服务
+#### <a name="azure-rights-management-service-with-office-professional-plus-2010-and-service-pack-2-or-office-professional-2010-with-service-pack-2"></a>Azure Rights Management 服务，其中包含 Office Professional Plus 2010 和 Service Pack 2 或带有 Service Pack 2 的 Office Professional 2010
 
-将 Azure Rights Management 服务与[适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2010 和 service pack 2010 2 的 Microsoft 365 应用和 service pack 2 一起使用时，你还必须具有适用于 WINDOWS 的 AIP 客户端。
+将 Azure Rights Management 服务与 Office Professional Plus 2010 和 Service Pack 2 或 Office Professional 2010 service Pack 2 一起使用时，你还必须具有适用于 Windows 的 AIP 客户端。
 
 此外，此配置：
 
@@ -191,7 +200,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 以下 Office 客户端套件支持使用 Azure RMS 保护 macOS 上的文件和电子邮件：
 
-- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- Office 365 ProPlus
 - Office Standard 2019 for Mac
 - Office Standard 2016 for Mac
 
@@ -202,7 +211,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 > 
 ## <a name="azure-information-protection-apps-for-ios-and-android"></a>适用于 iOS 和 Android 的 Azure 信息保护应用
 
-当这些移动设备没有可打开受保护的电子邮件的电子邮件应用程序时，适用于 iOS 和 Android 的 Azure 信息保护应用程序会提供权限保护的电子邮件 **（.rpmsg**文件）的查看器。 通过此应用还可以打开受权限保护的 PDF 文件、图片和文本文件。
+适用于 iOS 和 Android 的 Azure 信息保护应用会在这些移动设备没有可打开受保护电子邮件的电子邮件应用时，为受权限保护的电子邮件 ( 提供查看器) **。** 通过此应用还可以打开受权限保护的 PDF 文件、图片和文本文件。
 
 如果已通过 Microsoft Intune 注册 iOS 和 Android 设备，用户可以从公司门户安装应用，你可以使用 Intune 的[应用保护策略](/intune/app-protection-policies)来管理应用。
 
@@ -210,7 +219,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ## <a name="the-azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
-Azure 信息保护（AIP）客户端包括两个版本，每个版本有管理员和用户指南：
+Azure 信息保护 (AIP) 客户端包括两个版本，每个版本有管理员和用户指南：
 
 - **统一标签客户端**：
     - [管理员指南](./rms-client/clientv2-admin-guide.md)
@@ -227,7 +236,7 @@ Azure 信息保护（AIP）客户端包括两个版本，每个版本有管理�
 > 
 ## <a name="rights-management-sharing-app"></a>权限管理共享应用
 
-对于 Mac 计算机，Rights Management 共享应用为受保护的 PDF 文件 **（ppdf）、** 受保护的文本图像以及一般受保护的文件提供查看器。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)。 
+对于 Mac 计算机，Rights Management 共享应用为受保护的 PDF 文件提供了一个查看器** () 、** 受保护的文本图像以及一般受保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Office 365 专业增强版。 
 
 有关详细信息，请参阅适用[于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](https://technet.microsoft.com/dn451248)
 

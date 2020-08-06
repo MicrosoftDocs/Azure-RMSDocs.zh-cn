@@ -4,7 +4,7 @@ description: 有关使用适用于 Windows 的 Azure 信息保护客户端时如
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 926809823e403cb5cd460412f1036000da487725
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 2e727e438f0baf5cb61a59b699da811e36e48d4f
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927771"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802073"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-client"></a>用户指南：通过 Azure 信息保护客户端进行分类和保护
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类和保护。 如果只需对文档和电子邮件进行分类（但不保护），请参阅[仅分类说明](client-classify.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -88,7 +88,7 @@ ms.locfileid: "86927771"
 
 - 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，请单击 "**保护**  >  **帮助和反馈**"。 在对话框中，检查“客户端状态”**** 部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”****。 
     
-    如果在为用户分配 Azure Rights Management 的许可证（也称为 Azure 信息保护，适用于 Office 365）时，你的 Office 应用会 Microsoft 365 适用于[企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)的 office 应用。
+    如果你有 Office 365 商业版或 Microsoft 365 商业版中的 Office 应用，则无需使用 Office 专业增强版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 

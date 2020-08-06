@@ -4,7 +4,7 @@ description: 了解和确定在使用 Azure 信息保护中的 Rights Management
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 779d527df4b95b985ae72b41414f5c91d7775d01
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 4d6ee5aedd67faec1afa088291a742f29c421d84
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927312"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802108"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
@@ -43,20 +43,20 @@ ms.locfileid: "86927312"
 
 |使用权限|说明|实现|
 |-------------------------------|---------------------------|-----------------|
-|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或排序。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，除非你具有最低版本为[1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25)的[Microsoft 365 适用于企业的应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)，否则，此权限不足以打开或关闭**跟踪更改**，或将所有跟踪更改功能作为审阅者使用。 必须拥有“完全控制”**** 权限，才能使用所有跟踪更改选项。 |Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />标记管理中心和 Azure 门户中的名称：**编辑内容、编辑（DOCEDIT）**<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
-|公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，如果所选文件格式以本机方式支持 Rights Management 保护，则此权限还允许用户修改文档并以新名称将其保存到新位置。 文件格式限制可确保无法从文件中删除原始保护。|Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />标记管理中心和 Azure 门户中的名称：**保存（编辑）**<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
+|公用名：**编辑内容，编辑** <br /><br />策略中的编码：**DOCEDIT**|允许用户对应用程序中的内容进行修改、重新排列、设置格式或排序。 它不会授权保存编辑过的副本。<br /><br />在 Word 中，除非 Office 365 专业增强版的最低版本为 [1807](https://docs.microsoft.com/officeupdates/monthly-channel-2018#version-1807-july-25)，否则此权限不足，无法启用或禁用“跟踪更改”，也无法以审阅者身份使用所有跟踪更改功能****。 必须拥有“完全控制”**** 权限，才能使用所有跟踪更改选项。 |Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**编辑内容**<br /><br />标记管理中心和 Azure 门户中的名称：**编辑内容、编辑 (DOCEDIT) **<br /><br />AD RMS 模板中的名称：**编辑** <br /><br />API 常量或值：不适用。|
+|公用名：**保存** <br /><br />策略中的编码：**EDIT**|允许用户将文档保存到当前位置。<br /><br />在 Office 应用程序中，如果所选文件格式以本机方式支持 Rights Management 保护，则此权限还允许用户修改文档并以新名称将其保存到新位置。 文件格式限制可确保无法从文件中删除原始保护。|Office 自定义权限：作为“更改”******** 和“完全控制”选项的一部分。 <br /><br />Azure 经典门户中的名称：**保存文件**<br /><br />标记管理中心和 Azure 门户中的名称：**保存 (编辑) **<br /><br />AD RMS 模板中的名称：**保存** <br /><br />API 常量或值：`IPC_GENERIC_WRITE L"EDIT"`|
 |公用名：**注释** <br /><br />策略中的编码：**COMMENT**|启用向内容添加批注或注释的选项。<br /><br />此权限可用于 SDK、在 AzureInformationProtection 和适用于 Windows PowerShell 的 RMS 保护模块中作为即席策略提供，并且已在一些软件供应商应用程序中实现。 但是，它并未广泛使用，并且不受 Office 应用程序支持。|Office 自定义权限：未实现。 <br /><br />Azure 经典门户中的名称：未实现。<br /><br />标记管理中心和 Azure 门户：未实现的名称。<br /><br />AD RMS 模板中的名称：未实现。 <br /><br />API 常量或值：`IPC_GENERIC_COMMENT L"COMMENT`|
-|公用名：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote”****。|Office 自定义权限：作为“完全控制”选项的一部分****。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />标记管理中心和 Azure 门户中的名称：**另存为、导出（导出）**<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
-|公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”**** 和“抄送”**** 行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”**** 权限（通用名称），另外授予“保存”**** 权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：**** 使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />标记管理中心和 Azure 门户中的名称：**转发（向前）**<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
-|公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。 <br /><br />请注意，此使用权限不等同于 [Rights Management 所有者](#rights-management-issuer-and-rights-management-owner)。|Office 自定义权限：**** 作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />标记管理中心和 Azure 门户中的名称：**完全控制（所有者）**<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
-|公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：**** 作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />标记管理中心和 Azure 门户中的名称：**打印（打印）**<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
+|公用名：**另存为、导出** <br /><br />策略中的编码：**EXPORT**|启用将内容保存到其他文件名的选项（另存为）。 <br /><br />对于 Azure 信息保护客户端，文件可在不受保护的情况下进行保存，也可使用新设置和权限重新保护。 这些允许的操作意味着，具有此权限的用户可以从受保护的文档或电子邮件对 Azure 信息保护标签进行更改或删除。 <br /><br />此权限还允许用户在应用程序中执行其他导出选项，如“发送至 OneNote”****。|Office 自定义权限：作为“完全控制”选项的一部分****。 <br /><br />Azure 经典门户中的名称：**导出内容（另存为）** <br /><br />标记管理中心和 Azure 门户中的名称：**另存为、导出 (导出) **<br /><br />AD RMS 模板中的名称：**导出（另存为）** <br /><br />API 常量或值：`IPC_GENERIC_EXPORT L"EXPORT"`|
+|公用名：**转发** <br /><br />策略中的编码：**FORWARD**|启用此选项以转发电子邮件，并将收件人添加到“收件人”**** 和“抄送”**** 行。 此权限不适用于文档；仅适用于电子邮件。<br /><br />不允许转发器授予其他用户权限作为转发操作的一部分。 <br /><br />授予此权限时，同时授予“编辑内容，编辑”**** 权限（通用名称），另外授予“保存”**** 权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：**** 使用“不要转发”标准策略时拒绝。<br /><br />Azure 经典门户中的名称：**转发**<br /><br />标记管理中心和 Azure 门户中的名称：**向前 (向前) **<br /><br />AD RMS 模板中的名称：**转发** <br /><br />API 常量或值：`IPC_EMAIL_FORWARD L"FORWARD"`|
+|公用名：**完全控制** <br /><br />策略中的编码：**OWNER**|授予对文档的所有权限，并且所有可用操作都可以执行。<br /><br />包括删除保护和重新保护文档的功能。 <br /><br />请注意，此使用权限不等同于 [Rights Management 所有者](#rights-management-issuer-and-rights-management-owner)。|Office 自定义权限：**** 作为“完全控制”自定义选项。<br /><br />Azure 经典门户中的名称：**完全控制**<br /><br />标记管理中心和 Azure 门户中的名称：**完全控制 (所有者) **<br /><br />AD RMS 模板中的名称：**完全控制** <br /><br />API 常量或值：`IPC_GENERIC_ALL L"OWNER"`|
+|公用名：**打印** <br /><br />策略中的编码：**PRINT**|启用打印内容的选项。|Office 自定义权限：**** 作为自定义权限中的“打印内容”选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**打印**<br /><br />标记管理中心和 Azure 门户中的名称：**打印 (打印) **<br /><br />AD RMS 模板中的名称：**打印** <br /><br />API 常量或值：`IPC_GENERIC_PRINT L"PRINT"`|
 |公用名：**答复** <br /><br />策略中的编码：**REPLY**|启用邮件客户端中的“答复”选项，但不允许更改“收件人”**** 或“抄送”******** 行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”**** 权限（通用名称），另外授予“保存”**** 权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**答复**<br /><br />Azure 经典门户中的名称：**答复**<br /><br />AD RMS 模板中的名称：**答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLY`|
-|公用名：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”**** 选项，但不允许用户将收件人添加到“收件人”**** 或“抄送”**** 行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”**** 权限（通用名称），另外授予“保存”**** 权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />标记管理中心和 Azure 门户中的名称：**全部答复（全部答复）**<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
-|公用名：**查看、打开、读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。<br /><br /> 在 Excel 中，此权限不足，无法对数据进行排序。必须拥有“编辑内容、编辑”**** 权限，才能执行此操作。 必须拥有“编辑内容、编辑”**** 和“复制”**** 这两项权限，才能在 Excel 中筛选数据。|Office 自定义权限：**** 作为“读取”**** 自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />标记管理中心和 Azure 门户中的名称：**查看、打开、读取（查看）**<br /><br />AD RMS 模板中的名称：读取**** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
-|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项****。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />标记管理中心和 Azure 门户中的名称：**复制（提取）**<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
-|公用名：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看已应用到文档的策略。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看分配的权限**<br /><br />标记管理中心并 Azure 门户：**查看权限（VIEWRIGHTSDATA）**。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
-|公用名：**更改权限** <br /><br />策略中的编码：**EDITRIGHTSDATA**|允许用户更改已应用到文档的策略。 包括删除保护。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**更改权限**<br /><br />标记管理中心并 Azure 门户中的名称：**编辑权限（EDITRIGHTSDATA）**。<br /><br />AD RMS 模板中的名称：**编辑权限** <br /><br />API 常量或值：`PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
-|公用名：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：**** 作为“允许编程访问”自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />标记管理中心和 Azure 门户：**允许宏（OBJMODEL）**<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|
+|公用名：**全部答复** <br /><br />策略中的编码：**REPLYALL**|启用邮件客户端中的“全部答复”**** 选项，但不允许用户将收件人添加到“收件人”**** 或“抄送”**** 行。<br /><br />授予此权限时，同时授予“编辑内容，编辑”**** 权限（通用名称），另外授予“保存”**** 权限（通用名称），以确保受保护的电子邮件不作为附件发送。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也指定这些权限。 或者，对于组织中免于使用 Rights Management 保护的用户，因为你已实现了[载入控件](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|Office 自定义权限：不适用。<br /><br />Azure 经典门户中的名称：**全部答复**<br /><br />标记管理中心和 Azure 门户中的名称：全部**答复 (全部答复) **<br /><br />AD RMS 模板中的名称：**全部答复** <br /><br />API 常量或值：`IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|公用名：**查看、打开、读取** <br /><br />策略中的编码：**VIEW**|允许用户打开文档，并查看内容。<br /><br /> 在 Excel 中，此权限不足，无法对数据进行排序。必须拥有“编辑内容、编辑”**** 权限，才能执行此操作。 必须拥有“编辑内容、编辑”**** 和“复制”**** 这两项权限，才能在 Excel 中筛选数据。|Office 自定义权限：**** 作为“读取”**** 自定义策略的“查看”选项。<br /><br />Azure 经典门户中的名称：**查看**<br /><br />标记管理中心和 Azure 门户中的名称： "**查看"、"打开"、"读取" (视图) **<br /><br />AD RMS 模板中的名称：读取**** <br /><br />API 常量或值：`IPC_GENERIC_READ L"VIEW"`|
+|公用名：**复制** <br /><br />策略中的编码：**EXTRACT**|启用将数据（包括屏幕捕获）从文档复制到同一文档或其他文档的选项。<br /><br />在某些应用程序中，它还允许以不受保护的形式保存整个文档。<br /><br />在 Skype for Business 和类似屏幕共享应用程序中，演示者必须拥有此权限，才能成功展示受保护文档。 如果演示者没有此权限，与会者便无法查看文档，且文档显示为对与会者禁用。|Office 自定义权限：作为“允许具有读取权限的用户复制内容”自定义策略选项****。<br /><br />Azure 经典门户中的名称：**复制并提取内容**<br /><br />标记管理中心和 Azure 门户中的名称：**复制 (提取) **<br /><br />AD RMS 模板中的名称：**提取** <br /><br />API 常量或值：`IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|公用名：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看已应用到文档的策略。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看分配的权限**<br /><br />标记管理中心和 Azure 门户中的名称： ** (VIEWRIGHTSDATA) 的查看权限**。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
+|公用名：**更改权限** <br /><br />策略中的编码：**EDITRIGHTSDATA**|允许用户更改已应用到文档的策略。 包括删除保护。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**更改权限**<br /><br />标记管理中心和 Azure 门户中的名称：**编辑权限 (EDITRIGHTSDATA) **。<br /><br />AD RMS 模板中的名称：**编辑权限** <br /><br />API 常量或值：`PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
+|公用名：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：**** 作为“允许编程访问”自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />标记管理中心和 Azure 门户中的名称：**允许宏 (OBJMODEL) **<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|
 
 ## <a name="rights-included-in-permissions-levels"></a>权限级别中包括的权限
 
@@ -124,7 +124,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”****。
 
-此选项适用于使用 Exchange Online 的租户，可以在 web 上的 Outlook 中选择，作为邮件流规则的另一权限保护选项，作为 Office 365 DLP 操作，而从 Outlook （适用于[企业的 Microsoft 365 应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)的最低版本[1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) ，而在拥有[支持 Azure RMS 的 Office 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)时则为最低版本1805。 有关 "仅加密" 选项的详细信息，请参阅以下博客文章： Office 团队中的 "[仅加密 365"](https://aka.ms/omefeb2018)。
+此选项可供使用 Exchange Online 的租户使用，可以在网页版 Outlook 中作为邮件流规则的另一个权限保护选项（作为 Office 365 DLP 操作）选择，如果安装了最低版本为 [1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) 的 Office 365 专业增强版，且具有[支持 Azure RMS 的 Office 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)的最低版本为 1805 时，还可以从 Outlook 中选择。 有关 "仅加密" 选项的详细信息，请参阅以下博客文章： Office 团队中的 "[仅加密 365"](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除“另存为，导出”和“完全控制”以外的所有使用权限********。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 
 

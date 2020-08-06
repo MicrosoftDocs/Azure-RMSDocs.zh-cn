@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 5da4eca4af78083c1b5090f6621706e91d4a1680
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: fc46174efcbcda170a060c49ef6dbb069f6b9770
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927754"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802090"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -43,7 +43,7 @@ ms.locfileid: "86927754"
 
 例如，如果你的组织定期与另一组织中的人员进行通信，则管理员可能已经配置了设置保护以便这些人员可以阅读和使用受保护文档的标签。 然后，选择这些标签对要共享的文档进行分类和保护。
 
-或者，如果外部用户为其创建了[企业对企业（B2B）帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，则可以使用[文件资源管理器设置文档的自定义权限](#using-file-explorer-to-classify-and-protect-files)，然后再对其进行共享。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
+或者，如果外部用户为其创建了[企业对企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，则可以使用[文件资源管理器设置文档的自定义权限](#using-file-explorer-to-classify-and-protect-files)，然后再将其共享。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
@@ -66,7 +66,7 @@ ms.locfileid: "86927754"
 
 - 在检测到敏感信息时，管理员配置的标签将自动设置。
 
-- 在检测到敏感信息时，管理员配置了建议的标签，并且系统会提示你接受建议（并应用标签）或拒绝此建议（不应用建议的标签）。
+- 在检测到敏感信息时，管理员配置了推荐的标签，并且系统会提示你接受建议 (并且该标签将应用) 或拒绝该标签， (建议的标签未) 应用。
 
 ### <a name="exceptions-for-the-sensitivity-button"></a>"敏感度" 按钮的异常
 
@@ -74,7 +74,7 @@ ms.locfileid: "86927754"
 
 - 你可能没有[安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果未在功能区上看到 "**敏感度**" 按钮，而是看到带标签的 "**保护**" 按钮，则已安装 azure 信息保护客户端（经典），而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+- 如果未在功能区上看到 "**敏感度**" 按钮，而是看到带标签的 "**保护**" 按钮，则已安装 azure 信息保护客户端 (经典) ，而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
  
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 
@@ -84,7 +84,7 @@ ms.locfileid: "86927754"
 
 - 如果缺少应用保护的标签，那么可能你使用的 Office 版本不支持应用 Rights Management 保护。 若要验证，请单击 "**敏感度**  >  **帮助和反馈**"。 在对话框中，检查“客户端状态”**** 部分中是否显示消息“此客户端未获许可使用 Office Professional Plus”****。 
     
-    如果在为用户分配 Azure Rights Management 的许可证（也称为 Azure 信息保护，适用于 Office 365）时，你的 Office 应用会 Microsoft 365 适用于[企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)的 office 应用。
+    如果你有 Office 365 商业版或 Microsoft 365 商业版中的 Office 应用，则无需使用 Office 专业增强版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
 
 - 此标签采用的作用域策略可能不包括你的帐户。 请与你的技术支持或管理员一起检查。
 

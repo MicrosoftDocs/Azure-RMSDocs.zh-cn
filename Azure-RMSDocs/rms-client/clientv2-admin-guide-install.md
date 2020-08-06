@@ -4,19 +4,19 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ebc917204844e893a4ff27659e29fa29aa3638c2
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: 010471368d219cc2ba45d24744a17c09ca83b85d
+ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298047"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "87802311"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -52,7 +52,7 @@ ms.locfileid: "87298047"
 - **对于 Outlook：** 使用[系统管理员对外接程序的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中所述的组策略设置。
 - **对于 Word、Excel 和 PowerPoint：** 使用[由于 Office 2013 和 office 2016 程序的组策略设置而未加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述的**托管外**接程序的组策略设置列表。 . 
 
-    为 AIP 指定以下编程标识符（ProgID），并将选项设置为**1：始终启用外接程序**。
+    为 AIP 指定 (ProgID) 的以下编程标识符，并将选项设置为**1：始终启用外接程序**。
 
     |应用程序  |ProgID  |
     |---------|---------|
@@ -65,14 +65,14 @@ ms.locfileid: "87298047"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-- Office 应用最小版本1805，在向用户分配 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，从[Microsoft 365 的应用程序](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)构建9330.2078
-- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2013 Service Pack 1 的应用
-- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)2010 Service Pack 2 的应用
+- Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
+- Office 365 ProPlus
+- Office 专业增强版 2019
+- Office Professional Plus 2016
+- Office Professional Plus 2013 Service Pack 1
+- Office Professional Plus 2010 Service Pack 2
 
-Office 的其他版本（如**标准**）无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行**标记**。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
+其他版本 (例如，Office 的**标准**) 无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行**标记**。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
 
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications)。
 
@@ -96,7 +96,7 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
 
 如果在使用 Microsoft Update 目录，或使用 Intune 之类的集中部署方法部署 .msi，请使用以下说明安装客户端。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端的可执行文件（文件名为 AzInfoProtection_UL）。 
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (文件名 AzInfoProtection_UL) 的可执行版本。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
 
@@ -118,7 +118,7 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
 
     - 如果计算机运行的是 Office 2010，请重新启动计算机。 
         
-        如果客户端未使用 ServiceLocation 参数安装，则当你首次打开使用 Azure 信息保护统一客户端（例如，Word）的 Office 应用程序之一时，你必须在此首次使用时确认要更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
+        如果未使用 ServiceLocation 参数安装客户端，则在首次打开使用 Azure 信息保护统一客户端 (（例如，Word) ）的某个 Office 应用程序时，必须在首次使用时确认要更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
     
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。 
         
@@ -179,7 +179,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端（AzInfoProtection_UL）的 .msi 版本。 
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (AzInfoProtection_UL) 的 .msi 版本。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。
 
