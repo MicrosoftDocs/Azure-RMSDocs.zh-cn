@@ -67,7 +67,7 @@ ms.locfileid: "87802109"
 
 特定方案需要其他先决条件，如使用 Office 2010、基于证书或多重身份验证时，或者 UPN 值与用户电子邮件地址不匹配时。 有关详细信息，请参阅[Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
 
-有关详细信息，请参见:
+有关详情，请参阅：
 
 - [什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 - 将[本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
@@ -246,7 +246,7 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
 
 以下操作系统支持 Azure Rights Management 服务，该服务为 AIP 提供数据保护：
 
-|OS  |支持的版本  |
+|(OS)  |支持的版本  |
 |---------|---------|
 |**Windows 计算机**     |-Windows 7 (x86、x64)  </br>- Windows 8（x86、x64） </br>- Windows 8.1（x86、x64） </br>- Windows 10（x86、x64）       | 
 |**macOS**     |   最低版本为 macOS 10.8 (Mountain Lion)      |

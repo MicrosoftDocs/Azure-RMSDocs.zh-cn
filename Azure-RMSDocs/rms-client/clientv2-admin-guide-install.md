@@ -54,7 +54,7 @@ ms.locfileid: "87802311"
 
     为 AIP 指定 (ProgID) 的以下编程标识符，并将选项设置为**1：始终启用外接程序**。
 
-    |应用程序  |ProgID  |
+    |应用  |ProgID  |
     |---------|---------|
     |Word     |     `MSIP.WordAddin`    |
     |Excel     |  `MSIP.ExcelAddin`       |
