@@ -1,5 +1,5 @@
 ---
-title: Azure 信息保护（AIP）统一标记扫描器先决条件
+title: Azure 信息保护 (AIP) 统一标记扫描器必备组件
 description: 列出安装和部署 Azure 信息保护统一标签扫描器的先决条件。
 author: batamig
 ms.author: bagol
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cef1f6f80865f813e613e717ea301176f8fcc317
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 38489d1d1ff7183e5e7a3963b401cdaecf2313dc
+ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86049481"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88073646"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的先决条件
 
@@ -52,9 +52,9 @@ ms.locfileid: "86049481"
 |---------|---------|
 |**处理器**     |4核处理器         |
 |**RAM**     |8 GB         |
-|**硬盘空间**     |临时文件有 10 GB 可用空间（平均值）。 </br></br>扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 </br></br>借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。
+|**磁盘空间**     |10 GB 可用空间 (临时文件的平均) 。 </br></br>扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 </br></br>借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。
 |**操作系统**     |-Windows Server 2019 </br>- Windows Server 2016 </br>- Windows Server 2012 R2 </br></br>**注意：** 对于非生产环境中的测试或评估目的，还可以使用[Azure 信息保护客户端支持](requirements.md#client-devices)的任何 Windows 操作系统。
-|**网络连接**     | 扫描仪计算机可以是物理计算机或虚拟计算机，与要扫描的数据存储进行快速可靠的网络连接。 </br></br> 如果由于组织策略而无法建立 internet 连接，请参阅[用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。 </br></br>否则，请确保此计算机具有 internet 连接，允许通过 HTTPS （端口443）上的以下 Url：</br><br />-  \*。 aadrm.com <br />-  \*。 azurerms.com<br />-  \*。 informationprotection.azure.com <br /> -informationprotection.hosting.portal.azure.net <br /> - \*。 aria.microsoft.com <br />-  \*。 protection.outlook.com |
+|**网络连接**     | 扫描仪计算机可以是物理计算机或虚拟计算机，与要扫描的数据存储进行快速可靠的网络连接。 </br></br> 如果由于组织策略而无法建立 internet 连接，请参阅[用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。 </br></br>否则，请确保此计算机具有 internet 连接，允许通过 HTTPS (端口 443) 的以下 Url：</br><br />-  \*。 aadrm.com <br />-  \*。 azurerms.com<br />-  \*。 informationprotection.azure.com <br /> -informationprotection.hosting.portal.azure.net <br /> - \*。 aria.microsoft.com <br />-  \*。 protection.outlook.com |
 | ||
 
 ## <a name="service-account-requirements"></a>服务帐户要求
@@ -87,20 +87,20 @@ ms.locfileid: "86049481"
 
     - SQL Server Enterprise
     - SQL Server Standard
-    - SQL Server Express （建议仅用于测试环境）
+    - 仅建议 SQL Server Express (用于测试环境) 
 
 - **具有安装扫描程序的 Sysadmin 角色的帐户。**
 
-    这使安装过程能够自动创建扫描程序配置数据库并向运行该扫描程序的服务帐户授予所需的**db_owner**角色。
+    Sysadmin 角色允许安装过程自动创建扫描程序配置数据库并向运行该扫描程序的服务帐户授予所需的**db_owner**角色。
 
     如果无法授予 Sysadmin 角色或组织策略需要手动创建和配置数据库，请参阅[用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。
 
-- **功能.** 有关容量指导，请参阅[SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。
+- **容量。** 有关容量指导，请参阅[SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。
 
 - **[不区分大小写排序规则](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15)**
 
 > [!NOTE]
-> 当你为扫描仪指定自定义群集（配置文件）名称时，或使用扫描仪的预览版本时，支持同一 SQL server 上的多个配置数据库。
+> 当你为扫描程序指定自定义群集 (配置文件) 名称时，或使用扫描仪的预览版本时，支持同一 SQL server 上的多个配置数据库。
 >
 ### <a name="storage-requirements-and-capacity-planning-for-sql-server"></a>SQL Server 的存储要求和容量规划
 
@@ -114,7 +114,7 @@ ms.locfileid: "86049481"
 100 KB + <file count> *(1000 + 4* <average file name length>)
 ```
 
-例如，若要扫描1000000个文件名长度为250字节的文件，请分配 2 GB 磁盘空间。
+例如，若要扫描1000000个文件名长度为250个字节的文件，请分配 2 GB 磁盘空间。
 
 对于多个扫描仪：
 
@@ -123,7 +123,7 @@ ms.locfileid: "86049481"
     - 4核处理器
     - 建议 8 GB RAM
 
-- 超过**10 个扫描仪**（最大40），使用：
+- 超过**10 个扫描仪** (最大 40) ，请使用：
     - 8个核心进程
     - 建议使用 16 GB RAM
 
@@ -169,12 +169,16 @@ ms.locfileid: "86049481"
 
 ## <a name="file-path-requirements"></a>文件路径要求
 
-若要扫描文件，文件路径的最大长度必须为260个字符，除非在 Windows 2016 上安装了扫描程序，并且该计算机配置为支持长路径
+默认情况下，若要扫描文件，文件路径的最大长度必须为260个字符。
 
-Windows 10 和 windows Server 2016 支持使用以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)的路径长度大于260个字符：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置**  >  **启用 Win32 长路径**
+若要扫描文件路径超过260个字符的文件，请在安装了以下 Windows 版本之一的计算机上安装扫描程序，并根据需要配置计算机：
 
-有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
-
+|Windows 版本  |说明  |
+|---------|---------|
+|**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
+|**Windows 10 或 Windows Server 2016**     | 定义以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)部分。    |
+|**Windows 10 1607 或更高版本**     |  选择启用更新的**MAX_PATH**功能。 有关详细信息，请参阅[在 Windows 10 版本1607及更高版本中启用长路径](https://docs.microsoft.com/windows/win32/fileio/naming-a-file#enable-long-paths-in-windows-10-version-1607-and-later)。      |
+| | |
 ## <a name="usage-statistics-requirements"></a>使用情况统计信息要求
 
 使用以下方法之一禁用使用情况统计信息：
@@ -229,7 +233,7 @@ Windows 10 和 windows Server 2016 支持使用以下[组策略设置](https://b
     - 用于安装程序的用户帐户
     - 用于配置扫描程序的用户帐户
 
-    用于安装和配置扫描程序的用户帐户通常是相同的。 如果使用不同的帐户，则它们都需要扫描程序配置数据库的 db_owner 角色。 根据需要创建此用户和权限。 如果指定自己的群集（配置文件）名称，则配置数据库将命名**AIPScannerUL_<cluster_name>**。
+    用于安装和配置扫描程序的用户帐户通常是相同的。 如果使用不同的帐户，则它们都需要扫描程序配置数据库的 db_owner 角色。 根据需要创建此用户和权限。 如果你指定自己的群集 (配置文件) 名称，则配置数据库将命名为**AIPScannerUL_<cluster_name>**。
 
 此外：
 
@@ -251,7 +255,7 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 
 #### <a name="create-a-user-and-grant-db_owner-rights-manually"></a>手动创建用户并授予 db_owner 权限
 
-若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 执行以下操作：
+若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 执行以下步骤：
 
 1. 为扫描程序创建数据库：
 

@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/28/2020
+ms.date: 08/10/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 25b0b9eb6c59235bc880e5997c4698932230d387
-ms.sourcegitcommit: 3ad75dade373a0651d636533e85350cfece75120
+ms.openlocfilehash: 7c55faf0138e007ed1a8877ebb60cf01551c4dd3
+ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87378278"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88073731"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
@@ -64,9 +64,9 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 与 Azure 信息保护客户端一起安装的**AzureInformationProtection** PowerShell 模块的当前版本具有以下已知问题：
 
-- **Outlook 个人文件夹（*.pst * 文件） * *。 使用**AzureInformationProtection**模块不支持本机保护*的 .pst*文件。
+- **Outlook 个人文件夹 (*.pst * 文件) * *。 使用**AzureInformationProtection**模块不支持本机保护*的 .pst*文件。
 
-- **Outlook 保护的电子邮件 *（.rpmsg*文件）**。 仅当取消保护 Outlook 受保护的电子邮件位于 Outlook 个人文件夹 *（.pst*文件）内部时，它才支持**该模块。**
+- **Outlook 保护的电子邮件消息* ( .rpmsg*文件) **。 仅当取消保护 Outlook 受保护的电子邮件位于 Outlook 个人文件夹* ( .pst*文件) 中时，才**支持该模块**。
 
     不支持 *.pst*文件之外的取消保护电子邮件。
 
@@ -87,7 +87,7 @@ The following known issues apply for [Protection-only mode for the Azure Informa
 |Feature  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典标签和统一标签）在同一台计算机上不支持多个 Office 版本，或在 Office 中切换用户帐户。       |
-|**多显示器** |如果使用多个显示器并打开 Office 应用程序，则 Azure 信息保护栏可能会显示为在办公室屏幕中间显示的浮动，其中一种或两种显示。 </br></br>若要确保栏保持在正确的位置，请打开 Office 应用程序的 "**选项**" 对话框，并在 "**常规"** 下选择 "**优化兼容性**而不是**优化以获得最佳外观"。**    |
+|**多显示器** |如果使用多个显示器并打开 Office 应用程序： </br></br>-你可能会遇到 Office 应用中的性能问题。</br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 </br></br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 "**选项**" 对话框，并在 "**常规"** 下选择 "**优化兼容性**，而不是**优化以获得最佳外观"。**    |
 |**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的[DRMEncryptProperty](https://docs.microsoft.com/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options)注册表设置。|
 |**Word 中的内容标记**    | 当页脚中还包含一个表时，Azure 信息保护内容[标记](configure-policy-markings.md)可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅[何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
 |**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
@@ -114,7 +114,7 @@ Depending on your policy rule size limit, configuring more than 200 users or use
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详细信息，请参阅：
+    有关详情，请参阅：
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)

@@ -4,19 +4,19 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 010471368d219cc2ba45d24744a17c09ca83b85d
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: 3afb97e9094d74eb98b67b375def7a24f6dcc104
+ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802311"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88073680"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -36,7 +36,7 @@ ms.locfileid: "87802311"
 
 |要求  |说明  |
 |---------|---------|
-|**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 </br></br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。 </br></br>**注意：** 尽管不建议这样做，但当你使用[自定义安装参数](#more-information-about-the-downgradedotnetrequirement-installation-parameter)来使用安装向导时，可以绕过此先决条件。        |
+|**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 </br></br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。       |
 |**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 </br></br>**重要提示：** 如果查看器缺少此框架，则可执行安装*程序不会下载或*安装该框架。        |
 |**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 </br></br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 </br></br>**重要提示：** 安装*程序不会检查或*安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
 |**屏幕分辨率大于 800 x 600**    |     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”**** 对话框。    |
@@ -54,7 +54,7 @@ ms.locfileid: "87802311"
 
     为 AIP 指定 (ProgID) 的以下编程标识符，并将选项设置为**1：始终启用外接程序**。
 
-    |应用  |ProgID  |
+    |应用程序  |ProgID  |
     |---------|---------|
     |Word     |     `MSIP.WordAddin`    |
     |Excel     |  `MSIP.ExcelAddin`       |
@@ -167,7 +167,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如： `AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
+例如：`AzInfoProtection_UL.exe DowngradeDotNetRequirement=True`
 
 建议你谨慎使用此参数，并了解当 Azure 信息保护统一标签客户端与此旧版本的 Microsoft .NET Framework 一起使用时，Office 应用程序的报告问题将会挂起。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -201,7 +201,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     可能需要指定其他安装参数。 有关详细信息，请参阅[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)。
 
     > [!NOTE]
-    > 默认情况下，启用 "**通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护**。 若要禁用此选项，请确保指定**ENABLETELEMETRY = 0**而不是**AllowTelemetry = 0**。
+    > 默认情况下，启用 "**通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护**。 若要禁用此选项，请确保执行下列操作之一：
+    >
+    >- 在安装过程中，指定**AllowTelemetry = 0**
+    >- 安装后，按如下所示更新注册表项： **EnableTelemetry = 0**。
     >
 
 ## <a name="next-steps"></a>后续步骤

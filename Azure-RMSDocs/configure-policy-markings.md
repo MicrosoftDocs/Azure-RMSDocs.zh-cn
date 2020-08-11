@@ -11,19 +11,19 @@ ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 5ff7dc706d272228892b238da99a008ed626e522
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: a532416acd134c2cb08117af2951aa1fef23ba82
+ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927363"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88073544"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
@@ -73,7 +73,7 @@ ms.locfileid: "86927363"
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择包含要添加或更改的视觉标记的标签。
 
-3. 在 "**标签**" 窗格中，在 "**设置视觉标记（如页眉或页脚）** " 部分中，为所需的视觉标记配置设置，然后单击 "**保存**"：
+3. 在 "**标签**" 窗格中，在 "**设置视觉标记 (如页眉或页脚) ** " 部分中，为所需的视觉标记配置设置，然后单击 "**保存**"：
 
     - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式****。
 
@@ -95,12 +95,12 @@ ms.locfileid: "86927363"
 
 - `${User.Name}`，针对文档或电子邮件的所有者（按 Windows 登录用户名）。 例如：rsimone
 
-- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如： rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
 > [!NOTE]
->此语法区分大小写。 例如，如果为 `Document: ${Item.Name}  Classification: ${Item.Label}` "**常规**" 标签页脚指定字符串，则应用于名为 project.docx 的文档的页脚文本将为 "**文档： project.docx 分类：常规**"。
+>此语法区分大小写。
 
 <!-- REMOVED w JUNE 2020 RELEASE> [!NOTE]
 > Use of either the `${User.Name}` and/or `${User.PrincipalName}` variable are currently not supported by the Azure Information Protection unified labeling client. 

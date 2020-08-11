@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/08/2020
+ms.date: 08/10/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,21 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5e37f2f3c56bb30075802ae5126179e094d41553
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: e97b66acfc56812f087246128c1bb15c2f22ae40
+ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048980"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "88073697"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护要求](../requirements.md)。
 
@@ -86,8 +86,8 @@ ms.locfileid: "86048980"
 
 |安装选项  |说明  |
 |---------|---------|
-|**运行客户端可执行文件（.exe）**  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
-|**部署客户端的 Windows installer （.msi）** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 对于由 Intune 管理的 Windows 10 电脑和移动设备管理（MDM），必须使用 tis 方法，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
+|**运行客户端可执行文件 ( .exe) **  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
+|**将客户端的 Windows installer 部署 ( .msi) ** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
 
 安装客户端后，请重复相同的安装方法以执行更新，或使用 Windows 更新来保持客户端的自动更新。 在安装新版本之前，无需卸载旧版本的客户端。
 
@@ -172,7 +172,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
+例如：`AzInfoProtection.exe DowngradeDotNetRequirement=True`
 
 建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -200,9 +200,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
 
-3. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数，但有一个例外：
+3. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
 
-    - **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护**，而不是使用**AllowTelemetry = 0**来**ENABLETELEMETRY=0**帮助改进 Azure 信息保护。
+    > [!NOTE]
+    > 默认情况下，启用 "**通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护**。 若要禁用此选项，请确保执行下列操作之一：
+    >
+    >- 在安装过程中，指定**AllowTelemetry = 0**
+    >- 安装后，按如下所示更新注册表项： **EnableTelemetry = 0**。
+    >
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>如何安装 Azure 信息保护扫描程序
 
