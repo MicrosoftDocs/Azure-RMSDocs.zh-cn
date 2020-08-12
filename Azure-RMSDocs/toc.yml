@@ -318,11 +318,7 @@
                     - name: 用于操作 RMS 共享应用程序的任务
                       href: ./rms-client/upgrade-client-app.md
         - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
-          items:
-            - name: 概述
-              href: ./rms-client/mobile-app-faq.md
-            - name: 开始使用 AIP 移动应用
-              href: ./rms-client/mobile-app-get-started.md
+          href: ./rms-client/mobile-app-faq.md
         - name: 受保护的 PDF 阅读器
           href: ./rms-client/protected-pdf-readers.md
         - name: RMS 客户端部署说明
