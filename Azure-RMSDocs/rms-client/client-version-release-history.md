@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端-版本历史记录 & 支持策略
 description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的新增功能或改进功能，并了解支持的生命周期策略。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/28/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7fb6f9766ce4388fffccd5057d17feb01138fd88
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 4f04af1c6aceba5f3eb9d36bf1445ff33060da48
+ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047297"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88264338"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -27,16 +27,18 @@ ms.locfileid: "86047297"
 > 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载最新正式版本和当前预览版（若有）。 
-
-在通常几周的短暂延迟后，最新的正式发行版还会包含在 Microsoft 更新目录中，该目录中包含产品名称**Microsoft Azure 信息保护**  >  **Microsoft Azure 信息保护客户端**和**更新**分类。 此目录包含此内容意味着可利用 WSUS/Configuration Manager 或其他使用 Microsoft 更新的软件部署机制来升级客户端。
-
-有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
+<!--
+After a short delay of typically a couple of weeks, the latest general availability version is also included in the Microsoft Update Catalog with a product name of **Microsoft Azure Information Protection** > **Microsoft Azure Information Protection Client**, and the classification of **Updates**. This inclusion in the catalog means that you can upgrade the client by using WSUS or Configuration Manager, or other software deployment mechanisms that use Microsoft Update.
+-->
 
 > [!TIP]
-> 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到[统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
+> 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到 [统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
+
+**若要部署 AIP 经典客户端，请** 打开支持票证以获取下载访问权限。
+
+有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 ### <a name="servicing-information-and-timelines"></a>维护信息和日程表
 
@@ -62,18 +64,18 @@ ms.locfileid: "86047297"
 |1.2.4.0.0|2016/10/27|
 |1.1.23.0|10/01/2016|
 
-此页上使用的日期格式为*月/日/年*。
+此页上使用的日期格式为 *月/日/年*。
 
 从6/2/2019 开始，Azure 信息保护的标记服务需要使用 TLS 1.2 的连接。
 
-1.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本**1.3.155.2**、 **1.2.4.0**和**1.1.23.0**不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
+1.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本 **1.3.155.2**、 **1.2.4.0**和 **1.1.23.0** 不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
 
 ### <a name="release-history"></a>版本历史记录
 
 使用以下信息可查看适用于 Windows 的 Azure 信息保护客户端的受支持版本的新增功能或更改内容。 最新版本会最先列出。
 
 > [!NOTE]
-> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版本（如果有）。
+> 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版本 (（如果有）) 。
 >  
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
@@ -85,7 +87,7 @@ ms.locfileid: "86047297"
 
 **修补程序**：
 
-- 解决了在删除保护后，IQP 显示的、**恢复**和/或**另存为**选项所保护的文件的问题。 
+- 解决了在删除保护后，IQP 显示的、 **恢复** 和/或 **另存为** 选项所保护的文件的问题。 
 
 - 许多产品功能工具提示文本经过改进，易于理解。 
 
@@ -105,7 +107,7 @@ ms.locfileid: "86047297"
 
 ## <a name="next-steps"></a>后续步骤
 
-不确定是否安装了正确的客户端？  请参阅[选择要用于 Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
+不确定是否安装了正确的客户端？  请参阅 [选择要用于 Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
 有关安装和使用客户端的详细信息： 
 

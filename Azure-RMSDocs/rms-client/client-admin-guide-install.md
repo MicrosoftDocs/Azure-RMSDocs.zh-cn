@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/10/2020
+ms.date: 08/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,21 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e97b66acfc56812f087246128c1bb15c2f22ae40
-ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
+ms.openlocfilehash: ee3d79a408b397724985279c5926c0770f1d43d9
+ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88073697"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88264457"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE]
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
+> **若要部署 AIP 经典客户端，请** 打开支持票证以获取下载访问权限。
 
 在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护要求](../requirements.md)。
 
@@ -94,17 +96,21 @@ ms.locfileid: "88073697"
 有关详细信息，请参阅[升级和维护 Azure 信息保护客户端](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)。
 
 > [!NOTE]
-> 若要卸载客户端，请使用 Windows 的 "**添加或删除程序**" 选项，如[windows "控制面板](https://support.microsoft.com/help/4028054/windows-10-repair-or-remove-programs)"。
+> 若要卸载客户端，请使用 Windows 的 " **添加或删除程序** " 选项，如 [windows "控制面板](https://support.microsoft.com/help/4028054/windows-10-repair-or-remove-programs)"。
 
 ### <a name="to-install-the-azure-information-protection-client-by-using-the-executable-installer"></a>使用可执行安装程序安装 Azure 信息保护客户端
 
 如果在使用 Microsoft Update 目录，或使用 Intune 之类的集中部署方法部署 .msi，请使用以下说明安装客户端。
 
-1. 从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载可执行版本 Azure 信息保护客户端。
+<!--
+1. Download the executable version Azure Information Protection client from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
 
-    如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。
+    If there is a preview version available, keep this version for testing only. It is not intended for end users in a production environment.
+-->
 
-2. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件：`AzInfoProtection.exe /help`
+1. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 
+
+    若要查看其他安装选项，请先通过 **/help**运行可执行文件： `AzInfoProtection.exe /help`
 
     有关无提示安装客户端的示例：`AzInfoProtection.exe /quiet`
 
@@ -118,9 +124,9 @@ ms.locfileid: "88073697"
 
     - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”****。
 
-3. 如果以交互方式安装，并且无法连接到 Office 365 或 Azure Active Directory，但出于演示目的，想要通过本地策略看到和体验 Azure 信息保护客户端，请选择此选项安装**演示策略**。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
+1. 如果以交互方式安装，并且无法连接到 Office 365 或 Azure Active Directory，但出于演示目的，想要通过本地策略看到和体验 Azure 信息保护客户端，请选择此选项安装**演示策略**。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
 
-4. 若要完成安装：
+1. 若要完成安装：
 
     - 如果计算机运行的是 Office 2010，请重新启动计算机。
 
@@ -128,7 +134,7 @@ ms.locfileid: "88073697"
 
     - 对于其他版本的 Office，请重启任一 Office 应用程序和文件管理器的所有实例。
 
-5. 可以查看默认在 %temp% 文件夹中创建的安装日志文件来确认安装是否成功。 可以使用 **/log** 安装参数更改此位置。
+1. 可以查看默认在 %temp% 文件夹中创建的安装日志文件来确认安装是否成功。 可以使用 **/log** 安装参数更改此位置。
 
     此文件具有以下命名格式：`Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
 
@@ -152,19 +158,19 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
-1. 在 PowerShell 会话中，首先运行[AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice)并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行[AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。
+1. 在 PowerShell 会话中，首先运行 [AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice) 并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行 [AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。
 
-    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
+    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅 [安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
     例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     Remainin' 字符串是要为 ServiceLocation 参数指定的值。
 
-有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
+有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection_UL.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 
 #### <a name="more-information-about-the-downgradedotnetrequirement-installation-parameter"></a>详细了解 DowngradeDotNetRequirement 安装参数
 
@@ -184,11 +190,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
 
-1. 从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护客户端的 .msi 版本。 
-    
-    如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
+<!--
 
-2. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
+1. Download the .msi version of the Azure Information Protection client from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018). 
+    
+    If there is a preview version available, keep this version for testing only. It is not intended for end users in a production environment. 
+-->
+1. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
@@ -200,12 +208,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
 
-3. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
+1. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
 
     > [!NOTE]
-    > 默认情况下，启用 "**通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护**。 若要禁用此选项，请确保执行下列操作之一：
+    > 默认情况下，启用 " **通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护** 。 若要禁用此选项，请确保执行下列操作之一：
     >
-    >- 在安装过程中，指定**AllowTelemetry = 0**
+    >- 在安装过程中，指定 **AllowTelemetry = 0**
     >- 安装后，按如下所示更新注册表项： **EnableTelemetry = 0**。
     >
 
@@ -213,7 +221,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 Azure 信息保护客户端包括的 PowerShell 模块具有用于安装和配置扫描程序的 cmdlet。 但是，要使用扫描程序，必须安装完整版本的客户端，而不能仅安装 PowerShell 模块。
 
-要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，你就可以配置并安装扫描程序了。 有关说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](../deploy-aip-scanner.md)。
+要安装客户端以获取扫描程序，请按照前面部分中的相同说明进行操作。 然后，你就可以配置并安装扫描程序了。 有关详细信息，请参阅 [什么是 Azure 信息保护经典扫描器？](../deploy-aip-scanner-classic.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
