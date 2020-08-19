@@ -14,14 +14,14 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 6f36ef984a6d6d10ce06ae690c98153524a7d301
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 3c17a737266ceec6bb7e71d805e1a305f0b1c491
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791471"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564313"
 ---
-# <a name="overview"></a>“概述”
+# <a name="overview-of-rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1 概述
 
 Rights Management Services SDK 2.1 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。 通过启用权限的应用程序，内容所有者将能够定义可以对内容进行打开、修改、打印、转发或执行其他操作的人员。
 
@@ -29,7 +29,7 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 [客户端](ad-rms-client.md)组件可以在客户端或服务器操作系统上运行，包含使应用程序可以加密和解密内容、检索模板和吊销列表、从服务器获取许可证和证书以及执行其他相关权限管理任务的功能。
 
-有关详细信息，请参阅[应用程序类型](application-types.md)。
+有关详细信息，请参阅 [应用程序类型](application-types.md)。
 
 以下只是几个可以应用在 Rights Management Services SDK 2.1 上构建的应用程序的方案。
 
@@ -43,12 +43,12 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 本部分中的其余主题将介绍 RMS 体系结构及其实现。
 
-## <a name="in-this-section"></a>本部分内容
+## <a name="in-this-section"></a>在本节中
 
-| 主题 | 描述 |
+| 主题 | 说明 |
 |-------|-------------|
 |[客户端](ad-rms-client.md) |本主题介绍 Rights Management Services 客户端 2.1 的用途和功能 |
-|[服务器](ad-rms-server.md) | 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。|
+|[Server](ad-rms-server.md) | 本主题介绍适用于 Azure 和 Windows Server 的 RMS 服务器的用途和功能。|
 
 
 ## <a name="related-topics"></a>相关主题

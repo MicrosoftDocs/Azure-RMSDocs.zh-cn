@@ -1,6 +1,6 @@
 ---
 title: 部署应用程序 - AIP
-description: 本主题概述并引导你完成应用程序部署
+description: 了解 Azure 信息保护的部署过程 (AIP) /Rights Management 服务 (RMS) 启用的应用程序。
 keywords: 部署, RMS, AIP
 author: msmbaldwin
 ms.author: mbaldwin
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: e9a9ce42476cc372b6486b524d99e55edf9d4a11
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 4f4258811ec634a49f84b76fcf1feb41752311df
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971755"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564358"
 ---
 # <a name="deploy-into-production"></a>部署到生产
 
@@ -29,7 +29,7 @@ ms.locfileid: "82971755"
 在可以发布使用 AIP/RMS 开发的应用程序之前，必须申请并完成与 Microsoft 的正式协议。
 
 ### <a name="begin-the-process"></a>开始流程
-通过向<strong>IPIA@microsoft.com</strong>发送电子邮件，获取 IPIA，并提供以下信息：
+通过向发送电子邮件，获取 IPIA， <strong>IPIA@microsoft.com</strong> 并提供以下信息：
 
 **主题：** 为 *Company Name* 申请 IPIA
 
@@ -40,7 +40,7 @@ ms.locfileid: "82971755"
 
 ### <a name="next-steps"></a>后续步骤
 收到你的 IPIA 申请时，我们会向你发送一个窗体（以 Word 文档形式）。
-查看 IPIA 的条款和条件，并将窗体返回给<strong>IPIA@microsoft.com</strong> ，其中包含以下信息：
+查看 IPIA 的条款和条件，并将窗体返回给， <strong>IPIA@microsoft.com</strong> 其中包含以下信息：
 - 公司的法定名称
 - 公司所在的州/省（美国/加拿大）或国家/地区
 - 公司 URL

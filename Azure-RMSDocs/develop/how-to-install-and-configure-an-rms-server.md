@@ -14,18 +14,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 59aa02318a0c6d7ee5e9857bead4c79248546320
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 2a9c12f85898f7331c9954d31354d18534b62fc2
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68794115"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564096"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 
 本主题介绍用于连接 RMS 服务器或 Azure RMS 以便测试启用权限的应用程序的步骤。
  
-## <a name="instructions"></a>说明
+## <a name="instructions"></a>Instructions
 
 ### <a name="step-1-setup-your-rms-server"></a>步骤 1：设置 RMS 服务器
 
@@ -56,7 +56,7 @@ ms.locfileid: "68794115"
 
        如果使用的是 AD RMS v1.0 SP2，则可以联机注册服务器。 预配过程中将在后台注册，但必须具有 Internet 连接。
 
-       **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
+       **HKEY \_本地 \_ 计算机** \\ **软件** \\ **Microsoft** \\ **drm** \\ **1.0** \\ **UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
 3. **使用 RMS 服务器进行测试**
 
@@ -72,35 +72,42 @@ ms.locfileid: "68794115"
 
 4. **EnterpriseCertification**
 
-        HKEY_LOCAL_MACHINE
-          SOFTWARE
-            Microsoft
-              MSIPC
-                ServiceLocation
-                  EnterpriseCertification
+  ```console
+  HKEY_LOCAL_MACHINE
+    SOFTWARE
+      Microsoft
+        MSIPC
+          ServiceLocation
+            EnterpriseCertification
+  ```
 
-   **Value**: (Default): [**http|https**]://RMSClusterName/ **_wmcs/Certification**
+   **Value**: (Default): [**http|https**]://RMSClusterName/**_wmcs/Certification**
 
 5. **EnterprisePublishing**
 
-        HKEY_LOCAL_MACHINE
-          SOFTWARE
-            Microsoft
-              MSIPC
-                ServiceLocation
-                  EnterprisePublishing
-                  
-   **值**：（默认）：[**http|https**]://RMSClusterName/ **_wmcs/Licensing**
+  ```console
+  HKEY_LOCAL_MACHINE
+    SOFTWARE
+      Microsoft
+        MSIPC
+          ServiceLocation
+            EnterprisePublishing
+  ```
+
+   **值**：（默认）：[**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
 > [!NOTE]
 > 默认情况下，这些项在注册表中不存在，必须创建。
-> 
+>
+ 
 > [!IMPORTANT]
-> 如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须在以下项位置设置这些项：<p>
->   ```    
->   HKEY_LOCAL_MACHINE
->     SOFTWARE
->       Wow6432Node
->         Microsoft
->           MSIPC
->             ```
+> 如果在 64 位版本的 Windows 上运行 32 位应用程序，则必须在以下项位置设置这些项：  
+>
+
+```console
+HKEY_LOCAL_MACHINE  
+  SOFTWARE  
+    Wow6432Node  
+      Microsoft  
+        MSIPC  
+```

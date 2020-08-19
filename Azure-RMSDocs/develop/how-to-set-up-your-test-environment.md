@@ -1,6 +1,6 @@
 ---
 title: 测试应用程序 | Azure RMS
-description: 有关如何设置应用程序以进行测试的说明。
+description: 了解如何使用 Azure RMS 或 Windows Server 上运行的 RMS 服务器来准备应用程序测试。
 keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
@@ -14,18 +14,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 987b9bb711f96d6622fb1972f13d50fa8cbbfa3d
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 638a8ec54a850a051795c00b2b1aef4ef47866ff
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972017"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564063"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 
 在这里，你将学习如何准备应用程序测试。
 
-## <a name="instructions"></a>说明
+## <a name="instructions"></a>Instructions
 
 你可以使用 Azure RMS 或 Windows Server 上运行的 RMS 服务器进行测试。  开始使用 Azure RMS 和 RMS 服务器（如果部署需要）进行测试。
 

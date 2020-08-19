@@ -8,14 +8,14 @@ ms.date: 03/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
-ms.openlocfilehash: 8b095b9be9cf22facdd40d97aee89cfb55d46306
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.openlocfilehash: 8b5e4d4cc159997f36e971f3a91ab9d136246131
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068649"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88563767"
 ---
-# <a name="overview"></a>概述
+# <a name="overview-of-rights-management-sdk42"></a>Rights Management SDK 4.2 概述
 
 [!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 

@@ -1,6 +1,6 @@
 ---
 title: 保护模板的 PowerShell - Azure 信息保护
-description: 使用 PowerShell 创建和管理 Azure 信息保护的保护模板。
+description: 使用 PowerShell cmdlet 来添加、获取、导出、导入、删除和配置 Azure 信息保护的保护模板。
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 38d5a71e6820c4ad95395c06dffea5d5e57ee7d6
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 668c3294009a8cb003bd813432da6f671fc75391
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136783"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88563930"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>保护模板的 PowerShell 参考
 
@@ -30,7 +30,7 @@ Azure 信息保护的保护设置保存在保护模板中。 在 Azure 门户中
 
 还可通过导出和导入来备份和还原保护模板。 定期备份模板是一种最佳做法。 如果意外更改了保护设置，可轻松还原至先前版本。
 
-有关安装说明，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+有关安装说明，请参阅 [安装 AIPService PowerShell 模块](install-powershell.md)。
 
 支持创建和管理保护模板的 cmdlet：
 

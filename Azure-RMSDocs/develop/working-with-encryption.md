@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 0caabd18ef06af0daaff44e8829b3bd9750a788b
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: d309f08866bc01cde2725581ccef796bdbe96e98
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791933"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88563560"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
@@ -55,46 +55,44 @@ ms.locfileid: "68791933"
 
 不需要代码中的更改，*AES 256* CBC4K 是默认值。
 
-    C++
-
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
-                                    0,
-                                    NULL,
-                                    &amp;pLicenseHandle);
-
+```cpp
+hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                0,
+                                NULL,
+                                &amp;pLicenseHandle);
+```
 
 ## <a name="protect-files-with-aes-128-cbc4k"></a>使用 AES-128 CBC4K 保护文件
 
-    C++
+```cpp
+hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                0,
+                                NULL,
+                                &amp;pLicenseHandle);
 
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
-                                    0,
-                                    NULL,
-                                    &amp;pLicenseHandle);
+DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K;
 
-    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_CBC4K;
-
-    hr = IpcSetLicenseProperty(pLicenseHandle,
-                           false,
-                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
-                           &amp;dwEncryptionMode);
+hr = IpcSetLicenseProperty(pLicenseHandle,
+                        false,
+                        IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
+                        &amp;dwEncryptionMode);
+```
 
 
 ## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>使用 AES-128 ECB（不推荐使用的算法）保护文件
 
 此示例还演示支持*不推荐使用的算法*的新方法。
 
-    C++
+```cpp
+hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
+                                0,
+                                NULL,
+                                &amp;pLicenseHandle);
 
-    hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
-                                    0,
-                                    NULL,
-                                    &amp;pLicenseHandle);
+DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_ECB;
 
-    DWORD dwEncryptionMode = IPC_ENCRYPTION_PACKAGE_AES128_ECB;
-
-    hr = IpcSetLicenseProperty(pLicenseHandle,
-                           false,
-                           IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
-                           &amp;dwEncryptionMode);
-
+hr = IpcSetLicenseProperty(pLicenseHandle,
+                        false,
+                        IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
+                        &amp;dwEncryptionMode);
+```

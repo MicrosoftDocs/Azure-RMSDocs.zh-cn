@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 5319ff8ca9424d1c1273df1bdf347abf65881209
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 841669b3db3e86e2ea6f1860a9d8e9d915c4d28d
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971857"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564237"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -36,9 +36,9 @@ ms.locfileid: "82971857"
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
-若要为 Azure 信息保护配置 Azure AD 环境，请按照[从 Azure 信息保护中激活保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指南进行操作。
+若要为 Azure 信息保护配置 Azure AD 环境，请按照 [从 Azure 信息保护中激活保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指南进行操作。
 
-激活服务后，你需要 PowerShell 组件来执行后续步骤。 遵循[使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)来完成此操作。
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 遵循 [使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell) 来完成此操作。
 
 ### <a name="getting-your-tenant-id"></a>获取租户 ID
 
@@ -50,8 +50,8 @@ ms.locfileid: "82971857"
 
 >记录 BPOSId（租户 ID）值。 在后续步骤中需要用到。
 
-*Example output*
-输出![cmdlet 输出示例](../media/develop/output-of-Get-AadrmConfiguration.png)
+*示例输出* 
+ ![cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
 
 - 从服务断开连接：`Disconnect-AipServiceService`
 
@@ -66,13 +66,13 @@ ms.locfileid: "82971857"
 - 为服务主体提供名称
   > 记录对称密钥和应用程序主体 ID 以供将来使用。
 
-*Example output*
-输出![cmdlet 输出示例](../media/develop/output-of-NewMsolServicePrincipal.png)
+*示例输出* 
+ ![cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
 
 - 将应用程序主体 ID、对称密钥和租户 ID 添加到应用程序的 App.config 文件。
 
-*示例 app.config 文件*
-![cmdlet 输出](../media/develop/example-App.config-file.png)
+*示例 App.config 文件* 
+ ![cmdlet 输出](../media/develop/example-App.config-file.png)
 
 - 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅[为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
 
@@ -91,131 +91,144 @@ ms.locfileid: "82971857"
 6. 应用程序通过给定位置定位指定的文件。
 7. 应用程序将 AIP 保护策略应用于文件。
 
-## <a name="how-the-code-works"></a>该代码的工作原理
+## <a name="how-the-code-works"></a>代码的工作原理
 
 在示例中，Azure IP 测试（即解决方案）以文件 Iprotect.cs 开头。 这是一个 C# 控制台应用程序，与其他任何启用了 AIP 的应用程序相同，使用 `main()` 方法开始加载 *MSIPC.dll*。
 
-    //Loads MSIPC.dll
-    SafeNativeMethods.IpcInitialize();
-    SafeNativeMethods.IpcSetAPIMode(APIMode.Server);
+```csharp
+//Loads MSIPC.dll
+SafeNativeMethods.IpcInitialize();
+SafeNativeMethods.IpcSetAPIMode(APIMode.Server);
+```
 
 加载连接到 Azure 所需的参数
 
-    //Loads credentials for the service principal from App.Config
-    SymmetricKeyCredential symmetricKeyCred = new SymmetricKeyCredential();
-    symmetricKeyCred.AppPrincipalId = ConfigurationManager.AppSettings["AppPrincipalId"];
-    symmetricKeyCred.Base64Key = ConfigurationManager.AppSettings["Base64Key"];
-    symmetricKeyCred.BposTenantId = ConfigurationManager.AppSettings["BposTenantId"];
+```csharp
+//Loads credentials for the service principal from App.Config
+SymmetricKeyCredential symmetricKeyCred = new SymmetricKeyCredential();
+symmetricKeyCred.AppPrincipalId = ConfigurationManager.AppSettings["AppPrincipalId"];
+symmetricKeyCred.Base64Key = ConfigurationManager.AppSettings["Base64Key"];
+symmetricKeyCred.BposTenantId = ConfigurationManager.AppSettings["BposTenantId"];
+```
 
 在控制台应用程序中提供文件路径时，应用程序将检查文档是否已加密。 该方法属于 **SafeFileApiNativeMethods** 类。
 
-    var checkEncryptionStatus = SafeFileApiNativeMethods.IpcfIsFileEncrypted(filePath);
+```csharp
+var checkEncryptionStatus = SafeFileApiNativeMethods.IpcfIsFileEncrypted(filePath);
+```
 
 如果文档未加密，则继续使用提示符上提供的选择来加密文档。
 
-    if (!checkEncryptionStatus.ToString().ToLower().Contains(alreadyEncrypted))
-    {
-      if (method == EncryptionMethod1)
-      {
-        //Encrypt a file via AIP template
-        ProtectWithTemplate(symmetricKeyCred, filePath);
+```csharp
+if (!checkEncryptionStatus.ToString().ToLower().Contains(alreadyEncrypted))
+{
+  if (method == EncryptionMethod1)
+  {
+    //Encrypt a file via AIP template
+    ProtectWithTemplate(symmetricKeyCred, filePath);
 
-      }
-      else if (method == EncryptionMethod2)
-      {
-        //Encrypt a file using ad-hoc policy
-        ProtectWithAdHocPolicy(symmetricKeyCred, filePath);
-      }
+  }
+  else if (method == EncryptionMethod2)
+  {
+    //Encrypt a file using ad-hoc policy
+    ProtectWithAdHocPolicy(symmetricKeyCred, filePath);
+  }
+}
+```
 
 “使用模板保护”选项继续从服务器获取模板列表，并为用户提供选项。
 >如果没有修改模板，则将从 AIP 获取默认模板
 
-     public static void ProtectWithTemplate(SymmetricKeyCredential symmetricKeyCredential, string filePath)
-     {
-       // Gets the available templates for this tenant
-       Collection<TemplateInfo> templates = SafeNativeMethods.IpcGetTemplateList(null, false, true,
-           false, true, null, null, symmetricKeyCredential);
+```csharp
+public static void ProtectWithTemplate(SymmetricKeyCredential symmetricKeyCredential, string filePath)
+{
+  // Gets the available templates for this tenant
+  Collection<TemplateInfo> templates = SafeNativeMethods.IpcGetTemplateList(null, false, true,
+      false, true, null, null, symmetricKeyCredential);
 
-       //Requests tenant template to use for encryption
-       Console.WriteLine("Please select the template you would like to use to encrypt the file.");
+  //Requests tenant template to use for encryption
+  Console.WriteLine("Please select the template you would like to use to encrypt the file.");
 
-       //Outputs templates available for selection
-       int counter = 0;
-       for (int i = 0; i < templates.Count; i++)
-       {
-         counter++;
-         Console.WriteLine(counter + ". " + templates.ElementAt(i).Name + "\n" +
-             templates.ElementAt(i).Description);
-       }
+  //Outputs templates available for selection
+  int counter = 0;
+  for (int i = 0; i < templates.Count; i++)
+  {
+    counter++;
+    Console.WriteLine(counter + ". " + templates.ElementAt(i).Name + "\n" +
+        templates.ElementAt(i).Description);
+  }
 
-       //Parses template selection
-       string input = Console.ReadLine();
-       int templateSelection;
-       bool parseResult = Int32.TryParse(input, out templateSelection);
+  //Parses template selection
+  string input = Console.ReadLine();
+  int templateSelection;
+  bool parseResult = Int32.TryParse(input, out templateSelection);
 
-       //Returns error if no template selection is entered
-       if (parseResult)
-       {
-         //Ensures template value entered is valid
-         if (0 < templateSelection && templateSelection <= counter)
-         {
-           templateSelection -= templateSelection;
+  //Returns error if no template selection is entered
+  if (parseResult)
+  {
+    //Ensures template value entered is valid
+    if (0 < templateSelection && templateSelection <= counter)
+    {
+      templateSelection -= templateSelection;
 
-           // Encrypts the file using the selected template
-           TemplateInfo selectedTemplateInfo = templates.ElementAt(templateSelection);
+      // Encrypts the file using the selected template
+      TemplateInfo selectedTemplateInfo = templates.ElementAt(templateSelection);
 
-           string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(filePath,
-               selectedTemplateInfo.TemplateId,
-               SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST, true, false, true, null,
-               symmetricKeyCredential);
-          }
-        }
-      }
+      string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(filePath,
+          selectedTemplateInfo.TemplateId,
+          SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST, true, false, true, null,
+          symmetricKeyCredential);
+    }
+  }
+}
+```
 
 如果选择临时策略，应用程序的用户必须提供应具有权限的人员的电子邮件。 本节中使用 **IpcCreateLicenseFromScratch()** 方法创建许可证，并在模板上应用新策略。
 
-    if (issuerDisplayName.Trim() != "")
-    {
-      // Gets the available issuers of rights policy templates.
-      // The available issuers is a list of RMS servers that this user has already contacted.
-      try
-      {
-        Collection<TemplateIssuer> templateIssuers = SafeNativeMethods.IpcGetTemplateIssuerList(
-                                                        null,
-                                                        true,
-                                                        false,
-                                                        false, true, null, symmetricKeyCredential);
+```csharp
+if (issuerDisplayName.Trim() != "")
+{
+  // Gets the available issuers of rights policy templates.
+  // The available issuers is a list of RMS servers that this user has already contacted.
+  try
+  {
+    Collection<TemplateIssuer> templateIssuers = SafeNativeMethods.IpcGetTemplateIssuerList(
+                                                    null,
+                                                    true,
+                                                    false,
+                                                    false, true, null, symmetricKeyCredential);
 
-        // Creates the policy and associates the chosen user rights with it
-        SafeInformationProtectionLicenseHandle handle = SafeNativeMethods.IpcCreateLicenseFromScratch(
-                                                            templateIssuers.ElementAt(0));
-        SafeNativeMethods.IpcSetLicenseOwner(handle, owner);
-        SafeNativeMethods.IpcSetLicenseUserRightsList(handle, userRights);
-        SafeNativeMethods.IpcSetLicenseDescriptor(handle, new TemplateInfo(null, CultureInfo.CurrentCulture,
-                                                                policyName,
-                                                                policyDescription,
-                                                                issuerDisplayName,
-                                                                false));
+    // Creates the policy and associates the chosen user rights with it
+    SafeInformationProtectionLicenseHandle handle = SafeNativeMethods.IpcCreateLicenseFromScratch(
+                                                        templateIssuers.ElementAt(0));
+    SafeNativeMethods.IpcSetLicenseOwner(handle, owner);
+    SafeNativeMethods.IpcSetLicenseUserRightsList(handle, userRights);
+    SafeNativeMethods.IpcSetLicenseDescriptor(handle, new TemplateInfo(null, CultureInfo.CurrentCulture,
+                                                            policyName,
+                                                            policyDescription,
+                                                            issuerDisplayName,
+                                                            false));
 
-        //Encrypts the file using the ad hoc policy
-        string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(
-                                       filePath,
-                                       handle,
-                                       SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST,
-                                       true,
-                                       false,
-                                       true,
-                                       null,
-                                       symmetricKeyCredential);
-       }
+    //Encrypts the file using the ad hoc policy
+    string encryptedFilePath = SafeFileApiNativeMethods.IpcfEncryptFile(
+                                    filePath,
+                                    handle,
+                                    SafeFileApiNativeMethods.EncryptFlags.IPCF_EF_FLAG_KEY_NO_PERSIST,
+                                    true,
+                                    false,
+                                    true,
+                                    null,
+                                    symmetricKeyCredential);
     }
+}
+```
 
 ## <a name="user-interaction-example"></a>用户交互示例
 
 创建和执行所有项后，应用程序的输出应如下所示：
 
-1.系统会提示你选择一种加密方法。
-![应用输出 - 步骤 1](../media/develop/app-output-1.png)
+1. 系统将提示你选择加密方法。
+   ![应用输出 - 步骤 1](../media/develop/app-output-1.png)
 
 2. 你需要提供要保护的文件的路径。
    ![应用输出 - 步骤 2](../media/develop/app-output-2.png)

@@ -14,27 +14,27 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 24b94676e5a64de96b90a71422ea9405c2129de7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 332054ba4423ff26cf69023cc1ee6723076b253e
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792440"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564295"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 
 应用程序使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时应显式添加“所有者”权限。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-应用程序在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建许可证句柄时，还必须显式授予所有者完全权力（权限）。
+应用程序在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建许可证句柄时，还必须显式授予所有者完全权限（权限）。
 
 > [!NOTE]
 > 使用 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
 
 下列示例代码仅演示创建特定权限并添加到给定许可证时所涉及的步骤。
 
-## <a name="instructions"></a>说明
+## <a name="instructions"></a>Instructions
  
 ## <a name="step-1-example-scenario"></a>步骤 1：示例方案
 
@@ -42,72 +42,73 @@ ms.locfileid: "68792440"
 
 会向这些用户添加以下两种权限：
 
-- 分配给 joe@contoso.com 的读取权限
-- 分配给 mary \_kay@contoso.com 的完全权限
+- 分配给 joe@contoso.com 的读取** 权限
+- 分配给 mary 的*完全*权限\_kay@contoso.com
 
-      // Create User Rights structure
-      IPC_USER_RIGHTS ownerRightForOwner = {0};
+```cpp
+// Create User Rights structure
+IPC_USER_RIGHTS ownerRightForOwner = {0};
 
-      // Create rights
-      LPCWSTR rgwszOwnerRights[1] = {IPC_GENERIC_ALL};
+// Create rights
+LPCWSTR rgwszOwnerRights[1] = {IPC_GENERIC_ALL};
 
-      // Assign values to members of Rights structure
-      ownerRightForOwner.User.dwType = IPC_USER_TYPE_IPC;
-      ownerRightForOwner.User.wszID = IPC_USER_ID_OWNER;
-      ownerRightForOwner.rgwszRights = rgwszOwnerRights;
-      ownerRightForOwner.cRights = 1;
+// Assign values to members of Rights structure
+ownerRightForOwner.User.dwType = IPC_USER_TYPE_IPC;
+ownerRightForOwner.User.wszID = IPC_USER_ID_OWNER;
+ownerRightForOwner.rgwszRights = rgwszOwnerRights;
+ownerRightForOwner.cRights = 1;
 
-      // Create User Rights structure for Joe with Read permissions
-      IPC_USER_RIGHTS joeReadRight = {0};
-      LPCWSTR rgwszReadRights[1] = {IPC_GENERIC_READ};
+// Create User Rights structure for Joe with Read permissions
+IPC_USER_RIGHTS joeReadRight = {0};
+LPCWSTR rgwszReadRights[1] = {IPC_GENERIC_READ};
 
-      // Assign values to members of Rights structure for Joe
-      joeReadRight.User.dwType = IPC_USER_TYPE_EMAIL;
-      joeReadRight.User.wszID = "joe@contoso.com";
-      joeReadRight.rgwszRights = rgwszReadRights;
-      joeReadRight.cRights = 1;
+// Assign values to members of Rights structure for Joe
+joeReadRight.User.dwType = IPC_USER_TYPE_EMAIL;
+joeReadRight.User.wszID = "joe@contoso.com";
+joeReadRight.rgwszRights = rgwszReadRights;
+joeReadRight.cRights = 1;
 
-      // Create User Rights structure for Mary Kay with Full permissions
-      IPC_USER_RIGHTS mary_kayFullRight = {0};
-      LPCWSTR rgwszFullRights[1] = {IPC_GENERIC_ALL};
+// Create User Rights structure for Mary Kay with Full permissions
+IPC_USER_RIGHTS mary_kayFullRight = {0};
+LPCWSTR rgwszFullRights[1] = {IPC_GENERIC_ALL};
 
-      // Assign values to members of Rights structure for Mary Kay
-      mary_kayFullRight.User.dwType = IPC_USER_TYPE_EMAIL;
-      mary_kayFullRight.User.wszID = L"mary_kay@contoso.com";
-      mary_kayFullRight.rgwszRights = rgwszFullRights;
-      mary_kayFullRight.cRights = 1;
+// Assign values to members of Rights structure for Mary Kay
+mary_kayFullRight.User.dwType = IPC_USER_TYPE_EMAIL;
+mary_kayFullRight.User.wszID = L"mary_kay@contoso.com";
+mary_kayFullRight.rgwszRights = rgwszFullRights;
+mary_kayFullRight.cRights = 1;
 
-      // Create User Rights List and assign the above rights
-      size_t uNoOfUserRights = 3;
-      PIPC_USER_RIGHTS_LIST pUserRightsList = NULL;
-      pUserRightsList = reinterpret_cast<PIPC_USER_RIGHTS_LIST>
-      (new BYTE[ sizeof(IPC_USER_RIGHTS_LIST) + uNoOfUserRights * sizeof(IPC_USER_RIGHTS)]);
+// Create User Rights List and assign the above rights
+size_t uNoOfUserRights = 3;
+PIPC_USER_RIGHTS_LIST pUserRightsList = NULL;
+pUserRightsList = reinterpret_cast<PIPC_USER_RIGHTS_LIST>
+(new BYTE[ sizeof(IPC_USER_RIGHTS_LIST) + uNoOfUserRights * sizeof(IPC_USER_RIGHTS)]);
 
-      if(pUserRightsList == NULL)
-      {
-        // Handle error
-      }
+if(pUserRightsList == NULL)
+{
+  // Handle error
+}
 
-      // Assign values to members of Rights List structure for Joe and Mary Kay
-      (*pUserRightsList).cbSize = sizeof(IPC_USER_RIGHTS_LIST);
-      (*pUserRightsList).cUserRights = uNoOfUserRights;
-      (*pUserRightsList).rgUserRights[0] = ownerRightForOwner;
-      (*pUserRightsList).rgUserRights[1] = joeReadRight;
-      (*pUserRightsList).rgUserRights[2] = mary_kayFullRight;
+// Assign values to members of Rights List structure for Joe and Mary Kay
+(*pUserRightsList).cbSize = sizeof(IPC_USER_RIGHTS_LIST);
+(*pUserRightsList).cUserRights = uNoOfUserRights;
+(*pUserRightsList).rgUserRights[0] = ownerRightForOwner;
+(*pUserRightsList).rgUserRights[1] = joeReadRight;
+(*pUserRightsList).rgUserRights[2] = mary_kayFullRight;
 
-      // Set the Rights List property on the license via its handle
-      // hLicense is a license handle created with IpcCreateLicenseFromScratch
-      hr = IpcSetLicenseProperty(hLicense, FALSE, IPC_LI_USER_RIGHTS_LIST, pUserRightsList);
+// Set the Rights List property on the license via its handle
+// hLicense is a license handle created with IpcCreateLicenseFromScratch
+hr = IpcSetLicenseProperty(hLicense, FALSE, IPC_LI_USER_RIGHTS_LIST, pUserRightsList);
 
-      if(FAILED(hr))
-      {
-        // Handle the error
-      }
-
+if(FAILED(hr))
+{
+  // Handle the error
+}
+```
 
 
 ## <a name="related-topics"></a>相关主题
 
-- [开发人员说明](developer-notes.md)
+- [开发人员注意事项](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)

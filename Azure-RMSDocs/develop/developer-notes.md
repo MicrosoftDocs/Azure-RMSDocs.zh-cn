@@ -1,6 +1,6 @@
 ---
 title: Azure 信息保护 SDK 2.1 开发人员指南 | Microsoft Docs
-description: 使用 AIP SDK 2.1 进行开发的操作指南主题的集合
+description: 获取有关多个重要开发方案的指南以及有关利用 Rights Management Services SDK 2.1 进行开发的一般信息。
 keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
@@ -14,18 +14,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 620464886d40c3f152a32f07952a924eee72920f
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: cfa9f00d7a69966c3a6819294e72c8dfccac02fc
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971806"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564254"
 ---
-# <a name="developer-guidance"></a>开发人员指南
+# <a name="rights-management-services-sdk-21-developer-guidance"></a>Rights Management Services SDK 2.1 开发人员指南
 
 本部分介绍几个重要开发方案的特定指南，以及有关使用此 SDK 进行开发的常规信息。 本部分中的方案特定于此版本的 Rights Management Services SDK 2.1，在后续版本中可能会有所改动。
 - [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md) - 使用 Azure Active Directory 身份验证库 (ADAL) 向 Azure RMS 验证应用身份。
-- [操作说明：添加显式所有者权限](add-explicit-owner-rights.md)-应用程序在从头开始创建许可证时应显式添加 "所有者" 权限（[IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)）。
+- [操作说明：添加显式所有者权限](add-explicit-owner-rights.md) -应用程序在从头开始创建许可证时应显式添加 "所有者" 权限 ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)) 。
 - [操作说明：调试启用权限的应用程序](debugging-applications-that-use-ad-rms.md) - 本主题演示如何调试应用程序和使用 Windows 事件日志。
 - [如何：将应用部署到客户的租户中](how-to-deploy-app.md) - 概述将应用从其开发 Azure AD 租户部署到生产 Azure AD 租户的步骤。
 - [操作说明：启用文档跟踪和撤销](tracking-content.md) - 本主题介绍用于实现文档内容跟踪和实现用于源数据更新和为应用创建**跟踪使用情况按钮**的示例代码的基本指导。
