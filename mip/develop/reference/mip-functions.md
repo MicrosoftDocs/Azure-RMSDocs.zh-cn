@@ -6,40 +6,38 @@ ms.service: information-protection
 ms.topic: reference
 ms.date: 01/28/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 6fd93191ef95e4a019b59ca0f318db366b5e5874
-ms.sourcegitcommit: 2d3c638fb576f3f074330a33d077db0cf0e7d4e7
+ms.openlocfilehash: 73c56e5a5e2facf31eeadd59b36197dea8bbecc2
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77489242"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88563699"
 ---
-# <a name="functions"></a>函数
-
-
+# <a name="functions-c"></a>函数 (C++) 
 
 ## <a name="namespace-mip"></a>命名空间 mip
 
 | 按命名空间范围的函数   | 说明                                |
 |--------------------------------|---------------------------------------------|
-public std：： string GetAssignmentMethodString （AssignmentMethod 方法）       |  将 AssignmentMethod 枚举转换为字符串说明。
-public static std：： string GetActionSourceString （ActionSource actionSource）       |  获取操作源名称。
-public static std：： string GetDataStateString （mip：:D ataState 状态）       |  获取内容状态名称。
+public std：： string GetAssignmentMethodString (AssignmentMethod 方法)        |  将 AssignmentMethod 枚举转换为字符串说明。
+public static std：： string GetActionSourceString (ActionSource actionSource)        |  获取操作源名称。
+public static std：： string GetDataStateString (mip：:D ataState 状态)        |  获取内容状态名称。
 public const std::string& GetCustomSettingPolicyDataName()       |  用于明确指定策略数据的设置的名称。
 public const std::string& GetCustomSettingExportPolicyFileName()       |  用于明确指定将 SCC 策略数据导出到的文件路径的设置的名称。
-public const std：： string & GetCustomSettingSensitivityTypesDataName （）       |  用于显式指定敏感度数据的设置的名称。
+public const std：： string& GetCustomSettingSensitivityTypesDataName ( # A2       |  用于显式指定敏感度数据的设置的名称。
 public const std::string& GetCustomSettingPolicyDataFile()       |  用于明确指定策略数据文件路径的设置的名称。
-public const std：： string & GetCustomSettingSensitivityTypesDataFile （）       |  用于显式指定敏感度类型数据文件路径的设置的名称。
-public const std：： string & GetCustomSettingLabelCustomPropertiesSyncEnabled （）       |  允许按照标签功能按自定义属性和自定义属性启用标签的设置的名称。
-public const std：： string & GetCustomSettingPolicyTtlDays （）       |  默认情况下，启用重写策略 ttl 的设置名称为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
-public const std：： string & GetCustomSettingSensitivityPolicyTtlDays （）       |  启用重写敏感度策略 ttl 的设置的名称，默认值为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
-public const std：： map\<FlightingFeature，bool\>& GetDefaultFeatureSettings （）       |  获取默认情况下是否启用功能。
-public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromStdStream （const std：： shared_ptr\<std：： istream\>& stdIStream）       |  从 std：： istream 创建流。
-public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromStdStream （const std：： shared_ptr\<std：： ostream\>& stdOStream）       |  从 std：： ostream 创建流。
-public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromStdStream （const std：： shared_ptr\<std：： iostream\>& stdIOStream）       |  从 std：： iostream 创建流。
-public MIP_API std：： shared_ptr\<MIP：： Stream\> CreateStreamFromBuffer （uint8_t * buffer，const int64_t size）       |  从缓冲区创建流。
-public MIP_API std：： vector\<uint8_t\> ReadFromStream （const std：： shared_ptr\<MIP：： Stream\>& 流）       |  读取所有流的字节数。
-公有 ActionType 运算符 & （ActionType a，ActionType b）       |  操作类型枚举的和（&）运算符。
-public ActionType operator ^ （ActionType a，ActionType b）       |  操作类型枚举的 Xor （^）运算符。
+public const std：： string& GetCustomSettingSensitivityTypesDataFile ( # A2       |  用于显式指定敏感度类型数据文件路径的设置的名称。
+public const std：： string& GetCustomSettingLabelCustomPropertiesSyncEnabled ( # A2       |  允许按照标签功能按自定义属性和自定义属性启用标签的设置的名称。
+public const std：： string& GetCustomSettingPolicyTtlDays ( # A2       |  默认情况下，启用重写策略 ttl 的设置名称为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
+public const std：： string& GetCustomSettingSensitivityPolicyTtlDays ( # A2       |  启用重写敏感度策略 ttl 的设置的名称，默认值为30天。 应将值设置为字符串整数，i < 0 表示无限生存时间。
+public const std：： map \<FlightingFeature, bool\>& GetDefaultFeatureSettings ( # A2       |  获取默认情况下是否启用功能。
+public MIP_API std：： shared_ptr \<mip::Stream\> CreateStreamFromStdStream (const std：： shared_ptr \<std::istream\>& stdIStream)        |  通过 std::istream 创建 Stream。
+public MIP_API std：： shared_ptr \<mip::Stream\> CreateStreamFromStdStream (const std：： shared_ptr \<std::ostream\>& stdOStream)        |  通过 std::ostream 创建 Stream。
+public MIP_API std：： shared_ptr \<mip::Stream\> CreateStreamFromStdStream (const std：： shared_ptr \<std::iostream\>& stdIOStream)        |  通过 std::iostream 创建 Stream。
+public MIP_API std：： shared_ptr \<mip::Stream\> CreateStreamFromBuffer (uint8_t * buffer，const int64_t 大小)        |  通过缓冲区创建 Stream。
+public MIP_API std：： vector \<uint8_t\> ReadFromStream (const std：： shared_ptr \<mip::Stream\>& 流)        |  读取所有流的字节数。
+公共 ActionType 运算符& (ActionType a，ActionType b)        |  和 ( 操作类型枚举的 # A0) 运算符。
+public ActionType operator ^ (ActionType a，操作 b)        |  Xor (^) 运算符，适用于 Action 类型枚举。
 
 ### <a name="getassignmentmethodstring-function"></a>GetAssignmentMethodString 函数
 将 AssignmentMethod 枚举转换为字符串说明。
@@ -124,7 +122,7 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 **返回**：试验功能的默认状态
   
 ### <a name="createstreamfromstdstream-function"></a>CreateStreamFromStdStream 函数
-从 std：： istream 创建流。
+通过 std::istream 创建 Stream。
 
 参数：  
 * **stdIStream**：回溯 std::istream
@@ -135,7 +133,7 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 **返回**：对 std：： istream 的流包装
   
 ### <a name="createstreamfromstdstream-function"></a>CreateStreamFromStdStream 函数
-从 std：： ostream 创建流。
+通过 std::ostream 创建 Stream。
 
 参数：  
 * **stdOStream**：回溯 std::ostream
@@ -146,7 +144,7 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 **返回**：对流封装 std：： ostream
   
 ### <a name="createstreamfromstdstream-function"></a>CreateStreamFromStdStream 函数
-从 std：： iostream 创建流。
+通过 std::iostream 创建 Stream。
 
 参数：  
 * **stdIOStream**：回溯 std::iostream
@@ -157,7 +155,7 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 **返回**：对流封装 std：： iostream
   
 ### <a name="createstreamfrombuffer-function"></a>CreateStreamFromBuffer 函数
-从缓冲区创建流。
+通过缓冲区创建 Stream。
 
 参数：  
 * **buffer**：指向缓冲区的指针
@@ -179,22 +177,22 @@ public ActionType operator ^ （ActionType a，ActionType b）       |  操作�
 **返回**：字节向量。
   
 ### <a name="operator-function"></a>运算符 |才能
-或（|）运算符的操作类型枚举。
+Or (|) 运算符，适用于 Action 类型枚举。
   
-### <a name="operator-function"></a>运算符 & 函数
-操作类型枚举的和（&）运算符。
+### <a name="operator-function"></a>运算符& 函数
+和 ( 操作类型枚举的 # A0) 运算符。
   
 ### <a name="operator-function"></a>operator ^ 函数
-操作类型枚举的 Xor （^）运算符。
+Xor (^) 运算符，适用于 Action 类型枚举。
 
 ## <a name="namespace-mipauditmetadatakeys"></a>命名空间 mip：： auditmetadatakeys
 
-Members                        | 说明                                
+成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public std：： string Sender （）       |  审核字符串表示形式的元数据密钥。
-public std：： string 接收者（）       | _尚无记录。_
-public std：： string LastModifiedBy （）       | _尚无记录。_
-public std：： string LastModifiedDate （）       | _尚无记录。_
+public std：： string Sender ( # A1       |  审核字符串表示形式的元数据密钥。
+公共 std：： string 接收方 ( # A1       | _尚无记录。_
+public std：： string LastModifiedBy ( # A1       | _尚无记录。_
+public std：： string LastModifiedDate ( # A1       | _尚无记录。_
   
 ### <a name="sender-function"></a>Sender 函数
 审核字符串表示形式的元数据密钥。
@@ -211,9 +209,9 @@ _尚无记录。_
 _尚无记录。_
 
 
-## <a name="namespace-miprights"></a>命名空间 `mip::rights` 
+## <a name="namespace-miprights"></a>名称 `mip::rights` 
   
-Members                        | 说明                                
+成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string Owner()       |  获取“所有者”权限的字符串标识符。
 public std::string View()       |  获取“查看”权限的字符串标识符。
@@ -226,9 +224,9 @@ public std::string Comment()       |  获取“注释”权限的字符串标识
 public std::string Reply()       |  获取“回复”权限的字符串标识符。
 public std::string ReplyAll()       |  获取“全部回复”权限的字符串标识符。
 public std::string Forward()       |  获取“转发”权限的字符串标识符。
-public std：： vector\<std：： string\> EmailRights （）       |  获取适用于电子邮件的权限列表。
-public std：： vector\<std：： string\> EditableDocumentRights （）       |  获取适用于文档的权限列表。
-public std：： vector\<std：： string\> CommonRights （）       |  获取适用于所有方案的权限列表。
+public std：： vector \<std::string\> EmailRights ( # A1       |  获取适用于电子邮件的权限列表。
+public std：： vector \<std::string\> EditableDocumentRights ( # A1       |  获取适用于文档的权限列表。
+public std：： vector \<std::string\> CommonRights ( # A1       |  获取适用于所有方案的权限列表。
   
 ### <a name="owner-function"></a>所有者函数
 获取“所有者”权限的字符串标识符。
@@ -260,7 +258,7 @@ public std：： vector\<std：： string\> CommonRights （）       |  获取�
   
 **返回结果**：“导出”权限的字符串标识符
   
-### <a name="extract-function"></a>Extract 函数
+### <a name="extract-function"></a>提取函数
 获取“提取”权限的字符串标识符。
 
   
@@ -314,9 +312,9 @@ public std：： vector\<std：： string\> CommonRights （）       |  获取�
   
 **返回结果**：适用于所有方案的权限列表
 
-## <a name="namespace-miproles"></a>命名空间 `mip::roles` 
+## <a name="namespace-miproles"></a>名称 `mip::roles` 
   
-Members                        | 说明                                
+成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string Viewer()       |  获取“查看者”角色的字符串标识符。
 public std::string Reviewer()       |  获取“审阅者”角色的字符串标识符。

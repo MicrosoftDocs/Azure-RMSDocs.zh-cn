@@ -1,6 +1,6 @@
 ---
-title: Rights Management Services SDK v4 的 Rrelease 说明
-description: 概述此版本和以前版本中的重要更改和功能。
+title: Rights Management Services SDK v4 的发行说明
+description: 请参阅 Microsoft Rights Management Service SDK v4 2017 及更早版本的新增功能和发行说明。
 author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
@@ -13,18 +13,18 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: has-adal-ref
-ms.openlocfilehash: 5d4aa9206865493c5fd2c4b2abdb96c3f72e5399
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 010ed1f194fd29a9d5e371c296adae5e1e216bea
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971942"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88563784"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
 [!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
-## <a name="whats-new"></a>新增功能
+## <a name="whats-new"></a>新变化
 
 本主题概述 RMS SDK v4. x 的这一新版本中的重要更改和功能。
 
@@ -38,7 +38,7 @@ ms.locfileid: "82971942"
 -   [2015 年 1 月更新 - 添加 WinPhone 平台支持](#january-2015-update---adds-winphone-platform-support)
 -   [2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1](#october-2014-update---upgrade-to-microsoft-rms-sdk-41)
 -   [发行说明](#release-notes)
--   [常见问题解答](#frequently-asked-questions)
+-   [常见问题](#frequently-asked-questions)
 
 ### <a name="new-for-july-2017"></a>2017 年 7 月的新功能
 
@@ -164,9 +164,9 @@ ms.locfileid: "82971942"
 
     **解决方案** - 确保应用程序不允许对 Android API 进行多实例调用。
 
--   当我使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx)（\[ \] byte array，int offset，int length）方法，其长度与*array*值不同时，我以后无法使用 SDK 来使用内容。
+-   当我使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx) ( 字节 \[ \] 数组，int offset，int length ) 方法的长度不同于*数组*length 值，以后我将无法使用 SDK 来使用内容。
 
-    **解决方案** - 这是一个已知问题。 若要缓解这种情况，请始终传递具有与 length 参数相同的长度值的*字节\[ *数组，或使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx)（byte\[ \]数组）方法。
+    **解决方案** - 这是一个已知问题。 若要缓解这种情况，请始终传递具有与 length 参数相同的长度值的*字节 \[ \] *数组，或使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx) (字节 \[ \] 数组) 方法。
 
 **iOS 和 OS X**
 
@@ -197,7 +197,7 @@ ms.locfileid: "82971942"
 
 
 
-**注意：**  我们的 iOS API 不支持 MDI 应用程序。
+**注意**   IOS API 不支持 MDI 应用程序。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 

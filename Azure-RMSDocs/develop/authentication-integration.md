@@ -1,6 +1,6 @@
 ---
 title: 如何使用 Azure AD 注册应用程序 - AIP
-description: 介绍针对启用 RMS 的应用的用户身份验证基础知识。
+description: 了解 Azure 门户中的应用注册和 RMS 支持，以及 Azure Active Directory 身份验证库 (ADAL) 的用户身份验证。
 keywords: ''
 author: msmbaldwin
 ms.author: mbaldwin
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 09823af031db2968c951c6c3610bc14e6a31bd17
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: add790bf067ccb4c4b58b1f5654c869d83976464
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135634"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564393"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -70,9 +70,9 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 > [!NOTE]
 > “范围”**** 当前未使用，但可能会使用，因此会保留供将来使用。
 
-    Android: `msauth://packagename/Base64UrlencodedSignature`
+Android：`msauth://packagename/Base64UrlencodedSignature`
 
-    iOS: `<app-scheme>://<bundle-id>`
+iOS：`<app-scheme>://<bundle-id>`
 
 > [!NOTE]
 > 如果应用未遵循这些指导原则，则 Azure RMS 和 Azure AD 工作流可能会失败，并且不受 Microsoft.com 支持。 而且，如果在生产应用中使用无效客户端 Id，则可能会违反权限管理许可协议 (RMLA)。
