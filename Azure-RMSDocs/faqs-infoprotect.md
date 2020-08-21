@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 20698241962b8dfe3e1fd81b7f0538a7ddfdd46a
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: e54afaf29c01072a99bf943eec5326b5c839472f
+ms.sourcegitcommit: b9ed44cc71e2fa4927e046a3819f758c3e098e82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802175"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "88711963"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -36,9 +36,9 @@ ms.locfileid: "87802175"
 
 - **Azure 信息保护客户端 (经典) **从 Azure 门户下载标签和策略设置。 此客户端建立在以前的客户端通用版本上。
 
-如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未[迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。
+如果客户的当前功能集和功能满足你的业务要求，我们建议你与统一的标签客户端进行测试。 否则，或者如果已在尚未 [迁移到统一标签存储](configure-policy-migrate-labels.md)的 Azure 门户中配置了标签，请使用经典客户端。 有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
 
-有关详细信息，包括特性和功能的比较表，请参阅[选择使用哪个 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
+仅在 Windows 上支持 Azure 信息保护客户端。 若要对 iOS、Android、macOS 和 web 上的文档和电子邮件进行分类和保护，请使用 [支持内置标签的 Office 应用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)。 
 
 ## <a name="where-can-i-find-information-about-using-sensitivity-labels-for-office-apps"></a>在哪里可以找到有关使用 Office 应用的敏感度标签的信息？
 
@@ -46,9 +46,13 @@ ms.locfileid: "87802175"
 
 - [了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) 
 
-- [Office 应用中的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
+- [在 Office 应用中使用敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
+
+- [在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)
 
 - [向 Office 中的文档和电子邮件应用敏感度标签](https://support.office.com/article/Apply-sensitivity-labels-to-your-documents-and-email-within-Office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9#ID0EBFAAA=Office_365)
+
+有关支持敏感度标签的其他方案的信息，请参阅 [敏感度标签的常见方案](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels)。
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
 
@@ -60,11 +64,11 @@ ms.locfileid: "87802175"
 
 ## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>如何防止他人删除或更改标签？
 
-尽管有一个[策略设置](configure-policy-settings.md)要求用户指出为什么要降低分类标签、删除标签或删除保护的原因，但此设置不会阻止这些操作。 要防止用户删除或更改标签，内容必须已受到保护，并且保护权限不向用户授予导出或完全控制[使用权限](configure-usage-rights.md)。 
+尽管有一个 [策略设置](configure-policy-settings.md) 要求用户指出为什么要降低分类标签、删除标签或删除保护的原因，但此设置不会阻止这些操作。 要防止用户删除或更改标签，内容必须已受到保护，并且保护权限不向用户授予导出或完全控制[使用权限](configure-usage-rights.md)。 
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-错误。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
+不是。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -102,4 +106,4 @@ ms.locfileid: "87802175"
 
 请注意，如果在使用 Exchange Online 的 web 上使用 Outlook，则无需执行此操作，因为这种组合在从 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 合规中心发布敏感度标签时支持内置标签。
 
-如果无法在 web 上使用 Outlook 内置标签，请参阅此解决方法的配置步骤：[与旧 Exchange 消息分类的集成](rms-client/client-admin-guide-customizations.md#integration-with-the-legacy-exchange-message-classification)
+如果无法在 web 上使用 Outlook 内置标签，请参阅此解决方法的配置步骤： [与旧 Exchange 消息分类的集成](rms-client/client-admin-guide-customizations.md#integration-with-the-legacy-exchange-message-classification)
