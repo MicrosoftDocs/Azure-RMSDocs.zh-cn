@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3afb97e9094d74eb98b67b375def7a24f6dcc104
-ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
+ms.openlocfilehash: 394c91c7503a9bb8995eacf8c9cec45ab85fe57d
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88073680"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788945"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -32,13 +32,13 @@ ms.locfileid: "88073680"
 
 ## <a name="additional-prerequisites-for-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端的其他先决条件
 
-除了[Azure 信息保护要求](../requirements.md)中列出的项目外，AIP 统一标签客户端还需要满足以下先决条件。
+除了 [Azure 信息保护要求](../requirements.md)中列出的项目外，AIP 统一标签客户端还需要满足以下先决条件。
 
 |要求  |说明  |
 |---------|---------|
 |**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 </br></br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。       |
-|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 </br></br>**重要提示：** 如果查看器缺少此框架，则可执行安装*程序不会下载或*安装该框架。        |
-|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 </br></br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 </br></br>**重要提示：** 安装*程序不会检查或*安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
+|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 </br></br>**重要提示：** 如果查看器缺少此框架，则可执行安装 *程序不会下载或* 安装该框架。        |
+|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 </br></br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 </br></br>**重要提示：** 安装 *程序不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
 |**屏幕分辨率大于 800 x 600**    |     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”**** 对话框。    |
 |**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 </br></br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 </br></br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序**来检查版本并卸载登录助手。      |
 |**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 </br></br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
@@ -47,12 +47,12 @@ ms.locfileid: "88073680"
         
 ### <a name="configure-your-group-policy-to-prevent-disabling-aip"></a>配置组策略以阻止禁用 AIP
 
-对于 Office 版本2013及更高版本，建议配置组策略，以确保始终启用适用于 Office 应用程序的**Microsoft Azure 信息保护**外接程序。  如果没有此外接程序，用户将无法在 Office 应用程序中标记其文档或电子邮件。   
+对于 Office 版本2013及更高版本，建议配置组策略，以确保始终启用适用于 Office 应用程序的 **Microsoft Azure 信息保护** 外接程序。  如果没有此外接程序，用户将无法在 Office 应用程序中标记其文档或电子邮件。   
 
-- **对于 Outlook：** 使用[系统管理员对外接程序的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中所述的组策略设置。
+- **对于 Outlook：** 使用 [系统管理员对外接程序的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中所述的组策略设置。
 - **对于 Word、Excel 和 PowerPoint：** 使用[由于 Office 2013 和 office 2016 程序的组策略设置而未加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中所述的**托管外**接程序的组策略设置列表。 . 
 
-    为 AIP 指定 (ProgID) 的以下编程标识符，并将选项设置为**1：始终启用外接程序**。
+    为 AIP 指定 (ProgID) 的以下编程标识符，并将选项设置为 **1：始终启用外接程序**。
 
     |应用程序  |ProgID  |
     |---------|---------|
@@ -65,14 +65,14 @@ ms.locfileid: "88073680"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-- Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
-- Office 365 ProPlus
-- Office 专业增强版 2019
-- Office Professional Plus 2016
-- Office Professional Plus 2013 Service Pack 1
-- Office Professional Plus 2010 Service Pack 2
+- Office 应用最小版本1805，在向用户分配 Azure Rights Management 的许可证时，从 [Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 构建9330.2078， (也称为 Azure 信息保护 for Office 365) 
+- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
+- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1 的应用
+- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2 的应用
 
-其他版本 (例如，Office 的**标准**) 无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行**标记**。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
+其他版本 (例如，Office 的 **标准**) 无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行 **标记** 。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
 
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications)。
 
@@ -96,11 +96,11 @@ Azure 信息保护功能不支持 Office 邮件合并功能。
 
 如果在使用 Microsoft Update 目录，或使用 Intune 之类的集中部署方法部署 .msi，请使用以下说明安装客户端。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (文件名 AzInfoProtection_UL) 的可执行版本。 
+1. 从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (文件名 AzInfoProtection_UL) 的可执行版本。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。 
 
-2. 对于默认安装，只需运行可执行文件，例如**AzInfoProtection_UL.exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件：`AzInfoProtection_UL.exe /help`
+2. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection_UL.exe**。 但是，若要查看安装选项，请先通过 **/help**运行可执行文件： `AzInfoProtection_UL.exe /help`
 
     有关无提示安装客户端的示例：`AzInfoProtection_UL.exe /quiet`
     
@@ -146,15 +146,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
-1. 在 PowerShell 会话中，首先运行[AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice)并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行[AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。 
+1. 在 PowerShell 会话中，首先运行 [AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice) 并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行 [AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。 
  
-    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](../install-powershell.md)。
+    如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅 [安装 AIPService PowerShell 模块](../install-powershell.md)。
 
 2. 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
     例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     剩余字符串就是要为 ServiceLocation 参数指定的值。
 
@@ -179,7 +179,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (AzInfoProtection_UL) 的 .msi 版本。 
+1. 从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端 (AzInfoProtection_UL) 的 .msi 版本。 
     
     如果存在可用的预览版本，则保留此版本仅供测试使用。 它不用于生产环境中的最终用户。
 
@@ -198,12 +198,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 1. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。
 
-    可能需要指定其他安装参数。 有关详细信息，请参阅[可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)。
+    可能需要指定其他安装参数。 有关详细信息，请参阅 [可执行安装程序说明](#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)。
 
     > [!NOTE]
-    > 默认情况下，启用 "**通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护**。 若要禁用此选项，请确保执行下列操作之一：
+    > 默认情况下，启用 " **通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护** 。 若要禁用此选项，请确保执行下列操作之一：
     >
-    >- 在安装过程中，指定**AllowTelemetry = 0**
+    >- 在安装过程中，指定 **AllowTelemetry = 0**
     >- 安装后，按如下所示更新注册表项： **EnableTelemetry = 0**。
     >
 

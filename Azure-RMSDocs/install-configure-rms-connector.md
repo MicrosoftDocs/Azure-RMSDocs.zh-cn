@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0a02d5bb811bd18698a0ca4ec0a797ff4e31ffa4
-ms.sourcegitcommit: a495476a439a57cf6a4b3446575e344504b3fefb
+ms.openlocfilehash: 8fad52e81d68625d3589b1324163932ad669a78f
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "87554929"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788708"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装和配置 Azure Rights Management 连接器
 
@@ -35,6 +35,7 @@ ms.locfileid: "87554929"
 - **AzureUSGovernment2**： Azure 政府版2
 - **AzureUSGovernment3**： Azure 政府版3
 
+
 ## <a name="installing-the-rms-connector"></a>安装 RMS 连接器
 
 1.  确定 (两个) 的计算机运行 RMS 连接器。 这些计算机必须满足先决条件中列出的最低规格。
@@ -50,9 +51,9 @@ ms.locfileid: "87554929"
 
     -   若要使用 RMS 连接器的服务器配置工具以自动执行本地服务器上的注册表设置的配置，另请下载 GenConnectorConfig.ps1。
 
-3.  在要安装 RMS 连接器的计算机上，以管理员权限运行**RMSConnectorSetup.exe** 。
+3.  在要安装 RMS 连接器的计算机上，以管理员权限运行 **RMSConnectorSetup.exe** 。
 
-4.  在 Microsoft Rights Management 连接器设置的 "欢迎" 页上，选择 **"在计算机上安装 Microsoft Rights Management 连接器**"，然后单击 "**下一步**"。
+4.  在 Microsoft Rights Management 连接器设置的 "欢迎" 页上，选择 **"在计算机上安装 Microsoft Rights Management 连接器**"，然后单击 " **下一步**"。
 
 5.  阅读并同意 RMS 连接器许可条款，然后单击 **“下一步”**。
 
@@ -68,9 +69,10 @@ ms.locfileid: "87554929"
 
 :::image type="content" source="media/authenticate_tenant_rms_connector.png" alt-text="选择正确的 Azure 环境以对新的 AAD RM 连接器进行身份验证":::
 
-进行云环境选择后，请输入**用户名**和**密码**。 请确保输入的凭据具有足够的权限来配置 RMS 连接器。 例如，你可以键入 <strong>admin@contoso.com</strong> ，然后指定此帐户的密码。
+进行云环境选择后，请输入 **用户名** 和 **密码**。 请确保输入的凭据具有足够的权限来配置 RMS 连接器。 例如，你可以键入 <strong>admin@contoso.com</strong> ，然后指定此帐户的密码。
 
-此外，如果实施了[加入控制机制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果没有，你将看到错误消息：**发现管理服务和组织位置的尝试失败。请确保为你的组织启用 Microsoft Rights Management 服务。**
+
+此外，如果实施了[加入控制机制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，请确保指定的帐户能够保护内容。 例如，如果限制为只有“IT 部门”组可以保护内容，那么在此处指定的帐户必须是该组成员。 如果不是，则会看到错误消息： **尝试发现管理服务和组织的位置失败。请确保为你的组织启用 Microsoft Rights Management 服务。**
 
 可以使用具有以下某一种权限的帐户：
 
@@ -81,18 +83,18 @@ ms.locfileid: "87554929"
 -   **Azure Rights Management 连接器管理员**：Azure Active Directory 中已被授权为组织安装和管理 RMS 连接器的帐户。
 
     > [!NOTE]
-    > 使用[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) Cmdlet 将 azure Rights Management 全局管理员角色和 azure Rights Management 连接器管理员角色分配给帐户。
+    > 使用 [AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) Cmdlet 将 azure Rights Management 全局管理员角色和 azure Rights Management 连接器管理员角色分配给帐户。
     > 
     > 若要使用最小特权运行 RMS 连接器，请为此创建一个专用帐户，然后通过执行以下操作为帐户分配 Azure RMS 连接器管理员角色：
     >
-    > 1. 下载并安装 AIPService PowerShell 模块（如果尚未这样做）。 有关详细信息，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+    > 1. 下载并安装 AIPService PowerShell 模块（如果尚未这样做）。 有关详细信息，请参阅 [安装 AIPService PowerShell 模块](install-powershell.md)。
     >
-    >     使用 "以**管理员身份运行**" 命令启动 Windows PowerShell，并使用[AipService](/powershell/module/aipservice/connect-aipservice)命令连接到保护服务：
+    >     使用 "以 **管理员身份运行** " 命令启动 Windows PowerShell，并使用 [AipService](/powershell/module/aipservice/connect-aipservice) 命令连接到保护服务：
     >
     >     ```
     >     Connect-AipService                   //provide Microsoft 365 tenant administrator or Azure RMS global administrator credentials
     >     ```
-    > 2.  然后，仅使用以下参数之一运行[AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)命令：
+    > 2.  然后，仅使用以下参数之一运行 [AipServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator) 命令：
     >
     >     ```
     >     Add-AipServiceRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"
@@ -107,7 +109,7 @@ ms.locfileid: "87554929"
     >     ```
     >     例如，键入： **AipServiceRoleBasedAdministrator-EmailAddress- melisa@contoso.com Role "ConnectorAdministrator"**
     >
-    >     尽管这些命令会分配连接器管理员角色，但也可以在此处使用 GlobalAdministrator 角色。
+    >     尽管这些命令会分配连接器管理员角色，但你也可以在此处使用 GlobalAdministrator 角色。
 
 在 RMS 连接器安装过程中，将会验证和安装所有必备软件。如果还没有 Internet Information Services (IIS)，则会安装该服务。另外还要安装并配置连接器软件。 此外，还会创建以下各项，做好配置 Azure RMS 的准备：
 
@@ -180,7 +182,7 @@ ms.locfileid: "87554929"
 ## <a name="configuring-load-balancing-and-high-availability"></a>配置负载均衡和高可用性
 安装 RMS 连接器的第二个或最后一个实例之后，请定义连接器 URL 服务器名称并配置负载平衡系统。
 
-连接器 URL 服务器名称可以是控制的命名空间中的任何名称。 例如，你可以在 DNS 系统中为**rmsconnector.contoso.com**创建一个条目，并将此条目配置为使用负载平衡系统中的 IP 地址。 此名称没有任何特殊要求，也无需在连接器服务器本身上进行配置。 除非你的 Exchange 和 SharePoint 服务器要通过 internet 与连接器通信，否则此名称无需在 internet 上解析。
+连接器 URL 服务器名称可以是控制的命名空间中的任何名称。 例如，你可以在 DNS 系统中为 **rmsconnector.contoso.com** 创建一个条目，并将此条目配置为使用负载平衡系统中的 IP 地址。 此名称没有任何特殊要求，也无需在连接器服务器本身上进行配置。 除非你的 Exchange 和 SharePoint 服务器要通过 internet 与连接器通信，否则此名称无需在 internet 上解析。
 
 > [!IMPORTANT]
 > 在将 Exchange 或 SharePoint 服务器配置为使用连接器之后，我们建议不要更改该名称，因为随后必须清除这些服务器的所有 IRM 配置，然后重新进行配置。
@@ -227,7 +229,7 @@ ms.locfileid: "87554929"
 
 3.  添加 **ProxyAddress** 的字符串值，然后将此值的数据设置为 **http://&lt;MyProxyDomainOrIPaddress&gt;:&lt;MyProxyPort&gt;**
 
-    例如：**http://proxyserver.contoso.com:8080**
+    例如： **http://proxyserver.contoso.com:8080**
 
 4.  关闭注册表编辑器，然后重启服务器，或者执行 IISReset 命令以重启 IIS。
 

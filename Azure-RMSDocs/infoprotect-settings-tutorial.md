@@ -4,18 +4,18 @@ description: 本入门教程介绍如何配置 Azure 信息保护策略设置，
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 08/17/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 292d7f00aeeb4f13b9d8e2f88b746d6ef967dda9
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: 0439e22cd6b2b149bb142c7146e568a048d05df0
+ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802243"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88264406"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -25,6 +25,11 @@ ms.locfileid: "87802243"
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
+> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
+
+> [!TIP]
+> 如果对经典客户端使用了不同的标签客户端，请参阅 Microsoft 365 符合性文档，了解有关敏感度标签的策略设置信息。 例如，[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 在本教程中，你将了解如何：
 > [!div class="checklist"]
@@ -53,10 +58,6 @@ ms.locfileid: "87802243"
     有关这些步骤，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
 3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
-    
-    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe  。 
-    
-    如果对经典客户端使用了不同的标签客户端，请参阅 Microsoft 365 符合性文档，了解有关敏感度标签的策略设置信息。 例如，[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 4. 你已从下列类别之一登录到 Office 应用：
     
@@ -74,7 +75,7 @@ ms.locfileid: "87802243"
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
 
-让我们开始吧。
+让我们开始吧。 继续[编辑 Azure 信息保护策略](#edit-the-azure-information-protection-policy)。
 
 ## <a name="edit-the-azure-information-protection-policy"></a>编辑 Azure 信息保护策略
 
@@ -84,11 +85,11 @@ ms.locfileid: "87802243"
 
 1. 打开新的浏览器窗口，以全局管理员身份登录到 [Azure 门户](https://portal.azure.com)。然后导航到“Azure 信息保护”  。 
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”  并选择“Azure 信息保护”  。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
     
     如果你不是全局管理员，请使用以下链接获取替代角色：[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)
 
-2. 选择“分类”   > “策略”   > “全局”  ，打开“策略: 全局”边栏选项卡  。 
+2. 选择“分类” > “策略” > “全局”，打开“策略: 全局”边栏选项卡。 
 
 3. 在“配置要对信息保护最终用户显示和应用的设置”  部分中，找到位于标签后面的策略设置。 你的设置中的值可能与显示的值不同：
     
@@ -174,7 +175,7 @@ ms.locfileid: "87802243"
 
 如果你不想保留在本教程中所做的更改，请执行以下操作：
 
-1. 选择“分类”   > “策略”   > “全局”  ，打开“策略: 全局”边栏选项卡  。
+1. 选择“分类” > “策略” > “全局”，打开“策略: 全局”边栏选项卡。
 
 2. 将策略设置恢复为你记下的原始值，然后选择“保存”  。
 

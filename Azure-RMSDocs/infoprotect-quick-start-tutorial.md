@@ -4,18 +4,18 @@ description: 介绍如何为组织编辑 Azure 信息保护策略的入门教程
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 08/17/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 5521ef3756406457ea0944e87b3fbf3567baae2f
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: be5e90f0451f92fff028ff4c583f0753f45567af
+ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802260"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "88264440"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -25,6 +25,12 @@ ms.locfileid: "87802260"
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
+> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
+
+> [!TIP]
+> 如果对经典客户端使用了不同的标签客户端，请参阅 [Microsoft 365 符合性文档](/microsoft-365/compliance/sensitivity-labels)，了解本教程的等效说明。
+> 
 
 在本教程中，你将了解如何：
 > [!div class="checklist"]
@@ -51,8 +57,6 @@ ms.locfileid: "87802260"
     有关这些步骤，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
 3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
-    
-    若要安装经典客户端，可以转到 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection.exe。 如果对经典客户端使用了不同的标签客户端，请参阅 [Microsoft 365 符合性文档](/microsoft-365/compliance/sensitivity-labels)，了解本教程的等效说明。
 
 4. 你已从下列类别之一登录到 Office 应用：
     
@@ -68,9 +72,10 @@ ms.locfileid: "87802260"
     
     - Office Professional Plus 2010 Service Pack 2。
 
-有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
-
-让我们开始吧。
+> [!TIP]
+> 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
+> 
+让我们开始吧。 继续[编辑 Azure 信息保护策略](#edit-the-azure-information-protection-policy)。
 
 ## <a name="edit-the-azure-information-protection-policy"></a>编辑 Azure 信息保护策略
 

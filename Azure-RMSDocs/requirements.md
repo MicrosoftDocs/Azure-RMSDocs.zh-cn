@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 07/20/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cb55fb0acedc56c2b866d7ce681320c2dc9c2fcd
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: c984af422a867f8821c21a6e52df37e5d36437c7
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802109"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788928"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -40,7 +40,7 @@ ms.locfileid: "87802109"
 
 - **[包含 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)**。 仅用于保护。
 
-若要验证你的订阅是否包含你要使用的 Azure 信息保护功能，请查看[Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)中的功能列表。
+若要验证你的订阅是否包含你要使用的 Azure 信息保护功能，请查看 [Azure 信息保护定价](https://azure.microsoft.com/pricing/details/information-protection)中的功能列表。
 
 如果你对许可有疑问，请仔细阅读许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)。
 
@@ -63,14 +63,14 @@ ms.locfileid: "87802109"
 
 - 如果你具有所需的客户端软件并正确配置了 MFA 支持基础结构，则 Azure 信息保护支持**多重身份验证 (MFA) ** 。
 
-预览版支持按条件访问受 Azure 信息保护进行保护的文档。 有关详细信息，请参阅：[我看到 Azure 信息保护被列为可用于条件访问的云应用-这是如何工作的？](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+预览版支持按条件访问受 Azure 信息保护进行保护的文档。 有关详细信息，请参阅： [我看到 Azure 信息保护被列为可用于条件访问的云应用-这是如何工作的？](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
-特定方案需要其他先决条件，如使用 Office 2010、基于证书或多重身份验证时，或者 UPN 值与用户电子邮件地址不匹配时。 有关详细信息，请参阅[Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
+特定方案需要其他先决条件，如使用 Office 2010、基于证书或多重身份验证时，或者 UPN 值与用户电子邮件地址不匹配时。 有关详细信息，请参阅 [Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
 
 有关详情，请参阅：
 
 - [什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
-- 将[本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
+- [将本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
 
 ## <a name="client-devices"></a>客户端设备
 
@@ -95,20 +95,20 @@ ms.locfileid: "87802109"
 
 - **Windows Server 2016**
 
-- **Windows server 2012 R2**和**windows server 2012**
+- **Windows server 2012 R2** 和 **windows server 2012**
 
-[这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)允许用户对其文档和电子邮件进行分类和标记。
+[这两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients) 允许用户对其文档和电子邮件进行分类和标记。
 
 有关更早版本的 Windows 中的支持的详细信息，请联系 Microsoft 帐户或支持代表。
 
 > [!NOTE]
-> 当 Azure 信息保护客户端使用 Azure Rights Management 服务保护数据时，数据可以由支持 Azure Rights Management 服务的[同一设备](#client-devices)使用。
+> 当 Azure 信息保护客户端使用 Azure Rights Management 服务保护数据时，数据可以由支持 Azure Rights Management 服务的 [同一设备](#client-devices) 使用。
 >
 
 ### <a name="virtual-machines"></a>虚拟机
 如果使用的是虚拟机，请检查虚拟桌面解决方案的软件供应商是否为运行 Azure 信息保护统一标签或 Azure 信息保护客户端所需的其他配置。 
 
-例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的[Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825)、Azure 信息保护统一标签客户端或 Azure 信息保护客户端。 
+例如，对于 Citrix 解决方案，你可能需要禁用适用于 Office 的 [Citrix 应用程序编程接口 (API) 挂钩](https://support.citrix.com/article/CTX107825) 、Azure 信息保护统一标签客户端或 Azure 信息保护客户端。 
 
 这些应用程序分别使用以下文件： **winword.exe**、 **excel.exe**、 **outlook.exe**、 **powerpnt.exe**、 **msip.app.exe**、 **msip.viewer.exe**
 
@@ -116,7 +116,7 @@ ms.locfileid: "87802109"
 
 对于上面列出的每个服务器版本，远程桌面服务支持 Azure 信息保护客户端。 
 
-如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件，请勿删除 **%Appdata%\Microsoft\Protect**文件夹。
+如果在远程桌面服务使用 Azure 信息保护客户端时删除用户配置文件，请勿删除 **%Appdata%\Microsoft\Protect** 文件夹。
 
 此外，不支持服务器核心和 Nano Server。
 
@@ -130,33 +130,33 @@ ms.locfileid: "87802109"
 
 ## <a name="applications"></a>应用程序
 
-Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **PowerPoint**和**Outlook**的任何以下 Office 版本来标记并保护文档和电子邮件：
+Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **PowerPoint**和 **Outlook** 的任何以下 Office 版本来标记并保护文档和电子邮件：
 
-- **Office 应用最小版本 1805**，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 
+- **Office 应用最小版本 1805**，从 [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)生成9330.2078。 
 
     仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
-- **Office 365 ProPlus**
+- **[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **Office Professional Plus 2019**
+- **[适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **Office Professional Plus 2016**
+- **[适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
 
-- **带有 Service Pack 1 的 Office Professional Plus 2013**
+- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1 的应用**
 
-- **带有 Service Pack 2 的 Office Professional Plus 2010**
+- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2 的应用**
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护，而不会为用户显示应用保护的标签。 
 
-这些标签在 Azure 信息保护栏上或在 Office 功能区的统一标签客户端中显示， (从经典客户端中的 "**保护**" 按钮或在统一标签客户端) 中的 "**敏感度**" 按钮上。 
+这些标签在 Azure 信息保护栏上或在 Office 功能区的统一标签客户端中显示， (从经典客户端中的 " **保护** " 按钮或在统一标签客户端) 中的 " **敏感度** " 按钮上。 
 
-有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
+有关详细信息，请参阅 [支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
 ### <a name="office-features-and-capabilities-not-supported"></a>不支持的 Office 功能
 
 - Azure 信息保护客户端（包括经典标签和统一标签）在同一台计算机上不支持多个 Office 版本，或在 Office 中切换用户帐户。
 
-- Azure 信息保护功能不支持 Office[邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能。
+- Azure 信息保护功能不支持 Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705) 功能。
 
 ## <a name="firewalls-and-network-infrastructure"></a>防火墙和网络基础结构
 
@@ -169,7 +169,7 @@ Azure 信息保护具有以下附加要求：
 - **Web 代理**。 如果你使用需要身份验证的 web 代理，则必须将代理配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据一起使用。
 
     
-- **TLS 客户端到服务连接**。 请勿终止任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）到**Aadrm.com** URL。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
+- **TLS 客户端到服务连接**。 请勿终止任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）到 **Aadrm.com** URL。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
      
     若要确定客户端连接在到达 Azure Rights Management 服务之前是否终止，请使用以下 PowerShell 命令：
 
@@ -187,7 +187,7 @@ Azure 信息保护具有以下附加要求：
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
-在同一个组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容，**仅**支持 AD RMS 在 HYOK (使用 Azure 信息保护[保留你自己的密钥) 保护](configure-adrms-restrictions.md)。
+在同一个组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容， **仅** 支持 AD RMS 在 HYOK (使用 Azure 信息保护 [保留你自己的密钥) 保护](configure-adrms-restrictions.md) 。
 
 [迁移](migrate-from-ad-rms-to-azure-rms.md)期间*不*支持此方案。
 支持的迁移路径包括：
@@ -201,9 +201,9 @@ Azure 信息保护具有以下附加要求：
 
 对于其他非迁移方案，如果这两个服务在同一组织中处于活动状态，则必须对这两个服务进行配置，使任何给定用户仅允许任何给定用户保护内容。 按如下所示配置此类方案：
 
-* 使用重定向来[Azure RMS 迁移 AD RMS](migrate-from-ad-rms-to-azure-rms.md)
+* 使用重定向来 [Azure RMS 迁移 AD RMS](migrate-from-ad-rms-to-azure-rms.md)
 
-* 如果两个服务必须同时针对不同用户处于活动状态，请使用服务端配置来强制实施独占性。  使用云服务中的 Azure RMS 载入控件，并使用发布 URL 上的 ACL 为 AD RMS 设置**只读**模式。
+* 如果两个服务必须同时针对不同用户处于活动状态，请使用服务端配置来强制实施独占性。  使用云服务中的 Azure RMS 载入控件，并使用发布 URL 上的 ACL 为 AD RMS 设置 **只读** 模式。
 
 ### <a name="service-tags"></a>服务标记
 
@@ -240,13 +240,13 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
     > You can also use these cmdlets with servers running later versions of Windows Server, with the benefit that these cmdlets can protect all file types. The RMS connector protects Office files only. For how-to instructions, see [RMS Protection with Windows Server File Classification Infrastructure &#40;FCI&#41;](./rms-client/configure-fci.md).
 -->
 
-有关详细信息，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
+有关详细信息，请参阅 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 ## <a name="supported-operating-systems-for-azure-rights-management"></a>Azure Rights Management 支持的操作系统
 
 以下操作系统支持 Azure Rights Management 服务，该服务为 AIP 提供数据保护：
 
-|(OS)  |支持的版本  |
+|OS  |支持的版本  |
 |---------|---------|
 |**Windows 计算机**     |-Windows 7 (x86、x64)  </br>- Windows 8（x86、x64） </br>- Windows 8.1（x86、x64） </br>- Windows 10（x86、x64）       | 
 |**macOS**     |   最低版本为 macOS 10.8 (Mountain Lion)      |
@@ -259,5 +259,5 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
 
 ## <a name="next-steps"></a>后续步骤
 
-查看完所有 AIP 要求并确认系统符合要求后，请继续[为 Azure 信息保护准备用户和组](prepare.md)。
+查看完所有 AIP 要求并确认系统符合要求后，请继续 [为 Azure 信息保护准备用户和组](prepare.md)。
 

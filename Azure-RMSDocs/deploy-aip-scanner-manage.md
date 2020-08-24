@@ -1,5 +1,5 @@
 ---
-title: 运行 Azure 信息保护统一标记扫描器（AIP）
+title: '运行 Azure 信息保护统一标记扫描器 (AIP) '
 description: 有关运行 Azure 信息保护统一标签扫描程序以发现、分类和保护数据存储中的文件的说明。
 author: batamig
 ms.author: bagol
@@ -12,21 +12,21 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e6dcad16cdcb2c2d00277ce94b9cf4ab5db94227
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: ad11aefa787ded3632b2c3d017fc83cee77364c2
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86049482"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788741"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
 
 >[!NOTE]
-> 如果使用的是经典扫描程序，请参阅[安装和配置 Azure 信息保护经典扫描器](deploy-aip-scanner-configure-install-classic.md)。
+> 如果使用的是经典扫描程序，请参阅 [安装和配置 Azure 信息保护经典扫描器](deploy-aip-scanner-configure-install-classic.md)。
 
-确认[系统要求](deploy-aip-scanner-prereqs.md)并[配置并安装了扫描仪](deploy-aip-scanner-configure-install.md)后，[运行发现扫描](#run-a-discovery-cycle-and-view-reports-for-the-scanner)以开始使用。
+确认 [系统要求](deploy-aip-scanner-prereqs.md) 并 [配置并安装了扫描仪](deploy-aip-scanner-configure-install.md)后， [运行发现扫描](#run-a-discovery-cycle-and-view-reports-for-the-scanner) 以开始使用。
 
 使用下面详细介绍的其他步骤来管理你的扫描前进。
 
@@ -35,7 +35,7 @@ ms.locfileid: "86049482"
 - [排查停止的扫描问题](#troubleshooting-a-stopped-scan)
 - [使用扫描仪诊断工具进行故障排除](#troubleshooting-using-the-scanner-diagnostic-tool)
 
-有关详细信息，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。
+有关详细信息，请参阅 [部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。
 
 ## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>运行发现周期并查看扫描程序报告
 
@@ -43,7 +43,7 @@ ms.locfileid: "86049482"
 
 当内容更改时，请根据需要再次执行这些步骤。
 
-1. 在 Azure 门户的 " **Azure 信息保护-内容扫描作业**" 窗格上，选择你的内容扫描作业，然后选择 "**立即扫描**" 选项：
+1. 在 Azure 门户的 " **Azure 信息保护-内容扫描作业** " 窗格上，选择你的内容扫描作业，然后选择 " **立即扫描** " 选项：
 
     ![启动 Azure 信息保护扫描程序扫描](./media/scanner-scan-now.png)
 
@@ -57,9 +57,9 @@ ms.locfileid: "86049482"
 
     执行以下任一操作来监视扫描程序进度：
 
-    - **刷新扫描作业。**  在 " **Azure 信息保护-内容扫描作业**" 窗格上，选择 "**刷新**"。
+    - **刷新扫描作业。**  在 " **Azure 信息保护-内容扫描作业** " 窗格上，选择 " **刷新**"。
 
-        请等待，直到看到**最后一个 "扫描结果**" 列的值和**最后一个 "扫描（结束时间）** " 列。
+        请等待，直到看到 " **最后一次扫描结果** " 列的值和 **最后一个 "扫描 (结束时间") ** 列。
 
     - **使用 PowerShell 命令。** 运行 `Get-AIPScannerStatus` 监视状态更改。
 
@@ -69,9 +69,9 @@ ms.locfileid: "86049482"
 
     - .csv 文件包含每个文件的更多详细信息。 此文件夹为每个扫描周期最多存储 60 个报表，并且压缩除最新报表之外的所有报表，以帮助最大程度地减少所需的磁盘空间。
 
-[初始配置](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)指导您将仅**发现的信息类型**设置为 "**策略**"。 此配置意味着仅在详细报告中包括满足你为自动分类配置的条件的文件。
+[初始配置](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal) 指导您将仅 **发现的信息类型** 设置为 " **策略**"。 此配置意味着仅在详细报告中包括满足你为自动分类配置的条件的文件。
 
-如果看不到任何已应用的标签，请检查标签配置是否包括 "自动" 而不是推荐的分类，或 "启用**建议标记为自动**（在扫描仪版本 2.7. x 和更高版本中可用）"。
+如果看不到任何已应用的标签，请检查标签配置是否包括 "自动" 而不是推荐的分类，或 "启用 **建议标记为** 在 scanner 版本 2.7. x 和更高版本中提供的自动 () 。
 
 如果结果仍不符合预期，则可能需要重新配置为标签指定的条件。 如果是这种情况，请根据需要重新配置条件，并重复此过程，直到对结果满意为止。 然后，自动更新配置，并可选择进行保护。
 
@@ -87,15 +87,15 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 不能更改报表文件夹位置或名称。 如果要将报表存储在不同的位置，请考虑使用文件夹的目录连接。
 
-例如，使用[Mklink](/windows-server/administration/windows-commands/mklink)命令：`mklink /j D:\Scanner_reports C:\Users\aipscannersvc\AppData\Local\Microsoft\MSIP\Scanner\Reports`
+例如，使用 [Mklink](/windows-server/administration/windows-commands/mklink) 命令： `mklink /j D:\Scanner_reports C:\Users\aipscannersvc\AppData\Local\Microsoft\MSIP\Scanner\Reports`
 
-如果在初始配置和安装之后执行了这些步骤，请继续[配置扫描仪以应用分类和保护](deploy-aip-scanner-configure-install.md#configure-the-scanner-to-apply-classification-and-protection)。
+如果在初始配置和安装之后执行了这些步骤，请继续 [配置扫描仪以应用分类和保护](deploy-aip-scanner-configure-install.md#configure-the-scanner-to-apply-classification-and-protection)。
 
 ## <a name="stopping-a-scan"></a>停止扫描
 
 若要停止当前正在运行的扫描，请使用下列方法之一：
 
-- **Azure 门户。** 选择 "**停止扫描**"：
+- **Azure 门户。** 选择 " **停止扫描**"：
 
     ![停止扫描 Azure 信息保护扫描程序](./media/scanner-stop-scan.png)
 
@@ -107,34 +107,36 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 ## <a name="rescanning-files"></a>重新扫描文件
 
-对于[第一个扫描周期](#run-a-discovery-cycle-and-view-reports-for-the-scanner)，扫描程序会检查配置的数据存储中的所有文件。 对于后续扫描，仅检查新文件或已修改的文件。
+对于 [第一个扫描周期](#run-a-discovery-cycle-and-view-reports-for-the-scanner)，扫描程序会检查配置的数据存储中的所有文件。 对于后续扫描，仅检查新文件或已修改的文件。
 
-如果希望报表包含所有文件，并且扫描程序在发现模式下运行，则再次检查所有文件通常非常有用。
+当你希望报表包含所有文件时，如果你想要在所有文件中应用更改，以及当扫描程序在发现模式下运行，则再次检查所有文件通常非常有用。
 
-使用以下方法之一对所有文件运行新扫描：
+**手动运行完全重新扫描：**
 
-- [手动运行完全重新扫描](#manually-run-a-full-rescan)
-- [通过刷新策略触发完全重新扫描](#trigger-a-full-rescan-by-refreshing-the-policy)
+1. 在 Azure 门户中导航到 " **Azure 信息保护-内容扫描作业** " 窗格。
 
-### <a name="manually-run-a-full-rescan"></a>手动运行完全重新扫描
+1. 从列表中选择内容扫描作业，然后选择 " **重新扫描所有文件** " 选项：
 
-根据需要，从 Azure 门户中的 " **Azure 信息保护-内容扫描作业**" 窗格强制扫描程序重新检查所有文件。
-
-从列表中选择内容扫描作业，然后选择 "**重新扫描所有文件**" 选项：
-
-![启动 Azure 信息保护扫描程序重新扫描](./media/scanner-rescan-files.png)
+    ![启动 Azure 信息保护扫描程序重新扫描](./media/scanner-rescan-files.png)
 
 完全扫描完成后，扫描类型会自动更改为增量，以便进行后续扫描时，只会重新扫描新文件或已修改的文件。
 
-### <a name="trigger-a-full-rescan-by-refreshing-the-policy"></a>通过刷新策略触发完全重新扫描
+> [!TIP]
+> 如果已更改 AIP [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)，Azure 门户会提示你跳过完全重新扫描。 若要确保重新扫描发生，请确保在出现的提示中选择 " **否** "。
+> 
+### <a name="trigger-a-full-rescan-by-modifying-your-settings-versions-27990-and-earlier"></a>通过修改设置 (版本2.7.99.0 和早期版本来触发完全重新扫描) 
 
-如果扫描程序有自动和建议的标记的新的或更改的设置，则还会检查所有文件。 扫描程序每四小时自动刷新一次策略。
+在扫描程序版本2.7.99.0 及更早版本中，只要扫描程序检测到新的或更改的设置以自动和建议标记，就会扫描所有文件。 扫描程序每四小时自动刷新一次策略。
 
-若要更快地刷新策略（如测试时），请手动删除 **%LocalAppData%\Microsoft\MSIP\mip \\ < *processname*> \mip**目录中的内容，然后重新启动 Azure 信息保护服务。
+若要更快地刷新策略（如测试时），请手动删除 **%LocalAppData%\Microsoft\MSIP\mip \<processname> \mip** 目录的内容，然后重新启动 Azure 信息保护服务。
 
-> [!NOTE]
-> 如果你还更改了标签的保护设置，请在重新启动 Azure 信息保护服务之前，等待额外的15分钟，然后再保存更新的保护设置。
+如果你还更改了标签的保护设置，请在重新启动 Azure 信息保护服务之前，等待额外的15分钟，然后再保存更新的保护设置。
+
+> [!IMPORTANT]
+> 如果已升级到版本 [2.8.83](rms-client/unifiedlabelingclient-version-release-history.md#version-2883-public-preview) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
 >
+> 例如，如果你已将 "**强制 = 关闭**"**策略强制**设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 
 
 ## <a name="troubleshooting-a-stopped-scan"></a>排查停止的扫描问题
 
@@ -144,16 +146,16 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
     若要检查这是否是扫描仪停止的原因，请查看是否在** % *localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog**文件中为扫描程序记录了以下错误消息。
 
-    **无法连接到远程服务器---> 系统 SocketException：仅允许每个套接字地址（协议/网络地址/端口）的一次使用 IP：端口**
+    **无法连接到---> 的远程服务器。 SocketException：每个套接字地址 (协议/网络地址/端口) 通常只允许使用 IP：端口**
 
     > [!NOTE]
     > 如果有多个日志，则压缩此文件。
 
-    有关如何查看当前端口范围并增加范围的详细信息，请参阅[可修改的设置以提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
+    有关如何查看当前端口范围并增加范围的详细信息，请参阅 [可修改的设置以提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
 
 - **列表视图阈值。** 对于大型 SharePoint 场，可能需要增加列表视图阈值。 默认情况下，列表视图阈值设置为5000。
 
-    有关详细信息，请参阅[在 SharePoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。
+    有关详细信息，请参阅 [在 SharePoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。
 
 ## <a name="troubleshooting-using-the-scanner-diagnostic-tool"></a>使用扫描仪诊断工具进行故障排除
 
@@ -173,11 +175,11 @@ Start-AIPScannerDiagnostics
 - 配置的规则是否有效
 
 > [!TIP]
-> 如果在不是扫描仪用户的用户下运行命令，请确保添加 **-OnBehalf**参数。 <!--For more information, see <x>.-->
+> 如果在不是扫描仪用户的用户下运行命令，请确保添加 **-OnBehalf** 参数。 <!--For more information, see <x>.-->
 >
 
 > [!NOTE]
-> **AIPScannerDiagnostics**工具不会运行完整的先决条件检查。 如果扫描程序出现问题，还请确保系统符合[扫描器要求](deploy-aip-scanner-prereqs.md)，并确保[扫描仪配置和安装](deploy-aip-scanner-configure-install.md)已完成。
+> **AIPScannerDiagnostics**工具不会运行完整的先决条件检查。 如果扫描程序出现问题，还请确保系统符合 [扫描器要求](deploy-aip-scanner-prereqs.md)，并确保 [扫描仪配置和安装](deploy-aip-scanner-configure-install.md) 已完成。
 >
 
 ## <a name="next-steps"></a>后续步骤
@@ -186,4 +188,4 @@ Start-AIPScannerDiagnostics
 
 - 您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
-- 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅[将 PowerShell 与 Azure 信息保护统一标签客户端配合使用](./rms-client/clientv2-admin-guide-powershell.md)。
+- 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅 [将 PowerShell 与 Azure 信息保护统一标签客户端配合使用](./rms-client/clientv2-admin-guide-powershell.md)。

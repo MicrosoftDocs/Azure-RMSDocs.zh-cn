@@ -1,17 +1,17 @@
 ---
-title: 快速入门 - Microsoft信息保护 (MIP) SDK C++ 客户端的初始化
-description: 快速入门教程，演示如何为 Microsoft 信息保护 (MIP) SDK 客户端应用程序编写初始化逻辑。
+title: 快速入门 - 使用保护 API 的 MIP SDK C++ 客户端的初始化
+description: 一个演示如何为使用保护 API 的 Microsoft 信息保护 (MIP) SDK 客户端应用程序编写初始化逻辑的快速入门。
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: e0f77c27c38b8b2f1baf4385efce1ee7336c8f9d
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.openlocfilehash: 063db1a923e66f108583b17ee998549511265bee
+ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766382"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "88564130"
 ---
 # <a name="quickstart-client-application-initialization-for-protection-apis-c"></a>快速入门：保护 API (C++) 的客户端应用程序初始化
 
@@ -277,11 +277,11 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
    | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
-   | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”(setup-configure-mip.md)一文步骤 #2 中注册的应用程序的 Azure AD 应用程序 ID (GUID)。 替换 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
+   | \<application-id\> | 分配给在“MIP SDK 安装和配置”(setup-configure-mip.md)一文步骤 #2 中注册的应用程序的 Azure AD 应用程序 ID (GUID)。 替换 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
    | \<application-name\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符（不包括“;”），且最好与注册 Azure AD 时使用的应用程序名称一致。 | `"AppInitialization"` |
    | \<application-version\> | 用户定义的应用程序版本信息。 必须包含有效的 ASCII 字符（不包括“;”）。 | `"1.1.0.0"` |
-   | \<引擎帐户\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | `"user1@tenant.onmicrosoft.com"` |
-   | \<引擎状态\> | 用户定义的与引擎关联的状态。 | `"My App State"` |
+   | \<engine-account\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | `"user1@tenant.onmicrosoft.com"` |
+   | \<engine-state\> | 用户定义的与引擎关联的状态。 | `"My App State"` |
 
 4. 现在构建应用程序的最终版本并解决任何错误。 代码应已成功构建，但在完成下一个快速入门之前，代码将无法正常运行。 如果运行该应用程序，将看到类似于以下内容的输出。 应用程序将成功构造保护配置文件和保护引擎，但不会触发身份验证模块，并且在完成下一个快速入门之前，你还没有访问令牌。
 

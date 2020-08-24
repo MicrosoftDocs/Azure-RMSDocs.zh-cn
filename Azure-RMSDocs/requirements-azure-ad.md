@@ -12,12 +12,12 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: b23afa0975f5d8f353b3ed8a5d4cf5332712f3b7
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: cc58a32da1bca1ce14704e0eb23ebbd0007073f7
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298182"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788962"
 ---
 # <a name="additional-azure-ad-requirements-for-azure-information-protection"></a>Azure 信息保护的其他 Azure AD 要求
 
@@ -31,40 +31,40 @@ ms.locfileid: "87298182"
 
 ## <a name="computers-running-office-2010"></a>运行 Office 2010 的计算机
 
-除了 Azure AD 帐户，运行 Microsoft Office 2010 的计算机还需要[Azure 信息保护的统一标签客户端](./rms-client/aip-clientv2.md)或[azure 信息保护经典客户端](./rms-client/aip-client.md)向 azure 信息保护及其数据保护服务 azure Rights Management 进行身份验证。
+除了 Azure AD 帐户，运行 Microsoft Office 2010 的计算机还需要 [Azure 信息保护的统一标签客户端](./rms-client/aip-clientv2.md) 或 [azure 信息保护经典客户端](./rms-client/aip-client.md) 向 azure 信息保护及其数据保护服务 azure Rights Management 进行身份验证。
 
-如果用户帐户是联合的（例如，使用 AD FS），则这些计算机必须使用 Windows 集成的身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
+如果你的用户帐户是联合 (例如，你使用 AD FS) ，则这些计算机必须使用 Windows 集成的身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
 
-## <a name="support-for-certificate-based-authentication-cba"></a>支持基于证书的身份验证（CBA）
+## <a name="support-for-certificate-based-authentication-cba"></a>支持基于证书的身份验证 (CBA) 
 
 适用于 iOS 和 Android 的 Azure 信息保护应用支持基于证书的身份验证。 
 
-有关详细信息，请参阅[Azure Active Directory 中基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
+有关详细信息，请参阅 [Azure Active Directory 中基于证书的身份验证入门](/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
 
 ## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>多重身份验证 (MFA) 和 Azure 信息保护
 
-若要在 Azure 信息保护中使用多重身份验证（MFA），必须至少安装以下其中一项：
+若要在 Azure 信息保护中使用多重身份验证 (MFA) ，必须至少安装以下项之一：
 
 - **Microsoft Office，** 版本2013或更高版本
 - **AIP 客户端**。 不需要最低版本。 适用于 Windows 的 AIP 客户端以及适用于 iOS 和 Android 的查看器应用均支持 MFA。
 - **适用于 Mac 计算机的 Rights Management 共享应用**。 自2015年9月版起，RMS 共享应用已支持 MFA。
 
 > [!NOTE]
-> 如果你安装了 Office 2013，你可能需要安装其他更新以支持 Active Directory 身份验证库（ADAL），例如， [2013 Office 年6月 9 2015 日更新（KB3054853）](https://support.microsoft.com/kb/3054853)。 
+> 如果你安装了 Office 2013，你可能需要安装其他更新以支持 Active Directory 身份验证库 (ADAL) ，例如 [) 6 月9日2015，Office 2013 (KB3054853 的更新 ](https://support.microsoft.com/kb/3054853)。 
 >
-> 有关详细信息，请参阅 Office 博客上[公布的 office 2013 新式身份验证公共预览版](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)。       
+> 有关详细信息，请参阅 Office 博客上 [公布的 office 2013 新式身份验证公共预览版](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/) 。       
 
 确认这些先决条件后，请执行以下操作之一，具体取决于你的租户配置：
 
 - **Microsoft 托管的租户，包含 Azure AD 或 Office 365**。 配置 Azure MFA 来为用户强制实施 MFA。 
 
-    有关详细信息，请参阅： 
+    有关详情，请参阅： 
     - [云中的 Azure 多重身份验证入门](/multi-factor-authentication/multi-factor-authentication-get-started-cloud)
     - [什么是 Azure 多重身份验证？](/multi-factor-authentication/multi-factor-authentication)
 
-- 联合**租户，联合服务器在本地运行**。 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果使用 AD FS，请参阅[为 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。 
+- 联合**租户，联合服务器在本地运行**。 为 Azure Active Directory 或 Office 365 配置联合身份验证服务器。 例如，如果使用 AD FS，请参阅 [为 AD FS 配置其他身份验证方法](/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs)。 
 
-    有关此方案的详细信息，请参阅 Office 博客上[的使用 office 365 – Identity program 现已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)。 
+    有关此方案的详细信息，请参阅 Office 博客上  [的使用 office 365 – Identity program 现已简化](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/) 。 
 
 ## <a name="rights-management-connector--aip-scanner-requirements"></a>Rights Management connector/AIP 扫描器要求
 
@@ -82,13 +82,13 @@ Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。
 
 如果无法更改 UPN 值，请为相关用户配置备用 Id，并指导他们使用此备用 ID 登录到 Office。 
 
-有关详细信息，请参阅：
+有关详情，请参阅：
 
 - [配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id)
 - [Office 应用程序定期提示输入 SharePoint、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
 
 > [!TIP]
-> 如果 UPN 值中的域名是为你的租户验证的域，请将该用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD **proxyAddresses**属性。 这允许用户授权 Azure Rights Management 如果在授予使用权限时指定了其 UPN 值。 
+> 如果 UPN 值中的域名是为你的租户验证的域，请将该用户的 UPN 值作为另一个电子邮件地址添加到 Azure AD **proxyAddresses** 属性。 这允许用户授权 Azure Rights Management 如果在授予使用权限时指定了其 UPN 值。 
 
 有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 

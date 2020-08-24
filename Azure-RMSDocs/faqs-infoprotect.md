@@ -12,12 +12,12 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e54afaf29c01072a99bf943eec5326b5c839472f
-ms.sourcegitcommit: b9ed44cc71e2fa4927e046a3819f758c3e098e82
+ms.openlocfilehash: b41195e6eb50dffe5aada630b423a73c0024d244
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88711963"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788622"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -68,7 +68,7 @@ ms.locfileid: "88711963"
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-不是。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
+不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -80,7 +80,7 @@ ms.locfileid: "88711963"
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 
-是的。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，则仅 (经典) 的 Azure 信息保护客户端，你可以创建具有所需格式的文档模板，并将分类添加为字段代码。 
+是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，则仅 (经典) 的 Azure 信息保护客户端，你可以创建具有所需格式的文档模板，并将分类添加为字段代码。 
 
 例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
 
@@ -106,4 +106,4 @@ ms.locfileid: "88711963"
 
 请注意，如果在使用 Exchange Online 的 web 上使用 Outlook，则无需执行此操作，因为这种组合在从 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 合规中心发布敏感度标签时支持内置标签。
 
-如果无法在 web 上使用 Outlook 内置标签，请参阅此解决方法的配置步骤： [与旧 Exchange 消息分类的集成](rms-client/client-admin-guide-customizations.md#integration-with-the-legacy-exchange-message-classification)
+如果无法在 web 上使用 Outlook 内置标签，请参阅此解决方法的配置步骤： [将 Exchange 消息分类与 Azure 信息保护集成，以实现移动设备标记解决方案](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)。
