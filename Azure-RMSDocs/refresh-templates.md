@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d531269a9323de2f9157f1dafd8962a4f228733f
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: cbdbf45f337b2647bb260c4a9d01c1c777d078a2
+ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802226"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810331"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -34,12 +34,13 @@ ms.locfileid: "87802226"
 |Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。|
 |Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护客户端进行刷新。|
 |Azure 信息保护统一标识客户端|对于 Office 应用程序，每次打开应用程序时，模板都会自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此任何适用于 Office 365 应用、Office 2019、Office 2016 或 Office 2013 的刷新后模板也会针对 Azure 信息保护统一标记客户端进行刷新。<br /><br /> 对于文件资源管理器、PowerShell 和扫描程序，客户端不会下载模板，只需将其联机访问，无需执行其他步骤。|
-|Office 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分[： Office 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
+|Office 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分 [： Office 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#office-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
 |Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
-|Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分[：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
+|Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分 [：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
 |带有[内置标记](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus|此内置标签客户端不会下载模板，而是联机访问模板-无需执行其他步骤。|
+| | |
 
 如果客户端应用程序需要下载模板 (初始或刷新) ，请在下载完成前等待30分钟，新的或更新的模板完全可操作。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
 
@@ -86,7 +87,7 @@ ms.locfileid: "87802226"
    > [!TIP]
    > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：
    > 
-   > 运行 Azure 信息保护的[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService PowerShell 模块，请参阅[安装 AIPService powershell 模块](install-powershell.md)。
+   > 运行 Azure 信息保护的 [AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService PowerShell 模块，请参阅 [安装 AIPService powershell 模块](install-powershell.md)。
    > 
    > 在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
    > 
@@ -112,7 +113,7 @@ ms.locfileid: "87802226"
 
 2. 重新启动 Outlook for Mac。
 
-3. 创建新电子邮件并选择 "**加密**"，然后**验证凭据**。
+3. 创建新电子邮件并选择 " **加密**"，然后 **验证凭据**。
 
 
 ## <a name="see-also"></a>另请参阅

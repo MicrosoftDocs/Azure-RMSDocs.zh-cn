@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 37cb3b1f3c3eb60459cabe813f0cb00fb69b7d5b
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: 2bf09c4f5ff7587db251b3edeae556621a9aaede
+ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802158"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810314"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -26,12 +26,12 @@ ms.locfileid: "87802158"
 
 此页上列出的应用程序和解决方案对 Azure Rights Management (提供对 Azure 信息保护的数据保护的 Azure) Azure RMS 的本机支持。
 
-这些应用程序和解决方案称为 "enlighted"，并使用 Rights Management Api 紧密集成 Rights Management 和[使用限制](configure-usage-rights.md)。
+这些应用程序和解决方案称为 "enlighted"，并使用 Rights Management Api 紧密集成 Rights Management 和 [使用限制](configure-usage-rights.md) 。
 
 > [!NOTE]
 > 除非另行说明，否则支持的功能同时适用于 Azure RMS 和 AD RMS。 
 >
-> IOS、Android、macOS 和 Windows Phone 8.1 上的 AD RMS 支持还需要[Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))。
+> IOS、Android、macOS 和 Windows Phone 8.1 上的 AD RMS 支持还需要 [Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))。
 > 
 
 ## <a name="windows-rms-enlightened-applications"></a>Windows RMS-启用应用程序
@@ -85,7 +85,7 @@ ms.locfileid: "87802158"
 |类型  |支持的应用程序   |
 |---------|---------|
 |**Word、Excel、PowerPoint**    | - [Web 浏览器](#web-browser-support)    |
-|[**电子邮件**](#viewing-protected-content-in-email-clients)   | - [Blackberry 电子邮件](#email-clients-using-exchange-activesync-irm) <br />- [Web 浏览器](#web-browser-support)      |
+|[**电子邮件**](#viewing-protected-content-in-email-clients)   | - [ Blackberry 电子邮件](#email-clients-using-exchange-activesync-irm) <br />- [Web 浏览器](#web-browser-support)      |
 |[**其他文件类型**](#supported-text-and-image-file-types)    | 不支持   |
 | | |
 
@@ -99,7 +99,7 @@ ms.locfileid: "87802158"
 - [Office 365 应用支持](#office-365-app-support)
 - [在 Office for web 中查看受保护的文档](#viewing-protected-documents-in-office-for-the-web)
 - [Web 浏览器支持](#web-browser-support)
-- [使用 Exchange ActiveSync 信息 Rights Management (IRM) 的电子邮件客户端](#email-clients-using-exchange-activesync-irm)
+- [使用 Exchange ActiveSync 信息 Rights Management (IRM) 的电子邮件客户端 ](#email-clients-using-exchange-activesync-irm)
 
 ### <a name="viewing-protected-content-in-email-clients"></a>查看电子邮件客户端中的受保护内容
 
@@ -112,13 +112,13 @@ ms.locfileid: "87802158"
 
 ### <a name="supported-text-and-image-file-types"></a>支持的文本和图像文件类型
 
-Office 文件和电子邮件消息以外的文件类型包括文本和图像文件类型，扩展名为 **.txt、** **.xml、** **.jpg**和**jpeg。** 
+Office 文件和电子邮件消息以外的文件类型包括文本和图像文件类型，扩展名为 **.txt、** **.xml、** **.jpg** 和 **jpeg。** 
 
 这些文件在由 Rights Management 本地保护后会更改其文件扩展名，然后变为只读。 
 
 如果文件受到 Rights Management 的常规保护，则无法以本机方式保护的文件具有 .pfile 文件扩展名 **。**
 
-有关详细信息，请参阅[支持的文件类型](./rms-client/client-admin-guide-file-types.md)。
+有关详细信息，请参阅 [支持的文件类型](./rms-client/client-admin-guide-file-types.md)。
 
 ### <a name="office-365-app-support"></a>Office 365 应用支持
 
@@ -134,7 +134,7 @@ Office 文件和电子邮件消息以外的文件类型包括文本和图像文�
 
 - 当使用[带有新功能的 office 365 消息加密](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)保护[office 附件](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)时， **Word、Excel 和 PowerPoint**文件支持 Web 浏览器。
 
-- 对于**电子邮件，** 仅在以下情况下支持 web 浏览器：
+- 对于 **电子邮件，** 仅在以下情况下支持 web 浏览器：
 
     - 如果发送方和接收方都属于同一组织
     - 如果发件人或收件人正在使用 Exchange Online
@@ -207,7 +207,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 所有版本的 Office for Mac 2019 和 Office for Mac 2016 都支持使用受保护的内容。
 
 > [!TIP]
-> 若要开始使用 Office for Mac 保护文档，你可能会发现以下常见问题很有用：[如何实现配置 Mac 计算机以保护和跟踪文档？](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
+> 若要开始使用 Office for Mac 保护文档，你可能会发现以下常见问题很有用： [如何实现配置 Mac 计算机以保护和跟踪文档？](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 > 
 ## <a name="azure-information-protection-apps-for-ios-and-android"></a>适用于 iOS 和 Android 的 Azure 信息保护应用
 
@@ -232,13 +232,13 @@ Azure 信息保护 (AIP) 客户端包括两个版本，每个版本有管理员�
 从 " [Microsoft Azure 信息保护" 页](https://go.microsoft.com/fwlink/?LinkId=303970)下载相关应用。
 
 > [!NOTE]
-> 不确定这两个版本之间的差异吗？ 请参阅相关[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
+> 不确定这两个版本之间的差异吗？ 请参阅相关 [常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 > 
 ## <a name="rights-management-sharing-app"></a>权限管理共享应用
 
-对于 Mac 计算机，Rights Management 共享应用为受保护的 PDF 文件提供了一个查看器** () 、** 受保护的文本图像以及一般受保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Office 365 专业增强版。 
+对于 Mac 计算机，Rights Management 共享应用为受保护的 PDF 文件提供了一个查看器 ** () 、** 受保护的文本图像以及一般受保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Office 365 专业增强版。 
 
-有关详细信息，请参阅适用[于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](https://technet.microsoft.com/dn451248)
+有关详细信息，请参阅适用 [于移动平台的 Microsoft Rights Management 共享应用程序的常见问题](https://technet.microsoft.com/dn451248)
 
 从 " [Microsoft Azure 信息保护" 页](https://go.microsoft.com/fwlink/?LinkId=303970)下载适用于 Mac 计算机的 Rights Management 共享应用。
 
@@ -267,4 +267,4 @@ Azure RMS 当前不支持的应用程序包括：
 - [应用程序如何支持 Azure Rights Management 服务](./applications-support.md)。
 - [配置 Azure Rights Management 的应用程序](configure-applications.md)。
 
-有关支持 Azure Rights Management 服务和 Azure 信息保护的解决方案的最新信息，请参阅博客文章[Microsoft Ignite 2019 – Microsoft Information Protection 解决方案合作伙伴生态系统展示](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Ignite-2019-Microsoft-Information-Protection-solutions/ba-p/967024)。
+有关支持 Azure Rights Management 服务和 Azure 信息保护的解决方案的最新信息，请参阅博客文章 [Microsoft Ignite 2019 – Microsoft Information Protection 解决方案合作伙伴生态系统展示](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Ignite-2019-Microsoft-Information-Protection-solutions/ba-p/967024)。

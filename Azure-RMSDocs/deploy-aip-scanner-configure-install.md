@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7960c945ee51c5d2d81f26aa75f350aeb87c0f60
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: 7f7964081893635052de8f5a8da32f7010f49cc5
+ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788766"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810348"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -112,7 +112,7 @@ ms.locfileid: "88788766"
     |设置  |说明  |
     |---------|---------|
     |**网络扫描作业名称**     |为此作业输入有意义的名称。  此字段为必需字段。       |
-    |**描述**     |   输入有意义的说明。      |
+    |**说明**     |   输入有意义的说明。      |
     |**选择群集**     |从下拉列表中，选择要用于扫描已配置网络位置的群集。  </br></br>**提示：** 选择群集时，请确保分配的群集中的节点可以通过 SMB 访问配置的 IP 范围。      |
     |**配置要发现的 IP 范围**     |   单击定义 IP 地址或范围。 </br></br>在 " **选择 IP 范围** " 窗格中，输入一个可选名称，然后输入范围的起始 ip 地址和结束 ip 地址。 </br></br>**提示：** 若要仅扫描特定的 IP 地址，请在 " **起始 ip** " 和 " **结束 ip** " 字段中输入相同的 ip 地址。      |
     |**设置计划**     | 定义希望此网络扫描作业运行的频率。  </br></br>如果选择 " **每周**"，则会出现 " **运行网络扫描作业** " 设置。 选择要在一周中的哪几天运行网络扫描作业。       |
@@ -210,7 +210,7 @@ ms.locfileid: "88788766"
 
         添加 SharePoint 路径时，请使用以下语法：
     
-        |`Path`  |语法  |
+        |路径  |语法  |
         |---------|---------|
         |**根路径**     | `http://<SharePoint server name>` </br></br>扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 </br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
         |**特定 SharePoint 子网站或集合**     | 下列类型作之一： </br>- `http://<SharePoint server name>/<subsite name>` </br>- `http://SharePoint server name>/<site collection name>/<site name>` </br></br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
@@ -276,7 +276,7 @@ ms.locfileid: "88788766"
 获取 Azure AD 令牌：
 
 1. 返回 Azure 门户，以创建 Azure AD 应用程序以指定用于身份验证的访问令牌。
-1. 
+
 1. 在 Windows Server 计算机中，如果你的扫描程序服务帐户已被授予 **本地登录** 的权限，请使用此帐户登录并启动 PowerShell 会话。 
 
     运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，指定从上一步骤中复制的值：

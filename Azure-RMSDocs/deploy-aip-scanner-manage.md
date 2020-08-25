@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ad11aefa787ded3632b2c3d017fc83cee77364c2
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: d4b3520d89346d0b6fb86a42fcf774fcb4a86499
+ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788741"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88810280"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
@@ -124,9 +124,9 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 > [!TIP]
 > 如果已更改 AIP [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)，Azure 门户会提示你跳过完全重新扫描。 若要确保重新扫描发生，请确保在出现的提示中选择 " **否** "。
 > 
-### <a name="trigger-a-full-rescan-by-modifying-your-settings-versions-27990-and-earlier"></a>通过修改设置 (版本2.7.99.0 和早期版本来触发完全重新扫描) 
+### <a name="trigger-a-full-rescan-by-modifying-your-settings-versions-271010-and-lower"></a>通过修改 (版本2.7.101.0 和更低版本的设置来触发完全重新扫描) 
 
-在扫描程序版本2.7.99.0 及更早版本中，只要扫描程序检测到新的或更改的设置以自动和建议标记，就会扫描所有文件。 扫描程序每四小时自动刷新一次策略。
+在扫描程序版本 [2.7.101.0](rms-client/unifiedlabelingclient-version-release-history.md#version-271010) 和更低版本中，只要扫描程序检测到新的或更改的设置以自动和建议的标签，就会扫描所有文件。 扫描程序每四小时自动刷新一次策略。
 
 若要更快地刷新策略（如测试时），请手动删除 **%LocalAppData%\Microsoft\MSIP\mip \<processname> \mip** 目录的内容，然后重新启动 Azure 信息保护服务。
 
