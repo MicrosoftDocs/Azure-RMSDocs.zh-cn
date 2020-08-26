@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: be5e90f0451f92fff028ff4c583f0753f45567af
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: 261f487a302ba7a8865c746b9aa304bc3cf63625
+ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264440"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "88788911"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -60,17 +60,17 @@ ms.locfileid: "88264440"
 
 4. 你已从下列类别之一登录到 Office 应用：
     
-    - Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
+    - Office 应用最低版本 1805，[Microsoft 365 商业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。
     
-    - Office 365 ProPlus
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)。
     
-    - Office 专业增强版 2019。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2019。
     
-    - Office Professional Plus 2016。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2016。
     
-    - Office Professional Plus 2013 Service Pack 1。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1。
     
-    - Office Professional Plus 2010 Service Pack 2。
+    - [Microsoft 365 企业应用版](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2。
 
 > [!TIP]
 > 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。
