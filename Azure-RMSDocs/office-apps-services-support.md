@@ -12,12 +12,12 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4d935e797e4f08c2d8f82d4e797f9d60cc97a5d4
-ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
+ms.openlocfilehash: 165833b5d3b768be322dcd15548ef9cdbb70927c
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869107"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953212"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
@@ -30,14 +30,10 @@ ms.locfileid: "86869107"
 
 例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用保护模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏****。
 
-如果已准备好配置 Office 应用，请参阅[office 应用：客户端配置](configure-office-apps.md)。
+如果已准备好配置 Office 应用，请参阅 [office 应用：客户端配置](configure-office-apps.md)。
 
-有关相关的已知问题，请参阅[AIP Office 应用程序中的已知问题](known-issues.md#aip-known-issues-in-office-applications)。
+有关相关的已知问题，请参阅 [AIP Office 应用程序中的已知问题](known-issues.md#aip-known-issues-in-office-applications)。
 
-<!-->
-> [!NOTE]
-> 由于最新的 Windows 更新中的限制，在打开文件后，附加到电子邮件的文件当前可能被锁定。
--->
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 和 Exchange Server
 使用 Exchange Online 或 Exchange 服务器 时，可以配置 Azure 信息保护的选项。 此配置允许 Exchange 提供以下保护解决方案：
 
@@ -68,7 +64,7 @@ ms.locfileid: "86869107"
 
 ## <a name="sharepoint-in-microsoft-365-and-sharepoint-server"></a>Microsoft 365 和 SharePoint Server 中的 SharePoint
 
-在 Microsoft 365 或 SharePoint Server 中使用 SharePoint 时，可以使用 SharePoint 信息权限管理（IRM）功能保护文档。 通过此功能，管理员可以保护列表或库，这样当用户签出文档时，所下载的文件将会受到保护，如此只有授权人员能够根据指定的信息保护策略来查看和使用文件。 例如，文件可能是只读的，可能会禁用文本复制，可能会阻止保存本地副本，可能会阻止打印文件。
+在 Microsoft 365 或 SharePoint Server 中使用 SharePoint 时，可以使用 SharePoint 信息权限管理 (IRM) 功能来保护文档。 通过此功能，管理员可以保护列表或库，这样当用户签出文档时，所下载的文件将会受到保护，如此只有授权人员能够根据指定的信息保护策略来查看和使用文件。 例如，文件可能是只读的，可能会禁用文本复制，可能会阻止保存本地副本，可能会阻止打印文件。
 
 Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 默认情况下，保护仅限于下载文档的人员。 可以使用名为“允许组保护”**** 的配置选项更改此默认值，该选项将保护扩展到你指定的组。 例如，可以指定一个具有编辑库中文档权限的组，以便同一组用户可以在 SharePoint 的外部编辑该文档，而不考虑是哪个用户下载了该文档。 或者，可以指定未在 SharePoint 中授予权限的组，但该组中的用户需要从 SharePoint 外部访问该文档。 对于 SharePoint 列表和库，始终由管理员（绝不会是最终用户）配置此保护。 在站点级别设置权限，默认情况下，这些权限将由该站点中的任何列表或库继承。 如果在 Microsoft 365 中使用 SharePoint，则用户还可以配置其 Microsoft OneDrive 库以进行 IRM 保护。
 
@@ -76,7 +72,7 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 必须首先为 SharePoint 启用 IRM 服务。 然后，为库指定 IRM 权限。 对于 SharePoint 和 OneDrive，用户还可以为其 OneDrive 库指定 IRM 权限。 SharePoint 不使用权限策略模板，虽然可以选择的 SharePoint 配置设置与可以在模板中指定的某些设置相匹配。
 
-如果使用 SharePoint Server，可通过部署 Azure 权限管理连接器，使用此 IRM 保护。 此连接器充当本地服务器和权限管理云服务之间的中继。 有关详细信息，请参阅[部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
+如果使用 SharePoint Server，可通过部署 Azure 权限管理连接器，使用此 IRM 保护。 此连接器充当本地服务器和权限管理云服务之间的中继。 有关详细信息，请参阅 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 
 > [!NOTE]
 > 使用 SharePoint IRM 时有一些限制：
@@ -87,20 +83,20 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 > 
 > - 不支持共同创作（多人同时对文档进行编辑）。 若要在受 IRM 保护的库中编辑文档，必须首先签出和下载文档，然后在 Office 应用程序中编辑该文档。 因此，一次只能有一人编辑文档。
 
-对于不受 IRM 保护的库，如果你将保护仅应用到你随后上传到 SharePoint 或 OneDrive 的文件，则以下操作不适用于此文件：共同创作、Office web、搜索、文档预览、缩略图、电子数据展示和数据丢失防护（DLP）。
+对于不受 IRM 保护的库，如果你将保护仅应用于随后上传到 SharePoint 或 OneDrive 的文件，则以下操作不会使用此文件：共同创作、用于 web 的 Office、搜索、文档预览、缩略图、电子数据展示和数据丢失防护 (DLP) 。
 
 > [!IMPORTANT]
-> SharePoint IRM 可以与应用保护的敏感度标签结合使用。 同时使用这两个功能时，受保护的文件的行为会发生更改。 有关详细信息，请参阅[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+> SharePoint IRM 可以与应用保护的敏感度标签结合使用。 同时使用这两个功能时，受保护的文件的行为会发生更改。 有关详细信息，请参阅 [在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
-使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档[中的 OneDrive 和 sharepoint 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx)。
+使用 SharePoint IRM 保护时，Azure Rights Management 服务会在从 SharePoint 下载文档时为文档应用使用限制和数据加密，而不是在 SharePoint 中首次创建文档或将其上传到库时进行此操作。 有关如何在下载文档前对其进行保护的信息，请参阅 SharePoint 文档 [中的 OneDrive 和 sharepoint 中的数据加密](https://technet.microsoft.com/library/dn905447.aspx) 。
 
 虽然不再是新的，但以下来自 Office 365 博客的文章中提供了一些额外信息，你可能会发现这些信息很有用： [SharePoint 中的信息 Rights Management 的新增功能](https://www.microsoft.com/microsoft-365/blog/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)
 
-对于即将发生的更改，请参阅[SharePoint 安全性、管理和迁移更新](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/Updates-to-SharePoint-security-administration-and-migration/ba-p/549585)。
+对于即将发生的更改，请参阅 [SharePoint 安全性、管理和迁移更新](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/Updates-to-SharePoint-security-administration-and-migration/ba-p/549585)。
 
 如果已准备好为 SharePoint 配置 IRM ：
 
-- Microsoft 365 中的 SharePoint，请参阅[Microsoft 365 和 OneDrive： IRM 配置中的 sharepoint](configure-office365.md#sharepoint-in-microsoft-365-and-onedrive-irm-configuration)。
+- Microsoft 365 中的 SharePoint，请参阅 [Microsoft 365 和 OneDrive： IRM 配置中的 sharepoint](configure-office365.md#sharepoint-in-microsoft-365-and-onedrive-irm-configuration)。
 
 - 对于 Sharepoint Server，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 

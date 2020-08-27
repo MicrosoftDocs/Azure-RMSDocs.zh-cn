@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee3d79a408b397724985279c5926c0770f1d43d9
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: eaa3c47599a2d314dd0af24442efcefe16ff3c61
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264457"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952906"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE]
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
-> **若要部署 AIP 经典客户端，请** 打开支持票证以获取下载访问权限。
+> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
 
 在企业网络中安装 Azure 信息保护客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序：[Azure 信息保护要求](../requirements.md)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "88264457"
 
 使用下列选项之一来为用户安装客户端：
 
-|安装选项  |说明  |
+|安装选项  |描述  |
 |---------|---------|
 |**运行客户端可执行文件 ( .exe) **  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
 |**将客户端的 Windows installer 部署 ( .msi) ** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
@@ -101,12 +101,6 @@ ms.locfileid: "88264457"
 ### <a name="to-install-the-azure-information-protection-client-by-using-the-executable-installer"></a>使用可执行安装程序安装 Azure 信息保护客户端
 
 如果在使用 Microsoft Update 目录，或使用 Intune 之类的集中部署方法部署 .msi，请使用以下说明安装客户端。
-
-<!--
-1. Download the executable version Azure Information Protection client from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).
-
-    If there is a preview version available, keep this version for testing only. It is not intended for end users in a production environment.
--->
 
 1. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 
 
@@ -190,12 +184,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
 
-<!--
-
-1. Download the .msi version of the Azure Information Protection client from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018). 
-    
-    If there is a preview version available, keep this version for testing only. It is not intended for end users in a production environment. 
--->
 1. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     
     |Office 版本|操作系统|软件|操作|

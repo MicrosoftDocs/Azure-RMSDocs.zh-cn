@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: a532416acd134c2cb08117af2951aa1fef23ba82
-ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
+ms.openlocfilehash: 3730c8d781c9b53de1848ef2ebee1185cae38560
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88073544"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953127"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -61,7 +61,7 @@ ms.locfileid: "88073544"
 
 - 当使用文件资源管理器、PowerShell 或 Azure 信息保护扫描程序标记文档时，不会立即应用视觉标记，但在 Office 应用中打开文档以及首次保存文档时会通过 Azure 信息保护客户端应用视觉标记。
 
-    当你对保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的文件使用 "[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)" 时，不会应用可视标记，除非你将 "[高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)配置为启用分类以在后台连续运行。
+    当你对保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的文件使用 " [自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) " 时，不会应用可视标记，除非你将 " [高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) 配置为启用分类以在后台连续运行。
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
@@ -73,7 +73,7 @@ ms.locfileid: "88073544"
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择包含要添加或更改的视觉标记的标签。
 
-3. 在 "**标签**" 窗格中，在 "**设置视觉标记 (如页眉或页脚) ** " 部分中，为所需的视觉标记配置设置，然后单击 "**保存**"：
+3. 在 " **标签** " 窗格中，在 " **设置视觉标记 (如页眉或页脚) ** " 部分中，为所需的视觉标记配置设置，然后单击 " **保存**"：
 
     - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式****。
 
@@ -102,11 +102,8 @@ ms.locfileid: "88073544"
 > [!NOTE]
 >此语法区分大小写。
 
-<!-- REMOVED w JUNE 2020 RELEASE> [!NOTE]
-> Use of either the `${User.Name}` and/or `${User.PrincipalName}` variable are currently not supported by the Azure Information Protection unified labeling client. 
--->
 >[!TIP]
-> 还可以使用[字段代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)到文档或模板中。
+> 还可以使用 [字段代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification) 到文档或模板中。
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
@@ -142,7 +139,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     在 Word 和 PowerPoint 中，标签应用水印文本“此内容保密”。 在 Excel 中，标签应用水印文本“机密”。 在 Outlook 中，标签不应用任何水印文本，因为 Outlook 不支持水印视觉标记。
 
 > [!NOTE]
-> 使用 Azure 信息保护统一标签客户端时，仅可使用 Azure 信息保护门户设置**字体名称**的值。 当设置**字体颜色**值超出五个默认值之一时，还可以使用 Azure 信息保护门户。
+> 使用 Azure 信息保护统一标签客户端时，仅可使用 Azure 信息保护门户设置 **字体名称** 的值。 当设置 **字体颜色** 值超出五个默认值之一时，还可以使用 Azure 信息保护门户。
 
 ### <a name="setting-the-font-name"></a>设置字体名称
 
@@ -151,7 +148,7 @@ Calibri 是页眉、页脚和水印文字的默认字体。 如果指定替代�
 
 ### <a name="setting-the-font-color"></a>设置字体颜色
 
-可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0**为青绿色的 RGB 十六进制值。
+可从可用颜色列表中进行选择，或输入颜色的红绿蓝 (RGB) 组成的十六进制三元色代码来指定自定义颜色。 例如， **#40e0d0** 为青绿色的 RGB 十六进制值。
 
 如果需要这些代码的参考，可从 MSDN web 文档的页面找到一个有用的表格 [\<color>](https://developer.mozilla.org/docs/Web/CSS/color_value) 。你还可以在许多应用程序中找到这些代码，以便你编辑图片。 例如，通过 Microsoft 画图，从调色板中选择自定义颜色，系统将自动显示 RGB 值，该值可供复制。
 

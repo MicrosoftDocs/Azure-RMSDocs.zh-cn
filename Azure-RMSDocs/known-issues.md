@@ -11,42 +11,19 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7c55faf0138e007ed1a8877ebb60cf01551c4dd3
-ms.sourcegitcommit: e6b594b8d15f81884b0999f5c0009386aef02cc3
+ms.openlocfilehash: af4a6989dca815d204fee72aafa6d839d2673fc4
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88073731"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952855"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
 使用下面的列表和表来查找有关 Azure 信息保护功能相关的已知问题和限制的详细信息。
 
 > [!NOTE]
-> 本文介绍经典和统一标签客户端中的已知问题。 不确定这些客户端之间有何区别？ 请参阅[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
-
-<!--removed from this page
-## HYOK known issues
-
-HYOK has the following known issues:
-
-- [Supported Microsoft Office versions](#supported-microsoft-office-versions)
-- [Email recommendations for Office 365 and other online services](#email-recommendations-for-office-365-and-other-online-services)
-
-### Supported Microsoft Office versions
-
-HYOK for the Azure Information Protection classic client does not support versions of Office earlier than Office 2013.
-
-### Email recommendations for Office 365 and other online services
-
-We recommend that you do not use HYOK protection for emails in Office 365 and other online services.
-
-Office 365 and other online services are not be able to decrypt HYOK-protected documents and emails. This limitation includes HYOK-protected documents and emails that have been protected with the Rights Management connector, and prevents these services from inspecting the content and taking action on them.
-
-This loss of functionality for HYOK-protected email includes malware scanners, data loss prevention (DLP) solutions, mail routing rules, journaling, eDiscovery, archiving solutions, and Exchange ActiveSync.
-
-Additionally, users may not understand why some devices cannot open their HYOK-protected emails, resulting in more calls to your help desk.
--->
+> 本文介绍经典和统一标签客户端中的已知问题。 不确定这些客户端之间有何区别？ 请参阅 [常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
 ## <a name="client-support-for-container-files-such-as-zip-files"></a>容器文件的客户端支持，例如 .zip 文件
 
@@ -58,47 +35,31 @@ Additionally, users may not understand why some devices cannot open their HYOK-p
 
 Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 在这种情况下，在查看器中打开文档时，附件不可见。
 
-有关详细信息，请参阅[管理员指南： Azure 信息保护客户端支持的文件类型](rms-client/client-admin-guide-file-types.md)。
+有关详细信息，请参阅 [管理员指南： Azure 信息保护客户端支持的文件类型](rms-client/client-admin-guide-file-types.md)。
 
 ## <a name="powershell-support-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的 PowerShell 支持
 
-与 Azure 信息保护客户端一起安装的**AzureInformationProtection** PowerShell 模块的当前版本具有以下已知问题：
+与 Azure 信息保护客户端一起安装的 **AzureInformationProtection** PowerShell 模块的当前版本具有以下已知问题：
 
 - **Outlook 个人文件夹 (*.pst * 文件) * *。 使用**AzureInformationProtection**模块不支持本机保护*的 .pst*文件。
 
-- **Outlook 保护的电子邮件消息* ( .rpmsg*文件) **。 仅当取消保护 Outlook 受保护的电子邮件位于 Outlook 个人文件夹* ( .pst*文件) 中时，才**支持该模块**。
+- **Outlook 保护的电子邮件消息 * ( .rpmsg* 文件) **。 仅当取消保护 Outlook 受保护的电子邮件位于 Outlook 个人文件夹* ( .pst*文件) 中时，才**支持该模块**。
 
-    不支持 *.pst*文件之外的取消保护电子邮件。
+    不支持 *.pst* 文件之外的取消保护电子邮件。
 
-有关详细信息，请参阅[管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用](rms-client/client-admin-guide-powershell.md)。
-
-<!-- removed from this page
-## Protection-only mode known issues
-
-The following known issues apply for [Protection-only mode for the Azure Information Protection client](rms-client/client-protection-only-mode.md):
-
-- In Office apps, the Azure Information Protection bar is not shown. When you click **Protect** > **Show Bar**, this menu option is unavailable.
-
-- When you use the **Classify and protect - Azure Information Protection** dialog box with the File Explorer, labels for classification are not shown. Instead, you have an option select a Rights Management (RMS) template.
--->
+有关详细信息，请参阅 [管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用](rms-client/client-admin-guide-powershell.md)。
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|Feature  |已知问题  |
+|功能  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典标签和统一标签）在同一台计算机上不支持多个 Office 版本，或在 Office 中切换用户帐户。       |
-|**多显示器** |如果使用多个显示器并打开 Office 应用程序： </br></br>-你可能会遇到 Office 应用中的性能问题。</br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 </br></br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 "**选项**" 对话框，并在 "**常规"** 下选择 "**优化兼容性**，而不是**优化以获得最佳外观"。**    |
-|**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的[DRMEncryptProperty](https://docs.microsoft.com/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options)注册表设置。|
-|**Word 中的内容标记**    | 当页脚中还包含一个表时，Azure 信息保护内容[标记](configure-policy-markings.md)可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅[何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
+|**多显示器** |如果使用多个显示器并打开 Office 应用程序： </br></br>-你可能会遇到 Office 应用中的性能问题。</br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 </br></br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规"** 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观"。**    |
+|**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的 [DRMEncryptProperty](https://docs.microsoft.com/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options) 注册表设置。|
+|**Word 中的内容标记**    | 当页脚中还包含一个表时，Azure 信息保护内容 [标记](configure-policy-markings.md) 可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅 [何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
 |**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
-|**邮件合并**    |  Azure 信息保护功能不支持 Office[邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能。       |
+|**邮件合并**    |  Azure 信息保护功能不支持 Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705) 功能。       |
 | | |
-
-<!-- removing b/c this is relevant for classic only. for UL, labels are configured in m365. so this is basically irrelevant for us.
-## Known issues in labeling
-
-Depending on your policy rule size limit, configuring more than 200 users or user groups for each label may cause unexpected errors. 
--->
 
 ## <a name="known-issues-in-policies"></a>策略中的已知问题
 
@@ -114,7 +75,7 @@ Depending on your policy rule size limit, configuring more than 200 users or use
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详情，请参阅：
+    有关详细信息，请参阅：
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)

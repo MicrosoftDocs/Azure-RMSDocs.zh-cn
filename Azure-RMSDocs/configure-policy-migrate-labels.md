@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4b97f7930e4d3a22746635a3d43436c59126e6fd
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: c1b80fd786666faa20fe9f67fb72d67ed65a7392
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788673"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953110"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -142,14 +142,14 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 |标签配置|受统一标记客户端的支持| 管理中心指南|
 |-------------------|---------------------------------------------|-------------------------|
 |启用或禁用状态<br /><br />此状态不同步到管理中心 |不适用|等效于是否发布标签。 |
-|从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |是|标签颜色没有配置选项。 相反，你可以在 Azure 门户中配置标签颜色，也可以使用 [PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
+|从列表中选择的标签颜色或使用 RGB 代码指定的标签颜色 |适合|标签颜色没有配置选项。 相反，你可以在 Azure 门户中配置标签颜色，也可以使用 [PowerShell](./rms-client/clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)。|
 |使用预定义模板的基于云的保护或基于 HYOK 的保护 |否|预定义模板没有配置选项。 我们不建议使用此配置发布标签。|
-|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |是|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签，请查看 [下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
+|使用 Word、Excel 和 PowerPoint 的用户定义权限的基于云的保护 |适合|管理中心现在具有用户定义的权限的配置选项。 <br /><br /> 如果使用此配置发布标签，请查看 [下表](#comparing-the-behavior-of-protection-settings-for-a-label)中应用标签的结果。|
 |使用 Outlook（不可转发）中用户定义权限的基于 HYOK 的保护 |否|HYOK 没有配置选项。 我们不建议使用此配置发布标签。 否则，请在[下表](#comparing-the-behavior-of-protection-settings-for-a-label)中查看应用此标签所带来的后果。|
-|自定义字体名称、大小和自定义字体颜色（由 RGB 代码用于视觉标记 (页眉、页脚、水印)   |是|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户或 [**新的标签**](https://docs.microsoft.com/powershell/module/exchange/new-label) Office 365 Security & 相容性中心 cmdlet。 为了便于管理，请考虑将颜色更改为管理中心中列出的选项之一。 <br /><br />**注意**：安全 & 相容性中心管理中心支持预定义的字体定义列表。 仅通过 [**新的标签**](https://docs.microsoft.com/powershell/module/exchange/new-label) Office 365 Security & 相容性中心 cmdlet 支持自定义字体和颜色。|
-|视觉标记（页眉、页脚）中的变量 |是|此标签配置仅在 AIP 客户端中受支持，而不受 Office 内置标签支持。 </br></br>如果使用的是内置标签，并在没有更改的情况下发布此标签，则变量将在客户端上显示为文本，而不是显示动态值。 <!--Before you publish the label, edit the strings to remove the variables.-->|
-|每个应用的视觉标记|是|此标签配置仅在 AIP 客户端中受支持，而不受 Office 内置标签支持。 </br></br>如果使用内置标签，并发布此标签而不进行任何更改，则视觉标记配置将显示为变量文本，而不是已配置为在每个应用中显示的视觉标记。  <!--Publish this label only if it is suitable for all apps. We recommend editing the strings to remove the app variables if needed.-->|
-|"仅限我" 保护 |是|管理中心不允许你保存现在应用的加密设置，而无需指定任何用户。 在 Azure 门户中，此配置会生成一个标签，该标签适用于 ["仅限我" 的保护](configure-policy-protection.md#example-6-label-that-applies-just-for-me-protection)。 <br /><br /> 作为替代方法，可以创建应用加密的标签，并指定具有任何权限的用户，然后使用 PowerShell 编辑关联的保护模板。 首先，使用[AipServiceRightsDefinition](https://docs.microsoft.com/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet (参阅示例 3) ，然后使用*RightsDefinitions*参数[AipServiceTemplateProperty](https://docs.microsoft.com/powershell/module/aipservice/set-aipservicetemplateproperty?view=azureipps#examples) 。|
+|自定义字体名称、大小和自定义字体颜色（由 RGB 代码用于视觉标记 (页眉、页脚、水印)   |适合|视觉标记的配置限制为颜色和字体大小列表。 尽管无法看见管理中心中配置的值，仍可以不做任何更改发布此标签。 <br /><br />若要更改这些选项，可以使用 Azure 门户或 [**新的标签**](https://docs.microsoft.com/powershell/module/exchange/new-label) Office 365 Security & 相容性中心 cmdlet。 为了便于管理，请考虑将颜色更改为管理中心中列出的选项之一。 <br /><br />**注意**：安全 & 相容性中心管理中心支持预定义的字体定义列表。 仅通过 [**新的标签**](https://docs.microsoft.com/powershell/module/exchange/new-label) Office 365 Security & 相容性中心 cmdlet 支持自定义字体和颜色。|
+|视觉标记（页眉、页脚）中的变量 |适合|此标签配置仅在 AIP 客户端中受支持，而不受 Office 内置标签支持。 </br></br>如果使用的是内置标签，并在没有更改的情况下发布此标签，则变量将在客户端上显示为文本，而不是显示动态值。 |
+|每个应用的视觉标记|适合|此标签配置仅在 AIP 客户端中受支持，而不受 Office 内置标签支持。 </br></br>如果使用内置标签，并发布此标签而不进行任何更改，则视觉标记配置将显示为变量文本，而不是已配置为在每个应用中显示的视觉标记。  |
+|"仅限我" 保护 |适合|管理中心不允许你保存现在应用的加密设置，而无需指定任何用户。 在 Azure 门户中，此配置会生成一个标签，该标签适用于 ["仅限我" 的保护](configure-policy-protection.md#example-6-label-that-applies-just-for-me-protection)。 <br /><br /> 作为替代方法，可以创建应用加密的标签，并指定具有任何权限的用户，然后使用 PowerShell 编辑关联的保护模板。 首先，使用[AipServiceRightsDefinition](https://docs.microsoft.com/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet (参阅示例 3) ，然后使用*RightsDefinitions*参数[AipServiceTemplateProperty](https://docs.microsoft.com/powershell/module/aipservice/set-aipservicetemplateproperty?view=azureipps#examples) 。|
 |条件和关联设置 <br /><br /> 包括自动和建议标签及其工具提示|不适用|若要重新配置条件，请将自动标记用作标签设置中的独立配置。|
 
 ### <a name="comparing-the-behavior-of-protection-settings-for-a-label"></a>比较标签保护设置的行为
@@ -168,10 +168,6 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 |HYOK (AD RMS)，其中用户定义的权限适用于 Word、Excel、PowerPoint 和文件资源管理器：| 可在 Word、Excel、PowerPoint 和文件资源管理器中查看<br /><br /> 当应用此标签时：<br /><br /> - 对文档和电子邮件应用 HYOK 保护| 可在 Word、Excel 和 PowerPoint 中查看 <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护|可在 Word、Excel 和 PowerPoint 中查看 <br /><br /> 当应用此标签时： <br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 |
 |HYOK (AD RMS)，其中用户定义的权限适用于 Outlook：|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br />- 通过 HYOK 保护向电子邮件应用“请勿转发”规则|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br /> - 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护|可在 Outlook 中查看<br /><br />当应用此标签时：<br /><br />- 不应用保护；如果之前已通过标签应用保护，则删除该保护 [[2]](#footnote-2) <br /><br />- 如果之前在未使用标签的情况下实施了保护，则保留保护 [[1]](#footnote-1)|
 
-<!-- removed
-|Azure (cloud key) with user-defined permissions for Word, Excel, PowerPoint, and File Explorer:| Visible in Word, Excel, PowerPoint, and File Explorer <br /><br /> When the label is applied:<br /><br /> - Users are prompted for custom permissions that are then applied as protection using a cloud-based key| Visible in Word, Excel, PowerPoint, and File Explorer <br /><br /> When the label is applied:<br /><br /> - Users are prompted for custom permissions that are then applied as protection using a cloud-based key|Visible in Word, Excel, PowerPoint, and Outlook: <br /><br /> When the label is applied:<br /><br /> - Users are not prompted for custom permissions and no protection is applied <br /><br /> - If protection was previously applied independently from a label, that protection is preserved [[1]](#footnote-1)|
-
- -->
 ###### <a name="footnote-1"></a>脚注 1
 
 在 Outlook 中，保护已保留，但有一个例外：在使用 "仅加密" 选项保护电子邮件时，将删除该保护。
@@ -254,13 +250,15 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 ##### <a name="services-that-currently-support-unified-labeling-include"></a>当前支持统一标签的服务包括：
 
-- [预览中的 Power BI () ](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)
+- [Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)
 
-- Office Online (在预览) 和 Outlook 网页上
+- Web 上的 Office Online 和 Outlook
 
-- Microsoft SharePoint、OneDrive for work 或 school、OneDrive for home、团队和 Office 365 组 (预览) 
+    有关详细信息，请参阅 [在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+
+- Microsoft SharePoint、OneDrive for work 或 school、OneDrive for home、团队和 Office 365 组
     
-    有关详细信息，请参阅 [将敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 站点配合使用 (公共预览版) ](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) 并 [在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+    有关详细信息，请参阅 [将敏感度标签与 Microsoft 团队、Office 365 组和 SharePoint 站点配合使用](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 - Microsoft Defender 高级威胁防护
 

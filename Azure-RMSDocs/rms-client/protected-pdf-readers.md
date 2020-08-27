@@ -14,18 +14,18 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: dd8a895c0fb6fb94311d7e028265bf9bbdbfe668
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 6d14ee2cc1a8b2bddad79f2e5c0cfb7251522840
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927690"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952957"
 ---
 # <a name="which-pdf-readers-are-supported-for-protected-pdfs"></a>受保护的 Pdf 支持哪些 PDF 读取器？
 
 用于分类和/或受保护 Pdf 的 PDF 读者使你可以打开包含敏感信息的加密 Pdf。
 
-通过[Azure 信息保护（AIP）](../what-is-information-protection.md)加密 pdf 可确保未经授权的人员无法读取文件的内容，甚至已获授权的人员也无法共享显示内容的屏幕或屏幕截图。
+通过 [Azure 信息保护加密 pdf (AIP) ](../what-is-information-protection.md) 可确保未经授权的人员无法读取文件的内容，甚至经过授权的人员也无法共享显示内容的屏幕或屏幕截图。
 
 支持 Azure 信息保护的受保护的 PDF 读者验证你是否已获得打开文档的权限，还会解密你的内容。
 
@@ -39,22 +39,22 @@ ms.locfileid: "86927690"
 
 - [安装适用于 Windows 或 Mac 的受保护的 PDF 读取器](#installing-a-protected-pdf-reader-for-windows-or-mac)
 
-- [安装适用于移动设备的受保护的 PDF 阅读器（iOS/Android）](#installing-a-protected-pdf-reader-for-mobile-iosandroid)
+- [为 mobile (iOS/Android) 安装受保护的 PDF 阅读器 ](#installing-a-protected-pdf-reader-for-mobile-iosandroid)
 
 > [!TIP]
 > 如果在安装建议的读者后文档未打开，则文档可能会以较旧的格式进行保护。 
 >
-> 在这种情况下，请尝试将某个读取器列为先前格式的支持。 有关详细信息，请参阅[以前的格式支持](#support-for-previous-formats)。
+> 在这种情况下，请尝试将某个读取器列为先前格式的支持。 有关详细信息，请参阅 [以前的格式支持](#support-for-previous-formats)。
 > 
 ### <a name="iso-standards-for-pdf-encryption"></a>PDF 加密的 ISO 标准
 
 在此页上引用的 PDF 读者可以所有打开受保护的文档，这些文档符合 PDF 加密的 ISO 标准。 
 
-默认情况下，AIP 经典和统一标签客户端使用此标准，除非管理员已将其[禁用](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
+默认情况下，AIP 经典和统一标签客户端使用此标准，除非管理员已将其 [禁用](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
 
 ### <a name="viewing-protected-pdfs-in-adobe-acrobat-reader"></a>在 Adobe Acrobat Reader 中查看受保护的 Pdf
 
-Adobe Acrobat Reader 与 Microsoft 信息保护解决方案（例如[Azure 信息保护](../what-is-information-protection.md)）集成，为用户提供针对分类和/或受保护的 pdf 的简化一致的体验。
+Adobe Acrobat Reader 与 Microsoft 信息保护解决方案（例如 [Azure 信息保护](../what-is-information-protection.md) ）集成，为用户提供针对分类和/或受保护的 pdf 的简化一致的体验。
 
 [Windows](protected-pdf-readers-windows.md)和[MacOS](protected-pdf-readers-mac.md)支持 Adobe Acrobat Reader with Microsoft 信息保护集成。
 
@@ -72,19 +72,14 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 - **Windows：** Windows 10 和以前版本通过 Windows 8。 
     
-    有关早期版本的详细信息，请参阅[对先前格式的支持](#support-for-previous-formats)。
+    有关早期版本的详细信息，请参阅 [对先前格式的支持](#support-for-previous-formats)。
 
 - **Mac：** macOS 版本10.12 及更高版本 
 
 
-
-<!--
-With Microsoft Edge, when a user encounters a locally saved protected PDF file, they can view the file directly in the browser. If the file is available on SharePoint, the user only needs to click **Open** > **Open in browser** from Microsoft Edge, to view the file. 
--->
-
 **说明** 
 
-1. 检查系统上安装的[Microsoft Edge 版本](https://support.microsoft.com/help/4027011/microsoft-edge-find-out-which-version-you-have)。 
+1. 检查系统上安装的 [Microsoft Edge 版本](https://support.microsoft.com/help/4027011/microsoft-edge-find-out-which-version-you-have) 。 
 1. 如果 Microsoft Edge 版本为83.0.478.37 或更高版本，则可以直接在 Edge 浏览器中打开受保护的文件。 
 
 1. 若要在 SharePoint 中打开 PDF 文件，**请单击 "**  >  **在浏览器中打开打开**"。 
@@ -93,15 +88,15 @@ With Microsoft Edge, when a user encounters a locally saved protected PDF file, 
  
 ## <a name="installing-a-protected-pdf-reader-for-windows-or-mac"></a>安装适用于 Windows 或 Mac 的受保护的 PDF 读取器
 
-若要在台式计算机上打开受保护的 PDF 文档，建议为你的操作系统安装适用于[acrobat 和 Acrobat 读者的相关 Microsoft 信息保护（MIP）插件](https://go.microsoft.com/fwlink/?linkid=2050049)。
+若要在台式计算机上打开受保护的 PDF 文档，建议为你的操作系统安装适用于 Acrobat 的相关 [Microsoft 信息保护 (MIP) 插件](https://go.microsoft.com/fwlink/?linkid=2050049) 。
 
 **说明**
 
-1. 如果尚未安装，请从[adobe 网站](https://www.adobe.com/)安装 adobe Reader。
+1. 如果尚未安装，请从 [adobe 网站](https://www.adobe.com/)安装 adobe Reader。
 
-    请确保已阅读并同意[Adobe 一般使用条款](https://www.adobe.com/legal/terms.html)。
+    请确保已阅读并同意 [Adobe 一般使用条款](https://www.adobe.com/legal/terms.html)。
 
-1. 为你的操作系统安装[适用于 acrobat 和 Acrobat 读取器的 MIP 插件](https://go.microsoft.com/fwlink/?linkid=2050049)。  
+1. 为你的操作系统安装 [适用于 acrobat 和 Acrobat 读取器的 MIP 插件](https://go.microsoft.com/fwlink/?linkid=2050049) 。  
 
     下载： [![下载](../media/download.png "下载适用于 Acrobat 和 Acrobat 读者的 MIP 插件")](https://go.microsoft.com/fwlink/?linkid=2050049)
 
@@ -109,7 +104,7 @@ With Microsoft Edge, when a user encounters a locally saved protected PDF file, 
 
     - **Windows：** Windows 10 和以前版本通过 Windows 8。 
     
-        有关早期版本的详细信息，请参阅[对先前格式的支持](#support-for-previous-formats)。
+        有关早期版本的详细信息，请参阅 [对先前格式的支持](#support-for-previous-formats)。
 
     - **Mac：** macOS 版本 10.12-10.14 
 
@@ -120,30 +115,30 @@ With Microsoft Edge, when a user encounters a locally saved protected PDF file, 
     :::image type="content" source="../media/admin-approval-for-mip-in-adobe-reader.png" alt-text="安装适用于 Acrobat 和 Acrobat 读取器的 MIP 插件所需的管理员批准":::
     
 > [!NOTE]
-> 有关详细信息，请参阅[Microsoft 信息保护和 Adobe release 公告](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)。
+> 有关详细信息，请参阅 [Microsoft 信息保护和 Adobe release 公告](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396)。
 > 
 
 ### <a name="alternative-protected-pdf-readers-for-windows"></a>适用于 Windows 的备用受保护 PDF 读者
 
 或者，使用适用于适用于 PDF 加密 ISO 标准的 Windows 的下列 PDF 读者之一：
 
-- Azure 信息保护查看器[![下载](../media/download.png "下载 AIP 查看器")](https://go.microsoft.com/fwlink/?linkid=838993) 
+- Azure 信息保护查看器 [![下载](../media/download.png "下载 AIP 查看器")](https://go.microsoft.com/fwlink/?linkid=838993) 
 
-- Foxit 读者[![下载](../media/download.png "下载 Foxit Reader 查看器")](https://www.foxitsoftware.com/pdf-reader/)
+- Foxit 读者 [![下载](../media/download.png "下载 Foxit Reader 查看器")](https://www.foxitsoftware.com/pdf-reader/)
 
-## <a name="installing-a-protected-pdf-reader-for-mobile-iosandroid"></a>安装适用于移动设备的受保护的 PDF 阅读器（iOS/Android）
+## <a name="installing-a-protected-pdf-reader-for-mobile-iosandroid"></a>为 mobile (iOS/Android) 安装受保护的 PDF 阅读器
 
 若要在 iOS 或 Android 设备上打开受保护的 PDF，请下载并安装适用于你的操作系统的应用：
 
-- 适用于 iOS 的 Azure 信息保护应用[![下载](../media/download.png "适用于 iOS 的 Azure 信息保护应用")  ](https://go.microsoft.com/fwlink/?LinkId=325338)
+- 适用于 iOS 的 Azure 信息保护应用 [![下载](../media/download.png "适用于 iOS 的 Azure 信息保护应用")  ](https://go.microsoft.com/fwlink/?LinkId=325338)
 
-- 适用于 Android 的 Azure 信息保护应用[![下载](../media/download.png "适用于 Android 的 Azure 信息保护应用")](https://go.microsoft.com/fwlink/?LinkId=325340)
+- 适用于 Android 的 Azure 信息保护应用 [![下载](../media/download.png "适用于 Android 的 Azure 信息保护应用")](https://go.microsoft.com/fwlink/?LinkId=325340)
 
-有关详细信息，请参阅[什么是适用于 iOS 或 Android 的 Azure 信息保护应用？](mobile-app-faq.md)。
+有关详细信息，请参阅 [什么是适用于 iOS 或 Android 的 Azure 信息保护应用？](mobile-app-faq.md)。
 
 ## <a name="support-for-previous-formats"></a>支持以前的格式
 
-以下 PDF 读取器支持带有扩展名**ppdf**的受保护 pdf，以及扩展名为 **.pdf**的旧格式。
+以下 PDF 读取器支持带有扩展名 **ppdf** 的受保护 pdf，以及扩展名为 **.pdf** 的旧格式。
 
 如果无法使用推荐的读者打开受保护的 PDF，则文档可能会使用以前的格式进行保护。 例如，Microsoft SharePoint 当前对受 IRM 保护的库中的 PDF 文档使用较旧格式。
 

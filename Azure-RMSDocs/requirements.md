@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/20/2020
+ms.date: 08/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c984af422a867f8821c21a6e52df37e5d36437c7
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: a87c83afd6e1747a2fc3db6a12ef8734ff445c77
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788928"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952821"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -27,7 +27,7 @@ ms.locfileid: "88788928"
 在部署 Azure 信息保护之前，请确保你的系统满足以下先决条件：
 
 - [Azure 信息保护订阅](#subscription-for-azure-information-protection)
-- Azure Active Directory
+- [Azure Active Directory](#azure-active-directory)
 - [客户端设备](#client-devices)
 - [应用程序](#applications)
 - [防火墙和网络基础结构](#firewalls-and-network-infrastructure)
@@ -67,7 +67,7 @@ ms.locfileid: "88788928"
 
 特定方案需要其他先决条件，如使用 Office 2010、基于证书或多重身份验证时，或者 UPN 值与用户电子邮件地址不匹配时。 有关详细信息，请参阅 [Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 - [什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 - [将本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
@@ -132,19 +132,19 @@ ms.locfileid: "88788928"
 
 Azure 信息保护客户端可以使用 Microsoft **Word**、 **Excel**、 **PowerPoint**和 **Outlook** 的任何以下 Office 版本来标记并保护文档和电子邮件：
 
-- **Office 应用最小版本 1805**，从 [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)生成9330.2078。 
+- **Office 应用最小版本 1805**，从 Office 365 Business 或 Microsoft 365 商业版生成9330.2078。 
 
     仅当为用户分配了 Azure Rights Management 许可证（也称为 Azure 信息保护 for Office 365）时，才支持此版本。
 
-- **[适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office 365 ProPlus**
 
-- **[适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office Professional Plus 2019**
 
-- **[适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)**
+- **Office Professional Plus 2016**
 
-- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1 的应用**
+- **带有 Service Pack 1 的 Office Professional Plus 2013**
 
-- **[Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2 的应用**
+- **带有 Service Pack 2 的 Office Professional Plus 2010**
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护，而不会为用户显示应用保护的标签。 
 
@@ -235,10 +235,6 @@ Azure 信息保护服务还依赖于两个特定的 IP 地址：
 |**Office SharePoint Server**     |-Office SharePoint Server 2016 </br>-Office SharePoint Server 2013 </br>-Office SharePoint Server 2010         |
 |**运行 Windows Server 并使用文件分类基础结构的文件服务器 (FCI) **     |- Windows Server 2016 </br>- Windows Server 2012 R2 </br>- Windows Server 2012       |
 | | |
-
-<!-- i think that half of this note was removed at some point, without this other half. keeping it here in case we ever need it..>
-    > You can also use these cmdlets with servers running later versions of Windows Server, with the benefit that these cmdlets can protect all file types. The RMS connector protects Office files only. For how-to instructions, see [RMS Protection with Windows Server File Classification Infrastructure &#40;FCI&#41;](./rms-client/configure-fci.md).
--->
 
 有关详细信息，请参阅 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)。
 

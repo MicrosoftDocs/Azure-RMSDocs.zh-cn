@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c5a7a774e06f53793151d8de02380b23b0083c4f
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: c4b450eb1356eb36bc7b3c18573146985e5c346d
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264389"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952974"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
-> **若要部署 AIP 经典客户端，请** 打开支持票证以获取下载访问权限。
+> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -189,7 +189,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 如果使用的是 Windows 更新，Azure 信息保护客户端会自动升级客户端的正式版本，无论客户端是如何安装的。 新客户端版本会在发布后的几周内发布到目录中。
 
-或者，你可以使用更新的版本安装来手动升级客户端。 <!--by downloading the new release from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018). Then install the new version to upgrade the client. -->必须使用这种方法来升级预览版。
+或者，你可以使用更新的版本安装来手动升级客户端。 必须使用这种方法来升级预览版。
 
 手动升级时，只有当要更改安装方法时，才需要先卸载旧版本。 例如，从客户端的可执行文件 (.exe) 版本更改为客户端的 Windows 安装程序 (.msi) 版本。 或当需要安装旧版客户端时。 例如，出于测试目的已安装当前预览版，现在需要还原到当前正式版本。
 
@@ -218,7 +218,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 2. 在扫描程序计算机上，停止扫描程序服务“Azure 信息保护扫描程序”****。
 
-3. 通过 (GA) 版本安装当前的正式发行版来升级 Azure 信息保护客户端。 <!-- from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53018).-->
+3. 通过 (GA) 版本安装当前的正式发行版来升级 Azure 信息保护客户端。 
 
 4. 在 PowerShell 会话中，使用你在步骤1中指定的相同配置文件名称运行 **install-aipscanner** 命令。 例如：`Update-AIPScanner –Profile Europe`
 

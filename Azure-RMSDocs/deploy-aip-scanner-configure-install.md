@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7f7964081893635052de8f5a8da32f7010f49cc5
-ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
+ms.openlocfilehash: fcc798a8b9b4a2e0472aad77123571ab03070324
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810348"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953144"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -109,7 +109,7 @@ ms.locfileid: "88810348"
     
 1. 在 " **添加新的网络扫描作业** " 页上，定义以下设置：
         
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**网络扫描作业名称**     |为此作业输入有意义的名称。  此字段为必需字段。       |
     |**说明**     |   输入有意义的说明。      |
@@ -142,7 +142,7 @@ ms.locfileid: "88810348"
 
 1. 执行以下任一操作：
     
-    |选项  |说明  |
+    |选项  |描述  |
     |---------|---------|
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
@@ -173,7 +173,7 @@ ms.locfileid: "88810348"
  
 1. 对于此初始配置，请配置以下设置，然后选择 " **保存** "，但不要关闭窗格。
     
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" </br>- **要发现的信息类型**：仅更改为 **策略** </br>- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
     |**策略实施**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的**策略**默认值 </br>- 重新**标记文件**：保持默认值为**Off**        |
@@ -218,12 +218,6 @@ ms.locfileid: "88810348"
         |**特定 SharePoint 文件夹**     | `http://<SharePoint server name>/.../<folder name>`        |
         | | |
 
-        <!--
-        > [!IMPORTANT]
-        > While the local file system can be scanned, this configuration is not recommended for production deployments and can **only** be used in single node clusters.
-        >
-        > Scanning of local folders by multi-node clusters is not supported. If you need to scan a folder on the local file system, we recommend creating a share, and scanning it using a network URL.
-        -->
 
 1. 重复上述步骤，根据需要添加任意数量的存储库。
 
@@ -395,7 +389,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 " **自定义**"，然后选择要使用的标签       |
@@ -408,7 +402,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 **None**  |
@@ -431,7 +425,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 使用以下选项和指南来帮助优化扫描程序性能：
 
-|选项  |说明  |
+|选项  |描述  |
 |---------|---------|
 |**在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**     |  例如，将扫描仪计算机放在与扫描的数据存储相同的网络段中，或者在同一网段中放置。 </br></br>由于要检查文件，扫描程序会将文件内容传输到运行 scanner 服务的计算机，因此网络连接的质量会影响扫描程序性能。 </br></br>减少或消除传输数据所需的网络跃点还可以减少网络上的负载。      |
 |**确保扫描程序计算机具有可用的处理器资源**     | 检查文件内容并对文件进行加密和解密是处理密集型操作。 </br></br>监视指定数据存储的典型扫描周期，以确定缺乏处理器资源是否会对扫描程序性能产生负面影响。        |
@@ -439,9 +433,6 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 |**检查备选配置用法** |在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。 <br/></br>如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。|
 | | |
 
-<!-- removed when removing local folders
-|**Do not scan local folders on the computer running the scanner service**     | If you have folders to scan on a Windows server, install the scanner on a different computer and configure those folders as network shares to scan. </br></br>Separating the two functions of hosting files and scanning files means that the computing resources for these services are not competing with one another.        |
--->
 
 ### <a name="additional-factors-that-affect-performance"></a>影响性能的其他因素
 

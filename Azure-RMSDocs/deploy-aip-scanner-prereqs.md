@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护统一标签扫描器的先
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/24/2020
+ms.date: 08/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f190a97e18533640b2edc60513bb29a7ad7d7728
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: cac7a2e655a9718ce73eb60384a4022be449b6dd
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788656"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88952889"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的先决条件
 
@@ -143,7 +143,7 @@ ms.locfileid: "88788656"
 
 如果未配置这些标签，请参阅 [使用替代配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 - [将敏感度标签自动应用到内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 - [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
@@ -173,7 +173,7 @@ ms.locfileid: "88788656"
 
 若要扫描文件路径超过260个字符的文件，请在安装了以下 Windows 版本之一的计算机上安装扫描程序，并根据需要配置计算机：
 
-|Windows 版本  |说明  |
+|Windows 版本  |描述  |
 |---------|---------|
 |**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
 |**Windows 10 或 Windows Server 2016**     | 定义以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
@@ -203,6 +203,8 @@ ms.locfileid: "88788656"
 - [限制：无法向扫描程序的服务帐户授予 **本地登录** 权限](#restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right)
 
 - [限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库](#restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually)
+
+- [限制：标签没有自动标记条件](#restriction-your-labels-do-not-have-auto-labeling-conditions)
 
 ### <a name="restriction-the-scanner-server-cannot-have-internet-connectivity"></a>限制：扫描仪服务器不能连接到 internet
 
@@ -295,6 +297,17 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 - **对于 scanner 服务帐户，请** 使用本地 Windows 帐户或 Active Directory 帐户。
 
 - **对于 Azure Active Directory 帐户，请** 指定具有 Set-aipauthentication 的 *OnBehalfOf* 参数的本地帐户。 有关详细信息，请参阅 [如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+
+#### <a name="restriction-your-labels-do-not-have-auto-labeling-conditions"></a>限制：标签没有自动标记条件
+
+如果标签没有任何自动标记条件，请在配置扫描仪时计划使用以下选项之一：
+
+|选项  |描述  |
+|---------|---------|
+|**发现所有信息类型**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 "要 **发现的信息类型** " 选项设置为 " **所有**"。 </br></br>此选项设置内容扫描作业，以扫描所有敏感信息类型的内容。      |
+|**使用建议的标签**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 " **建议标记为自动** " 选项设置为 **"打开**"。</br></br> 此设置将扫描程序配置为自动将所有建议的标签应用于内容。      |
+|**定义默认标签**     |   定义 [策略](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)、 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)或 [存储库](deploy-aip-scanner-configure-install.md#apply-a-default-label-to-all-files-in-a-data-repository)中的默认标签。 </br></br>在这种情况下，扫描器会对找到的所有文件应用默认标签。       |
+| | |
 
 ## <a name="next-steps"></a>后续步骤
 

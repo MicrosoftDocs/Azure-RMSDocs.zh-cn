@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d4b3520d89346d0b6fb86a42fcf774fcb4a86499
-ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
+ms.openlocfilehash: ad523eb3537c11ec2ca839b08da72d3275cfbef5
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810280"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953059"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
@@ -175,7 +175,7 @@ Start-AIPScannerDiagnostics
 - 配置的规则是否有效
 
 > [!TIP]
-> 如果在不是扫描仪用户的用户下运行命令，请确保添加 **-OnBehalf** 参数。 <!--For more information, see <x>.-->
+> 如果在不是扫描仪用户的用户下运行命令，请确保添加 **-OnBehalf** 参数。 
 >
 
 > [!NOTE]

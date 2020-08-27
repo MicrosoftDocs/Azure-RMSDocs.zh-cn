@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 980b1b76d5c0ef9135de148a53e13b685888faa6
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: 26e9f85a4e5d171232dc8d30f4502557808ac538
+ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264287"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88953178"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
 >*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
@@ -40,13 +40,6 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 
 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
 
-<!--
-1. Go to the [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) page on the Microsoft website.
-
-    This page has links for all the popular devices you might use, so that you can easily download a viewer app if it's needed to open protected files. If you're not a local administrator for your PC, you can still install the viewer app for Windows. But these instructions are to install the full client, which lets you label and protect files. 
-
-2. Locate the **Azure Information Protection client** section and click the Windows icon. Click **Download** and save the **AzInfoProtection.exe** file.     
--->
 1. 运行 **AzInfoProtection.exe** 文件以开始安装。 如果系统提示你继续，请单击 **“是”**。    
 
 1. 在“安装 Azure 信息保护客户端”**** 页面上：     
@@ -56,7 +49,7 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 
 1. 如果系统提示继续操作，请单击“是”****，然后等待安装完成。    
 
-1. 单击“关闭”。 开始使用 Azure 信息保护客户端之前：    
+1. 单击“关闭”  。 开始使用 Azure 信息保护客户端之前：    
 
     - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
         
