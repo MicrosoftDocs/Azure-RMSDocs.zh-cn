@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/10/2020
+ms.date: 08/30/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: af4a6989dca815d204fee72aafa6d839d2673fc4
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 85a7325bf2bd80294436b233fb81fddbe707ea6e
+ms.sourcegitcommit: dd21de9f06ef019634dc2b5d8baf2670bb8171a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88952855"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176610"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
@@ -36,6 +36,20 @@ ms.locfileid: "88952855"
 Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 在这种情况下，在查看器中打开文档时，附件不可见。
 
 有关详细信息，请参阅 [管理员指南： Azure 信息保护客户端支持的文件类型](rms-client/client-admin-guide-file-types.md)。
+
+## <a name="known-issues-for-installing-the-aip-client"></a>安装 AIP 客户端的已知问题
+
+启用了 [Exploit Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机不支持 Azure 信息保护客户端。
+
+请确保在安装 AIP 之前禁用 Exploit protection。 
+
+若要通过 PowerShell 禁用 Exploit protection，请运行以下内容：
+
+```PowerShell
+Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus, EnableExportAddressFilter, EnableImportAddressFilter
+```
+
+有关详细信息，请参阅 [Azure 信息保护要求](requirements.md)。
 
 ## <a name="powershell-support-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的 PowerShell 支持
 
@@ -75,13 +89,12 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详细信息，请参阅：
+    有关详情，请参阅：
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
 
-
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 以下附加文章可能有助于回答有关 Azure 信息保护中已知问题的问题：
 

@@ -4,19 +4,19 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/10/2020
+ms.date: 08/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 394c91c7503a9bb8995eacf8c9cec45ab85fe57d
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: ec73048a8dcb306a1b8bc94670a80f9cbd8d2861
+ms.sourcegitcommit: dd21de9f06ef019634dc2b5d8baf2670bb8171a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788945"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176627"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -43,7 +43,8 @@ ms.locfileid: "88788945"
 |**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 </br></br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 </br></br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序**来检查版本并卸载登录助手。      |
 |**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 </br></br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
 |**管理员权限**| 安装 Azure 信息保护统一标签客户端需要本地管理权限。| 
-|   |  |
+|**禁用 Exploit protection**   |启用了 [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  |
+|||
         
 ### <a name="configure-your-group-policy-to-prevent-disabling-aip"></a>配置组策略以阻止禁用 AIP
 
@@ -65,12 +66,12 @@ ms.locfileid: "88788945"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-- Office 应用最小版本1805，在向用户分配 Azure Rights Management 的许可证时，从 [Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 构建9330.2078， (也称为 Azure 信息保护 for Office 365) 
-- [适用于企业的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [适用于企业2019的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [适用于企业2016的 Microsoft 365 应用](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename)
-- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2013 Service Pack 1 的应用
-- [Microsoft 365 适用于企业](https://www.microsoft.com/microsoft-365/partners/smb-sku-rename) 2010 Service Pack 2 的应用
+- Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证
+- Office 365 ProPlus
+- Office 专业增强版 2019
+- Office Professional Plus 2016
+- Office Professional Plus 2013 Service Pack 1
+- Office Professional Plus 2010 Service Pack 2
 
 其他版本 (例如，Office 的 **标准**) 无法使用 Rights Management 服务来保护文档和电子邮件。 对于这些版本，仅支持 Azure 信息保护以便进行 **标记** 。 因此，应用保护的标签不会向用户显示 Azure 信息保护敏感度按钮或栏。
 
@@ -154,7 +155,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
     例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     剩余字符串就是要为 ServiceLocation 参数指定的值。
 

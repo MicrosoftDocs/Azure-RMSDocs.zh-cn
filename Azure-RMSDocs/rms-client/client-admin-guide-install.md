@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/17/2020
+ms.date: 08/30/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: eaa3c47599a2d314dd0af24442efcefe16ff3c61
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: bb2f7d2cacad3623eb590c338a7f19585e9c80d1
+ms.sourcegitcommit: dd21de9f06ef019634dc2b5d8baf2670bb8171a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88952906"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89176644"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -78,6 +78,8 @@ ms.locfileid: "88952906"
         对于 Excel：`MSIP.ExcelAddin`
 
         对于 PowerPoint：`MSIP.PowerPointAddin`
+
+- 启用了 [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
@@ -160,7 +162,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
     例如：LicensingIntranetDistributionPointUrl：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
-3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如： **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+3. 该值中，将 **/_wmcs/licensing** 从此字符串删除。 例如：**https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
     Remainin' 字符串是要为 ServiceLocation 参数指定的值。
 
