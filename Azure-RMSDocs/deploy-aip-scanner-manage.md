@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ad523eb3537c11ec2ca839b08da72d3275cfbef5
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: ef040c0372b6efff2a7280b1e395eca72952ca6d
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953059"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316869"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
@@ -99,7 +99,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
     ![停止扫描 Azure 信息保护扫描程序](./media/scanner-stop-scan.png)
 
-- **运行 PowerShell 命令。** 运行下面的命令：
+- **运行 PowerShell 命令。** 运行以下命令：
 
     ```ps
     Stop-AIPScan 
@@ -133,7 +133,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 如果你还更改了标签的保护设置，请在重新启动 Azure 信息保护服务之前，等待额外的15分钟，然后再保存更新的保护设置。
 
 > [!IMPORTANT]
-> 如果已升级到版本 [2.8.83](rms-client/unifiedlabelingclient-version-release-history.md#version-2883-public-preview) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
+> 如果已升级到版本 [2.8.85](rms-client/unifiedlabelingclient-version-release-history.md#version-2885-public-preview) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
 >
 > 例如，如果你已将 "**强制 = 关闭**"**策略强制**设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
 > 

@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: fa0c436035d13c5f1066e121b94e226dccd46d09
-ms.sourcegitcommit: 0793013ad733ac2af5de498289849979501b8f6c
+ms.openlocfilehash: 8b72c0b8efe31ad570bed684dbe63283c5f79b47
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88788638"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316631"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -200,7 +200,7 @@ RMS 客户端仅提供保护。 此客户端与某些应用程序（如 Office �
 |自动和推荐的标签： | 在 Azure 门户中配置为[标签条件](../configure-policy-classification.md)，其中包含使用短语或正则表达式的内置信息类型和自定义条件 <br /><br />配置选项包括： <br /><br />- 唯一/非唯一计数 <br /><br /> - 最小计数| 在管理中心中配置，包含内置敏感信息类型和[自定义信息类型](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)<br /><br />配置选项包括：  <br /><br />- 仅唯一计数 <br /><br />- 最小和最大计数 <br /><br />- 信息类型支持 AND 和 OR <br /><br />- 关键字字典<br /><br />- 可自定义的可信度和字符接近度|
 |对附件的子标签订购支持： | 使用[高级客户端设置](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)启用 | 默认情况下启用，无需配置|
 |更改文件类型的默认保护行为： | 你可以使用 [注册表编辑](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) 来替代本机保护和常规保护的默认值 | 你可以使用 [PowerShell](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect) 来更改受保护的文件类型|
-|自动重新扫描 | 每次扫描程序检测到策略或标签设置发生更改时，都会自动运行完全重新扫描 | 从版本 [2.8.83](unifiedlabelingclient-version-release-history.md#version-2883-public-preview)开始，管理员可以选择在更改策略或内容扫描作业设置后跳过完全重新扫描。 |
+|自动重新扫描 | 每次扫描程序检测到策略或标签设置发生更改时，都会自动运行完全重新扫描 | 从版本 [2.8.85](unifiedlabelingclient-version-release-history.md#version-2885-public-preview)开始，管理员可以选择在更改策略或内容扫描作业设置后跳过完全重新扫描。 |
 |网络发现 |对于经典扫描程序，网络发现功能不可用 | 管理员可以通过扫描指定的 IP 地址或范围来发现其他危险的存储库。|
 | | | |
 

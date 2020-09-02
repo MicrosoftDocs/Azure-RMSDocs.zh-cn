@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: 6d14ee2cc1a8b2bddad79f2e5c0cfb7251522840
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 56aac3e677ab835b0345394be014c1a803bd0b2e
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88952957"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316716"
 ---
 # <a name="which-pdf-readers-are-supported-for-protected-pdfs"></a>受保护的 Pdf 支持哪些 PDF 读取器？
 
@@ -84,7 +84,7 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 1. 若要在 SharePoint 中打开 PDF 文件，**请单击 "**  >  **在浏览器中打开打开**"。 
 
-    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 在浏览器中打开 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
+    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 "在浏览器中打开" 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
  
 ## <a name="installing-a-protected-pdf-reader-for-windows-or-mac"></a>安装适用于 Windows 或 Mac 的受保护的 PDF 读取器
 
@@ -98,7 +98,7 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 1. 为你的操作系统安装 [适用于 acrobat 和 Acrobat 读取器的 MIP 插件](https://go.microsoft.com/fwlink/?linkid=2050049) 。  
 
-    下载： [![下载](../media/download.png "下载适用于 Acrobat 和 Acrobat 读者的 MIP 插件")](https://go.microsoft.com/fwlink/?linkid=2050049)
+    下载： [![下载适用于 Acrobat 和 Acrobat 读取器的 MIP 插件](../media/download.png "下载适用于 Acrobat 和 Acrobat 读者的 MIP 插件")](https://go.microsoft.com/fwlink/?linkid=2050049)
 
     受支持的版本包括：
 
@@ -122,17 +122,17 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 或者，使用适用于适用于 PDF 加密 ISO 标准的 Windows 的下列 PDF 读者之一：
 
-- Azure 信息保护查看器 [![下载](../media/download.png "下载 AIP 查看器")](https://go.microsoft.com/fwlink/?linkid=838993) 
+- Azure 信息保护查看器 [![下载 AIP 查看器](../media/download.png "下载 AIP 查看器")](https://go.microsoft.com/fwlink/?linkid=838993) 
 
-- Foxit 读者 [![下载](../media/download.png "下载 Foxit Reader 查看器")](https://www.foxitsoftware.com/pdf-reader/)
+- Foxit 读者 [![下载 Foxit 读者查看器](../media/download.png "下载 Foxit Reader 查看器")](https://www.foxitsoftware.com/pdf-reader/)
 
 ## <a name="installing-a-protected-pdf-reader-for-mobile-iosandroid"></a>为 mobile (iOS/Android) 安装受保护的 PDF 阅读器
 
 若要在 iOS 或 Android 设备上打开受保护的 PDF，请下载并安装适用于你的操作系统的应用：
 
-- 适用于 iOS 的 Azure 信息保护应用 [![下载](../media/download.png "适用于 iOS 的 Azure 信息保护应用")  ](https://go.microsoft.com/fwlink/?LinkId=325338)
+- 适用于 iOS 的 azure 信息保护应用 [![下载适用于 Ios 的 Azure 信息保护应用](../media/download.png "适用于 iOS 的 Azure 信息保护应用")  ](https://go.microsoft.com/fwlink/?LinkId=325338)
 
-- 适用于 Android 的 Azure 信息保护应用 [![下载](../media/download.png "适用于 Android 的 Azure 信息保护应用")](https://go.microsoft.com/fwlink/?LinkId=325340)
+- 适用于 Android 的 azure 信息保护应用 [![下载适用于 Android 的 Azure 信息保护应用](../media/download.png "适用于 Android 的 Azure 信息保护应用")](https://go.microsoft.com/fwlink/?LinkId=325340)
 
 有关详细信息，请参阅 [什么是适用于 iOS 或 Android 的 Azure 信息保护应用？](mobile-app-faq.md)。
 

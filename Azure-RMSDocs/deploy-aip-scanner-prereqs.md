@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cac7a2e655a9718ce73eb60384a4022be449b6dd
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 274ef1ef2a7196aa9c25b8f488d83da77eba7c6c
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88952889"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316801"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的先决条件
 
@@ -173,7 +173,7 @@ ms.locfileid: "88952889"
 
 若要扫描文件路径超过260个字符的文件，请在安装了以下 Windows 版本之一的计算机上安装扫描程序，并根据需要配置计算机：
 
-|Windows 版本  |描述  |
+|Windows 版本  |说明  |
 |---------|---------|
 |**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
 |**Windows 10 或 Windows Server 2016**     | 定义以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
@@ -208,15 +208,35 @@ ms.locfileid: "88952889"
 
 ### <a name="restriction-the-scanner-server-cannot-have-internet-connectivity"></a>限制：扫描仪服务器不能连接到 internet
 
+尽管统一标签客户端在没有 internet 连接的情况下无法应用保护，但扫描程序仍可以基于导入的策略应用标签。
+
 若要支持断开连接的计算机，请执行以下步骤：
 
-1. 配置策略中的标签，然后使用 [set-aipscannerconfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration?view=azureipps) cmdlet 导入该策略。 尽管统一标签客户端在没有 internet 连接的情况下无法应用保护，但扫描程序仍可以基于导入的策略应用标签。
+1.  配置策略中的标签，然后使用该 [过程支持已断开连接的计算机](rms-client/clientv2-admin-guide-customizations.md#support-for-disconnected-computers) ，启用脱机分类和标签。
 
-1. 通过创建扫描仪群集，在 Azure 门户中配置扫描仪。 如果需要此步骤的帮助，请参阅[在 Azure 门户中配置扫描程序](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
+1. 启用内容扫描作业的脱机管理：
 
-1. 使用 "**导出**" 选项，从 " **Azure 信息保护-内容扫描作业**" 窗格导出内容作业。
+    1. 使用[set-aipscannerconfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将扫描仪设置为在**脱机**模式下工作。
 
-1. 在 PowerShell 会话中，运行 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration) 并指定包含导出的设置的文件。
+    1. 通过创建扫描仪群集在 Azure 门户中配置扫描仪。 有关详细信息，请参阅 [在 Azure 门户中配置扫描器](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
+
+    1. 使用 "**导出**" 选项，从 " **Azure 信息保护-内容扫描作业**" 窗格导出内容作业。
+    
+    1. 使用 [set-aipscannerconfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/import-aipscannerconfiguration) cmdlet 导入策略。 
+    
+    脱机内容扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
+    
+1. 启用网络扫描作业的脱机管理：
+
+    1. 使用 [MIPNetworkDiscoveryConfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务设置为在脱机模式下工作。
+
+    1. 在 Azure 门户中配置网络扫描作业。 有关详细信息，请参阅 [创建网络扫描作业](deploy-aip-scanner-configure-install.md#creating-a-network-scan-job)。
+    
+    1. 使用 "**导出**" 选项，从 " **Azure 信息保护-网络扫描作业 (预览") **窗格中导出网络扫描作业。 
+    
+    1.  使用 [MIPNetworkDiscoveryConfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/import-mipnetworkdiscoveryconfiguration) cmdlet 与群集名称相匹配的文件导入网络扫描作业。  
+    
+    脱机网络扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
 
 ### <a name="restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually"></a>限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库
 
@@ -302,7 +322,7 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 
 如果标签没有任何自动标记条件，请在配置扫描仪时计划使用以下选项之一：
 
-|选项  |描述  |
+|选项  |说明  |
 |---------|---------|
 |**发现所有信息类型**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 "要 **发现的信息类型** " 选项设置为 " **所有**"。 </br></br>此选项设置内容扫描作业，以扫描所有敏感信息类型的内容。      |
 |**使用建议的标签**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 " **建议标记为自动** " 选项设置为 **"打开**"。</br></br> 此设置将扫描程序配置为自动将所有建议的标签应用于内容。      |

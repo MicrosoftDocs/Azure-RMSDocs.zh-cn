@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ecc0a78a942dc4e0c6b1dc89b3d2d2ec57c87f6e
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: 1bd48cd64616785a3b8f7c62a3e944cc5eb80097
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264372"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316818"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
 
@@ -108,6 +108,12 @@ ms.locfileid: "88264372"
 
 - 用户设备的名称。
 
+- 用户设备的 IP 地址。 
+
+- 相关进程名称，如 **outlook** 或 **policy.msip**。
+
+- 执行标记的应用程序的名称，如 **Outlook** 或 **文件资源管理器**
+
 - 对于文档：被标记的文档的文件路径和文件名。
 
 - 对于电子邮件：已标记的电子邮件的电子邮件主题和电子邮件发件人。 
@@ -148,7 +154,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
 
 - 对于统一标签客户端，请在标签策略中配置 [高级设置](./rms-client/clientv2-admin-guide-customizations.md#send-information-type-matches-to-azure-information-protection-analytics) 。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
 |要求|更多信息|
@@ -179,7 +185,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
     
     - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
-        - **安全读者**
+        - **安全读取者**
         - **全局读取者**
 
 2. 此外，还需要具有以下 [Azure Log Analytics 角色](https://docs.microsoft.com/azure/azure-monitor/platform/manage-access#manage-access-using-azure-permissions)或标准 [Azure 角色](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)之一才能访问 Azure Log Analytics 工作区：
@@ -236,7 +242,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 4. 如果你的 Azure 信息保护客户端 (经典) ，请选中此复选框，如果想要存储标识为敏感信息类型的实际数据，请选择 " **为敏感数据启用更深入的分析** "。 有关此设置的详细信息，请参阅此页上的 " [内容匹配" 以获取深入分析](#content-matches-for-deeper-analysis) 部分。
 
-5. 选择“确定”。
+5. 选择“确定”。 
 
 你现在可以查看报表。
 

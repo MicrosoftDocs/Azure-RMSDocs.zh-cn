@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需的先决条件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 09/01/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a87c83afd6e1747a2fc3db6a12ef8734ff445c77
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: e3d50f6857c2f7c3fd5f104d79997b00feeb2664
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88952821"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316886"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -216,8 +216,9 @@ Azure 信息保护具有以下附加要求：
 Azure 信息保护服务还依赖于两个特定的 IP 地址：
  - **13.107.6.181** 
  - **13.107.9.181**
+ - **端口 443**，用于 HTTPS 流量
 
-请确保创建规则以允许对这些特定 IP 地址进行出站访问。
+请确保创建规则，以允许通过此端口对这些特定的 IP 地址进行出站访问。
 
 ## <a name="supported-on-premises-servers-for-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 

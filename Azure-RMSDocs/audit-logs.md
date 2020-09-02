@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护生成的审核日志-AIP。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/29/2020
+ms.date: 08/30/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6edae5a207208d640b0d851b1d664475e3b72d46
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 14d8101da8b00071256e9ed3e4ae06002f96acbb
+ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953076"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89316784"
 ---
 # <a name="azure-information-protection-audit-log-reference-public-preview"></a>Azure 信息保护审核日志引用 (公共预览版) 
 
@@ -43,9 +43,9 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 |报告者  |平台  |应用程序  |操作/说明  |
 |---------|---------|---------|---------|
-|Azure 信息保护：</br>-经典客户端</br>-统一标签客户端     | Windows        | Office        |在每个会话中对标记或受保护的文件进行第一次生成。<br>日志包含任何信息类型匹配项。     |
-|Azure 信息保护：</br>-经典客户端</br>-统一标签客户端     |Windows         |Office         |每次创建标记文件或受保护的文件时生成。       |
-|Azure 信息保护：</br>-经典客户端</br>-统一标签客户端     | Windows、SharePoint、OneDrive        | Office        | 每次打开标记或受保护的文件时生成。 </br></br>**注意：** 对于受保护的文件，仅当打开文件并且成功对内容进行解密并向用户公开内容时，才会生成访问审核日志。 </br>对于 Outlook 中的受保护电子邮件，当用户尝试打开加密的电子邮件时，也会生成访问审核日志，即使由于缺少权限而导致解密被阻止。          |
+|Azure 信息保护：仅经典客户端 | Windows        | Office        |在每个会话中对标记或受保护的文件进行第一次生成。<br>日志包含任何信息类型匹配项。      |
+|Azure 信息保护：仅经典客户端     |Windows         |Office         |每次创建标记文件或受保护的文件时生成。       |
+|Azure 信息保护：</br>-经典客户端</br>-统一标签客户端     | Windows、SharePoint、OneDrive        | Office        | 每次打开标记或受保护的文件时生成。 </br></br>**注意：** 对于受保护的文件，仅当打开文件并且成功对内容进行解密并向用户公开内容时，才会生成访问审核日志。 </br>对于 Outlook 中的受保护电子邮件，当用户尝试打开加密的电子邮件时，也会生成访问审核日志，即使由于缺少权限而导致解密被阻止。         |
 |Microsoft 信息保护 (MIP) SDK     | 任意        | 第三方应用程序        | 每次通过支持该文件的第三方应用程序访问标记或受保护的文件时生成。       |
 |RMS 服务     | Windows        | Office         |每次访问标记或受保护的文档时生成。       |
 
@@ -73,7 +73,7 @@ Microsoft Azure 信息保护在以下活动事件中生成审核日志：
 
 |报告者  |平台  |应用程序  |操作/说明   |
 |---------|---------|---------|---------|
-|Azure 信息保护：</br>-经典扫描程序 </br>-统一标记扫描器     | Windows        | Office        |每次 AIP 扫描程序扫描文件时生成。<br>日志包含以下详细信息：<br>-匹配的信息类型<br>-标签 |
+|Azure 信息保护：仅经典扫描器 | Windows        | Office        |每次 AIP 扫描程序扫描文件时生成。<br>日志包含以下详细信息：<br>-匹配的信息类型<br>-标签 |
 |Microsoft 信息保护 (MIP) SDK | 任意 | 第三方应用程序 | 每次由支持该文件的第三方应用程序扫描文件时生成。 </br>日志包含以下详细信息：</br>-匹配的信息类型</br>-标签|
 
 ## <a name="downgrade-label-audit-logs"></a>降级标签审核日志
