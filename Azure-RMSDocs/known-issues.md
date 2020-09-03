@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 926c24ae3bd7960df21aba508bdf2edc83f29e9f
-ms.sourcegitcommit: 11ff3752e45de3d688efc985fe0f327aabee35de
+ms.openlocfilehash: 9566a20489ab24b1e13ca434caa4c2377902a058
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/03/2020
-ms.locfileid: "89422375"
+ms.locfileid: "89422850"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
@@ -94,6 +94,23 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
+
+## <a name="aip-for-windows-and-office-versions-in-extended-support"></a>AIP for Windows 和 Office 版本（扩展支持）
+
+- [**Windows 7 扩展支持于2020年1月14日结束**](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。 
+
+    强烈建议升级到较新版本的 Windows 10。 但是，如果你有 (ESU) 的扩展安全更新和支持协定，则可以使用 AIP 支持来继续保护 Windows 7 系统的安全。
+
+    有关详细信息，请与支持人员联系。
+
+- [**Office 2010 当前提供扩展支持**](https://support.microsoft.com/lifecycle/search?alpha=office%202010)。 
+
+    此支持将于10月13日（2020）结束，将不会进行扩展。 此外，不会为 Office 2010 提供 ESU，强烈建议升级到较新版本的 Office 365。 
+    
+    对于当前在扩展支持中运行 Office 2010 的客户，AIP 支持在2020年10月13日之前可用。 
+
+    有关详细信息，请与支持人员联系。
+
 
 ## <a name="more-information"></a>更多信息
 

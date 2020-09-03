@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 62d1b496df1eb773fdb59b8b4e1dc8c39dd29ca4
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: 0175e6ad07ac30ce0e8fd97962bb18597b9b8cda
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264304"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89423139"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标记客户端管理员指南
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -225,7 +225,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护统一标签客户端�
 
 2. 通过从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载和安装统一的标签客户端，升级到 Azure 信息保护统一的标签客户端。
 
-3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如：`Update-AIPScanner –Profile Europe`。
+3. 在 PowerShell 会话中，使用扫描仪的配置文件运行 Install-aipscanner 命令。 例如： `Update-AIPScanner –Profile Europe`。
     
     此步骤创建一个名为的新数据库**AIPScannerUL_ \<profile_name> **
 

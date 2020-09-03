@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a9ec725084bbc589e343d8eb9f51c0be0f2b6587
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: d8229216642448e5355de248fc865a33d049ad1e
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048827"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89423173"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南： Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -43,7 +43,7 @@ ms.locfileid: "86048827"
 
 ## <a name="usage-logging-for-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端的使用情况日志记录
 
-统一标签客户端不会将用户活动记录到本地 Windows 事件日志中。 相反，请使用 Azure 信息保护的[中心报表](../reports-aip.md)功能。 
+统一标签客户端不会将用户活动记录到本地 Windows 事件日志中。 相反，请使用 Azure 信息保护的 [中心报表](../reports-aip.md) 功能。 
 
 
 ## <a name="next-steps"></a>后续步骤

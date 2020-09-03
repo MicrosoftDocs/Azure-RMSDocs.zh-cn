@@ -12,18 +12,18 @@ ms.subservice: v2client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: ec5ef3ff70aaa13035ccc588fdd4d45219623b7b
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: bf87d341795d4ebbf5bfe21ca01e958b1028165a
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86046566"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89423037"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -32,7 +32,7 @@ ms.locfileid: "86046566"
 你只需运行至少 Windows 8 的一台计算机。 然后从 Microsoft 下载并安装此免费客户端。
 
 
-## <a name="what-do-you-want-to-do"></a>你希望做什么？
+## <a name="what-do-you-want-to-do"></a>您希望做什么？
 
 - [下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)
 
@@ -46,5 +46,5 @@ ms.locfileid: "86046566"
 
 
 > [!NOTE]
-> 如果你是负责企业网络上的 Azure 信息保护统一标签客户端的管理员，请参阅[Azure 信息保护统一标签客户端管理员指南](clientv2-admin-guide.md)了解其他技术信息。 
+> 如果你是负责企业网络上的 Azure 信息保护统一标签客户端的管理员，请参阅 [Azure 信息保护统一标签客户端管理员指南](clientv2-admin-guide.md) 了解其他技术信息。 
 

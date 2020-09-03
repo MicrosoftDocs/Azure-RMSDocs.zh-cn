@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 3abfb2f7c008f8573f0fef87b83c350145161139
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: 8d7779a14b7fd7ca4a78a7b69e0c8c243c0fe07d
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298098"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89423054"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -30,14 +30,14 @@ ms.locfileid: "87298098"
 
 如果没有立即打开文件，Azure 信息保护查看器**** 可能会将其打开。 此查看器可以打开受保护的文本文件、受保护的图像文件、受保护的 PDF 文件，以及具有 .pfile**** 文件扩展名的所有文件。
 
-查看器自动安装为 Azure 信息保护统一标签客户端的一部分，也可单独安装。 你可以从 Microsoft 网站上的 " [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970)" 页中安装此客户端和查看器。 有关安装该客户端的详细信息，请参阅[下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)。
+查看器自动安装为 Azure 信息保护统一标签客户端的一部分，也可单独安装。 你可以从 Microsoft 网站上的 " [Microsoft Azure 信息保护](https://go.microsoft.com/fwlink/?LinkId=303970) " 页中安装此客户端和查看器。 有关安装该客户端的详细信息，请参阅 [下载并安装 Azure 信息保护统一标签客户端](install-unifiedlabelingclient-app.md)。
 
 > [!NOTE]
 > 虽然安装客户端可提供更多功能，但它需要本地管理员权限，并且完整功能需要组织的相应服务。 例如，Azure 信息保护。
 > 
 > 如果另一组织中的某人向你发送了受保护文档，或者你没有访问你的电脑的本地管理员权限，请安装查看器。
 
-必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 若要按类型和受支持的设备查看应用程序列表，请参阅[启用应用程序](../requirements-applications.md)表。 
+必须是“已启用 RMS”的应用程序才能打开受保护的文档。 例如，Office 应用和 Azure 信息保护查看器是已启用 RMS 的应用程序。 若要按类型和受支持的设备查看应用程序列表，请参阅 [启用应用程序](../requirements-applications.md) 表。 
 
 ## <a name="messagerpmsg-as-an-email-attachment"></a>作为电子邮件附件的 Message.rpmsg
 
@@ -63,7 +63,7 @@ ms.locfileid: "87298098"
     
     如果没有被接受的帐户，请参阅本页中的[身份验证提示](#prompts-for-authentication)部分。
 
-3. 将在**Azure 信息保护查看器**或与文件扩展名关联的应用程序中打开该文件的只读版本。
+3. 将在 **Azure 信息保护查看器** 或与文件扩展名关联的应用程序中打开该文件的只读版本。
 
 4. 如果要打开其他受保护的文件，可以使用“打开”**** 选项从查看器中直接浏览它们。 所选文件将替换查看器中的原始文件。 
 

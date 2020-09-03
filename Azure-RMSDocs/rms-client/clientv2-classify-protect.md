@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: fc46174efcbcda170a060c49ef6dbb069f6b9770
-ms.sourcegitcommit: dec5df81b569283a72f0a983d3f53b82cbbc562c
+ms.openlocfilehash: 622cec286817917dbca13035c634f62eccc2ecf7
+ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87802090"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89423207"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
 >
-> **对于 Windows 7 和 Office 2010，具有扩展 Microsoft 支持的客户也可以获得这些版本的 Azure 信息保护支持。请咨询你的支持联系人了解完整的详细信息。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
 > *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -33,7 +33,7 @@ ms.locfileid: "87802090"
 
 但是，还可以使用文件资源管理器**** 对文件进行分类和保护。 此方法支持其他文件类型，此方法是一种一次性对多个文件进行分类和保护的便捷方法。 此方法支持保护 Office 文档、PDF 文件、文本和图像文件，以及各种其他文件。 
 
-如果标签对文档应用保护，则受保护的文档可能不适合保存在 SharePoint 或 OneDrive 中。 检查管理员是否已[对 SharePoint 和 OneDrive 中的 Office 文件启用了敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
+如果标签对文档应用保护，则受保护的文档可能不适合保存在 SharePoint 或 OneDrive 中。 检查管理员是否已 [对 SharePoint 和 OneDrive 中的 Office 文件启用了敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files)。
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>与组织外部人员安全共享文件
 
@@ -43,12 +43,12 @@ ms.locfileid: "87802090"
 
 例如，如果你的组织定期与另一组织中的人员进行通信，则管理员可能已经配置了设置保护以便这些人员可以阅读和使用受保护文档的标签。 然后，选择这些标签对要共享的文档进行分类和保护。
 
-或者，如果外部用户为其创建了[企业对企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)，则可以使用[文件资源管理器设置文档的自定义权限](#using-file-explorer-to-classify-and-protect-files)，然后再将其共享。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
+或者，如果外部用户为其创建了 [企业对企业 (B2B) 帐户](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) ，则可以使用 [文件资源管理器设置文档的自定义权限](#using-file-explorer-to-classify-and-protect-files) ，然后再将其共享。 如果设置你自己的自定义权限，并且文档已受到保护以供内部使用，请先创建一个副本来保留原始权限。 然后，使用此副本设置自定义权限。
 
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>使用 Office 应用对文档和电子邮件进行分类和保护
 
-从 "**主页**" 选项卡上，选择功能区中的 "**敏感度**" 按钮，然后选择一个已为你配置的标签。 例如：
+从 " **主页** " 选项卡上，选择功能区中的 " **敏感度** " 按钮，然后选择一个已为你配置的标签。 例如：
 
 ![敏感度按钮示例](../media/sensitivity-not-set-callout.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "87802090"
 
 若要设置标签，例如 "**机密**  \  **全部雇员**"，请选择 "**机密**"，然后选择 "**所有员工**"。 如果你不确定要将哪种标签应用于当前文档或电子邮件，请使用标签工具提示详细了解每种标签及其应用情况。
 
-如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已显示 Azure 信息保护栏，并且标签未显示在要选择的栏上，请首先单击当前标签值旁边的 "**编辑标签**" 图标。
+如果已将某种标签应用于文档，并且想要进行更改，可以选择其他标签。 如果已显示 Azure 信息保护栏，并且标签未显示在要选择的栏上，请首先单击当前标签值旁边的 " **编辑标签** " 图标。
 
 除了手动选择标签，还可通过以下方式应用标签：
 
@@ -72,9 +72,9 @@ ms.locfileid: "87802090"
 
 ##### <a name="dont-see-the-sensitivity-button-in-your-office-apps"></a>在 Office 应用程序中看不到 "敏感度" 按钮？
 
-- 你可能没有[安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
+- 你可能没有 [安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果未在功能区上看到 "**敏感度**" 按钮，而是看到带标签的 "**保护**" 按钮，则已安装 azure 信息保护客户端 (经典) ，而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+- 如果未在功能区上看到 " **敏感度** " 按钮，而是看到带标签的 " **保护** " 按钮，则已安装 azure 信息保护客户端 (经典) ，而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
  
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 
@@ -153,4 +153,4 @@ ms.locfileid: "87802090"
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 
-请参阅[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
+请参阅 [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
