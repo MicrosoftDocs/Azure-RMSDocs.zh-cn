@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 85a7325bf2bd80294436b233fb81fddbe707ea6e
-ms.sourcegitcommit: dd21de9f06ef019634dc2b5d8baf2670bb8171a2
+ms.openlocfilehash: 926c24ae3bd7960df21aba508bdf2edc83f29e9f
+ms.sourcegitcommit: 11ff3752e45de3d688efc985fe0f327aabee35de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176610"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89422375"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 
@@ -73,6 +73,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 |**Word 中的内容标记**    | 当页脚中还包含一个表时，Azure 信息保护内容 [标记](configure-policy-markings.md) 可能会隐藏在 Microsoft Word 页脚中。 有关详细信息，请参阅 [何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
 |**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
 |**邮件合并**    |  Azure 信息保护功能不支持 Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705) 功能。       |
+| **S/MIME 电子邮件** | 在 Outlook 的阅读窗格中打开 S/MIME 电子邮件可能会造成性能问题。 </br></br>若要防止 S/MIME 电子邮件出现性能问题，请启用 [**OutlookSkipSmimeOnReadingPaneProperty**](rms-client/clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。 </br></br>**注意：** 启用此属性可防止 AIP 栏或电子邮件分类显示在 Outlook 的阅读窗格中。 |
 | | |
 
 ## <a name="known-issues-in-policies"></a>策略中的已知问题
@@ -89,7 +90,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详情，请参阅：
+    有关详细信息，请参阅：
 
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)

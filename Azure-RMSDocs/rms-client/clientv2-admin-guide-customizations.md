@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee77dc60e1300f494508479925963178413c48d9
-ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
+ms.openlocfilehash: ebaf12c3784f0a34a36f3a61aa687e1c61fe3126
+ms.sourcegitcommit: 11ff3752e45de3d688efc985fe0f327aabee35de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316837"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89422443"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -150,14 +150,17 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |EnableLabelBySharePointProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
+|JustificationTextForUserText | [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels) |
 |LogMatchedContent|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
 |OutlookBlockTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|OutlookCollaborationRule| [自定义 Outlook 弹出消息](#customize-outlook-popup-messages)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
 |OutlookJustifyTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |OutlookOverrideUnlabeledCollaborationExtensions|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
+|OutlookSkipSmimeOnReadingPaneProperty | [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)|
 |OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -168,6 +171,8 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
 |ScannerFSAttributesToSkip | [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes)
+|SharepointWebRequestTimeout| [配置 SharePoint 超时](#configure-sharepoint-timeouts)|
+|SharepointFileWebRequestTimeout |[配置 SharePoint 超时](#configure-sharepoint-timeouts)|
 |UseCopyAndPreserveNTFSOwner | [在标记期间保留 NTFS 所有者](#preserve-ntfs-owners-during-labeling-public-preview)
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
@@ -1783,6 +1788,18 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
     ```PowerShell
     Set-LabelPolicy -Identity Global -AdvancedSettings @{SharepointFileWebRequestTimeout="00:10:00"}
     ```
+
+## <a name="prevent-outlook-performance-issues-with-smime-emails"></a>阻止 S/MIME 电子邮件的 Outlook 性能问题
+
+如果在阅读窗格中打开 S/MIME 电子邮件，Outlook 可能会出现性能问题。 若要防止这些问题，请启用 **OutlookSkipSmimeOnReadingPaneProperty** 高级属性。 
+
+启用此属性可防止在 "阅读" 窗格中显示 AIP 栏和电子邮件分类。
+
+例如，如果你的策略命名为 **Global**，以下 PowerShell 命令示例将启用 **OutlookSkipSmimeOnReadingPaneProperty** 属性：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookSkipSmimeOnReadingPaneProperty="true"}
+```
 
 ## <a name="next-steps"></a>后续步骤
 
