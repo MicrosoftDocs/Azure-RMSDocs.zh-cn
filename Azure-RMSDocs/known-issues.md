@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/30/2020
+ms.date: 09/03/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9566a20489ab24b1e13ca434caa4c2377902a058
-ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
+ms.openlocfilehash: 9a6d2ae357490b57b71b52e33ffef9827ecdceac
+ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89422850"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89447032"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题-Azure 信息保护
 

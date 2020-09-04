@@ -4,19 +4,19 @@ description: 有关适用于 Windows 的 Azure 信息保护统一标签客户端
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 1/13/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d8229216642448e5355de248fc865a33d049ad1e
-ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
+ms.openlocfilehash: aa6c924d705cf754cef2dbab78719ef1dad21884
+ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89423173"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89447151"
 ---
 # <a name="admin-guide-azure-information-protection-unified-labeling-client-files-and-client-usage-logging"></a>管理员指南： Azure 信息保护统一标签客户端文件和客户端使用情况日志记录
 

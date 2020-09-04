@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/31/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1db7dd9a2d662689520480d7c5c8002a0b232450
-ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
+ms.openlocfilehash: 69799cb3ce484e5cd594e5520069bfec3586766c
+ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89423071"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89447219"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -216,7 +216,7 @@ Azure 信息保护统一标签客户端的版本2.8.85 中提供了以下修补�
 - 工具提示将更新以显示 [电子邮件附件](../faqs-infoprotect.md#when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling)的最高分类，同时考虑电子邮件和附件的分类。 
 - 当使用[**LabelPolicy**](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) cmdlet 修改敏感度标记策略时**报告问题**文本
 - 修复了 [**set-aipfilelabel**](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-aipfilelabel?view=azureipps) cmdlet 与无效标签 ID 一起使用时显示的错误。
-- 用于在 Outlook 阅读窗格中 [解密 SMIME 电子邮件](clientv2-view-use-files.md) 的性能修复。 若要实现此修补程序，请启用 [**OutlookSkipSmimeOnReadingPaneProperty**](clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。
+- 用于在 Outlook 阅读窗格中解密 SMIME 电子邮件的性能修复。 若要实现此修补程序，请启用 [**OutlookSkipSmimeOnReadingPaneProperty**](clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。
 - 用于解密包含密码加密文件的 [PST 文件](clientv2-admin-guide-file-types.md) 的修补程序。 如果 PST 文件包含受密码保护的文件，则无法再对 PST 文件进行解密。
 - 删除不包含在 [作用域内策略](../configure-policy-scope.md) 中的保护标签将不再从内容中删除任何保护。
 

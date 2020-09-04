@@ -4,19 +4,19 @@ description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 06/16/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a7705a284690094c3db2ac5fd3ac3e3eca1ed2e5
-ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
+ms.openlocfilehash: 25851b966b5c28baab003bb949ecf9144cacf66a
+ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89423122"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89447188"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 

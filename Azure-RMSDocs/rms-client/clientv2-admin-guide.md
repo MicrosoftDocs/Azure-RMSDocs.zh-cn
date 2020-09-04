@@ -4,19 +4,19 @@ description: 适用于企业网络（负责部署适用于 Windows 的 Azure 信
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/17/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0175e6ad07ac30ce0e8fd97962bb18597b9b8cda
-ms.sourcegitcommit: c133ada59dffcb9d8ee35688290d2b027bd63425
+ms.openlocfilehash: 8d2b5ad766f02a7c7861d64aaef39e905f578bd1
+ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89423139"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89447168"
 ---
 # <a name="azure-information-protection-unified-labeling-client-administrator-guide"></a>Azure 信息保护统一标记客户端管理员指南
 
