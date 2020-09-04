@@ -84,7 +84,7 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 1. 若要在 SharePoint 中打开 PDF 文件，**请单击 "**  >  **在浏览器中打开打开**"。 
 
-    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 "在浏览器中打开" 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
+    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 在浏览器中打开 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
  
 ## <a name="installing-a-protected-pdf-reader-for-windows-or-mac"></a>安装适用于 Windows 或 Mac 的受保护的 PDF 读取器
 
