@@ -7,16 +7,16 @@ ms.topic: quickstart
 ms.date: 06/13/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: e1c223744a8651a4318abbf0f532d76a771bde16
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 171132bd2e41dcde4dd879eb9314d909bccd74c3
+ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971670"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91428287"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置
 
-快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Office 365 订阅和客户端工作站，为使用 SDK 做准备。
+快速入门和教程文章主要介绍使用 MIP SDK 库和 API 构建应用程序。 本文介绍如何安装和配置 Microsoft 365 订阅和客户端工作站，为使用 SDK 做准备。
 
 ## <a name="prerequisites"></a>必备条件
 
@@ -102,7 +102,7 @@ ms.locfileid: "82971670"
 
    **Tar.gz/.Zip 下载**
 
-   Tar.gz 和 .Zip 下载项各自包含额外压缩文件，每个 API 一个。 这些压缩文件的命名如下，其中 \<API\> = `file`、`protection` 或 `upe`，\<OS\> = 平台：`mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。 例如，Debian 上用于保护 API 二进制文件和标头文件的文件将是：`mip_sdk_protection_debian9_1.0.0.0.tar.gz`。 每个包含的 .tar.gz/.zip 拆分到三个目录中：
+   Tar.gz 和 .Zip 下载项各自包含额外压缩文件，每个 API 一个。 这些压缩文件的命名如下，其中 \<API\> = `file`、`protection` 或 `upe` 和 \<OS\> = 平台：`mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。 例如，Debian 上用于保护 API 二进制文件和标头文件的文件将是：`mip_sdk_protection_debian9_1.0.0.0.tar.gz`。 每个包含的 .tar.gz/.zip 拆分到三个目录中：
 
    - **Bins:** 用于每个平台体系结构的编译的二进制文件（在适用情况下）。
    - **Include:** 头文件 (C++)。
@@ -125,11 +125,11 @@ ms.locfileid: "82971670"
    - 单击左下角的 Windows 图标。
    - 看到“编辑系统环境变量”项目时，键入“路径”并按 Enter  。
    - 在“系统属性”对话框中，单击“环境变量”   。
-   - 在“环境变量”对话框中，单击\<用户\>“用户变量”下的“路径”变量行，然后单击“修改...”     。
+   - 在“环境变量”对话框中，单击 \<user\>“用户变量”下的“路径”变量行，然后单击“编辑...”   。
    - 在“编辑环境变量”对话框中，单击“新建”，创建一个新的可编辑行   。 使用 `file\bins\debug\amd64`、`protection\bins\debug\amd64` 和 `upe\bins\debug\amd64` 子目录的完整路径，为每个子目录添加一个新行。 SDK 目录以 `<API>\bins\<target>\<platform>` 格式存储，其中：
-     - \<API\> = `file`、`protection`、`upe`
-     - \<目标\> = `debug`、`release`
-     - \<平台\> = `amd64` (x64)、`x86` 等。
+     - \<API\> = `file`, `protection`, `upe`
+     - \<target\> = `debug`, `release`
+     - \<platform\> = `amd64` (x64), `x86` 等。
 
    - 完成更新“路径”变量后，单击“确定”   。 然后在返回到“环境变量”对话框时单击“确定”   。
 
@@ -143,7 +143,7 @@ ms.locfileid: "82971670"
 
 ## <a name="register-a-client-application-with-azure-active-directory"></a>向 Azure Active Directory 注册将客户端应用程序
 
-在 Office 365 订阅预配过程中，将创建关联的 Active Directory (Azure AD) 租户。 Azure AD 租户为 Office 365 用户帐户和应用程序帐户提供标识和访问管理   。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
+在 Microsoft 365 订阅预配过程中，将创建关联的 Active Directory (Azure AD) 租户。 Azure AD 租户为 Microsoft 365 用户帐户和应用程序帐户提供标识和访问管理 。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
 
 对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息  。 表示应用程序帐户的安全主体称为[*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。
 

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: acdf61bfbcd46ba58d65ccc4ecc5a387fce123dc
-ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
+ms.openlocfilehash: 4d81f1406f1894acf6c820693e80d00dca1662f4
+ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810297"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91428446"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
@@ -48,7 +48,7 @@ ms.locfileid: "88810297"
 |AIP 已添加到 Azure 门户    |  已将“Azure 信息保护”窗格添加到 Azure 门户，并确认已激活保护服务。 </br></br>有关详细信息，请参阅[快速入门：在 Azure 门户中开始](quickstart-viewpolicy.md)。       |
 |要配置的现有 Azure 信息保护标签     | 使用其中一个默认标签，或者使用已创建的标签。 有关详细信息，请参阅[快速入门：为特定用户创建新的 Azure 信息保护标签](quickstart-label-specificusers.md)。 |
 |经典客户端已安装    |   若要测试新标签，需要在计算机上安装经典客户端。 </br></br>2021 年 3 月将弃用 Azure 信息保护经典客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。  |
-|登录到 Office 应用的 Windows 计算机 |若要测试新标签，你将需要运行 Windows（最低为 Windows 7 Service Pack 1）的计算机。 </br></br>在此计算机上，登录到以下 Office 应用版本之一： </br>- Office 应用最低版本 1805，Office 365 商业版或 Microsoft 365 商业版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Office 365 的 Azure 信息保护”）许可证。 </br>- Office 365 专业增强版。 </br>- Office Professional Plus 2019。 </br>- Office Professional Plus 2016。</br>- Office Professional Plus 2013 Service Pack 1。 </br>- Office Professional Plus 2010 Service Pack 2。|
+|登录到 Office 应用的 Windows 计算机 |若要测试新标签，你将需要运行 Windows（最低为 Windows 7 Service Pack 1）的计算机。 </br></br>在此计算机上，登录到以下 Office 应用版本之一： </br>- Office 应用最低版本 1805，Microsoft 365 商业应用版中的内部版本 9330.2078 或 Microsoft 365 商业高级版，前提是已为你分配了 Azure Rights Management 的许可证。 </br>- Microsoft 365 企业应用版。 </br>- Office Professional Plus 2019。 </br>- Office Professional Plus 2016。</br>- Office Professional Plus 2013 Service Pack 1。 </br>- Office Professional Plus 2010 Service Pack 2。|
 | | |
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。

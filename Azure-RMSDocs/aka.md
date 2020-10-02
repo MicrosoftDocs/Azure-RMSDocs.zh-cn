@@ -5,23 +5,23 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 04/28/2020
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 067e96c31c7bca2a098cbdf0f7b215c05bc4fa61
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
-ms.translationtype: MT
+ms.openlocfilehash: 0eb7119831e09abaa9655f6860053431edea7c23
+ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224608"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91428752"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发展而形成，实现权限管理保护。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
 
@@ -68,7 +68,7 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
 
 针对你所购买的基于云的解决方案是这样。 Azure 信息保护为组织的文档和电子邮件提供新的分类和标签功能，而这些功能又可应用权限管理保护。 
 
-但是，针对 Azure 信息保护以及使用此基于云的权限管理保护的 Office 365 服务，Azure 权限管理仍被用作保护技术。 因此，在 Azure 信息保护所使用的保护技术的情形中，“Azure 权限管理”(Azure RMS) 保留当前名称。
+但是，针对 Azure 信息保护以及使用此基于云的权限管理保护的 Microsoft 365 服务，Azure 权限管理仍被用作保护技术。 因此，在 Azure 信息保护所使用的保护技术的情形中，“Azure 权限管理”(Azure RMS) 保留当前名称。
 
 同样，针对 Windows Server 服务器角色（提供本地权限管理保护），“Active Directory Rights Management Services”(AD RMS) 保留当前名称。 此保护技术可用于 Azure 信息保护，并且可能适合极小部分必须由本地密钥保护的文档和电子邮件。 这种情况下，AD RMS 通常被视为“自留密钥”或 HYOK 解决方案。
 

@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: a728faf211fb34f2ef5b296f28cff97c4c76e8e4
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 9330feb804a4991fd73f6e0895db69e401089e49
+ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927482"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91427910"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -61,7 +61,7 @@ Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通�
 
 Azure 信息保护使用 [Azure Rights Management 服务](what-is-azure-rms.md) (Azure RMS) 来保护数据。 
 
-Azure RMS 已与其他 Microsoft 云服务和应用程序（例如 Office 365 和 Azure Active Directory）集成，它还可用于你自己或第三方应用程序和信息保护解决方案。 Azure RMS 同时适用于本地和云解决方案。
+Azure RMS 已与其他 Microsoft 云服务和应用程序（例如 Microsoft 365 和 Azure Active Directory）集成，它还可用于你自己或第三方应用程序和信息保护解决方案。 Azure RMS 同时适用于本地和云解决方案。
 
 Azure RMS 使用加密、标识和授权策略。 与 AIP 标签类似，无论文档或电子邮件位于何处，使用 Azure RMS 应用的保护都保留在文档和电子邮件中，从而确保你始终控制你的内容，即使与其他人共享也是如此。
 
@@ -84,7 +84,7 @@ Azure RMS 使用加密、标识和授权策略。 与 AIP 标签类似，无论�
 
 下图显示了 Exchange 管理中心的一个示例，其中你可配置 Exchange Online 邮件流规则来使用 RMS 模板：
 
-:::image type="content" source="media/templates-exchangeonline-callouts.png" alt-text="为 Exchange Online 选择模板的示例":::
+:::image type="content" source="media/templates-exchangeonline-callouts.png" alt-text="显示 Azure 信息保护分类的示例电子邮件页脚和标头":::
 
 > [!NOTE]
 > 创建包含保护设置的 AIP 标签时，还将创建一个相应的权限管理模板，它可独立于标签单独使用。 
@@ -104,7 +104,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 此外，通过 AIP 客户端，用户可使用 Windows 文件资源管理器中的右键单击菜单来分类和保护其他文件类型，或者一次性地分类和保护多个文件。 例如：
 
-:::image type="content" source="media/right-click-classify-protect-folder.png" alt-text="在文件资源管理器中，右键单击“使用 Azure 信息保护进行分类和保护”":::
+:::image type="content" source="media/right-click-classify-protect-folder.png" alt-text="显示 Azure 信息保护分类的示例电子邮件页脚和标头":::
 
 “分类和保护”菜单选项的工作方式与 Office 应用程序汇总的“应用保护”栏类似，用户可选择标签或设置自定义权限。
 
@@ -119,13 +119,13 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 将 AIP 与 Exchange Online 结合使用可带来额外的好处，可将受保护的电子邮件发送给任意用户并保证他们可在任意设备上阅读这些邮件。
 
-例如，你可能需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址，或者发送给在 Office 365 或 Azure AD 中没有帐户的用户  。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
+例如，你可能需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址，或者发送给在 Microsoft 365 或 Azure AD 中没有帐户的用户  。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
 
 此方案需要 [Office 365 消息加密功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人在本机电子邮件客户端中无法打开受保护的电子邮件，可以使用一次性密码，通过浏览器阅读敏感信息。
 
 例如，Gmail 用户可能会在收到的电子邮件中看到以下提示：
 
-:::image type="content" source="media/ome-message.png" alt-text="OME 和 AIP 的 Gmail 收件人体验":::
+:::image type="content" source="media/ome-message.png" alt-text="显示 Azure 信息保护分类的示例电子邮件页脚和标头":::
 
 对于发送电子邮件的用户，他们需要与将受保护的电子邮件发送到自己的组织中的用户时执行相同的操作。 例如，选择“请勿转发”按钮，使 AIP 客户端可添加到 Outlook 功能区。 
 
