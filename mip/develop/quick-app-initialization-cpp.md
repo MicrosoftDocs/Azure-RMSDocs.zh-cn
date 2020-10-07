@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: a08f124a2ec7570469913ec5985d52bfdbf2597f
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 3f74606e8f5caf4b4d0d480ba36830129249c9cf
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564118"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91588302"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++) 
 
@@ -342,7 +342,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
    | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
-   | \<application-id\> | 分配给在[“MIP SDK 安装和配置”](/information-protection/develop/setup-configure-mip#register-a-client-application-with-azure-active-directory) 一文步骤 #2 中注册的应用程序的 Azure AD 应用程序 ID (GUID)。 替换 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
+   | \<application-id\> | 分配给在[“MIP SDK 安装和配置”](./setup-configure-mip.md#register-a-client-application-with-azure-active-directory) 一文步骤 #2 中注册的应用程序的 Azure AD 应用程序 ID (GUID)。 替换 2 个实例。 | `"0edbblll-8773-44de-b87c-b8c6276d41eb"` |
    | \<application-name\> | 用户定义的应用程序友好名称。 必须包含有效的 ASCII 字符（不包括“;”），且最好与注册 Azure AD 时使用的应用程序名称一致。 | `"AppInitialization"` |
    | \<application-version\> | 用户定义的应用程序版本信息。 必须包含有效的 ASCII 字符（不包括“;”）。 | `"1.1.0.0"` |
    | \<engine-account\> | 用于引擎标识的帐户。 在令牌获取期间使用用户帐户进行身份验证时，它必须与此值匹配。 | `"user1@tenant.onmicrosoft.com"` |

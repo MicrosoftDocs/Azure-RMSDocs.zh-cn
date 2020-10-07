@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 9330feb804a4991fd73f6e0895db69e401089e49
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 25b520e08d8379580226d589fec511d502065156
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91427910"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91588399"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -109,7 +109,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 “分类和保护”菜单选项的工作方式与 Office 应用程序汇总的“应用保护”栏类似，用户可选择标签或设置自定义权限。
 
 > [!TIP]
-> 高级用户或管理员可能会发现，PowerShell 命令可用来更高效地管理和设置多个文件的分类和保护。 客户端中有[相关的 PowerShell 命令](https://docs.microsoft.com/powershell/module/azureinformationprotection)，它们也可单独安装。
+> 高级用户或管理员可能会发现，PowerShell 命令可用来更高效地管理和设置多个文件的分类和保护。 客户端中有[相关的 PowerShell 命令](/powershell/module/azureinformationprotection)，它们也可单独安装。
 
 用户和管理员可使用文档跟踪站点来监视受保护的文档、查看谁何时访问了这些文档。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。 例如：
 
@@ -149,7 +149,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
     或者，使用扫描程序向数据存储库中的所有文档应用默认标签，这样就无需检查文件内容。 仅在报告模式下使用扫描程序，来发现你可能不知道的敏感信息。
 
-- **云数据存储**：请使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](https://docs.microsoft.com/cloud-app-security/use-case-information-protection) 
+- **云数据存储**：请使用 [Microsoft Cloud App Security](/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection) 
 
 ## <a name="latest-labeling-updates-for-microsoft-365"></a>Microsoft 365 的最新标签更新
 
@@ -159,8 +159,8 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 有关详情，请参阅：
 
-- [Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/microsoft-365/admin/whats-new-in-preview)
-- [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Microsoft 365 管理中心的新增功能](/microsoft-365/admin/whats-new-in-preview)
+- [SharePoint 管理中心的新增功能](/sharepoint/what-s-new-in-admin-center)
 
 ## <a name="additional-azure-information-protection-resources"></a>其他 Azure 信息保护资源
 

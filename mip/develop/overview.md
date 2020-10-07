@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: overview
 ms.date: 01/18/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 12b53af8ba70c41d7597139b9158e2ac441fa75b
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 32f2895d8b52a5fd63d5c764eebb78736b1917a9
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91427826"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91588319"
 ---
 # <a name="overview"></a>概述
 
@@ -22,7 +22,7 @@ Microsoft 信息保护 (MIP) 统一了 Microsoft 的分类、标记与保护服�
 - 它跨 Microsoft 365、Azure 信息保护、Windows 信息保护和其他 Microsoft 服务提供统一管理。 
 - 第三方可以通过 MIP SDK 使用标准一致的数据标记架构和保护服务与应用程序集成。
 
-* [什么是 Office 365 安全与合规中心？](https://docs.microsoft.com/office365/securitycompliance/)
+* [什么是 Office 365 安全与合规中心？](/office365/securitycompliance/)
 * [什么是 Azure 信息保护？](/azure/information-protection/understand-explore/what-is-information-protection)
 * [如何使用 Azure 信息保护进行保护？](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 
@@ -47,4 +47,3 @@ MIP SDK 将 Office 365 安全与合规中心的标记和保护服务公开给第
 ## <a name="next-steps"></a>后续步骤
 
 现在你已准备好开始使用该 SDK。 首先需要[完成 MIP SDK 安装和配置步骤](setup-configure-mip.md)。 这些步骤可确保正确设置 Microsoft 365 订阅和客户端计算机。
-

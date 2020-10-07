@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 06/13/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: 171132bd2e41dcde4dd879eb9314d909bccd74c3
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 5edca37acb2f817173142c6638775c2e95bd7439
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91428287"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91588234"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置
 
@@ -22,7 +22,7 @@ ms.locfileid: "91428287"
 
 在开始之前，请务必查看以下主题：
 
-- [什么是 Office 365 安全与合规中心？](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
+- [什么是 Office 365 安全与合规中心？](/office365/securitycompliance/security-and-compliance)
 - [什么是 Azure 信息保护？](/azure/information-protection/understand-explore/what-is-information-protection)
 - [如何使用 Azure 信息保护进行保护？](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 

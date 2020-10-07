@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
 ms.custom: has-adal-ref
-ms.openlocfilehash: ec6439747b7a826a09851739a96ccdec3f5705f4
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 7b9a8d916b0c3c4b8aaa006abdf27cd8c02a7f6e
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972112"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91588251"
 ---
 # <a name="quickstart-list-templates-c"></a>快速入门：列出模板 (C#)
 
@@ -23,7 +23,7 @@ ms.locfileid: "82972112"
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
 - 首先完成[快速入门：客户端应用程序初始化 - 保护 API (C#)](quick-protection-app-initialization-csharp.md)，以生成 Visual Studio 初学者解决方案。 此“列出保护模板”快速入门需依赖前者来正确创建初学者解决方案。
-- 可选：查看 [RMS 模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)概念。
+- 可选：查看 [RMS 模板](/azure/information-protection/configure-policy-templates)概念。
 
 ## <a name="add-logic-to-list-the-protection-templates"></a>添加逻辑以列出保护模板
 

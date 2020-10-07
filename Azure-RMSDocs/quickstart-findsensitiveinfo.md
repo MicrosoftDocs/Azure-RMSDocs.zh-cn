@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: d8f48a058f03b43e4f4835106c5f882942623740
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 04e114e6b719288a26663bd5534af4b1f1b73ac8
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927975"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91587875"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -96,11 +96,11 @@ ms.locfileid: "86927975"
 
     仍在“添加新配置文件”窗格上，选择“配置存储库”以打开“存储库”窗格：
 
-    :::image type="content" source="./media/scanner-repositories-bar.png" alt-text="为 Azure 信息保护扫描程序配置数据存储库":::
+    :::image type="content" source="./media/scanner-repositories-bar.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
 
 1. 在“存储库”窗格上，选择“添加”：
 
-    :::image type="content" source="media/scanner-repository-add.png" alt-text="为 Azure 信息保护扫描程序添加数据存储库":::
+    :::image type="content" source="media/scanner-repository-add.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
 
 1. 在“存储库”窗格上，指定之前创建的文件夹。 例如：`\\server\TestScanner`
 
@@ -132,7 +132,7 @@ ms.locfileid: "86927975"
 
 1. 选择配置文件名称，然后选择“立即扫描”选项：
 
-    :::image type="content" source="media/scanner-scan-now.png" alt-text="启动 Azure 信息保护扫描程序扫描":::
+    :::image type="content" source="media/scanner-scan-now.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
 
     如果在选择配置文件后，此选项不可用，则扫描程序不会连接到 Azure 信息保护。 查看配置和 Internet 连接。
 
@@ -171,7 +171,7 @@ ms.locfileid: "86927975"
 
     在“Azure 信息保护 - 配置文件”窗格上，确保选中配置文件，然后选择“立即扫描”选项：
 
-    :::image type="content" source="media/scanner-scan-now.png" alt-text="启动 Azure 信息保护扫描程序扫描":::
+    :::image type="content" source="media/scanner-scan-now.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
 
 1. 扫描完成后，查看新的结果。
 
@@ -213,5 +213,5 @@ Uninstall-AIPScanner
 
 对于统一标记客户端：
 
-- [将敏感度标签自动应用到内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
-- [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
+- [将敏感度标签自动应用到内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)
+- [通过在敏感度标签中使用加密来限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels)
