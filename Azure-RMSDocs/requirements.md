@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 09/29/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7242740c585fa9cc04d295fa5a8ef43b2770b314
-ms.sourcegitcommit: bf8867a2270bd9e9695f2a5fe53fa5653faf7f94
+ms.openlocfilehash: d24383a3ae5312d9c690fdac61b0cbdf52072163
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91607576"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92178157"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 

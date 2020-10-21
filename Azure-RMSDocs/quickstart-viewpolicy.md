@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: ebe7260cdbd9a252323b13ffd91897e5cd423810
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: 29c79c49de5d28c82281614846f5938ecbf40f89
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927879"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91587892"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -64,7 +64,7 @@ ms.locfileid: "86927879"
 
 1. 确认是否已为租户激活保护。 例如：
 
-    :::image type="content" source="media/qs-tutor/confirm-activation.PNG" alt-text="确认 AIP 激活":::
+    :::image type="content" source="media/qs-tutor/confirm-activation.PNG" alt-text="将 Azure 信息保护添加到 Azure 门户":::
 
     如果未在任何时间激活保护，则需要将其激活，方法是选择“激活”![激活 AIP](media/qs-tutor/activate.png "激活 AIP")。 激活完成后，信息栏将显示“激活已成功完成”。
 
@@ -76,7 +76,7 @@ ms.locfileid: "86927879"
 
     你可能已创建了默认标签。 下图显示了默认情况下使用 Azure 信息保护创建的标签：
 
-    :::image type="content" source="media/info-protect-defaultlabels.png" alt-text="Azure 信息保护默认标签":::
+    :::image type="content" source="media/info-protect-defaultlabels.png" alt-text="将 Azure 信息保护添加到 Azure 门户":::
 
     如果看不到默认标签或任何标签：
 
@@ -85,7 +85,7 @@ ms.locfileid: "86927879"
     如果在网格上方看不到“生成默认标签”按钮，请在“管理”下，选择“统一标记”。 如果“统一标记”的状态为“未激活”，请选择“激活”，然后返回到“分类” > “标签”窗格   。
 
     > [!NOTE]
-    > 对于统一标记客户端，在 Microsoft M365 中管理标签。 有关详细信息，请参阅[通过敏感度标签应用加密，从而限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
+    > 对于统一标记客户端，在 Microsoft M365 中管理标签。 有关详细信息，请参阅[通过敏感度标签应用加密，从而限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels)。
     >
 
 1. 在 Azure 门户中发布标签，使其可用于 Azure 信息保护经典客户端：
@@ -129,7 +129,7 @@ ms.locfileid: "86927879"
 
 - 统一标记客户端。 对于统一标记客户端，只有标签会下载到该客户端。 从 Office 365 合规和安全中心、Microsoft 365 合规中心或 Microsoft 365 安全中心下载策略设置。 使用这些管理中心可以编辑标签和标签策略，而不是 Azure 门户。
 
-    有关详细信息，请参阅 Microsoft 365 文档中的[了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+    有关详细信息，请参阅 Microsoft 365 文档中的[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 经典客户端安装：
 
@@ -139,7 +139,7 @@ ms.locfileid: "86927879"
 
 1. 在“配置要对信息保护最终用户显示和应用的设置”部分中，策略设置显示在标签后面。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
 
-    :::image type="content" source="media/defaultsettings-aip.png" alt-text="Azure 信息保护策略全局设置":::
+    :::image type="content" source="media/defaultsettings-aip.png" alt-text="将 Azure 信息保护添加到 Azure 门户":::
 
 1. 你现在可以在门户中关闭任何已打开的窗格。
 

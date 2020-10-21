@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 07/22/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: 858a2ebb1bbc5040d564d9df05943c10a3f58a4a
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 1dfb6879533e4bb567f97d56a88cd1df2915e338
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91428349"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92178166"
 ---
 # <a name="additional-azure-ad-requirements-for-azure-information-protection"></a>Azure 信息保护的其他 Azure AD 要求
 

@@ -5,19 +5,19 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 04/28/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0eb7119831e09abaa9655f6860053431edea7c23
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 5a9e9e18734480f139a9e88f06c0fbb1772448c3
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91428752"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92178267"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
