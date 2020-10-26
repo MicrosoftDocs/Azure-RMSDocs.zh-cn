@@ -1,39 +1,39 @@
 ---
-title: 如何重新发布方案 C#
-description: 本文将帮助你了解如何为重新发布方案重复使用保护处理程序的方案。
+title: 操作说明 - 重新发布场景（C#）
+description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布。
 author: Pathak-Aniket
 ms.service: information-protection
-ms.topic: conceptual
+ms.topic: quickstart
 ms.date: 05/01/2020
 ms.author: v-anikep
-ms.openlocfilehash: 2b6e0b866144c4883ece29936c1a23cc946c5976
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
-ms.translationtype: MT
+ms.openlocfilehash: c72d284363c1ca988692d18b7007a88c88d808b5
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403334"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421105"
 ---
-# <a name="microsoft-information-protection-sdk---file-api-republishing-quickstart-c"></a>Microsoft 信息保护 SDK-文件 API 重新发布快速入门（c #）
+# <a name="microsoft-information-protection-sdk---file-api-republishing-quickstart-c"></a>Microsoft 信息保护 SDK - 文件 API 重新发布快速入门 (C#)
 
 ## <a name="overview"></a>概述
 
-有关此方案及其使用位置的概述，请参阅[MIP SDK 中](concept-republishing.md)的重新发布。
+有关此方案及其使用场景的概述，请参阅[在 MIP SDK 中重新发布](concept-republishing.md)。
 
 ## <a name="prerequisites"></a>必备条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 完成[快速入门：首先设置/获取灵敏度标签（c #）](quick-file-set-get-label-csharp.md) ，它将构建一个 Starter Visual Studio 解决方案，以列出组织的敏感度标签，以便在文件中设置和读取敏感度标签。 这是在上一个版本中的 "如何重新发布受保护的文件-c #" 快速入门。
-- （可选）：查看 MIP SDK 概念中的[文件处理程序](concept-handler-file-cpp.md)。
-- （可选）：在 MIP SDK 概念中查看[保护处理程序](concept-handler-protection-cpp.md)。
+- 首先完成[快速入门：设置/获取敏感度标签 (C#)](quick-file-set-get-label-csharp.md)，这可生成 Visual Studio 初学者解决方案（用于列出组织的敏感度标签），以便在文件中设置和读取敏感度标签。 本快速入门“操作说明 - 重新发布受保护的文件 - C#”以前一个快速入门为基础。
+- 可选：查看 MIP SDK 概念中的[文件处理程序](concept-handler-file-cpp.md)。
+- 可选：查看 MIP SDK 概念中的[保护处理程序](concept-handler-protection-cpp.md)。
 
-## <a name="add-logic-to-edit-and-republish-a-protected-file"></a>添加逻辑以编辑并重新发布受保护的文件
+## <a name="add-logic-to-edit-and-republish-a-protected-file"></a>添加逻辑，用于编辑并重新发布受保护的文件
 
-1. 打开在前面的 "快速入门：设置/获取敏感性标签（c #）" 一文中创建的 Visual Studio 解决方案。
+1. 打开在前面的“快速入门：设置/获取敏感度标签 (C#)”一文中创建的 Visual Studio 解决方案。
 
 2. 使用“解决方案资源管理器”，打开项目中包含 `Main()` 方法的实现的 .cs 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
-3. 在正文的末尾 `Main()` ， `Console.ReadKey()` 在应用程序关闭块的下方和上方（在前面的快速入门中，你离开了），插入以下代码。
+3. 在 `Main()` 正文的末尾，于 `Console.ReadKey()` 之下和应用程序关闭块之上（在上一快速入门中离开的位置），插入以下代码。
 
 ```csharp
 string protectedFilePath = "<protected-file-path>" // Originally protected file's path from previous quickstart.
@@ -88,7 +88,7 @@ if (protectionHandler.AccessCheck("Edit"))
 }
 ```
 
-4. 在 Main （）的末尾找到在前面的快速入门中创建的应用程序关闭块，并添加下面的处理程序行以释放资源。
+4. 在靠近 Main() 的末尾处，查找在上一篇快速入门中创建的应用程序关闭块，并在下方添加处理程序行以释放资源。
 
     ````csharp
         protectedFileHandler = null;
@@ -99,7 +99,7 @@ if (protectionHandler.AccessCheck("Edit"))
 
    | 占位符 | 值 |
    |:----------- |:----- |
-   | \<protected-file-path\> | 以前的快速入门中的受保护文件。 |
+   | \<protected-file-path\> | 上一篇快速入门中的受保护文件。 |
    | \<reprotected-file-path\> | 要重新发布的已修改文件的输出文件路径。 |
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
@@ -108,7 +108,7 @@ if (protectionHandler.AccessCheck("Edit"))
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证**。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
   ```console
     Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6

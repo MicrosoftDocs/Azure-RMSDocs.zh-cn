@@ -1,46 +1,46 @@
 ---
-title: 如何重新发布方案 c + +
-description: 本文将帮助你了解如何为重新发布方案重复使用保护处理程序的方案。
+title: 操作说明 - 重新发布场景（C++）
+description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布。
 author: Pathak-Aniket
 ms.service: information-protection
-ms.topic: conceptual
+ms.topic: quickstart
 ms.date: 05/01/2020
 ms.author: v-anikep
-ms.openlocfilehash: 929959135d4889ec65fcc5122837d6e8a09235e9
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
-ms.translationtype: MT
+ms.openlocfilehash: 49fac8fb748cec60abbe3af779670c928c1608a1
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403351"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421095"
 ---
-# <a name="file-api-re-publishing-quickstart-c"></a>文件 API 重新发布快速入门（c + +）
+# <a name="file-api-re-publishing-quickstart-c"></a>文件 API 重新发布快速入门 (C++)
 
 ## <a name="overview"></a>概述
 
-有关此方案及其使用位置的概述，请参阅[MIP SDK 中](concept-republishing.md)的重新发布。
+有关此方案及其使用场景的概述，请参阅[在 MIP SDK 中重新发布](concept-republishing.md)。
 
 ## <a name="prerequisites"></a>必备条件
 
 如果尚未操作，请务必在继续之前完成以下先决条件：
 
-- 首先完成[快速入门：设置/获取敏感度标签 (C++)](quick-file-set-get-label-cpp.md)，这可生成 Visual Studio 初学者解决方案（用于列出组织的敏感度标签），以便在文件中设置和读取敏感度标签。 这会 "如何降级/删除需要论证 c + + 的标签" 快速入门版本。
-- （可选）：查看 MIP SDK 概念中的[文件处理程序](concept-handler-file-cpp.md)。
-- （可选）：在 MIP SDK 概念中查看[保护处理程序](concept-handler-protection-cpp.md)。
+- 首先完成[快速入门：设置/获取敏感度标签 (C++)](quick-file-set-get-label-cpp.md)，这可生成 Visual Studio 初学者解决方案（用于列出组织的敏感度标签），以便在文件中设置和读取敏感度标签。 本快速入门“操作说明 - 降级/删除需要理由的标签 C++”建立在前一篇快速入门的基础之上。
+- 可选：查看 MIP SDK 概念中的[文件处理程序](concept-handler-file-cpp.md)。
+- 可选：查看 MIP SDK 概念中的[保护处理程序](concept-handler-protection-cpp.md)。
 
-## <a name="add-logic-to-filehandler-observer-class"></a>向 FileHandler 观察器类添加逻辑
+## <a name="add-logic-to-filehandler-observer-class"></a>向 FileHandler Observer 类添加逻辑
 
-若要能够使用由公开的方法对受保护的文件进行解密 `GetDecryptedTemporaryFileAsync()` `mip::FileHandler` ，必须按如下所示定义成功和失败的异步方法回调。
+为了能够使用 `mip::FileHandler` 公开的 `GetDecryptedTemporaryFileAsync()` 方法来解密受保护的文件，必须按如下所示定义成功和失败的异步方法回调。
 
 1. 打开在前面的“快速入门：设置/获取敏感度标签 (C++)。
 
-2. 使用解决方案资源管理器 `filehandler_observer.h` 在项目中打开文件。 向 FileHandler 定义的末尾 `};` 添加方法声明之前的行。
+2. 使用解决方案资源管理器打开项目中的 `filehandler_observer.h` 文件。 在 FileHandler 定义的末尾，在 `};` 之前添加以下行，用于方法声明。
 
     ```cpp
         void OnGetDecryptedTemporaryFileSuccess(const std::string& decryptedFilePath, const std::shared_ptr<void>& context) override;
         void OnGetDecryptedTemporaryFileFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context) override;
     ```
 
-3. 使用解决方案资源管理器打开 `filehandler_observer.cpp` 项目中的文件。 在该文件的末尾，为方法定义添加以下行。
+3. 使用解决方案资源管理器打开项目中的 `filehandler_observer.cpp` 文件。 在该文件的末尾，添加以下行，用于方法定义。
 
     ```cpp
 
@@ -55,11 +55,11 @@ ms.locfileid: "86403351"
         }
     ```
 
-## <a name="add-logic-to-edit-and-republish-a-protected-file"></a>添加逻辑以编辑并重新发布受保护的文件
+## <a name="add-logic-to-edit-and-republish-a-protected-file"></a>添加逻辑，用于编辑并重新发布受保护的文件
 
 1. 使用“解决方案资源管理器”，打开项目中包含 `main()` 方法的实现的 .cpp 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
-2. 到 main （）体的末尾，位于系统下方（"pause"）;和以上均返回 0;（在前面的快速入门中，你离开了），插入以下代码：
+2. 在 main() 正文的末尾，于 system("pause"); 之下和 return 0; 之上（在上一快速入门中离开的位置），插入以下代码：
 
 ```cpp
 //Originally protected file's path.
@@ -121,7 +121,7 @@ if (protectionHandler->AccessCheck("Edit")) {
 }
 ```
 
-3. 在 Main （）的末尾找到在前面的快速入门中创建的应用程序关闭块，并添加下面的处理程序行以释放资源。
+3. 在靠近 Main() 的末尾处，查找在上一篇快速入门中创建的应用程序关闭块，并在下方添加处理程序行以释放资源。
 
     ````csharp
         protectedFileHandler = nullptr;
@@ -133,7 +133,7 @@ if (protectionHandler->AccessCheck("Edit")) {
 
    | 占位符 | 值 |
    |:----------- |:----- |
-   | \<protected-file-path\> | 以前的快速入门中的受保护文件。 |
+   | \<protected-file-path\> | 上一篇快速入门中的受保护文件。 |
    | \<reprotected-file-path\> | 要重新发布的已修改文件的输出文件路径。 |
 
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
@@ -142,7 +142,7 @@ if (protectionHandler->AccessCheck("Edit")) {
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 正如你之前在 "设置/获取灵敏度标签" 快速入门中所做的那样，请运行 PowerShell 脚本，每次使用为 $authority 和 $resourceUrl 提供的值获取令牌。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如先前在“设置/获取敏感度标签”快速入门中采取的方式那样，每次使用提供的 $authority 和 $resourceUrl 值运行 PowerShell 脚本以获取令牌。
 
   ```console
     Run the PowerShell script to generate an access token using the following values, then copy/paste it below:

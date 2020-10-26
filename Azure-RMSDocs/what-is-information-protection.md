@@ -4,7 +4,7 @@ description: Azure 信息保护 (AIP) 是一项服务，可帮助组织标记文
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/23/2020
+ms.date: 10/18/2020
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 25b520e08d8379580226d589fec511d502065156
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: e5c32a239b038e714ebbff5779f4490df00ccad3
+ms.sourcegitcommit: 637885276cfb6dc5d0b70b8c0b69d8ad428c2056
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91588399"
+ms.lasthandoff: 10/18/2020
+ms.locfileid: "92163735"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -54,7 +54,7 @@ Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通�
 
 在此示例中，标记还：
 
-- 向电子邮件添加了“敏感度:***常规”的页脚*** 。 该页脚是显示给所有收件人的一个可视指示器，用于不得在组织外部发送的一般业务数据。
+- 向电子邮件添加了“敏感度: ***常规”的页脚*** 。 该页脚是显示给所有收件人的一个可视指示器，用于不得在组织外部发送的一般业务数据。
 - 电子邮件标头中嵌入的元数据。 通过标头数据，电子邮件服务可检测标签，从理论上说可创建审核条目或阻止它发送到组织外部。
 
 ## <a name="how-aip-protects-your-data"></a>AIP 如何保护数据
@@ -143,13 +143,13 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 使用下述方法之一对现有内容进行分类和保护：
 
-- **本地存储**：请使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)来发现网络共享和 Microsoft SharePoint Server 站点及库中的文档，并对其进行分类和保护。
+- **本地存储** ：请使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)来发现网络共享和 Microsoft SharePoint Server 站点及库中的文档，并对其进行分类和保护。
 
     扫描程序将作为一项服务在 Windows Server 上运行，它使用同一套策略规则来检测敏感信息并对文档应用特定标签。 
 
     或者，使用扫描程序向数据存储库中的所有文档应用默认标签，这样就无需检查文件内容。 仅在报告模式下使用扫描程序，来发现你可能不知道的敏感信息。
 
-- **云数据存储**：请使用 [Microsoft Cloud App Security](/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection) 
+- **云数据存储** ：请使用 [Microsoft Cloud App Security](/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection) 
 
 ## <a name="latest-labeling-updates-for-microsoft-365"></a>Microsoft 365 的最新标签更新
 
@@ -182,22 +182,19 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 ### <a name="microsoft-ignite"></a>Microsoft Ignite
 
-在奥兰多，Microsoft Ignite 2019 取得了巨大成功！ 会上提供了与 Azure 信息保护相关的大量精彩资讯，其中包括最新更新和改进功能。 如果你未能参与，我们录制有会议视频供你日后观看。
+已远程并成功保存 Microsoft Ignite 2020！ 可以在 [https://myignite.microsoft.com/sessions](https://myignite.microsoft.com/sessions) 中查看会话录制。
 
-请参阅以下列表，了解我们推荐的前 5 项会议：
+例如：
 
-- [BRK2119 - 保护你的敏感数据！了解最新的 Microsoft 信息保护功能](https://myignite.techcommunity.microsoft.com/sessions/81172?source=sessions)
- 
-- [THR3067 - 了解你的数据：五个热门提示和技巧，让你更好地了解敏感数据格局](https://myignite.techcommunity.microsoft.com/sessions/81183)
+- [在云、本地、终结点和远程工作环境中强化信息保护和管理](https://myignite.microsoft.com/sessions/ceba117f-9bc7-4426-9ebc-753d94c6a476)
 
-- [BRK3103 - 保护敏感文件和数据并非易事。选择可以平衡安全性和工作人员效率的适当数据保护方式](https://myignite.techcommunity.microsoft.com/sessions/81177?source=sessions)
+- [了解你的数据，保护你的数据，并通过 Microsoft 信息保护防止数据丢失](https://myignite.microsoft.com/sessions/46ff69cf-2c8f-4e61-a923-f72f5740f02f)
 
-- [BRK2120 - 已拥有 Azure 信息保护？导航统一的标签、策略配置、客户端和分析](https://myignite.techcommunity.microsoft.com/sessions/81178?source=sessions)
+- [咨询专家：询问有关 Microsoft 合规性的任何信息：信息保护与管理、内部风险、合规性管理等](https://myignite.microsoft.com/sessions/5ce48b36-9827-4d60-8540-90546333063d)
 
-- [BRK2121 - 借助 Microsoft 信息保护 SDK 将敏感度标签和保护功能扩展到自己的应用和 ISV 解决方案](https://myignite.techcommunity.microsoft.com/sessions/81179?source=sessions)
-
-最新博客文章：[了解敏感数据所在的位置，并通过 Microsoft 365 智能地对其进行保护](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Understand-where-your-sensitive-data-is-located-and/ba-p/960465)
-
+> [!TIP]
+> 如果你要查找奥兰多内 Microsoft Ignite 2019 的相关信息，请查看我们博客上的概述：[Microsoft 信息保护文档 - Ignite 2019 概述](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-ignite-2019-recap/ba-p/998174)
+> 
 
 ## <a name="next-steps"></a>后续步骤
 
