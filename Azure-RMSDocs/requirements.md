@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需满足的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 09/29/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d24383a3ae5312d9c690fdac61b0cbdf52072163
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: edf42dc9d41aebe8f4cb21bbca624bd671b5eba4
+ms.sourcegitcommit: 22ac808221a66141406589a9d8d619bfee056cf0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178157"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92429195"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -172,6 +172,12 @@ Azure 信息保护有以下额外要求：
 
 - Web 代理。 如果使用要求进行身份验证的 Web 代理，必须将代理配置为将集成 Windows 身份验证与用户的 Active Directory 登录凭据配合使用。
 
+    要在使用代理获取令牌时支持 Proxy.pac 文件，请添加以下新的注册表项：
+
+    - 路径：`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP\`
+    - 密钥：`UseDefaultCredentialsInProxy`
+    - 类型：`DWORD`
+    - 值：`1`
     
 - TLS 客户端到服务连接。 不要终止与 aadrm.com URL 的任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
      
