@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 09/15/2020
 ms.author: tommos
 ms.custom: has-adal-ref
-ms.openlocfilehash: 406068f5770f489c66963fc34a462ec7e205765b
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.openlocfilehash: b0aeeabeabf6dc4c3bba39ea2f58374b98bac491
+ms.sourcegitcommit: 4815ab96e4596303af297ae4c13fb6d7083b21e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91108956"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044369"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
@@ -110,9 +110,9 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 现在，通过扩展 SDK 的 `Microsoft.InformationProtection.IConsentDelegate` 接口，并覆盖/实现 `GetUserConsent()`，为同意委托创建实现。 同意委托将在以后由文件配置文件和文件引擎对象实例化并使用。 向同意委托提供在 `url` 参数中使用的、用户必须同意的服务的地址。 委托通常应提供一些流程，使用户能接受或拒绝同意服务访问请求。 对于此快速入门，硬编码 `Consent.Accept`。
 
-1. 使用之前使用的相同 Visual Studio“添加类”功能，将另一个类添加到项目中。 这次，在“类名”字段中输入“ConsentDelegateImplementation”****。
+1. 使用之前使用的相同 Visual Studio“添加类”功能，将另一个类添加到项目中。 这次，在“类名”字段中输入“ConsentDelegateImplementation”。
 
-2. 现在更新 ConsentDelegateImpl.cs 以实现新的同意委托类****。 为 `Microsoft.InformationProtection` 添加 using 语句并将类设置为继承 `IConsentDelegate`。
+2. 现在更新 ConsentDelegateImpl.cs 以实现新的同意委托类。 为 `Microsoft.InformationProtection` 添加 using 语句并将类设置为继承 `IConsentDelegate`。
 
      ```csharp
      class ConsentDelegateImplementation : IConsentDelegate
@@ -128,7 +128,7 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 ## <a name="initialize-the-mip-sdk-managed-wrapper"></a>初始化 MIP SDK 托管的包装器
 
-1. 在“解决方案资源管理器”中，打开项目中包含 `Main()` 方法的实现的 .cs 文件****。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
+1. 在“解决方案资源管理器”中，打开项目中包含 `Main()` 方法的实现的 .cs 文件。 它默认与包含它的项目同名，即在项目创建期间指定的名称。
 
 2. 删除生成的 `main()` 实现。
 
@@ -211,7 +211,7 @@ namespace mip_sdk_dotnet_quickstart
                var fileProfile = Task.Run(async () => await MIP.LoadFileProfileAsync(profileSettings)).Result;
 
                // Create a FileEngineSettings object, then use that to add an engine to the profile.
-               var engineSettings = new FileEngineSettings("user1@tenant.com", authDelegate "", "en-US");
+               var engineSettings = new FileEngineSettings("user1@tenant.com", authDelegate, "", "en-US");
                engineSettings.Identity = new Identity("user1@tenant.com");
                var fileEngine = Task.Run(async () => await fileProfile.AddEngineAsync(engineSettings)).Result;
 
