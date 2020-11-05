@@ -4,7 +4,7 @@ description: 确定对 Azure Rights Management (Azure RMS) 服务提供本机支
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 10/27/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3115cbbce67f3997ad12f1fdb8a4ddd1f5ed2ca6
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 2461aed992c46859191a118db72c97ca90815315
+ms.sourcegitcommit: 1e028d89d179d0ef81851d969f5d0dc90b8dd45c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178191"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93245107"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -47,8 +47,8 @@ ms.locfileid: "92178191"
 
 |类型  |支持的应用程序   |
 |---------|---------|
-|**Word、Excel、PowerPoint**    |  - Microsoft 365 应用<br />- Office 2019 for Mac<br />- Office 2016 for Mac<br />- [Office 网页版](#viewing-protected-documents-in-office-for-the-web)<br />- [Web 浏览器](#web-browser-support)    |
-|[电子邮件](#viewing-protected-content-in-email-clients)   |   - Outlook 2019 for Mac<br />- Outlook 2016 for Mac<br />- [Web 浏览器](#web-browser-support)     |
+|**Word、Excel、PowerPoint**    |  - Microsoft 365 应用，版本 16.40 或更高版本 <br />- Office 2019 for Mac，版本 16.40 或更高版本<br />- Office 2016 for Mac，版本 16.16.27 或更高版本<br />- [Office 网页版](#viewing-protected-documents-in-office-for-the-web)<br />- [Web 浏览器](#web-browser-support)    |
+|[电子邮件](#viewing-protected-content-in-email-clients)   |   - Outlook 2019 for Mac，版本 16.40 或更高版本<br />- Outlook 2016 for Mac，版本 16.16.27 或更高版本<br />- [Web 浏览器](#web-browser-support)     |
 |[**其他文件类型**](#supported-text-and-image-file-types)    | RMS 共享应用（查看受保护的文本、图像、常规受保护的文件）   |
 | | |
 
