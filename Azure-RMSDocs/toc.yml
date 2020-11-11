@@ -4,8 +4,6 @@
   items:
     - name: 什么是 Azure 信息保护？
       href: what-is-information-protection.md
-    - name: Azure 信息保护权限管理
-      href: what-is-azure-rms.md
     - name: AIP 要求
       items:
         - name: 概述
@@ -19,24 +17,24 @@
 - name: 快速入门
   expanded: true
   items:
-    - name: Azure 门户入门
-      href: quickstart-viewpolicy.md
-    - name: 查找具有的敏感信息
-      href: quickstart-findsensitiveinfo.md
-    - name: 配置标签以保护电子邮件 - 经典客户端
-      href: quickstart-label-dnf-protectedemail.md
-    - name: 为特定用户创建新标签 - 经典客户端
-      href: quickstart-label-specificusers.md
+    - name: 部署客户端
+      href: quickstart-deploy-client.md
 - name: 教程
   items:
-    - name: 编辑策略并创建新标签 - 经典客户端
-      href: infoprotect-quick-start-tutorial.md
-    - name: 配置协同工作的策略设置 - 经典客户端
-      href: infoprotect-settings-tutorial.md
-    - name: 配置客户端设置以控制过度共享的情况 - 经典客户端
-      href: infoprotect-oversharing-tutorial.md
+    - name: 安装扫描程序
+      href: tutorial-install-scanner.md
+    - name: 发现敏感内容
+      href: tutorial-scan-networks-and-content.md
+    - name: 防止滥用共享
+      href: tutorial-preventing-oversharing.md
+    - name: 从经典客户端迁移到统一标记客户端
+      href: tutorial-migrating-to-ul.md
 - name: 概念
   items:
+    - name: AIP 分类和保护
+      href: aip-classification-and-protection.md
+    - name: Azure 信息保护权限管理
+      href: what-is-azure-rms.md
     - name: Rights Management 保护
       items:
         - name: Rights Management 保护的工作原理

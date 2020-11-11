@@ -12,12 +12,12 @@ metadata:
   ms.author: mlottner
   manager: rkarlin
   ms.date: 04/02/2019
-  ms.openlocfilehash: 63026df891e74f05bf8bcf570f852840aa991cce
-  ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+  ms.openlocfilehash: a2f73c9aa0207af5b7ba77b3b53c271eb8722cb2
+  ms.sourcegitcommit: 1086cf04a29bb12cdb25c1fd8429f93d423bcc69
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/07/2020
-  ms.locfileid: "86048419"
+  ms.lasthandoff: 11/09/2020
+  ms.locfileid: "94379157"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -35,22 +35,22 @@ landingContent:
       url: requirements.md
   - linkListType: quickstart
     links:
-    - text: Azure 门户入门
-      url: quickstart-viewpolicy.md
-    - text: 查找敏感信息
-      url: quickstart-findsensitiveinfo.md
-  - linkListType: deploy
+    - text: 部署统一标记客户端
+      url: quickstart-deploy-client.md
+  - linkListType: tutorial
     links:
-    - text: 部署路线图
-      url: deployment-roadmap.md
-    - text: 常见方案
-      url: how-to-guides.md
+    - text: 安装扫描程序
+      url: tutorial-install-scanner.md
+    - text: 扫描网络和内容
+      url: tutorial-scan-networks-and-content.md
+    - text: 防止滥用共享
+      url: tutorial-preventing-oversharing.md
 - title: 保持最新
   linkLists:
   - linkListType: whats-new
     links:
     - text: 前 5 个建议的 Ignite 会话
-      url: what-is-information-protection.md#microsoft-ignite
+      url: what-is-information-protection.md#additional-resources
     - text: 最新统一标记客户端版本
       url: ./rms-client/unifiedlabelingclient-version-release-history.md
 - title: 对本地数据存储中的数据进行分类和保护
@@ -63,10 +63,10 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 经典客户端：高级设置
-      url: ./rms-client/client-admin-guide-customizations.md
     - text: 统一标记客户端：高级设置
       url: ./rms-client/clientv2-admin-guide-customizations.md
+    - text: 经典客户端：高级设置
+      url: ./rms-client/client-admin-guide-customizations.md
 - title: Microsoft 信息保护 SDK
   linkLists:
   - linkListType: overview
@@ -91,8 +91,8 @@ landingContent:
       url: ./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers
   - linkListType: how-to-guide
     links:
-    - text: 迁移 Azure 信息保护标签
-      url: configure-policy-migrate-labels.md
+    - text: 迁移到统一标记客户端
+      url: tutorial-migrating-to-ul.md
 - title: 监视标签使用情况和发现敏感信息
   linkLists:
   - linkListType: how-to-guide
