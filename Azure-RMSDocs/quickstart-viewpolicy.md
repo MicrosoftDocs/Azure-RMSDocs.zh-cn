@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 29c79c49de5d28c82281614846f5938ecbf40f89
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: b0128abb8d75418596459ac142a49dbbfa06b646
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91587892"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503615"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
@@ -33,7 +33,7 @@ ms.locfileid: "91587892"
 
 - [Azure 门户](https://portal.azure.com/)帐户的访问权限。
 
-- 包含 [Azure 信息保护计划 1 或计划 2](https://azure.microsoft.com/pricing/details/information-protection/) 的订阅。
+- 包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。
 
     如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 
@@ -41,7 +41,7 @@ ms.locfileid: "91587892"
 
 ## <a name="add-azure-information-protection-to-the-azure-portal"></a>将 Azure 信息保护添加到 Azure 门户
 
-即使你的订阅包含 Azure 信息保护计划 1 或计划 2，AIP 也不会自动在 Azure 门户中使用。
+即使你的订阅包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)，AIP 也不会自动在 Azure 门户中可用。
 
 执行以下步骤以将 AIP 添加到 Azure 门户：
 
@@ -64,7 +64,7 @@ ms.locfileid: "91587892"
 
 1. 确认是否已为租户激活保护。 例如：
 
-    :::image type="content" source="media/qs-tutor/confirm-activation.PNG" alt-text="将 Azure 信息保护添加到 Azure 门户":::
+    :::image type="content" source="media/qs-tutor/confirm-activation.PNG" alt-text="确认 AIP 激活":::
 
     如果未在任何时间激活保护，则需要将其激活，方法是选择“激活”![激活 AIP](media/qs-tutor/activate.png "激活 AIP")。 激活完成后，信息栏将显示“激活已成功完成”。
 
@@ -76,7 +76,7 @@ ms.locfileid: "91587892"
 
     你可能已创建了默认标签。 下图显示了默认情况下使用 Azure 信息保护创建的标签：
 
-    :::image type="content" source="media/info-protect-defaultlabels.png" alt-text="将 Azure 信息保护添加到 Azure 门户":::
+    :::image type="content" source="media/info-protect-defaultlabels.png" alt-text="Azure 信息保护默认标签":::
 
     如果看不到默认标签或任何标签：
 
@@ -139,7 +139,7 @@ ms.locfileid: "91587892"
 
 1. 在“配置要对信息保护最终用户显示和应用的设置”部分中，策略设置显示在标签后面。 例如，未设置默认标签，文档和电子邮件无需具备标签，且用户在更改标签时无需提供理由：
 
-    :::image type="content" source="media/defaultsettings-aip.png" alt-text="将 Azure 信息保护添加到 Azure 门户":::
+    :::image type="content" source="media/defaultsettings-aip.png" alt-text="Azure 信息保护策略全局设置":::
 
 1. 你现在可以在门户中关闭任何已打开的窗格。
 

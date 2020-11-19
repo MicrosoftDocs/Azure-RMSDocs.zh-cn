@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 8d86d6f114bd1a0886883b9cda277ffd6ae9904b
-ms.sourcegitcommit: 2cf5002f34eee9929cdc22d6b6e64d5734dec816
+ms.openlocfilehash: 851bc48926c6634fc7d5a529aa2910e11974f3a7
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94377092"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503411"
 ---
 # <a name="tutorial-preventing-oversharing-in-outlook-using-azure-information-protection-aip"></a>教程：使用 Azure 信息保护 (AIP) 防止 Outlook 中的过度共享
 
@@ -40,7 +40,7 @@ ms.locfileid: "94377092"
 |先决条件  |说明  |
 |---------|---------|
 |计算机需求     | 请确保： <br /><br />- 有 Windows 计算机，其中安装了 Azure 信息保护统一标记客户端。 有关详细信息，请参阅[快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端](quickstart-deploy-client.md)。 <br /><br />- 已安装 PowerShell，并且你可以以管理员身份运行 PowerShell。 <br /><br />- 可以登录到 Outlook。 做好在本教程中多次重启 Outlook 的准备。     |
-|Azure 信息保护订阅     |   必须有包含 Azure 信息保护计划 2 的 Azure [订阅](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)。      |
+|Azure 信息保护订阅     |   你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的 Azure 订阅。 <br /><br />如果没有上述任一订阅，则请为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
 |敏感度标签和测试策略     |  在策略中配置的“常规”敏感度标签。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。 <br /><br />建议使用测试策略完成本教程，以免影响活动策略。 <br />请确保你可以随时使用策略名称以及“常规”标签的 GUID。   |
 | | |
 

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: fcdf8fdba470a085af83410de0e9bcd4677ec664
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 2f5a9778ecd75b124f0d03e21217f5edab0c8fb1
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91428797"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503428"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -49,7 +49,7 @@ ms.locfileid: "91428797"
 
 若要完成本教程，你需要：
 
-1. 包含 Azure 信息保护计划 1 或计划 2 的订阅。
+1. 包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。
     
     如果没有包含此计划的订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。
 

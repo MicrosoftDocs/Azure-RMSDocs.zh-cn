@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e4c1ae01b35a19fc3cc84f207f4f17b510926931
-ms.sourcegitcommit: 2cf5002f34eee9929cdc22d6b6e64d5734dec816
+ms.openlocfilehash: f988ba63671164463a4ad1b566daab7df123e057
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94377107"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503632"
 ---
 # <a name="tutorial-migrating-from-the-azure-information-protection-aip-classic-client-to-the-unified-labeling-client"></a>教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端
 
@@ -103,7 +103,7 @@ MIP 支持许多基本信息保护功能的内置标记服务，使你能够仅�
 
 ### <a name="synchronizing-labeling-edits"></a>同步标记编辑
 
-将标记迁移到管理中心后，继续对 Azure 门户中迁移的标记进行的任何编辑将自动同步到管理中心中的统一标记，以进行统一标记。
+当你将标签迁移到标签管理中心（包括 Microsoft 365 安全中心、Microsoft 365 合规性中心或 Microsoft 365 安全与合规中心）后，继续在 Azure 门户中对迁移后的标签进行的任何编辑都会自动同步到管理中心内的相同标签，以实现统一标签。
 
 但是，对管理中心中的已迁移标签所做的编辑不同步到 Azure 门户。 如果在管理中心进行编辑，并且需要在 Azure 门户中更新它们，请返回到门户以发布更新。
 

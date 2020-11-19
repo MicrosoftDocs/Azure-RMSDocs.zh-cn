@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: edf42dc9d41aebe8f4cb21bbca624bd671b5eba4
-ms.sourcegitcommit: 22ac808221a66141406589a9d8d619bfee056cf0
+ms.openlocfilehash: 5e52571568a54cf015269fde76603e334f0bc7b6
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92429195"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503547"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -45,9 +45,11 @@ ms.locfileid: "92429195"
 如果你对许可有疑问，请仔细阅读许可的[常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)。
 
 > [!TIP]
-> 要确定 Microsoft 365 计划或 Exchange Online 独立计划是否支持 [Office 365 邮件加密的新功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)，以便向个人电子邮件地址发送受保护的电子邮件？ 例如 Gmail、Yahoo 和 Microsoft。 请参阅以下资源：
+> 要确定你的计划是否支持 [Office 365 邮件加密中的新功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)，以向个人电子邮件地址发送受保护的电子邮件？ 例如 Gmail、Yahoo 和 Microsoft。 请参阅以下资源：
 >
 > - [Exchange Online 服务说明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)
+>
+> - [Microsoft 365 合规性许可比较](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 >
 > - [Office 365 教育版](/office365/servicedescriptions/office-365-platform-service-description/office-365-education)
 >

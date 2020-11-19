@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: f947edadde9b4dfecb91adf9bcb8fefe168bf38b
-ms.sourcegitcommit: 16d2c7477b96c5e8f6e4328a61fe1dc3d12c878d
+ms.openlocfilehash: d452f2c6c1d58af8f352664e087514f798bc1b5b
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86927824"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503564"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 
@@ -38,7 +38,7 @@ ms.locfileid: "86927824"
 
 |要求  |说明  |
 |---------|---------|
-|支持订阅     |  你将需要包含 [Azure 信息保护计划 1 或计划 2](https://azure.microsoft.com/pricing/details/information-protection/) 的订阅。 </br></br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
+|支持订阅     |  你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。 </br></br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
 |AIP 已添加到 Azure 门户    |  已将“Azure 信息保护”窗格添加到 Azure 门户，并确认已激活保护服务。 </br></br>有关详细信息，请参阅[快速入门：在 Azure 门户中开始](quickstart-viewpolicy.md)。       |
 |Azure AD 中已启用电子邮件的组     | 你将需要 Azure AD 中已启用电子邮件的组，其中包含将查看和应用新标签的用户。 </br></br>如果你没有适当的组，请创建一个名为“销售团队”的组并至少添加一个用户。 |
 |经典客户端已安装    |   若要测试新标签，需要在计算机上安装经典客户端。 </br></br>2021 年 3 月将弃用 Azure 信息保护经典客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。  |

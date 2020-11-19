@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: d7c70cd8b9f44bb4babd00deb4229dc5cab0d214
-ms.sourcegitcommit: 2cf5002f34eee9929cdc22d6b6e64d5734dec816
+ms.openlocfilehash: a645e8e6cbda725a167f789481579be070e3c99c
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94377093"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503683"
 ---
 # <a name="tutorial-installing-the-azure-information-protection-aip-unified-labeling-scanner"></a>教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序
 
@@ -33,10 +33,10 @@ ms.locfileid: "94377093"
 
 |要求  |说明  |
 |---------|---------|
-|支持订阅     |  你将需要包含 [Azure 信息保护计划 1 或计划 2](https://azure.microsoft.com/pricing/details/information-protection/) 的 Azure 订阅。 <br /><br />如果没有上述任一订阅，则请为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
+|支持订阅     |  你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的 Azure 订阅。 <br /><br />如果没有上述任一订阅，则请为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
 |对 Azure 门户的管理员访问权限 |请确保可以通过以下管理员帐户之一登录到 [Azure 门户](https://portal.azure.com/)： <br /><br />- 合规性管理员<br />- 合规性数据管理员<br />- 安全管理员<br />- 全局管理员 |
 |客户端已安装    |   在计算机上安装 AIP 统一标记客户端以访问扫描程序安装。 <br /><br />从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并运行 AzInfoProtection_UL.exe。 <br /><br />安装完成后，系统可能会提示你重启计算机或 Office 软件。 根据需要重启以继续。 <br /><br />有关详细信息，请参阅[快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端](quickstart-deploy-client.md)。|
-|**SQL Server**     | 若要运行扫描程序，你需要在扫描程序计算机上安装 SQL Server。 <br /><br /> 若要安装，请转到 [Microsoft 下载中心](https://www.microsoft.com/sql-server/sql-server-editions-express)，然后选择要安装的安装选项下的“立即下载”。 在安装程序中，选择“基本”安装类型。 <br /><br />**注意**：我们建议为生产环境安装 SQL Server Enterprise，仅为测试环境安装 Express。       |
+|**SQL Server**     | 若要运行扫描程序，你需要在扫描程序计算机上安装 SQL Server。 <br /><br /> 若要安装，请转到 [SQL Server 下载页](https://www.microsoft.com/sql-server/sql-server-downloads)，然后选择要安装的安装选项下的“立即下载”。 在安装程序中，选择“基本”安装类型。 <br /><br />**注意**：我们建议为生产环境安装 SQL Server Enterprise，仅为测试环境安装 Express。       |
 |**Azure Active Directory 帐户**     |  使用标准的云连接环境时，要用于扫描程序的域服务帐户必须同步到 [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)。 如果正在脱机工作，则不需要这样做。 <br /><br />如果你不确定你的帐户，请联系你的系统管理员来验证同步状态。   |
 |敏感度标签和已发布的策略 |必须已创建敏感度标签，并将至少有一个标签的策略发布到标记管理中心，用于扫描程序服务帐户。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。 |
 | | |

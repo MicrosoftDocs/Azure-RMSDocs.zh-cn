@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 04e114e6b719288a26663bd5534af4b1f1b73ac8
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 0ab3f66437882f6c458b3e4793be935d5f14686d
+ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91587875"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94503649"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -33,7 +33,7 @@ ms.locfileid: "91587875"
 
 |要求  |说明  |
 |---------|---------|
-|支持订阅     |  你将需要包含 [Azure 信息保护计划 1 或计划 2](https://azure.microsoft.com/pricing/details/information-protection/) 的订阅。 </br></br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
+|支持订阅     |  你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。 </br></br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
 |客户端已安装    |   你将需要在计算机上安装经典客户端或统一标记客户端。 </br></br>- 若要安装统一标记客户端，请转到 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)，然后从“Azure 信息保护”页下载 AzInfoProtection_UL.exe。 </br>- 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。       |
 |SQL Server Express     | 你将需要在计算机上安装 SQL Server Express。 </br></br> 若要安装，请转到 [Microsoft 下载中心](https://www.microsoft.com/sql-server/sql-server-editions-express)，然后在“快速”选项下选择“立即下载”。 在安装程序中，选择“基本”安装类型。        |
 |Azure AD     |  你的域帐户必须同步到 Azure AD。 </br></br>如果你不确定你的帐户，请联系你的系统管理员。      |
@@ -96,11 +96,11 @@ ms.locfileid: "91587875"
 
     仍在“添加新配置文件”窗格上，选择“配置存储库”以打开“存储库”窗格：
 
-    :::image type="content" source="./media/scanner-repositories-bar.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
+    :::image type="content" source="./media/scanner-repositories-bar.png" alt-text="为 Azure 信息保护扫描程序配置数据存储库":::
 
 1. 在“存储库”窗格上，选择“添加”：
 
-    :::image type="content" source="media/scanner-repository-add.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
+    :::image type="content" source="media/scanner-repository-add.png" alt-text="为 Azure 信息保护扫描程序添加数据存储库":::
 
 1. 在“存储库”窗格上，指定之前创建的文件夹。 例如：`\\server\TestScanner`
 
@@ -132,7 +132,7 @@ ms.locfileid: "91587875"
 
 1. 选择配置文件名称，然后选择“立即扫描”选项：
 
-    :::image type="content" source="media/scanner-scan-now.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
+    :::image type="content" source="media/scanner-scan-now.png" alt-text="启动 Azure 信息保护扫描程序扫描":::
 
     如果在选择配置文件后，此选项不可用，则扫描程序不会连接到 Azure 信息保护。 查看配置和 Internet 连接。
 
@@ -171,7 +171,7 @@ ms.locfileid: "91587875"
 
     在“Azure 信息保护 - 配置文件”窗格上，确保选中配置文件，然后选择“立即扫描”选项：
 
-    :::image type="content" source="media/scanner-scan-now.png" alt-text="添加 Azure 信息保护扫描程序的配置文件":::
+    :::image type="content" source="media/scanner-scan-now.png" alt-text="启动 Azure 信息保护扫描程序扫描":::
 
 1. 扫描完成后，查看新的结果。
 

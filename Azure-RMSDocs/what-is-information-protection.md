@@ -9,15 +9,15 @@ ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
 Customer intent: As an administrator, I want to extend Microsoft 365's labeling and classification functionality to the File Explorer, PowerShell, third party apps and services, and more.
-ms.custom: contperfq1
+ms.custom: contperfq2
 search.appverid:
 - MET150
-ms.openlocfilehash: 5167d790c557661181b03f90055dfc75b0b1cf72
-ms.sourcegitcommit: 1086cf04a29bb12cdb25c1fd8429f93d423bcc69
+ms.openlocfilehash: 4a945f07532786c268886a44de23430be9a78700
+ms.sourcegitcommit: 822b23024cfd01ea41ac6ae9370489193782f078
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94379236"
+ms.lasthandoff: 11/15/2020
+ms.locfileid: "94634693"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -35,7 +35,7 @@ Microsoft 信息保护是 AIP 的统一标记客户端利用的通用信息保�
 
 ## <a name="aip-unified-labeling-client"></a>AIP 统一标记客户端
 
-Azure 信息保护统一标记客户端将标记、分类和保护功能扩展到其他文件类型，如文件资源管理器和 PowerShell。 
+Azure 信息保护统一标签客户端将标签、分类和保护功能扩展到其他文件类型，以及文件资源管理器和 PowerShell。 
 
 例如，在文件资源管理器中，右键单击一个或多个文件，然后选择“分类和保护”以管理所选文件上的 AIP 功能。
 
@@ -47,7 +47,7 @@ Azure 信息保护统一标记客户端将标记、分类和保护功能扩展�
     
 ## <a name="aip-on-premises-scanner"></a>AIP 本地扫描程序
 
-Azure 信息保护本地扫描程序使管理员能够扫描其网络和文件共享，以获取必须标记、分类和/或受保护的敏感内容。
+借助 Azure 信息保护本地扫描程序，管理员可以扫描其网络和本地文件存储库，以发现必须标记、分类和/或保护的敏感内容。
 
 使用作为统一标记客户端的一部分提供的 PowerShell cmdlet 安装本地扫描程序，并且可以使用 PowerShell 和 Azure 门户中的 Azure 信息保护区域进行管理。
 
