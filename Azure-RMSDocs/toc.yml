@@ -81,6 +81,10 @@
               href: migrate-from-ad-rms-phase5.md
     - name: Azure 信息保护策略
       href: overview-policy.md
+    - name: 安全性
+      items:
+        - name: 安全基线
+          href: security-baseline.md
 - name: 操作指南
   items:
     - name: 常见方案操作说明
