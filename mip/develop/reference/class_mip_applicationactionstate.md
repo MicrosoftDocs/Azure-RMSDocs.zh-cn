@@ -1,30 +1,30 @@
 ---
 title: 类 ApplicationActionState
-description: 记录 Microsoft 信息保护（MIP） SDK 的 applicationactionstate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 applicationactionstate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 389fd02b47153c6953fefad3ba068add6ff431ee
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 936f64f24211f000dc26153f17bd094f4d7d3c8d
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763672"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565233"
 ---
 # <a name="class-applicationactionstate"></a>类 ApplicationActionState 
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public LabelState GetNewLabelState （） const  |  获取新标签状态。
-public std：： shared_ptr\<标签\> GetNewLabel （） const  |  获取应在文档上应用的敏感度标签 ID。
-公共 std：:p air\<bool，std：： string\> IsDowngradeJustified （） const  |  实现应传递是否提供了降级现有标签的合理理由。
+public LabelState GetNewLabelState ( # A1 const  |  获取新标签状态。
+public std：： shared_ptr \<Label\> GetNewLabel ( # A1 const  |  获取应在文档上应用的敏感度标签 ID。
+公共 std：:p air \<bool, std::string\> IsDowngradeJustified ( # A1 const  |  实现应传递是否提供了降级现有标签的合理理由。
 public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签的分配方法。
-public virtual std：： vector\<std：:p 风\<std：： string、std：： string\> \> GetNewLabelExtendedProperties （） const  |  返回新标签的扩展属性。
+public virtual std：： vector \<std::pair\<std::string, std::string\> \> GetNewLabelExtendedProperties ( # A1 const  |  返回新标签的扩展属性。
 public ActionType GetSupportedActions() const  |  获取描述所有受支持操作类型的掩码枚举。
-public bool IsRecommendationEnabled （） const  |  获取一个布尔值，表示建议的操作将返回。 默认情况下，除非用户指定 else，否则应为 true。
+public bool IsRecommendationEnabled ( # A1 const  |  获取一个布尔值，表示建议的操作将返回。 默认情况下，除非用户指定 else，否则应为 true。
   
 ## <a name="members"></a>成员
   
@@ -56,7 +56,7 @@ public bool IsRecommendationEnabled （） const  |  获取一个布尔值，表
   
 **返回结果**：分配方法 STANDARD、PRIVILEGED、AUTO。 
   
-**** 另请参阅：mip::AssignmentMethod
+另请参阅：mip::AssignmentMethod
   
 ### <a name="getnewlabelextendedproperties-function"></a>GetNewLabelExtendedProperties 函数
 返回新标签的扩展属性。

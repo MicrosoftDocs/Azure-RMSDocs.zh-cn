@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 41ae437f06a3d90f391ead9dc843e86c1b54fcd8
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.openlocfilehash: 0382a1a97d65938c5d90d10d4e572697558223cc
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068679"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566389"
 ---
 # <a name="windows-store-setup"></a>Windows 应用商店安装程序
 
@@ -29,21 +29,21 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 
 本主题将指导你完成环境设置过程，以创建自己的新应用。
 
--   [必备条件](#prerequisites)
+-   [先决条件](#prerequisites)
 -   [可选](#optional)
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 
 开发系统上必须安装以下软件：
 
--   [Windows 8.1](https://windows.microsoft.com/windows-8/meet) 操作系统
+-   [Windows 8.1](https://windows.microsoft.com/windows-8/meet)操作系统
 -   [适用于 Windows 8.1 的 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/) 或更高版本，或 Visual Studio Express 2012，后者包含在适用于 Windows 8.0/8.1 的 Windows SDK中。
--   适用于 Windows Store 应用程序的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
--   身份验证库：我们建议使用 [Azure AD 身份验证库](https://msdn.microsoft.com/library/jj573266.aspx)和其他可用的身份验证库。
+-   适用于 Windows Store 应用程序的 MS RMS SDK 4.2 包。 有关详细信息，请参阅 [入门](get-started.md)。
+-   身份验证库：我们建议使用 [Azure AD 身份验证库](/previous-versions/azure/jj573266(v=azure.100))和其他可用的身份验证库。
 
 有关 API 更新、设备和环境信息、发行说明和常见问题 (FAQ) 的信息，请阅读[新增功能](release-notes.md)主题。
 
@@ -55,17 +55,17 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 
 
 -   打开 Visual Studio。
--   依次单击 **“文件”** 、 **“新建”** 和 **“项目”** 。
--   在“新建项目”对话框中，单击“Visual C” **，选择“空白应用(Windows)”\#** ，然后单击“确定”。
+-   依次单击 **“文件”**、**“新建”** 和 **“项目”**。
+-   在 "**新建项目**" 对话框中，单击 " **Visual C \#** " 并选择 "**空白应用 (Windows)** 并单击 **" 确定 "**。
 
-    ![新建项目](../media/winrtsetup-newproj.png)
+    ![创建新项目](../media/winrtsetup-newproj.png)
 
 -   在“解决方案资源管理器”，右键单击你的项目，然后选择“添加引用”以打开“添加引用”对话框。
 
     ![添加引用](../media/winrtsetup-addref.png)
 
 -   在“添加引用”对话框中，单击“浏览”，然后选择位于要将 SDK 包解压到其中的文件夹中的 *Microsoft.RightsManagement.dll* 文件。
--   **托管应用** - 需要添加此引用才能生成托管应用；请选择 **Windows 8.1**-&gt;**扩展**，并选中“适用于 Windows 的 Windows Visual C++ 运行时包”复选框
+-   **托管应用**-若要生成托管应用，你将需要添加此引用;选择 **Windows 8.1** - &gt; **扩展**，并选中 "适用于 windows 的 **windows Visual C++ 运行时包**" 框
 
     ![添加扩展](../media/winrtsetup-refmngr.png)
 
@@ -73,7 +73,7 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 
 你现在已准备就绪，可创建新 Windows 应用商店应用。
 
-### <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另请参阅
 
 [入门](get-started.md)
 
@@ -85,4 +85,4 @@ Windows Store 应用程序可以使用 Microsoft Rights Management SDK 4.2 通�
 
 [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/)
 
-[Windows API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
+[Windows API 参考](/previous-versions/windows/desktop/msipcthin2/winrt)

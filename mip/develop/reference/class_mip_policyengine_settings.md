@@ -1,26 +1,26 @@
 ---
 title: 类 PolicyEngine：： Settings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 policyengine：： settings 类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 policyengine：： settings 类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 5e745dd011f9626e031cfcb9c9ae0466e91e2bfe
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 1843256598f4e8c32a80fbba44323fa9eff6729e
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81761074"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565057"
 ---
 # <a name="class-policyenginesettings"></a>类 PolicyEngine：： Settings 
 定义与 PolicyEngine 关联的设置。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（const std：： string& engineId，const std：： shared_ptr\<AuthDelegate\>& AuthDelegate，const std：： string& clientData，const std：： string& locale，bool loadSensitivityTypes）  |  用于加载现有引擎的 PolicyEngine::Settings 构造函数。
-公共设置（常量标识& Identity，const std：： shared_ptr\<AuthDelegate\>& AuthDelegate，const std：： string& clientData，const std：： string& locale，bool loadSensitivityTypes）  |  用于新建引擎的 PolicyEngine::Settings 构造函数。
+公共设置 (const std：： string& engineId，const std：： shared_ptr \<AuthDelegate\>& authDelegate，const std：： string& clientData，const std：： string& locale，Bool loadSensitivityTypes)   |  用于加载现有引擎的 PolicyEngine::Settings 构造函数。
+公共设置 (const Identity& Identity，const std：： shared_ptr \<AuthDelegate\>& authDelegate，const std：： string& clientData，const std：： string& locale，Bool loadSensitivityTypes)   |  用于新建引擎的 PolicyEngine::Settings 构造函数。
 public const std::string& GetEngineId() const  |  获取引擎 ID。
 public void SetEngineId(const std::string& id)  |  设置引擎 ID。
 public const Identity& GetIdentity() const  |  获取标识对象。
@@ -28,23 +28,27 @@ public void SetIdentity(const Identity& identity)  |  设置标识对象。
 public const std::string& GetClientData() const  |  获取设置中设置的客户端数据。
 public void SetClientData(const std::string& clientData)  |  设置客户端数据字符串。
 public const std::string& GetLocale() const  |  获取设置中设置的区域设置。
-public void SetCustomSettings （const std：： vector\<std：:p 风\<std：： string、std：： string\> \>& customSettings）  |  设置自定义设置，用于功能访问控制和测试。
-public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取用于功能访问控制和测试的自定义设置。
+public void SetCustomSettings (const std：： vector \<std::pair\<std::string, std::string\> \>& customSettings)   |  设置自定义设置，用于功能访问控制和测试。
+public const std：： vector \<std::pair\<std::string, std::string\> \>& GetCustomSettings ( # A2 const  |  获取用于功能访问控制和测试的自定义设置。
 public void SetSessionId(const std::string& sessionId)  |  设置用于客户端定义遥测的会话 ID。
 public const std::string& GetSessionId() const  |  获取唯一标识符形式的会话 ID。
-public bool IsLoadSensitivityTypesEnabled （） const  |  获取一个标志，该标志指示是否启用了加载敏感度标签。
-公共 void SetCloud （云云）  |  选择性地设置目标云。
-公有 Cloud GetCloud （） const  |  获取所有服务请求使用的目标云。
+public bool IsLoadSensitivityTypesEnabled ( # A1 const  |  获取一个标志，该标志指示是否启用了加载敏感度标签。
+公有 void SetCloud (云云)   |  选择性地设置目标云。
+公有 Cloud GetCloud ( # A1 const  |  获取所有服务请求使用的目标云。
 public void SetCloudEndpointBaseUrl(const std::string& cloudEndpointBaseUrl)  |  为自定义云设置云终结点基 URL。
 public const std::string& GetCloudEndpointBaseUrl() const  |  获取所有服务请求使用的云基 URL（如果已指定）。
-public void SetDelegatedUserEmail （const std：： string& delegatedUserEmail）  |  设置委派的用户。
-public const std：： string& GetDelegatedUserEmail （） const  |  获取委托的用户。
-public void SetLabelFilter （const std：： vector\<LabelFilterType\>& labelFilter）  |  设置标签筛选器。
-public const std：： vector\<LabelFilterType\>& GetLabelFilter （） const  |  获取标签筛选器。
-public void SetVariableTextMarkingType （VariableTextMarkingType variableTextMarkingType）  |  设置变量文本标记类型。
-public VariableTextMarkingType GetVariableTextMarkingType （） const  |  获取变量文本标记类型。
-public void SetAuthDelegate （const std：： shared_ptr\<authDelegate\>& AuthDelegate）  |  设置引擎身份验证委托。
-public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获取引擎身份验证委托。
+public void SetDelegatedUserEmail (const std：： string& delegatedUserEmail)   |  设置委派的用户。
+public const std：： string& GetDelegatedUserEmail ( # A2 const  |  获取委托的用户。
+public void SetLabelFilter (const std：： vector \<LabelFilterType\>& deprecatedLabelFilters)   |  设置标签筛选器。
+public const std：： vector \<LabelFilterType\>& GetLabelFilter ( # A2 const  |  获取通过弃用的函数 SetLabelFilter 设置的标签筛选器。
+public void ConfigureFunctionality (LabelFilterType labelFilterType，bool 已启用)   |  启用或禁用功能。
+public const std：： map \<LabelFilterType, bool\>& GetConfiguredFunctionality ( # A2 const  |  获取已配置的功能。
+public void SetClassifierEnabled (分类器 classifierType，已启用 bool)   |  启用或禁用对分类类型的支持。
+public const std：： map \<Classifier, bool\>& GetConfiguredClassifierSupport ( # A2 const  |  获取支持的分类器替代。
+public void SetVariableTextMarkingType (VariableTextMarkingType variableTextMarkingType)   |  设置变量文本标记类型。
+public VariableTextMarkingType GetVariableTextMarkingType ( # A1 const  |  获取变量文本标记类型。
+public void SetAuthDelegate (const std：： shared_ptr \<AuthDelegate\>& authDelegate)   |  设置引擎身份验证委托。
+public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取引擎身份验证委托。
   
 ## <a name="members"></a>成员
   
@@ -108,7 +112,7 @@ public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获
   
 **返回结果**：对设置对象中的标识的引用。 
   
-**** 另请参阅：mip::Identity
+另请参阅：mip::Identity
   
 ### <a name="setidentity-function"></a>SetIdentity 函数
 设置标识对象。
@@ -118,7 +122,7 @@ public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获
 
 
   
-**** 另请参阅：mip::Identity
+另请参阅：mip::Identity
   
 ### <a name="getclientdata-function"></a>GetClientData 函数
 获取设置中设置的客户端数据。
@@ -229,11 +233,47 @@ public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获
 标签默认为 "筛选范围"，此 api 允许按可能的操作进行筛选。 如果未设置 HyokProtection 和 DoubleKeyProtection，则进行筛选。
   
 ### <a name="getlabelfilter-function"></a>GetLabelFilter 函数
-获取标签筛选器。
+获取通过弃用的函数 SetLabelFilter 设置的标签筛选器。
 
   
 **返回**：标签筛选器。
 标签默认为 "筛选范围"，此 api 允许按可能的操作进行筛选。
+  
+### <a name="configurefunctionality-function"></a>ConfigureFunctionality 函数
+启用或禁用功能。
+
+参数：  
+* **labelFilterType**：功能的类型。 
+
+
+* **enabled**：若要启用，则为 True，禁用 false
+
+
+默认情况下，HyokProtection、DoubleKeyProtection、DoubleKeyUserDefinedProtection 处于禁用状态，并且必须启用
+  
+### <a name="getconfiguredfunctionality-function"></a>GetConfiguredFunctionality 函数
+获取已配置的功能。
+
+  
+**返回**：将类型映射到布尔值，指示是否已启用该类型
+  
+### <a name="setclassifierenabled-function"></a>SetClassifierEnabled 函数
+启用或禁用对分类类型的支持。
+
+参数：  
+* **classifierType**：分类器的类型 
+
+
+* **enabled**：若要启用，则为 True，禁用 false
+
+
+默认情况下仅启用 SensitiveInformation classifers
+  
+### <a name="getconfiguredclassifiersupport-function"></a>GetConfiguredClassifierSupport 函数
+获取支持的分类器替代。
+
+  
+**返回**：将类型映射到布尔值，指示是否已使用支持对其进行了覆盖
   
 ### <a name="setvariabletextmarkingtype-function"></a>SetVariableTextMarkingType 函数
 设置变量文本标记类型。

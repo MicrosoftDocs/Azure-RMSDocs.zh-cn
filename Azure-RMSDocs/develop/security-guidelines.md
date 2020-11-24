@@ -11,12 +11,12 @@ ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: eb550284cd10a3b0946bd188ca2f194edead86f0
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: fe9afaa7bc9951ce7264e4e27e308c39e3718551
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "67521202"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566333"
 ---
 # <a name="security-best-practices-for-information-protection"></a>信息保护的安全性最佳实践
 
@@ -51,7 +51,7 @@ ms.locfileid: "67521202"
 
 Microsoft 不会测试或审查与满足最低标准相关的测试结果。 合作伙伴负责确保最低标准得到满足。 Microsoft 提供两个附加级别的建议，以帮助缓解常见威胁。 一般情况下，这些建议是累加的。 例如，除非另外指定，否则如果符合首选建议，则假设已满足了最低标准（如果适用）。
 
-|标准级别|描述|
+|标准级别|说明|
 |---|---|
 |最低标准| 处理受保护信息的应用程序必须首先满足最低标准，才能使用从 Microsoft 收到的生产证书对此应用程序进行签名。 合作伙伴通常在最终发布软件时使用生产层次结构证书。 合作伙伴自己的内部测试用于验证应用程序是否满足此最低标准。 满足最低标准并不是，并且也不应被理解为是 Microsoft 提供的安全保证。 Microsoft 不会测试或审查与满足最低标准相关的测试结果。 合作伙伴负责确保最低标准得到满足。|
 |建议的标准| 建议的准则既描绘了改进应用程序安全性的途径，又指出了在更多安全标准被执行的同时 SDK 可能会如何发展。 供应商可能会通过构建此更高级别的安全准则来区分其应用程序。|
@@ -73,7 +73,7 @@ Microsoft 已定义了应用程序必须满足的最低要求标准，以保护�
 - 无法通过对 /DELAYLOAD 链接器开关执行运行时或后续更改来更改延迟加载。
 - 无法通过提供自己拥有的 Delayimp.lib helper 函数版本来更改延迟加载。
 - 存在信息保护 SDK 环境时，无法卸载由已通过验证的模块延迟加载的模块。
-- 无法使用 `/DELAY:UNLOAD` 链接器开关实现延迟模块卸载。
+- 不能使用 **`/DELAY:UNLOAD`** 链接器开关来启用延迟模块的卸载。
 
 ## <a name="incorrectly-interpreting-license-rights"></a>错误地解释许可证权限
 
@@ -81,28 +81,28 @@ Microsoft 已定义了应用程序必须满足的最低要求标准，以保护�
 
 ### <a name="azure-information-protection-aip"></a>Azure 信息保护 (AIP)
 
-信息保护系统将权限组织成几组。 有关详细信息，请参阅[配置 Azure 信息保护的使用权限](../configure-usage-rights.md)。
+信息保护系统将权限组织成几组。 有关详细信息，请参阅 [配置 Azure 信息保护的使用权限](../configure-usage-rights.md)。
 
 AIP 使用户能够解密或不能够解密信息。 信息没有任何固有保护。 如果用户有权解密，API 则允许此操作。 应用程序负责在信息明确后管理或保护信息。 应用程序是负责管理其环境和接口，防止信息遭到未经授权地使用。 例如，如果许可证仅授予“查看”权限，则禁用“打印”和“复制”按钮。 测试套件应验证应用程序是否根据其所识别的所有许可证权限进行正确地操作。
 
 ### <a name="minimum-standard"></a>最低标准
 
-- 如 XrML 规范中所述，XrML v.1.2 权限的客户实现应与这些权限的定义相一致，可在 XrML 网站 (http://www.xrml.org) ) 上查看这些规范。 必须为所有对应用程序感兴趣的实体定义特定于应用程序的权限。
+- 如 XrML 规范中所述，XrML v.1.2 权限的客户实现应与这些权限的定义相一致，可在 XrML 网站 (http://www.xrml.org)) 上查看这些规范。 必须为所有对应用程序感兴趣的实体定义特定于应用程序的权限。
 - 测试套件和测试过程应验证应用程序是否根据应用程序所支持的权限进行正确地操作。 它还应验证此应用程序不会根据不受支持的权限采取行动。
 - 如果你正在构建发布应用程序，必须提供可解释所使用的内在权限的信息。 这包括此发布应用程序支持和不支持的权限，以及应如何解释这些权限。 此外，用户界面应向最终用户说明每个权限授予或拒绝个别信息的含义。
 - 必须将由应用程序实现的新权限中包含的内容所抽象化的任何权限映射到新的术语。 例如，名为 MANAGER 的新权限可能将 PRINT、COPY 和 EDIT 权限包括为抽象权限。
 
 ### <a name="recommended-standard"></a>建议的标准
 
-暂时没有。
+暂无解决方法。
 
 ### <a name="preferred-standard"></a>首选标准
 
-暂时没有。
+暂无解决方法。
 
 ## <a name="next-steps"></a>后续步骤
 
 以下文章介绍了使用 AIP SDK 实现应用程序的最佳实践：
 
-- [Threat Models and Mitigations](https://msdn.microsoft.com/library/aa362751.aspx)（威胁模型和缓解）
-- [Security Attacks](https://msdn.microsoft.com/library/aa362736.aspx)（安全攻击）
+- [威胁模型和缓解](/previous-versions//aa362751(v=vs.85))
+- [Security Attacks](/previous-versions//aa362736(v=vs.85))（安全攻击）

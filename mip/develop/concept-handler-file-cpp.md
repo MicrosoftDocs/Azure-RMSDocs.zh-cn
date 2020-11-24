@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: f94f885f77d15ec5c38894a4801b08908e65a166
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 60420046a1b8c102143a6d6b0dcd2d7b01f55821
+ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555800"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "95566000"
 ---
 # <a name="microsoft-information-protection-sdk---file-handler-concepts"></a>Microsoft 信息保护 SDK - 文件处理程序概念
 
@@ -36,11 +36,11 @@ ms.locfileid: "75555800"
 - `DeleteLabel()`
 - `CommitAsync()`
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
-创建 `FileHandler` 用于处理特定文件需要使用以下对象：
+创建 `FileHandler` 来处理特定文件要求：
 
-- `FileProfile`
+- 一个 `FileProfile`
 - 已添加到 `FileProfile` 的 `FileEngine`
 - 继承 `mip::FileHandler::Observer` 的类
 
@@ -52,7 +52,7 @@ ms.locfileid: "75555800"
 
 `CreateFileHandlerAsync` 接受三个参数：应读取或修改的文件的路径、异步事件通知的 `mip::FileHandler::Observer` 以及 `FileHandler` 的 promise。
 
-**注意：** `mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
+**注意：**`mip::FileHandler::Observer` 类必须在派生类中实现，因为 `CreateFileHandler` 需要 `Observer` 对象。 
 
 ```cpp
 auto createFileHandlerPromise = std::make_shared<std::promise<std::shared_ptr<mip::FileHandler>>>();
@@ -69,7 +69,7 @@ auto handler = createFileHandlerFuture.get();
 
 若要从文件中成功读取元数据并将其转换为可在应用程序中使用的内容，需要满足一些要求。
 
-- 要读取的标签必须仍然存在于 O365 服务中。 如果它已被完全删除，SDK 将无法获取有关该标签的信息，并将返回错误。
+- 要读取的标签仍必须在 Microsoft 365 服务中存在。 如果它已被完全删除，SDK 将无法获取有关该标签的信息，并将返回错误。
 - 文件元数据必须保持完整。 此元数据包括：
   - Attribute1
   - Attribute2
@@ -93,11 +93,11 @@ auto label = loadFuture.get();
 
 ## <a name="set-a-label"></a>设置标签
 
-设置标签分为两步。 首先，创建一个指向相关文件的处理程序，可以通过使用一些参数调用 `FileHandler->SetLabel()` 来设置标签： `mip::Label`、`mip::LabelingOptions`和 `mip::ProtectionOptions`。 首先，必须将标签 id 解析为标签，然后定义标签选项。 
+设置标签分为两步。 首先，创建一个指向相关文件的处理程序，可以通过使用一些参数调用来设置标签 `FileHandler->SetLabel()` ： `mip::Label` 、 `mip::LabelingOptions` 和 `mip::ProtectionOptions` 。 首先，必须将标签 id 解析为标签，然后定义标签选项。 
 
 ### <a name="resolve-label-id-to-miplabel"></a>将标签 id 解析为 mip：： Label
 
-**SetLabel**函数的第一个参数是 `mip::Label`。 通常，应用程序使用标签标识符而不是标签。 可以通过对文件或策略引擎调用**GetLabelById** ，将标签标识符解析为 `mip::Label`：
+**SetLabel** 函数的第一个参数是 `mip::Label` 。 通常，应用程序使用标签标识符而不是标签。 可以 `mip::Label` 通过对文件或策略引擎调用 **GetLabelById** ，将标签标识符解析为：
 
 ```cpp
 mip::Label label = mEngine->GetLabelById(labelId);
@@ -105,12 +105,12 @@ mip::Label label = mEngine->GetLabelById(labelId);
 
 ### <a name="labeling-options"></a>标签选项
 
-设置标签所需的第二个参数为 `mip::LabelingOptions`。 
+设置标签所需的第二个参数是 `mip::LabelingOptions` 。 
 
 `LabelingOptions` 指定有关标签的其他信息，例如 `AssignmentMethod` 和操作的理由。
 
 - `mip::AssignmentMethod` 只是一个具有三个值的枚举器：`STANDARD`、`PRIVILEGED` 或 `AUTO`。 有关更多详细信息，请查看 `mip::AssignmentMethod` 参考。
-- 只有在服务策略要求提供时*以及*在降低文件的*现有*敏感度时才需要提供理由。
+- 只有在服务策略要求提供时 *以及* 在降低文件的 *现有* 敏感度时才需要提供理由。
 
 此代码段演示如何创建 `mip::LabelingOptions` 对象并设置降级理由和消息。
 
@@ -121,9 +121,9 @@ labelingOptions.SetDowngradeJustification(true, "Because I made an educated deci
 
 ### <a name="protection-settings"></a>保护设置
 
-某些应用程序可能需要代表委派的用户标识执行操作。 通过 `mip::ProtectionSettings` 类，应用程序可以定义*每个处理程序*的委托标识。 以前，委托由引擎类执行。 这在应用程序开销和服务往返行程上存在明显的缺点。 通过将委派的用户设置移动到 `mip::ProtectionSettings` 并使其成为处理程序类的一部分，我们消除了这一开销，从而提高了对代表不同的用户标识集执行许多操作的应用程序的性能。 
+某些应用程序可能需要代表委派的用户标识执行操作。 此 `mip::ProtectionSettings` 类允许应用程序定义 *每个处理程序* 的委托标识。 以前，委托由引擎类执行。 这在应用程序开销和服务往返行程上存在明显的缺点。 通过将委派的用户设置移动到 `mip::ProtectionSettings` 并使其成为处理程序类的一部分，我们消除了这一开销，从而提高了对代表不同的用户标识集执行许多操作的应用程序的性能。 
 
-如果不需要委托，只需将 `mip::ProtectionSettings()` 传递给**SetLabel**函数。 如果需要委托，可以通过创建 `mip::ProtectionSettings` 对象并设置委托邮件地址来实现：
+如果委托不是必需的，则只需传递 `mip::ProtectionSettings()` 到 **SetLabel** 函数。 如果需要委托，可以通过创建 `mip::ProtectionSettings` 对象并设置委托邮件地址来实现：
 
 ```cpp
 mip::ProtectionSettings protectionSettings; 
@@ -132,9 +132,9 @@ protectionSettings.SetDelegatedUserEmail("alice@contoso.com");
 
 ### <a name="set-the-label"></a>设置标签
 
-从 id 中提取了 `mip::Label`，设置标签选项，并且可以选择设置保护设置，现在可以设置标签。
+`mip::Label`从 id 获取了，设置标签选项，并且可以选择设置保护设置，现在可以设置标签。
 
-如果未设置保护设置，请通过对处理程序调用 `SetLabel` 来设置标签：
+如果未设置保护设置，请通过 `SetLabel` 在处理程序上调用来设置标签：
 
 ```cpp
 handler->SetLabel(label, labelingOptions, mip::ProtectionSettings());
@@ -150,7 +150,7 @@ handler->SetLabel(label, labelingOptions, protectionSettings);
 
 ### <a name="commit-changes"></a>提交更改
 
-在 MIP SDK 中提交对文件所做任何更改的最后一步是**提交**更改。 这可以通过使用 `FileHandler->CommitAsync()` 函数来实现。 
+在 MIP SDK 中提交对文件所做任何更改的最后一步是 **提交** 更改。 这可以通过使用 `FileHandler->CommitAsync()` 函数来实现。 
 
 若要实现 commitment 函数，我们可返回 promise/future 模式，为 `bool` 创建 promise。 如果操作成功，则 `CommitAsync()` 函数将返回 true；如果因任何原因失败，则返回 false。 
 
@@ -163,7 +163,7 @@ handler->CommitAsync(outputFile, commitPromise);
 auto wasCommitted = commitFuture.get();
 ```
 
-**重要说明：** `FileHandler` 不会更新或覆盖现有文件。 开发人员负责实现对标记文件的**替换**操作。 
+**重要说明：**`FileHandler` 不会更新或覆盖现有文件。 开发人员负责实现对标记文件的 **替换** 操作。 
 
 如果将标签写入 **FileA.docx**，则会创建文件的副本 **FileB.docx** 并应用标签。 必须编写代码来删除/重命名 **FileA.docx** 以及重命名 **FileB.docx**。
 

@@ -1,26 +1,26 @@
 ---
 title: 类 ProtectionEngine：： Settings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionengine：： settings 类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionengine：： settings 类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 7c6b96a1ec78712cb256ab63efe869213fc71f8e
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 47947ed2b9b815204e3843ad64c18ffccf39b913
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764594"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565181"
 ---
 # <a name="class-protectionenginesettings"></a>类 ProtectionEngine：： Settings 
 ProtectionEngine 在其创建期间及其整个生存期内使用的 Settings。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共设置（常量标识& Identity，const std：： shared_ptr\<AuthDelegate\>& AuthDelegate，const std：： string& clientData，const std：： string& locale）  |  用于新建引擎的 ProtectionEngine::Settings 构造函数。
-公共设置（const std：： string& engineId，const std：： shared_ptr\<AuthDelegate\>& AuthDelegate，const std：： string& clientData，const std：： string& locale）  |  用于加载现有引擎的 ProtectionEngine::Settings 构造函数。
+公共设置 (const Identity& Identity，const std：： shared_ptr \<AuthDelegate\>& authDelegate，const std：： string& clientData，const std：： string& 区域设置)   |  用于新建引擎的 ProtectionEngine::Settings 构造函数。
+公共设置 (const std：： string& engineId，const std：： shared_ptr \<AuthDelegate\>& authDelegate，const std：： string& clientData，const std：： string& locale)   |  用于加载现有引擎的 ProtectionEngine::Settings 构造函数。
 public const std::string& GetEngineId() const  |  获取引擎 ID。
 public void SetEngineId(const std::string& engineId)  |  设置引擎 ID。
 public const Identity& GetIdentity() const  |  获取与引擎关联的用户标识。
@@ -28,16 +28,18 @@ public void SetIdentity(const Identity& identity)  |  设置与引擎关联的�
 public const std::string& GetClientData() const  |  获取客户端指定的自定义数据。
 public void SetClientData(const std::string& clientData)  |  设置客户端指定的自定义数据。
 public const std::string& GetLocale() const  |  获取写入引擎数据所用的区域设置。
-public void SetCustomSettings （const std：： vector\<std：:p 风\<std：： string、std：： string\> \>& 值）  |  设置用于测试和试验的名称/值对。
-public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取用于测试和试验的名称/值对。
+public void SetCustomSettings (const std：： vector \<std::pair\<std::string, std::string\> \>& 值)   |  设置用于测试和试验的名称/值对。
+public const std：： vector \<std::pair\<std::string, std::string\> \>& GetCustomSettings ( # A2 const  |  获取用于测试和试验的名称/值对。
 public void SetSessionId(const std::string& sessionId)  |  设置用于关联日志记录/遥测的引擎会话 ID。
 public const std::string& GetSessionId() const  |  获取引擎会话 ID。
-公共 void SetCloud （云云）  |  选择性地设置目标云。
-公有 Cloud GetCloud （） const  |  获取所有服务请求使用的目标云。
+公有 void SetCloud (云云)   |  选择性地设置目标云。
+公有 Cloud GetCloud ( # A1 const  |  获取所有服务请求使用的目标云。
 public void SetCloudEndpointBaseUrl(const std::string& cloudEndpointBaseUrl)  |  为自定义云设置云终结点基 URL。
 public const std::string& GetCloudEndpointBaseUrl() const  |  获取所有服务请求使用的云基 URL（如果已指定）。
-public void SetAuthDelegate （const std：： shared_ptr\<authDelegate\>& AuthDelegate）  |  设置引擎身份验证委托。
-public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获取引擎身份验证委托。
+public void SetAuthDelegate (const std：： shared_ptr \<AuthDelegate\>& authDelegate)   |  设置引擎身份验证委托。
+public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取引擎身份验证委托。
+public const std：： string& GetUnderlyingApplicationId ( # A2 const  |  获取基础应用程序 ID。
+public void SetUnderlyingApplicationId (const std：： string& underlyingApplicationId)   |  设置基础应用程序 ID。
   
 ## <a name="members"></a>成员
   
@@ -194,3 +196,16 @@ public std：： shared_ptr\<AuthDelegate\> GetAuthDelegate （） const  |  获
 
   
 **返回**：引擎身份验证委托。
+  
+### <a name="getunderlyingapplicationid-function"></a>GetUnderlyingApplicationId 函数
+获取基础应用程序 ID。
+
+  
+**返回**：基础应用程序 ID
+  
+### <a name="setunderlyingapplicationid-function"></a>SetUnderlyingApplicationId 函数
+设置基础应用程序 ID。
+
+参数：  
+* **UnderlyingApplicationId**：基础应用程序 ID。
+

@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 03/05/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 974995056b14d714dbda7e00df4255cbd54302e1
-ms.sourcegitcommit: 44b874f32cbd1e0552ba8a1f8c9496344ecf8adc
+ms.openlocfilehash: 9b0f9e3fa619762e08d32fb17da576d58f92071d
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83630395"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566040"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
@@ -49,13 +49,21 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 这表明你尚未将标签从 Azure 信息保护迁移到统一的标签体验。 请按照[如何将 Azure 信息保护标签迁移到 Office 365 安全与合规中心](/azure/information-protection/configure-policy-migrate-labels)的步骤操作，以迁移标签，然后在 Office 365 安全与合规中心创建标签策略。 
 
+### <a name="error-nopolicyexception-label-policy-did-not-contain-data"></a>错误： "NoPolicyException：标签策略不包含数据"
+
+**问**：尝试通过 MIP SDK 读取标签或列表标签时，为什么会收到以下错误？
+
+> NoPolicyException：标签策略不包含数据，CorrelationId = GUID，CorrelationId。 Description = PolicyProfile，NoPolicyError = SyncFile，NoPolicyError = SyncFile
+
+这表示未在 Microsoft 安全性和符合性中心发布标记策略。 按照 [创建和配置敏感度标签及其策略](/microsoft-365/compliance/create-sensitivity-labels) 来配置标记策略。
+
 ### <a name="error-systemcomponentmodelwin32exception-loadlibrary-failed"></a>错误： "System.componentmodel. Win32Exception： LoadLibrary failed"
 
 **问**：在使用 MIP SDK .net 包装时，为什么会收到以下错误？
 
-> System.componentmodel：调用 MIP 时： [sdk_wrapper_dotnet] 的 Win32Exception： LoadLibrary 失败。Initialize （）。
+> System.componentmodel： Win32Exception： LoadLibrary 在调用 MIP.Initialize ( # A1 时 sdk_wrapper_dotnet.dll 失败。
 
-你的应用程序没有所需的运行时，或未构建为发布。 有关详细信息，请参阅[确保应用具有所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime)。 
+你的应用程序没有所需的运行时，或未构建为发布。 有关详细信息，请参阅 [确保应用具有所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime) 。 
 
 ### <a name="error-proxyautherror-exception"></a>错误： "ProxyAuthError exception"
 
@@ -63,10 +71,10 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 > "ProxyAuthenticatonError：不支持代理身份验证"
 
-MIP SDK 不支持使用经过身份验证的代理。 若要修复此消息，代理管理员应将 Microsoft 信息保护服务终结点设置为绕过代理。 " [Office 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)" 页上提供了这些终结点的列表。 MIP SDK 要求 `*.protection.outlook.com` （第9行）和 Azure 信息保护服务终结点（行73）绕过代理身份验证。
+MIP SDK 不支持使用经过身份验证的代理。 若要修复此消息，代理管理员应将 Microsoft 信息保护服务终结点设置为绕过代理。 " [Office 365 url 和 IP 地址范围](/office365/enterprise/urls-and-ip-address-ranges) " 页上提供了这些终结点的列表。 MIP SDK 要求 `*.protection.outlook.com` (第9行) 和 Azure 信息保护服务终结点 (行 73) 绕过代理身份验证。
 
 ### <a name="issues-in-net-core"></a>.NET Core 中的问题
 
 **问**： NuGet 包是否适用于 .net Core？ 
 
-NuGet 包将安装到 .NET Core 项目，但将无法运行。 我们正在努力为 Windows 修复此操作，但目前尚不提供支持其他平台的时间线。 
+NuGet 包将安装到 .NET Core 项目，但将无法运行。 我们正在努力为 Windows 修复此操作，但目前尚不提供支持其他平台的时间线。

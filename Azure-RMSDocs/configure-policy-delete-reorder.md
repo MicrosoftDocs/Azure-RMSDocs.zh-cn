@@ -5,24 +5,24 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 8c273bd483a7a29c3475841183592135eff0841c
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: e4370c2a9fbecac42b43efd9783b19f9af4bc31d
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048521"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565320"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>如何删除或重排 Azure 信息保护的标签
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -31,9 +31,9 @@ ms.locfileid: "86048521"
 
 ![在 Azure 信息保护策略中删除或重排标签](./media/info-protect-contextmenu.png)
 
-在删除已应用到文档和电子邮件的标签时，当 Azure 信息保护客户端在下一次打开这些文档和客户端，用户将看到标签的“未设置”**** 状态。 但是，标签信息仍然保留在元数据中，并且仍可以通过查找此标签信息的服务进行读取。
+在删除已应用到文档和电子邮件的标签时，当 Azure 信息保护客户端在下一次打开这些文档和客户端，用户将看到标签的“未设置”状态。 但是，标签信息仍然保留在元数据中，并且仍可以通过查找此标签信息的服务进行读取。
 
-此外，如果删除的标签已应用保护，该保护就不会被删除。 标签中的保护设置将保留并显示在“保护模板”**** 部分。 现在可以将此模板转换为新的标签。 此模板存在时，无法创建与已删除标签的名称相同的新标签。 如果想那么做，有如下选项可供选择：
+此外，如果删除的标签已应用保护，该保护就不会被删除。 标签中的保护设置将保留并显示在“保护模板”部分。 现在可以将此模板转换为新的标签。 此模板存在时，无法创建与已删除标签的名称相同的新标签。 如果想那么做，有如下选项可供选择：
 
 - 将模板转换为标签。 
     
@@ -59,15 +59,15 @@ ms.locfileid: "86048521"
 
 按照以下说明进行这些更改。
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。 
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。 
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，执行以下一项或多项操作： 
 
-    - 删除标签：对于你想要删除的标签，右键单击或选择上下文菜单 (...****)，单击“删除此标签”****，然后单击“确定”**** 以确认。 
+    - 删除标签：对于你想要删除的标签，右键单击或选择上下文菜单 (...)，单击“删除此标签”，然后单击“确定”以确认。 
 
-    - 禁用标签：选择你想要禁用的标签。 在 "**标签**" 窗格中 **，选择**"**关闭**"，然后单击 "**保存**"。
+    - 禁用标签：选择你想要禁用的标签。 在 " **标签** " 窗格中 **，选择**" **关闭**"，然后单击 " **保存**"。
 
     - 重排标签：针对想要重排的标签，右键单击或选择上下文菜单 (**...**)，然后单击“**上移**”或“**下移**”直到标签位于所需的顺序。  
 

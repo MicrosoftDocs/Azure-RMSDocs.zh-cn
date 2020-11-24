@@ -1,33 +1,33 @@
 ---
 title: 类 ProtectionDescriptorBuilder
-description: 记录 Microsoft 信息保护（MIP） SDK 的 protectiondescriptorbuilder：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectiondescriptorbuilder：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 11890665b02ade782edcff6c23296ab70c9368f8
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 2e5573a896ef0935c33e85a2ed7f73451ced8e7c
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764474"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565188"
 ---
 # <a name="class-protectiondescriptorbuilder"></a>类 ProtectionDescriptorBuilder 
 构造 ProtectionDescriptor，用于描述与一段内容相关的保护。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public MIP_API std：： shared_ptr\<ProtectionDescriptor\> Build （）  |  创建 ProtectionDescriptor，它的访问权限由此 ProtectionDescriptorBuilder 实例定义。
+public MIP_API std::shared_ptr\<ProtectionDescriptor\> Build()  |  创建 ProtectionDescriptor，它的访问权限由此 ProtectionDescriptorBuilder 实例定义。
 public void SetName(const std::string& value)  |  设置保护策略名称。
 public void SetDescription(const std::string& value)  |  设置保护策略说明。
-public void SetContentValidUntil （const std：： chrono：： time_point\<std：： chrono：： system_clock\>& 值）  |  设置保护策略到期时间。
+public void SetContentValidUntil (const std：： chrono：： time_point \<std::chrono::system_clock\>& 值)   |  设置保护策略到期时间。
 public void SetAllowOfflineAccess(bool value)  |  设置保护策略是否允许脱机访问内容。
 public void SetReferrer(const std::string& uri)  |  设置保护策略引荐来源网址。
-public void SetEncryptedAppData （const std：： map\<std：： string，std：： string\>& 值）  |  设置应加密的应用特定数据。
-public void SetSignedAppData （const std：： map\<std：： string，std：： string\>& 值）  |  设置应签名的应用特定数据。
-public void SetDoubleKeyUrl （const std：： string& doubleKeyUrl）  |  设置要用于自定义保护的双键 url。
+public void SetEncryptedAppData (const std：： map \<std::string, std::string\>& 值)   |  设置应加密的应用特定数据。
+public void SetSignedAppData (const std：： map \<std::string, std::string\>& 值)   |  设置应签名的应用特定数据。
+public void SetDoubleKeyUrl (const std：： string& doubleKeyUrl)   |  设置要用于自定义保护的双键 url。
   
 ## <a name="members"></a>成员
   
@@ -65,7 +65,7 @@ public void SetDoubleKeyUrl （const std：： string& doubleKeyUrl）  |  设�
 设置保护策略是否允许脱机访问内容。
 
 参数：  
-* value****：策略是否允许脱机访问内容
+* value：策略是否允许脱机访问内容
 
 
   

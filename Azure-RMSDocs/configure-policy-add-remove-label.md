@@ -5,24 +5,24 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: bf0567efc0d8ae8c65667f7b65cafbdbd32f83aa
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: cbfb54a4e35a39b312b49bd534950c42cd79f7a7
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047722"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565324"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>向 Azure 信息保护策略添加标签或从中删除标签
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -39,21 +39,21 @@ ms.locfileid: "86047722"
 
 ## <a name="to-add-or-remove-a-label-to-or-from-a-policy"></a>若要向策略添加标签或从中删除标签
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
 2. 从 "**分类**  >  **策略**" 菜单选项：在 " **Azure 信息保护**  -  **策略**" 窗格中，如果要添加或删除的标签适用于所有用户，请选择 "**全局**"。
 
     如果要添加或删除的标签适用于子集用户，请改为选择作用域内策略。
 
-3. 在 "**策略**" 窗格中，选择 "**添加或删除标签**"。
+3. 在 " **策略** " 窗格中，选择 " **添加或删除标签**"。
 
-4. 在 "**策略：添加或删除标签**" 窗格中，将显示 "所有标签" 复选框（如果已在策略中）以及相应的策略名称（在 "**策略**" 列中）。
+4. 在 " **策略：添加或删除标签** " 窗格中，将显示 "所有标签" 复选框（如果已在策略中）以及相应的策略名称（在 " **策略** " 列中）。
      
     子标签显示为缩进。 在作用域内策略中，从全局策略继承的标签显示为不可用。
     
-    执行下列一项或多项操作，然后单击“确定”****：
+    执行下列一项或多项操作，然后单击“确定”：
     
     - 若要添加标签，请选中，将添加所选的复选框。
     

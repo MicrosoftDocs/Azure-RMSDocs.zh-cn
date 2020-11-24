@@ -1,22 +1,22 @@
 ---
 title: 类标签
-description: 记录 Microsoft 信息保护（MIP） SDK 的标签：：未定义的类。
-author: BryanLa
+description: 记录标签：：未定义的 Microsoft 信息保护类 (MIP) SDK。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 95eb7c523e7e627aff767169b9d35479839ac72d
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 6a0bd370dd8a0f08156861995c498f4f3710e9e2
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81762187"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565111"
 ---
 # <a name="class-label"></a>类标签 
 单个 Microsoft 信息保护标签的抽象。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取标签 ID。
@@ -25,11 +25,11 @@ public const std::string& GetDescription() const  |  获取标签说明。
 public const std::string& GetColor() const  |  获取应显示的标签颜色。
 public int GetSensitivity() const  |  获取标签的敏感度。
 public const std::string& GetTooltip() const  |  获取标签的工具提示说明。
-public const std：： string& GetAutoTooltip （） const  |  获取导致应用此标签的分类的工具提示说明。
+public const std：： string& GetAutoTooltip ( # A2 const  |  获取导致应用此标签的分类的工具提示说明。
 public bool IsActive() const  |  获取一个布尔值，指示标签是否处于活动状态。
-public std：： weak_ptr\<标签\> GetParent （） const  |  获取父标签。
-public const std：： vector\<std：： shared_ptr\<标签\> \>& GetChildren （） const  |  获取当前标签的子标签。
-public const std：： vector\<std：:p air\<std：： string，std：： string\> \>& GetCustomSettings （） const  |  获取标签的自定义设置。
+public std::weak_ptr\<Label\> GetParent() const  |  获取父标签。
+public const std：： vector \<std::shared_ptr\<Label\> \>& GetChildren ( # A2 const  |  获取当前标签的子标签。
+public const std：： vector \<std::pair\<std::string, std::string\> \>& GetCustomSettings ( # A2 const  |  获取标签的自定义设置。
 public ActionSource GetActionSource() const  |  获取标签的操作源。
   
 ## <a name="members"></a>成员

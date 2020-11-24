@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 4a9f0b375f9e152d44f4d5b5251a9259456db53c
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: 4a9a0029cbf9d3d171b24fc7a20a146a4646f799
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135702"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566121"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>如何：启用错误和性能日志记录
 Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性能日志上传。
@@ -33,7 +33,7 @@ Microsoft Rights Management SDK 4.2 通过单个设备属性管理诊断和性�
 > [!NOTE]
 > 例如，下面是 Microsoft 用于日志记录通知的标准消息： 
 >
-> *通过启用错误和性能日志记录，你同意将错误和性能数据发送给 Microsoft。 Microsoft 将通过 internet 收集错误和性能数据（"数据"）。 Microsoft 使用此数据提供并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，我们会分析性能和可靠性，如您使用哪些功能、功能响应的速度、设备性能、用户界面交互以及您对产品所遇到的任何问题。 数据还将包含有关软件配置的信息（如当前正在运行的软件）以及 IP 地址。*  
+> *通过启用错误和性能日志记录，你同意将错误和性能数据发送给 Microsoft。 Microsoft 将通过 internet 收集错误和性能数据， ( "Data" ) 。 Microsoft 使用此数据提供并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，我们会分析性能和可靠性，如您使用哪些功能、功能响应的速度、设备性能、用户界面交互以及您对产品所遇到的任何问题。 数据还将包含有关软件配置的信息（如当前正在运行的软件）以及 IP 地址。*  
 
 你将通过两个属性管理日志记录控件。
 
@@ -101,7 +101,7 @@ NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
 CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 ```
 
-有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](https://msdn.microsoft.com/library/microsoft.rightsmanagement.customerexperienceoptions.aspx)。
+有关可选设置的详细信息，请参阅 [CustomerExperienceOptions](/previous-versions/windows/desktop/msipcthin2/customerexperienceoptions)。
 
 获取当前日志记录控制标志设置
 
@@ -111,4 +111,4 @@ CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Optio
 
 **请注意** - 上面的 Windows 代码片段使用的是 C++。 对于 C\#，请使用“.” 而不是“::”更新语法。
 
-**Linux / C++** - 此 SDK 中包含一些基本的日志记录，它们没有其他平台的日志记录那样宽泛。 有关详细信息，请参阅[可移植 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 中的“README.md”的**疑难解答**部分。
+**Linux / C++** - 此 SDK 中包含一些基本的日志记录，它们没有其他平台的日志记录那样宽泛。 有关详细信息，请参阅 [可移植 C++ 的 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting) 中的“README.md”的 **疑难解答** 部分。

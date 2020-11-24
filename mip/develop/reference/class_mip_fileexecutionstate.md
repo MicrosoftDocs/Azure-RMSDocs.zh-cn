@@ -1,26 +1,26 @@
 ---
 title: 类 FileExecutionState
-description: 记录 Microsoft 信息保护（MIP） SDK 的 fileexecutionstate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 fileexecutionstate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: ca29755d4533d6b7dd51280c2fb71b631bbb9b5c
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: c84f7aa81fd628a8af9598653f0895dc0dd934d2
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763145"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565140"
 ---
 # <a name="class-fileexecutionstate"></a>类 FileExecutionState 
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public virtual DataState GetDataState （） const  |  获取应用程序与之交互时内容的状态。
-public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： shared_ptr\<FileHandler\> &，const std：： vector\<std：： shared_ptr\<ClassificationRequest\> \> &） const  |  返回分类结果的映射。
-public virtual std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
+public virtual DataState GetDataState ( # A1 const  |  获取应用程序与之交互时内容的状态。
+公共虚拟 std：： shared_ptr \<ClassificationResults\> GetClassificationResults (const std：： shared_ptr \<FileHandler\> &，const std：： vector \<std::shared_ptr\<ClassificationRequest\> \> &) const  |  返回分类结果的映射。
+public virtual std：： map \<std::string, std::string\> GetAuditMetadata ( # A1 const  |  返回应用程序特定的审核键值对的映射。
   
 ## <a name="members"></a>成员
   

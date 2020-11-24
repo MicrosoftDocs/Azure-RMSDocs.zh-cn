@@ -12,23 +12,23 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 925b34d7bfb246b01642c898ffd4e9ae9d5f73c5
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: a0b456d8e436de77ae54f2b6a9b543d82acd1b12
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136389"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566061"
 ---
 # <a name="overview-of-the-azure-information-protection-policy"></a>Azure 信息保护策略概述
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 > [!NOTE]
-> Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
+> Azure 信息保护策略适用于 Azure 信息保护客户端 (经典) ，而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 > 
-> 如果正在查找有关敏感度标签的信息，请参阅 Microsoft 365 符合性文档。 例如，[了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+> 如果正在查找有关敏感度标签的信息，请参阅 Microsoft 365 符合性文档。 例如，[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 Azure 信息保护策略包含以下可配置的元素：
     

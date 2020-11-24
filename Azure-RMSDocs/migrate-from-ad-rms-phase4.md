@@ -1,8 +1,8 @@
 ---
 title: 从 AD RMS 迁移到 Azure 信息保护 - 第 4 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 4 阶段包括从 AD RMS 迁移到 Azure 信息保护的步骤 8 至 9
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 04/02/2020
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 01cf998fc6d4c872339d5bfa241eed4f1c9f4b6b
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: e2faf09b40daac41eb1d42ee2dcbfc7ebbc7d549
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298149"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566069"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
@@ -38,13 +38,13 @@ ms.locfileid: "87298149"
     
     此 DNS 记录就位后，使用 Outlook 网页版和移动电子邮件客户端的用户便能在这些应用中查看受 AD RMS 保护的电子邮件，并且 Exchange 可以使用你从 AD RMS 导入的密钥，对已受 AD RMS 保护的内容执行解密、编制索引、日志记录和保护操作。  
 
-2. 运行 Exchange Online [set-irmconfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160).aspx)命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)中的分步说明。
+2. 运行 Exchange Online [set-irmconfiguration](/powershell/module/exchange/get-irmconfiguration) 命令。 如需运行此命令的帮助，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)中的分步说明。
     
-    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：********
+    在输出中，检查“AzureRMSLicensingEnabled”是否设置为“True”：
     
-    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置****。 
+    - 如果 AzureRMSLicensingEnabled 设置为“True”，则此步骤中无需进一步配置。 
     
-    - 如果 AzureRMSLicensingEnabled 设置为“False”，请运行 `Set-IRMConfiguration -AzureRMSLicensingEnabled $true`，然后使用[设置构建在 Azure 信息保护之上新的 Office 365 邮件加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)中的验证步骤来确认 Exchange Online 现在是否可以使用 Azure Rights Management 服务****。 
+    - 如果 AzureRMSLicensingEnabled 设置为 **False**，请运行， `Set-IRMConfiguration -AzureRMSLicensingEnabled $true` 然后使用 [azure 信息保护之上的 "设置新 Microsoft 365 消息加密功能](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e) " 中的验证步骤，确认 Exchange Online 现在已准备好使用 azure Rights Management 服务。 
 
 ## <a name="step-9-configure-irm-integration-for-exchange-server-and-sharepoint-server"></a>步骤 9. 为 Exchange Server 和 SharePoint Server 配置 IRM 集成
 
@@ -64,7 +64,7 @@ ms.locfileid: "87298149"
 > [!IMPORTANT]
 > 如果你尚未在任何 Exchange 服务器上配置 IRM，只需执行步骤2和6。
 > 
-> 当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，如果*LicensingLocation*参数中没有显示所有 AD RMS 群集的所有授权 url，请执行所有这些步骤。
+> 当你运行 [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration)时，如果 *LicensingLocation* 参数中没有显示所有 AD RMS 群集的所有授权 url，请执行所有这些步骤。
 
 1. 在每个 Exchange 服务器上，找到以下文件夹，并删除该文件夹中的所有条目： **\programdata\microsoft\drm\server\s-1-5-18**
 
@@ -79,7 +79,7 @@ ms.locfileid: "87298149"
     Set-IRMConfiguration -LicensingLocation $list
     ```
 
-    现在，当你运行[set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)时，你应该会看到所有 AD RMS 群集授权 url 和为*LicensingLocation*参数显示的 Azure Rights Management 服务 URL。
+    现在，当你运行 [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration)时，你应该会看到所有 AD RMS 群集授权 url 和为 *LicensingLocation* 参数显示的 Azure Rights Management 服务 URL。
 
 3.  现在对向外部收件人发送的消息禁用 IRM 功能：
 
@@ -105,13 +105,13 @@ ms.locfileid: "87298149"
 
 1.  请确保没有文档从 RMS 保护的库中签出。 如果有，这些文档将在此过程结束时变为不可访问。
 
-2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”********。
+2.  在 SharePoint 管理中心网站的“快速启动”部分中，单击“安全性”。
 
-3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”************。
+3.  在“安全性”页的“信息策略”部分中，单击“配置信息权限管理”。
 
-4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”****************。
+4.  在“信息权限管理”页的“信息权限管理”部分中，选择“不在此服务器上使用 IRM”，然后单击“确定”。
 
-5.  在每台 SharePoint server 计算机上，删除 \\ < *运行 SharePoint server>帐户*的文件夹 \ProgramData\Microsoft\MSIPC\Server SID 的内容。
+5.  在每台 SharePoint server 计算机上，删除 \\ < *运行 SharePoint server>帐户* 的文件夹 \ProgramData\Microsoft\MSIPC\Server SID 的内容。
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>配置 Exchange 和 SharePoint 以使用连接器
 

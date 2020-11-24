@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
@@ -13,16 +13,16 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: caf5e33e58e266ba05f337000fe769b257eec832
-ms.sourcegitcommit: 0f10998e9623f59c36edf89e4661c9c953787aed
+ms.openlocfilehash: a2b69b7744b17c4f5ccce32a1513015fb4e4cbcc
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88810248"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565361"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 为组织部署和配置 Azure 信息保护之后，请为用户、管理员和技术支持提供以下帮助和指导：
 
@@ -43,7 +43,7 @@ ms.locfileid: "88810248"
     
 -   **技术支持信息**
     
-    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息****。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
     
     如果有合法请求对受保护文档拥有完全访问权限，请确保技术支持使用 Azure 信息保护 [超级用户功能](configure-super-users.md)来请求此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
@@ -77,7 +77,7 @@ ms.locfileid: "88810248"
 
 
 ## <a name="using-information-protection-with-office365-office-2019-office-2016-or-office2013"></a>在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护
-如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”**** 按钮，或在文件资源管理器中看到“分类和保护”****。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
+如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”按钮，或在文件资源管理器中看到“分类和保护”。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。
@@ -88,10 +88,10 @@ ms.locfileid: "88810248"
 
 2.  从 "**文件**" 菜单： "**信息**  >  **保护文档**" "  >   **限制访问**"。
 
-3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”****，再自行选择使用权限。
+3. 选择用于快速应用相应使用权限的模板，或选择“限制访问”，再自行选择使用权限。
 
     > [!NOTE]
-    > 如果之前没有在计算机上使用过 Rights Management，那么“限制访问”选项会连接到 Azure Rights Management 服务，并提示输入凭据，以便配置 Office IRM 客户端****。 然后，可以选择模板或使用权限。
+    > 如果之前没有在计算机上使用过 Rights Management，那么“限制访问”选项会连接到 Azure Rights Management 服务，并提示输入凭据，以便配置 Office IRM 客户端。 然后，可以选择模板或使用权限。
 
 3.  保存文档。
 
@@ -105,22 +105,22 @@ ms.locfileid: "88810248"
 
 1.  在 Outlook 中，创建一封发送给组织内收件人地址的邮件。
 
-2.  从 " **选项** " 选项卡： **权限** > 选择一个选项。 例如：**不要转发**、或** \<Company Name> -机密**或** \<Company Name> -机密查看**。
+2.  从 " **选项** " 选项卡： **权限** > 选择一个选项。 例如：**不要转发**、或 **\<Company Name> -机密** 或 **\<Company Name> -机密查看**。
 
 3.  发送消息。
 
 与查看受保护文档相似，当收件人打开受保护电子邮件时，首先需要进行身份验证。 如果他们已被授权查看电子邮件，则将使用为该用户指定的受限 [使用权限](configure-usage-rights.md) 打开它。 
 
-例如，如果电子邮件受“不转发”**** 选项保护，便无法使用功能区上的“转发”按钮。
+例如，如果电子邮件受“不转发”选项保护，便无法使用功能区上的“转发”按钮。
 
 #### <a name="to-protect-an-email-message-using-outlook-on-the-web"></a>使用 Outlook 网页版保护电子邮件的具体步骤
 
 1. 使用 Outlook 网页版创建一封电子邮件，发送给组织内的收件人。
 
-2. 选择“保护”****。 除非管理员已更改默认设置，否则自动选中“不要转发”**** 选项。 如果要更改默认设置，请选择 " **更改权限** "，然后从下拉选项中选择一个选项。 例如：**加密**或** \<Company Name> 机密**。
+2. 选择“保护”。 除非管理员已更改默认设置，否则自动选中“不要转发”选项。 如果要更改默认设置，请选择 " **更改权限** "，然后从下拉选项中选择一个选项。 例如：**加密** 或 **\<Company Name> 机密**。
 
 3. 发送消息。
 
 与查看受保护文档相似，当收件人打开电子邮件时，首先需要进行身份验证。 如果他们已被授权查看电子邮件，则将使用为该用户指定的受限 [使用权限](configure-usage-rights.md) 打开它。 
 
-例如，选中默认的“不要转发”**** 选项后，便无法选中消息窗口内的“转发”**** 选项。
+例如，选中默认的“不要转发”选项后，便无法选中消息窗口内的“转发”选项。

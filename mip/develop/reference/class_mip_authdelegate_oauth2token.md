@@ -1,30 +1,30 @@
 ---
 title: 类 AuthDelegate：： OAuth2Token
-description: 记录 Microsoft 信息保护（MIP） SDK 的 authdelegate：： oauth2token 类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 authdelegate：： oauth2token 类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 43f3e3d9abdab37620ca852411b2817a3848ba78
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: a8532e1950977e421fa25b426fa4e4061e610d8d
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763594"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565224"
 ---
 # <a name="class-authdelegateoauth2token"></a>类 AuthDelegate：： OAuth2Token 
 一个类，其中包含应用程序提供的访问令牌信息。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public OAuth2Token （）  |  构造一个新的 OAuth2Token 对象。
-public OAuth2Token （const std：： string& accessToken）  |  从 JWT 访问令牌构造一个新的 OAuth2Token 对象。
-public const std：： string& GetAccessToken （） const  |  获取访问令牌字符串。
-public void SetAccessToken （const std：： string& accessToken）  |  设置访问令牌字符串。
-public const std：： string& GetErrorMessage （） const  |  获取错误消息（如果有）。
-public void SetErrorMessage （const std：： string& errorMessage）  |  设置错误消息。
+public OAuth2Token ( # A1  |  构造一个新的 OAuth2Token 对象。
+public OAuth2Token (const std：： string& accessToken)   |  从 JWT 访问令牌构造一个新的 OAuth2Token 对象。
+public const std：： string& GetAccessToken ( # A2 const  |  获取访问令牌字符串。
+public void SetAccessToken (const std：： string& accessToken)   |  设置访问令牌字符串。
+public const std：： string& GetErrorMessage ( # A2 const  |  获取错误消息（如果有）。
+public void SetErrorMessage (const std：： string& errorMessage)   |  设置错误消息。
   
 ## <a name="members"></a>成员
   

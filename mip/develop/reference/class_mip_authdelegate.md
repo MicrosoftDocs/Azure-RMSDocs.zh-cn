@@ -1,26 +1,26 @@
 ---
 title: 类 AuthDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 authdelegate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 authdelegate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: a7cbc6789fc6baa8fbb01ffb8c6d6ea7e9294d4f
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 9a971a7d0e8cf78baa5231225da620c9e1c8fa47
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763625"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565226"
 ---
 # <a name="class-authdelegate"></a>类 AuthDelegate 
 用于身份验证相关操作的委托。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public virtual bool AcquireOAuth2Token （const Identity& Identity，const OAuth2Challenge& 质询，OAuth2Token& token）  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
-public virtual bool AcquireOAuth2Token （const Identity& Identity，const OAuth2Challenge& 质询，const std：： shared_ptr\<void\>& context，OAuth2Token& token）  |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
+public virtual bool AcquireOAuth2Token (const Identity& Identity、const OAuth2Challenge& 质询、OAuth2Token& 令牌)   |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
+public virtual bool AcquireOAuth2Token (const Identity& Identity，const OAuth2Challenge& 质询，const std：： shared_ptr \<void\>& context，OAuth2Token& 令牌)   |  当策略引擎需要具有给定标识和给定质询的身份验证令牌时，将调用此方法。 客户端应返回获取令牌是否成功。 如果成功，则它应初始化给定的标记对象。
   
 ## <a name="members"></a>成员
   

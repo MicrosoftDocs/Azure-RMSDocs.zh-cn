@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: ef1306dbcbd4727f4e6c0207e328e7df3da8ed74
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 24de585a77268611115342154a55cf6d78c443ad
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971891"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566132"
 ---
 # <a name="android-setup"></a>Android 安装程序
 
@@ -34,7 +34,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 -   [配置开发环境](#configuring-your-development-environment)
 -   [另请参阅](#see-also)
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 我们建议在开发系统上安装以下软件：
 
@@ -45,15 +45,15 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 
 
--   适用于 Android 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅[入门](get-started.md)。
+-   适用于 Android 的 MS RMS SDK 4.2 包。 有关详细信息，请参阅 [入门](get-started.md)。
 
     此 SDK 可以用于为 Android 4.0.3（API 级别 15）及更高版本进行开发。
 
--   身份验证库：我们建议使用 [Azure AD 身份验证库 (ADAL)](https://msdn.microsoft.com/library/jj573266.aspx)。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
+-   身份验证库：我们建议使用 [Azure AD 身份验证库 (ADAL)](/previous-versions/azure/jj573266(v=azure.100))。 但是也可使用其他支持 OAuth 2.0 的身份验证库。
 
     有关详细信息，请参阅 [ADAL for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
 
-    **注意**  如果你的应用程序将不使用 ADAL 库作为 OAuth 2.0 身份验证库，你应该查看此 Android 指南，[一些 java.security.securerandom](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
+    **注意**   如果你的应用程序将不使用 ADAL 库作为 OAuth 2.0 身份验证库，则应该查看此 Android 指南，[一些 java.security.securerandom](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)。
 
 
 
@@ -65,7 +65,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 ## <a name="configuring-your-development-environment"></a>配置开发环境
 
-**注意**  MS RMS SDK 4.2 预览版：在此预览版本中，屏幕截图尚未更新，以显示 pathes 从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的名称更改。 不过文本已进行了更新。
+**注意**   MS RMS SDK 4.2 预览版：在此预览版本中，屏幕截图尚未更新，以显示 pathes 从 com/microsoft/protection 到 com/microsoft/rightsmanagment 的名称更改。 不过文本已进行了更新。
 
 
 -   打开 Eclipse 开发环境。
@@ -86,11 +86,11 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
     ![创建活动](../media/Android-setup-04.png)
 
--   单击 **“下一步”** 并提供活动的名称。 可以将*MainActivity*保留为默认名称，其中布局名称为 "*活动\_主*"。
+-   单击 **“下一步”** 并提供活动的名称。 可以将 *MainActivity* 保留为默认名称，其中布局名称为 " *活动 \_ 主*"。
 
     ![提供活动的名称](../media/Android-setup-05a.jpg)
 
--   单击“完成”  。
+-   单击“完成”。
 
     ![完成创建](../media/Android-setup-06.jpg)
 
@@ -98,14 +98,14 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 **引用 SDK**
 
-- 导航到已在其中提取*\_adrms android\_sdk*的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、*.project* 和 *project.properties* 未标记为只读。
+- 导航到在其中提取 *adrms \_ android \_sdk.zip* 的文件夹。 在“SDK > com > microsoft > rightsmanagement”文件夹中，确保文件 *.classpath*、*.project* 和 *project.properties* 未标记为只读。
 - 若要引用 SDK，必须将它导入工作区中。
 
   在 Eclipse 中，单击 **“文件”**。 在 **“文件”** 菜单上，单击 **“导入”**。 在 **“导入”** 对话框中，选择 **“Android/现有 Android 代码到工作区”**。
 
   ![将其导入到工作区](../media/Android-setup-07.png)
 
-- 单击“下一步”。  导航以选择在其中提取*\_adrms android\_sdk*的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
+- 单击“下一步”。 导航以选择在其中提取 *adrms \_ android \_sdk.zip* 的文件夹。 SDK 应作为 **com.microsoft.rightsmanagement** 显示在列表中。
 
   ![导航到“选择文件夹”](../media/Android-setup-08c.jpg)
 
@@ -119,9 +119,9 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
   ![添加库](../media/Android-setup-10b.jpg)
 
-- 单击“确定”。 
+- 单击“确定”。
 
-  由于 MS RMS SDK 4.2 与 AAD RM 连接，因此应用程序必须被授予**INTERNET**并**\_访问网络\_状态**。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
+  由于 MS RMS SDK 4.2 与 AAD RM 连接，因此应用程序必须被授予 **INTERNET** 并 **访问 \_ 网络 \_ 状态**。 为此，请在项目的根目录中打开 *AndroidManifest.xml* 文件。
 
   若要添加权限，请单击 **“添加”**，然后选择 **“使用权限”**。
 
@@ -138,7 +138,7 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
   <uses-permission/>
   ```
 
-**请注意**  ，SDK 使用的*支持 v4*
+**注意**   SDK 使用 *支持 v4*
 
 -   你现在已准备就绪，可创建新 Android 应用。
 
@@ -150,4 +150,4 @@ Android 应用程序可以通过使用 Azure Active Directory Rights Management 
 
 [开发人员术语和概念](core-concepts.md)
 
-[Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
+[Android API 参考](/previous-versions/windows/desktop/msipcthin2/android)

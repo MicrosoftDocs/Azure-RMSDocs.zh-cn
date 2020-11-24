@@ -1,28 +1,28 @@
 ---
 title: 类 HttpDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 httpdelegate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 httpdelegate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: e1ddc8595e3cba2172228532a84ca68883cc0afd
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: d52752538aae982f8f5b0138aaf26deefa0d98a3
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81762818"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565119"
 ---
 # <a name="class-httpdelegate"></a>类 HttpDelegate 
 用于重写 HTTP 处理的接口。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public std：： shared_ptr\<HttpOperation\> Send （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& 上下文）  |  发送 HTTP 请求。
-public std：： shared_ptr\<HttpOperation\> SendAsync （const std：： shared_ptr\<HttpRequest\>& request，const std：： shared_ptr\<void\>& context，const std：： function\<void （std：： shared_ptr\<HttpOperation\> ）  |  以异步方式发送 HTTP 请求。
-public void CancelOperation （const std：： string& requestId）  |  取消特定的 HTTP 操作。
-public void CancelAllOperations （）  |  取消正在进行的 HTTP 请求。
+public std::shared_ptr\<HttpOperation\> Send(const std::shared_ptr\<HttpRequest\>& request, const std::shared_ptr\<void\>& context)  |  发送 HTTP 请求。
+public std：： shared_ptr \<HttpOperation\> SendAsync (const std：： shared_ptr \<HttpRequest\>& request，const std：： shared_ptr \<void\>& context，const std：： function \<void(std::shared_ptr\<HttpOperation\> )   |  以异步方式发送 HTTP 请求。
+公共 void CancelOperation (const std：： string& requestId)   |  取消特定的 HTTP 操作。
+public void CancelAllOperations ( # A1  |  取消正在进行的 HTTP 请求。
   
 ## <a name="members"></a>成员
   

@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: e1db44a4455588e828a1b47ad0951931d35f66d0
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 3205b35bd23e48c2c44fc9868e96293ab9845ab6
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564001"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565287"
 ---
 # <a name="install-the-sdk"></a>安装 SDK
 

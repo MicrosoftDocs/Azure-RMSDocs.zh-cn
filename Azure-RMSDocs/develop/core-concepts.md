@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 01/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 4b0ac76c42202286540ee8a469cc7066a70e9973
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 957f347381b4de8abe4f828d4fd7903c0a0e62f3
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564340"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565302"
 ---
 # <a name="rights-management-sdk42-developer-guidance"></a>Rights Management SDK 4.2 开发人员指南
 

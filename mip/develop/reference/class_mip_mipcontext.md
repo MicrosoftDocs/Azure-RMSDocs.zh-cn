@@ -1,33 +1,33 @@
 ---
 title: 类 MipContext
-description: 记录 Microsoft 信息保护（MIP） SDK 的 mipcontext：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 mipcontext：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: cf191a1e770d13d84603fe593d63dedb98bbb14b
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: c593ebc368b0717d32e873e6924f80af103325ea
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81761464"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565085"
 ---
 # <a name="class-mipcontext"></a>类 MipContext 
 MipContext 表示在所有配置文件、引擎和处理程序之间共享的状态。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-公共失效关闭（）  |  终止 MIP。
-public bool IsFeatureEnabled （FlightingFeature 功能） const  |  获取是否启用功能。
+公共 void 关闭 ( # A1  |  终止 MIP。
+public bool IsFeatureEnabled (FlightingFeature 功能) 常量  |  获取是否启用功能。
 public const ApplicationInfo& GetApplicationInfo() const  |  获取应用程序说明。
-public const std：： string& GetMipPath （） const  |  获取日志、缓存等的文件路径。
-public bool IsOfflineOnly （）  |  仅限脱机设置。
-public LogLevel GetThresholdLogLevel （） const  |  获取阈值日志级别。
-public std：： shared_ptr\<LoggerDelegate\> GetLoggerDelegate （）  |  获取记录器实现。
-public LoggerDelegate * GetRawLoggerDelegate （）  |  获取记录器实现。
-public const std：： map\<FlightingFeature，Bool\>& GetFlightingFeatures （） const  |  获取试验功能集。
+public const std：： string& GetMipPath ( # A2 const  |  获取日志、缓存等的文件路径。
+public bool IsOfflineOnly ( # A1  |  仅限脱机设置。
+public LogLevel GetThresholdLogLevel ( # A1 const  |  获取阈值日志级别。
+public std：： shared_ptr \<LoggerDelegate\> GetLoggerDelegate ( # A1  |  获取记录器实现。
+public LoggerDelegate * GetRawLoggerDelegate ( # A1  |  获取记录器实现。
+public const std：： map \<FlightingFeature, bool\>& GetFlightingFeatures ( # A2 const  |  获取试验功能集。
   
 ## <a name="members"></a>成员
   
@@ -56,7 +56,7 @@ public const std：： map\<FlightingFeature，Bool\>& GetFlightingFeatures （�
 获取日志、缓存等的文件路径。
 
   
-**返回**：文件路径（带有 "mip" 叶目录）
+**返回**：文件路径 (带有 "mip" 叶目录) 
   
 ### <a name="isofflineonly-function"></a>IsOfflineOnly 函数
 仅限脱机设置。
@@ -74,13 +74,13 @@ public const std：： map\<FlightingFeature，Bool\>& GetFlightingFeatures （�
 获取记录器实现。
 
   
-返回结果****：记录器
+返回结果：记录器
   
 ### <a name="getrawloggerdelegate-function"></a>GetRawLoggerDelegate 函数
 获取记录器实现。
 
   
-返回结果****：记录器
+返回结果：记录器
   
 ### <a name="getflightingfeatures-function"></a>GetFlightingFeatures 函数
 获取试验功能集。

@@ -1,36 +1,36 @@
 ---
 title: 使用 PowerShell 管理 Azure 信息保护的保护
 description: 了解如何使用 Azure 信息保护中的保护服务的 PowerShell 模块为租户管理此服务。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 04/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: efb7f76b89e9918100c9fd092fe321c738fd44ba
-ms.sourcegitcommit: 479b3aaea7011750ff85a217298e5ae9185c1dd1
+ms.openlocfilehash: 49e2d716362ebc637015a1032ff373f1d33b9860
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82224642"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565285"
 ---
 # <a name="administering-protection-from-azure-information-protection-by-using-powershell"></a>使用 PowerShell 管理 Azure 信息保护的保护
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 是否需要使用 PowerShell 来管理 Azure 信息保护中的保护服务？ 如果所有配置都可在 Azure 门户或 Microsoft 365 管理中心中完成，则可能不需要。 但是，需要使用 PowerShell 进行某些高级配置，并且可能还需使用 PowerShell 以进行更高效的命令行控制和脚本编写。
 
 下一部分中的表格包括一些使用 PowerShell 的高级配置方案。 如果不使用 PowerShell 也可完成配置，则此信息也包括在表中。
 
-有关此模块的可用 cmdlet 的完整列表，以及每个 cmdlet 的详细信息，请参阅[AIPService](/powershell/module/aipservice/?view=azureipps#aipservice)。
+有关此模块的可用 cmdlet 的完整列表，以及每个 cmdlet 的详细信息，请参阅 [AIPService](/powershell/module/aipservice/#aipservice)。
 
 > [!NOTE]
-> 若要安装此 PowerShell 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+> 若要安装此 PowerShell 模块，请参阅 [安装 AIPService PowerShell 模块](install-powershell.md)。
 
 除了此服务端 PowerShell 模块，Azure 信息保护客户端还将安装一个补充 PowerShell 模块 **AzureInformationProtection**。 此客户端模块支持对多个文件进行分类和保护，这样可以方便某些操作，例如批量保护文件夹中的所有文件。 有关详细信息，请参阅管理员指南中的[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "82224642"
 |管理适用于 Azure 信息保护的文档跟踪站点。|[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/disable-aipservicedocumenttrackingfeature)<br /><br />[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature)<br /><br />[AipServiceDocumentTrackingFeature](/powershell/module/aipservice/get-aipservicedocumenttrackingfeature)<br /><br />[AipServiceDoNotTrackUserGroup](/powershell/module/aipservice/set-aipservicedonottrackusergroup)<br /><br />[AipServiceDoNotTrackUserGroup](/powershell/module/aipservice/Clear-AipServiceDoNotTrackUserGroup)<br /><br />[AipServiceDoNotTrackUserGroup](/powershell/module/aipservice/get-AipServiceDoNotTrackUserGroup)<br /><br />[AipServiceTrackingLog](/powershell/module/aipservice/Get-AipServiceTrackingLog)<br /><br />[AipServiceDocumentLog](/powershell/module/aipservice/Get-AipServiceDocumentLog)|
 |为 Azure Rights Management 服务的分阶段部署配置内置控件。|[AipServiceOnboardingControlPolicy](/powershell/module/aipservice/get-aipserviceonboardingcontrolpolicy)<br /><br />[AipServiceOnboardingControlPolicy](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)|
 |为你的组织创建和管理 Rights Management 模板。<br /><br />虽然 PowerShell 可提供更精密的控制，但也可以从 Azure 门户执行大多数操作。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。|[AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate)<br /><br />[导出-AipServiceTemplate](/powershell/module/aipservice/export-aipservicetemplate)<br /><br />[AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate)<br /><br />[AipServiceTemplateProperty](/powershell/module/aipservice/get-aipservicetemplateproperty)<br /><br />[导入-AipServiceTemplate](/powershell/module/aipservice/import-aipservicetemplate)<br /><br />[新-AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition)<br /><br />[AipServiceTemplate](/powershell/module/aipservice/remove-aipservicetemplate)<br /><br />[AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)|
-|配置在没有 internet 连接的情况下，可以访问你的组织保护的内容的最大天数（使用许可证有效期）。|[AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/get-aipservicemaxuselicensevaliditytime)<br /><br />[AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/set-aipservicemaxuselicensevaliditytime)|
+|配置在没有 internet 连接的情况下，可以访问你的组织保护的内容的最大天数 (使用许可证有效期) 。|[AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/get-aipservicemaxuselicensevaliditytime)<br /><br />[AipServiceMaxUseLicenseValidityTime](/powershell/module/aipservice/set-aipservicemaxuselicensevaliditytime)|
 |管理组织的 Rights Management 的超级用户功能。|[AipServiceSuperUserFeature](/powershell/module/aipservice/enable-aipservicesuperuserfeature)<br /><br />[AipServiceSuperUserFeature](/powershell/module/aipservice/disable-aipservicesuperuserfeature)<br /><br />[AipServiceSuperUser](/powershell/module/aipservice/add-aipservicesuperuser)<br /><br />[AipServiceSuperUser](/powershell/module/aipservice/get-aipservicesuperuser)<br /><br />[AipServiceSuperUser](/powershell/module/aipservice/remove-aipservicesuperuser)<br /><br />[AAipServiceSuperUserGroup](/powershell/module/aipservice/set-aipservicesuperusergroup)<br /><br />[AipServiceSuperUserGroup](/powershell/module/aipservice/get-aipservicesuperusergroup)<br /><br />[AipServiceSuperUserGroup](/powershell/module/aipservice/clear-aipservicesuperusergroup)|
 |管理被授权管理组织的 Rights Management 服务的用户和组。|[Aip-ServiceRoleBasedAdministrator](/powershell/module/aipservice/add-aipservicerolebasedadministrator)<br /><br />[Aip-ServiceRoleBasedAdministrator](/powershell/module/aipservice/get-aipservicerolebasedadministrator)<br /><br />[Aip-ServiceRoleBasedAdministrator](/powershell/module/aipservice/remove-aipservicerolebasedadministrator)|
 |获取组织的 Rights Management 管理任务的日志。|[AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)|

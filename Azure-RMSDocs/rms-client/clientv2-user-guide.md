@@ -5,19 +5,19 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 09/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 5ca8a7b69ab3156fc9e214d8c8fea1a36fbecb37
-ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
+ms.openlocfilehash: 1185c36a619f93712099520ba5aa1b359fcc06d3
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89447116"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565359"
 ---
 # <a name="azure-information-protection-unified-labeling-user-guide"></a>Azure 信息保护统一标签用户指南 
 
@@ -25,7 +25,7 @@ ms.locfileid: "89447116"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 适用于 Windows 的 Azure 信息保护统一标签客户端可帮助你保护重要文档和电子邮件，使其免受不应看到的用户的保护，即使你的电子邮件已转发或你的文档保存到其他位置也是如此。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 

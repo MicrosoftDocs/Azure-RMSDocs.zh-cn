@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: b3336297309d98245814a0d31c87f9eca4501ddb
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: a1246cb929eaf5e7632825dc240ab26c478ab7fe
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135720"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565333"
 ---
 # <a name="linux-code-examples"></a>Linux 代码示例
 
@@ -156,7 +156,7 @@ ms.locfileid: "87135720"
 ## <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 
 **使用用户选定的模板** 
- 保护文件**源**： [rms \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+ 保护文件 **源**： [rms \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：在从用户处获取文件名，读取证书（参见 *MainWindow::addCertificates*）并使用客户端 ID 和重定向 URL 设置身份验证回调之后，所选文件将通过调用 *ConvertToPFileTemplates* 进行保护（参见下方代码示例）。
 
@@ -227,7 +227,7 @@ ms.locfileid: "87135720"
 
 
 **使用通过模板** 
- 创建的策略来保护文件**源**： [rms \_ sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+ 创建的策略来保护文件 **源**： [rms \_ sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：提取与用户关联的模板列表，随后使用所选模板创建转而用于保护文件的策略。
 
@@ -262,7 +262,7 @@ ms.locfileid: "87135720"
   ```
 
 **保护给定策略** 
- 的文件**源**： [rms \_ sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+ 的文件 **源**： [rms \_ sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：使用给定策略创建受保护的文件流，然后保护此文件。
 
@@ -307,7 +307,7 @@ ms.locfileid: "87135720"
 ## <a name="scenario-protect-a-file-using-custom-protection"></a>方案：使用自定义保护来保护文件
 
 **使用自定义保护** 
- 保护文件**源**： [rms \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
+ 保护文件 **源**： [rms \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
 **说明**：在从用户处获取文件名，读取证书（参见 *MainWindow::addCertificates*），从用户处收集权限信息，并使用客户端 ID 和重定向 URL 设置身份验证回调之后，所选文件将通过调用 *ConvertToPFilePredefinedRights* 进行保护（参见下方代码示例）。
 
@@ -428,7 +428,7 @@ ms.locfileid: "87135720"
 ## <a name="workerthread---a-supporting-method"></a>WorkerThread - 一种支持方法
 
 
-*WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”**** 和“在给定策略的情况下保护文件”****）按以下方式进行调用：
+*WorkerThread()* 方法由先前的两个示例方案（“创建受保护的文件流”和“在给定策略的情况下保护文件”）按以下方式进行调用：
 
 **C + +**：
 
@@ -527,10 +527,10 @@ ms.locfileid: "87135720"
 ## <a name="scenario-rms-authentication"></a>方案：RMS 身份验证
 
 以下示例展示了两种不同的身份验证方法，即在使用 UI 和不使用 UI 的情况下获取 Azure 身份验证 oAuth2 令牌。
-正在**通过 UI** 
- 获取 OAuth2 身份验证令牌**源**： [rmsauth \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
+正在 **通过 UI** 
+ 获取 OAuth2 身份验证令牌 **源**： [rmsauth \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
-**步骤 1**：创建**Rmsauth：： FileCache**对象的共享点。
+**步骤 1**：创建 **Rmsauth：： FileCache** 对象的共享点。
 说明：可设置缓存路径或使用默认路径。
 
 **C + +**：
@@ -552,7 +552,7 @@ ms.locfileid: "87135720"
   ```
 
 
-**步骤 3**：调用**AuthContext**对象的**acquireToken**方法并指定下一个参数：说明：
+**步骤 3**：调用 **AuthContext** 对象的 **acquireToken** 方法并指定下一个参数：说明：
 
 -   *请求资源* - 想要访问的受保护资源
 -   *客户端唯一 ID* - 通常为 GUID
@@ -571,13 +571,13 @@ ms.locfileid: "87135720"
                 std::string("john.smith@msopentechtest01.onmicrosoft.com"));
   ```
 
-**步骤 4**：从结果中获取访问令牌说明：调用**Result-> accessToken （）** 方法
+**步骤 4**：从结果中获取访问令牌说明：调用 **结果-> AccessToken ( # B1** 方法
 
 **注意** 任何身份验证库方法都可能引发 **rmsauth::Exception**
 
  
-在**没有 UI** 
- 的情况下获取 OAuth2 身份验证令牌**源**： [rmsauth \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
+在 **没有 UI** 
+ 的情况下获取 OAuth2 身份验证令牌 **源**： [rmsauth \_ sample/mainwindow.xaml](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rmsauth_sample)
 
 **步骤 1**：创建 **rmsauth::FileCache** 对象的共享点 说明：可设置缓存路径或使用默认路径
 
@@ -588,7 +588,7 @@ ms.locfileid: "87135720"
   ```
 
 
-**步骤 2**：创建 **UserCredential** 对象 说明：指定*用户登录名*和*密码*
+**步骤 2**：创建 **UserCredential** 对象 说明：指定 *用户登录名* 和 *密码*
 
 **C + +**：
 
@@ -609,7 +609,7 @@ ms.locfileid: "87135720"
   ```
 
 
-**步骤 4**：调用**authContext**的**acquireToken**方法并指定参数：
+**步骤 4**：调用 **authContext** 的 **acquireToken** 方法并指定参数：
 -   *请求资源* - 想要访问的受保护资源
 -   *客户端唯一 ID* - 通常为 GUID
 -   *用户凭据* - 传递所创建的对象
@@ -624,6 +624,6 @@ ms.locfileid: "87135720"
   ```
 
 
-**步骤 5**：从结果中获取访问令牌说明：调用**Result-> accessToken （）** 方法
+**步骤 5**：从结果中获取访问令牌说明：调用 **Result-> AccessToken ( # B1** 方法
 
 **注意** 任何身份验证库方法都可能引发 **rmsauth::Exception**

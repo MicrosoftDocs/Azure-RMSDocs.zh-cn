@@ -13,19 +13,19 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 59029ba4ebd55cc687d529eec01c58c5cced15c3
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 24479014fcbd0bd93b65d6958d004deb9c7e0c95
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953195"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566220"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护租户密钥是组织的根密钥。 其他密钥可以从该根密钥派生，包括用户密钥、计算机密钥或文档加密密钥。 每当 Azure 信息保护对你的组织使用这些密钥时，它们将通过加密方式链接到你的 Azure 信息保护根租户密钥。
 
@@ -104,4 +104,4 @@ DKE 要求使用这两个密钥来访问受保护的内容，确保 Microsoft �
 > DKE 类似于要求使用银行密钥和客户密钥才能获得访问权限的安全接入框。
 > DKE-保护需要 Microsoft 持有的密钥和客户持有的密钥来解密受保护的内容。
 
-有关详细信息，请参阅 Microsoft 365 文档中的 [双密钥加密](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) 。 
+有关详细信息，请参阅 Microsoft 365 文档中的 [双密钥加密](/microsoft-365/compliance/double-key-encryption) 。

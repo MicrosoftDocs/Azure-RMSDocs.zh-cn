@@ -1,25 +1,25 @@
 ---
 title: 类 RemoveWatermarkAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 removewatermarkaction：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 removewatermarkaction：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 93c99a0bd66df636de618629ff25d7f37d0cddd8
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: eee2617a7f3c1225d789a5d1f6124caa3d3deec0
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760508"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565280"
 ---
 # <a name="class-removewatermarkaction"></a>类 RemoveWatermarkAction 
 指定从文档中删除水印的操作类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： vector\<std：： String\>& GetUIElementNames （）  |  获取应用于查找应删除的 UI 元素的名称列表。
+public const std：： vector \<std::string\>& GetUIElementNames ( # A2  |  获取应用于查找应删除的 UI 元素的名称列表。
 public ActionType GetType() const  |  获取操作类型。
   
 ## <a name="members"></a>成员

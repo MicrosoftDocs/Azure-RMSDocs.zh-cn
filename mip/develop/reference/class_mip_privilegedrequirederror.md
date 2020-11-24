@@ -1,24 +1,24 @@
 ---
 title: 类 PrivilegedRequiredError
-description: 记录 Microsoft 信息保护（MIP） SDK 的 privilegedrequirederror：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 privilegedrequirederror：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 2a82d8e0603c9f309b8a34e02a1dbb2a7faaccda
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: e5942cfbd67911d426d83ffb2c9001f28fb142c8
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81760590"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565035"
 ---
 # <a name="class-privilegedrequirederror"></a>类 PrivilegedRequiredError 
 由于当前标签被指定为特权操作（相当于管理员操作），因此无法替代。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
   
 ## <a name="members"></a>成员
-_尚无记录。_
+尚无记录。

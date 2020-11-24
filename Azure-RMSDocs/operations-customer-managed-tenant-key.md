@@ -5,7 +5,7 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 12/06/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
@@ -13,22 +13,22 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5e6cffeb02cb22f65a5108e96ffa1b0cc8974142
-ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
+ms.openlocfilehash: b1e06581cb7291674d3a94c99338a9749b46f9a0
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869090"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565345"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>客户托管：租户密钥生命周期操作
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 如果你自己管理 Azure 信息保护租户密钥（自带密钥方案，简称 BYOK），请阅读以下部分，详细了解此拓扑相关的生命周期操作。
 
 ## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
 
-在极少数情况下，可能需要吊销密钥，而不是重新生成密钥。 撤消密钥时，除非你有可以还原的密钥的备份，否则使用该密钥的租户所保护的所有内容将无法访问（包括 Microsoft、全局管理员和超级用户）。 撤消密钥后，你将无法保护新内容，直到你为 Azure 信息保护创建和配置新的租户密钥。 
+在极少数情况下，可能需要吊销密钥，而不是重新生成密钥。 当你撤销密钥时，使用该密钥保护的所有内容都将无法访问 (包括 Microsoft、全局管理员和超级用户) ，除非你有可以还原的密钥的备份。 撤消密钥后，你将无法保护新内容，直到你为 Azure 信息保护创建和配置新的租户密钥。 
 
 若要吊销客户托管的租户密钥，请在 Azure Key Vault 中更改包含 Azure 信息保护租户密钥的密钥保管库的权限，使 Azure Rights Management 服务无法再访问该密钥。 此操作可以有效地吊销 Azure 信息保护的租户密钥。
 
@@ -49,15 +49,15 @@ ms.locfileid: "86869090"
 
 若要将密钥重新生成为所管理的其他密钥，可在 Azure Key Vault 中创建新的密钥，或使用 Azure Key Vault 中已有的其他密钥。 然后按照为 Azure 信息保护实现 BYOK 的相同过程进行操作。 
 
-1. 仅当新密钥与你已用于 Azure 信息保护的密钥保管库位于不同的密钥保管库中时：通过使用[AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) Cmdlet 将 Azure 信息保护授权为使用密钥保管库。
+1. 仅当新密钥与你已用于 Azure 信息保护的密钥保管库位于不同的密钥保管库中时：通过使用 [AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy) Cmdlet 将 Azure 信息保护授权为使用密钥保管库。
 
-2. 如果 Azure 信息保护尚未知道要使用的密钥，请运行[AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet。
+2. 如果 Azure 信息保护尚未知道要使用的密钥，请运行 [AipServiceKeyVaultKey](/powershell/module/aipservice/use-aipservicekeyvaultkey) cmdlet。
 
-3. 使用运行[AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet 配置租户密钥对象。
+3. 使用运行 [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet 配置租户密钥对象。
 
 关于每个步骤的详细信息：
 
-- 若要重新生成到你管理的其他密钥，请参阅[计划和实现你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
+- 若要重新生成到你管理的其他密钥，请参阅 [计划和实现你的 Azure 信息保护租户密钥](plan-implement-tenant-key.md)。
 
     
     如果你重新生成在本地创建的受 HSM 保护的密钥并传输到密钥保管库，则可以使用与当前密钥相同的安全环境和访问卡。
@@ -83,7 +83,7 @@ Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全�
 
 |事件描述|可能的响应|
 |------------------------|-------------------|
-|你的租户密钥泄露。|重新生成租户密钥。 请参阅重新[生成租户密钥](#rekey-your-tenant-key)。|
+|你的租户密钥泄露。|重新生成租户密钥。 请参阅重新 [生成租户密钥](#rekey-your-tenant-key)。|
 |未经授权的个人或恶意软件获取了使用你的租户密钥的权限，但密钥本身并未泄露。|重新生成租户密钥在这种情况下并不奏效，需要进行根源分析。 如果进程或软件 Bug 是导致未经授权的个人获得访问权限的原因，则必须解决这一问题。|
 |在当前这代 HSM 技术中发现的漏洞。|Microsoft 必须更新 HSM。 如果有理由认为这些漏洞泄露了密钥，Microsoft 将指示所有客户重新生成他们的租户密钥。|
 |在 RSA 算法、密钥长度或暴力攻击方面发现的漏洞可能被利用。|Microsoft 必须更新 Azure 密钥保管库或 Azure 信息保护以支持新的算法和具有弹性的更长密钥长度，并指示所有客户重新生成他们的租户密钥。|

@@ -5,35 +5,35 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 11/30/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6308234bb778969c8e5d3b8e55260f042e501906
-ms.sourcegitcommit: d1f6f10c9cb95de535d8121e90b211f421825caf
+ms.openlocfilehash: 56d465d8efbc0b5bc2c6b87e1b60e34cb4e091f8
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87298217"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565330"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 
 最成功的部署是那些能够确定为组织提供最大业务优势的特定用例的部署。 使用以下常见应用场景和说明列表来实现部署。
 
-## <a name="common-scenarios"></a>常见方案
+## <a name="common-scenarios"></a>常见场景
 
-|应用场景：我想要实现以下目标……|说明|
+|应用场景：我想要实现以下目标……|Instructions|
 |----------------|---------------|
 |查找我的组织在本地存储的敏感信息|[快速入门：查找在本地存储的文件中的敏感信息](quickstart-findsensitiveinfo.md)|
-|让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签，以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
+|让用户可以轻松保护包含敏感信息的电子邮件|[快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件](quickstart-label-dnf-protectedemail.md)|
 |让用户可以轻松地在创建或编辑数据时对数据进行分类，并在数据包含敏感信息时对其进行保护| [教程：编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)|
 |让用户易于针对受保护的文档进行协作|[使用 Azure 信息保护配置可靠的文档协作](secure-collaboration-documents.md)|
 |自动保护在组织外部发送的用户电子邮件| [配置 Azure 信息保护标签的邮件流规则](configure-exo-rules.md)
@@ -43,7 +43,7 @@ ms.locfileid: "87298217"
 
 ## <a name="additional-deployment-instructions"></a>其他部署说明
 
-我们的[Azure 信息保护技术博客](https://aka.ms/AIPblog)包含来自实践经验教训的其他指导。
+我们的 [Azure 信息保护技术博客](https://aka.ms/AIPblog) 包含来自实践经验教训的其他指导。
 
 例如，为业务决策者和 IT 实施者提供最佳做法的方法：
 
@@ -71,6 +71,6 @@ ms.locfileid: "87298217"
 
 ## <a name="next-steps"></a>后续步骤
 
-没有列出你的应用场景？ 有关规划和部署步骤的完整列表，请查看[部署路线图](deployment-roadmap.md)。
+没有列出你的应用场景？ 有关规划和部署步骤的完整列表，请查看 [部署路线图](deployment-roadmap.md) 。
 
 如果你是初次接触 Azure 信息保护，请查看[什么是 Azure 信息保护？](what-is-information-protection.md)，快速了解服务，以便开始部署。

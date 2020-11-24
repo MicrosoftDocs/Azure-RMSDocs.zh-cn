@@ -1,41 +1,41 @@
 ---
 title: 类 RulePackageData
-description: 记录 Microsoft 信息保护（MIP） SDK 的 rulepackagedata：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 rulepackagedata：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: f04e2cfb00420b8752cdc998e52c77d41ae480b4
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 4f2106518bb2837d85eb5874307fad2639df5d90
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764356"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565049"
 ---
 # <a name="class-rulepackagedata"></a>类 RulePackageData 
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const PolicyRuleData * GetRuleData （） const  | _尚无记录。_
-public const std：:p 风\<std：： string、std：： String\>& GetLabelToTemplateId （） const  | _尚无记录。_
-public const std：:p 风\<std：： string、std：： shared_ptr\<ProtectionActionData\> \>& GetLabelToProtectionType （） const  | _尚无记录。_
-public virtual ~ RulePackageData （）  | _尚无记录。_
+public const PolicyRuleData * GetRuleData ( # A1 const  | _尚无记录。_
+public const std：:p air \<std::string, std::string\>& GetLabelToTemplateId ( # A2 const  | _尚无记录。_
+public const std：:p air \<std::string, std::shared_ptr\<ProtectionActionData\> \>& GetLabelToProtectionType ( # A2 const  | _尚无记录。_
+public virtual ~ RulePackageData ( # A1  | _尚无记录。_
   
 ## <a name="members"></a>成员
   
 ### <a name="getruledata-function"></a>GetRuleData 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="getlabeltotemplateid-function"></a>GetLabelToTemplateId 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="getlabeltoprotectiontype-function"></a>GetLabelToProtectionType 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="rulepackagedata-function"></a>~ RulePackageData 函数
-_尚无记录。_
+尚无记录。

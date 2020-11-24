@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: c1373faaeeb8143636807b7985558a1733a3024a
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 84ccd398374626159b2d2474e62b36d019dc420e
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68790776"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565370"
 ---
 # <a name="supported-file-formats"></a>支持的文件格式
 
@@ -36,6 +36,6 @@ ms.locfileid: "68790776"
 
 ## <a name="related-topics"></a>相关主题
 
-* [开发人员说明](developer-notes.md)
+* [开发人员注意事项](developer-notes.md)
 * [文件 API 配置](file-api-configuration.md)
  

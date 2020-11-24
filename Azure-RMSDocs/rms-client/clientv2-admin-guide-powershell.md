@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 25851b966b5c28baab003bb949ecf9144cacf66a
-ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
+ms.openlocfilehash: 2133259809b87a66fe5e63e10e1273a0412208b7
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89447188"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566188"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
@@ -24,11 +24,11 @@ ms.locfileid: "89447188"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 当你安装 Azure 信息保护统一标签客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
-Cmdlet 随 PowerShell 模块 **AzureInformationProtection**一起安装，其中包含用于标记的 cmdlet。 例如：
+Cmdlet 随 PowerShell 模块 **AzureInformationProtection** 一起安装，其中包含用于标记的 cmdlet。 例如：
 
 |标记 cmdlet|用法示例|
 |----------------|---------------|
@@ -37,17 +37,20 @@ Cmdlet 随 PowerShell 模块 **AzureInformationProtection**一起安装，其中
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
 
-> [!TIP]
-> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：<br /> **本地计算机策略**  > **计算机配置**  > **管理模板**  > **所有设置**  > **启用 Win32 长路径** 
-> 
-> 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
->
-> 有关详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
-
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 
 > [!IMPORTANT]
 > AzureInformationProtection 模块不支持配置标签或标签策略的高级设置。 对于这些设置，需要 Office 365 Security & 相容性中心 PowerShell。 有关详细信息，请参阅 [Azure 信息保护统一标签客户端的自定义配置](clientv2-admin-guide-customizations.md)。
+> [!NOTE]
+> 如果已从 Azure RMS 迁移，请注意，与 RMS 相关的 cmdlet 已弃用，可用于统一标签。 其中一些已替换为适用于统一标签的新 cmdlet。 有关详细信息，请参阅 [RMS 到统一标签 cmdlet 的映射](#rms-to-unified-labeling-cmdlet-mapping)。
+>
+
+> [!TIP]
+> 若要使用路径长度超过 260 个字符的 cmdlet，请使用自 Windows 10 版本 1607 开始提供的以下[组策略设置](/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10)：<br /> **本地计算机策略**  > **计算机配置**  > **管理模板**  > **所有设置**  > **启用 Win32 长路径** 
+> 
+> 对于 Windows Server 2016，在安装 Windows 10 的最新管理模板 (.admx) 时，可以使用相同的组策略设置。
+>
+> 有关详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
 
 ### <a name="prerequisites-for-using-the-azureinformationprotection-module"></a>使用 AzureInformationProtection 模块的先决条件
 
@@ -69,6 +72,25 @@ Cmdlet 随 PowerShell 模块 **AzureInformationProtection**一起安装，其中
 
 用户必须具有从文件删除保护的权限管理使用权限或者成为超级用户。 对于数据发现或数据恢复，通常会使用超级用户功能。 若要启用此功能并将你的帐户配置为超级用户，请参阅 [为 Azure 信息保护和发现服务或数据恢复配置超级用户](../configure-super-users.md)。
 
+## <a name="rms-to-unified-labeling-cmdlet-mapping"></a>RMS 到统一标签 cmdlet 的映射
+
+下表映射了与 RMS 相关的 cmdlet，其中包含用于统一标记的更新 cmdlet。
+
+例如，如果你将 **RMSProtectionLicense** 与 RMS 保护一起使用，并已迁移到统一标签，请改用 **AIPCustomPermissions** 。
+
+|RMS cmdlet  |统一标签 cmdlet  |
+|---------|---------|
+|[Get-rmsfilestatus](/powershell/module/azureinformationprotection/get-rmsfilestatus)     |  [Get AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)        |
+|[RMSServer](/powershell/module/azureinformationprotection/get-rmsserver)     |  与统一标签无关。      |
+|[Set-rmsserverauthentication](/powershell/module/azureinformationprotection/get-rmsserverauthentication)      |   [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)       |
+|[RMSAuthentication](/powershell/module/azureinformationprotection/clear-rmsauthentication)     | [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)       |
+|[Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication)     |  [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)      |
+|[Get-rmstemplate](/powershell/module/azureinformationprotection/get-rmstemplate)     |       与统一标签无关  |
+|[新-RMSProtectionLicense](/powershell/module/azureinformationprotection/new-rmsprotectionlicense)     |  带有 **CustomPermissions** 参数的 [AIPCustomPermissions](/powershell/module/azureinformationprotection/new-aipcustompermissions)和 [set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)      |
+|[保护-Protect-rmsfile](/powershell/module/azureinformationprotection/protect-rmsfile) |[Set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel)，具有 **RemoveProtection** 参数 |
+| | |
+
+
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>如何以非交互方式为 Azure 信息保护标记文件
 
 可以使用 Set-AIPAuthentication cmdlet，以非交互方式运行标记 cmdlet[](/powershell/module/azureinformationprotection/set-aipauthentication)。
@@ -82,7 +104,7 @@ Cmdlet 随 PowerShell 模块 **AzureInformationProtection**一起安装，其中
 > [!NOTE]
 > 如果对不同用户使用标签策略，可能需要创建新的标签策略，以发布所有标签，并将策略发布到仅此委派的用户帐户。
 
-Azure AD 中的令牌过期时，必须再次运行该 cmdlet 才能获取新令牌。 你可以在 Azure AD 中将访问令牌配置为一年、两年或永不过期。 Set-aipauthentication 的参数在 Azure AD 中使用应用注册过程中的值，如下一节中所述。
+Azure AD 中的令牌过期时，必须再次运行该 cmdlet 才能获取新令牌。 你可以在 Azure AD 中将访问令牌配置为一年、两年或永不过期。 Set-AIPAuthentication 的参数使用 Azure AD 中的应用注册过程中的值，如下一节中所述。
 
 对于委派的用户帐户：
 
@@ -97,11 +119,11 @@ Azure AD 中的令牌过期时，必须再次运行该 cmdlet 才能获取新令
 > [!IMPORTANT]
 > 这些说明适用于统一标签客户端的当前通用版本，也适用于此客户端的扫描仪的通用版本。
 
-Set-aipauthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册。 如果从客户端的以前版本升级并为以前的 *WebAppId* 和 *NativeAppId* 参数创建了应用注册，则它们将不能用于统一的标签客户端。 你必须创建一个新的应用注册，如下所示：
+Set-AIPAuthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册。 如果从客户端的以前版本升级并为以前的 *WebAppId* 和 *NativeAppId* 参数创建了应用注册，则它们将不能用于统一的标签客户端。 你必须创建一个新的应用注册，如下所示：
 
 1. 在新的浏览器窗口中，登录 [Azure 门户](https://portal.azure.com/)。
 
-2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到**Azure Active Directory**  >  **管理**  >  **应用注册**"。 
+2. 对于与 Azure 信息保护配合使用的 Azure AD 租户，请导航到 **Azure Active Directory**  >  **管理**  >  **应用注册**"。 
 
 3. 选择 " **+ 新注册**"。 在 " **注册应用程序** " 窗格上，指定以下值，然后单击 " **注册**"：
 
@@ -111,9 +133,9 @@ Set-aipauthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册
     
     - **受支持的帐户类型**： **仅限此组织目录中的帐户**
     
-    - **重定向 URI (可选) **： **Web** 和 `https://localhost`
+    - **重定向 URI (可选)**： **Web** 和 `https://localhost`
 
-4. 在 " **AIP-DelegatedUser** " 窗格上，复制 " **应用程序 (客户端) ID**" 的值。 值类似于下面的示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66` 。 运行 Set-aipauthentication cmdlet 时，此值用于 *AppId* 参数。 粘贴并保存该值供以后参考。
+4. 在 " **AIP-DelegatedUser** " 窗格上，复制 " **应用程序 (客户端) ID**" 的值。 值类似于下面的示例： `77c3c1c3-abf9-404e-8b2b-4652836c8c66` 。 运行 Set-AIPAuthentication cmdlet 时，此值用于 *AppId* 参数。 粘贴并保存该值供以后参考。
 
 5. 从侧栏中，选择 "**管理**  >  **证书" & 密码**。
 
@@ -124,7 +146,7 @@ Set-aipauthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册
     - **说明**： `Azure Information Protection unified labeling client`
     - **过期**：指定所选持续时间 (1 年、2年或永不过期) 
 
-8. 返回到 " **AIP-DelegatedUser-证书 & 机密** " 窗格的 " **客户端密码** " 部分中，复制 **值**的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4` 。 若要确保复制所有字符，请选择要 **复制到剪贴板**的图标。 
+8. 返回到 " **AIP-DelegatedUser-证书 & 机密** " 窗格的 " **客户端密码** " 部分中，复制 **值** 的字符串。 此字符串类似于以下示例： `OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4` 。 若要确保复制所有字符，请选择要 **复制到剪贴板** 的图标。 
     
     请务必保存此字符串，因为它不会再次显示，并且无法检索。 对于所使用的任何敏感信息，请安全地存储保存的值并限制对它的访问。
 
@@ -159,24 +181,24 @@ Set-aipauthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册
     
     ![Azure AD 中已注册应用程序的 API 权限](../media/api-permissions-app.png)
 
-现在，你已使用机密完成了此应用的注册，接下来可以使用参数*AppId*和*AppSecret*运行[set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 。 此外，还需要租户 ID。 
+现在，你已使用机密完成了此应用的注册，接下来可以使用参数 *AppId* 和 *AppSecret* 运行 [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 。 此外，还需要租户 ID。 
 
 > [!TIP]
->你可以使用 Azure 门户**Azure Active Directory**  >  **管理**  >  **属性**  >  **目录 ID**快速复制你的租户 ID。
+>你可以使用 Azure 门户 **Azure Active Directory**  >  **管理**  >  **属性**  >  **目录 ID** 快速复制你的租户 ID。
 
-1. 通过 "以 **管理员身份运行" 选项**打开 Windows PowerShell。 
+1. 通过 "以 **管理员身份运行" 选项** 打开 Windows PowerShell。 
 
 2. 在 PowerShell 会话中，创建一个变量以存储将以非交互方式运行的 Windows 用户帐户的凭据。 例如，如果为扫描程序创建了服务帐户：
 
-    ```ps
+    ```PowerShell
     $pscreds = Get-Credential "CONTOSO\srv-scanner"
     ```
 
     系统将提示你输入此帐户的密码。
 
-2. 运行 Set-aipauthentication cmdlet 和 *OnBeHalfOf* 参数，并将其值指定为刚创建的变量。 同时，在 Azure AD 中指定应用注册值、租户 ID 和委托用户帐户的名称。 例如：
+2. 运行包含 *OnBeHalfOf* 参数的 Set-AIPAuthentication cmdlet，并将其值指定为刚创建的变量。 同时，在 Azure AD 中指定应用注册值、租户 ID 和委托用户帐户的名称。 例如：
     
-    ```ps
+    ```PowerShell
     Set-AIPAuthentication -AppId "77c3c1c3-abf9-404e-8b2b-4652836c8c66" -AppSecret "OAkk+rnuYc/u+]ah2kNxVbtrDGbS47L4" -TenantId "9c11c87a-ac8b-46a3-8d5c-f4d0b72ee29a" -DelegatedUser scanner@contoso.com -OnBehalfOf $pscreds
     ```
 
@@ -186,7 +208,7 @@ Set-aipauthentication 要求对 *AppId* 和 *AppSecret* 参数进行应用注册
 ## <a name="next-steps"></a>后续步骤
 对于 PowerShell 会话中的 cmdlet 帮助，请键入 `Get-Help <cmdlet name> -online` 。 例如： 
 
-```ps
+```PowerShell
 Get-Help Set-AIPFileLabel -online
 ```
 

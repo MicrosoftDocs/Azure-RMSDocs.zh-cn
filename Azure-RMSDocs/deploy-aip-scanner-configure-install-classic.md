@@ -12,19 +12,19 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a890f7d9096b628489ceeaa156a9ce124d1535b3
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: dbfa9b0d7a4257f73071f2ff611a4c5fd2394bc0
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953025"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566305"
 ---
 # <a name="configuring-and-installing-the-azure-information-protection-classic-scanner"></a>配置和安装 Azure 信息保护经典扫描程序
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
 
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 > 如果使用的是统一标签扫描程序，请参阅 [安装和配置 Azure 信息保护统一标签扫描器](deploy-aip-scanner-configure-install.md)。
 
@@ -75,11 +75,11 @@ ms.locfileid: "88953025"
 
     1. 为扫描程序指定一个有意义的名称。 此名称用于标识扫描仪的配置设置和要扫描的数据存储库。
 
-        例如，可以指定“欧洲”**** 来标识扫描程序将涵盖的数据存储库的地理位置。 以后安装或升级扫描程序时，需要指定相同的群集名称。
+        例如，可以指定“欧洲”来标识扫描程序将涵盖的数据存储库的地理位置。 以后安装或升级扫描程序时，需要指定相同的群集名称。
 
     2. （可选）指定用于管理目的的说明，以帮助你确定扫描仪的群集名称。
 
-    3. 选择“保存” 。
+    3. 选择“保存”。
 1. 找到 " **扫描仪** " 菜单选项，然后选择 " **内容扫描作业**"。
 1. 在 " **Azure 信息保护-内容扫描作业** " 窗格上，选择 " **添加**"。
 
@@ -88,8 +88,8 @@ ms.locfileid: "88953025"
     |部分  |设置  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" </br>- **要发现的信息类型**：仅更改为 **策略** </br>- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略实施**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的**策略**默认值 </br>- 重新**标记文件**：保持默认值为**Off**        |
-    |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认**值 </br>- **要扫描的文件类型**：保留默认文件类型以 **排除** </br>- **默认所有者**：保留**扫描仪帐户**的默认值        |
+    |**策略实施**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的 **策略** 默认值 </br>- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 </br>- **要扫描的文件类型**：保留默认文件类型以 **排除** </br>- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
 1. 既然已创建并保存了内容扫描作业，你就可以返回到 " **配置存储库** " 选项来指定要扫描的数据存储。
@@ -123,8 +123,8 @@ ms.locfileid: "88953025"
     |路径  |语法  |
     |---------|---------|
     |**根路径**     | `http://<SharePoint server name>` </br></br>扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 </br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
-    |**特定 SharePoint 子网站或集合**     | 下列类型作之一： </br>- `http://<SharePoint server name>/<subsite name>` </br>- `http://SharePoint server name>/<site collection name>/<site name>` </br></br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
-    |**特定 SharePoint 库**     | 下列类型作之一： </br>- `http://<SharePoint server name>/<library name>` </br>- `http://SharePoint server name>/.../<library name>`       |
+    |**特定 SharePoint 子网站或集合**     | 下列情况之一： </br>- `http://<SharePoint server name>/<subsite name>` </br>- `http://SharePoint server name>/<site collection name>/<site name>` </br></br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
+    |**特定 SharePoint 库**     | 下列情况之一： </br>- `http://<SharePoint server name>/<library name>` </br>- `http://SharePoint server name>/.../<library name>`       |
     |**特定 SharePoint 文件夹**     | `http://<SharePoint server name>/.../<folder name>`        |
     | | |
 
@@ -149,7 +149,7 @@ ms.locfileid: "88953025"
     > 有关详细信息，请参阅 [安装和部署 Azure 信息保护扫描程序的先决条件](deploy-aip-scanner-prereqs.md)。
     >
 
-1. 使用“以管理员身份运行”选项打开 Windows PowerShell 会话****。
+1. 使用“以管理员身份运行”选项打开 Windows PowerShell 会话。
 
 1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一节中指定的扫描仪群集名称：
 
@@ -157,7 +157,7 @@ ms.locfileid: "88953025"
     Install-AIPScanner -SqlServerInstance <name> -Profile <cluster name>
     ```
 
-    例如，使用配置文件名称“欧洲”****：
+    例如，使用配置文件名称“欧洲”：
 
     - 对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1 -Profile Europe`
 
@@ -167,9 +167,9 @@ ms.locfileid: "88953025"
 
     出现提示时，请提供扫描程序服务帐户的凭据 (`\<domain\user name>`) 和密码。
 
-1. 使用**管理工具**服务验证是否已安装该服务  >  **Services**。
+1. 使用 **管理工具** 服务验证是否已安装该服务  >  **Services**。
 
-    已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行****。
+    已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行。
 
 现在，你已安装了扫描仪，你需要 [获取一个 Azure AD 令牌，以便扫描程序](#get-an-azure-ad-token-for-the-scanner) 服务帐户进行身份验证，以便扫描程序可以在无人参与的情况下运行。
 
@@ -181,7 +181,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 
 1. 返回 Azure 门户，以创建两个 Azure AD 应用程序来指定用于身份验证的访问令牌。 此令牌允许扫描程序以非交互方式运行。
 
-    有关详细信息，请参阅 [如何以非交互方式为 Azure 信息保护标记文件](./rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+    有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](./rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
 2. 在 Windows Server 计算机中，如果你的扫描程序服务帐户已被授予 **本地登录** 的权限，请使用此帐户登录并启动 PowerShell 会话。
 
@@ -191,7 +191,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application> -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application>
     ```
 
-    系统提示时，请为 Azure AD 的服务帐户凭据指定密码，然后单击“接受”****。
+    系统提示时，请为 Azure AD 的服务帐户凭据指定密码，然后单击“接受”。
 
     例如：
 
@@ -222,7 +222,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 
 2. 在 "内容扫描作业" 窗格上，更改以下内容，然后选择 " **保存**"：
 
-   - 从 "**内容扫描作业**" 部分：将**计划**更改为 "**始终**"
+   - 从 "**内容扫描作业**" 部分：将 **计划** 更改为 "**始终**"
    - 从 **策略强制** 部分：将 **强制** 更改为 **开启**
 
     > [!TIP]
@@ -271,7 +271,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     > 作为图像文件，TIFF 文件支持本机保护，生成的文件扩展名为 **ptiff。**
     >
 
-    对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护****。 受保护文件的生成文件扩展名为 **.pfile。**
+    对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护。 受保护文件的生成文件扩展名为 **.pfile。**
 
 有关类似于支持本机保护，但必须在注册表中指定的文本和图像文件类型的列表，请参阅 [支持分类和保护的文件类型](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)。
 
@@ -338,7 +338,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 使用以下选项和指南来帮助优化扫描程序性能：
 
-|选项  |描述  |
+|选项  |说明  |
 |---------|---------|
 |**在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**     |  例如，将扫描仪计算机放在与扫描的数据存储相同的网络段中，或者在同一网段中放置。 </br></br>由于要检查文件，扫描程序会将文件内容传输到运行 scanner 服务的计算机，因此网络连接的质量会影响扫描程序性能。 </br></br>减少或消除传输数据所需的网络跃点还可以减少网络上的负载。      |
 |**确保扫描程序计算机具有可用的处理器资源**     | 检查文件内容并对文件进行加密和解密是处理密集型操作。 </br></br>监视指定数据存储的典型扫描周期，以确定缺乏处理器资源是否会对扫描程序性能产生负面影响。        |
@@ -358,8 +358,8 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 |**加载/响应时间**     |包含要扫描的文件的数据存储的当前负载和响应时间也会影响扫描程序性能。         |
 |**扫描模式** (发现/强制)     | 发现模式的扫描速度通常比 "强制" 模式高。 </br></br>发现需要单个文件读取操作，而 "强制" 模式需要读取和写入操作。        |
 |**策略更改**     |如果你已更改 Azure 信息保护策略中的条件，则你的扫描程序性能可能会受到影响。 </br></br>当扫描程序必须检查每个文件时，第一个扫描周期的时间比默认情况下的后续扫描周期长，仅检查新文件和更改的文件。 </br></br>如果更改条件，将再次扫描所有文件。 有关详细信息，请参阅重新 [扫描文件](deploy-aip-scanner-manage-classic.md#rescanning-files)。|
-|**Regex 构造**    | 扫描程序性能会受到构造自定义条件的正则表达式的影响。 </br></br> 为避免占用过多内存并存在超时风险（每个文件 15 分钟），请查看正则表达式了解有效的模式匹配。 </br></br>例如： </br>-避免 [贪婪限定符](https://docs.microsoft.com/dotnet/standard/base-types/quantifiers-in-regular-expressions) </br>-使用非捕获组，例如 `(?:expression)` 而不是 `(expression)`    |
-|**日志级别**     |  日志级别选项包括扫描器报表的 **调试**、 **信息**、 **错误** 和 **关闭** 。</br></br>- **禁用** 会获得最佳性能 </br>- **调试** 大大降低了扫描程序的速度，只应使用进行故障排除。 </br></br>有关详细信息，请参阅 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 的 eportLevel 参数**。       |
+|**Regex 构造**    | 扫描程序性能会受到构造自定义条件的正则表达式的影响。 </br></br> 为避免占用过多内存并存在超时风险（每个文件 15 分钟），请查看正则表达式了解有效的模式匹配。 </br></br>例如： </br>-避免 [贪婪限定符](/dotnet/standard/base-types/quantifiers-in-regular-expressions) </br>-使用非捕获组，例如 `(?:expression)` 而不是 `(expression)`    |
+|**日志级别**     |  日志级别选项包括扫描器报表的 **调试**、 **信息**、 **错误** 和 **关闭** 。</br></br>- **禁用** 会获得最佳性能 </br>- **调试** 大大降低了扫描程序的速度，只应使用进行故障排除。 </br></br>有关详细信息，请参阅 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet 的 eportLevel 参数。       |
 |**正在扫描的文件**     |-除了 Excel 文件，Office 文件的扫描速度比 PDF 文件更快。 </br></br>与受保护的文件相比，-不受保护的文件的扫描速度更快。 </br></br>-大型文件比小文件需要更长的时间来扫描。         |
 | | |
 

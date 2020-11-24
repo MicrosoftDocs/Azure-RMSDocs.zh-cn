@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 2a9c12f85898f7331c9954d31354d18534b62fc2
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 25a45be35851035411436a58fc72682ff4e6d66d
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564096"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566292"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>操作说明：安装和配置 RMS 服务器并用其进行测试
 
@@ -68,7 +68,7 @@ ms.locfileid: "88564096"
    - 在服务器端发现中，管理员会向 Active Directory 注册 RMS 根群集的服务连接点 (SCP)，客户端会查询 Active Directory 以发现该 SCP 并与服务器建立连接。
    - 在客户端发现中，会在运行 RMS 客户端 2.1 的计算机上，在注册表中配置 RMS 服务发现设置。 这些设置使 RMS 客户端 2.1 指向 RMS 服务器。 当它们存在时，不会执行服务器端发现。
 
-   若要配置客户端发现，可以设置以下注册表项以指向 RMS 服务器。 有关如何配置服务端发现的信息，请参阅 [RMS 客户端 2.0 部署说明](https://technet.microsoft.com/library/jj159267(WS.10).aspx)。
+   若要配置客户端发现，可以设置以下注册表项以指向 RMS 服务器。 有关如何配置服务端发现的信息，请参阅 [RMS 客户端 2.0 部署说明](../rms-client/client-deployment-notes.md)。
 
 4. **EnterpriseCertification**
 

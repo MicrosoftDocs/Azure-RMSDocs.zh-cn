@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 76bd7d42a00780520bd77c93c9e751d10bed5518
-ms.sourcegitcommit: fc0499f182e9203ccbd4a8685dd880d1311845ad
+ms.openlocfilehash: 163df2020eff0ed390a9c404c77fb8d4745e7227
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "79084725"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565311"
 ---
 # <a name="rights-management-sdk42"></a>Rights Management SDK 4.2
 
@@ -33,7 +33,7 @@ Rights Management SDK 4.2 是一种简化的新一代 API，可用于在通过 R
 
 RMS SDK 4.2 API 将标准编程语言和模型用于每种操作系统，因此它们使用起来十分简单且熟悉。
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>支持的操作系统
 
 RMS SDK 4.2 这一版本可用于以下操作系统：
 
@@ -47,7 +47,7 @@ RMS SDK 4.2 这一版本可用于以下操作系统：
 
 [概述](overview.md) - Rights Management Services 是一种信息保护技术，可帮助保护数字信息免遭未经授权的使用。 通过启用权限的应用程序，内容所有者将能够定义可以对其内容进行打开、修改、打印、转发或执行其他操作的人员。
 
-[入门](get-started.md) - 对于 RMS SDK 4.2 这一版本，第一个应用程序的快速入门方法是浏览适用于每种操作系统/平台的开发环境设置指南。
+[入门](get-started.md) - 对于 RMS SDK 4.2 这一版本，第一个应用程序的快速入门方法是通过适用于每种操作系统/平台的开发环境设置指南。
 
 [开发人员指南和术语](core-concepts.md) - RMS SDK 4.2 的重点是帮助构建启用 AD RMS 的应用程序，尽可能降低利用 Right Management Services 的复杂性。
 

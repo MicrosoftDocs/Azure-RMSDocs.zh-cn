@@ -1,32 +1,34 @@
 ---
 title: 类 ProtectionHandler：： ConsumptionSettings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionhandler：： consumptionsettings 类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionhandler：： consumptionsettings 类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 2dd4a02d33873cc6a72e4ba759ab2ac3519265e1
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 627845405fc0d4fc2523e958e2226d343d0013cc
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764454"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565023"
 ---
 # <a name="class-protectionhandlerconsumptionsettings"></a>类 ProtectionHandler：： ConsumptionSettings 
 用于创建 ProtectionHandler 以使用现有内容的设置。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public ConsumptionSettings （const std：： vector\<Uint8_t\>& serializedPublishingLicense）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
-public ConsumptionSettings （const std：： vector\<Uint8_t\>& serializedPreLicense，const std：： vector\<uint8_t\>& serializedPublishingLicense）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
-public ConsumptionSettings （const std：： shared_ptr\<PublishingLicenseInfo\>& licenseInfo）  |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
-public std：： shared_ptr\<PublishingLicenseInfo\> GetPublishingLicenseInfo （） const  |  获取与受保护内容相关联的发布许可证。
-public bool GetIsOfflineOnly （） const  |  获取 ProtectionHandler 创建是否允许联机 HTTP 操作。
-public void SetIsOfflineOnly （bool isOfflineOnly）  |  设置 ProtectionHandler 创建是否允许联机 HTTP 操作。
-public void SetDelegatedUserEmail （const std：： string& delegatedUserEmail）  |  设置委派的用户。
-public const std：： string& GetDelegatedUserEmail （） const  |  获取委托的用户。
+public ConsumptionSettings (const std：： vector \<uint8_t\>& serializedPublishingLicense)   |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+public ConsumptionSettings (const std：： vector \<uint8_t\>& serializedPreLicense，const std：： vector \<uint8_t\>& serializedPublishingLicense)   |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+public ConsumptionSettings (const std：： shared_ptr \<PublishingLicenseInfo\>& licenseInfo)   |  用于创建新处理程序的 ProtectionHandler：： ConsumptionSettings 构造函数。
+public std：： shared_ptr \<PublishingLicenseInfo\> GetPublishingLicenseInfo ( # A1 const  |  获取与受保护内容相关联的发布许可证。
+public bool GetIsOfflineOnly ( # A1 const  |  获取 ProtectionHandler 创建是否允许联机 HTTP 操作。
+public void SetIsOfflineOnly (bool isOfflineOnly)   |  设置 ProtectionHandler 创建是否允许联机 HTTP 操作。
+public void SetDelegatedUserEmail (const std：： string& delegatedUserEmail)   |  设置委派的用户。
+public void SetContentName (const std：： string& contentName)   | _尚无记录。_
+public const std：： string& GetDelegatedUserEmail ( # A2 const  |  获取委托的用户。
+public const std：： string& GetContentName ( # A2 const  | _尚无记录。_
   
 ## <a name="members"></a>成员
   
@@ -56,7 +58,7 @@ public const std：： string& GetDelegatedUserEmail （） const  |  获取委�
 * **licenseInfo**：发布受保护内容的许可证信息
 
 
-提供[PublishingLicenseInfo](class_mip_publishinglicenseinfo.md) （而不只是原始序列化发布许可证）将不再需要 MIP SDK 来解析发布许可证。
+仅提供 PublishingLicenseInfo (而不是原始序列化发布许可证) 将不再需要 MIP SDK 分析发布许可证。
   
 ### <a name="getpublishinglicenseinfo-function"></a>GetPublishingLicenseInfo 函数
 获取与受保护内容相关联的发布许可证。
@@ -88,8 +90,15 @@ public const std：： string& GetDelegatedUserEmail （） const  |  获取委�
 
 当正在进行身份验证的用户/应用程序代表其他用户时，将指定委派的用户
   
+### <a name="setcontentname-function"></a>SetContentName 函数
+尚无记录。
+
+  
 ### <a name="getdelegateduseremail-function"></a>GetDelegatedUserEmail 函数
 获取委托的用户。
 
   
 **返回**：已委派的用户在进行身份验证的用户/应用程序代表其他用户时指定了委派的用户
+  
+### <a name="getcontentname-function"></a>GetContentName 函数
+尚无记录。

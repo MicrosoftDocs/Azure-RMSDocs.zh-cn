@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: d36938daf4dbcbe86331ec6852dfe4ecb04a2959
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 9fd65730baf1fefad6dd4e39341dab1260b51dd0
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68792410"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565293"
 ---
 # <a name="configure-visual-studio"></a>配置 Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "68792410"
 
 **说明**
 
-### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>步骤1：配置 Visual Studio 项目以使用 RMS SDK 2。1
+### <a name="step-1-configure-a-visual-studio-project-to-use-rmssdk21"></a>步骤 1：配置 Visual Studio 项目以使用 RMS SDK 2.1
 
 这些说明特定于 Microsoft Visual Studio 2010。 如果使用不同版本的 Microsoft Visual Studio，则设置对话框可能略有不同。
 
@@ -66,7 +66,7 @@ ms.locfileid: "68792410"
 
 5.  为生成的二进制文件创建版本信息。
 
-    在 **“解决方案资源管理器”** 下，选择 **“资源文件”** ，然后将二进制文件名称添加到 **“OriginalFileName”** 字段。
+    在 **“解决方案资源管理器”** 下，选择 **“资源文件”**，然后将二进制文件名称添加到 **“OriginalFileName”** 字段。
 
     ![解决方案资源管理器资源文件字段](../media/original_file_name.png)
 

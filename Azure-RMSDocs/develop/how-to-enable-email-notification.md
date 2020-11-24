@@ -14,18 +14,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 3caecdd8d5b5cc173ebe148eaefe3f2202613ab3
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: d187e7ae4237d0e92b480750f74596109f440cbe
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135650"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566296"
 ---
 # <a name="how-to-enable-email-notification"></a>操作说明：启用电子邮件通知
 
 受保护的内容所有者通过电子邮件通知可以在其内容受到访问时收到通知。
 
-若要针对给定许可证设置电子邮件通知，请使用[IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)和属性类型参数*dwPropID*，将其用作[ipc \_ LI \_ 应用特定的 \_ \_ 数据](https://msdn.microsoft.com/library/hh535287.aspx)，并将应用程序数据字段格式化为[ipc \_ NAME \_ 值 \_ 列表](https://msdn.microsoft.com/library/hh535277.aspx)。
+若要针对给定许可证设置电子邮件通知，请使用 [IpcSetLicenseProperty](/previous-versions/windows/desktop/msipc/ipcsetlicenseproperty) 和属性类型参数 *dwPropID*，将其用作 [ipc \_ LI \_ 应用特定的 \_ \_ 数据](/previous-versions/windows/desktop/msipc/license-property-types) ，并将应用程序数据字段格式化为 [ipc \_ NAME \_ 值 \_ 列表](/previous-versions/windows/desktop/msipc/ipc-name-value-list)。
 
 **C + +**：
 
@@ -60,6 +60,6 @@ result = IpcSetLicenseProperty(licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, e
 
 ## <a name="related-topics"></a>相关主题
 
-- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
-- [IPC \_ LI \_ 应用 \_ 特定 \_ 数据](https://msdn.microsoft.com/library/hh535287.aspx)
-- [IPC \_名称 \_ 值 \_ 列表](https://msdn.microsoft.com/library/hh535277.aspx)。
+- [IpcSetLicenseProperty](/previous-versions/windows/desktop/msipc/ipcsetlicenseproperty)
+- [IPC \_ LI \_ 应用 \_ 特定 \_ 数据](/previous-versions/windows/desktop/msipc/license-property-types)
+- [IPC \_名称 \_ 值 \_ 列表](/previous-versions/windows/desktop/msipc/ipc-name-value-list)。

@@ -1,9 +1,9 @@
 ---
 title: 为 Azure 信息保护准备用户和组
 description: 检查是否已准备好用于对组织的文档和电子邮件进行分类、标记和保护的用户与组帐户。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
+author: batamig
+ms.author: bagol
+manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,16 +12,16 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 880e3b8acd3d17bcb3aec424e3aef96c2aeadbaf
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: cc54660ce021b2d00a80ad3292ed17c5c13c204a
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048300"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566248"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>为 Azure 信息保护准备用户和组
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 在为组织部署 Azure 信息保护之前，请确保组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -55,7 +55,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 访问控制包括到期日期以及是否需要连接到 internet 才能访问。 
 
-**用于配置 Azure Rights Management 服务**以支持特定方案，因此只有管理员可以选择这些组。 示例包括配置下列各项：
+**用于配置 Azure Rights Management 服务** 以支持特定方案，因此只有管理员可以选择这些组。 示例包括配置下列各项：
 
 - 超级用户，以便指定的服务或人员可以打开加密的内容（如果电子数据展示或数据恢复需要）。
 
@@ -73,15 +73,15 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 若要授权用户，请使用 Azure AD 中的两个属性：**proxyAddresses** 和 **userPrincipalName**。
 
-- **Azure AD proxyAddresses** 属性存储帐户的所有电子邮件地址，并能以不同的方式填充。 例如，Office 365 中具有 Exchange Online 邮箱的用户自动具有存储在此属性中的电子邮件地址。 如果为 Office 365 用户分配了备用电子邮件地址，那么该地址也会保存在此属性中。 它也可以由从本地帐户同步的电子邮件地址填充。 
+- **Azure AD proxyAddresses** 属性存储帐户的所有电子邮件地址，并能以不同的方式填充。 例如，在 Microsoft 365 中，具有 Exchange Online 邮箱的用户自动具有存储在此属性中的电子邮件地址。 如果为 Microsoft 365 用户分配备选电子邮件地址，则该地址也会保存在此属性中。 它也可以由从本地帐户同步的电子邮件地址填充。 
 
     如果已将域添加到租户（“已验证的域”），Azure 信息保护可以使用此 Azure AD proxyAddresses 属性中的任何值。 有关验证域的详细信息，请参阅：
 
     - 对于 Azure AD：[将自定义域名添加到 Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - 对于 Office 365：[向 office 365 添加域](/office365/admin/setup/add-domain?view=o365-worldwide)
+    - 对于 Office 365： [向 office 365 添加域](/office365/admin/setup/add-domain)
 
-- 仅当租户中的帐户在 **Azure AD proxyAddresses** 属性中没有值时，才会使用 Azure AD userPrincipalName 属性。 例如，可以在 Azure 门户中创建用户，或者创建没有邮箱的 Office 365 用户。
+- 仅当租户中的帐户在 **Azure AD proxyAddresses** 属性中没有值时，才会使用 Azure AD userPrincipalName 属性。 例如，在 Azure 门户中创建一个用户，或为没有邮箱的 Microsoft 365 创建用户。
 
 ### <a name="assigning-usage-rights-and-access-controls-to-external-users"></a>向外部用户分配使用权限和访问控制权限
 
@@ -99,7 +99,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 - 若要配置将其他标签分配给组成员的作用域策略，可以使用 Azure AD 中的任何类型的组，但需要具有包含用户租户的已验证域的电子邮件地址。 具有电子邮件地址的组通常称为启用邮件的组。
 
-    例如，可使用启用邮件的安全组、静态通讯组和 Office 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。 另外，不能从 Exchange Online 使用动态通讯组列表，因为此组不会复制到 Azure AD。
+    例如，你可以使用启用了邮件的安全组、静态通讯组和 Microsoft 365 组。 不能使用安全组（动态或静态），因为该组类型没有电子邮件地址。 另外，不能从 Exchange Online 使用动态通讯组列表，因为此组不会复制到 Azure AD。
 
 对于分配使用权限和访问控制权限：
 
@@ -127,7 +127,7 @@ Azure 信息保护使用用户和组的方式有三种：
 
 可以使用 Azure AD PowerShell 确认用户和组可用于 Azure 信息保护。 此外，还可以使用 PowerShell 确认可用于向他们授权的值。 
 
-例如，在 PowerShell 会话中使用 Azure Active Directory 的 V1 PowerShell 模块 [MSOnline](/powershell/module/msonline/?view=azureadps-1.0)，首先连接到服务并提供全局管理员凭据：
+例如，在 PowerShell 会话中使用 Azure Active Directory 的 V1 PowerShell 模块 [MSOnline](/powershell/module/msonline/)，首先连接到服务并提供全局管理员凭据：
 
 ```ps
 Connect-MsolService
@@ -175,9 +175,9 @@ Get-Msoluser | select DisplayName, UserPrincipalName, ProxyAddresses
 
     如果 UPN 值中的域名不是租户的已验证域，则不能用于 Azure 信息保护。 但是，当组电子邮件地址使用已验证域名时，用户仍然可以被授权为组成员。
 
-2. 如果 UPN 不可路由（例如， <strong>ankurroy@contoso.local</strong> ），请为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 还必须为 Office 设置注册表项。
+2. 如果 UPN 不可路由 (例如， <strong>ankurroy@contoso.local</strong>) ，为用户配置备用登录 ID，并指导他们使用此备用登录方式登录 Office。 还必须为 Office 设置注册表项。
 
-    有关详细信息，请参阅[配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id)和[Office 应用程序定期提示输入 SharePoint、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
+    有关详细信息，请参阅 [配置备用登录 ID](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 和 [Office 应用程序定期提示输入 SharePoint、OneDrive 和 Lync Online 的凭据](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)。
 
 > [!TIP]
 > 可以使用 Export-Csv cmdlet 将结果导出到电子表格，以便于进行管理，例如搜索和批量编辑以进行导入。
@@ -194,7 +194,7 @@ Get-MsolGroup | select DisplayName, ProxyAddresses
 
 确保显示要用于 Azure 信息保护的组。 对于显示的组，可以使用 **ProxyAddresses** 列中的电子邮件地址授权组成员使用 Azure Rights Management 服务。
 
-然后查看组是否包含要用于 Azure 信息保护的用户（或其他组）。 可以使用 PowerShell 来执行此操作（例如，[Get-MsolGroupMember](/powershell/module/msonline/Get-MsolGroupMember?view=azureadps-1.0)），或使用管理门户。
+然后查看组是否包含要用于 Azure 信息保护的用户（或其他组）。 可以使用 PowerShell 来执行此操作（例如，[Get-MsolGroupMember](/powershell/module/msonline/Get-MsolGroupMember)），或使用管理门户。
 
 对于使用安全组的两个 Azure Rights Management 服务配置方案，可以使用以下 PowerShell 命令查找对象 ID 并显示可用于标识这些组的名称。 还可以使用 Azure 门户查找这些组，复制对象 ID 的值并显示名称：
 
@@ -225,5 +225,5 @@ Get-MsolGroup | where {$_.GroupType -eq "Security"}
 
 - 如果你的订阅是在 2018 年 2 月之前获取的：必须自己激活此服务。 
 
-有关详细信息，包括检查激活状态，请参阅[从 Azure 信息保护中激活保护服务](./activate-service.md)。
+有关详细信息，包括检查激活状态，请参阅 [从 Azure 信息保护中激活保护服务](./activate-service.md)。
 

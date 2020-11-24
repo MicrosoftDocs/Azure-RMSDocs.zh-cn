@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fec116c8bd0c8f02d57a9772bacf87a11d0966ac
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: ab20a68a2895962095bc83904851ef3a9955dd79
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136969"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566217"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
@@ -28,7 +28,7 @@ ms.locfileid: "86136969"
 
 ## <a name="application-event-log-entries"></a>应用程序事件日志条目
 
-RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器”**** 的条目。 
+RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器”的条目。 
 
 例如，信息事件如下所示：
 
@@ -47,7 +47,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 与所有事件日志条目一样，进一步查看消息，了解更多详细信息。
 
-除了在首次部署连接器时检查事件日志以外，还应持续检查警告和错误。 连接器最初可能正常运行，但其他管理员可能会更改从属配置。 例如，其他管理员更改了 web 代理服务器配置，因此 RMS 连接器服务器无法再访问 internet （错误3001）或从指定为已授权使用连接器的组中删除计算机帐户（警告2001）。
+除了在首次部署连接器时检查事件日志以外，还应持续检查警告和错误。 连接器最初可能正常运行，但其他管理员可能会更改从属配置。 例如，其他管理员更改了 web 代理服务器配置，因此 RMS 连接器服务器无法再访问 internet (错误 3001) 或从指定为已授权使用连接器 (警告 2001) 的组中删除计算机帐户。
 
 ### <a name="event-log-ids-and-descriptions"></a>事件日志 ID 和说明
 
@@ -147,11 +147,11 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 每次 RMS 连接器遇到意外错误时都将记录此事件，且错误详细信息包含在事件消息中。
 
-事件消息中的文本“请求失败，出现了空响应”**** 可识别一个可能的原因。 如果你看到此文本，则可能是因为你有一个网络设备在对本地服务器与 RMS 连接器服务器之间的数据包进行 SSL 检查。 Azure Rights Management 服务不支持此配置，导致通信失败，并生成此事件日志消息。
+事件消息中的文本“请求失败，出现了空响应”可识别一个可能的原因。 如果你看到此文本，则可能是因为你有一个网络设备在对本地服务器与 RMS 连接器服务器之间的数据包进行 SSL 检查。 Azure Rights Management 服务不支持此配置，导致通信失败，并生成此事件日志消息。
 
 ----
 
-错误**3001**
+错误 **3001**
 
 **下载授权信息时出现异常。**
 
@@ -163,23 +163,23 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 ## <a name="performance-counters"></a>性能计数器
 
-安装 RMS 连接器后，它将自动创建 Microsoft Rights Management 连接器**** 性能计数器，有助于监视并改进使用 Azure Rights Management 服务的性能。 
+安装 RMS 连接器后，它将自动创建 Microsoft Rights Management 连接器性能计数器，有助于监视并改进使用 Azure Rights Management 服务的性能。 
 
 例如，当文档或电子邮件受到保护时，经常会经历延迟。 或者，当打开受保护文档或电子邮件时，也会经历延迟。 对于这些情况，性能计数器有助于确定延迟是由于连接器处理时间、Azure Rights Management 服务处理时间还是网络延迟所致。 
 
-若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”****、“服务响应时间”**** 和“连接器响应时间”**** 的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”****。
+若要帮助你识别出现延迟的位置，请查找包含“连接器处理时间”、“服务响应时间”和“连接器响应时间”的平均计数的计数器。 例如：“授权成功批处理请求平均连接器响应时间”。
 
-如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”**** 来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
+如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
-## <a name="logging"></a>日志记录
+## <a name="logging"></a>Logging
 
-使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0**** 的服务主体名称。 此名称是自动为 RMS 连接器创建。
+使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0 的服务主体名称。 此名称是自动为 RMS 连接器创建。
 
-有关使用日志记录的详细信息，请参阅[记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
+有关使用日志记录的详细信息，请参阅 [记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
 
-如果需要更详细的日志记录以供诊断使用，可以使用 Windows Sysinternals 中的 [Debugview](https://go.microsoft.com/fwlink/?LinkID=309277)。 在 IIS 中修改默认网站的 web.config 文件，启用对 RMS 连接器的跟踪：
+如果需要更详细的日志记录以供诊断使用，可以使用 Windows Sysinternals 中的 [Debugview](/sysinternals/downloads/debugview)。 在 IIS 中修改默认网站的 web.config 文件，启用对 RMS 连接器的跟踪：
 
-1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”**** 中找到 web.config 文件。
+1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”中找到 web.config 文件。
 
 2. 找到以下行：
 

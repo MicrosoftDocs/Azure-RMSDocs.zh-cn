@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: add790bf067ccb4c4b58b1f5654c869d83976464
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 7066b6a13afd6c7a71b0b0740e3ffd71d56e3a43
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564393"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566200"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>如何使用 Azure AD 注册应用并为其启用 RMS
 
@@ -29,7 +29,7 @@ ms.locfileid: "88564393"
 用户身份验证是在设备应用与 RMS 基础结构之间建立通信的必要步骤。 此身份验证过程使用标准 OAuth 2.0 协议，该协议需要有关当前用户及其身份验证请求的关键信息。
 
 ## <a name="registration-via-azure-portal"></a>通过 Azure 门户注册
-首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”**** 和“重定向 URI”**** 以便稍后使用。
+首先，按照此指南开始通过 Azure 门户配置应用的注册，如[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中所述。 请务必从此过程复制并保存“客户端 ID”和“重定向 URI”以便稍后使用。
 
 ## <a name="complete-your-information-protection-integration-agreement-ipia"></a>完成信息保护集成协议 (IPIA)
 必须先与 Microsoft 信息保护团队一起完成 IPIA，然后才能部署应用程序。 有关全部详细信息，请参阅本主题的第一部分[部署到生产](deploying-your-application.md)。
@@ -37,9 +37,9 @@ ms.locfileid: "88564393"
 ## <a name="implement-user-authentication-for-your-app"></a>为你的应用实施用户身份验证
 每个 RMS API 都具有回调，必须实现它才能启用用户的身份验证。 然后 RMS SDK 4.2 会在你未提供访问令牌时、你的访问令牌需要刷新时或是访问令牌已过期时使用你的回调实现。
 
-- Android -  [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) 和 [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx) 接口。
-- iOS / OS X -  [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 协议。
--  Windows Phone / Window RT -  [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx) 接口。
+- Android -  [AuthenticationRequestCallback](/previous-versions/windows/desktop/msipcthin2/authenticationrequestcallback-interface-java) 和 [AuthenticationCompletionCallback](/previous-versions/windows/desktop/msipcthin2/authenticationcompletioncallback-interface-java) 接口。
+- iOS / OS X -  [MSAuthenticationCallback](/previous-versions/windows/desktop/msipcthin2/msauthenticationcallback-protocol-objc) 协议。
+-  Windows Phone / Window RT -  [IAuthenticationCallback](/previous-versions/windows/desktop/msipcthin2/iauthenticationcallback) 接口。
 - Linux -  [IAuthenticationCallback](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 接口。
 
 ### <a name="what-library-to-use-for-authentication"></a>要用于身份验证的库是什么
@@ -62,13 +62,13 @@ ADAL 需要多项关键信息才能成功地向 Azure RMS（或 AD RMS）验证�
 
 - **颁发机构** – 身份验证终结点（通常是 AAD 或 ADFS）的 URL。
 - **资源** - 尝试访问的服务应用程序（通常是 Azure RMS 或 AD RMS）的 URL/URI。
-- **用户 Id** – 要访问应用的用户的 UPN（通常是电子邮件地址）。 此参数在用户未知时可以为空，还用于缓存用户令牌或从缓存中请求令牌。 它通常也用作用户提示的*提示*。
+- **用户 Id** – 要访问应用的用户的 UPN（通常是电子邮件地址）。 此参数在用户未知时可以为空，还用于缓存用户令牌或从缓存中请求令牌。 它通常也用作用户提示的 *提示*。
 - **客户端 Id** – 客户端应用的 ID。 这必须是有效 Azure AD 应用程序 ID。
 来自上一个注册步骤（通过 Azure 门户）。
 - **重定向 Uri** – 向身份验证库提供身份验证代码的 URI 目标。 iOS 和 Android 需要特定的格式。 ADAL 相应的 GitHub 存储库的 README 文件中对此已有说明。 该值来自上一个注册步骤（通过 Azure 门户）。
 
 > [!NOTE]
-> “范围”**** 当前未使用，但可能会使用，因此会保留供将来使用。
+> “范围”当前未使用，但可能会使用，因此会保留供将来使用。
 
 Android：`msauth://packagename/Base64UrlencodedSignature`
 

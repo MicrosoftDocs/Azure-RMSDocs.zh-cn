@@ -1,25 +1,25 @@
 ---
 title: 类 RemoveContentHeaderAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 removecontentheaderaction：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 removecontentheaderaction：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: cea5d5c857e9ca6ef3a7028cdf8329e58c7f0ec7
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 47adf87ab294da64df37d03bf846d723c33d9c8a
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764512"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565019"
 ---
 # <a name="class-removecontentheaderaction"></a>类 RemoveContentHeaderAction 
 指定从文档中删除内容头的操作类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： vector\<std：： String\>& GetUIElementNames （）  |  获取应用于查找应删除的 UI 元素的名称列表。
+public const std：： vector \<std::string\>& GetUIElementNames ( # A2  |  获取应用于查找应删除的 UI 元素的名称列表。
   
 ## <a name="members"></a>成员
   

@@ -5,13 +5,13 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 4/16/2020
-ms.openlocfilehash: 0d24a2fedad93ecca3b4d5a48f5434746a7a7c4e
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.date: 9/22/2020
+ms.openlocfilehash: 2939a4c64ab3e1a47704811875c6a7e941bcfe3c
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763842"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565251"
 ---
 # <a name="structures"></a>结构
 
@@ -21,9 +21,9 @@ ms.locfileid: "81763842"
 
 | 字段 | 说明 |
 |---|---|
-| applicationId | AAD 门户中设置的应用程序标识符（应为不带方括号的 GUID）。  |
-| applicationName | 应用程序名称（应仅包含有效 ASCII 字符，不包括 ";"）  |
-| applicationVersion | 所使用的应用程序的版本（应只包含有效的 ASCII 字符，不包括 ";"）   |
+| applicationId | 在 AAD 门户中设置的应用程序标识符， (应为不带方括号) 的 GUID。  |
+| applicationName | 应用程序名称、 (应该只包含有效的 ASCII 字符，不包括 ";")   |
+| applicationVersion | 所使用的应用程序的版本 (应该只包含有效的 ASCII 字符，不包括 ";")    |
 
 
 ```c
@@ -62,7 +62,7 @@ MIP 对象的不透明句柄
 | 字段 | 说明 |
 |---|---|
 | typeId | 用于唯一标识特定句柄类型的幻数  |
-| data | 原始处理数据  |
+| 数据 | 原始处理数据  |
 
 
 ```c
@@ -88,10 +88,10 @@ typedef struct {
 
 键/值对
 
-| 字段 | 说明 |
+| 字段 | 描述 |
 |---|---|
 | key | 键  |
-| value | “值”  |
+| 值 | 值  |
 
 
 ```c
@@ -132,7 +132,7 @@ HTTP 请求/响应标头
 | 字段 | 说明 |
 |---|---|
 | name | 标头名称/键  |
-| value | 标头值  |
+| 值 | 标头值  |
 
 
 ```c
@@ -149,8 +149,8 @@ HTTP 请求
 
 | 字段 | 说明 |
 |---|---|
-| ID | 唯一请求 ID--与 mip_cc_http_response 中的同一属性关联  |
-| type | HTTP 请求类型（例如 GET 和 POST）  |
+| id | 唯一请求 ID--与 mip_cc_http_response 中的同一属性关联  |
+| type | HTTP 请求类型 (例如 GET 与 POST)   |
 | url | HTTP 请求 URL  |
 | bodySize | HTTP 请求正文的大小（字节）  |
 | body | Buffer 包含 HTTP 请求正文  |
@@ -177,7 +177,7 @@ HTTP 响应
 
 | 字段 | 说明 |
 |---|---|
-| ID | 唯一请求 ID--与 mip_cc_http_request 中的同一属性关联  |
+| id | 唯一请求 ID--与 mip_cc_http_request 中的同一属性关联  |
 | statusCode | HTTP 响应状态代码  |
 | bodySize | HTTP 响应正文大小（字节）  |
 | body | Buffer 包含 HTTP 响应正文  |
@@ -222,7 +222,7 @@ typedef struct {
 | 字段 | 说明 |
 |---|---|
 | feature | 功能名称  |
-| value | 启用/禁用状态  |
+| 值 | 启用/禁用状态  |
 
 
 ```c
@@ -239,7 +239,7 @@ typedef struct {
 
 | 字段 | 说明 |
 |---|---|
-| 用户 | 用户列表  |
+| users | 用户列表  |
 | usersCount | 用户数  |
 | 权限 | 权限列表  |
 | rightsCount | 权限数量  |
@@ -261,7 +261,7 @@ typedef struct {
 
 | 字段 | 说明 |
 |---|---|
-| 用户 | 用户列表  |
+| users | 用户列表  |
 | usersCount | 用户数  |
 | 角色 | 角色列表  |
 | rolesCount | 角色数量  |
@@ -283,8 +283,8 @@ typedef struct {
 
 | 字段 | 说明 |
 |---|---|
-| ID | 任务 ID  |
-| delayMs | 在任务执行之前延迟（以毫秒为单位）  |
+| id | 任务 ID  |
+| delayMs | 在任务执行 (（以毫秒为单位）之前延迟)   |
 | executeOnIndependentThread | 此任务是应在完全独立的线程上执行，还是可以重复使用共享线程  |
 
 
@@ -327,51 +327,38 @@ typedef struct {
 
 ## <a name="mip_cc_document_state"></a>mip_cc_document_state
 
-用于检索文档元数据的回调函数定义，按名称/前缀筛选
+用于检索文档元数据的回调函数定义，按名称/前缀筛选。
+
+| 字段 | 说明 |
+|---|---|
+| dataState | 文档数据与应用程序交互时的状态。 |
+| contentMetadataCallback | 文档元数据回调。 |
+| protectionDescriptor | 如果文档当前受保护，则为保护描述符; 否则为 null。  |
+| contentFormat | 文档格式 (文件与电子邮件) 。  |
+| auditMetadata | 发送审核报告时使用的特定于应用程序的可选元数据。 识别的值： "发送方"：发件人电子邮件地址;"收件人"：电子邮件收件人的 JSON 数组;"LastModifiedBy"：最后修改文档的用户的电子邮件地址;"LastModifiedDate"：上次修改文档的日期  |
+| contentMetadataVersion | 文档元数据版本，默认值应为0。  |
+| contentMetadataVersionFormat | 描述如何处理元数据版本控制。  |
 
 ```c
 typedef struct {
-  /**
-   * Human-readable document description visible in tenant audit portal
-   *     Example for a file: [path\filename]
-   *     Example for an email: [Subject:Sender]
-   */
+
   const char* contentId;
 
-  /**
-   * State of document data as application interacts with it
-   */
+
   mip_cc_data_state dataState;
 
-  /**
-   * Document metadata callback
-   */
   mip_cc_metadata_callback contentMetadataCallback;
 
-  /**
-   * Protection descriptor if document is currently protected, else null
-   */
   mip_cc_protection_descriptor protectionDescriptor;
 
-  /**
-   * Format of document (file vs. email)
-   */
   mip_cc_content_format contentFormat;
 
-  /**
-   * Optional application-specific metadata that is used when sending audit reports
-   *     Recognized values:
-   *       'Sender': Sender email address
-   *       'Recipients': JSON array of email recipients
-   *       'LastModifiedBy': Email address of the user who last modified a document
-   *       'LastModifiedDate': Date a document was last modified
-   */
   mip_cc_dictionary auditMetadata;
-  
-  /**
-   * Document metadata version, default should be 0.
-   */
-  unsigned int contentMetadataVersion;
+
+  uint32_t contentMetadataVersion;
+
+  mip_cc_metadata_version_format contentMetadataVersionFormat;
+
 } mip_cc_document_state;
 
 ```
@@ -380,11 +367,11 @@ typedef struct {
 
 元数据条目
 
-| 字段 | 说明 |
+| 字段 | 描述 |
 |---|---|
 | key | 密钥输入 |
-| value | 值输入  |
-| version | 版本项应初始化为0，除非另外知道 |
+| 值 | 值输入  |
+| 版本 | 版本项应初始化为0，除非另外知道 |
 
 
 ```c

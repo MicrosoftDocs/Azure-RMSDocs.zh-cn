@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 63876f55d38b3f97f41ad3a0b350ede8234202d3
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 30a5dd75aece0afbbed67c9e7fb92c4169f0a1a8
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68788652"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566149"
 ---
 # <a name="client"></a>客户端
 
@@ -31,10 +31,10 @@ RMS 客户端 2.1 公开的功能使用户可以创建、发布和使用受保�
 
 Rights Management Services SDK 2.1 适用于 RMS 客户端 2.1。 在 RMS SDK 2.1 上构建的启用权限的应用程序必须使用 RMS 客户端 2.1。
 
-有关详细信息，请参阅[有关 RMS 客户端 2.1 的 TechNet 文档](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx)。
+有关详细信息，请参阅[有关 RMS 客户端 2.1 的 TechNet 文档](../rms-client/client-deployment-notes.md)。
 
 ## <a name="related-topics"></a>相关主题
 
 * [概述](ad-rms-overview.md)
 * [使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
-* [有关 RMS 客户端 2.1 的 TechNet 文档](https://technet.microsoft.com/library/jj159267(WS.10).aspx)
+* [有关 RMS 客户端 2.1 的 TechNet 文档](../rms-client/client-deployment-notes.md)

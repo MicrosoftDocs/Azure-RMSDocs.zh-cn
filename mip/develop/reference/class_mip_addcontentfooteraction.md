@@ -1,22 +1,22 @@
 ---
 title: 类 AddContentFooterAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 addcontentfooteraction：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 addcontentfooteraction：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 58c0767f2c880a52ef4a831e5d57670820187fc7
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 58f4e72361f9dfbe1e13b1d636f5cb6acd287784
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763771"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565246"
 ---
 # <a name="class-addcontentfooteraction"></a>类 AddContentFooterAction 
 指定向文档添加内容脚注的操作类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetUIElementName()  |  用来标记内容脚注元素的 API。
@@ -33,7 +33,7 @@ public int GetMargin() const  |  从底部获取脚注的边距。
 用来标记内容脚注元素的 API。
 
   
-**返回结果**：应用于保存内容脚注的 UI 元素的名称。 如果需要删除内容脚注，将在 [RemoveContentFooterAction](class_mip_removecontentfooteraction.md) 中返回相同名称。
+**返回结果**：应用于保存内容脚注的 UI 元素的名称。 如果需要删除内容脚注，将在 RemoveContentFooterAction 中返回相同名称。
   
 ### <a name="gettext-function"></a>GetText 函数
 获取应添加到内容页脚的文本。
@@ -57,7 +57,7 @@ public int GetMargin() const  |  从底部获取脚注的边距。
 获取用于显示内容页脚的字体颜色。
 
   
-返回结果****：字符串形式的字体颜色（例如“#000000”）。
+返回结果：字符串形式的字体颜色（例如“#000000”）。
   
 ### <a name="getalignment-function"></a>GetAlignment 函数
 获取内容页脚的对齐方式。
@@ -65,10 +65,10 @@ public int GetMargin() const  |  从底部获取脚注的边距。
   
 **返回**： ContentMarkAlignment 枚举器： LEFT |RIGHT |CENTER. 
   
-**** 另请参阅：ContentMarkAlignment
+另请参阅：ContentMarkAlignment
   
 ### <a name="getmargin-function"></a>GetMargin 函数
 从底部获取脚注的边距。
 
   
-返回结果****：文档底部的边距（例如 10 毫米）。
+返回结果：文档底部的边距（例如 10 毫米）。

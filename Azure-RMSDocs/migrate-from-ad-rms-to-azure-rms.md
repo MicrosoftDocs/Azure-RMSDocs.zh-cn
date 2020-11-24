@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ced3f46a5050a60ae33a1a0caab2375bd27d9ee7
-ms.sourcegitcommit: 6d10435c67434bdbbdd51b4a3535d0efaf8307da
+ms.openlocfilehash: bb79a5ffef2ca6724fbebc87c90379d142668dac
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869124"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566065"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -40,11 +40,11 @@ ms.locfileid: "86869124"
 
 - [规划和实现 Azure 信息保护租户密钥](./plan-implement-tenant-key.md)：了解可用于 Azure 信息保护租户的密钥管理选项；其中，云中的 SLC 密钥等效项要么由 Microsoft（默认）管理，要么由自己管理（“自带密钥”或 BYOK 配置）。 
 
-- [Rms 服务发现](./rms-client/client-deployment-notes.md#rms-service-discovery)： rms 客户端部署说明的此部分说明了服务发现的顺序：**注册表**、**服务连接点（SCP）**、**云**。 在迁移过程中，如果仍在安装 SCP，则可以使用 Azure 信息保护租户的注册表设置来配置客户端，以确保它们不会使用从 SCP 返回的 AD RMS 群集。
+- [Rms 服务发现](./rms-client/client-deployment-notes.md#rms-service-discovery)： rms 客户端部署说明的此部分说明了服务发现的顺序是 **注册表**，然后 **服务连接点 (SCP)**，然后是 **云**。 在迁移过程中，如果仍在安装 SCP，则可以使用 Azure 信息保护租户的注册表设置来配置客户端，以确保它们不会使用从 SCP 返回的 AD RMS 群集。
 
 - [ 连接器概述](./deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector)：RMS 连接器文档的此部分说明了本地服务器如何连接到 Azure 权限管理服务以保护文档和电子邮件。
 
-此外，如果你不熟悉 AD RMS 的工作方式，你可能会发现阅读 Azure RMS 的工作原理是非常有用的[呢？在](./how-does-it-work.md)这种情况下，帮助你确定哪些技术流程对于云版本相同或不同。
+此外，如果你不熟悉 AD RMS 的工作方式，你可能会发现阅读 Azure RMS 的工作原理是非常有用的 [呢？在](./how-does-it-work.md) 这种情况下，帮助你确定哪些技术流程对于云版本相同或不同。
 
 ## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的先决条件
 
@@ -74,7 +74,7 @@ ms.locfileid: "86869124"
 
     请参阅 [Azure 信息保护的要求](./requirements.md)。
 
-    请注意，如果你的计算机运行的是 Office 2010，则必须[为用户安装 Azure 信息保护客户端或 Azure 信息保护统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)，因为这些客户端提供对云服务的用户进行身份验证的功能。 对于更高版本的 Office，需要对这些客户端进行分类和标记，但 Azure 信息保护客户端是可选的，但是如果你只想要保护数据，则建议使用此选项。 有关详细信息，请参阅[Azure 信息保护客户端](./rms-client/client-admin-guide.md)管理指南和[azure 信息保护统一标签客户端](./rms-client/clientv2-admin-guide.md)。
+    请注意，如果你的计算机运行的是 Office 2010，则必须 [为用户安装 Azure 信息保护客户端或 Azure 信息保护统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)，因为这些客户端提供对云服务的用户进行身份验证的功能。 对于更高版本的 Office，需要对这些客户端进行分类和标记，但 Azure 信息保护客户端是可选的，但是如果你只想要保护数据，则建议使用此选项。 有关详细信息，请参阅 [Azure 信息保护客户端](./rms-client/client-admin-guide.md) 管理指南和 [azure 信息保护统一标签客户端](./rms-client/clientv2-admin-guide.md)。
 
     尽管要求必须拥有 Azure 信息保护订阅才能迁移 AD RMS，但我们建议在开始迁移之前不要激活 Rights Management 服务。 迁移过程包括此激活步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护租户之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以凭借额外的步骤从 AD RMS 迁移。
 
@@ -87,7 +87,7 @@ ms.locfileid: "86869124"
 
     请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
-- 如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能****（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
+- 如果你已使用过 Exchange Server 的信息权限管理 (IRM) 功能（例如，传输规则和 Outlook Web Access）或者带 AD RMS 的 SharePoint Server：
 
   - 为这些服务器上未提供 IRM 的较短期间拟定计划
  
@@ -97,7 +97,7 @@ ms.locfileid: "86869124"
 
 - **如果想要通过使用 HSM 保护的密钥管理自己的 Azure 信息保护租户密钥**：
 
-    - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅[Azure Key Vault 定价页](https://azure.microsoft.com/pricing/details/key-vault/)。 
+    - 此可选的配置需要 Azure 密钥保管库和一个支持含 HSM 保护密钥的密钥保管库的 Azure 订阅。 有关详细信息，请参阅 [Azure Key Vault 定价页](https://azure.microsoft.com/pricing/details/key-vault/)。 
 
 
 ### <a name="cryptographic-mode-considerations"></a>加密模式注意事项
@@ -106,13 +106,11 @@ ms.locfileid: "86869124"
 
 确认 AD RMS 加密模式：
  
-- 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”**** 选项卡。 
+- 对于 Windows Server 2012 R2 和 Windows 2012：“AD RMS 群集属性”>“常规”选项卡。 
 
 ### <a name="migration-limitations"></a>迁移限制
 
-<!--These aren't actually limitations, but really just a description of how this feature works. Shouldn't be doc'd as lims, but rather simplified and clarified. Leaving this here, take a new look at this page. -->
-
-- 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看[Azure 信息保护的要求](./requirements.md)中的 "支持的应用程序和客户端" 部分。
+- 如果 Azure 信息保护使用的 Rights Management 服务不支持你的软件和客户端，则它们无法保护或使用受 Azure Rights Management 保护的内容。 请务必查看 [Azure 信息保护的要求](./requirements.md)中的 "支持的应用程序和客户端" 部分。
 
 - 如果将你的 AD RMS 部署配置为与外部合作伙伴协作（例如，通过使用受信任的用户域或联合），则在你迁移的同时或之后尽早的时间，这些合作伙伴也必须迁移到 Azure 信息保护。 若要继续访问你的组织以前使用 Azure 信息保护进行保护的内容，这些合作伙伴必须进行与你进行的更改（在本文档中提供了这些更改）类似的客户端配置更改。
     
@@ -128,11 +126,11 @@ ms.locfileid: "86869124"
 
 - 他们的 Azure Rights Management 服务尚未激活，但他们知道其 Azure Rights Management 服务 URL。
 
-    他们可以通过以下方式获取此信息：安装 Azure Rights Management 工具，连接到服务（[AipService](/powershell/module/aipservice/connect-aipservice)），然后查看其 Azure Rights Management 服务（[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration)）的租户信息。
+    他们可以通过以下方式获取此信息：安装 Azure Rights Management 工具，连接到服务 ([AipService](/powershell/module/aipservice/connect-aipservice)) ，然后查看其 Azure Rights Management 服务的租户信息 ([AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration)) 。
 
 - 他们向你提供其 AD RMS 群集的 URL 及其 Azure Rights Management 服务 URL，以便你可以配置已迁移客户端，将其受 AD RMS 保护的内容的请求重定向到其租户的 Azure Rights Management 服务中。 步骤 7 说明了如何配置客户端重定向。
 
-- 他们需先将其 AD RMS 群集根项 (SLC) 导入到其租户中，然后你才能开始迁移你的用户。 同样，你也需要先导入你的 AD RMS 群集根项，然后他们才能开始迁移其用户。 此迁移过程的步骤4中介绍了导入密钥的说明[。从 AD RMS 导出配置数据并将其导入到 Azure 信息保护](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)。 
+- 他们需先将其 AD RMS 群集根项 (SLC) 导入到其租户中，然后你才能开始迁移你的用户。 同样，你也需要先导入你的 AD RMS 群集根项，然后他们才能开始迁移其用户。 此迁移过程的步骤4中介绍了导入密钥的说明 [。从 AD RMS 导出配置数据并将其导入到 Azure 信息保护](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)。 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>将 AD RMS 迁移到 Azure 信息保护的步骤概述
 
@@ -156,7 +154,7 @@ ms.locfileid: "86869124"
 
 - **步骤4。从 AD RMS 导出配置数据并将其导入到 Azure 信息保护**
 
-    从 AD RMS 将配置数据（密钥、模板、Url）导出到 XML 文件，然后使用 AipServiceTpd PowerShell cmdlet 将该文件上传到 azure 信息保护中的 Azure Rights Management 服务。 然后，确定要使用哪个导入的服务器许可方证书 (SLC) 密钥作为 Azure 权限管理服务的租户密钥。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
+    将 (密钥、模板和 Url) AD RMS 中的配置数据导出到 XML 文件，然后使用 Import-AipServiceTpd PowerShell cmdlet 将该文件上传到 azure Rights Management 服务中的 azure 信息保护。 然后，确定要使用哪个导入的服务器许可方证书 (SLC) 密钥作为 Azure 权限管理服务的租户密钥。 可能需要其他步骤，具体取决于你的 AD RMS 密钥配置：
 
     - **软件保护密钥到软件保护密钥的迁移**：
 
@@ -181,7 +179,7 @@ ms.locfileid: "86869124"
 
 [**第 3 阶段：客户端配置**](migrate-from-ad-rms-phase3.md)
 
-- 步骤 7：重新配置 Windows 计算机以使用 Azure 信息保护****
+- 步骤 7：重新配置 Windows 计算机以使用 Azure 信息保护
 
     必须将现有 Windows 计算机重新配置为使用 Azure Rights Management 服务而不是 AD RMS。 此步骤适用于你组织中的计算机以及合作伙伴组织(如果你在运行 AD RMS 时已与其协作)中的计算机。
 
@@ -204,11 +202,11 @@ ms.locfileid: "86869124"
 
 - **步骤 11：完成客户端迁移任务**
 
-    如果部署了[移动设备扩展](https://technet.microsoft.com/library/dn673574.aspx)以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 和平板电脑以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
+    如果部署了[移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574(v=ws.11))以支持移动设备（如 iOS 手机和 iPad、Android 手机和平板电脑、Windows Phone 和平板电脑以及 Mac 计算机），则必须删除 DNS 中重定向这些客户端的 SRV 记录才能使用 AD RMS。 
     
     不再需要准备阶段配置的载入控件。 但是，如果因选择同时迁移所有内容（而非分步迁移）而未使用载入控件，可跳过有关删除载入控件的说明。
     
-    如果 Windows 计算机运行的是 Office 2010，请检查是否需要禁用“AD RMS 权限策略模板管理（自动）”任务****。
+    如果 Windows 计算机运行的是 Office 2010，请检查是否需要禁用“AD RMS 权限策略模板管理（自动）”任务。
 
 - **步骤12：重新生成 Azure 信息保护租户密钥**
 
@@ -217,4 +215,3 @@ ms.locfileid: "86869124"
 
 ## <a name="next-steps"></a>后续步骤
 若要开始迁移，请转到[第 1 阶段：准备](migrate-from-ad-rms-phase1.md)。
-

@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: tommos
-ms.openlocfilehash: ed6407e99677bbed293959e15720c4c7d418aa54
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 6e9e726c133f5796a2406a1cacb746fc561a6457
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555817"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566100"
 ---
 # <a name="microsoft-information-protection-sdk---cache-storage"></a>Microsoft 信息保护 SDK-缓存存储
 
@@ -19,21 +19,21 @@ MIP SDK 实现用于维护 SDK 缓存存储的 SQLite3 数据库。 在 Microsof
 
 为了改善 SDK 的安全状况，我们添加了对磁盘缓存上第二种类型的支持，它使用平台特定的加密 Api 来保护数据库及其内容。
 
-将配置文件作为 `FileProfileSettings`、`PolicyProfileSettings`或 `ProtectionProfileSettings` 对象的一部分进行加载时，应用程序将定义缓存类型。 缓存类型在配置文件的生存期内是静态的。 更改为不同类型的缓存存储类型需要销毁现有配置文件并创建一个新配置文件。
+作为 `FileProfileSettings` 、或对象的一部分加载配置文件时，应用程序定义缓存类型 `PolicyProfileSettings` `ProtectionProfileSettings` 。 缓存类型在配置文件的生存期内是静态的。 更改为不同类型的缓存存储类型需要销毁现有配置文件并创建一个新配置文件。
 
 ## <a name="cache-storage-types"></a>缓存存储类型
 
 从 MIP SDK 版本1.3 开始，以下存储缓存类型可用。
 
-| 键入            | 用途                                                                                                                         |
+| 类型            | 用途                                                                                                                         |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | InMemory        | 在应用程序的内存中维护存储缓存。                                                                       |
 | OnDisk          | 将数据库存储在磁盘上的 "设置" 对象中提供的目录中。 数据库以纯文本形式存储。              |
 | OnDiskEncrypted | 将数据库存储在磁盘上的 "设置" 对象中提供的目录中。 使用特定于 OS 的 Api 对数据库进行加密。 |
 
-应用程序生成的每个**引擎**都会生成一个新的加密密钥。
+应用程序生成的每个 **引擎** 都会生成一个新的加密密钥。
 
-缓存存储通过一个配置文件设置对象通过 `mip::CacheStorageType` 枚举设置。
+缓存存储通过枚举设置为通过一个配置文件设置对象进行设置 `mip::CacheStorageType` 。
 
 ```cpp 
 FileProfile::Settings profileSettings(mMipContext,
@@ -57,46 +57,46 @@ FileProfile::Settings profileSettings(mMipContext,
 | ----------------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Microsoft Windows | Windows 8 及更高版本    | Windows 7 仅支持 CacheStorageType：： OnDisk                                                                                    |
 | macOS             | High Sierra 及更高版本  |                                                                                                                                     |
-| Ubuntu Linux      | 16.04 及更高版本        | 需要[SecretService](https://developer.gnome.org/libsecret/unstable/SecretService.html)和 `LinuxEncryptedCache` 功能标志。 |
+| Ubuntu Linux      | 16.04 及更高版本        | 需要 [SecretService](https://developer.gnome.org/libsecret/unstable/SecretService.html) 和 `LinuxEncryptedCache` 功能标志。 |
 | Android           | Android 7.0 或更高版本   |                                                                                                                                     |
 | iOS               | 所有支持的版本 |                                                                                                                                     |
 
 虽然 MIP SDK 支持其他 Linux 分发，但我们未在 RedHat Enterprise Linux、CentOS 或 Debian 上测试缓存加密。
 
 > [!NOTE]
-> 用于在 Linux 上启用缓存存储的功能标志通过 `mip::MipContext::CreateWithCustomFeatureSettings()` 设置
+> 用于在 Linux 上启用缓存存储的功能标志是通过 `mip::MipContext::CreateWithCustomFeatureSettings()`
 
 ## <a name="cache-storage-database-tables"></a>缓存存储数据库表
 
-MIP SDK 为缓存维护两个数据库。 一种用于保护 Api，维护保护状态详细信息。 另一种是用于策略 Api 并维护策略详细信息和服务信息。 两者均存储在 settings 对象的**mip\mip.policies.sqlite3**和**mip\mip.protection.sqlite3**下定义的路径中。
+MIP SDK 为缓存维护两个数据库。 一种用于保护 Api，维护保护状态详细信息。 另一种是用于策略 Api 并维护策略详细信息和服务信息。 两者均存储在 settings 对象的 **mip\mip.policies.sqlite3** 和 **mip\mip.protection.sqlite3** 下定义的路径中。
 
 ### <a name="protection-database"></a>保护数据库
 
-| 表         | 用途                                                        | 已加密 |
+| 表         | 目的                                                        | 已加密 |
 | ------------- | -------------------------------------------------------------- | --------- |
 | AuthInfoStore | 存储身份验证质询详细信息。                       | 否        |
 | ConsentStore  | 存储每个引擎的许可结果。                        | 否        |
 | DnsInfoStore  | 存储 SDK 保护操作的 DNS 查找结果        | 否        |
 | EngineStore   | 存储引擎详细信息、关联用户和自定义客户端数据 | 否        |
-| KeyStore      | 存储每个引擎的对称加密密钥。              | “是”       |
-| LicenseStore  | 存储区使用以前解密的数据的许可证信息。  | “是”       |
+| KeyStore      | 存储每个引擎的对称加密密钥。              | 是       |
+| LicenseStore  | 存储区使用以前解密的数据的许可证信息。  | 是       |
 | SdInfoStore   | 存储服务发现结果。                              | 否        |
 
 ### <a name="policy-database"></a>策略数据库
 
-| 表           | 用途                                                          | 已加密 |
+| 表           | 目的                                                          | 已加密 |
 | --------------- | ---------------------------------------------------------------- | --------- |
-| KeyStore        | 存储每个引擎的对称加密密钥。                | “是”       |
-| 策略        | 存储每个用户的标签策略信息。                   | “是”       |
+| KeyStore        | 存储每个引擎的对称加密密钥。                | 是       |
+| 策略        | 存储每个用户的标签策略信息。                   | 是       |
 | PoliciesUrl     | 为特定用户存储后端策略服务 URL。             | 否        |
-| 敏感度     | 存储特定用户策略的分类规则。          | “是”       |
+| 敏感性     | 存储特定用户策略的分类规则。          | 是       |
 | SensitivityUrls | 为特定用户存储后端敏感度策略服务 URL。 | 否        |
 
 ## <a name="database-size-considerations"></a>数据库大小注意事项
 
 数据库大小取决于两个因素：要添加到缓存中的引擎数量，以及缓存的保护许可证数量。 在 MIP SDK 1.3 中，没有在许可证缓存过期的情况下进行清理的机制。 如果缓存增长超过所需的大小，则必须有外部进程删除缓存。
 
-最重要的数据库增长因素是保护许可证缓存。 如果不需要授权缓存，则这可能是因为服务往返行程不会影响应用程序性能，或者缓存可能会增长得太大，可以禁用许可证缓存。 这是通过将 `FileProfile::Settings` 对象的 `CanCacheLicenses` 设置为 false 来完成的。
+最重要的数据库增长因素是保护许可证缓存。 如果不需要授权缓存，则这可能是因为服务往返行程不会影响应用程序性能，或者缓存可能会增长得太大，可以禁用许可证缓存。 这是通过将 `CanCacheLicenses` 对象设置为 false 来完成的 `FileProfile::Settings` 。
 
 ```cpp
 FileProfile::Settings profileSettings(mMipContext,
@@ -107,3 +107,11 @@ FileProfile::Settings profileSettings(mMipContext,
 
 profileSettings.SetCanCacheLicenses(false);
 ```
+
+### <a name="caching-api-engines"></a>缓存 API 引擎
+
+通常，在 MIP SDK 中，将为执行 API 操作的每个用户创建一个 API 引擎，并为代表经过身份验证的标识所执行的所有操作提供一个接口。 如 [配置文件和引擎概念](concept-profile-engine-cpp.md)中所述，FileEngine、PolicyEngine 或 ProtectionEngine 都有两种状态 `CREATED` 和 `LOADED` 。 需要创建和加载引擎才能执行 SDK 操作。 如果未使用引擎，则 API 会缓存引擎，并尽可能长的时间将其保留 `CREATED` 为状态，具体取决于可用的资源。 各自的 API 配置文件类还提供了一个方法 `UnloadEngineAsync` 来显式实现此目的。
+
+每个引擎都有一个唯一 `id` 的标识符，用于所有引擎管理操作。 如果应用程序未提供 id，则客户端应用程序可以显式提供一个 id，或者 SDK 会生成一个 id。 如果在创建引擎时使用引擎设置对象提供唯一标识符，并在 API 配置文件中启用了缓存（如上所述），则每次用户使用 SDK 执行操作时，都可以使用相同的引擎。 按照代码段中的步骤创建 `[mip::FileEngine](./concept-profile-engine-file-engine-cpp.md#create-file-engine-settings)` `[mip::PolicyEngine](./concept-profile-engine-policy-engine-cpp.md#implementation-create-policy-engine-settings)` 。
+
+如果无法提供现有引擎 Id，将导致额外的服务往返，以获取策略，并将提取可能已为现有引擎缓存的许可证。 缓存引擎 ID alllows SDK 脱机访问先前解密的信息和常规性能改进。

@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护客户端文件和使用情况日志记录
 description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件和使用情况日志记录的相关信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 09/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 676a58b6dc16a8a61b1a528f5b5d0a043c427c09
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 4a8ee6c5f3879786b76a8466b198b0b4040a540f
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048946"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566241"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
 
 >*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -45,7 +45,7 @@ ms.locfileid: "86048946"
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的使用情况日志记录
 
-客户端将用户活动记录到本地 Windows 事件日志**应用程序和服务日志**  >  **Azure 信息保护**。 这些事件包括以下信息：
+客户端将用户活动记录到本地 Windows 事件日志 **应用程序和服务日志**  >  **Azure 信息保护**。 这些事件包括以下信息：
 
 - 客户端版本、策略 ID
 
@@ -57,9 +57,9 @@ ms.locfileid: "86048946"
 
     - 设置标签：信息 ID 101
     
-    - 设置标签（较低）：信息 ID 101
+    - 设置标签 (降低) ：信息 ID 102
     
-    - 设置标签（较高）：信息 ID 101
+    - 设置标签 (更高) ：信息 ID 103
     
     - 删除标签：信息 ID 104
     
@@ -81,7 +81,7 @@ ms.locfileid: "86048946"
     
 - 操作源：
     
-    - Manual 
+    - 手动 
     
     - 建议
     

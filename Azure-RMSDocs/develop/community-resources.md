@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 01/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 6a58d8b9b1a445a8a41ba428ea1e40af6989dbf9
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 4682e65a17e9adbf33bf2bf0e7bccee37e41d1e6
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68788563"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565307"
 ---
 # <a name="community-resources"></a>社区资源
 
@@ -36,7 +36,7 @@ ms.locfileid: "68788563"
 >
 >如果你尚未在 Microsoft Connect 上注册，请执行以下操作：
 >
->-   导航到 [Microsoft Connect](https://connect.microsoft.com) (https://connect.microsoft.com) )
+>-   导航至 [Microsoft Connect](https://connect.microsoft.com) (https://connect.microsoft.com)
 >-   使用你的 Microsoft 帐户登录
 >-   单击命令栏上的“目录”
 >-   搜索“Rights Management Services”

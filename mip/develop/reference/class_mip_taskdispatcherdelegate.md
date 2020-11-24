@@ -1,29 +1,29 @@
 ---
 title: 类 TaskDispatcherDelegate
-description: 记录 Microsoft 信息保护（MIP） SDK 的 taskdispatcherdelegate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 taskdispatcherdelegate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: b7cd2267b795540a8bb4035a695f5b34f0580b87
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 057ba0d4de58ab4dedf8d3e2f8b2a42b0e5f969a
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764282"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565155"
 ---
 # <a name="class-taskdispatcherdelegate"></a>类 TaskDispatcherDelegate 
 定义 MIP SDK 任务调度程序接口的类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public void DispatchTask （const std：： string& taskId，std：： function\<void （）\>任务）  |  在后台线程上执行任务。
-public void DispatchTask （const std：： string& taskId，std：： function\<void （）\> task，int64_t delaySeconds）  |  在具有给定延迟的后台线程上执行任务。
-public void ExecuteTaskOnIndependentThread （const std：： string& taskId，std：： function\<void （）\>任务）  |  立即在独立线程上执行任务。
-public bool CancelTask （const std：： string& taskId）  |  取消后台任务。
-public void CancelAllTasks （）  |  取消所有后台任务。
+public void DispatchTask (const std：： string& taskId，std：： function \<void()\> task)   |  在后台线程上执行任务。
+public void DispatchTask (const std：： string& taskId，std：： function \<void()\> task，Int64_t delaySeconds)   |  在具有给定延迟的后台线程上执行任务。
+public void ExecuteTaskOnIndependentThread (const std：： string& taskId，std：： function \<void()\> task)   |  立即在独立线程上执行任务。
+public bool CancelTask (const std：： string& taskId)   |  取消后台任务。
+public void CancelAllTasks ( # A1  |  取消所有后台任务。
   
 ## <a name="members"></a>成员
   
@@ -48,7 +48,7 @@ public void CancelAllTasks （）  |  取消所有后台任务。
 * **task**：要执行的函数 
 
 
-* **delaySeconds**：执行任务之前的延迟（以秒为单位）
+* **delaySeconds**：执行任务之前延迟 (秒) 
 
 
   

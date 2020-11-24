@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 3c17a737266ceec6bb7e71d805e1a305f0b1c491
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 001cace1cdc3a9fd3e5cc1dd1a06a77215bd438c
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564313"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566137"
 ---
 # <a name="overview-of-rights-management-services-sdk-21"></a>Rights Management Services SDK 2.1 概述
 
@@ -39,7 +39,7 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 -   联机文档库的所有者希望基于用户身份启用查看、打印或编辑文档的权限。
 -   公司希望将敏感员工信息发布到将查看和编辑权限限制到特定用户的内部网站。
 
-有关 AD RMS 服务器、AD RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 AD RMS 的 IT 专业人员文档](https://TechNet.Microsoft.Com/library/cc771234.aspx)。
+有关 AD RMS 服务器、AD RMS 客户端及其功能的详细信息，请参阅 TechNet 内容以获取[针对 AD RMS 的 IT 专业人员文档](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771234(v=ws.10))。
 
 本部分中的其余主题将介绍 RMS 体系结构及其实现。
 
@@ -55,4 +55,4 @@ AD RMS 由 [服务器](ad-rms-server.md) 和 [客户端](ad-rms-client.md) 组�
 
 * [RMS 概念](application-types.md)
 * [入门](getting-started-with-ad-rms-2-0.md)
-* [针对 AD RMS 的 IT 专业人员文档](https://technet.microsoft.com/library/cc771234.aspx)
+* [针对 AD RMS 的 IT 专业人员文档](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771234(v=ws.10))

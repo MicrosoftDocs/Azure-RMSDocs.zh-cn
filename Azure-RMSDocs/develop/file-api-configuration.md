@@ -13,12 +13,12 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 673a23afa25872981967b48f81397d4a742855a8
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: 891f27a971c72465a4a0e61b1b2097c42fa06bd4
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135617"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566360"
 ---
 # <a name="file-api-configuration"></a>文件 API 配置
 
@@ -30,7 +30,7 @@ ms.locfileid: "87135617"
 -   **本机保护** -文件基于其 MIME 类型（文件扩展名）使用 AD RMS 格式得到保护。
 -   **PFile 保护** - 文件使用 AD RMS 保护文件 (PFile) 格式得到保护。
 
-有关受支持的文件格式的详细信息，请参阅本文中的“文件 API 文件支持详细信息”****。
+有关受支持的文件格式的详细信息，请参阅本文中的“文件 API 文件支持详细信息”。
 
 ## <a name="keykey-value-types-and-descriptions"></a>密钥/密钥值类型和描述
 
@@ -52,21 +52,21 @@ ms.locfileid: "87135617"
 - 若要指定没有扩展名的文件，请使用“.”
 - 指定特定文件扩展名的密钥时请勿指定“.”字符；例如，使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT` 来指定.txt 文件的设置。 （请勿使用 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`）。
 
-要指定保护行为，请在密钥中设置“Encryption”值****。 如果未设置**加密**值，则会观察到该文件类型的默认行为。
+要指定保护行为，请在密钥中设置“Encryption”值。 如果未设置 **加密** 值，则会观察到该文件类型的默认行为。
 
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
 
-**类型**： REG_SZ
+**类型**：REG_SZ
 
 **描述**：包含以下三个值之一：
 
 - **Off**：加密处于禁用状态。
 
 > [!Note]
-> 此设置对解密没有任何影响。 任何加密文件（无论是使用本机保护还是 .Pfile 保护进行加密）只要用户具有**提取**权限，就可以对其进行解密。
+> 此设置对解密没有任何影响。 任何加密文件（无论是使用本机保护还是 .Pfile 保护进行加密）只要用户具有 **提取** 权限，就可以对其进行解密。
 
-- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p*zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
+- **Native**：使用本机加密。 对于 Office 文件，加密文件将具有与原始文件相同的扩展名。 例如，文件扩展名为 .docx 的文件将被加密为扩展名为 .docx 的文件。 对于其他可以应用本机保护的文件，会将文件加密为具有 p *zzz* 扩展名格式的文件，其中 *zzz* 是原始文件扩展名。 例如，.txt 文件会被加密为扩展名为 .ptxt 的文件。 下面是可应用本机保护的文件扩展名列表。
 
 - **Pfile**：使用 PFile 加密。 加密的文件会将 .pfile 追加到原来的扩展名。 例如，加密后，.txt 文件的文件扩展名将为 .txt.pfile。
 
@@ -82,7 +82,7 @@ ms.locfileid: "87135617"
 -   **txt、xml、jpg、jpeg、pdf、png、tiff、bmp、gif、giff、jpe、jfif、jif 文件** 启用了本机加密（xxx 变成 pxxx）
 -   **所有其他文件** 启用了加密即受保护文件 (pfile)（xxx 变成 pxxx）
 
-如果对阻止的文件类型尝试加密，则会出现 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 错误。
+如果对阻止的文件类型尝试加密，则会出现 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](/previous-versions/windows/desktop/msipc/error-codes) 错误。
 
 ### <a name="file-api---file-support-details"></a>文件 API - 文件支持详细信息
 
@@ -103,7 +103,7 @@ ms.locfileid: "87135617"
 
 **所有其他文件格式**
 
--   保护类型 = .Pfile： sample。*zzz*经过加密和命名示例。*zzz*.pfile;其中， *zzz*是原始文件扩展名。
+-   保护类型 = .Pfile： sample。*zzz* 经过加密和命名示例。*zzz*.pfile;其中， *zzz* 是原始文件扩展名。
 -   Off：禁用加密。
 
 ### <a name="examples"></a>示例
@@ -149,4 +149,4 @@ HKEY_LOCAL_MACHINE
 ## <a name="related-articles"></a>相关文章
 
 - [开发人员注意事项](developer-notes.md)
-- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
+- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](/previous-versions/windows/desktop/msipc/error-codes)

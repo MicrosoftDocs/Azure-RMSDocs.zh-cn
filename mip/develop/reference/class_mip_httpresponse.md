@@ -1,28 +1,28 @@
 ---
 title: 类 Httpresponse.cache
-description: 记录 Microsoft 信息保护（MIP） SDK 的 httpresponse.cache：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 httpresponse.cache：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 6e37613adce0397ed543c4df793a59e74795fb26
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 0a08b2bea4834375a01897b3d657772112463b89
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81762469"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565116"
 ---
 # <a name="class-httpresponse"></a>类 Httpresponse.cache 
 描述单个 HTTP 响应的接口，由客户端应用在重写 HttpDelegate 时实现。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetId() const  |  获取响应 ID。
 public int32_t GetStatusCode() const  |  获取响应状态代码。
-public const std：： vector\<Uint8_t\>& GetBody （） const  |  获取请求正文。
-public const std：： map\<std：： string，std：： String，CaseInsensitiveComparator\>& GetHeaders （） const  |  获取请求标头。
+public const std：： vector \<uint8_t\>& GetBody ( # A2 const  |  获取请求正文。
+public const std：： map \<std::string, std::string, CaseInsensitiveComparator\>& GetHeaders ( # A2 const  |  获取请求标头。
   
 ## <a name="members"></a>成员
   

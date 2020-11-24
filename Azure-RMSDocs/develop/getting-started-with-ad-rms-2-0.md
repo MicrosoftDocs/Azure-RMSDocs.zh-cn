@@ -6,7 +6,7 @@ author: msmbaldwin
 ms.author: mbaldwin
 manager: barbkess
 ms.date: 02/23/2017
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
@@ -14,14 +14,14 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: d89ca9894c8d6a145235790fafc25f95570d93cc
-ms.sourcegitcommit: d3169f307c9d8500dfd97ad65588db9bed111264
+ms.openlocfilehash: 9e6f2389c5cc552ed3a65485db9adb94af4a4d03
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303611"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565294"
 ---
-# <a name="getting-started"></a>开始使用
+# <a name="getting-started"></a>入门
 
 Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务器或 Azure RMS 构建利用 RMS 信息保护的应用程序。 该平台可处理复杂的安全实践（如密钥管理、加密和解密处理），并提供简化 API 以便轻松开发应用程序。
 
@@ -31,11 +31,11 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 
 ## <a name="in-this-sections"></a>本部分内容
 
-| 主题 | 描述 |
+| 主题 | 说明 |
 |-------|-------------|
 | [发行说明](release-notes-rtm.md) | 本主题包含有关此版本和以前版本的 RMS SDK 2.1 的重要信息。|
 | [安装 SDK](install-the-rms-sdk.md) | 本主题指导你完成安装开发人员工具的过程。|
-| [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | 本主题包含有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。|
+| 配置 Visual Studio | 本主题包含有关如何配置 Visual Studio 项目以使用 RMS SDK 2.1 的说明。|
 | [开发应用程序](developing-your-application.md) | 本主题包含启用了 RMS 的应用程序的核心层面的基本指南，可作为应用程序开发的基础。|
 | [测试应用程序](how-to-set-up-your-test-environment.md) |本主题包含有关如何为应用程序测试进行设置的说明。|
 | [部署到生产](deploying-your-application.md) |本主题将引导你完成启用权限的应用程序的部署选项。|
@@ -44,7 +44,7 @@ Rights Management Services SDK 2.1 平台使开发人员可以通过 RMS 服务�
 遵循以下这些主题中的指导原则来尝试使用 RMS SDK 2.1：
 
 - [安装 SDK](install-the-rms-sdk.md)
-- [配置 Visual Studio](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- 配置 Visual Studio
 - [开发应用程序](developing-your-application.md)
 - [测试应用程序](how-to-set-up-your-test-environment.md)
 - [部署到生产](deploying-your-application.md)

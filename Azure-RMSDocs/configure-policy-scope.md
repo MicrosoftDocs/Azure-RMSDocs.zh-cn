@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
@@ -13,21 +13,21 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6c7ab059ff19cc7f8b41bc345521e9e1798e7769
-ms.sourcegitcommit: 325bb21a2210069f6d838ca7a875d7082c5e02a6
+ms.openlocfilehash: f57529603a8d96a8621195ea4168eb2fe9cc3dc8
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88264355"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565317"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>如何使用作用域内策略为特定用户配置 Azure 信息保护策略
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 当 Azure 信息保护策略下载到已安装了 Azure 信息保护客户端的计算机时，所有用户都从默认策略或你为全局策略配置的更改获取设置和标签。 如果要使用不同的设置和标签为特定用户补充此配置，则必须创建为这些用户配置的 **作用域内策略** 。
 
@@ -43,7 +43,7 @@ ms.locfileid: "88264355"
 
 因为作用域内策略始终从全局策略继承标签和设置，因此，在创建或编辑作用域内策略时会显示来自全局策略的标签。 不过，在编辑作用域内策略时，无法编辑来自全局策略的标签。 但是，可以向这些继承的标签添加子标签。
 
-例如，如果全局策略中有一个名为**机密**的标签，则所有用户都会看到此标签。 无法使用作用域内策略删除或重排标签。 但是，你可能希望为市场营销部创建一个作用域内策略来向“机密”添加一个新的子标签，以便用户可以看到**机密\促销**。 你还可以为销售部创建另一个作用域内策略来向“机密”添加一个新的子标签，以便用户可以看到**机密\合作伙伴**。 然后，可以针对不同的设置配置每个子标签，并且只有相应部门中的用户才能看到子标签。
+例如，如果全局策略中有一个名为 **机密** 的标签，则所有用户都会看到此标签。 无法使用作用域内策略删除或重排标签。 但是，你可能希望为市场营销部创建一个作用域内策略来向“机密”添加一个新的子标签，以便用户可以看到 **机密\促销**。 你还可以为销售部创建另一个作用域内策略来向“机密”添加一个新的子标签，以便用户可以看到 **机密\合作伙伴**。 然后，可以针对不同的设置配置每个子标签，并且只有相应部门中的用户才能看到子标签。
 
 ## <a name="configure-a-scoped-policy"></a>配置作用域内策略
 
@@ -66,7 +66,7 @@ ms.locfileid: "88264355"
 
 6. 就像编辑全局策略时一样，当你在 "Azure 信息保护" 窗格中进行任何更改时，请单击 " **保存** " 以保存更改，或者单击 " **放弃** " 以还原到上次保存的设置。 
 
-7. 对此作用域内策略完成所需更改后，在初始 " **Azure 信息保护-策略** " 窗格上，确保此作用域内策略按您希望的顺序应用。 为多个作用域内策略选择了同一用户时，这很重要。 若要更改顺序，请选择上下文菜单 (**...**) 并选择“上移”**** 或“下移”****。 
+7. 对此作用域内策略完成所需更改后，在初始 " **Azure 信息保护-策略** " 窗格上，确保此作用域内策略按您希望的顺序应用。 为多个作用域内策略选择了同一用户时，这很重要。 若要更改顺序，请选择上下文菜单 (**...**) 并选择“上移”或“下移”。 
 
 每次启动受支持的 Office 应用程序或打开文件资源管理器时，Azure 信息保护客户端都会检查是否进行了任何更改。 客户端会下载对全局策略或应用于该用户的作用域内策略所做的任何更改。
 

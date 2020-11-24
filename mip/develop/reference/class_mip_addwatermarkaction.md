@@ -1,22 +1,22 @@
 ---
 title: 类 AddWatermarkAction
-description: 记录 Microsoft 信息保护（MIP） SDK 的 addwatermarkaction：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 addwatermarkaction：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: fe2cc80e5abb225a5e83c1b10c1c5f9f99401628
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 60120fbfb9d35cdb92c312af62bddf456dc88cfd
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763737"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565242"
 ---
 # <a name="class-addwatermarkaction"></a>类 AddWatermarkAction 
 指定添加水印的操作类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public const std::string& GetUIElementName()  |  用于标记水印元素的 API。
@@ -62,4 +62,4 @@ public const std::string& GetFontColor() const  |  获取用于显示水印的�
 获取用于显示水印的字体颜色。
 
   
-返回结果****：字符串形式的字体颜色（例如“#000000”）。
+返回结果：字符串形式的字体颜色（例如“#000000”）。

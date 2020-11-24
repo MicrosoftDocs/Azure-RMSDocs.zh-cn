@@ -4,25 +4,25 @@ description: 可以自动将标签分配到文档或电子邮件的条件。 或
 author: mlottner
 ms.author: mlottner
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e760ae71b07c72dc761e51c9ebc07bb52c5b006c
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 0b75dd62f4910a2416806e7b0e8a8682e99fe102
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86047790"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566272"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>如何配置 Azure 信息保护的自动和建议分类的条件
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 
 >[!NOTE] 
@@ -31,11 +31,11 @@ ms.locfileid: "86047790"
 > [!NOTE]
 > 这些说明适用于 Azure 信息保护客户端（经典版），而不是 Azure 信息保护统一标记客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 > 
-> 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Microsoft 365 符合性文档。 例如，[自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
+> 如果你正在寻找有关为统一标签客户端配置自动和建议分类的信息，请参阅 Microsoft 365 符合性文档。 例如， [自动对内容应用敏感标签](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 
 在配置标签的条件时，可以自动将标签分配到文档或电子邮件。 或者，可以提示用户选择建议的标签。 
 
-配置这些条件时，可使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”********。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
+配置这些条件时，可使用预定义的模式，如“信用卡号”或“美国社会安全号码 (SSN)”。 或者，你可以定义自定义字符串或模式作为自动分类的条件。 这些条件适用于文档和电子邮件中的正文文本和页眉及页脚。 有关这些条件的详细信息，请参阅[以下过程](#to-configure-recommended-or-automatic-classification-for-a-label)中的步骤 5。
 
 若要获取最佳用户体验并确保业务连续性，我们建议你从用户建议分类开始，而不是自动操作。 此配置使你的用户能够接受分类和任何关联保护，或覆盖这些建议（如果它们不适用于其文档或电子邮件）。
 
@@ -43,9 +43,9 @@ ms.locfileid: "86047790"
 
 ![Azure 信息保护检测和建议](./media/info-protect-recommend-calloutsv2.png)
 
-在此示例中，用户可以单击“立即更改”**** 应用建议的标签，或通过选择“消除”**** 来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
+在此示例中，用户可以单击“立即更改”应用建议的标签，或通过选择“消除”来替代该建议。 如果用户选择消除建议并且在下一次打开文档时该条件仍然适用，会再次显示标签建议。
 
-如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是，"**立即更改**" 和 "**取消**" 按钮将替换为 **"确定"**。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
+如果配置自动分类（而不是建议分类），系统自动应用标签，并且用户仍会在自己的 Word、Excel 和 PowerPoint 中看到通知。 但是，" **立即更改** " 和 " **取消** " 按钮将替换为 **"确定"**。 在 Outlook 中，自动分类无通知，且发送电子邮件时将应用标签。
 
 > [!IMPORTANT]
 >请勿为自动分类和用户定义的权限配置标签。 “用户定义的权限”选项是一个[保护设置](configure-policy-protection.md)，允许用户指定应向其授予权限的人员。
@@ -62,7 +62,7 @@ ms.locfileid: "86047790"
     
     对于之前已设置标签（更高级别的分类标签）的文档，无法使用建议的分类。 
 
-可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 例如，如果你对自动保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的 Office 应用[程序使用自动保存，](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)则这种做法非常合适。 若要支持此方案，可以配置当前处于预览阶段的[高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)。 此设置会启用分类，使其在后台连续运行。
+可以更改此行为，以便 Azure 信息保护客户端定期检查文档是否符合指定的条件规则。 例如，如果你对自动保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的 Office 应用 [程序使用自动保存，](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 则这种做法非常合适。 若要支持此方案，可以配置当前处于预览阶段的 [高级客户端设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) 。 此设置会启用分类，使其在后台连续运行。
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>多条件应用到多个标签时的评估方式
 
@@ -75,18 +75,18 @@ ms.locfileid: "86047790"
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>配置标签的建议或自动分类
 
-1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”**** 窗格。 
+1. 如果尚未这样做，请打开新的浏览器窗口，[登录到 Azure 门户](configure-policy.md#signing-in-to-the-azure-portal)， 然后导航到“Azure 信息保护”窗格。 
     
-    例如，在资源、服务和文档的搜索框中：开始键入“信息”**** 并选择“Azure 信息保护”****。
+    例如，在资源、服务和文档的搜索框中：开始键入“信息”并选择“Azure 信息保护”。
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择要配置的标签。
 
-3. 在 "**标签**" 窗格的 "**配置自动应用此标签的条件**" 部分中，单击 "**添加新条件**"。
+3. 在 " **标签** " 窗格的 " **配置自动应用此标签的条件** " 部分中，单击 " **添加新条件**"。
 
-4. 如果要使用预定义条件，请在 "**条件**" 窗格中选择 "**信息类型**"，如果要指定自己的条件，请选择 "**自定义**"：
-    - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值****。
+4. 如果要使用预定义条件，请在 " **条件** " 窗格中选择 " **信息类型** "，如果要指定自己的条件，请选择 " **自定义** "：
+    - 对于“信息类型”：从可用条件列表中选择，然后选择最小出现次数以及出现计数中是否应具有唯一的值。
         
-        信息类型使用 Office 365 数据丢失防护 (DLP) 敏感信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Office 365 文档中的[敏感信息类型查找的内容](/microsoft-365/compliance/what-the-sensitive-information-types-look-for)。
+        信息类型使用 Microsoft 365 数据丢失防护 (DLP) 敏感度信息类型和模式检测。 可以从多种常见敏感信息类型中进行选择，其中某些类型特定于不同的区域。 有关详细信息，请参阅 Microsoft 365 文档中 [的敏感信息类型查找内容](/microsoft-365/compliance/what-the-sensitive-information-types-look-for) 。
         
         可从 Azure 门户选择的信息类型列表会定期更新，以包含任何新的 Office DLP 添加。 但是，该列表不包含作为规则包定义和上传到 Office 365 安全与合规中心的任何自定义敏感信息类型。
         
@@ -97,19 +97,19 @@ ms.locfileid: "86047790"
     
     - 对于“**自定义**”：指定匹配的名称和短语，其必须排除引号和特殊字符。 然后指定是否匹配正则表达式，区分大小写，发生的最小数目以及发生计数中是否应具有唯一的值。
         
-        正则表达式使用 Office 365 正则表达式模式。 为帮助你指定自定义条件的正则表达式，请参阅 Boost 的以下特定版本的 [Perl 正则表达式语法](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)。
+        正则表达式使用 Office 365 正则表达式模式。 为帮助你指定自定义条件的正则表达式，请参阅 Boost 的以下特定版本的 [Perl 正则表达式语法](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)。 自定义正则表达式必须符合 [.net 文档](/dotnet/standard/base-types/character-escapes-in-regular-expressions#character-escapes-in-net)。 此外，用于指定 Unicode 的 Perl 5 字符转义 (窗体 \x{# # # # ...}，其中 # # # # .。。 **不** 支持) 一系列十六进制数字。
         
-5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”************。 
+5. 确定是否需要更改“最小出现次数”和“仅计算唯一值的出现次数”，然后选择“保存”。 
     
-    出现次数选项示例：选择社会安全号码的信息类型并将最小出现次数设置为 2，并且文档已两次列出同一社会安全号码：如果将“仅计算唯一值的出现次数”设置为“开”，则不符合条件********。 如果将此选项设置为“关闭”，则满足条件****。
+    出现次数选项示例：选择社会安全号码的信息类型并将最小出现次数设置为 2，并且文档已两次列出同一社会安全号码：如果将“仅计算唯一值的出现次数”设置为“开”，则不符合条件。 如果将此选项设置为“关闭”，则满足条件。
 
-6. 返回到 "**标签**" 窗格，配置以下各项，然后单击 "**保存**"：
+6. 返回到 " **标签** " 窗格，配置以下各项，然后单击 " **保存**"：
     
-    - 选择自动或建议的分类：对于**选择如何应用该标签：自动或向用户建议**，选择“**自动**”或“**建议**”。
+    - 选择自动或建议的分类：对于 **选择如何应用该标签：自动或向用户建议**，选择“**自动**”或“**建议**”。
     
     - 指定用户提示或策略提示文本：保持默认文本或指定你自己的字符串。
 
-单击“保存”**** 时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
+单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>需要最低版本客户端的敏感信息类型
 

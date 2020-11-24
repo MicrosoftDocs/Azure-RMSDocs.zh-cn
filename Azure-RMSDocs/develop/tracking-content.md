@@ -16,12 +16,12 @@ ms.suite: ems
 ms.custom: dev
 experimental: true
 experiment_id: priyamo-test-20160729
-ms.openlocfilehash: aee6442d79c39172f6b082fb2531588ce50c8cf2
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: 5159f39d5b91c748abe9fe7e0734c4a6eacbe4d5
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135600"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566400"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>操作说明：启用文档跟踪和撤销
 
@@ -47,12 +47,12 @@ ms.locfileid: "87135600"
 在操作上，只有 **内容名称** 和 **通知类型** 属性对于文档跟踪是必需的。
 
 
-- [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
-- [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
+- [IpcCreateLicenseMetadataHandle](/previous-versions/windows/desktop/msipc/ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/previous-versions/windows/desktop/msipc/ipcsetlicensemetadataproperty)
 
   我们期望你能设置所有元数据属性。 就是以下这些按类型列出的属性。
 
-  有关详细信息，请参阅[许可证元数据属性类型](https://msdn.microsoft.com/library/dn974062.aspx)。
+  有关详细信息，请参阅[许可证元数据属性类型](/previous-versions/windows/desktop/msipc/license-metadata-property-types)。
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -78,16 +78,16 @@ ms.locfileid: "87135600"
 
     用于设置文件的发放日期
 
-- [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
+- [IpcSerializeLicenseWithMetadata](/previous-versions/windows/desktop/msipc/ipcserializelicensemetadata)
 
 使用其中一个合适的 API 将元数据添加到文件或流中。
 
-- [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
-- [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
+- [IpcfEncryptFileWithMetadata](/previous-versions/windows/desktop/msipc/ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/previous-versions/windows/desktop/msipc/ipcfencryptfilestreamwithmetadata)
 
 最后，使用此 API 注册具有跟踪系统的跟踪文档。
 
-- [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
+- [IpcRegisterLicense](/previous-versions/windows/desktop/msipc/ipcregisterlicense)
 
 
 ## <a name="2-register-the-document-with-the-rms-service"></a>2. 向 RMS 服务注册文档
@@ -136,17 +136,17 @@ ms.locfileid: "87135600"
                         sendLicenseRegistrationNotificationEmail);
   ```
 
-## <a name="add-a-track-usage-button-to-your-app"></a>向应用添加**跟踪使用情况**按钮
+## <a name="add-a-track-usage-button-to-your-app"></a>向应用添加 **跟踪使用情况** 按钮
 
-向应用添加**跟踪使用情况** UI 项非常简单，使用以下任一 URL 格式即可：
+向应用添加 **跟踪使用情况** UI 项非常简单，使用以下任一 URL 格式即可：
 
 - 使用内容 ID
-  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](https://msdn.microsoft.com/library/hh535265.aspx) 或 [IpcGetSerializedLicenseProperty](https://msdn.microsoft.com/library/hh995038.aspx) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](https://msdn.microsoft.com/library/hh535287.aspx)。
-  - 对于**id 为**和**Issuer**元数据，使用以下格式：`https://track.azurerms.com/#/{ContentId}/{Issuer}`
+  - 如果许可证已序列化，请使用 [IpcGetLicenseProperty](/previous-versions/windows/desktop/msipc/ipcgetlicenseproperty) 或 [IpcGetSerializedLicenseProperty](/previous-versions/windows/desktop/msipc/ipcgetserializedlicenseproperty) 获取内容 ID，并使用许可证属性 **IPC_LI_CONTENT_ID**。 有关详细信息，请参阅[许可证属性类型](/previous-versions/windows/desktop/msipc/license-property-types)。
+  - 对于 **id 为** 和 **Issuer** 元数据，使用以下格式： `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     示例 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
 
-- 如果无权访问该元数据（即检查文档的不受保护的版本），可以使用以下格式的**Content_Name** ：`https://track.azurerms.com/#/?q={ContentName}`
+- 如果你无权访问该元数据 (即你在检查文档的未受保护版本) ，你可以使用以下格式的 **Content_Name** ： `https://track.azurerms.com/#/?q={ContentName}`
 
   示例 - https://track.azurerms.com/#/?q=Secret!.txt
 
@@ -154,13 +154,12 @@ ms.locfileid: "87135600"
 
 ## <a name="related-topics"></a>相关主题
 
-* [许可证元数据属性类型](https://msdn.microsoft.com/library/dn974062.aspx)
-* [通知参考](https://msdn.microsoft.com/library/dn974063.aspx)
-* [通知类型](https://msdn.microsoft.com/library/dn974064.aspx)
-* [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
-* [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
-* [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
-* [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
-* [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
-* [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
-
+* [许可证元数据属性类型](/previous-versions/windows/desktop/msipc/license-metadata-property-types)
+* [通知参考](/previous-versions/windows/desktop/msipc/notification-preference)
+* [通知类型](/previous-versions/windows/desktop/msipc/notification-type)
+* [IpcCreateLicenseMetadataHandle](/previous-versions/windows/desktop/msipc/ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/previous-versions/windows/desktop/msipc/ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/previous-versions/windows/desktop/msipc/ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/previous-versions/windows/desktop/msipc/ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/previous-versions/windows/desktop/msipc/ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/previous-versions/windows/desktop/msipc/ipcregisterlicense)

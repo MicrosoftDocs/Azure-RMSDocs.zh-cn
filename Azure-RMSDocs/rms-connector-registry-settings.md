@@ -5,7 +5,7 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 11/30/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 536d3662c5e3e7a90a8da2f6b9d97f522d1f4111
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: fb2a081b03ae8b92fa58073b37336066f087da4c
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136927"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565375"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "86136927"
 
 -   *\<YourTenantURL>* 是 Azure 信息保护租户的 Azure Rights Management 服务 URL。 查找此值：
 
-    1.  针对 Azure Rights Management 服务运行[AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService 模块，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+    1.  针对 Azure Rights Management 服务运行 [AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) cmdlet。 如果尚未安装 AIPService 模块，请参阅 [安装 AIPService PowerShell 模块](install-powershell.md)。
 
     2.  在输出中找到 **LicensingIntranetDistributionPointUrl** 值。
 
@@ -54,7 +54,7 @@ ms.locfileid: "86136927"
 
 ## <a name="exchange-2016-or-exchange-2013-registry-settings"></a>Exchange 2016 或 Exchange 2013 注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE \Software\Microsoft\MSDRM\ServiceLocation\Activation
+**注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
 **键入：** Reg_SZ
 
@@ -83,9 +83,9 @@ ms.locfileid: "86136927"
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<\ConnectorFQDN>**
+- http://<\ConnectorFQDN>
 
-- https://<\ConnectorFQDN>**
+- https://<\ConnectorFQDN>
 
 ---
 
@@ -93,19 +93,19 @@ ms.locfileid: "86136927"
 
 **键入：** Reg_SZ
 
-值：https://<\YourTenantURL>******
+值：https://<\YourTenantURL>
 
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<\ConnectorFQDN>**
+- http://<\ConnectorFQDN>
 
-- https://<\ConnectorFQDN>**
+- https://<\ConnectorFQDN>
 
 
 ## <a name="exchange-2010-registry-settings"></a>Exchange 2010 注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE \Software\Microsoft\MSDRM\ServiceLocation\Activation
+**注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
 **键入：** Reg_SZ
 
@@ -121,7 +121,7 @@ ms.locfileid: "86136927"
 
 **值：** 默认
 
-数据：https://<\YourTenantURL>/_wmcs/Licensing******
+数据：https://<\YourTenantURL>/_wmcs/Licensing
 
 ---
 
@@ -129,13 +129,13 @@ ms.locfileid: "86136927"
 
 **键入：** Reg_SZ
 
-值：https://<\YourTenantURL>******
+值：https://<\YourTenantURL>
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<\ConnectorFQDN>**
+- http://<\ConnectorFQDN>
 
-- https://<\ConnectorFQDN>**
+- https://<\ConnectorFQDN>
 
 ---
 
@@ -143,13 +143,13 @@ ms.locfileid: "86136927"
 
 **键入：** Reg_SZ
 
-值：https://<\YourTenantURL>******
+值：https://<\YourTenantURL>
 
 **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<\ConnectorFQDN>**
+- http://<\ConnectorFQDN>
 
-- https://<\ConnectorFQDN>**
+- https://<\ConnectorFQDN>
 
 
 ## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>SharePoint 2016 或 SharePoint 2013 注册表设置
@@ -158,7 +158,7 @@ ms.locfileid: "86136927"
 
 **键入：** Reg_SZ
 
-值：https://<\YourTenantURL>/_wmcs/licensing******
+值：https://<\YourTenantURL>/_wmcs/licensing
 
 
 **数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
@@ -177,9 +177,9 @@ ms.locfileid: "86136927"
 
 **数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
 
-- http://<\ConnectorFQDN>**/_wmcs/certification
+- http://<\ConnectorFQDN>/_wmcs/certification
 
-- https://<\ConnectorFQDN>**/_wmcs/certification
+- https://<\ConnectorFQDN>/_wmcs/certification
 
 ---
 
@@ -201,13 +201,13 @@ ms.locfileid: "86136927"
 
 ## <a name="file-server-and-file-classification-infrastructure-registry-settings"></a>文件服务器和文件分类基础结构注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
 **键入：** Reg_SZ
 
 **值：** 默认
 
-数据：http://<\ConnectorFQDN>/_wmcs/licensing******
+数据：http://<\ConnectorFQDN>/_wmcs/licensing
 
 ---
 
@@ -217,7 +217,7 @@ ms.locfileid: "86136927"
 
 **值：** 默认
 
-数据： http://<\ConnectorFQDN>/_wmcs/certification******
+数据： http://<\ConnectorFQDN>/_wmcs/certification
 
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)

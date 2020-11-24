@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: reference
 ms.date: 01/28/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 73c56e5a5e2facf31eeadd59b36197dea8bbecc2
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: e7d1cacde412ab4ca43256309d2f2c53771d94b0
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88563699"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565024"
 ---
 # <a name="functions-c"></a>函数 (C++) 
 
@@ -61,9 +61,6 @@ public ActionType operator ^ (ActionType a，操作 b)        |  Xor (^) 运算�
 
 参数：  
 * **actionSource**：正在处理的内容的状态。 
-
-
-
   
 **返回**：内容状态的字符串表示形式。
   
@@ -198,15 +195,15 @@ public std：： string LastModifiedDate ( # A1       | _尚无记录。_
 审核字符串表示形式的元数据密钥。
   
 ### <a name="recipients-function"></a>收件人函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="lastmodifiedby-function"></a>LastModifiedBy 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="lastmodifieddate-function"></a>LastModifiedDate 函数
-_尚无记录。_
+尚无记录。
 
 
 ## <a name="namespace-miprights"></a>名称 `mip::rights` 

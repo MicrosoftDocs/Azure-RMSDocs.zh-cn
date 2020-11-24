@@ -1,29 +1,29 @@
 ---
 title: 类 AuthDelegate：： OAuth2Challenge
-description: 记录 Microsoft 信息保护（MIP） SDK 的 authdelegate：： oauth2challenge 类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 authdelegate：： oauth2challenge 类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: f8a350a8c9ddd68f484a98b0e63860d2965bd890
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: f422b99674213904316eab622bfc915f128228ec
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763603"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565227"
 ---
 # <a name="class-authdelegateoauth2challenge"></a>类 AuthDelegate：： OAuth2Challenge 
 一个类，其中包含调用应用程序所需的所有信息，以便生成 oauth2 标记。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public OAuth2Challenge （const std：： string& 机关，const std：： string& 资源，const std：： string& 范围，const std：： string& 声明）  |  构造一个新的 OAuth2Challenge 对象。
-public const std：： string& GetAuthority （） const  |  获取授权字符串。
-public const std：： string& GetResource （） const  |  获取资源字符串。
-public const std：： string& GetScope （） const  |  获取范围字符串。
-public const std：： string& GetClaims （） const  |  获取声明字符串。
+public OAuth2Challenge (const std：： string& 核证机关，const std：： string& resource，const std：： string& 作用域，const std：： string& 声明)   |  构造一个新的 OAuth2Challenge 对象。
+public const std：： string& GetAuthority ( # A2 const  |  获取授权字符串。
+public const std：： string& GetResource ( # A2 const  |  获取资源字符串。
+public const std：： string& GetScope ( # A2 const  |  获取范围字符串。
+public const std：： string& GetClaims ( # A2 const  |  获取声明字符串。
   
 ## <a name="members"></a>成员
   

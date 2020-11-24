@@ -1,32 +1,32 @@
 ---
 title: 类 DocumentState
-description: 记录 Microsoft 信息保护（MIP） SDK 的 documentstate：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 documentstate：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 674e43b89a43fe90fa1fb38fb7c6d1d51a7326e0
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: ad1c99a76c3078c86ec80a4ec6e1cc7d244cbbeb
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763312"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565149"
 ---
 # <a name="class-documentstate"></a>类 DocumentState 
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string GetContentIdentifier() const  |  获取描述文档的内容说明。 文件示例： [path\filename] 电子邮件示例： [Subject： Sender]。
-public virtual DataState GetDataState （） const  |  获取应用程序与之交互时内容的状态。
-public std：： vector\<MetadataEntry\> GetContentMetadata （const std：： vector\<std：： string\>& 名称，const std：： vector\<std：： string\>& namePrefixes） const  |  从内容中获取元数据项。
-public std：： shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor （） const  |  获取保护描述符。
+public virtual DataState GetDataState ( # A1 const  |  获取应用程序与之交互时内容的状态。
+public std：： vector \<MetadataEntry\> GetContentMetadata (const std：： vector \<std::string\>& 名称，const std：： Vector \<std::string\>& namePrefixes) const  |  从内容中获取元数据项。
+public std::shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor() const  |  获取保护描述符。
 public ContentFormat GetContentFormat() const  |  获取内容格式。
-public 虚拟无符号 int GetContentMetadataVersion （） const  |  获取租户的应用程序支持的最高元数据版本。
-public virtual std：： shared_ptr\<ClassificationResults\> GetClassificationResults （const std：： vector\<std：： shared_ptr\<ClassificationRequest\> \> &） const  |  返回分类结果的映射。
-public virtual std：： map\<std：： string，std：： string\> GetAuditMetadata （） const  |  返回应用程序特定的审核键值对的映射。
-public virtual std：： chrono：： time_point\<std：： chrono：： system_clock\> GetLastModifiedTime （） const  |  返回上次修改文档的时间点。
+public virtual MetadataVersion GetContentMetadataVersion ( # A1 const  |  获取租户的应用程序支持的最高元数据版本。
+公共虚拟 std：： shared_ptr \<ClassificationResults\> GetClassificationResults (const std：： vector \<std::shared_ptr\<ClassificationRequest\> \> &) 常量  |  返回分类结果的映射。
+public virtual std：： map \<std::string, std::string\> GetAuditMetadata ( # A1 const  |  返回应用程序特定的审核键值对的映射。
+public virtual std：： chrono：： time_point \<std::chrono::system_clock\> GetLastModifiedTime ( # A1 const  |  返回上次修改文档的时间点。
   
 ## <a name="members"></a>成员
   

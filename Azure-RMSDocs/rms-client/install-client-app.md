@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 26e9f85a4e5d171232dc8d30f4502557808ac538
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 49d684dc4eb0852d4545abc86f725107732ad6e9
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953178"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565356"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
 
@@ -42,12 +42,12 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 
 1. 运行 **AzInfoProtection.exe** 文件以开始安装。 如果系统提示你继续，请单击 **“是”**。    
 
-1. 在“安装 Azure 信息保护客户端”**** 页面上：     
+1. 在“安装 Azure 信息保护客户端”页面上：     
     - 如果无法连接到云，但出于演示目的，想要通过使用本地策略查看和体验 Azure 信息保护的客户端，则选择此选项以安装演示策略。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。    
 
-    - 阅读许可条款和条件后，单击“我同意”****。    
+    - 阅读许可条款和条件后，单击“我同意”。    
 
-1. 如果系统提示继续操作，请单击“是”****，然后等待安装完成。    
+1. 如果系统提示继续操作，请单击“是”，然后等待安装完成。    
 
 1. 单击“关闭”  。 开始使用 Azure 信息保护客户端之前：    
 
@@ -58,11 +58,11 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 ### <a name="installing-the-azure-information-protection-client-with-office-2010"></a>利用 Office 2010 安装 Azure 信息保护客户端    
 通过上述说明安装 Azure 信息保护客户端之后：    
 
-1. 打开 Microsoft Word。 安装 Azure 信息保护客户端后首次运行 Office 2010 应用程序时，将看到“Microsoft Azure 信息保护”**** 对话框。 此对话框显示需要管理员凭据才可完成登录过程。
+1. 打开 Microsoft Word。 安装 Azure 信息保护客户端后首次运行 Office 2010 应用程序时，将看到“Microsoft Azure 信息保护”对话框。 此对话框显示需要管理员凭据才可完成登录过程。
 
-2. 在“Microsoft Azure 信息保护”**** 对话框中，单击“确定”****。
+2. 在“Microsoft Azure 信息保护”对话框中，单击“确定”。
 
-3. 如果看到“用户访问控制”**** 对话框，请单击“是”****，以便 Azure 信息保护客户端更新注册表。
+3. 如果看到“用户访问控制”对话框，请单击“是”，以便 Azure 信息保护客户端更新注册表。
 
 你的安装已完成，现可使用 Azure 信息保护来标识和保护文档及电子邮件。
 

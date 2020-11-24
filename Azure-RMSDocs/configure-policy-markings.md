@@ -4,26 +4,26 @@ description: 当文档或电子邮件中分配一个标签时，可以选择几�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 05/27/2020
+ms.date: 09/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 3730c8d781c9b53de1848ef2ebee1185cae38560
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: a1ed0a5b10db4ffd0a50b8738cb85cbff973eaa5
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953127"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566260"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
@@ -35,7 +35,7 @@ ms.locfileid: "88953127"
 
     - Excel：水印仅在页面布局和打印预览模式及打印后可见。
 
-    - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”**** 选项卡上的“幻灯片母版”**** 中，确保未选中“隐藏背景图形”**** 复选框。
+    - PowerPoint：水印应用于母板幻灯片，作为背景图像。 在“视图”选项卡上的“幻灯片母版”中，确保未选中“隐藏背景图形”复选框。
 
 - Word、Excel 和 PowerPoint 中的水印、页眉和页脚支持多行。 如果为 Outlook 中应用的标签页眉或页脚指定多行，这些行就会连接到一起。 在这种情况下，请考虑使用配置来[为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记](#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)。
 
@@ -63,6 +63,10 @@ ms.locfileid: "88953127"
 
     当你对保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的文件使用 " [自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) " 时，不会应用可视标记，除非你将 " [高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) 配置为启用分类以在后台连续运行。
 
+> [!NOTE]
+> 若要详细了解 AIP 客户端中的视觉标记支持和内置的标记 Office 功能，请参阅 [比较 Windows 计算机的标记客户端](rms-client/use-client.md#compare-the-labeling-clients-for-windows-computers)。
+> 
+
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
 
 请按照以下说明来配置标签的可视标记。
@@ -73,15 +77,15 @@ ms.locfileid: "88953127"
 
 2. 从 "**分类**  >  **标签**" 菜单选项：在 " **Azure 信息保护-标签**" 窗格中，选择包含要添加或更改的视觉标记的标签。
 
-3. 在 " **标签** " 窗格中，在 " **设置视觉标记 (如页眉或页脚) ** " 部分中，为所需的视觉标记配置设置，然后单击 " **保存**"：
+3. 在 " **标签** " 窗格中，在 " **设置视觉标记 (如页眉或页脚)** " 部分中，为所需的视觉标记配置设置，然后单击 " **保存**"：
 
-    - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式****。
+    - 配置一个页眉：针对“**文档的此标签具有页眉**”，选择“**打开**”（如果希望具有页眉），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页眉的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
 
-    - 配置一个页脚：针对**文档的此标签具有页脚**，选择“**打开**”（如果希望具有页脚），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页脚的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式****。
+    - 配置一个页脚：针对 **文档的此标签具有页脚**，选择“**打开**”（如果希望具有页脚），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定页脚的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
 
-    - 配置一个水印：针对**文档的此标签具有水印**，选择“**打开**”（如果希望具有水印），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定水印的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式****。
+    - 配置一个水印：针对 **文档的此标签具有水印**，选择“**打开**”（如果希望具有水印），或“**关闭**”（如果不希望这样做）。 如果选择“打开”，则指定水印的文本、大小、[字体](#setting-the-font-name)、[颜色](#setting-the-font-color)和对齐方式。
 
-单击“保存”**** 时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
+单击“保存”时，更改将会自动提供给用户和服务。 不再提供单独发布选项。
 
 ## <a name="using-variables-in-the-text-string"></a>在文本字符串中使用变量
 
@@ -95,7 +99,7 @@ ms.locfileid: "88953127"
 
 - `${User.Name}`，针对文档或电子邮件的所有者（按 Windows 登录用户名）。 例如：rsimone
 
-- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如： rsimone@vanarsdelltd.com
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
@@ -118,7 +122,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [!NOTE]
 >此语句中的该语法区分大小写。
 
-示例：
+示例:
 
 - **仅为 Word 文档设置页眉文本：**
 

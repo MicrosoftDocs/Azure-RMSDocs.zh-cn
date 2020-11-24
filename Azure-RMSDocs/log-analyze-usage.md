@@ -5,7 +5,7 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 11/03/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
@@ -13,24 +13,24 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c18c3e6524e6c42ee4b639b42778a8a8217b12d0
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: fc3dd9487548849d16f625092c2ff3dd121e4e54
+ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136786"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "95565352"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
-使用此信息来帮助你了解如何使用 Azure 信息保护中的保护服务（Azure Rights Management）的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
+使用此信息来帮助你了解如何在 azure 信息保护中使用保护服务 (Azure Rights Management) 的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
 然后，你可以使用这些保护使用日志来支持以下业务方案：
 
 -   **分析信息以获得业务见解**
 
-    保护服务生成的日志可以导入到所选的存储库中（例如数据库、联机分析处理（OLAP）系统或地图缩减系统），以分析信息和生成报告。 例如，可以看出谁在访问受保护的数据。 还可以确定用户访问了哪些受保护的数据、从哪些设备访问、从何处访问。 你可以了解用户是否能够成功读取受保护内容。 你还可以看出哪些用户阅读了某个受保护的重要文档。
+    保护服务生成的日志可以导入到所选的存储库中 (例如数据库、联机分析处理 (OLAP) 系统或映射-减少系统) 以分析信息和生成报告。 例如，可以看出谁在访问受保护的数据。 还可以确定用户访问了哪些受保护的数据、从哪些设备访问、从何处访问。 你可以了解用户是否能够成功读取受保护内容。 你还可以看出哪些用户阅读了某个受保护的重要文档。
 
 -   **监控滥用行为**
 
@@ -48,8 +48,8 @@ ms.locfileid: "86136786"
 |----------------|---------------|
 |管理员日志|记录保护服务的管理任务。 例如，在停用服务的情况下，启用超级用户功能时，以及向用户委派服务的管理员权限时。 <br /><br />有关详细信息，请参阅 PowerShell cmdlet [AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog)。|
 |文档跟踪|允许用户跟踪和撤消其使用 Azure 信息保护客户端跟踪的文档。 全局管理员也可以代表用户跟踪这些文档。 <br /><br />有关详细信息，请参阅[配置和使用 Azure 信息保护的文档跟踪](./rms-client/client-admin-guide-document-tracking.md)。|
-|客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”**** 事件日志和“Azure 信息保护”**** 中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
-|客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP**** 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
+|客户端事件日志|Azure 信息保护客户端的使用活动记录在本地 Windows“应用程序和服务”事件日志和“Azure 信息保护”中。 <br /><br />有关详细信息，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。|
+|客户端日志文件|有关 Azure 信息保护客户端的疑难解答日志，位于 %localappdata%\Microsoft\MSIP 中。 <br /><br />这些文件专门设计供 Microsoft 支持部门使用。|
 
 此外，会收集并聚合 Azure 信息保护客户端使用情况日志和 Azure 信息保护扫描程序中的信息以在 Azure 门户中创建报表。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
@@ -65,11 +65,11 @@ Azure 信息保护将日志作为一系列 blob 写入到 Azure 存储帐户，�
 
 在保护操作之后，日志可能需要一些时间才能显示在存储帐户中。 大多数日志在 15 分钟之内显示。 我们建议你将日志下载到本地存储，例如本地文件夹、数据库或 map-reduce 存储库。
 
-若要下载使用日志，需要使用适用于 Azure 信息保护的 AIPService PowerShell 模块。 有关安装说明，请参阅[安装 AIPService PowerShell 模块](install-powershell.md)。
+若要下载使用日志，需要使用适用于 Azure 信息保护的 AIPService PowerShell 模块。 有关安装说明，请参阅 [安装 AIPService PowerShell 模块](install-powershell.md)。
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>使用 PowerShell 下载使用日志
 
-1.  使用 "以**管理员身份运行**" 选项启动 Windows PowerShell，并使用[AipService](/powershell/module/aipservice/connect-aipservice) Cmdlet 连接到 Azure 信息保护：
+1.  使用 "以 **管理员身份运行** " 选项启动 Windows PowerShell，并使用 [AipService](/powershell/module/aipservice/connect-aipservice) Cmdlet 连接到 Azure 信息保护：
 
     ```
     Connect-AipService
@@ -87,7 +87,7 @@ Azure 信息保护将日志作为一系列 blob 写入到 Azure 存储帐户，�
     
     * 若要下载某一日期范围（例如从 2016/2/1 到 2016/2/14）的日志，请运行以下命令：`Get-AipServiceUserLog -Path E:\Logs -fromdate 2/1/2016 –todate 2/14/2016` 
 
-如果你只指定了天（如我们的示例），则时间将假定为本地时间的 00:00:00，然后转换为 UTC。 如果你使用 -fromdate 或 -todate 参数指定了时间（例如，fordate "2/1/2016 15:00:00"），则日期和时间将转换为 UTC。 然后，AipServiceUserLog 命令获取该 UTC 时间段的日志。
+如果你只指定了天（如我们的示例），则时间将假定为本地时间的 00:00:00，然后转换为 UTC。 如果你使用 -fromdate 或 -todate 参数指定了时间（例如，fordate "2/1/2016 15:00:00"），则日期和时间将转换为 UTC。 然后，Get-AipServiceUserLog 命令获取该 UTC 时间段的日志。
 
 你不能指定少于一整天的时间来进行下载。
 
@@ -123,7 +123,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 后面的每行都是日志记录。 这些字段的值与前一行具有相同的顺序，并且以制表符分隔。 请使用下表分析这些字段。
 
 
-|   字段名   | W3C 数据类型 |                                                                                                                                                                          说明                                                                                                                                                                          |                                                            示例值                                                            |
+|   字段名称   | W3C 数据类型 |                                                                                                                                                                          说明                                                                                                                                                                          |                                                            示例值                                                            |
 |----------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 |      date      |     日期      |                                                                                                                     为请求提供服务时的 UTC 日期。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                                     |                                                             2013-06-25                                                              |
 |      time      |     时间      |                                                                                                            为请求提供服务时的 UTC 时间（24 小时格式）。<br /><br />源是为请求提供服务的服务器上的本地时钟。                                                                                                            |                                                              21:59:28                                                               |
@@ -148,7 +148,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 
 -   值 **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**。
 
-    这表示 Office 365 服务（如 Exchange Online 或 Microsoft SharePoint）正在发出请求。 在字符串中， * &lt; YourTenantID &gt; *是租户的 GUID，而* &lt; 区域 &gt; *是租户注册的区域。 例如，**na** 代表北美，**eu** 代表欧洲，**ap** 代表亚洲。
+    这表示 Office 365 服务（如 Exchange Online 或 Microsoft SharePoint）正在发出请求。 在字符串中， *&lt; YourTenantID &gt;* 是租户的 GUID，而 *&lt; 区域 &gt;* 是租户注册的区域。 例如，**na** 代表北美，**eu** 代表欧洲，**ap** 代表亚洲。
 
 -   如果你使用 RMS 连接器。
 
@@ -164,7 +164,7 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |AcquireTemplates|进行调用以基于模板 ID 获取模板|
 |AcquireTemplateInformation|进行调用以从服务获取模板的 ID。|
 |AddTemplate|从 Azure 门户进行调用以添加模板。|
-|AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”**** 页面下载 CSV 文件。|
+|AllDocsCsv|从文档跟踪站点进行调用，以便从“所有文档”页面下载 CSV 文件。|
 |BECreateEndUserLicenseV1|从移动设备进行调用以创建最终用户许可证。|
 |BEGetAllTemplatesV1|从移动设备（后端）进行调用以获取所有模板。|
 |Certify|客户端正在认证用户对受保护内容的使用和创建情况。|
@@ -175,14 +175,14 @@ Azure 信息保护将日志作为一系列 blob 写入。
 |FECreatePublishingLicenseV1|与 Certify 和 GetClientLicensorCert 组合请求相同，来自移动客户端。|
 |FEGetAllTemplates|从移动设备（前端）进行调用以获取模板。|
 |FindServiceLocationsForUser|进行调用以查询 URL，使用该项来调用 Certify 或 AcquireLicense。|
-|GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”**** 页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”**** 页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”**** 页面。|
+|GetAllDocs|从文档跟踪站点进行调用，以便为用户加载“所有文档”页面，或者搜索该租户的所有文档。 将此值与 admin-action 和 acting-as-admin 字段结合使用：<br /><br />- admin-action 为空：用户在“所有文档”页面中查看自己的文档。<br /><br />- admin-action 为 true 且 acting-as-user 为空：管理员查看其租户的所有文档。<br /><br />- admin-action 为 true 且 acting-as-user 不为空：管理员查看用户的“所有文档”页面。|
 |GetAllTemplates|从 Azure 门户进行调用以获取所有模板。|
 |GetClientLicensorCert|客户端正在从基于 Windows 的计算机请求发布证书（随后用于保护内容）。|
 |GetConfiguration|调用 Azure PowerShell cmdlet 以获取 Azure RMS 租户的配置。|
 |GetConnectorAuthorizations|从 RMS 连接器进行调用以从云中获取其配置。|
 |GetRecipients|从文档跟踪站点进行调用，以便导航到单个文档的列表视图。|
-|GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”**** 页面。|
-|GetTenantFunctionalState|Azure 门户正在检查是否已激活保护服务（Azure Rights Management）。|
+|GetSingle|从文档跟踪站点进行调用，以便导航到“单个文档”页面。|
+|GetTenantFunctionalState|Azure 门户正在检查是否已激活保护服务 (Azure Rights Management) 。|
 |GetTemplateById|从 Azure 门户进行调用以通过指定模板 ID 来获取模板。|
 |KeyVaultDecryptRequest|客户端正在尝试解密受 RMS 保护的内容。 仅适用于 Azure 密钥保管库中客户托管的租户密钥 (BYOK)。|
 |KeyVaultGetKeyInfoRequest|进行调用以验证指定用在 Azure 信息保护租户密钥的 Azure 密钥保管库中的密钥可访问，并且未使用。|
@@ -204,6 +204,6 @@ Azure 信息保护将日志作为一系列 blob 写入。
 
 ## <a name="powershell-reference"></a>PowerShell 参考
 
-访问保护使用日志记录所需的唯一 PowerShell cmdlet 是[AipServiceUserLog](/powershell/module/aipservice/get-aipserviceuserlog)。 
+访问保护使用日志记录所需的唯一 PowerShell cmdlet 是 [AipServiceUserLog](/powershell/module/aipservice/get-aipserviceuserlog)。 
 
-有关使用 PowerShell 进行 Azure 信息保护的详细信息，请参阅[使用 Powershell 管理 Azure 信息保护中的保护](administer-powershell.md)。
+有关使用 PowerShell 进行 Azure 信息保护的详细信息，请参阅 [使用 Powershell 管理 Azure 信息保护中的保护](administer-powershell.md)。

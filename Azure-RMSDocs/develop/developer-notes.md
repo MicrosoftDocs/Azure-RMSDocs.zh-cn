@@ -14,25 +14,25 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: cfa9f00d7a69966c3a6819294e72c8dfccac02fc
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 76516086a4d2963dfa6b3aa293d0c49a28285c09
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564254"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566369"
 ---
 # <a name="rights-management-services-sdk-21-developer-guidance"></a>Rights Management Services SDK 2.1 开发人员指南
 
 本部分介绍几个重要开发方案的特定指南，以及有关使用此 SDK 进行开发的常规信息。 本部分中的方案特定于此版本的 Rights Management Services SDK 2.1，在后续版本中可能会有所改动。
 - [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md) - 使用 Azure Active Directory 身份验证库 (ADAL) 向 Azure RMS 验证应用身份。
-- [操作说明：添加显式所有者权限](add-explicit-owner-rights.md) -应用程序在从头开始创建许可证时应显式添加 "所有者" 权限 ([IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)) 。
+- [操作说明：添加显式所有者权限](add-explicit-owner-rights.md) -应用程序在从头开始创建许可证时应显式添加 "所有者" 权限 ([IpcCreateLicenseFromScratch](/previous-versions/windows/desktop/msipc/ipccreatelicensefromscratch)) 。
 - [操作说明：调试启用权限的应用程序](debugging-applications-that-use-ad-rms.md) - 本主题演示如何调试应用程序和使用 Windows 事件日志。
 - [如何：将应用部署到客户的租户中](how-to-deploy-app.md) - 概述将应用从其开发 Azure AD 租户部署到生产 Azure AD 租户的步骤。
-- [操作说明：启用文档跟踪和撤销](tracking-content.md) - 本主题介绍用于实现文档内容跟踪和实现用于源数据更新和为应用创建**跟踪使用情况按钮**的示例代码的基本指导。
+- [操作说明：启用文档跟踪和撤销](tracking-content.md) - 本主题介绍用于实现文档内容跟踪和实现用于源数据更新和为应用创建 **跟踪使用情况按钮** 的示例代码的基本指导。
 - [操作说明：启用电子邮件通知](how-to-enable-email-notification.md) - 电子邮件通知可以使受保护内容的所有者在其内容被访问时收到通知。
 - [操作说明：使服务应用程序可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md) - 本主题概述用于设置服务应用程序以使用 Azure Rights Management 的步骤。
 - [操作说明：安装和配置 RMS 服务器](how-to-install-and-configure-an-rms-server.md) - 本主题介绍用于连接 RMS 服务器或 Azure RMS 以便测试启用权限的应用程序的步骤。
-- [操作说明：设置 API 安全模式](setting-the-api-security-mode-api-mode.md) - 通过使用 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 函数，你可以选择文件 API 应用程序在哪种安全模式下运行。
+- [操作说明：设置 API 安全模式](setting-the-api-security-mode-api-mode.md) - 通过使用 [IpcSetGlobalProperty](/previous-versions/windows/desktop/msipc/ipcsetglobalproperty) 函数，你可以选择文件 API 应用程序在哪种安全模式下运行。
 - [操作说明：使用加密设置](working-with-encryption.md) - 本主题针对加密包，并显示其使用的一些代码片段。
 - [应用程序类型](application-types.md) - 本主题介绍可以进行选择以作为启用权限形式而创建的应用程序类型。
 - [文件 API 配置](file-api-configuration.md) - 可通过注册表中的设置来配置文件 API 的行为。

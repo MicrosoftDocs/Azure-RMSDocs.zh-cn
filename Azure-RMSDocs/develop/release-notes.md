@@ -13,18 +13,18 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: has-adal-ref
-ms.openlocfilehash: 010ed1f194fd29a9d5e371c296adae5e1e216bea
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 63beff811a9a9d6d08cfb7d2119c976e91097109
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88563784"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566405"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
 [!INCLUDE [deprecation notice](../includes/deprecation-warning.md)]
 
-## <a name="whats-new"></a>新变化
+## <a name="whats-new"></a>新增功能
 
 本主题概述 RMS SDK v4. x 的这一新版本中的重要更改和功能。
 
@@ -38,13 +38,13 @@ ms.locfileid: "88563784"
 -   [2015 年 1 月更新 - 添加 WinPhone 平台支持](#january-2015-update---adds-winphone-platform-support)
 -   [2014 年 10 月更新 - 升级到 Microsoft RMS SDK 4.1](#october-2014-update---upgrade-to-microsoft-rms-sdk-41)
 -   [发行说明](#release-notes)
--   [常见问题](#frequently-asked-questions)
+-   [常见问题解答](#frequently-asked-questions)
 
 ### <a name="new-for-july-2017"></a>2017 年 7 月的新功能
 
 7 月发行的更新包括 SDK 的递增修订，现在为 4.2.5。
 
-- Android SDK：应用现可通过 Android SDK 实时设置日志记录级别****。 有关详细信息，请参阅[如何：启用错误和性能日志记录](https://docs.microsoft.com/information-protection/develop/enabling-logging)
+- Android SDK：应用现可通过 Android SDK 实时设置日志记录级别。 有关详细信息，请参阅[如何：启用错误和性能日志记录](/information-protection/develop/enabling-logging)
 - iOS SDK 不支持日志记录级别。
 - 此 SDK 现在会返回 NULL 访问令牌的错误。
 
@@ -66,29 +66,29 @@ ms.locfileid: "88563784"
 
 -   文档跟踪，仅限 RMS 联机，适用于 iOS/OS X 和 Android 操作系统。
 
-    有关 iOS/OS X 的详细信息和使用指南，请参阅 [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx) 类，其中提供了有关 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 的跟踪信息以及其他文档跟踪注册方法。 对于 Android 操作系统，也在 [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) 和 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx) 中添加了类似功能。
+    有关 iOS/OS X 的详细信息和使用指南，请参阅 [MSLicenseMetadata](/previous-versions/windows/desktop/msipcthin2/mslicensemetadata-class-objc) 类，其中提供了有关 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc) 的跟踪信息以及其他文档跟踪注册方法。 对于 Android 操作系统，也在 [LicenseMetadata](/previous-versions/windows/desktop/msipcthin2/licensemetadata-interface-java) 和 [UserPolicy](/previous-versions/windows/desktop/msipcthin2/userpolicy-class-java) 中添加了类似功能。
 
     有关文档跟踪功能的详细说明，请参阅[如何：使用文档跟踪](how-to-use-document-tracking.md)。
 
 -   一组同步方法，使 Android API 的异步版本实现并行执行：
 
-    [CustomProtectedInputStream.create 同步方法](https://msdn.microsoft.com/library/mt631362.aspx)
+    [CustomProtectedInputStream.create 同步方法](/previous-versions/windows/desktop/msipcthin2/customprotectedinputstream-create-synchronous-method-java)
 
-    [CustomProtectedOutputStream.create 同步方法](https://msdn.microsoft.com/library/mt631363.aspx)
+    [CustomProtectedOutputStream.create 同步方法](/previous-versions/windows/desktop/msipcthin2/customprotectedoutputstream-create-synchronous-method)
 
-    [ProtectedFileInputStream.create 同步方法](https://msdn.microsoft.com/library/mt631375.aspx)
+    [ProtectedFileInputStream.create 同步方法](/previous-versions/windows/desktop/msipcthin2/protectedfileinputstream-create-synchronous-method)
 
-    [ProtectedFileOutputStream.create 同步方法](https://msdn.microsoft.com/library/mt631376.aspx)
+    [ProtectedFileOutputStream.create 同步方法](/previous-versions/windows/desktop/msipcthin2/protectedfileoutputstream-create-synchronous-method-java)
 
-    [TemplateDescriptor.getTemplates 同步方法](https://msdn.microsoft.com/library/mt631380.aspx)
+    [TemplateDescriptor.getTemplates 同步方法](/previous-versions/windows/desktop/msipcthin2/templatedescriptor-gettemplates-synchronous-method-java)
 
-    [UserPolicy.acquire 同步方法](https://msdn.microsoft.com/library/mt631384.aspx)
+    [UserPolicy.acquire 同步方法](/previous-versions/windows/desktop/msipcthin2/userpolicy-acquire-synchronous-method-java)
 
-    [UserPolicy.create (PolicyDescriptor…) 同步方法**](https://msdn.microsoft.com/library/mt631385.aspx)
+    [UserPolicy.create (PolicyDescriptor…) 同步方法**](/previous-versions/windows/desktop/msipcthin2/userpolicy-create-policydescriptor-------synchronous-method-java)
 
-    [UserPolicy.create (TempalteDescriptor…) 同步方法](https://msdn.microsoft.com/library/mt631386.aspx)
+    [UserPolicy.create (TempalteDescriptor…) 同步方法](/previous-versions/windows/desktop/msipcthin2/userpolicy-create-templatedescriptor-------synchronous-method-java)
 
--   Android API 中添加了一个新的 [ProtectedBuffer](https://msdn.microsoft.com/library/mt631369.aspx) 类。
+-   Android API 中添加了一个新的 [ProtectedBuffer](/previous-versions/windows/desktop/msipcthin2/protectedbuffer-class) 类。
 -   引入更新以改进错误消息传送和故障排除体验。
 -   加密操作的显著性能改进。
 
@@ -108,7 +108,7 @@ ms.locfileid: "88563784"
 
     应用加密和解密操作可以独立地并行运行。
 
-    有关详细信息，请参阅 [MSProtector](https://msdn.microsoft.com/library/mt210993.aspx)。
+    有关详细信息，请参阅 [MSProtector](/previous-versions/windows/desktop/msipcthin2/msprotector-class-objc)。
 
     启用了日志级别控件设置。
 
@@ -116,7 +116,7 @@ ms.locfileid: "88563784"
 
     添加了缓存清除支持。
 
-    有关详细信息，请参阅 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)。
+    有关详细信息，请参阅 [MSProtection:resetStateWithCompletionBlock](/previous-versions/windows/desktop/msipcthin2/msprotection-resetstatewithcompletionblock-method-objc)。
 
 ### <a name="february-2015-update---adds-windows-store-application-support"></a>2015 年 2 月更新 - 添加 Windows 应用商店应用程序支持
 
@@ -130,13 +130,13 @@ ms.locfileid: "88563784"
 
 4.1 版本的 RMS SDK 向 Google Android 和 Apple iOS/OS X 添加了以下新功能。
 
--   用于*用户许可*处理的 Android 和 iOS/OS X SDK API 扩展，允许用户确认 SDK 行为。 目前，文档跟踪和访问未知 AD RMS 服务 URL 是受支持的许可类型。
+-   用于 *用户许可* 处理的 Android 和 iOS/OS X SDK API 扩展，允许用户确认 SDK 行为。 目前，文档跟踪和访问未知 AD RMS 服务 URL 是受支持的许可类型。
 
-    有关详细信息，请参阅 Android API 版本的 [ConsentCallback 接口](https://msdn.microsoft.com/library/dn833503.aspx)作为示例。
+    有关详细信息，请参阅 Android API 版本的 [ConsentCallback 接口](/previous-versions/windows/desktop/msipcthin2/consentcallback-interface-java)作为示例。
 
 -   iOS 8 和 OS X 10.10 (Yosemite) 现在受支持。 还有一些 Xcode 6 所需的属性名称更改。
 
-    例如：MSUserPolicy.name 更改为 [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx)。
+    例如：MSUserPolicy.name 更改为 [MSUserPolicy.policyName](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-name-property-objc)。
 
 ## <a name="release-notes"></a>发行说明
 
@@ -146,13 +146,13 @@ ms.locfileid: "88563784"
 
 -   **AD RMS 支持** - IT 管理员可以在带有全新 AD RMS 服务器的移动设备扩展的移动设备上使用启用 RMS 的应用。
 -   **脱机使用** - 最终用户可以脱机访问受 RMS 保护的数据。
--   **隔离式身份验证** - 开发人员可以使用自己的 Azure RMS 和 AD RMS 身份验证库（或使用推荐的 [Azure AD 身份验证库 (ADAL)](https://MSDN.Microsoft.Com/library/jj573266.aspx)）。
+-   **隔离式身份验证** - 开发人员可以使用自己的 Azure RMS 和 AD RMS 身份验证库（或使用推荐的 [Azure AD 身份验证库 (ADAL)](/previous-versions/azure/jj573266(v=azure.100))）。
 -   **隔离式 UI** - 开发人员可以构建自己的用户界面以保护和使用受 RMS 保护的文档。
 -   **重新设计的 API** - 开发人员现在可以享用简单、透明的加密和解密 API，通过最少的努力即可提供一致的 RMS 行为和用户体验。
 
 **所有平台通用**
 
--   RMS SDK 4.x API 并非*线程安全*。
+-   RMS SDK 4.x API 并非 *线程安全*。
 
 **Android**
 
@@ -164,9 +164,9 @@ ms.locfileid: "88563784"
 
     **解决方案** - 确保应用程序不允许对 Android API 进行多实例调用。
 
--   当我使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx) ( 字节 \[ \] 数组，int offset，int length ) 方法的长度不同于*数组*length 值，以后我将无法使用 SDK 来使用内容。
+-   当我使用 [protectedfileoutputstream .write](/previous-versions/windows/desktop/msipcthin2/protectedfileoutputstream-class-java) ( 字节 \[ \] 数组，int offset，int length ) 方法的长度不同于 *数组* length 值，以后我将无法使用 SDK 来使用内容。
 
-    **解决方案** - 这是一个已知问题。 若要缓解这种情况，请始终传递具有与 length 参数相同的长度值的*字节 \[ \] *数组，或使用[protectedfileoutputstream .write](https://msdn.microsoft.com/library/dn790855.aspx) (字节 \[ \] 数组) 方法。
+    **解决方案** - 这是一个已知问题。 若要缓解这种情况，请始终传递具有与 length 参数相同的长度值的 *字节 \[ \]* 数组，或使用 [protectedfileoutputstream .write](/previous-versions/windows/desktop/msipcthin2/protectedfileoutputstream-class-java) (字节 \[ \] 数组) 方法。
 
 **iOS 和 OS X**
 
@@ -192,8 +192,8 @@ ms.locfileid: "88563784"
 
     以下方法不得同时运行。 为了监视执行完成情况，请使用所说明的完成块方法。
 
-    - [MSProtectedData.protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx)
-    - [MSCustomProtectedData.customProtectedDataWithPolicy](https://msdn.microsoft.com/library/dn758315.aspx)
+    - [MSProtectedData.protectedDataWithProtectedFile](/previous-versions/windows/desktop/msipcthin2/msprotecteddata-protecteddatawithprotectedfile-completionblock-method-objc)
+    - [MSCustomProtectedData.customProtectedDataWithPolicy](/previous-versions/windows/desktop/msipcthin2/mscustomprotecteddata-customprotecteddatawithpolicy-protecteddata-contentstartposition-contentsize-completionblock-method-objc)
 
 
 
@@ -203,7 +203,7 @@ ms.locfileid: "88563784"
 
 **所有平台**
 
-**问**：我在保护工作流中未看到**自定义权限**选择 UI。 为什么？
+**问**：我在保护工作流中未看到 **自定义权限** 选择 UI。 原因是什么？
 
 **答**：这是已知问题，将在后续版本中解决。
 
@@ -211,7 +211,7 @@ ms.locfileid: "88563784"
 
 **答**：若要请求用于 Azure AD RMS 测试组织的凭据，请发送电子邮件至 <rmcstbeta@microsoft.com>。
 
-**问**：我在文档此处未看到任何有关测试层次结构的讨论。 为什么？
+**问**：我在文档此处未看到任何有关测试层次结构的讨论。 原因是什么？
 
 **答**：新的 AD RMS SDK 不存在任何测试层次结构概念。 你将始终使用生产层次结构。
 
@@ -234,7 +234,7 @@ ms.locfileid: "88563784"
 
 **答**：包含 iOS 7 及更高版本的 Xcode 5.0。
 
-**问**：我对某个操作调用了 cancel() 方法，但仍然收到了操作已完成的通知。 为什么？
+**问**：我对某个操作调用了 cancel() 方法，但仍然收到了操作已完成的通知。 原因是什么？
 
 **问**：并非所有操作都可以取消，因此最好在可能的情况下执行取消操作。
 

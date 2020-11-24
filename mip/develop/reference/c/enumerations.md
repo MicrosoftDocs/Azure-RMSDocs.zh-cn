@@ -5,13 +5,13 @@ author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
-ms.date: 4/16/2020
-ms.openlocfilehash: e65dae9c6df3d65a8bccf6bb08d61ff49b21d7ee
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.date: 9/22/2020
+ms.openlocfilehash: 56ce8aac0e4b8e1435c6fc5ceacad5fef24e3afa
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764169"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565075"
 ---
 # <a name="enumerations"></a>枚举
 
@@ -23,7 +23,7 @@ ms.locfileid: "81764169"
 |---|---|
 |  MIP_CACHE_STORAGE_TYPE_IN_MEMORY = 0         | 内存中存储  |
 |  MIP_CACHE_STORAGE_TYPE_ON_DISK = 1           | 磁盘上存储  |
-|  MIP_CACHE_STORAGE_TYPE_ON_DISK_ENCRYPTED = 2  | 使用加密的磁盘上存储（如果平台支持）  |
+|  MIP_CACHE_STORAGE_TYPE_ON_DISK_ENCRYPTED = 2  | 使用加密 (的磁盘存储（如果平台支持）)   |
 
 
 ```c
@@ -75,7 +75,7 @@ typedef enum {
 
 ## <a name="mip_cc_content_mark_alignment"></a>mip_cc_content_mark_alignment
 
-内容标记的对齐方式（内容标头或内容页脚）
+内容标记 (内容标头或内容页脚的对齐) 
 
 | 字段 | 说明 |
 |---|---|
@@ -137,19 +137,20 @@ typedef enum {
 
 | 字段 | 说明 |
 |---|---|
-|  MIP_FLIGHTING_FEATURE_SERVICE_DISCOVERY = 0          | 依靠单独的 HTTP 调用来确定 RMS 服务终结点（默认值为 false） |
-|  MIP_FLIGHTING_FEATURE_AUTH_INFO_CACHE = 1            | 缓存每个域/租户的 OAuth2 难题，减少不必要的401响应。 为管理自己的 HTTP 身份验证的应用/服务禁用（默认值为 true）  |
-|  MIP_FLIGHTING_FEATURE_LINUX_ENCRYPTED_CACHE = 2      | 为 Linux 平台启用加密缓存（默认值为 false）  |
-|  MIP_FLIGHTING_FEATURE_SINGLE_DOMAIN_NAME = 3         | 启用单一公司名称进行 dns 查找（例如https://corprights)  |
-|  MIP_FLIGHTING_FEATURE_POLICY_AUTH = 4                | 为发送到策略服务的请求启用自动 HTTP 身份验证。 为管理自己的 HTTP 身份验证的应用/服务禁用（默认值为 true）  |
+|  MIP_FLIGHTING_FEATURE_SERVICE_DISCOVERY = 0          | 依靠单独的 HTTP 调用来确定 RMS 服务终结点 (默认为 false)  |
+|  MIP_FLIGHTING_FEATURE_AUTH_INFO_CACHE = 1            | 缓存每个域/租户的 OAuth2 难题，减少不必要的401响应。 对于管理自己的 HTTP 身份验证 (默认为 true) 的应用/服务禁用  |
+|  MIP_FLIGHTING_FEATURE_LINUX_ENCRYPTED_CACHE = 2      | 为 Linux 平台启用加密缓存 (默认值为 false)   |
+|  MIP_FLIGHTING_FEATURE_SINGLE_DOMAIN_NAME = 3         | 启用单台公司名称进行 dns 查找 (例如 https://corprights)  |
+|  MIP_FLIGHTING_FEATURE_POLICY_AUTH = 4                | 为发送到策略服务的请求启用自动 HTTP 身份验证。 对于管理自己的 HTTP 身份验证 (默认为 true) 的应用/服务禁用  |
 |  MIP_FLIGHTING_FEATURE_URL_REDIRECT_CACHE = 5         | 缓存 URL 重定向以减少 HTTP 操作数  |
 |  MIP_FLIGHTING_FEATURE_PRE_LICENSE = 6                | 启用预许可证 api 检查  |
 |  MIP_FLIGHTING_FEATURE_DOUBLE_KEY_PROTECTION = 7      | 启用双重密钥保护功能，以使用客户密钥进行加密  |
 |  MIP_FLIGHTING_FEATURE_VARIABLE_POLICY_TTL = 8        | 在存储中启用变量策略 ttl  |
 |  MIP_FLIGHTING_FEATURE_VARIABLE_TEXT_MARKING = 9      | 启用可变文本标记  |
-|  MIP_FLIGHTING_FEATURE_OPTIMIZE_PDF_MEMORY = 10       | 在保护和取消保护 PDF 文件时启用优化 Pdf 内存创建者  |
+|  MIP_FLIGHTING_FEATURE_OPTIMIZE_PDF_MEMORY = 10       | 在保护和取消保护 PDF 文件时启用优化 PDF 内存创建者  |
 |  MIP_FLIGHTING_FEATURE_REMOVE_DELETED_LABEL_MD = 11   | 启用删除删除标签的元数据  |
 |  MIP_FLIGHTING_FEATURE_ENFORCE_TLS12 = 12             | 为非 ADRMS HTTPS 连接强制执行 TLS 1。2  |
+|  MIP_FLIGHTING_FEATURE_KEEP_PDF_LINEARIZTION = 13     | 通过优化 PDF 内存创建器，在加密/解密后保留 PDF 文件 linearization |
 
 
 ```c
@@ -167,6 +168,7 @@ typedef enum {
   MIP_FLIGHTING_FEATURE_OPTIMIZE_PDF_MEMORY = 10,      
   MIP_FLIGHTING_FEATURE_REMOVE_DELETED_LABEL_MD = 11,  
   MIP_FLIGHTING_FEATURE_ENFORCE_TLS12 = 12,            
+  MIP_FLIGHTING_FEATURE_KEEP_PDF_LINEARIZTION = 13,    
 } mip_cc_flighting_feature;
 
 ```
@@ -196,7 +198,7 @@ HTTP 操作的成功/失败状态
 | 字段 | 说明 |
 |---|---|
 |  HTTP_RESULT_OK = 0       | 已成功完成 HTTP 操作  |
-|  HTTP_RESULT_FAILURE = 1  | HTTP 操作失败（例如，超时、网络故障等）  |
+|  HTTP_RESULT_FAILURE = 1  | HTTP 操作失败 (例如，超时、网络故障等 )   |
 
 
 ```c
@@ -216,7 +218,7 @@ typedef enum {
 |  MIP_LOG_LEVEL_TRACE = 0   | 跟踪  |
 |  MIP_LOG_LEVEL_INFO        | 信息  |
 |  MIP_LOG_LEVEL_WARNING     | 警告  |
-|  MIP_LOG_LEVEL_ERROR       | 错误  |
+|  MIP_LOG_LEVEL_ERROR       | Error  |
 
 
 ```c
@@ -257,14 +259,14 @@ API 成功/失败结果
 |  MIP_RESULT_ERROR_INSUFFICIENT_BUFFER = 2         | 应用程序提供的缓冲区太小  |
 |  MIP_RESULT_ERROR_BAD_INPUT = 3                   | 应用程序传递了错误输入  |
 |  MIP_RESULT_ERROR_FILE_IO_ERROR = 4               | 常规文件 i/o 错误  |
-|  MIP_RESULT_ERROR_NETWORK = 5                     | 常规网络错误（例如无法访问的服务）  |
+|  MIP_RESULT_ERROR_NETWORK = 5                     | 常规网络错误 (，例如无法访问的服务)   |
 |  MIP_RESULT_ERROR_INTERNAL = 6                    | 内部错误意外  |
 |  MIP_RESULT_ERROR_JUSTIFICATION_REQUIRED = 7      | 应提供对齐方式，才能完成对文件执行的操作。  |
 |  MIP_RESULT_ERROR_NOT_SUPPORTED_OPERATION = 8     | 不支持 Opeation  |
 |  MIP_RESULT_ERROR_PRIVILEGED_REQUIRED = 9         | 当带有标准方法时，不能重写特权标签  |
 |  MIP_RESULT_ERROR_ACCESS_DENIED = 10              | 用户无权访问服务  |
 |  MIP_RESULT_ERROR_CONSENT_DENIED = 11             | 未向用户授予许可要求的操作  |
-|  MIP_RESULT_ERROR_NO_PERMISSIONS = 12             | 用户无法获取内容的访问权限（例如，没有权限，已撤消内容）  |
+|  MIP_RESULT_ERROR_NO_PERMISSIONS = 12             | 用户无法访问内容 (例如，没有权限，吊销内容)   |
 |  MIP_RESULT_ERROR_NO_AUTH_TOKEN = 13              | 由于身份验证令牌为空，用户无法访问内容  |
 |  MIP_RESULT_ERROR_SERVICE_DISABLED = 14           | 由于服务被禁用，用户无法访问内容  |
 |  MIP_RESULT_ERROR_PROXY_AUTH = 15                 | 代理身份验证失败  |
@@ -275,6 +277,7 @@ API 成功/失败结果
 |  MIP_RESULT_ERROR_TEMPLATE_NOT_FOUND = 20         | 无法识别模板 ID  |
 |  MIP_RESULT_ERROR_LABEL_NOT_FOUND = 21            | 无法识别标签 ID  |
 |  MIP_RESULT_ERROR_LABEL_DISABLED = 22             | 标签已禁用或处于非活动状态  |
+|  MIP_RESULT_ERROR_DOUBLE_KEY_DISABLED = 23        | 双重密钥功能尚未启用  |
 
 
 ```c
@@ -306,7 +309,30 @@ typedef enum {
   MIP_RESULT_ERROR_TEMPLATE_NOT_FOUND = 20,        
   MIP_RESULT_ERROR_LABEL_NOT_FOUND = 21,           
   MIP_RESULT_ERROR_LABEL_DISABLED = 22,            
+  MIP_RESULT_ERROR_DOUBLE_KEY_DISABLED = 23,       
 } mip_cc_result;
+
+```
+
+## <a name="mip_cc_cipher_mode"></a>mip_cc_cipher_mode
+
+密码模式标识符
+
+| 字段 | 说明 |
+|---|---|
+|  MIP_CIPHER_MODE_CBC4K = 0               | 具有内部填充的 CBC 4K 模式  |
+|  MIP_CIPHER_MODE_ECB = 1                 | ECB 模式  |
+|  MIP_CIPHER_MODE_CBC512NOPADDING = 2     | 具有外部 (客户端) 填充的 CBC 512 模式  |
+|  MIP_CIPHER_MODE_CBC4KNOPADDING = 3       | 具有外部 (客户端) 填充的 CBC 4K 模式  |
+
+
+```c
+typedef enum {
+  MIP_CIPHER_MODE_CBC4K = 0,              
+  MIP_CIPHER_MODE_ECB = 1,                
+  MIP_CIPHER_MODE_CBC512NOPADDING = 2,    
+  MIP_CIPHER_MODE_CBC4KNOPADDING = 3      
+} mip_cc_cipher_mode;
 
 ```
 
@@ -334,40 +360,47 @@ typedef enum {
 
 | 字段 | 说明 |
 |---|---|
-|  MIP_ACTION_TYPE_ADD_CONTENT_FOOTER = 1 << 0      | 向文档操作类型添加内容页脚。 |
-|  MIP_ACTION_TYPE_ADD_CONTENT_HEADER = 1 << 1      | 向文档操作类型添加内容页眉。 |
-|  MIP_ACTION_TYPE_ADD_WATERMARK = 1 << 2           | 向整个文档操作类型添加水印。 |
-|  MIP_ACTION_TYPE_CUSTOM = 1 << 3                  | 自定义的操作类型。 |
-|  MIP_ACTION_TYPE_JUSTIFY = 1 << 4                 | 两端对齐操作类型。 |
-|  MIP_ACTION_TYPE_METADATA = 1 << 5                | 元数据更改操作类型。 |
-|  MIP_ACTION_TYPE_PROTECT_ADHOC = 1 << 6           | 临时策略保护操作类型。 |
-|  MIP_ACTION_TYPE_PROTECT_BY_TEMPLATE = 1 << 7     | 模板保护操作类型。 |
-|  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD = 1 << 8  | “不转发”保护操作类型。 |
-|  MIP_ACTION_TYPE_REMOVE_CONTENT_FOOTER = 1 << 9   | 删除内容页脚操作类型。 |
-|  MIP_ACTION_TYPE_REMOVE_CONTENT_HEADER = 1 << 10  | 删除内容页眉操作类型。 |
-|  MIP_ACTION_TYPE_REMOVE_PROTECTION = 1 << 11      | 删除保护操作类型。 |
-|  MIP_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12       | 删除水印操作类型。 |
-|  MIP_ACTION_TYPE_APPLY_LABEL = 1 << 13            | 应用标签操作类型。 |
-|  MIP_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14        | 建议标签操作类型。 |
+|  MIP_ACTION_TYPE_ADD_CONTENT_FOOTER = 1 << 0         | 向文档操作类型添加内容页脚。 |
+|  MIP_ACTION_TYPE_ADD_CONTENT_HEADER = 1 << 1         | 向文档操作类型添加内容页眉。 |
+|  MIP_ACTION_TYPE_ADD_WATERMARK = 1 << 2              | 向整个文档操作类型添加水印。 |
+|  MIP_ACTION_TYPE_CUSTOM = 1 << 3                     | 自定义的操作类型。 |
+|  MIP_ACTION_TYPE_JUSTIFY = 1 << 4                    | 两端对齐操作类型。 |
+|  MIP_ACTION_TYPE_METADATA = 1 << 5                   | 元数据更改操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_ADHOC = 1 << 6              | 临时策略保护操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_BY_TEMPLATE = 1 << 7        | 模板保护操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD = 1 << 8     | “不转发”保护操作类型。 |
+|  MIP_ACTION_TYPE_REMOVE_CONTENT_FOOTER = 1 << 9      | 删除内容页脚操作类型。 |
+|  MIP_ACTION_TYPE_REMOVE_CONTENT_HEADER = 1 << 10     | 删除内容页眉操作类型。 |
+|  MIP_ACTION_TYPE_REMOVE_PROTECTION = 1 << 11         | 删除保护操作类型。 |
+|  MIP_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12          | 删除水印操作类型。 |
+|  MIP_ACTION_TYPE_APPLY_LABEL = 1 << 13               | 应用标签操作类型。 |
+|  MIP_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14           | 建议标签操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_ADHOC_DK = 1 << 15          | 临时策略保护操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD_DK = 1 << 17 | “不转发”保护操作类型。 |
+|  MIP_ACTION_TYPE_PROTECT_BY_ENCRYPT_ONLY = 1 << 18   | 通过加密操作类型进行保护。 |
 
 
 ```c
 typedef enum {
-  MIP_ACTION_TYPE_ADD_CONTENT_FOOTER = 1 << 0,     
-  MIP_ACTION_TYPE_ADD_CONTENT_HEADER = 1 << 1,     
-  MIP_ACTION_TYPE_ADD_WATERMARK = 1 << 2,          
-  MIP_ACTION_TYPE_CUSTOM = 1 << 3,                 
-  MIP_ACTION_TYPE_JUSTIFY = 1 << 4,                
-  MIP_ACTION_TYPE_METADATA = 1 << 5,               
-  MIP_ACTION_TYPE_PROTECT_ADHOC = 1 << 6,          
-  MIP_ACTION_TYPE_PROTECT_BY_TEMPLATE = 1 << 7,    
-  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD = 1 << 8, 
-  MIP_ACTION_TYPE_REMOVE_CONTENT_FOOTER = 1 << 9,  
-  MIP_ACTION_TYPE_REMOVE_CONTENT_HEADER = 1 << 10, 
-  MIP_ACTION_TYPE_REMOVE_PROTECTION = 1 << 11,     
-  MIP_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12,      
-  MIP_ACTION_TYPE_APPLY_LABEL = 1 << 13,           
-  MIP_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14,       
+  MIP_ACTION_TYPE_ADD_CONTENT_FOOTER = 1 << 0,        
+  MIP_ACTION_TYPE_ADD_CONTENT_HEADER = 1 << 1,        
+  MIP_ACTION_TYPE_ADD_WATERMARK = 1 << 2,             
+  MIP_ACTION_TYPE_CUSTOM = 1 << 3,                    
+  MIP_ACTION_TYPE_JUSTIFY = 1 << 4,                   
+  MIP_ACTION_TYPE_METADATA = 1 << 5,                  
+  MIP_ACTION_TYPE_PROTECT_ADHOC = 1 << 6,             
+  MIP_ACTION_TYPE_PROTECT_BY_TEMPLATE = 1 << 7,       
+  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD = 1 << 8,    
+  MIP_ACTION_TYPE_REMOVE_CONTENT_FOOTER = 1 << 9,     
+  MIP_ACTION_TYPE_REMOVE_CONTENT_HEADER = 1 << 10,    
+  MIP_ACTION_TYPE_REMOVE_PROTECTION = 1 << 11,        
+  MIP_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12,         
+  MIP_ACTION_TYPE_APPLY_LABEL = 1 << 13,              
+  MIP_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14,          
+  MIP_ACTION_TYPE_PROTECT_ADHOC_DK = 1 << 15,         
+  // Reserved
+  MIP_ACTION_TYPE_PROTECT_DO_NOT_FORWARD_DK = 1 << 17,
+  MIP_ACTION_TYPE_PROTECT_BY_ENCRYPT_ONLY = 1 << 18,  
 } mip_cc_action_type;
 
 ```
@@ -413,6 +446,9 @@ typedef enum {
 |  MIP_LABEL_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12       | 删除水印操作类型。  |
 |  MIP_LABEL_ACTION_TYPE_APPLY_LABEL = 1 << 13            | 应用标签操作类型。  |
 |  MIP_LABEL_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14        | 建议标签操作类型。  |
+|  MIP_LABEL_ACTION_TYPE_PROTECT_ADHOC_DK = 1 << 15       | 临时策略保护操作类型。 |
+|  MIP_LABEL_ACTION_TYPE_PROTECT_DO_NOT_FORWARD_DK = 1 << 17  | “不转发”保护操作类型。 |
+|  MIP_LABEL_ACTION_TYPE_PROTECT_BY_ENCRYPT_ONLY = 1 << 18    | 通过加密操作类型进行保护。 |
 
 
 ```c
@@ -432,6 +468,10 @@ typedef enum {
   MIP_LABEL_ACTION_TYPE_REMOVE_WATERMARK = 1 << 12,      
   MIP_LABEL_ACTION_TYPE_APPLY_LABEL = 1 << 13,           
   MIP_LABEL_ACTION_TYPE_RECOMMEND_LABEL = 1 << 14,       
+  MIP_LABEL_ACTION_TYPE_PROTECT_ADHOC_DK = 1 << 15,      
+  // Reserved
+  MIP_LABEL_ACTION_TYPE_PROTECT_DO_NOT_FORWARD_DK = 1 << 17, 
+  MIP_LABEL_ACTION_TYPE_PROTECT_BY_ENCRYPT_ONLY = 1 << 18,   
 } mip_cc_label_action_type;
 
 ```

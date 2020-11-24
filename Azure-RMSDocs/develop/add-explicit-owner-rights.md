@@ -14,23 +14,23 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 332054ba4423ff26cf69023cc1ee6723076b253e
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: cfdee38bc12393f130abcbfc5d69b1fbd65f5ecd
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564295"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566128"
 ---
 # <a name="how-to-add-explicit-owner-rights"></a>操作说明：添加显式所有者权限
 
-应用程序使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 从头开始创建许可证时应显式添加“所有者”权限。
+应用程序使用 [IpcCreateLicenseFromScratch](/previous-versions/windows/desktop/msipc/ipccreatelicensefromscratch) 从头开始创建许可证时应显式添加“所有者”权限。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-应用程序在使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建许可证句柄时，还必须显式授予所有者完全权限（权限）。
+应用程序在使用 [IpcCreateLicenseFromScratch](/previous-versions/windows/desktop/msipc/ipccreatelicensefromscratch) 创建许可证句柄时，还必须显式授予所有者完全权限（权限）。
 
 > [!NOTE]
-> 使用 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
+> 使用 [IpcSetLicenseProperty](/previous-versions/windows/desktop/msipc/ipcsetlicenseproperty) 以及 **IPC\_LI\_OWNER** 属性将用户设置为“所有者”不会授予所有者完全权限。
 
 下列示例代码仅演示创建特定权限并添加到给定许可证时所涉及的步骤。
 
@@ -38,12 +38,12 @@ ms.locfileid: "88564295"
  
 ## <a name="step-1-example-scenario"></a>步骤 1：示例方案
 
-在此示例中，所需权限会添加到使用 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
+在此示例中，所需权限会添加到使用 [IpcCreateLicenseFromScratch](/previous-versions/windows/desktop/msipc/ipccreatelicensefromscratch) 创建的许可证。 该示例演示如何通过权限列表创建权限并分配给许可证。
 
 会向这些用户添加以下两种权限：
 
-- 分配给 joe@contoso.com 的读取** 权限
-- 分配给 mary 的*完全*权限\_kay@contoso.com
+- 分配给 joe@contoso.com 的读取权限
+- 分配给 mary 的 *完全* 权限\_kay@contoso.com
 
 ```cpp
 // Create User Rights structure
@@ -110,5 +110,5 @@ if(FAILED(hr))
 ## <a name="related-topics"></a>相关主题
 
 - [开发人员注意事项](developer-notes.md)
-- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
-- [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
+- [IpcSetLicenseProperty](/previous-versions/windows/desktop/msipc/ipcsetlicenseproperty)
+- [IpcCreateLicenseFromScratch](/previous-versions/windows/desktop/msipc/ipccreatelicensefromscratch)

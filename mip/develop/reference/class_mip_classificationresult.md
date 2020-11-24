@@ -1,29 +1,30 @@
 ---
 title: 类 ClassificationResult
-description: 记录 Microsoft 信息保护（MIP） SDK 的 classificationresult：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 classificationresult：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: b87db224bdd7a571c22de9e382ff9faf3ce656b8
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 4e64abc1cca11f11b19238282c9061dc26b29290
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763524"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565213"
 ---
 # <a name="class-classificationresult"></a>类 ClassificationResult 
 包含对执行状态进行分类调用的结果的类。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std::string GetId() const  |  获取分类策略的 ID。
 public std::string GetName() const  |  获取分类策略的名称。
 public int GetCount() const  |  获取实例计数。
 public int GetConfidenceLevel() const  |  获取结果可信度。
-public std：： string GetSensitiveInformationDetections （） const  |  获取敏感信息检测。
+public std：： string GetSensitiveInformationDetections ( # A1 const  |  获取敏感信息检测。
+public virtual std：： vector \<std::shared_ptr\<mip::DetailedClassificationResult\> \> GetDetailedClassificationAttributes ( # A1 const  |  如果启用了增强分类，请获取特定检测带区。
   
 ## <a name="members"></a>成员
   
@@ -53,3 +54,9 @@ public std：： string GetSensitiveInformationDetections （） const  |  获�
 
   
 **返回**：所有敏感信息检测的 Json 字符串。 如果不为空，则必须为有效的 json 格式。
+  
+### <a name="getdetailedclassificationattributes-function"></a>GetDetailedClassificationAttributes 函数
+如果启用了增强分类，请获取特定检测带区。
+
+  
+**返回**：实例的向量在不同的置信度阈值

@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 841669b3db3e86e2ea6f1860a9d8e9d915c4d28d
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 2fc3fecd33d6e461156e8c608eae91dee17dff2b
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564237"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566365"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -36,9 +36,9 @@ ms.locfileid: "88564237"
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 租户配置
 
-若要为 Azure 信息保护配置 Azure AD 环境，请按照 [从 Azure 信息保护中激活保护服务](https://docs.microsoft.com/information-protection/deploy-use/activate-service)中的指南进行操作。
+若要为 Azure 信息保护配置 Azure AD 环境，请按照 [从 Azure 信息保护中激活保护服务](/information-protection/deploy-use/activate-service)中的指南进行操作。
 
-激活服务后，你需要 PowerShell 组件来执行后续步骤。 遵循 [使用 PowerShell 管理 Azure 信息保护中的保护](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell) 来完成此操作。
+激活服务后，你需要 PowerShell 组件来执行后续步骤。 遵循 [使用 PowerShell 管理 Azure 信息保护中的保护](/information-protection/deploy-use/administer-powershell) 来完成此操作。
 
 ### <a name="getting-your-tenant-id"></a>获取租户 ID
 
@@ -74,7 +74,7 @@ ms.locfileid: "88564237"
 *示例 App.config 文件* 
  ![cmdlet 输出](../media/develop/example-App.config-file.png)
 
-- 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅[为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
+- 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅 [为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
 
 
 ## <a name="design-summary"></a>设计摘要

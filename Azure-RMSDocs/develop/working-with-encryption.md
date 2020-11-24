@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: d309f08866bc01cde2725581ccef796bdbe96e98
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 45b5b2b76abb7a2b2c5dcb826ed15774fb81c606
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88563560"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566328"
 ---
 # <a name="how-to-work-with-encryption-settings"></a>操作说明：使用加密设置
 
@@ -41,7 +41,7 @@ ms.locfileid: "88563560"
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB（也称为不推荐使用的算法）
 
-加密包标记（请参阅[首选加密](https://msdn.microsoft.com/library/dn974065.aspx)）可与许可证属性标记 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE* 结合使用。
+加密包标记（请参阅 [首选加密](/previous-versions/windows/desktop/msipc/preferred-encryption)）可与许可证属性标记 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE* 结合使用。
 
 以下是一些简单的代码段，用于演示如何使用新的许可证属性。
 
@@ -81,7 +81,7 @@ hr = IpcSetLicenseProperty(pLicenseHandle,
 
 ## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>使用 AES-128 ECB（不推荐使用的算法）保护文件
 
-此示例还演示支持*不推荐使用的算法*的新方法。
+此示例还演示支持 *不推荐使用的算法* 的新方法。
 
 ```cpp
 hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,

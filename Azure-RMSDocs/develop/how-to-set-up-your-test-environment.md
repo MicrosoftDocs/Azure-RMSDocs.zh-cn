@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 638a8ec54a850a051795c00b2b1aef4ef47866ff
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: c4c6ac4e2f8463e7d17f8ebd609a1276edbce1f7
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564063"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566281"
 ---
 # <a name="testing-your-application"></a>测试应用程序
 
@@ -39,13 +39,13 @@ ms.locfileid: "88564063"
 
     要获取 RMS SDK 2.1 安装帮助，请参阅[安装 SDK](install-the-rms-sdk.md)。
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
-本指南并不全面。 要了解如何配置 RMS 客户端 2.1，请参阅 [RMS 客户端 2.1 部署说明](https://technet.microsoft.com/library/jj159267(WS.10).aspx)。
+本指南并不全面。 要了解如何配置 RMS 客户端 2.1，请参阅 [RMS 客户端 2.1 部署说明](../rms-client/client-deployment-notes.md)。
 
 ## <a name="related-topics"></a>相关主题
 
 * [操作说明：安装和配置 RMS 服务器](how-to-install-and-configure-an-rms-server.md)
 * [操作说明：使用 ADAL 身份验证](how-to-use-adal-authentication.md)
 * [安装 SDK](install-the-rms-sdk.md)
-* [RMS 客户端 2.1 部署说明](https://technet.microsoft.com/library/jj159267(WS.10).aspx)
+* [RMS 客户端 2.1 部署说明](../rms-client/client-deployment-notes.md)

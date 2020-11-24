@@ -1,52 +1,52 @@
 ---
 title: 类 ProtectionSettings
-description: 记录 Microsoft 信息保护（MIP） SDK 的 protectionsettings：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionsettings：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 640963295ec3809aa6478a1c04c5f43f04a5d3b5
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: fbe652b5f94892af9f9c2a83c94685215c07eb13
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81763883"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565170"
 ---
 # <a name="class-protectionsettings"></a>类 ProtectionSettings 
 用于为 SetLabel 方法配置保护选项的接口。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public ProtectionSettings （） = 默认值  | _尚无记录。_
-public ProtectionSettings （const std：： string& delegatedUserEmail，PFileExtensionBehavior pfileExtensionBehavior）  | _尚无记录。_
-public void SetDelegatedUserEmail （const std：： string delegatedUserEmail）  | _尚无记录。_
-public std：： string GetDelegatedUserEmail （） const  | _尚无记录。_
-public void SetPFileExtensionBehavior （PFileExtensionBehavior pfileExtensionBehavior）  | _尚无记录。_
-public PFileExtensionBehavior GetPFileExtensionBehavior （） const  | _尚无记录。_
+public ProtectionSettings ( # A1 = 默认值  | _尚无记录。_
+public ProtectionSettings (const std：： string& delegatedUserEmail、PFileExtensionBehavior pfileExtensionBehavior)   | _尚无记录。_
+public void SetDelegatedUserEmail (const std：： string delegatedUserEmail)   | _尚无记录。_
+public std：： string GetDelegatedUserEmail ( # A1 const  | _尚无记录。_
+public void SetPFileExtensionBehavior (PFileExtensionBehavior pfileExtensionBehavior)   | _尚无记录。_
+public PFileExtensionBehavior GetPFileExtensionBehavior ( # A1 const  | _尚无记录。_
   
 ## <a name="members"></a>成员
   
 ### <a name="protectionsettings-function"></a>ProtectionSettings 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="protectionsettings-function"></a>ProtectionSettings 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="setdelegateduseremail-function"></a>SetDelegatedUserEmail 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="getdelegateduseremail-function"></a>GetDelegatedUserEmail 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="setpfileextensionbehavior-function"></a>SetPFileExtensionBehavior 函数
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="getpfileextensionbehavior-function"></a>GetPFileExtensionBehavior 函数
-_尚无记录。_
+尚无记录。

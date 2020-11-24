@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ef040c0372b6efff2a7280b1e395eca72952ca6d
-ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
+ms.openlocfilehash: cf8cdfd170dc03cb3f2a05cc2ed22ef7b19f9bb7
+ms.sourcegitcommit: bf8867a2270bd9e9695f2a5fe53fa5653faf7f94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316869"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "95566117"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
@@ -49,7 +49,7 @@ ms.locfileid: "89316869"
 
     或者，在 PowerShell 会话中，运行以下命令：
 
-    ```ps
+    ```PowerShell
     Start-AIPScan
     ```
 
@@ -59,11 +59,11 @@ ms.locfileid: "89316869"
 
     - **刷新扫描作业。**  在 " **Azure 信息保护-内容扫描作业** " 窗格上，选择 " **刷新**"。
 
-        请等待，直到看到 " **最后一次扫描结果** " 列的值和 **最后一个 "扫描 (结束时间") ** 列。
+        请等待，直到看到 " **最后一次扫描结果** " 列的值和 **最后一个 "扫描 (结束时间")** 列。
 
     - **使用 PowerShell 命令。** 运行 `Get-AIPScannerStatus` 监视状态更改。
 
-1. 扫描完成后，请查看存储在** % *localappdata*% \ Microsoft\MSIP\Scanner\Reports**目录中的报表。
+1. 扫描完成后，请查看存储在 **% *localappdata*% \ Microsoft\MSIP\Scanner\Reports** 目录中的报表。
 
     - .txt 摘要文件包括扫描所用的时间、扫描的文件数以及匹配信息类型的文件数量。
 
@@ -79,11 +79,11 @@ ms.locfileid: "89316869"
 
 扫描程序每隔五分钟就会将此信息发送到 Azure 信息保护，这样您就可以从 Azure 门户接近实时地查看结果。 有关详细信息，请参阅 [Azure 信息保护报表](reports-aip.md)。
 
-Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫描的结果，请返回到扫描程序计算机上存储的报表，它位于 %localappdata**%\Microsoft\MSIP\Scanner\Reports 文件夹中。
+Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫描的结果，请返回到扫描程序计算机上存储的报表，它位于 %localappdata%\Microsoft\MSIP\Scanner\Reports 文件夹中。
 
 ### <a name="changing-log-levels-or-locations"></a>更改日志级别或位置
 
-使用[set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)的*eportlevel*参数更改日志记录级别。
+使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration)的 *eportlevel* 参数更改日志记录级别。
 
 不能更改报表文件夹位置或名称。 如果要将报表存储在不同的位置，请考虑使用文件夹的目录连接。
 
@@ -99,9 +99,9 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
     ![停止扫描 Azure 信息保护扫描程序](./media/scanner-stop-scan.png)
 
-- **运行 PowerShell 命令。** 运行以下命令：
+- **运行 PowerShell 命令。** 运行下面的命令：
 
-    ```ps
+    ```PowerShell
     Stop-AIPScan 
     ```
 
@@ -133,9 +133,9 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 如果你还更改了标签的保护设置，请在重新启动 Azure 信息保护服务之前，等待额外的15分钟，然后再保存更新的保护设置。
 
 > [!IMPORTANT]
-> 如果已升级到版本 [2.8.85](rms-client/unifiedlabelingclient-version-release-history.md#version-2885-public-preview) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
+> 如果已升级到版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
 >
-> 例如，如果你已将 "**强制 = 关闭**"**策略强制**设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
 > 
 
 ## <a name="troubleshooting-a-stopped-scan"></a>排查停止的扫描问题
@@ -144,14 +144,14 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 - **动态端口数**。 可能需要增加承载文件的操作系统的动态端口数。 SharePoint 的服务器强化可能是导致扫描程序超出允许的网络连接数并因此停止的一个原因。
 
-    若要检查这是否是扫描仪停止的原因，请查看是否在** % *localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog**文件中为扫描程序记录了以下错误消息。
+    若要检查这是否是扫描仪停止的原因，请查看是否在 **% *localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog** 文件中为扫描程序记录了以下错误消息。
 
     **无法连接到---> 的远程服务器。 SocketException：每个套接字地址 (协议/网络地址/端口) 通常只允许使用 IP：端口**
 
     > [!NOTE]
     > 如果有多个日志，则压缩此文件。
 
-    有关如何查看当前端口范围并增加范围的详细信息，请参阅 [可修改的设置以提高网络性能](https://docs.microsoft.com/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
+    有关如何查看当前端口范围并增加范围的详细信息，请参阅 [可修改的设置以提高网络性能](/biztalk/technical-guides/settings-that-can-be-modified-to-improve-network-performance)。
 
 - **列表视图阈值。** 对于大型 SharePoint 场，可能需要增加列表视图阈值。 默认情况下，列表视图阈值设置为5000。
 
@@ -161,7 +161,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 如果你在使用 Azure 信息扫描程序时遇到问题，请使用以下 PowerShell 命令验证部署是否正常：
 
-```ps
+```PowerShell
 Start-AIPScannerDiagnostics
 ```
 
@@ -179,7 +179,7 @@ Start-AIPScannerDiagnostics
 >
 
 > [!NOTE]
-> **AIPScannerDiagnostics**工具不会运行完整的先决条件检查。 如果扫描程序出现问题，还请确保系统符合 [扫描器要求](deploy-aip-scanner-prereqs.md)，并确保 [扫描仪配置和安装](deploy-aip-scanner-configure-install.md) 已完成。
+> **AIPScannerDiagnostics** 工具不会运行完整的先决条件检查。 如果扫描程序出现问题，还请确保系统符合 [扫描器要求](deploy-aip-scanner-prereqs.md)，并确保 [扫描仪配置和安装](deploy-aip-scanner-configure-install.md) 已完成。
 >
 
 ## <a name="next-steps"></a>后续步骤

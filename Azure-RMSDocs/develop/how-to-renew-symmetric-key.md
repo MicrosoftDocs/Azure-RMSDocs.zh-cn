@@ -11,16 +11,16 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
 ms.custom: dev
-ms.openlocfilehash: 61eda99c43493ad4221b470781f4a8ea319ce5fc
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 539ad36df7d2c74a00650347abb8ed067dd743c7
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68788466"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566033"
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>如何：在 Azure 信息保护中续订对称密钥
 
-**对称密钥**是对称密钥加密算法中用于加密和解密消息的密钥。  
+**对称密钥** 是对称密钥加密算法中用于加密和解密消息的密钥。  
 
 在 Azure Active Directory (Azure AD) 中，创建一个服务主体对象来代表一个应用程序时，该过程还会生成一个用于验证该应用程序的 256 位对称密钥。 此对称密钥的默认有效期为一年。 
 
@@ -28,14 +28,14 @@ ms.locfileid: "68788466"
 
 ## <a name="prerequisites"></a>必备条件
 
-* 必须按照 [Azure AD Powershell 参考](https://docs.microsoft.com/powershell/msonline/)中的指示安装 Azure Active Directory (Azure AD) PowerShell 模块。
+* 必须按照 [Azure AD Powershell 参考](/powershell/msonline/)中的指示安装 Azure Active Directory (Azure AD) PowerShell 模块。
 
 
 ## <a name="renewing-the-symmetric-key-after-expiry"></a>到期后续订对称密钥
 
-与应用程序关联的对称密钥过期后，你无需创建新的服务主体。 相反，可以使用 Microsoft Online Services (MSol) 提供的 [PowerShell commandlet](https://docs.microsoft.com/powershell/module/msonline) 为现有的服务主体颁发新的对称密钥。
+与应用程序关联的对称密钥过期后，你无需创建新的服务主体。 相反，可以使用 Microsoft Online Services (MSol) 提供的 [PowerShell commandlet](/powershell/module/msonline) 为现有的服务主体颁发新的对称密钥。
 
-为了说明这一过程，我们假定你已使用 [`New-MsolServicePrincipal`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 命令创建了一个新的服务主体。
+为了说明此过程，假设你已使用命令创建了一个新的服务主体 [`New-MsolServicePrincipal`](/powershell/msonline/v1/new-msolserviceprincipalcredential) 。
 
 ```
 New-MsolServicePrincipalCredential -ServicePrincipalName "SupportExampleApp"
@@ -61,7 +61,7 @@ EndDate : 3/22/2018 3:27:53 PM
 Usage : Verify
 ```
 
-此对称密钥的到期时间为 2018 年 3 月 22 日下午 3:27:53。 若要在此时间之后使用服务主体，需要续订对称密钥。 为此，请运行 [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 命令。 
+此对称密钥的到期时间为 2018 年 3 月 22 日下午 3:27:53。 若要在此时间之后使用服务主体，需要续订对称密钥。 为此，请使用 [`New-MsolServicePrincipalCredential`](/powershell/msonline/v1/new-msolserviceprincipalcredential) 命令。 
 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963
@@ -72,7 +72,7 @@ New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427
 ```
 The following symmetric key was created as one was not supplied ON8YYaMYNmwSfMX625Ei4eC6N1zaeCxbc219W090v28-
 ```
-如下所示，可以使用 [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) 命令验证新对称密钥是否与正确的服务主体相关联。 请注意，此命令会列出当前与服务主体关联的所有密钥。
+你可以使用 [`GetMsolServicePrincipalCredential`](/powershell/msonline/v1/get-msolserviceprincipalcredential) 命令来验证新对称密钥是否与正确的服务主体相关联，如下所示。 请注意，此命令会列出当前与服务主体关联的所有密钥。
 
 ```
 Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues $true
@@ -94,7 +94,7 @@ Usage : Verify
 
 一旦验证对称密钥确实与正确的服务主体相关联后，即可使用新密钥更新服务主体的身份验证参数。 
 
-然后，可以使用 [`Remove-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/remove-msolserviceprincipalcredential) 命令删除旧的对称密钥，并使用 `Get-MsolServicePrincipalCredential` 命令验证密钥是否已删除。
+然后，可以使用命令删除旧的对称密钥 [`Remove-MsolServicePrincipalCredential`](/powershell/msonline/v1/remove-msolserviceprincipalcredential) ，并使用命令验证是否已删除该密钥 `Get-MsolServicePrincipalCredential` 。
 
 ```
 Remove-MsolServicePrincipalCredential -KeyId acb9ad1b-36ce-4a7d-956c-40e5ac29dcbe -ObjectId 0ee53770-ec86-409e-8939-6d8239880518
@@ -103,4 +103,4 @@ Remove-MsolServicePrincipalCredential -KeyId acb9ad1b-36ce-4a7d-956c-40e5ac29dcb
 ## <a name="related-topics"></a>相关主题
 
 * [如何：让服务应用可以使用基于云的 RMS](how-to-use-file-api-with-aadrm-cloud.md)
-* [Azure Active Directory MSOnline Powershell 参考](https://docs.microsoft.com/powershell/msonline/)
+* [Azure Active Directory MSOnline Powershell 参考](/powershell/msonline/)

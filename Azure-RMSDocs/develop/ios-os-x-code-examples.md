@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 22b6cd2ebc3d2caf3da74691753e6f4f5cc6c05b
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: 3c50c4579d32add393b680616106b37e92d2364c
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135721"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566349"
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 代码示例
 
@@ -39,9 +39,9 @@ ms.locfileid: "87135721"
 ### <a name="scenario-consume-an-rms-protected-file"></a>方案：使用受 RMS 保护的文件
 
 
-- **步骤 1**：创建 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象
+- **步骤 1**：创建 [MSProtectedData](/previous-versions/windows/desktop/msipcthin2/msprotecteddata-interface-objc) 对象
 
-  **说明**：通过 create 方法实例化 [MSProtectedData](https://msdn.microsoft.com/library/dn758348.aspx) 对象，该方法使用 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx) 的调用。
+  **说明**：通过 create 方法实例化 [MSProtectedData](/previous-versions/windows/desktop/msipcthin2/msprotecteddata-interface-objc) 对象，该方法使用 [MSAuthenticationCallback](/previous-versions/windows/desktop/msipcthin2/msauthenticationcallback-protocol-objc) 实现服务身份验证，以便通过将 **MSAuthenticationCallback** 的实例作为参数 *authenticationCallback* 传递给 MSIPC API 来获取令牌。 请参阅以下示例代码部分中对 [MSProtectedData protectedDataWithProtectedFile](/previous-versions/windows/desktop/msipcthin2/msprotecteddata-protecteddatawithprotectedfile-completionblock-method-objc) 的调用。
 
     ```objectivec
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -61,7 +61,7 @@ ms.locfileid: "87135721"
 
 - **步骤 2**：使用 Active Directory 身份验证库 (ADAL) 设置身份验证。
 
-  **说明**：此步骤中会介绍用于通过示例身份验证参数来实现 [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
+  **说明**：此步骤中会介绍用于通过示例身份验证参数来实现 [MSAuthenticationCallback](/previous-versions/windows/desktop/msipcthin2/msauthenticationcallback-protocol-objc) 的 ADAL。 若要深入了解如何使用 ADAL，请参阅 Azure AD 身份验证库 (ADAL)。
 
     ```objectivec
       // AuthenticationCallback holds the necessary information to retrieve an access token.
@@ -102,7 +102,7 @@ ms.locfileid: "87135721"
        }
     ```
 
-- **步骤 3**：通过 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 对象的 [MSUserPolicy accessCheck](https://msdn.microsoft.com/library/dn790789.aspx) 方法，检查此用户对于该内容是否具有 Edit 权限。
+- **步骤 3**：通过 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc) 对象的 [MSUserPolicy accessCheck](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-accesscheck-method-objc) 方法，检查此用户对于该内容是否具有 Edit 权限。
 
     ```objectivec
       - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
@@ -120,7 +120,7 @@ ms.locfileid: "87135721"
 
 ### <a name="scenario-create-a-new-protected-file-using-a-template"></a>方案：使用模板创建新的受保护文件
 
-此方案首先获取模板列表 [MSTemplateDescriptor](https://msdn.microsoft.com/library/dn790785.aspx)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
+此方案首先获取模板列表 [MSTemplateDescriptor](/previous-versions/windows/desktop/msipcthin2/mstemplatedescriptor-interface-objc)，再选择第一个模板以创建策略，然后创建和写入新的受保护文件。
 
 -   **步骤 1**：获取模板列表
 
@@ -136,7 +136,7 @@ ms.locfileid: "87135721"
         }
     ```
 
--   **步骤 2**：使用列表中的第一个模板创建 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
+-   **步骤 2**：使用列表中的第一个模板创建 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc)。
 
     ```objectivec
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -153,7 +153,7 @@ ms.locfileid: "87135721"
         }
     ```
 
--   **步骤 3**：创建 [MSMutableProtectedData](https://msdn.microsoft.com/library/dn758325.aspx) 并向其中写入内容。
+-   **步骤 3**：创建 [MSMutableProtectedData](/previous-versions/windows/desktop/msipcthin2/msmutableprotecteddata-interface-objc) 并向其中写入内容。
 
     ```objectivec
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
@@ -172,7 +172,7 @@ ms.locfileid: "87135721"
 ### <a name="scenario-open-a-custom-protected-file"></a>方案：打开自定义受保护的文件
 
 
--   **步骤 1**：通过 *serializedContentPolicy* 创建 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
+-   **步骤 1**：通过 *serializedContentPolicy* 创建 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc)。
 
     ```objectivec
         + (void)userPolicyWith:(NSData *)protectedData
@@ -202,7 +202,7 @@ ms.locfileid: "87135721"
          }
     ```
 
--   **步骤 2**：使用**步骤 1** 中的 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx) 创建 [MSCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx)，并从中读取信息。
+-   **步骤 2**：使用 **步骤 1** 中的 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc) 创建 [MSCustomProtectedData](/previous-versions/windows/desktop/msipcthin2/msmutablecustomprotecteddata-interface-objc)，并从中读取信息。
 
     ```objectivec
         + (void)customProtectedDataWith:(NSData *)protectedData
@@ -236,7 +236,7 @@ ms.locfileid: "87135721"
 
 -   **步骤 1**：在用户提供了电子邮件地址的情况下，创建策略描述符。
 
-    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) 和 [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx)。
+    **说明**：实际上，会使用来自设备接口的用户输入创建以下对象；[MSUserRights](/previous-versions/windows/desktop/msipcthin2/msuserrights-interface-objc) 和 [MSPolicyDescriptor](/previous-versions/windows/desktop/msipcthin2/mspolicydescriptor-interface-objc)。
 
     ```objectivec
         + (void)policyDescriptor
@@ -249,7 +249,7 @@ ms.locfileid: "87135721"
         }
     ```
 
--   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)。
+-   **步骤 2**：通过策略描述符 *selectedDescriptor* 创建自定义 [MSUserPolicy](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-interface-objc)。
 
     ```objectivec
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
@@ -265,7 +265,7 @@ ms.locfileid: "87135721"
         }
     ```
 
--   **步骤 3**：创建 [MSMutableCustomProtectedData](https://msdn.microsoft.com/library/dn758321.aspx) 并向其写入内容，然后关闭。
+-   **步骤 3**：创建 [MSMutableCustomProtectedData](/previous-versions/windows/desktop/msipcthin2/msmutablecustomprotecteddata-interface-objc) 并向其写入内容，然后关闭。
 
     ```objectivec
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect

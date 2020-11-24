@@ -1,10 +1,10 @@
 ---
 title: 为 Rights Management 连接器配置服务器 - AIP
 description: 此信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及部署 Azure Rights Management 连接器中的步骤 5。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/09/2020
+ms.date: 09/10/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,19 +13,19 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0411b0360607da80dcabf5dfb8117957a5c67cf6
-ms.sourcegitcommit: b66b249ab5681d02ec3b5af0b820eda262d5976a
+ms.openlocfilehash: a0b8df95c28b6d49610411b8f93678b70cf7226a
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78973278"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566313"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
 
 
-使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 5。
+使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤5。
 
 在开始之前，请确保已安装并配置 RMS 连接器，并且已检查任何适用于将使用该连接器的服务器的[先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector)。
 
@@ -35,11 +35,11 @@ ms.locfileid: "78973278"
 
 -   **对于 Exchange 2016 和 Exchange 2013**：客户端访问服务器和邮箱服务器
 
--   **对于 Exchange 2010**：客户端访问服务器和中心传输服务器
+-   **对于 exchange 2010 和 exchange 2019**：客户端访问服务器和集线器传输服务器
 
 -   **对于 SharePoint**：前端 SharePoint Web 服务器，包括托管中心管理服务器的 Web 服务器
 
--   **对于文件分类基础结构**：装有文件资源管理器的 Windows Server 计算机
+-   **对于文件分类基础结构**：已安装文件资源管理器的 Windows Server 计算机
 
 这种配置需要注册表设置。 要执行此操作，你有两个选项：使用适用于 Microsoft RMS 连接器的服务器配置工具自动配置，或通过编辑注册表手动配置。
 
@@ -87,7 +87,7 @@ ms.locfileid: "78973278"
 
 ### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>如何使用适用于 Microsoft RMS 连接器的服务器配置工具
 
-1.  如果尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本（Genconnectorconfig.ps1），请从[Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载该脚本。
+1.  如果尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 ( # A0) ，请从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载它。
 
 2.  将 GenConnectorConfig.ps1 文件保存在你要运行工具的计算机上。 如果要在本地运行该工具，则此计算机必须是你想要配置为与 RMS 连接器通信的服务器。 否则，你可将文件保存在任何计算机上。
 
@@ -108,7 +108,7 @@ ms.locfileid: "78973278"
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，https：\//connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
+若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，https： \/ /connector.contoso.com。 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
 > [!IMPORTANT]
 > 当你运行此工具时，请确保指定组织的负载平衡 RMS 连接器的名称，而不要指定运行 RMS 连接器服务的单个服务器的名称。
@@ -133,7 +133,7 @@ ms.locfileid: "78973278"
 
 -   对于 Exchange 2016 和 Exchange 2013：客户端访问服务器和邮箱服务器
 
--   对于 Exchange 2010：客户端访问服务器和中心传输服务器
+-   对于 Exchange 2010 和 Exchange 2019：客户端访问服务器和集线器传输服务器
 
 若要使用 RMS 连接器，这些运行 Exchange 的服务器必须运行以下软件版本之一：
 
@@ -142,6 +142,8 @@ ms.locfileid: "78973278"
 -   Exchange Server 2013，附带 Exchange 2013 累积更新 3
 
 -   Exchange Server 2010，附带 Exchange 2010 Service Pack 3 汇总更新 6
+
+-   Exchange Server 2019
 
 你还需要在服务器上安装能够支持 RMS 加密模式 2 的 RMS 客户端版本 1，也称为 MSDRM。 所有 Windows 操作系统都包括 MSDRM 客户端，但早期版本的客户端不支持加密模式 2。 如果 Exchange 服务器至少运行 Windows Server 2012，则无需进一步的操作，因为使用这些操作系统安装的 RMS 客户端可本机支持加密模式 2。 
 
@@ -165,7 +167,7 @@ ms.locfileid: "78973278"
 
    -   使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3. 使用 Exchange PowerShell cmdlet [set-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration?view=exchange-ps) ，并设置 `InternalLicensingEnabled $true` 和 `ClientAccessServerEnabled $true`，为 EXCHANGE 启用 IRM 功能。
+3. 使用 Exchange PowerShell cmdlet [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration) 启用适用于 EXCHANGE 的 IRM 功能并设置 `InternalLicensingEnabled $true` 和 `ClientAccessServerEnabled $true` 。
 
 
 ## <a name="configuring-a-sharepoint-server-to-use-the-connector"></a>将 SharePoint 服务器配置为使用连接器
@@ -206,11 +208,11 @@ ms.locfileid: "78973278"
         .\GenConnectorConfig.ps1 -ConnectorUri https://rmsconnector.contoso.com -SetSharePoint2013
         ```
 
-    -   如果你使用的是 SharePoint 2019、2016或 SharePoint 2013，请使用[RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
+    -   如果你使用的是 SharePoint 2019、2016或 SharePoint 2013，请使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md) 中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的[配置信息权限管理 (SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx)。
+3.  在 SharePoint 中启用 IRM。 有关详细信息，请参阅 SharePoint 库中的[配置信息权限管理 (SharePoint Server 2010)](/previous-versions/office/sharepoint-server-2010/hh545607(v=office.14))。
 
-    当你按照这些说明操作时，必须通过指定“使用此 RMS 服务器”，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果连接器名称为 https：\//connector.contoso.com，则配置将如下图所示：
+    当你按照这些说明操作时，必须通过指定 **“使用此 RMS 服务器”**，将 SharePoint 配置为使用连接器，然后输入你配置的负载平衡连接器 URL。 输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，如果你的连接器名称为 https： \/ /connector.contoso.com，则你的配置将如下图所示：
 
     ![为 RMS 连接器配置 SharePoint Server](./media/AzRMS_SharePointConnector.png)
 
@@ -242,7 +244,7 @@ ms.locfileid: "78973278"
 
     - 使用 [RMS 连接器的注册表设置](rms-connector-registry-settings.md)中的信息，在服务器上手动添加注册表设置，进行手动注册表编辑。 
 
-3. 创建分类规则和文件管理任务，才能使用 RMS 加密保护文档，然后指定一个用于自动将 RMS 策略的应用的 RMS 模板。 有关详细信息，请参阅 Windows Server 文档库中的 [文件服务器资源管理器概述](https://technet.microsoft.com/library/hh831701.aspx) 。
+3. 创建分类规则和文件管理任务，才能使用 RMS 加密保护文档，然后指定一个用于自动将 RMS 策略的应用的 RMS 模板。 有关详细信息，请参阅 Windows Server 文档库中的 [文件服务器资源管理器概述](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831701(v=ws.11)) 。
 
 ## <a name="next-steps"></a>后续步骤
 由于已安装并配置 RMS 连接器，并且服务器已配置为使用该连接器，IT 管理员和用户可以使用 Azure Rights Management Services 保护和使用电子邮件与文档。 若要让用户轻松使用此功能，请部署 Azure 信息保护客户端，它会安装 Office 的外接程序并在文件资源管理器中添加新的右键单击选项。 有关详细信息，请参阅 [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)。
@@ -251,4 +253,4 @@ ms.locfileid: "78973278"
 
 可以使用 [Azure 信息保护部署路线图](deployment-roadmap.md)，检查向用户和管理员推出 Azure Rights Management 之前是否还需要执行其他配置步骤。
 
-若要监视 RMS 连接器，请参阅[监视 Azure Rights Management 连接器](monitor-rms-connector.md)。 
+若要监视 RMS 连接器，请参阅[监视 Azure Rights Management 连接器](monitor-rms-connector.md)。

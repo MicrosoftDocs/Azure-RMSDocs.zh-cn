@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 0487b9ed7c2f0c8cdc0cbea9aa70ebd3e29b268b
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: a7cf207b0976db31ffa4df83d20e172876c7ee88
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564018"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566361"
 ---
 # <a name="how-to-use-adal-authentication"></a>操作说明：使用 ADAL 身份验证
 
@@ -54,7 +54,7 @@ ms.locfileid: "88564018"
 1. 按照[为 ADAL 身份验证配置 Azure RMS](adal-auth.md) 中的 Azure 配置步骤操作，然后返回到以下应用初始化步骤。
 2. 现在即可将应用程序配置为使用由 RMS SDK 2.1 提供的内部 ADAL 身份验证。
 
-若要配置 RMS 客户端，调用 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 后立即添加对 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
+若要配置 RMS 客户端，调用 [IpcInitialize](/previous-versions/windows/desktop/msipc/ipcinitialize) 后立即添加对 [IpcSetGlobalProperty](/previous-versions/windows/desktop/msipc/ipcsetglobalproperty) 的调用以配置 RMS 客户端。 使用以下代码片段作为示例。
 
 ```cpp
 IpcInitialize();
@@ -116,13 +116,13 @@ HRESULT GetLicenseKey(PCIPC_BUFFER pvLicense, __in LPVOID pContextForAdal, __out
 
 ## <a name="related-topics"></a>相关主题
 
-- [数据类型](https://msdn.microsoft.com/library/hh535288.aspx)
-- [环境属性](https://msdn.microsoft.com/library/hh535247.aspx)
-- [IpcCreateOAuth2Token](https://msdn.microsoft.com/library/mt661866.aspx)
-- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
-- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
-- [IPC_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
-- [IPC_NAME_VALUE_LIST](https://msdn.microsoft.com/library/hh535277.aspx)
-- [IPC_OAUTH2_CALLBACK_INFO](https://msdn.microsoft.com/library/mt661868.aspx)
-- [IPC_PROMPT_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
-- [IPC_AAD_APPLICATION_ID](https://msdn.microsoft.com/library/mt661867.aspx)
+- [数据类型](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-data-types)
+- [环境属性](/previous-versions/windows/desktop/msipc/environment-properties)
+- [IpcCreateOAuth2Token](/previous-versions/windows/desktop/msipc/ipccreateoauth2token)
+- [IpcGetKey](/previous-versions/windows/desktop/msipc/ipcgetkey)
+- [IpcInitialize](/previous-versions/windows/desktop/msipc/ipcinitialize)
+- [IPC_CREDENTIAL](/previous-versions/windows/desktop/msipc/ipc-credential)
+- [IPC_NAME_VALUE_LIST](/previous-versions/windows/desktop/msipc/ipc-name-value-list)
+- [IPC_OAUTH2_CALLBACK_INFO](/previous-versions/windows/desktop/msipc/ipc-oath2-callback-info)
+- [IPC_PROMPT_CTX](/previous-versions/windows/desktop/msipc/ipc-prompt-ctx)
+- [IPC_AAD_APPLICATION_ID](/previous-versions/windows/desktop/msipc/ipc-aad-application-id)

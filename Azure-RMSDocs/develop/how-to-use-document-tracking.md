@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: c29dd3c364cdc1df506494819e5d0b5abe1f5454
-ms.sourcegitcommit: 5390bd1e0e4851b81a59094e80202f0761b7810f
+ms.openlocfilehash: dfcb4c616be2f5891b242a918a06abf2708c12cc
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80068505"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566284"
 ---
 # <a name="how-to-use-document-tracking"></a>如何：使用文档跟踪
 
@@ -36,22 +36,22 @@ ms.locfileid: "80068505"
 用于为给定的一段内容设置文档跟踪的步骤序列是：
 
 - 创建“许可证元数据”对象，然后设置“内容名称”和“通知类型”。 这些是唯一的必需属性。
-  - Android - [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
-  -  iOS - [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
+  - Android - [LicenseMetadata](/previous-versions/windows/desktop/msipcthin2/licensemetadata-interface-java)
+  -  iOS - [MSLicenseMetadata](/previous-versions/windows/desktop/msipcthin2/mslicensemetadata-class-objc)
 
 选择照策略类型；模板或临时：
 - 对于基于模板的文档跟踪，创建 **用户策略** 对象（将许可证元数据作为参数进行传递）。
-  - Android - [UserPolicy.create](https://msdn.microsoft.com/library/dn790887.aspx)
-  - iOS - [MSUserPolicy.userPolicyWithTemplateDescriptor](https://msdn.microsoft.com/library/dn790808.aspx)
+  - Android - [UserPolicy.create](/previous-versions/windows/desktop/msipcthin2/userpolicy-class-java)
+  - iOS - [MSUserPolicy.userPolicyWithTemplateDescriptor](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-templatedescriptor-property-objc)
 
 - 对于基于临时的文档跟踪，对 **策略描述符** 对象设置 **许可证元数据** 属性。
-  - Android - [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
-  - iOS - [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx)。
+  - Android - [PolicyDescriptor.setLicenseMetadata](/previous-versions/windows/desktop/msipcthin2/policydescriptor-setlicensemetadata-java)
+  - iOS - [MSPolicyDescriptor.licenseMetadata](/previous-versions/windows/desktop/msipcthin2/mspolicydescriptor-licensemetadata-property-objc)。
 
-    请注意**只能在针对给定用户策略设置文档跟踪的过程中直接访问许可证元数据对象**  。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
+    **注意**   仅在为给定用户策略设置文档跟踪的过程中，许可证元数据对象才可直接访问。 创建用户策略对象之后，无法访问关联许可证元数据，即更改许可证元数据的值会不起作用。
 
      
 
 - 最后，调用文档跟踪的平台注册方法
-  - Android - [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) 或 [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
-  - iOS - [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
+  - Android - [UserPolicy.registerForDocTracking asynchronous](/previous-versions/windows/desktop/msipcthin2/userpolicy-registerfordoctracking-boolean--sting--authenticationcallback--creationcallback--java) 或 [UserPolicy.registerForDocTracking synchronous](/previous-versions/windows/desktop/msipcthin2/userpolicy-registerfordoctracking-synchronous-method-java)
+  - iOS - [MSUserPolicy.registerForDocTracking](/previous-versions/windows/desktop/msipcthin2/msuserpolicy-registerfordoctracking-userid-authenticationcallback-completionblock-method-objc)

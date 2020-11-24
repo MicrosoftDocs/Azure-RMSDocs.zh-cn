@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: tommos
-ms.openlocfilehash: 22f98a6781dc0ff0b43d1da73c72c2029c960021
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
+ms.openlocfilehash: 3df1283cd678167b7daa4a5fc64b5bb3d6d3fa33
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403368"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566093"
 ---
 # <a name="microsoft-information-protection-sdk---telemetry-configuration"></a>Microsoft 信息保护 SDK-遥测配置
 
@@ -21,15 +21,11 @@ ms.locfileid: "86403368"
 
 ## <a name="telemetry-configuration"></a>遥测配置
 
-可以通过[TelemetryConfiguration](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.telemetryconfiguration?view=mipsdk-dotnet)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将**IsTelemetryOptedOut**设置为 true。 将**TelemetryConfiguration**类的对象提供给用于创建**MipContext**的函数。
-
-从 MIP SDK 版本1.6 开始，设置选项**完全禁用**遥测。 在 verisons 1.5 及更早版本中，我们将发送一组最少的遥测信息。
+可以通过 [TelemetryConfiguration](/dotnet/api/microsoft.informationprotection.telemetryconfiguration)控制 MIP SDK 中的遥测选项。 创建此类的实例，然后将 **IsTelemetryOptedOut** 设置为 true。 将 **TelemetryConfiguration** 类的对象提供给用于创建 **MipContext** 的函数。
 
 ### <a name="minimum-telemetry-events"></a>最小遥测事件
 
-在 MIP SDK 1.6 及更高版本中，当遥测设置为 "未*选择*" 时，**不会发送任何遥测事件。** 早于1.6 的版本具有以下行为。
-
-如果遥测设置为 "*选择退出*"，则会将最小数据集发送给 Microsoft。 所有个人身份信息都从此信息中进行了清理。 此数据包括检测信号信息，以了解使用 SDK 和系统元数据。 **没有用户内容或最终用户身份信息设置为服务。**
+如果遥测设置为 " *选择退出*"，则会将最小数据集发送给 Microsoft。 所有个人身份信息都从此信息中进行了清理。 此数据包括检测信号信息，以了解使用 SDK 和系统元数据。 **没有用户内容或最终用户身份信息设置为服务。**
 
 查看下面的表格，以准确地查看以最小遥测集发送的事件和数据。
 
@@ -53,7 +49,7 @@ ms.locfileid: "86403368"
 | 事件。 UniqueId                       | 为事件生成的唯一 ID。                                             | 否       |
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
-| Operation                            | 检测信号                                                                              | 否       |
+| 操作                            | 检测信号                                                                              | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
@@ -61,7 +57,7 @@ ms.locfileid: "86403368"
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
+| 版本                              | 审核版本架构 ( "1.1" ) 。                                                          | 否       |
 
 #### <a name="event-discovery"></a>事件：发现
 
@@ -87,7 +83,7 @@ ms.locfileid: "86403368"
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
 | ObjectId                             | 文件路径/文件或数据的说明。                                             | **是**  |
-| Operation                            | "发现"。                                                                           | 否       |
+| 操作                            | "发现"。                                                                           | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
@@ -97,7 +93,7 @@ ms.locfileid: "86403368"
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
+| 版本                              | 审核版本架构 ( "1.1" ) 。                                                          | 否       |
 
 #### <a name="event-label-change"></a>事件：标签更改
 
@@ -111,7 +107,7 @@ ms.locfileid: "86403368"
 | ApplicationVersion               | 应用程序版本 profided via mip：： ApplicationInfo。                             | 否       |
 | ApplicationId                        | 通过 mip：： ApplicationInfo 提供的应用程序 ID。                                  | 否       |
 | ApplicationName                      | 通过 mip：： ApplicationInfo 提供的应用程序名称。                                | 否       |
-| CreationTime                         | 事件的生成时间。                                                          | 否       |
+| CreationTime                         | 生成事件的时间。                                                          | 否       |
 | DataState                            | 当应用程序在其上操作时，数据的状态为 "REST"、"移动"、"使用"。           | 否       |
 | DefaultLabel.Id                      | 租户默认标签标识符。                                                       | 否       |
 | Engine                      | 经过身份验证的用户的主租户 GUID。                                            | 否       |
@@ -128,7 +124,7 @@ ms.locfileid: "86403368"
 | MachineName                          | 生成事件的系统的名称。                                           | **是**  |
 | MIP.版本                          | MIP SDK 的版本。                                                                | 否       |
 | ObjectId                             | 文件路径/文件或数据的说明。                                             | **是**  |
-| Operation                            | "更改"。                                                                              | 否       |
+| 操作                            | "更改"。                                                                              | 否       |
 | OrganizationId                       | 经过身份验证的用户的主租户 GUID。                                            | 否       |
 | 平台                             | 操作系统版本。                                                              | 否       |
 | ProcessName                          | 使用 SDK 的进程的名称。                                                     | 否       |
@@ -137,19 +133,18 @@ ms.locfileid: "86403368"
 | 之前的保护                     | 布尔值，指示文件以前是否受保护。                           | 否       |
 | 保护                           | 保护模板标识符。                                                    | 否       |
 | 之前的保护                    | 之前的保护模板标识符。                                           | 否       |
-| ProtectionContentId                  | 新内容标识符（GUID）。                                                     | 否       |
-| ProtectionContentIdBefore            | 上一个内容标识符（GUID）。                                                | 否       |
+| ProtectionContentId                  | 新内容标识符 (GUID) 。                                                     | 否       |
+| ProtectionContentIdBefore            | 上一个内容标识符 (GUID) 。                                                | 否       |
 | ProtectionOwner                      | 保护所有者的电子邮件地址。                                                 | **是**  |
 | ProtectionOwnerBefore                | 保护所有者的以前的电子邮件地址。                                        | **是**  |
 | SDKVersion                           | 与 MIP 相同。版本。                                                                   | 否       |
 | UserId                               | 用户的电子邮件地址。                                                             | **是**  |
 | UserObjectId                         | 用户 Azure AD 对象 ID。                                                        | 否       |
-| 版本                              | 审核版本架构（"1.1"）。                                                          | 否       |
-
+| 版本                              | 审核版本架构 ( "1.1" ) 。                                                          | 否       |
 
 ### <a name="opting-out-in-c"></a>在 c + + 中选择
 
-若要仅将遥测设置为最小值，请创建**mip：： TelemetryConfiguration （）** 的共享指针，并将**isTelemetryOptedOut**设置为 true。 将中的配置对象传递给**MipContent：： Create （）**。
+若要仅将遥测设置为最小值，请创建具有 **mip：： TelemetryConfiguration ( # B1** 的共享指针，并将 **isTelemetryOptedOut** 设置为 true。 将中的配置对象传递给 **MipContent：： Create ( # B1**。
 
 ```cpp
 auto telemetryConfig = std::make_shared<mip::TelemetryConfiguration>();                                     
@@ -168,7 +163,7 @@ mMipContext = mip::MipContext::Create(
 
 ### <a name="opting-out-in-net"></a>在 .NET 中退出
 
-若要仅将遥测设置为最小值，请创建一个**TelemetryConfiguration （）** 对象，并将**isTelemetryOptedOut**设置为 true。 将配置对象传递到**MIP。CreateMipContext （）**。
+若要仅将遥测设置为最小值，请创建 **TelemetryConfiguration ( # B1** 对象，并将 **isTelemetryOptedOut** 设置为 true。 将配置对象传递到 **MIP。CreateMipContext ( # B1**。
 
 ```csharp
 TelemetryConfiguration telemetryConfiguration = new TelemetryConfiguration();
@@ -182,3 +177,13 @@ mipContext = MIP.CreateMipContext(appInfo,
     telemetryConfiguration);
 ```
 
+## <a name="telemetry-in-mip-sdk-16102-to-16152"></a>MIP SDK 中的遥测1.6.102 到1.6.152
+
+在 MIP SDK 版本1.6.102、103、113、151和152中，将在 `IsTelemetryOptedOut` 设置为 true 遥测的情况下将其记录为 **true** 。 已发现一个 bug，在设置此标志时，将发出显示的遥测事件。 调用策略 SDK 中列出的 Api 时，将触发这些遥测事件。
+
+- mip：:P olicyEngine：： ListSensitivityLabels ( # A1
+- mip：:P olicyHandler：： ComputeActions ( # A1
+- mip：:P olicyHandler：： NotifyCommitAsync ( # A1
+- mip：:P olicyHandler：： GetSensitivityLabel ( # A1
+
+MIP SDK 1.6 中的功能将恢复到以前的行为，并发送 [最小遥测事件](#minimum-telemetry-events)中详细说明的事件。 MIP SDK 1.7 将的名称更新 `IsTelemetryOptedOut` 为 `SendMinimumTelemetry` ，并遵循上面所述的相同行为。

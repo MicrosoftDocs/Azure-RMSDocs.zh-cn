@@ -12,12 +12,12 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 ms.custom: has-adal-ref
-ms.openlocfilehash: 05036616c77d559dc82a0334b99b548da724df18
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 1ce4499d20da066eddac8d01c29ef1b52ccea250
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82971789"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566129"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure 信息保护开发人员指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "82971789"
 
 ## <a name="powershell-guides"></a>PowerShell 指南
 
-PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[对 Azure 信息保护客户端使用 PowerShell](/azure/information-protection/rms-client/client-admin-guide-powershell)。
+PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开发和测试服务应用程序。 有关详细信息，请参阅[对 Azure 信息保护客户端使用 PowerShell](../rms-client/client-admin-guide-powershell.md)。
 
 ## <a name="user-applications"></a>用户应用程序
 
@@ -64,11 +64,11 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 以下指南将介绍如何使用常用工具，完成应用程序开发环境中特定于操作系统的设置步骤。
 
-[![iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md)
-[![Android 安装](../media/develop/android-icon.png)](android-sdk.md)
-[![程序 Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
-[![Windows 服务安装程序](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
-[![Linux 安装](../media/develop/linux-icon.png)](linux-setup.md)程序
+[ ![ iOS/OSX 安装程序](../media/develop/ios-icon.png)](ios-sdk.md) 
+ [ ![ Android 安装](../media/develop/android-icon.png)](android-sdk.md)程序 
+ [ ![ Windows Phone 安装程序](../media/develop/windows-phone-icon.png)](windows-phone-apps.md) 
+ [ ![ Windows 服务安装程序](../media/develop/windows-icon.png)](install-the-rms-sdk.md) 
+ [ ![ Linux 安装](../media/develop/linux-icon.png)](linux-setup.md)程序
 
 
 ## <a name="how-tos"></a>操作指南
@@ -86,7 +86,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 ### <a name="security-and-authentication"></a>安全性和身份验证
 
-- [如何将应用服务应用程序配置为使用 Azure Active Directory 登录](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
+- [如何将应用服务应用程序配置为使用 Azure Active Directory 登录](/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
 - [如何使用 Azure Active Directory 身份验证 (ADAL) 进行身份验证](how-to-use-adal-authentication.md)
 - [配置 Azure RMS 进行身份验证（服务）](adal-auth.md)
 - [设置 API 安全模式（服务）](setting-the-api-security-mode-api-mode.md)
@@ -107,7 +107,7 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 ## <a name="other-resources"></a>其他资源
 
 - [最佳安全实践指南](security-guidelines.md)
-- [Azure 信息保护的常见问题](/azure/information-protection/faqs)
+- [Azure 信息保护的常见问题](../faqs.md)
 
 ### <a name="support-articles"></a>支持文章
 
@@ -117,28 +117,28 @@ PowerShell cmdlet 由 Azure Rights management 管理员使用，也可用于开�
 
 ### <a name="message-protocol-and-file-formats"></a>消息协议和文件格式
 
-- [Client-to-Server Protocol](https://msdn.microsoft.com/library/cc243191.aspx)（客户端到服务器协议）
-- [Rights-Managed Email Object Protocol](https://msdn.microsoft.com/library/cc463909(v=EXCHG.80).aspx)（权限管理电子邮件对象协议）
-- [复合文件二进制文件格式](https://msdn.microsoft.com/library/dd942138.aspx)（复合文件二进制文件格式）
+- [Client-to-Server Protocol](/openspecs/windows_protocols/ms-rmpr/d8ed4b1e-e605-4668-b173-6312cba6977e)（客户端到服务器协议）
+- [Rights-Managed Email Object Protocol](/openspecs/exchange_server_protocols/ms-oxormms/a121dda4-48f3-41f8-b12f-170f533038bb)（权限管理电子邮件对象协议）
+- [复合文件二进制文件格式](/openspecs/windows_protocols/ms-cfb/53989ce4-7b05-4f8d-829b-d08d6148375b)（复合文件二进制文件格式）
 
 #### <a name="rights-managed-email-message"></a>权限管理电子邮件
 
-- [.MSG File Format (Part 1)](https://blogs.msdn.microsoft.com/openspecification/2009/11/06/msg-file-format-part-1/)（.MSG 文件格式（第 1 部分））
-- [.MSG File Format (Part 2)](https://blogs.msdn.microsoft.com/openspecification/2010/06/20/msg-file-format-rights-managed-email-message-part-2/)（.MSG 文件格式（第 2 部分））
+- [.MSG File Format (Part 1)](/archive/blogs/openspecification/msg-file-format-part-1)（.MSG 文件格式（第 1 部分））
+- [.MSG File Format (Part 2)](/archive/blogs/openspecification/msg-file-format-rights-managed-email-message-part-2)（.MSG 文件格式（第 2 部分））
 
 ### <a name="api-reference"></a>API 参考
 
-- [Windows API 参考](https://msdn.microsoft.com/library/hh535292.aspx)
-  - [Windows SDK 错误代码](https://msdn.microsoft.com/library/hh535248.aspx)
-- [Windows Phone 和 Windows 应用商店 API 参考](https://msdn.microsoft.com/library/dn891914.aspx)
-- [iOS/OSX API 参考](https://msdn.microsoft.com/library/dn758306.aspx)
-- [Android API 参考](https://msdn.microsoft.com/library/dn758245.aspx)
+- [Windows API 参考](/previous-versions/windows/desktop/msipc/msipc-reference)
+  - [Windows SDK 错误代码](/previous-versions/windows/desktop/msipc/error-codes)
+- [Windows Phone 和 Windows 应用商店 API 参考](/previous-versions/windows/desktop/msipcthin2/winrt)
+- [iOS/OSX API 参考](/previous-versions/windows/desktop/msipcthin2/ios)
+- [Android API 参考](/previous-versions/windows/desktop/msipcthin2/android)
 - [Linux API 参考](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
-### <a name="previous-versions"></a>以前的版本
+### <a name="previous-versions"></a>旧版
 
-- [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx) 是 RMS SDK 的第一个版本。
-- [AD RMS 脚本工具](https://msdn.microsoft.com/library/bb968797.aspx) 是 AD RMS 安装的管理工具。
+- [AD RMS SDK](/previous-versions/windows/desktop/adrms_sdk/active-directory-rights-management-services-sdk-portal) 是 RMS SDK 的第一个版本。
+- [AD RMS 脚本工具](/previous-versions/windows/desktop/adrms_script/adrms-script-portal) 是 AD RMS 安装的管理工具。
 
 ### <a name="see-also"></a>另请参阅
 

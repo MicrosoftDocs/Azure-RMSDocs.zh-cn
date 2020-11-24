@@ -14,21 +14,21 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 2c96bbc94b30728466a53dc471ebf7375e845e09
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: b469bccfa26fbedad498ff230250865b52a34411
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68791367"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566136"
 ---
 # <a name="api-reference"></a>API 参考
 
 Microsoft Rights Management SDK 2.1 支持 Windows 客户端的 RMS 启用。 有关特定平台的详细信息，请参阅[发行说明](release-notes-rtm.md)。
-- [Constants](https://msdn.microsoft.com/library/hh535291.aspx)（常量）
-- [Data types](https://msdn.microsoft.com/library/hh535288.aspx)（数据类型）
-- [函数](https://msdn.microsoft.com/library/hh535289.aspx)
-- [结构](https://msdn.microsoft.com/library/hh535294.aspx)
-- [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)（错误代码）
+- [常量](/previous-versions/windows/desktop/msipc/msipc-constants)
+- [数据类型](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-data-types)
+- [函数](/previous-versions/windows/desktop/msipc/microsoft-information-protection-and-control-client-functions)
+- [结构](/previous-versions/windows/desktop/msipc/msipc-structures)
+- [错误代码](/previous-versions/windows/desktop/msipc/error-codes)
 
 
 

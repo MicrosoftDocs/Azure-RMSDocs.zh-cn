@@ -1,22 +1,22 @@
 ---
 title: 类流
-description: 记录 stream：： Microsoft 信息保护（MIP） SDK 的未定义类。
-author: BryanLa
+description: 记录 stream：：未定义的 Microsoft 信息保护类 (MIP) SDK。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: b2c8be3d6997985b62933d40bf855e48a20ca928
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: a370d6917306f2865c1d91eb7fa90c2880497a04
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764341"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565039"
 ---
 # <a name="class-stream"></a>类流 
 一个类，它定义 MIP SDK 和基于流的内容之间的接口。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public int64_t Read(uint8_t* buffer, int64_t bufferLength)  |  从流读取到缓冲区。

@@ -14,19 +14,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 87aa190a87426e61d919b8781444239c4ce5d3c7
-ms.sourcegitcommit: 474cd033de025bab280cb7a9721ac7ffc2d60b55
+ms.openlocfilehash: 4f33a7a730ad8f6f48870ce4b2450007712e7bf1
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68790764"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566024"
 ---
-# <a name="terms"></a>条款
+# <a name="terms"></a>术语
 
 特定于 Azure 信息保护的开发人员术语定义的集合。
 
 **弃用的算法**  
-实现较旧内容保护方案的模式设置，特指电子密码本密码模式 (ECB)。 在此 SDK 中，该设置使你可以生成与 [AD Rights Management Services SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx) 所使用的 MSDRM 库相兼容的许可证。
+实现较旧内容保护方案的模式设置，特指电子密码本密码模式 (ECB)。 在此 SDK 中，该设置使你可以生成与 [AD Rights Management Services SDK](/previous-versions/windows/desktop/adrms_sdk/active-directory-rights-management-services-sdk-portal) 所使用的 MSDRM 库相兼容的许可证。
 
 此设置可能会导致你的应用程序以不符合你客户的内容保护标准的方式来保护内容。
 
@@ -37,4 +37,3 @@ ms.locfileid: "68790764"
 也称为 PFile 格式，它是支持 RMS 的应用程序中用于 AD RMS 和函数的标准默认文件格式。
 
 PFile 格式对于应用程序开发人员是透明的，因为它是按设计 Microsoft Rights Management SDK 4.2 的方式嵌入的。
-

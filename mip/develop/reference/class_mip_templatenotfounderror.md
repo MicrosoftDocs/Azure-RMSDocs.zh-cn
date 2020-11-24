@@ -1,44 +1,57 @@
 ---
 title: 类 TemplateNotFoundError
-description: 记录 Microsoft 信息保护（MIP） SDK 的 templatenotfounderror：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 templatenotfounderror：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 9c8a1f1d89c581950bc1760a7bcb339e10114c2a
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 0ba4eae1c1c3d846c5e696a55a8a089b18a583ed
+ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81764238"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "95565268"
 ---
 # <a name="class-templatenotfounderror"></a>类 TemplateNotFoundError 
 RMS 服务无法识别模板 ID。
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
 public std：： string mMessage  | _尚无记录。_
-public std：： map\<std：： string，std：： string\> mDebugInfo  | _尚无记录。_
+public std：： map \<std::string, std::string\> mDebugInfo  | _尚无记录。_
+public std：： string mName  | _尚无记录。_
+公共 ErrorCode GetErrorCode ( # A1 const  |  获取错误输入的错误代码。
 public char const* what() const  |  获取错误消息。
-public std：： shared_ptr\<错误\> Clone （） const  |  克隆错误。
+public std::shared_ptr\<Error\> Clone() const  |  克隆错误。
 public virtual ErrorType GetErrorType() const  |  获取错误类型。
-public const std：： string& GetErrorName （） const  |  获取错误名称。
-public const std：： string& GetMessage （） const  |  获取错误消息。
-public void SetMessage （const std：： string& msg）  |  设置错误消息。
-public void AddDebugInfo （const std：： string& key，const std：： string& 值）  |  添加调试信息项。
-public const std：： map\<std：： string，std：： String\>& GetDebugInfo （） const  |  获取调试信息。
+public const std：： string& GetErrorName ( # A2 const  |  获取错误名称。
+public const std：： string& GetMessage ( # A2 const  |  获取错误消息。
+公共 void SetMessage (const std：： string& msg)   |  设置错误消息。
+public void AddDebugInfo (const std：： string& key，const std：： string& 值)   |  添加调试信息项。
+public const std：： map \<std::string, std::string\>& GetDebugInfo ( # A2 const  |  获取调试信息。
+枚举 ErrorCode  |  错误输入错误的错误代码。
   
 ## <a name="members"></a>成员
   
 ### <a name="mmessage"></a>mMessage
-_尚无记录。_
+尚无记录。
 
   
 ### <a name="mdebuginfo"></a>mDebugInfo
-_尚无记录。_
+尚无记录。
 
+  
+### <a name="mname"></a>mName
+尚无记录。
+
+  
+### <a name="geterrorcode-function"></a>GetErrorCode 函数
+获取错误输入的错误代码。
+
+  
+**返回**：错误输入错误的 ErrorCode
   
 ### <a name="what-function"></a>什么函数
 获取错误消息。
@@ -93,4 +106,13 @@ _尚无记录。_
 获取调试信息。
 
   
-**返回**：调试信息（键/值）
+**返回**：调试信息 (键/值) 
+  
+### <a name="errorcode-enum"></a>ErrorCode 枚举
+
+ 值                         | 说明                                
+--------------------------------|---------------------------------------------
+常规            | 常规错误输入错误
+FileIsTooLargeForProtection            | 文件太大，无法进行保护
+
+错误输入错误的错误代码。

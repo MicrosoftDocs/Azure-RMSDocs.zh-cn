@@ -14,54 +14,54 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 4f4258811ec634a49f84b76fcf1feb41752311df
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: c600f6e332ec230d73c90faafe8fb602e1d3dd88
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564358"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566372"
 ---
 # <a name="deploy-into-production"></a>部署到生产
 
 本主题引导你完成启用了 Azure 信息保护 (AIP) / Rights Management Services (RMS) 的应用程序的部署过程。
 
-## <a name="request-an-information-protection-integration-agreement-ipia"></a>申请信息保护集成协议 (IPIA)
+## <a name="request-an-information-protection-integration-agreement-ipia"></a>请求信息保护集成协议 (IPIA)
 在可以发布使用 AIP/RMS 开发的应用程序之前，必须申请并完成与 Microsoft 的正式协议。
 
 ### <a name="begin-the-process"></a>开始流程
-通过向发送电子邮件，获取 IPIA， <strong>IPIA@microsoft.com</strong> 并提供以下信息：
+向 <strong>IPIA@microsoft.com</strong> 发送一封包含以下信息的电子邮件以获取 IPIA：
 
-**主题：** 为 *Company Name* 申请 IPIA
+**主题：** 为公司名称请求 IPIA 
 
-在电子邮件的正文中，包括：
+电子邮件的正文中应包含：
 - 应用程序和产品名称
-- 申请者的姓名
-- 申请者的电子邮件地址
+- 请求者的姓氏和名字
+- 请求者的电子邮件地址
 
 ### <a name="next-steps"></a>后续步骤
-收到你的 IPIA 申请时，我们会向你发送一个窗体（以 Word 文档形式）。
-查看 IPIA 的条款和条件，并将窗体返回给， <strong>IPIA@microsoft.com</strong> 其中包含以下信息：
-- 公司的法定名称
-- 公司所在的州/省（美国/加拿大）或国家/地区
+收到 IPIA 请求后，我们会将一份表格（Word 文档格式）发送给你。
+请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 <strong>IPIA@microsoft.com</strong>：
+- 公司依法登记的名称
+- 公司注册地的州/省（美国/加拿大）或国家/地区
 - 公司 URL
 - 联系人的电子邮件地址
 - 公司的其他地址（可选）
-- 公司应用程序的名称
-- 应用程序的简短说明
-- *Azure 租户 ID*
-- 应用程序的*应用 ID*
-- 用于紧急情况通信的公司联系人、电子邮件和电话
+- 公司应用程序名称
+- 应用程序的简要描述
+- Azure 租户 ID 
+- 应用程序的 *应用程序 ID*
+- 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
 ### <a name="completing-the-agreement"></a>完成协议
-收到你的窗体后，我们将向你发送最终 IPIA 链接来进行电子签名。 在你签名后，相应的 Microsoft 代表将对其进行签名，从而完成协议。
+收到你的表格后，我们会将用于数字签名的最终 IPIA 链接发送给你。 你在协议上签名后，协议将由相应的 Microsoft 客户代表签名，协议就此完成。
 
-### <a name="already-have-a-signed-ipia"></a>已拥有已签名的 IPIA？
-如果你已拥有已签名的 IPIA 并且希望为你发布的应用程序添加新的*应用 ID*，请向 <strong>IPIA@microsoft.com</strong> 发送电子邮件并向我们提供以下信息：
-- 公司应用程序的名称
-- 应用程序的简短说明
+### <a name="already-have-a-signed-ipia"></a>已有已签名的 IPIA？
+如果已有已签名的 IPIA 并希望为要发布的应用程序添加新的应用程序 ID  ，请发送电子邮件至 <strong>IPIA@microsoft.com</strong>，向我们提供以下信息：
+- 公司应用程序名称
+- 应用程序的简要描述
 - Azure 租户 ID（即使与之前的相同也要提供）
-- 应用程序的应用 ID
-- 用于紧急情况通信的公司联系人、电子邮件和电话
+- 应用程序的应用程序 ID
+- 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
 在发送电子邮件时，请留出最多 72 小时来等待接收确认。
 
@@ -89,7 +89,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 该客户端作为可选�
 -   下载 RMS 客户端 2.1 安装程序
 -   集成与应用程序安装程序一起运行的 RMS 客户端 2.1 安装程序
 
-[Rights Protected Folder Explorer](https://technet.microsoft.com/library/rights-protected-folder-explorer(v=ws.10).aspx) 包是将 RMS 客户端 2.1 与应用程序集成的一个示例。 尝试自己进行安装来了解此方法。
+[Rights Protected Folder Explorer](/previous-versions/orphan-topics/ws.10/hh538204(v=ws.10)) 包是将 RMS 客户端 2.1 与应用程序集成的一个示例。 尝试自己进行安装来了解此方法。
 
 ### <a name="make-rmsclient21-a-pre-requisite-for-your-application-install"></a>使 RMS 客户端 2.1 成为应用程序安装的先决条件
 
@@ -103,7 +103,7 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 该客户端作为可选�
 
 > [!NOTE]
 > 如果已经迁移到用于身份验证的新 ADAL 模型，则不必安装 **SIA**。 有关详细信息，请参阅[针对启用了 RMS 的应用程序的 ADAL 身份验证](adal-auth.md)。
-> 另外，还可以**针对 Windows 10 验证应用程序** - 通过将应用程序更新为使用 ADAL 身份验证而非 Microsoft Online Sign-in Assistant，你和你的客户将能够：利用多重身份验证，在不需要提供管理权限的情况下将 RMS 客户端 2.1 安装到计算机
+> 另外，还可以 **针对 Windows 10 验证应用程序** - 通过将应用程序更新为使用 ADAL 身份验证而非 Microsoft Online Sign-in Assistant，你和你的客户将能够：利用多重身份验证，在不需要提供管理权限的情况下将 RMS 客户端 2.1 安装到计算机
 
 为了使最终用户能够利用信息保护服务，必须部署 *Online Services 登录助手 (SIA)*。 作为应用程序开发人员，你不知道最终用户将通过 RMS（本地）还是通过 Azure 信息保护来使用信息保护。
 
@@ -114,14 +114,14 @@ RMS 客户端 2.1 不是 Windows 操作系统组件。 该客户端作为可选�
 
 -   从 Microsoft 下载中心下载 [Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)。
 -   确保启用了权利的应用程序的部署包括一个先决条件检查来验证是否选择了此服务。
--   若要了解自己进行测试以及最终用户对联机服务的使用，请参阅 TechNet 主题[配置 Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)。
+-   若要了解自己进行测试以及最终用户对联机服务的使用，请参阅 TechNet 主题[配置 Rights Management](../deployment-roadmap.md)。
 
-还需要使用以下指南来配置应用 - [如何将应用服务应用程序配置为使用 Azure Active Directory 登录](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)。
+还需要使用以下指南来配置应用 - [如何将应用服务应用程序配置为使用 Azure Active Directory 登录](/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)。
 
 有关使应用程序能够使用 Azure Rights Management 服务中的 RMS 的详细信息，请参阅[使应用程序能够与基于云的 RMS 一起工作](how-to-use-file-api-with-aadrm-cloud.md)。
 
 ## <a name="related-topics"></a>相关主题
 
 * [Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)
-* [配置 Rights Management](https://TechNet.Microsoft.Com/library/jj585002.aspx)
+* [配置 Rights Management](../deployment-roadmap.md)
 * [使应用程序能够与基于云的 RMS 一起工作](how-to-use-file-api-with-aadrm-cloud.md)

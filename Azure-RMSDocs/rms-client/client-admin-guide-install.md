@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bb2f7d2cacad3623eb590c338a7f19585e9c80d1
-ms.sourcegitcommit: dd21de9f06ef019634dc2b5d8baf2670bb8171a2
+ms.openlocfilehash: 468e7a5b7ef5482b1027d491adf6b6b4d8271261
+ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "89176644"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "95566245"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -27,7 +27,7 @@ ms.locfileid: "89176644"
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 > 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
 
@@ -53,11 +53,11 @@ ms.locfileid: "89176644"
 
 - 屏幕分辨率大于 800 x 600
 
-    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”**** 对话框。
+    当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。
 
 - Microsoft Online Services 登录助手 7.250.4303.0
 
-    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序**来检查版本并卸载登录助手。
+    运行 Office 2010 的计算机需要安装 Microsoft Online Services 登录助手版本 7.250.4303.0。 此版本包含在客户端安装中。 如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。
 
 - KB 4482887
 
@@ -65,13 +65,13 @@ ms.locfileid: "89176644"
 
 - 配置组策略，以免 Azure 信息保护加载项被禁用
 
-    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护**** 加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
+    对于 Office 2013 及更高版本，配置组策略以确保始终为 Office 应用程序启用 Microsoft Azure 信息保护加载项。 如果没有此配置，则可能禁用 Microsoft Azure 信息保护加载项，并且用户无法在其 Office 应用程序中标记其文档和电子邮件。
 
-    - 对于 Outlook：使用 Office 文档的[系统管理员对加载项的控制](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中记录的组策略设置。
+    - 对于 Outlook：使用 Office 文档的[系统管理员对加载项的控制](/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)中记录的组策略设置。
 
-    - 对于 Word、Excel 和 PowerPoint：使用支持文章[由于 Office 2013 和 Office 2016 项目的组策略设置，没有加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置托管加载项列表****。
+    - 对于 Word、Excel 和 PowerPoint：使用支持文章[由于 Office 2013 和 Office 2016 项目的组策略设置，没有加载加载项](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)中记录的组策略设置托管加载项列表。
 
-        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序****。
+        为 Azure 信息保护指定以下编程标识符 (ProgID)，并将该选项设置为 1：始终启用外接程序。
 
         对于 Word：`MSIP.WordAddin`
 
@@ -79,7 +79,7 @@ ms.locfileid: "89176644"
 
         对于 PowerPoint：`MSIP.PowerPointAddin`
 
-- 启用了 [Exploit protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  
+- 启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
@@ -88,10 +88,10 @@ ms.locfileid: "89176644"
 
 使用下列选项之一来为用户安装客户端：
 
-|安装选项  |描述  |
+|安装选项  |说明  |
 |---------|---------|
-|**运行客户端可执行文件 ( .exe) **  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
-|**将客户端的 Windows installer 部署 ( .msi) ** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
+|**运行客户端可执行文件 ( .exe)**  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
+|**将客户端的 Windows installer 部署 ( .msi)** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
 
 安装客户端后，请重复相同的安装方法以执行更新，或使用 Windows 更新来保持客户端的自动更新。 在安装新版本之前，无需卸载旧版本的客户端。
 
@@ -106,7 +106,7 @@ ms.locfileid: "89176644"
 
 1. 对于默认安装，只需运行可执行文件，例如 **AzInfoProtection.exe**。 
 
-    若要查看其他安装选项，请先通过 **/help**运行可执行文件： `AzInfoProtection.exe /help`
+    若要查看其他安装选项，请先通过 **/help** 运行可执行文件： `AzInfoProtection.exe /help`
 
     有关无提示安装客户端的示例：`AzInfoProtection.exe /quiet`
 
@@ -118,9 +118,9 @@ ms.locfileid: "89176644"
 
     - **DowngradeDotNetRequirement**：使用此参数可以不遵守一定要有 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
 
-    - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”****。
+    - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。
 
-1. 如果以交互方式安装，并且无法连接到 Office 365 或 Azure Active Directory，但出于演示目的，想要通过本地策略看到和体验 Azure 信息保护客户端，请选择此选项安装**演示策略**。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
+1. 如果要以交互方式安装，请选择安装 **演示策略** 的选项（如果无法连接到 Microsoft 365 或 Azure Active Directory），但想要通过使用本地策略查看和体验 Azure 信息保护的客户端，以便进行演示。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
 
 1. 若要完成安装：
 
@@ -154,7 +154,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
-1. 在 PowerShell 会话中，首先运行 [AipService](https://docs.microsoft.com/powershell/module/aipservice/connect-aipservice) 并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行 [AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration)。
+1. 在 PowerShell 会话中，首先运行 [AipService](/powershell/module/aipservice/connect-aipservice) 并指定管理员凭据以连接到 Azure Rights Management 服务。 然后运行 [AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration)。
 
     如果尚未安装 Azure Rights Management 服务的 PowerShell 模块，请参阅 [安装 AIPService PowerShell 模块](../install-powershell.md)。
 
@@ -174,7 +174,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如：`AzInfoProtection.exe DowngradeDotNetRequirement=True`
+例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
 
 建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -184,7 +184,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 对于集中部署，请使用以下特定于 Azure信息保护客户端 .msi 安装版本的信息。 
 
-如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/deploy-use/add-apps)一起使用。
+如果将 Intune 用于软件部署方法，请将这些说明与[使用 Microsoft Intune 添加应用](/intune/apps/apps-add)一起使用。
 
 1. 对于运行 .msi 文件的每台计算机，必须确保以下软件依赖项已经就绪。 例如，将这些依赖项与客户端 .msi 版本一起打包，或只部署到满足这些依赖关系的计算机上：
     
@@ -198,7 +198,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
 
-1. 对于默认安装，将 .msi 与 /quiet/**** 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
+1. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
 
     > [!NOTE]
     > 默认情况下，启用 " **通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护** 。 若要禁用此选项，请确保执行下列操作之一：

@@ -1,28 +1,29 @@
 ---
 title: 类 MsgInspector
-description: 记录 Microsoft 信息保护（MIP） SDK 的 msginspector：：未定义的类。
-author: BryanLa
+description: 记录 (MIP) SDK 的 Microsoft 信息保护的 msginspector：：未定义的类。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
-ms.author: bryanla
-ms.date: 04/16/2020
-ms.openlocfilehash: 79a044099c09d799d77f4af11eb0b80ecc21d6d6
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.author: mbaldwin
+ms.date: 09/21/2020
+ms.openlocfilehash: 9f19c53a2c6eca82cdf1469c63436ad56112dc52
+ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81761478"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "95566113"
 ---
 # <a name="class-msginspector"></a>类 MsgInspector 
   
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
  成员                        | 说明                                
 --------------------------------|---------------------------------------------
-public const std：： vector\<Uint8_t\>& GetBody （）  |  获取消息的正文。如果将 TXT/HTML 格式设置为 utf8，则为。
-public BodyType GetBodyType （） const  |  获取正文类型。
-public const std：： vector\<std：： shared_ptr\<MsgAttachmentData\> \>& GetAttachments （） const  |  获取附件列表作为消息附件数据对象。
-public InspectorType GetInspectorType （） const  |  获取文件类型，。
-public std：： shared_ptr\<Stream\> GetFileStream （） const  |  获取文件流。
+public const std：： vector \<uint8_t\>& GetBody ( # A2 const  |  获取消息的正文。如果将 TXT/HTML 格式设置为 utf8，则为。
+公共无符号 int GetCodePage ( # A1 const  |  获取正文编码代码页，与 txt、html 正文格式相关。
+public BodyType GetBodyType ( # A1 const  |  获取正文类型。
+public const std：： vector \<std::shared_ptr\<MsgAttachmentData\> \>& GetAttachments ( # A2 const  |  获取附件列表作为消息附件数据对象。
+public InspectorType GetInspectorType ( # A1 const  |  获取文件类型，。
+public std：： shared_ptr \<Stream\> GetFileStream ( # A1 const  |  获取文件流。
   
 ## <a name="members"></a>成员
   
@@ -31,6 +32,14 @@ public std：： shared_ptr\<Stream\> GetFileStream （） const  |  获取文�
 
   
 **返回**：字节向量。
+  
+### <a name="getcodepage-function"></a>GetCodePage 函数
+获取正文编码代码页，与 txt、html 正文格式相关。
+
+  
+**返回**：未签名的代码页。 
+  
+**另请参阅**： [https://docs.microsoft.com/en-us/windows/win32/intl/code-page-identifiers](/windows/win32/intl/code-page-identifiers)
   
 ### <a name="getbodytype-function"></a>GetBodyType 函数
 获取正文类型。
