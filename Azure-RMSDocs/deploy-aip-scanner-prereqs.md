@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护统一标签扫描器的先
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/27/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,21 +12,21 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 274ef1ef2a7196aa9c25b8f488d83da77eba7c6c
-ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
+ms.openlocfilehash: 266ff1c9ff09b9b9b1a2133601f5adf44a4c7d4a
+ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316801"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "95566528"
 ---
-# <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的先决条件
+# <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描程序的先决条件
 
 >*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
 
 >[!NOTE]
 > 如果使用的是经典扫描程序，请参阅 [安装和部署 Azure 信息保护经典扫描器的先决条件](deploy-aip-scanner-prereqs-classic.md)。
 
-在安装 Azure 信息保护扫描程序之前，请确保你的系统符合以下要求：
+在安装 Azure 信息保护本地扫描器之前，请确保你的系统符合基本的 [Azure 信息保护要求](requirements.md)，以及特定于扫描程序的以下要求：
 
 - [Windows Server 要求](#windows-server-requirements)
 - [服务帐户要求](#service-account-requirements)
@@ -48,7 +48,7 @@ ms.locfileid: "89316801"
 
 你必须有一台运行扫描程序的 Windows Server 计算机，该计算机具有以下系统规范：
 
-|规格  |详细信息  |
+|规范  |详细信息  |
 |---------|---------|
 |**处理器**     |4核处理器         |
 |**RAM**     |8 GB         |
@@ -70,10 +70,11 @@ ms.locfileid: "89316801"
 |要求  |详细信息  |
 |---------|---------|
 |**本地登录** 用户权限分配     |需要安装和配置扫描程序，但不需要运行扫描。  </br></br>确认扫描程序可以发现、分类和保护文件后，可以从服务帐户中删除此权限。  </br></br>如果由于组织策略的原因而无法在短时间内授予此权限，请参阅 [使用替代配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。         |
-|作为服务登录**** 的用户权限分配。     |  扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。        |
-|**数据存储库的权限**     |- **文件共享或本地文件：** 授予 " **读取**"、" **写入**" 和 " **修改** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **SharePoint：** 授予 " **完全控制** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **发现模式：** 若要仅在发现模式下运行扫描程序， **读取** 权限就足够了。         |
+|作为服务登录的用户权限分配。     |  扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。        |
+|**数据存储库的权限**     |- **文件共享或本地文件：** 授予 " **读取**"、" **写入**" 和 " **修改** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **SharePoint：** 您必须授予 **完全控制** 权限，以便对文件进行扫描，然后将分类和保护应用到满足 Azure 信息保护策略中的条件的文件。  <br /><br />- **发现模式：** 若要仅在发现模式下运行扫描程序， **读取** 权限就足够了。         |
 |**对于重新保护或删除保护的标签**     | 若要确保扫描程序始终可以访问受保护的文件，请将此帐户设置为 Azure 信息保护的 [超级用户](configure-super-users.md) ，并确保已启用超级用户功能。 </br></br>此外，如果已为分阶段部署实现了 [载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) ，请确保已配置的载入控件中包含该服务帐户。|
-| ||
+|**特定 URL 级别扫描：** |若要扫描和发现 [特定 URL 下](#deploying-the-scanner-with-alternative-configurations)的站点和子站点，请向 "服务器场" 级别上的 "扫描仪" 帐户授予 **站点收集器审核** 程序权限。|
+| | |
 
 ## <a name="sql-server-requirements"></a>SQL server 要求
 
@@ -81,12 +82,16 @@ ms.locfileid: "89316801"
 
 - **本地或远程实例。**
 
-    建议在不同的计算机上托管 SQL Server 和扫描程序服务，除非使用的是小型部署。
+    建议在不同的计算机上托管 SQL server 和 scanner 服务，除非使用的是小型部署。 此外，我们建议使用仅为扫描程序数据库提供服务且不与其他应用程序共享的专用 SQL 实例。
 
-    SQL Server 2012 是以下版本的最低版本：
+    如果正在使用共享服务器，请确保建议使用的 [核心数](#windows-server-requirements) 可供扫描程序数据库使用。
+
+    SQL Server 2016 是以下版本的最低版本：
 
     - SQL Server Enterprise
+
     - SQL Server Standard
+
     - 仅建议 SQL Server Express (用于测试环境) 
 
 - **具有安装扫描程序的 Sysadmin 角色的帐户。**
@@ -97,7 +102,7 @@ ms.locfileid: "89316801"
 
 - **容量。** 有关容量指导，请参阅 [SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。
 
-- **[不区分大小写排序规则](https://docs.microsoft.com/sql/relational-databases/collations/collation-and-unicode-support?view=sql-server-ver15)**
+- **[不区分大小写排序规则](/sql/relational-databases/collations/collation-and-unicode-support)**
 
 > [!NOTE]
 > 当你为扫描程序指定自定义群集 (配置文件) 名称时，或使用扫描仪的预览版本时，支持同一 SQL server 上的多个配置数据库。
@@ -123,7 +128,7 @@ ms.locfileid: "89316801"
     - 4核处理器
     - 建议 8 GB RAM
 
-- 超过**10 个扫描仪** (最大 40) ，请使用：
+- 超过 **10 个扫描仪** (最大 40) ，请使用：
     - 8个核心进程
     - 建议使用 16 GB RAM
 
@@ -139,22 +144,28 @@ ms.locfileid: "89316801"
 
 ## <a name="label-configuration-requirements"></a>标签配置要求
 
-您必须将标签配置为自动应用分类和保护（可选）。
+必须在扫描仪帐户的 Microsoft 365 标签 "管理中心" 中配置至少一个 "敏感度" 标签，才能应用分类和保护（可选）。
 
-如果未配置这些标签，请参阅 [使用替代配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。
+Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 365 符合性中心和 Microsoft 365 安全与合规中心。 
+
+*Scanner 帐户* 是你将在配置扫描仪时运行的 [Set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) cmdlet 的 **DelegatedUser** 参数中指定的帐户。 
+
+如果标签没有自动标记条件，请参阅下面的 [替代配置说明](#restriction-your-labels-do-not-have-auto-labeling-conditions) 。
 
 有关详细信息，请参阅：
 
-- [将敏感度标签自动应用到内容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
-- [通过在敏感度标签中使用加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
+- [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)
+- [将敏感度标签自动应用到内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)
+- [通过在敏感度标签中使用加密来限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels)
+- [配置和安装 Azure 信息保护统一标记扫描器](deploy-aip-scanner-configure-install.md)
 
 ## <a name="sharepoint-requirements"></a>SharePoint 要求
 
 若要扫描 SharePoint 文档库和文件夹，请确保您的 SharePoint 服务器符合以下要求：
 
-- **支持的版本。** 支持的版本包括： SharePoint 2019、SharePoint 2016、SharePoint 2013 和 SharePoint 2010。 扫描程序不支持其他版本的 SharePoint。
+- **支持的版本。** 支持的版本包括： SharePoint 2019、SharePoint 2016 和 SharePoint 2013。 扫描程序不支持其他版本的 SharePoint。
 
-- **控制.** 使用 [版本控制](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 如果扫描程序标签文件和 [内容审批](https://docs.microsoft.com/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval) 是必需的，则必须向用户批准标记为 "文件" 的文件。  
+- **控制.** 使用 [版本控制](/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 如果扫描程序标签文件和 [内容审批](/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval) 是必需的，则必须向用户批准标记为 "文件" 的文件。  
 
 - **大型 SharePoint 场。** 对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 有关详细信息，请参阅 [在 SharePoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。
 
@@ -176,15 +187,15 @@ ms.locfileid: "89316801"
 |Windows 版本  |说明  |
 |---------|---------|
 |**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
-|**Windows 10 或 Windows Server 2016**     | 定义以下[组策略设置](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](https://docs.microsoft.com/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
-|**Windows 10 1607 或更高版本**     |  选择启用更新的 **MAX_PATH** 功能。 有关详细信息，请参阅 [在 Windows 10 版本1607及更高版本中启用长路径](https://docs.microsoft.com/windows/win32/fileio/naming-a-file#enable-long-paths-in-windows-10-version-1607-and-later)。      |
+|**Windows 10 或 Windows Server 2016**     | 定义以下 [组策略设置](/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
+|**Windows 10 1607 或更高版本**     |  选择启用更新的 **MAX_PATH** 功能。 有关详细信息，请参阅 [在 Windows 10 版本1607及更高版本中启用长路径](/windows/win32/fileio/naming-a-file#enable-long-paths-in-windows-10-version-1607-and-later)。      |
 | | |
 
 ## <a name="usage-statistics-requirements"></a>使用情况统计信息要求
 
 使用以下方法之一禁用使用情况统计信息：
 
-- 将 [AllowTelemetry](https://docs.microsoft.com/azure/information-protection/rms-client/client-admin-guide-install#to-install-the-azure-information-protection-client-by-using-the-executable-installer) 参数设置为0
+- 将 [AllowTelemetry](./rms-client/client-admin-guide-install.md#to-install-the-azure-information-protection-client-by-using-the-executable-installer) 参数设置为0
 
 - 请确保在扫描程序安装过程中未选择 " **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护** " 选项。
 
@@ -194,9 +205,11 @@ ms.locfileid: "89316801"
 
 默认要求适用于初始测试，因此您可以检查扫描程序的功能。
 
-但是，在生产环境中，组织的策略可能会禁止这些默认要求。 扫描程序可以通过其他配置来适应以下限制：
+但是，在生产环境中，组织的策略可能不同于默认要求。 扫描程序可以通过其他配置来容纳以下更改：
 
-- [扫描仪服务器无法建立 internet 连接](#restriction-the-scanner-server-cannot-have-internet-connectivity)
+- [发现并扫描特定 URL 下的所有站点和子站点](#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url)
+
+- [限制：扫描仪服务器不能连接到 internet](#restriction-the-scanner-server-cannot-have-internet-connectivity)
 
 - [限制：扫描仪服务帐户无法同步到 Azure Active Directory 但服务器具有 internet 连接](#restriction-the-scanner-service-account-cannot-be-synchronized-to-azure-active-directory-but-the-server-has-internet-connectivity)
 
@@ -205,6 +218,26 @@ ms.locfileid: "89316801"
 - [限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库](#restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually)
 
 - [限制：标签没有自动标记条件](#restriction-your-labels-do-not-have-auto-labeling-conditions)
+
+### <a name="discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url"></a>发现并扫描特定 URL 下的所有 Sharepoint 站点和子站点
+
+扫描程序可以使用以下配置发现并扫描特定 URL 下的所有 Sharepoint 站点和子网站：
+
+1. 启动 **SharePoint 管理中心**。
+
+1. 在 **SharePoint 管理中心** 网站上的 " **应用程序管理** " 部分中，单击 " **管理 web 应用程序**"。
+
+1. 单击以突出显示要管理其权限策略级别的 web 应用程序。
+
+1. 选择相关场，然后选择 " **管理权限策略级别**"。
+
+1. 在 "**网站集权限**" 选项中选择 "**网站集审核** 程序"，然后在 "权限" 列表中授予 "**查看应用程序" 页**，最后将新的策略级别命名为 **AIP scanner 网站集审核器和查看器**。
+
+1. 将扫描仪用户添加到新策略，并在 "权限" 列表中授予 **网站集** 。   
+
+1. 添加一个 SharePoint URL，该 URL 承载需要扫描的站点或子站点。 有关详细信息，请参阅 [在 Azure 门户中配置扫描器](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
+
+若要了解有关如何管理 SharePoint 策略级别的详细信息，请参阅 [管理 web 应用程序的权限策略](/sharepoint/administration/manage-permission-policies-for-a-web-application)。
 
 ### <a name="restriction-the-scanner-server-cannot-have-internet-connectivity"></a>限制：扫描仪服务器不能连接到 internet
 
@@ -216,25 +249,25 @@ ms.locfileid: "89316801"
 
 1. 启用内容扫描作业的脱机管理：
 
-    1. 使用[set-aipscannerconfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将扫描仪设置为在**脱机**模式下工作。
+    1. 使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将扫描仪设置为在 **脱机** 模式下工作。
 
     1. 通过创建扫描仪群集在 Azure 门户中配置扫描仪。 有关详细信息，请参阅 [在 Azure 门户中配置扫描器](deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
 
     1. 使用 "**导出**" 选项，从 " **Azure 信息保护-内容扫描作业**" 窗格导出内容作业。
     
-    1. 使用 [set-aipscannerconfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/import-aipscannerconfiguration) cmdlet 导入策略。 
+    1. 使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/import-aipscannerconfiguration) cmdlet 导入策略。 
     
     脱机内容扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
     
 1. 启用网络扫描作业的脱机管理：
 
-    1. 使用 [MIPNetworkDiscoveryConfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务设置为在脱机模式下工作。
+    1. 使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务设置为在脱机模式下工作。
 
     1. 在 Azure 门户中配置网络扫描作业。 有关详细信息，请参阅 [创建网络扫描作业](deploy-aip-scanner-configure-install.md#creating-a-network-scan-job)。
     
-    1. 使用 "**导出**" 选项，从 " **Azure 信息保护-网络扫描作业 (预览") **窗格中导出网络扫描作业。 
+    1. 使用 "**导出**" 选项，从 " **Azure 信息保护-网络扫描作业 (预览")** 窗格中导出网络扫描作业。 
     
-    1.  使用 [MIPNetworkDiscoveryConfiguration](https://docs.microsoft.com/powershell/module/azureinformationprotection/import-mipnetworkdiscoveryconfiguration) cmdlet 与群集名称相匹配的文件导入网络扫描作业。  
+    1.  使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/import-mipnetworkdiscoveryconfiguration) cmdlet 与群集名称相匹配的文件导入网络扫描作业。  
     
     脱机网络扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
 
@@ -263,18 +296,10 @@ ms.locfileid: "89316801"
 - 您必须是将运行扫描程序的服务器上的本地管理员
 - 必须为将运行扫描程序的服务帐户授予对以下注册表项的 "完全控制" 权限：
 
-    - HKEY_LOCAL_MACHINE \SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server
-    - HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\MSIPC\Server
+    - HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server
 
 如果在配置这些权限后出现错误，则在安装扫描程序时，可以忽略该错误，并且可以手动启动 scanner 服务。
-
-#### <a name="populate-the-database-manually"></a>手动填充数据库
-
-使用以下脚本填充数据库：
-
-```cli
-if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END 
-```
 
 #### <a name="create-a-user-and-grant-db_owner-rights-manually"></a>手动创建用户并授予 db_owner 权限
 
@@ -304,21 +329,21 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
     if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
     ```
 
-#### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”**** 权限
+### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”权限
 
-如果你的组织策略禁止服务帐户在 **本地登录** ，但允许 **作为批处理作业登录** ，请使用具有 set-aipauthentication 的 *OnBehalfOf* 参数。
+如果你的组织策略禁止对服务帐户在 **本地登录** ，请将 *OnBehalfOf* 参数用于 set-aipauthentication。
 
-有关详细信息，请参阅 [如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
-#### <a name="restriction-the-scanner-service-account-cannot-be-synchronized-to-azure-active-directory-but-the-server-has-internet-connectivity"></a>限制：扫描仪服务帐户无法同步到 Azure Active Directory 但服务器具有 internet 连接
+### <a name="restriction-the-scanner-service-account-cannot-be-synchronized-to-azure-active-directory-but-the-server-has-internet-connectivity"></a>限制：扫描仪服务帐户无法同步到 Azure Active Directory 但服务器具有 internet 连接
 
 可以使用一个帐户来运行扫描程序服务，并使用另一个帐户对 Azure Active Directory 进行身份验证：
 
 - **对于 scanner 服务帐户，请** 使用本地 Windows 帐户或 Active Directory 帐户。
 
-- **对于 Azure Active Directory 帐户，请** 指定具有 Set-aipauthentication 的 *OnBehalfOf* 参数的本地帐户。 有关详细信息，请参阅 [如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+- **对于 Azure Active Directory 帐户，请** 指定具有 Set-aipauthentication 的 *OnBehalfOf* 参数的本地帐户。 有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
-#### <a name="restriction-your-labels-do-not-have-auto-labeling-conditions"></a>限制：标签没有自动标记条件
+### <a name="restriction-your-labels-do-not-have-auto-labeling-conditions"></a>限制：标签没有自动标记条件
 
 如果标签没有任何自动标记条件，请在配置扫描仪时计划使用以下选项之一：
 
@@ -326,7 +351,7 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 |---------|---------|
 |**发现所有信息类型**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 "要 **发现的信息类型** " 选项设置为 " **所有**"。 </br></br>此选项设置内容扫描作业，以扫描所有敏感信息类型的内容。      |
 |**使用建议的标签**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 " **建议标记为自动** " 选项设置为 **"打开**"。</br></br> 此设置将扫描程序配置为自动将所有建议的标签应用于内容。      |
-|**定义默认标签**     |   定义 [策略](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)、 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)或 [存储库](deploy-aip-scanner-configure-install.md#apply-a-default-label-to-all-files-in-a-data-repository)中的默认标签。 </br></br>在这种情况下，扫描器会对找到的所有文件应用默认标签。       |
+|**定义默认标签**     |   定义 [策略](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do)、 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)或 [存储库](deploy-aip-scanner-configure-install.md#apply-a-default-label-to-all-files-in-a-data-repository)中的默认标签。 </br></br>在这种情况下，扫描器会对找到的所有文件应用默认标签。       |
 | | |
 
 ## <a name="next-steps"></a>后续步骤

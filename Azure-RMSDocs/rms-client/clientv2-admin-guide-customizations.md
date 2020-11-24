@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 09/03/2020
+ms.date: 11/10/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fd96b54c25e92824bc216f452a6458706a4f906e
-ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
+ms.openlocfilehash: edfd5a5f309228c7f75a895e40826b65af74e1d7
+ms.sourcegitcommit: 04b9d7ee1ce8b6662ceda5a13b7b0d5630c91d28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89447304"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "95566512"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -26,20 +26,22 @@ ms.locfileid: "89447304"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
-在管理 Azure 信息保护统一标签客户端时，请使用以下信息来了解特定方案或用户子集可能需要的高级配置。
+在管理 AIP 统一标签客户端时，请使用以下信息进行特定方案或用户所需的高级配置。
 
-这些设置需要编辑注册表或指定高级设置。 高级设置使用 [Office 365 Security & 相容性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
+> [!NOTE]
+> 这些设置需要编辑注册表或指定高级设置。 高级设置使用 [Office 365 Security & 相容性中心 PowerShell](/powershell/exchange/office-365-scc/office-365-scc-powershell)。
+> 
 
 ### <a name="how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell"></a>如何使用 Office 365 Security & 相容性中心 PowerShell 配置客户端的高级设置
 
 使用 Office 365 Security & 相容性中心 PowerShell 时，可以配置支持标签策略和标签自定义的高级设置。 例如：
 
-- 在 Office 应用中显示信息保护栏的设置是 " ***标签策略" 高级设置***。
-- 用于指定标签颜色的设置是 " ***标签高级" 设置***。
+- 在 Office 应用中显示信息保护栏的设置是一个 ***标签策略高级设置** _。
+- 用于指定标签颜色的设置是 " _*_标签高级" 设置_*_。
 
-在这两种情况下，在 [连接到 Office 365 Security & 相容性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)后，请使用策略或标签的标识 (名称或 GUID) 指定 *AdvancedSettings* 参数，并在 [哈希表](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_hash_tables)中指定键/值对。 使用以下语法：
+在这两种情况下，在 [连接到 Office 365 Security & 相容性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)后，请使用策略或标签的标识 (名称或 GUID) 指定 _AdvancedSettings * 参数，并在 [哈希表](/powershell/module/microsoft.powershell.core/about/about_hash_tables)中指定键/值对。 使用以下语法：
 
 对于 "标签" 策略设置，单个字符串值：
 
@@ -126,16 +128,18 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 - **为用户提供自定义帮助页的链接**
 
-如果为用户配置了多个标签策略，每个都有可能不同的策略设置，则将根据管理中心中策略的顺序应用最后一个策略设置。 有关详细信息，请参阅 [标签策略优先级 (订单问题) ](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#label-policy-priority-order-matters)
+如果为用户配置了多个标签策略，每个都有可能不同的策略设置，则将根据管理中心中策略的顺序应用最后一个策略设置。 有关详细信息，请参阅 [标签策略优先级 (订单问题) ](/microsoft-365/compliance/sensitivity-labels#label-policy-priority-order-matters)
 
-标签高级设置遵循相同的优先级逻辑：当标签位于多个标签策略中并且标签具有高级设置时，将根据管理中心中策略的顺序应用上一个高级设置。
+使用最后一个策略设置，使用相同的逻辑应用标签策略高级设置。 
 
-标签策略高级设置按相反顺序应用：除了一个例外，还会根据 "管理中心" 中策略的顺序，应用第一个策略的高级设置。 例外情况是高级设置 *OutlookDefaultLabel*，它为 Outlook 设置不同的默认标签。 对于此标签策略的高级设置，将根据管理中心中策略的顺序应用最后一个设置。
-
+> [!NOTE]
+> [OutlookDefaultLabel](#set-a-different-default-label-for-outlook)高级标签策略设置当前存在异常，这使你可以为 Outlook 设置不同的默认标签。
+> 
+> 如果 OutlookDefaultLabel 设置发生冲突，则根据管理中心中的策略顺序，从 *第一个* 策略设置中获取配置。
 
 #### <a name="available-advanced-settings-for-label-policies"></a>标签策略的可用高级设置
 
-将 *AdvancedSettings* 参数与 [LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-labelpolicy?view=exchange-ps) 和 [LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-labelpolicy?view=exchange-ps)一起使用。
+将 *AdvancedSettings* 参数与 [LabelPolicy](/powershell/module/exchange/policy-and-compliance/new-labelpolicy) 和 [LabelPolicy](/powershell/module/exchange/policy-and-compliance/set-labelpolicy)一起使用。
 
 |设置|应用场景和说明|
 |----------------|---------------|
@@ -160,7 +164,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
 |OutlookOverrideUnlabeledCollaborationExtensions|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
-|OutlookSkipSmimeOnReadingPaneProperty | [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)|
+|OutlookSkipSmimeOnReadingPaneEnabled | [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)|
 |OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
@@ -183,7 +187,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### <a name="available-advanced-settings-for-labels"></a>标签的可用高级设置
 
-使用带有[新标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-label?view=exchange-ps)和[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)的*AdvancedSettings*参数。
+使用带有 [新标签](/powershell/module/exchange/policy-and-compliance/new-label)和 [设置标签](/powershell/module/exchange/policy-and-compliance/set-label)的 *AdvancedSettings* 参数。
 
 |设置|应用场景和说明|
 |----------------|---------------|
@@ -210,7 +214,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 - 密钥： **HideBarByDefault**
 
-- 值：False****
+- 值：False
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -222,7 +226,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{HideBarByDefault="False"}
 
 此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-默认情况下，当你启用 " **所有文档和电子邮件**的标签策略" 设置时，必须具有标签，所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时，策略设置仅适用于 Office 文档，而不适用于 Outlook 邮件。
+默认情况下，当你启用 " **所有文档和电子邮件** 的标签策略" 设置时，必须具有标签，所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时，策略设置仅适用于 Office 文档，而不适用于 Outlook 邮件。
 
 对于所选的标签策略，请指定以下字符串：
 
@@ -244,7 +248,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="
 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：OutlookRecommendationEnabled****
+- 键：OutlookRecommendationEnabled
 
 - 值： **True**
 
@@ -258,7 +262,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookRecommendationEnable
 
 此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-配置此设置时，将启用  [PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel** ，以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。
+配置此设置时，将启用  [PowerShell](./clientv2-admin-guide-powershell.md) cmdlet **set-aipfilelabel** ，以允许从 PST、RAR、7zip 和 MSG 文件中删除保护。
 
 - 密钥： **EnableContainerSupport**
 
@@ -278,7 +282,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableContainerSupport="Tru
 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：OutlookDefaultLabel****
+- 键：OutlookDefaultLabel
 
 - 值： \<**label GUID**> 或 **None**
 
@@ -307,22 +311,16 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
 | 字符串值| 客户端| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
-|\<null value>| 将保护应用于 Office 文件类型和 PDF 文件| 默认值：将保护应用于 Office 文件类型和 PDF 文件|
 |Convertto-html ( ".jpg"，".png" ) |除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
+| | | |
 
-示例1：用于统一客户端的 PowerShell 命令仅保护 Office 文件类型和 PDF 文件，其中标签策略命名为 "客户端"：
-
-```PowerShell
-Set-LabelPolicy -Identity Client -AdvancedSettings @{PFileSupportedExtensions=""}
-```
-
-示例2：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
+示例1：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
 ```
 
-示例3：用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
+示例2：用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".txt", ".csv")}
@@ -365,29 +363,28 @@ Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json
 ```
 
 对于此设置，以下扩展 ( "。 txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，"."，".png"，".tif"，"tiff"，".gif" ) 始终变为 P \<EXT> 。值得注意的是，".ptxt" 不是 ".pfile"。 
-仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions**才有效。 
-
-例如，在使用以下命令时：
-
-```PowerShell
-Set-LabelPolicy -AdvancedSettings @{PFileSupportedExtensions=""}
-```
-
-不能 .Pfile 保护，而 **AdditionalPPrefixExtensions** 中的值将被忽略。 
+仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions** 才有效。 
 
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 
 此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-使用 " **所有文档和电子邮件**的标签策略" 设置必须具有标签时，用户首次保存 Office 文档和发送电子邮件时，系统将提示用户选择标签。 对于文档，用户可以选择“以后再说”**** 暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
+使用 " **所有文档和电子邮件** 的标签策略" 设置必须具有标签时，用户在首次保存 Office 文档以及从 Outlook 发送电子邮件时，系统将提示用户选择标签。
 
-在配置此设置时，将删除“以后再说”**** 选项，以便首次保存文档时用户必须选择一个标签。
+对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
 
+配置 **PostponeMandatoryBeforeSave** 设置时，将删除 " **不** 使用" 选项，以使用户在首次保存文档时必须选择标签。
+
+> [!TIP]
+> **PostponeMandatoryBeforeSave** 设置还确保共享文档在通过电子邮件发送之前进行标记。 
+>
+>默认情况下，即使您具有在策略中启用了 **标签的所有文档和电子邮件** ，也只会将用户升级到 Outlook 中的电子邮件的标签文件。  
+> 
 对于所选的标签策略，请指定以下字符串：
 
-- 键：PostponeMandatoryBeforeSave****
+- 键：PostponeMandatoryBeforeSave
 
-- 值：False****
+- 值：False
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -399,7 +396,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 
 此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-可以通过两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性 **WordShapeNameToRemove**中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换 **RemoveExternalContentMarkingInApp** 高级属性中定义的基于文本的标头或表尾。 
+可以通过两种方法从其他标记解决方案中删除分类。 第一种方法从 Word 文档中删除任何形状，其中的形状名称与 advanced 属性 **WordShapeNameToRemove** 中定义的名称相匹配，第二种方法允许您从 Word、Excel 和 PowerPoint 文档中删除或替换 " **RemoveExternalContentMarkingInApp** 高级" 属性中定义的基于文本的页眉或页脚。 
 
 ### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
 
@@ -443,17 +440,17 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{WordShapeNameToRemove="dc"}
 
 Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint 中使用它时，会对这些应用的性能产生负面影响。 该配置允许你根据应用程序来定义设置，例如，搜索 Word 文档页眉和页脚中的文本，而不是 Excel 电子表格或 PowerPoint 演示文稿中的。
 
-因为模式匹配会影响用户的性能，所以建议你将 Office 应用程序类型 (**W**Ord、E**X**项、 **P**owerPoint) 限制为只需搜索的类型。
+因为模式匹配会影响用户的性能，所以建议你将 Office 应用程序类型 (**W** Ord、E **X** 项、 **P** owerPoint) 限制为只需搜索的类型。
 对于所选的标签策略，请指定以下字符串：
-- 键：RemoveExternalContentMarkingInApp****
+- 键：RemoveExternalContentMarkingInApp
 
 - 值：\<**Office application types WXP**> 
 
-示例：
+示例:
 
-- 若要仅搜索 Word 文档，请指定 W****。
+- 若要仅搜索 Word 文档，请指定 W。
 
-- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP****。
+- 若要搜索 Word 文档和 PowerPoint 演示文稿，请指定 WP。
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -461,23 +458,23 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
 ```
 
-然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，**** 指定页眉或页脚的内容以及如何删除或替换它们。
+然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，指定页眉或页脚的内容以及如何删除或替换它们。
 
 ### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
 
-指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项****：
+指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项：
 
 - 用以删除页眉或页脚中所有内容的部分匹配。
 
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
 
 - 用以删除页眉或页脚中特定字词的完全匹配。
 
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE********。 可指定值：`TEXT `。
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
 
 - 用以删除页眉或页脚中所有内容的完全匹配。
 
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE****。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
+    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
 
 
 指定的字符串的匹配模式不区分大小写。 最大字符串长度为255个字符，且不能包含空格。 
@@ -486,7 +483,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkin
 
 对于同一标签策略，请指定以下字符串：
 
-- 键：ExternalContentMarkingToRemove****
+- 键：ExternalContentMarkingToRemove
 
 - 值：\<**string to match, defined as regular expression**> 
 
@@ -500,17 +497,17 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
 
-The file is classified as Confidential****
+The file is classified as Confidential
 
-Label applied manually****
+Label applied manually
 
 若要删除此多行页脚，请为同一标签策略创建以下两个条目：
 
-- 键：ExternalContentMarkingToRemove****
+- 键：ExternalContentMarkingToRemove
 
-- 密钥值1： ** \* 机密***
+- 密钥值1： **\* 机密***
 
-- 键值2： ** \* 应用标签*** 
+- 键值2： **\* 应用标签*** 
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -520,21 +517,23 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
-PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove****。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
 
-如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp **** 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本****。 
+- 如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
 
-查找用作页眉或页脚的形状的名称：
+- 如果指定了此值，则将删除仅满足形状名称条件的形状，还将删除与 **ExternalContentMarkingToRemove** 提供的字符串相匹配的文本。
 
-1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格****************。
+**查找用作页眉或页脚的形状的名称：**
 
-2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”**** 窗格中。
+1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
 
-使用形状的名称为 PowerPointShapeNameToRemove**** 键指定一个字符串字。 
+2. 选择幻灯片上包含页眉或页脚的形状。 所选形状的名称现在突出显示在“选择”窗格中。
 
-示例：形状名称是 fc****。 若要删除具有此名称的形状，则指定值：`fc`。
+使用形状的名称为 PowerPointShapeNameToRemove 键指定一个字符串字。 
 
-- 键：PowerPointShapeNameToRemove****
+**示例：** 形状名称为 **fc**。 若要删除具有此名称的形状，则指定值：`fc`。
+
+- 键：PowerPointShapeNameToRemove
 
 - 值：\<**PowerPoint shape name**> 
 
@@ -546,9 +545,9 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove
 
 如果要删除多个 PowerPoint 形状，请指定任意数量的值，以便删除形状。
 
-默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides**** 附加高级客户端设置：
+默认情况下，只检查主幻灯片的页眉和页脚。 若要将检查范围扩展到所有幻灯片，将占用大量资源，则可以使用 RemoveExternalContentMarkingInAllSlides 附加高级客户端设置：
 
-- 键：RemoveExternalContentMarkingInAllSlides****
+- 键：RemoveExternalContentMarkingInAllSlides
 
 - 值： **True**
 
@@ -566,9 +565,9 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkin
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
-- 键：EnableCustomPermissions****
+- 键：EnableCustomPermissions
 
-- 值：False****
+- 值：False
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -635,11 +634,11 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{AttachmentAction="Automatic
 
 此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
-当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项********。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
+当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
-- 密钥：ReportAnIssueLink****
+- 密钥：ReportAnIssueLink
 
 - 负值 **\<HTTP string>**
 
@@ -675,8 +674,10 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:h
 
 当弹出消息用于特定标签时，可以按域名为收件人配置例外。
 
+有关如何配置这些设置的演练示例，请参阅视频 [Azure 信息保护 Outlook 弹出窗口配置](https://azure.microsoft.com/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/) 。
+
 > [!TIP]
-> 有关如何配置这些设置的演练示例，请参阅视频 [Azure 信息保护 Outlook 弹出窗口配置](https://azure.microsoft.com/resources/videos/how-to-configure-azure-information-protection-popup-for-outlook/) 。
+> 若要确保即使在从 Outlook 外部共享文档 **(文件 > 共享时显示弹出窗口，> 附加副本) ，** 还需要配置 [PostponeMandatoryBeforeSave](#remove-not-now-for-documents-when-you-use-mandatory-labeling) 高级设置。
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels"></a>若要针对特定标签实现用于警告、验证或阻止的弹出消息：
 
@@ -745,7 +746,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollab
     
     - 负值 **\<**domain names, comma separated**>**
 
-例如，你为 "**机密 \ 所有员工**" 标签指定了**OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定 **OutlookJustifyTrustedDomains** 和 **contoso.com**的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 " **机密 \ 所有员工** " 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
+例如，你为 "**机密 \ 所有员工**" 标签指定了 **OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定 **OutlookJustifyTrustedDomains** 和 **contoso.com** 的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 " **机密 \ 所有员工** " 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -860,7 +861,7 @@ Azure 信息保护统一标签客户端支持中心报表，并在默认情况�
 
 - 密钥： **EnableAudit**
 
-- 值：False****
+- 值：False
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
@@ -888,6 +889,8 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
 
 ## <a name="limit-cpu-consumption"></a>限制 CPU 消耗
 
+扫描仪限制资源消耗，以确保总体计算机 CPU 永不高于85%。 
+
 从扫描程序版本 2.7. x 开始，我们建议使用以下 **ScannerMaxCPU** 和 **ScannerMinCPU** 高级设置方法限制 CPU 消耗。 
 
 > [!IMPORTANT]
@@ -899,11 +902,11 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{LogMatchedContent="True"}
 
 默认情况下， **ScannerMaxCPU** 设置为100，这意味着不存在最大 CPU 使用量的限制。 在这种情况下，扫描程序进程将尝试使用所有可用的 CPU 时间，以最大程度地提高扫描速率。
 
-如果将 **ScannerMaxCPU** 设置为小于100，则 scanner 将在过去30分钟内监视 cpu 消耗，并且如果最大 cpu 超过你设置的限制，则将开始减少为新文件分配的线程数。 只要 CPU 消耗高于为 **ScannerMaxCPU**设置的限制，线程数的限制就会继续。
+如果将 **ScannerMaxCPU** 设置为小于100，则 scanner 将在过去30分钟内监视 cpu 消耗，并且如果最大 cpu 超过你设置的限制，则将开始减少为新文件分配的线程数。 只要 CPU 消耗高于为 **ScannerMaxCPU** 设置的限制，线程数的限制就会继续。
 
-**ScannerMinCPU**，仅当 **ScannerMaxCPU** 不等于100时才会检查。 不能将**ScannerMinCPU**设置为大于**ScannerMaxCPU**数字的数字。 建议将 **ScannerMinCPU** 设置为至少15个点低于  **ScannerMaxCPU**的值。   
+**ScannerMinCPU**，仅当 **ScannerMaxCPU** 不等于100时才会检查。 不能将 **ScannerMinCPU** 设置为大于 **ScannerMaxCPU** 数字的数字。 建议将 **ScannerMinCPU** 设置为至少15个点低于  **ScannerMaxCPU** 的值。   
 
-此设置的默认值为50，这意味着，如果在过去30分钟内 CPU 消耗低于此值，则 scanner 将开始添加新线程以并行扫描更多文件，直到 CPU 使用率达到为 **ScannerMaxCPU**设置的级别。 
+此设置的默认值为50，这意味着，如果在过去30分钟内 CPU 消耗低于此值，则 scanner 将开始添加新线程以并行扫描更多文件，直到 CPU 使用率达到为 **ScannerMaxCPU** 设置的级别。 
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
 
@@ -956,9 +959,9 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
-- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中********。
+- Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
 高级设置：
 
@@ -976,9 +979,9 @@ Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Se
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
-- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中********。
+- Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
 高级设置：
 
@@ -996,15 +999,15 @@ Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomPrope
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
-- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中********。
+- Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
 高级客户端设置：
 
 - 密钥： **labelByCustomProperties**
 
-- 值：**安全孤岛标签包含内部、分类、。 \*内部。 \* **
+- 值：**安全孤岛标签包含内部、分类、。 \*内部。 \***
 
 示例 PowerShell 命令，其中标签命名为 "General"：
 
@@ -1016,7 +1019,7 @@ Set-Label -Identity General -AdvancedSettings @{labelByCustomProperties="Secure 
 
 如果需要相同标签的多个规则，则为同一键定义多个字符串值。 
 
-在此示例中，名为 "机密" 和 "机密" 的安全群岛标签存储在名为 **分类**的自定义属性中，你希望 Azure 信息保护统一标签客户端应用名为 "机密" 的敏感度标签：
+在此示例中，名为 "机密" 和 "机密" 的安全群岛标签存储在名为 **分类** 的自定义属性中，你希望 Azure 信息保护统一标签客户端应用名为 "机密" 的敏感度标签：
 
 ```PowerShell
 Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
@@ -1024,7 +1027,9 @@ Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=Con
 
 ### <a name="extend-your-label-migration-rules-to-emails"></a>将标签迁移规则扩展到电子邮件
 
-除了通过指定其他标签策略高级设置以外，还可以将 labelByCustomProperties 高级设置与 Outlook 电子邮件一起使用。 但是，此设置对 Outlook 的性能有一个已知的负面影响，因此，仅当你对其具有强大的业务要求时才配置此附加设置，并记得在你完成从其他标记解决方案的迁移后将其设置为空字符串值。
+除了 Office 文档外，还可以通过指定其他标签策略高级设置，将已定义的配置与 Outlook 电子邮件的 [*labelByCustomProperties*](#migrate-labels-from-secure-islands-and-other-labeling-solutions) 高级设置一起使用。 
+
+但是，此设置对 Outlook 的性能有一个已知的负面影响，因此，仅当你对其具有强大的业务要求时才配置此附加设置，并记得在你完成从其他标记解决方案的迁移后将其设置为空字符串值。
 
 若要配置此高级设置，请为所选标签策略输入以下字符串：
 
@@ -1040,7 +1045,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelByMailHeader="Tr
 
 ### <a name="extend-your-label-migration-rules-to-sharepoint-properties"></a>将标签迁移规则扩展到 SharePoint 属性
 
-可以将 labelByCustomProperties 高级设置用于 SharePoint 属性，这些属性可能会作为列公开给用户。
+你可以通过指定其他标签策略高级设置，将已定义的配置与 SharePoint 属性的 [*labelByCustomProperties*](#migrate-labels-from-secure-islands-and-other-labeling-solutions) 高级设置一起使用，你可能会将其作为列公开给用户。
 
 使用 Word、Excel 和 PowerPoint 时，支持此设置。
 
@@ -1093,7 +1098,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProp
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在此示例中：
+在本示例中：
 
 - 敏感度标签命名为 " **机密** "，并创建名为 "Secret" 的自定义 **属性，其** 值为 " **机密**"。
 
@@ -1123,7 +1128,7 @@ Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertT
 
 此配置使用必须使用 Office 365 Security & 相容性中心 PowerShell 配置的标签 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) 。
 
-仅当使用的是 [S/MIME 部署](https://docs.microsoft.com/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) 并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
+仅当使用的是 [S/MIME 部署](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) 并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
 若要为 S/MIME 数字签名配置高级设置，请为所选标签输入以下字符串：
 
@@ -1167,7 +1172,7 @@ Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
-此配置使用 "标签 [高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。 此设置处于预览状态，并且可能会更改。
+此配置使用 "标签 [高级" 设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。 
 
 当你配置此设置时，它会更改 Azure 信息保护统一标签客户端如何向文档应用自动和建议标签的默认行为：
 
@@ -1180,16 +1185,18 @@ Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7
 
 若要配置此高级设置，请输入以下字符串：
 
-- 键：RunPolicyInBackground****
+- 键：RunPolicyInBackground
 - 值： **True**
-
-
 
 示例 PowerShell 命令： 
 
 ```PowerShell
 Set-LabelPolicy -Identity PolicyName -AdvancedSettings @{RunPolicyInBackground = "true"}
 ```
+
+> [!NOTE]
+> 此功能目前处于预览状态。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
+> 
 
 ## <a name="specify-a-color-for-the-label"></a>指定标签的颜色
 
@@ -1213,17 +1220,17 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 ## <a name="sign-in-as-a-different-user"></a>以其他用户身份登录
 
-在生产环境中，当用户使用 Azure 信息保护统一标签客户端时，通常不需要以其他用户身份登录。 不过，作为管理员，你在测试阶段可能需要以其他用户身份登录。 
+生产中的 AIP 不支持使用多个用户登录。 此过程说明如何以不同的用户身份登录，仅用于测试目的。
 
-你可以使用 " **Microsoft Azure 信息保护** " 对话框来验证你当前登录的帐户：打开 Office 应用程序，然后在 " **主页** " 选项卡上，选择 " **敏感度** " 按钮，然后选择 " **帮助和反馈**"。 帐户名称会显示在“客户端状态”**** 部分中。
+你可以使用 " **Microsoft Azure 信息保护** " 对话框来验证你当前登录的帐户：打开 Office 应用程序，然后在 " **主页** " 选项卡上，选择 " **敏感度** " 按钮，然后选择 " **帮助和反馈**"。 帐户名称会显示在“客户端状态”部分中。
 
 请确保还要检查所显示的登录帐户的域名。 很容易忽视的一点是，使用正确的帐户名登录，但域不正确。 使用错误帐户的症状包括未能下载标签，或者看不到所需的标签或行为。
 
 以其他用户身份登录：
 
-1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件********。
+1. 导航到 %localappdata%\Microsoft\MSIP 并删除 TokenCache 文件。
 
-2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中看不到用于登录到 Azure 信息保护服务的提示，请返回**Microsoft Azure 信息保护**对话框，并从 "更新的**客户端状态**" 部分中选择 "**登录**"。
+2. 重新启动任何打开的 Office 应用程序，并使用其他用户帐户登录。 如果在 Office 应用程序中看不到用于登录到 Azure 信息保护服务的提示，请返回 **Microsoft Azure 信息保护** 对话框，并从 "更新的 **客户端状态**" 部分中选择 "**登录**"。
 
 此外：
 
@@ -1247,7 +1254,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
 
-2. 作为此帐户的附加标签策略设置，禁用使用**EnableAudit**高级设置将[审核数据发送到 Azure 信息保护分析](#disable-sending-audit-data-to-azure-information-protection-analytics)。
+2. 作为此帐户的附加标签策略设置，禁用使用 **EnableAudit** 高级设置将 [审核数据发送到 Azure 信息保护分析](#disable-sending-audit-data-to-azure-information-protection-analytics)。
     
     建议执行此步骤，因为如果断开连接的计算机进行了定期 internet 连接，则会将日志记录信息发送到包含步骤1中的用户名的 Azure 信息保护分析。 该用户帐户可能不同于在断开连接的计算机上使用的本地帐户。
 
@@ -1255,7 +1262,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 4. 在此计算机上，导出日志文件。
     
-    例如，运行[AIPLogs](https://docs.microsoft.com/powershell/module/azureinformationprotection/export-aiplogs) cmdlet，或使用客户端的 "[帮助和反馈](clientv2-admin-guide.md#installing-and-supporting-the-azure-information-protection-unified-labeling-client)" 对话框中的 "**导出日志**" 选项。 
+    例如，运行 [AIPLogs](/powershell/module/azureinformationprotection/export-aiplogs) cmdlet，或使用客户端的 "[帮助和反馈](clientv2-admin-guide.md#installing-and-supporting-the-azure-information-protection-unified-labeling-client)" 对话框中的 "**导出日志**" 选项。 
     
     日志文件将作为单个压缩文件导出。
 
@@ -1275,7 +1282,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
  
 若要更改这些文件的日志记录级别，请在注册表中找到以下值名称并将值数据设置为所需的日志记录级别：
 
-**HKEY_CURRENT_USER \SOFTWARE\Microsoft\MSIP\LogLevel**
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\LogLevel**
 
 将日志记录级别设置为以下值之一：
 
@@ -1299,7 +1306,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 默认情况下，Azure 信息保护统一标签扫描程序会扫描所有相关文件。 但是，你可能想要定义要跳过的特定文件，例如用于已移动的存档文件或文件。 
 
-使用 **ScannerFSAttributesToSkip** 高级设置，使扫描程序可以根据文件属性跳过特定文件。 在 "设置" 值中，列出将使文件在全部设置为 **true**时要跳过的文件属性。 此文件属性列表使用和逻辑。
+使用 **ScannerFSAttributesToSkip** 高级设置，使扫描程序可以根据文件属性跳过特定文件。 在 "设置" 值中，列出将使文件在全部设置为 **true** 时要跳过的文件属性。 此文件属性列表使用和逻辑。
 
 下面的示例 PowerShell 命令演示了如何将此高级设置用于名为 "Global" 的标签。
 
@@ -1328,7 +1335,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip 
 > * FILE_ATTRIBUTE_RECALL_ON_OPEN
 > * FILE_ATTRIBUTE_TEMPORARY
 
-有关可在 **ScannerFSAttributesToSkip** 高级设置中定义的所有文件属性的列表，请参阅 [Win32 file Attribute 常量](https://docs.microsoft.com/windows/win32/fileio/file-attribute-constants)
+有关可在 **ScannerFSAttributesToSkip** 高级设置中定义的所有文件属性的列表，请参阅 [Win32 file Attribute 常量](/windows/win32/fileio/file-attribute-constants)
 
 ## <a name="preserve-ntfs-owners-during-labeling-public-preview"></a>在 (公开预览版的标签期间保留 NTFS 所有者) 
 
@@ -1347,6 +1354,10 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip 
 Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwner ="true"}
 ```
 
+> [!NOTE]
+> 此功能目前处于预览状态。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
+> 
+
 ## <a name="customize-justification-prompt-texts-for-modified-labels"></a>自定义已修改标签的理由提示文本
 
 自定义当最终用户更改文档和电子邮件的分类标签时，在 Office 和 AIP 客户端中显示的对齐提示。
@@ -1355,13 +1366,13 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwne
 
 :::image type="content" source="../media/justification-office.png" alt-text="自定义的理由提示文本":::
 
-若要修改显示的默认 **其他** 文本，请将 **JustificationTextForUserText** advanced 属性与 [LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) cmdlet 一起使用。 将值设置为要改用的文本。
+若要修改显示的默认 **其他** 文本，请将 **JustificationTextForUserText** advanced 属性与 [LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet 一起使用。 将值设置为要改用的文本。
 
 例如：
 
 ``` PowerShell
 
-[Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) -Identity Global -AdvancedSettings @{JustificationTextForUserText="Other (please explain) - Do not enter sensitive info"}
+[Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) -Identity Global -AdvancedSettings @{JustificationTextForUserText="Other (please explain) - Do not enter sensitive info"}
 ```
 
 ## <a name="customize-outlook-popup-messages"></a>自定义 Outlook 弹出消息
@@ -1372,9 +1383,15 @@ AIP 管理员可以自定义对 Outlook 中的最终用户显示的弹出消息�
 - 提示用户验证正在发送的内容的警告消息
 - 要求用户调整所发送内容的理由消息
 
+> [!IMPORTANT]
+> 此过程将覆盖你已使用 **OutlookUnlabeledCollaborationAction** 高级属性定义的任何设置。
+>
+> 在生产环境中，建议使用 OutlookUnlabeledCollaborationAction 高级属性定义规则，或使用下述 json 文件定义复杂规则，而不要同时使用这两种方法，以避免将问题复杂化。
+>
+
 **自定义 Outlook 弹出消息：**
 
-1. 创建 **json** 文件，每个文件都有一个规则，用于配置 Outlook 如何向用户显示弹出消息。 有关详细信息，请参阅 [Rule 值 json 语法](#rule-value-json-syntax) 和 [示例弹出 customziation 代码](#sample-popup-customziation-json-code)。
+1. 创建 **json** 文件，每个文件都有一个规则，用于配置 Outlook 如何向用户显示弹出消息。 有关详细信息，请参阅 [Rule 值 json 语法](#rule-value-json-syntax) 和 [示例弹出自定义。 json 代码](#sample-popup-customization-json-code)。
 
 1. 使用 PowerShell 定义控制要配置的弹出消息的高级设置。 为要配置的每个规则运行一组单独的命令。
 
@@ -1388,20 +1405,22 @@ AIP 管理员可以自定义对 Outlook 中的最终用户显示的弹出消息�
     ```
     其中： 
 
-    - `<Path to json file>` 创建的 json 文件的路径。 例如： **C:\Users\msanchez\Desktop\ \dlp\OutlookCollaborationRule_1.json**。
+    - `<Path to json file>` 是所创建的 json 文件的路径。 例如： **C:\Users\msanchez\Desktop\ \dlp\OutlookCollaborationRule_1.json**。
     - `<Policy name>` 要配置的策略的名称。 
     - `<Key>` 规则的名称。 使用以下语法，其中 **<#>** 是规则的序列号： 
     
         `OutlookCollaborationRule_<x>` 
 
-    有关详细信息，请参阅 [对 Outlook customziation 规则](#ordering-your-outlook-customziation-rules) 和 [规则值 Json 语法](#rule-value-json-syntax)进行排序。
+    有关详细信息，请参阅 [对 Outlook 自定义规则](#ordering-your-outlook-customization-rules) 和 [规则值 Json 语法](#rule-value-json-syntax)进行排序。
 
    
 > [!TIP]
-> 对于其他组织，请使用与 PowerShell 命令中使用的密钥相同的字符串来命名该文件。 例如，将文件命名为 ** "OutlookCollaborationRule_1.js"，** 然后使用 " **OutlookCollaborationRule_1** " 作为密钥。
+> 对于其他组织，请使用与 PowerShell 命令中使用的密钥相同的字符串来命名该文件。 例如，将文件命名为 **"OutlookCollaborationRule_1.js"，** 然后使用 " **OutlookCollaborationRule_1** " 作为密钥。
+>
+> 若要确保即使在从 Outlook 外部共享文档 **(文件 > 共享时显示弹出窗口，> 附加副本) ，** 还需要配置 [PostponeMandatoryBeforeSave](#remove-not-now-for-documents-when-you-use-mandatory-labeling) 高级设置。
 > 
 
-### <a name="ordering-your-outlook-customziation-rules"></a>订购你的 Outlook customziation 规则
+### <a name="ordering-your-outlook-customization-rules"></a>订购 Outlook 自定义规则
 
 AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义用于每个规则的密钥时，请使用较小的数字来定义更严格的规则，然后再使用较大的数字限制规则。
 
@@ -1409,22 +1428,22 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
     
 **示例：**
 
-假设您要使用特定的**警告**消息来配置所有**内部**电子邮件，但通常不希望阻止这些电子邮件。 不过，您确实想要阻止用户发送分类为 **机密**的附件，甚至作为 **内部** 电子邮件。 
+假设您要使用特定的 **警告** 消息来配置所有 **内部** 电子邮件，但通常不希望阻止这些电子邮件。 不过，您确实想要阻止用户发送分类为 **机密** 的附件，甚至作为 **内部** 电子邮件。 
 
-在这种情况下，在对内部规则密钥进行更一般**的警告**之前，对你的**块机密**规则密钥进行排序，这是更具体的规则：
+在这种情况下，在对内部规则密钥进行更一般 **的警告** 之前，对你的 **块机密** 规则密钥进行排序，这是更具体的规则：
 - 对于 **块** 消息： **OutlookCollaborationRule_1**
 - 对于 **警告** 消息： **OutlookCollaborationRule_2**
 
 ### <a name="rule-value-json-syntax"></a>Rule 值 json 语法
 
-按如下所示定义规则的 json snytax：
+按如下所示定义规则的 json 语法：
 
 ``` JSON
 "type" : "And",
 "nodes" : []
 ```
 
-您必须至少具有两个节点，第一个节点表示规则的条件，最后 represending 该规则的操作。 有关详细信息，请参阅：
+您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参阅：
 
 - [规则条件语法](#rule-condition-syntax)
 - [规则操作语法](#rule-action-syntax)
@@ -1437,13 +1456,13 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 |节点类型  |描述  |
 |---------|---------|
-| **And**   | 在所有子节点上执行*和*     |
-| **Or**    |在所有子节点上执行*或*       |
-| **不仅**   | *不*用于其自己的子级      |
+| **And**   | 在所有子节点上执行 *和*     |
+| **Or**    |在所有子节点上执行 *或*       |
+| **不仅**   | *不* 用于其自己的子级      |
 | **只有**    | 返回 *不* 用于其自身的子级，导致其行为与 **所有**        |
-| **发送，** 后跟 **域： listOfDomains**    |检查以下各项之一： </br>-如果父代为 **Except，** 则检查是否 **所有** 收件人都位于某个域中</br>-如果父代为其他任何内容 **，但除外，** 则检查 **任何** 收件人是否位于某个域中。   |
-| **EMailLabel，** 后跟标签 | 下列类型作之一：  </br>-标签 ID </br>-null （如果未标记）             |
-| **AttachmentLabel，** 后跟 **Label** 和 **supportedExtensions**    | 下列类型作之一：  </br></br>**true** </br>-如果父对象 **除外，** 则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件</br>-如果父代为其他任何内容 **，但除外，** 则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 </br>-如果未 **加标签，并且 label = null** </br></br> **false：** 对于所有其他情况 
+| **发送，** 后跟 **域： listOfDomains**    |检查以下各项之一： <br />-如果父代为 **Except，** 则检查是否 **所有** 收件人都位于某个域中<br />-如果父代为其他任何内容 **，但除外，** 则检查 **任何** 收件人是否位于某个域中。   |
+| **EMailLabel，** 后跟标签 | 下列情况之一：  <br />-标签 ID <br />-null （如果未标记）             |
+| **AttachmentLabel，** 后跟 **Label** 和 **supportedExtensions**    | 下列情况之一：  <br /><br />**true** <br />-如果父对象 **除外，** 则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件<br />-如果父代为其他任何内容 **，但除外，** 则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 <br />-如果未 **加标签，并且 label = null** <br /><br /> **false：** 对于所有其他情况 
 | | |
 
 #### <a name="rule-action-syntax"></a>规则操作语法
@@ -1452,9 +1471,9 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 |操作  |语法  |示例消息  |
 |---------|---------|---------|
-|**阻止**     |    `Block (List<language, [title, body]>)`     |    ***已阻止电子邮件***</br></br>  *即将向一个或多个不受信任的收件人发送分类为 **机密** 的内容：*</br>*`rsinclair@contoso.com`*</br></br>*你的组织策略不允许此操作。请考虑删除这些收件人或替换内容。*|
-|**不再**     | `Warn (List<language,[title,body]>)`        |  ***需要确认***</br></br>*即将向一个或多个不受信任的收件人发送分类为 **常规** 的内容：*</br>*`rsinclair@contoso.com`*</br></br>*你的组织策略需要确认才能发送此内容。*       |
-|**采用**     | `Justify (numOfOptions, hasFreeTextOption, List<language, [Title, body, options1,options2….]> )` </br></br>最多包含三个选项。        |  ***需要理由*** </br></br>*你的组织策略要求向你发送分类为 " **常规** " 和 "不受信任收件人" 的内容。*</br></br>*-我确认收件人已批准共享此内容*</br>*-我的经理已批准共享此内容*</br>*-其他，如所述* |
+|**阻止**     |    `Block (List<language, [title, body]>)`     |    **_阻止的电子邮件_* _<br /><br />  _You 将向一个或多个不受信任的收件人发送分类为 **机密** 的内容： *<br />* `rsinclair@contoso.com` *<br /><br />* 你的组织策略不允许此操作。 请考虑删除这些收件人或替换内容。 *|
+|**不再**     | `Warn (List<language,[title,body]>)`        |  **_需要确认_* _<br /><br />_You 将向一个或多个不受信任的收件人发送分类为 **常规** 的内容： *<br />* `rsinclair@contoso.com` *<br /><br />* 你的组织策略需要确认才能发送此内容。 *       |
+|**采用**     | `Justify (numOfOptions, hasFreeTextOption, List<language, [Title, body, options1,options2….]> )` <br /><br />最多包含三个选项。        |  **_需要对齐_* _ <br /><br />_Your 组织策略要求向你发送分类为 " **常规** " 和 "不受信任收件人" 的内容。 *<br /><br />*-我确认已批准收件人共享此内容 *<br />* -经理批准了此内容的共享 *<br />* -其他，如所述 * |
 | | | |
 
 ##### <a name="action-parameters"></a>操作参数
@@ -1465,20 +1484,20 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 |参数  |说明  |
 |---------|---------|
-| `${MatchedRecipientsList}`  | **发送**条件的最后一个匹配项       |
+| `${MatchedRecipientsList}`  | **发送** 条件的最后一个匹配项       |
 | `${MatchedLabelName}`      | 邮件/附件 **标签，** 具有策略的本地化名称               |
-| `${MatchedAttachmentName}` | **AttachmentLabel**条件的最后一个匹配项的附件名称 |
+| `${MatchedAttachmentName}` | **AttachmentLabel** 条件的最后一个匹配项的附件名称 |
 | | |
 
 > [!NOTE]
 > 所有消息都包括 " **告诉我更多** " 选项，以及 " **帮助** 和 **反馈** " 对话框。
 >
-> **语言**是区域设置名称的**CultureName** ，例如：**英语**  =  `en-us` ;**西班牙语** = `es-es`
+> **语言** 是区域设置名称的 **CultureName** ，例如：**英语**  =  `en-us` ;**西班牙语** = `es-es`
 >
 > 还支持仅父语言名称，例如 `en` 。
 > 
 
-### <a name="sample-popup-customziation-json-code"></a>示例弹出 customziation 代码
+### <a name="sample-popup-customization-json-code"></a>示例弹出项自定义。 json 代码
 
 下面的 **json** 代码集说明了如何定义各种规则，这些规则控制 Outlook 如何为用户显示弹出消息。
 
@@ -1486,7 +1505,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 - [**示例 2**：阻止未分类的 Office 附件](#example-2-block-unclassified-office-attachments)
 - [**示例 3**：要求用户接受发送机密电子邮件或附件](#example-3-require-the-user-to-accept-sending-a-confidential-email-or-attachment)
 - [**示例 4**：对没有标签的邮件发出警告，并为具有特定标签的附件提供警告](#example-4-warn-on-mail-with-no-label-and-an-attachment-with-a-specific-label)
-- [**示例 5**：提示输入理由，其中包含两个预定义的选项和一个额外的可用文本选项](#example-5-prompt-for-a-justificaiton-with-two-predefined-options-and-an-extra-free-text-option)
+- [**示例 5**：提示是否有两个预定义的选项，以及一个额外的可用文本选项](#example-5-prompt-for-a-justification-with-two-predefined-options-and-an-extra-free-text-option)
 
 #### <a name="example-1-block-internal-emails-or-attachments"></a>示例1：阻止内部电子邮件或附件
 
@@ -1540,7 +1559,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 #### <a name="example-2-block-unclassified-office-attachments"></a>示例2：阻止未分类的 Office 附件
 
-下面的 **json** 代码阻止未分类的 Office 附件或电子邮件发送到外部 recipeints。
+下面的 **json** 代码阻止未分类的 Office 附件或电子邮件发送到外部收件人。
 
 在下面的示例中，要求添加标签的附件列表为： **.doc，. docm，.docx，.dot，.dot，。 dotx、. potm、. potx、. ppsm、. ppsx、.ppt、. pptm、.pptx、. .vdw、.vsd、.** .vsdm、. .vssm、. .vstm、. .vssx、.xls、. .vstx、. .xlsb、.xlsx、. xlsm、. xltm、. xltx、。
 
@@ -1717,7 +1736,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 }
 ```
 
-#### <a name="example-5-prompt-for-a-justificaiton-with-two-predefined-options-and-an-extra-free-text-option"></a>示例5：提示输入理由，其中包含两个预定义的选项和一个额外的可用文本选项
+#### <a name="example-5-prompt-for-a-justification-with-two-predefined-options-and-an-extra-free-text-option"></a>示例5：提示是否有两个预定义的选项，以及一个额外的可用文本选项
 
 下面的 **json** 代码使 Outlook 提示用户提供其操作的理由。 对齐文本包括两个预定义的选项以及第三个可用文本选项。
 
@@ -1771,7 +1790,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 默认情况下，SharePoint 交互的超时时间为两分钟，在此时间之后，尝试的 AIP 操作将失败。
 
-从 [版本 2.8.85](unifiedlabelingclient-version-release-history.md#version-2885-public-preview)开始，AIP 管理员可以使用以下高级属性控制此超时，使用 **hh： mm： ss** 语法来定义超时：
+从 [版本 2.8.85.0](unifiedlabelingclient-version-release-history.md#version-28850)开始，AIP 管理员可以使用以下高级属性控制此超时，使用 **hh： mm： ss** 语法来定义超时：
 
 - **SharepointWebRequestTimeout**。 确定对 SharePoint 的所有 AIP web 请求的超时值。 默认值为2分钟。
 
@@ -1791,14 +1810,14 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 ## <a name="prevent-outlook-performance-issues-with-smime-emails"></a>阻止 S/MIME 电子邮件的 Outlook 性能问题
 
-如果在阅读窗格中打开 S/MIME 电子邮件，Outlook 可能会出现性能问题。 若要防止这些问题，请启用 **OutlookSkipSmimeOnReadingPaneProperty** 高级属性。 
+如果在阅读窗格中打开 S/MIME 电子邮件，Outlook 可能会出现性能问题。 若要防止这些问题，请启用 **OutlookSkipSmimeOnReadingPaneEnabled** 高级属性。 
 
 启用此属性可防止在 "阅读" 窗格中显示 AIP 栏和电子邮件分类。
 
-例如，如果你的策略命名为 **Global**，以下 PowerShell 命令示例将启用 **OutlookSkipSmimeOnReadingPaneProperty** 属性：
+例如，如果你的策略命名为 **Global**，以下 PowerShell 命令示例将启用 **OutlookSkipSmimeOnReadingPaneEnabled** 属性：
 
 ```PowerShell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookSkipSmimeOnReadingPaneProperty="true"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookSkipSmimeOnReadingPaneEnabled="true"}
 ```
 
 ## <a name="next-steps"></a>后续步骤

@@ -1,10 +1,10 @@
 ---
 title: 使用 Azure 信息保护配置可靠的文档协作
 description: 用于在受 Azure 信息保护保护的文档上进行协作的端到端工作流。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 1/06/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 61567869b889ba72c61e736804c313fd4e0bfbb0
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: bbb085aa7de8555594d33bc0b2e0ea4d06034aa2
+ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79483382"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "95566525"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -29,15 +29,15 @@ ms.locfileid: "79483382"
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
-这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅[配置 Azure 信息保护的使用权限](configure-usage-rights.md)。
+这些权限被称为使用权限，并包含查看、编辑、打印等权限。 你可以在文档受到保护时定义个人使用权限，也可以定义一组使用权限，这被称为权限级别。 通过权限级别，你可以更轻松地选择通常一起使用的使用权限，例如审阅者和合著者。 有关使用权限和权限级别的详细信息，请参阅 [配置 Azure 信息保护的使用权限](configure-usage-rights.md)。
 
 配置这些权限时，可以指定向哪些用户授予它们：
 
-- **对于自己组织中或其他组织中使用 Azure Active Directory 的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
+- **对于你自己的组织或使用 Azure Active Directory 的另一组织中的用户**：可以指定 Azure AD 用户帐户、Azure AD 组或该组织中的所有用户。 
 
-- **对于不具有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
+- **对于没有 Azure Active Directory 帐户的用户**：指定将与 Microsoft 帐户一起使用的电子邮件地址。 此帐户可能已经存在，或者用户可以在打开受保护文档时进行创建。 
     
-    若要使用 Microsoft 帐户打开文档，用户必须使用 Office 365 应用（即点即用）。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
+    若要打开 Microsoft 帐户的文档，用户必须使用 Microsoft 365 应用 (单击 ") "。 其他 Office 版本尚不支持使用 Microsoft 帐户打开受 Office 保护的文档。
 
 - **对于任何身份已验证的用户**：此选项适用于不需要控制谁能访问受保护文档的情况，前提是可以验证用户身份。 如果内容受 Office 365 邮件加密的新功能保护，可以通过 Azure AD（使用 Microsoft 帐户），甚至是联合社交提供程序或一次性密码进行身份验证。 
 
@@ -47,13 +47,13 @@ ms.locfileid: "79483382"
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>让标签应用保护以支持外部协作的配置示例
 
 
-此示例演示了如何配置现有标签以应用保护，以便组织中的用户可以与另一个拥有 Office 365 或 Azure AD 的组织中的所有用户、其他具有 Office 365 或 Azure AD 的组织中的组以及在 Azure AD 中没有帐户而是使用 Gmail 电子邮件地址的用户就文档进行协作。
+此示例演示如何配置现有标签以应用保护，以便组织中的用户可以与其他组织中具有 Microsoft 365 或 Azure AD 的所有用户协作处理文档、具有 Microsoft 365 或 Azure AD 的其他组织中的组，以及将使用其 Gmail 电子邮件地址的 Azure AD 用户。
 
 由于方案限制为只有特定人员拥有访问权限，因此不包括任何身份已验证的用户的设置。 有关如何使用此设置配置标签的示例，请参阅[示例 5：加密内容但不限制谁能访问内容的标签](configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)。  
 
 1. 选择已在全局策略中或指定了作用域的策略中的标签。 在“保护”窗格，确保选中“Azure (云密钥)”。
     
-2. 务必选中“设置权限”，然后选择“添加权限”。
+2. 确保选中“设置权限”，然后选择“添加权限”。
 
 3. 在“添加权限”窗格： 
     
@@ -61,11 +61,11 @@ ms.locfileid: "79483382"
     
    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com 。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如 sales@contoso.com。
     
-   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，输入用户的电子邮件地址。 例如，bengi.turan@gmail.com 。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如 bengi.turan@gmail.com。 
 
-4. 向这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
+4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     
     例如，你配置的权限可能与以下内容相似：
         
@@ -73,7 +73,7 @@ ms.locfileid: "79483382"
 
 5. 在“添加权限”窗格上单击“确定”。
 
-6. 在 "**保护**" 窗格上，单击 **"确定"** 。
+6. 在 " **保护** " 窗格上，单击 **"确定"**。
 
 7. 在“标签”窗格上，选择“保存”。 
 
@@ -107,7 +107,7 @@ ms.locfileid: "79483382"
 
 ![Azure 信息保护权限对话框示例](./media/example-permisisons-popup.png)
 
-注意:如果文档由同时使用 Azure 信息保护的外部用户打开，Office 应用程序不会显示文档的分类标签，尽管仍保留标签中的任何视觉标记。 相反，外部用户可以根据组织的分类来应用自己的标签。 如果这些外部用户随后将编辑过的文档发回给你，Office 会在文档重新打开时显示原始分类标签。
+注意：如果文档由同时使用 Azure 信息保护的外部用户打开，Office 应用程序不会显示文档的分类标签，尽管仍保留标签中的任何视觉标记。 相反，外部用户可以根据组织的分类来应用自己的标签。 如果这些外部用户随后将编辑过的文档发回给你，Office 会在文档重新打开时显示原始分类标签。
 
 在受保护文档打开前，将会发生以下身份验证流之一：
 
@@ -139,18 +139,15 @@ ms.locfileid: "79483382"
 |用于查看和编辑文档的平台： <br />Word、Excel、PowerPoint|身份验证方法：<br />Azure AD|身份验证方法：<br />Microsoft 帐户|
 |---------------|----------|-----------|-----------|
 |Windows|是 [[1]](#footnote-1)|是 [[2]](#footnote-2)|
-|iOS|是 [[1]](#footnote-1)|否|
-|Android|是 [[1]](#footnote-1)|否|
+|iOS|是 [[1]](#footnote-1)|是 (版本1385219和更高版本)  |
+|Android|是 [[1]](#footnote-1)|是 (版本13029和更高版本) |
 |MacOS|是 [[1]](#footnote-1)|否|
 
 ###### <a name="footnote-1"></a>脚注 1
 支持用户帐户、启用电子邮件的组、所有成员。 用户帐户和启用电子邮件的组可以包括来宾帐户。 除来宾帐户外的所有成员。
 
 ###### <a name="footnote-2"></a>脚注 2
-当前仅受 Office 365 应用（即点即用）支持。
-
-
-
+目前仅 Microsoft 365 的应用支持。
 
 ## <a name="next-steps"></a>后续步骤
 

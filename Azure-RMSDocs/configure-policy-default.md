@@ -1,35 +1,35 @@
 ---
 title: Azure 信息保护的默认策略 - AIP
 description: 了解如何配置 Azure 信息保护的默认策略。 如果修改默认策略，则可以引用这些值以返回默认策略。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 11/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 9cbfea73a667c0d7b96c0daddb9efbb5cf97b78b
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: 6f50cd82076e8906ddf2ecaf0ec2d63350fffc35
+ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048283"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "95566488"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 > [!NOTE]
-> Azure 信息保护策略适用于 Azure 信息保护客户端（经典），而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
+> Azure 信息保护策略适用于 Azure 信息保护客户端 (经典) ，而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 > 
-> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅了解 Microsoft 365 合规性文档中的[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅了解 Microsoft 365 合规性文档中的 [敏感度标签](/microsoft-365/compliance/sensitivity-labels) 。
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -55,15 +55,15 @@ ms.locfileid: "86048283"
 
 - **机密\所有员工**
 
-- **机密\仅收件人**
+- 机密\仅收件人
 
 - **高度机密\所有员工** 
 
-- 高度机密\仅收件人**** 
+- 高度机密\仅收件人 
 
 如果没有为这些子标签自动配置保护，Azure 信息保护默认策略会与[旧版默认策略](#default-policy-before-july-31-2017)保持一致。
 
-将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护****。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
+将保护应用于“所有员工”子标签时，将通过使用在 Azure 门户中自动转换为标签的默认模板来配置此保护。 有关这些模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 自 2017 年 8 月 30 日起，此版 Azure 信息保护默认策略包括多语言版本的标签名称和说明。 
 
@@ -89,19 +89,21 @@ ms.locfileid: "86048283"
 
 |Label|工具提示|设置|
 |-------------------------------|---------------------------|-----------------|
-|机密\所有员工|需保护的机密数据，所有员工具有完全权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密<br /><br />**条件**：无<br /><br />保护****：Azure (云密钥) [[1]](#footnote-1)|
+|机密\所有员工|需保护的机密数据，所有员工具有完全权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密<br /><br />**条件**：无<br /><br />保护：Azure (云密钥) [[1]](#footnote-1)|
 |机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />**保护**：无|
-|机密\仅收件人|需要保护且仅收件人可以查看的机密数据。|**已启用**：打开 <br /><br />视觉标记****：页脚（电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />“保护”：设置用户定义的权限（预览版），在 Outlook 中应用“不转发”****|
-|高度机密\所有员工|高度机密数据，所有员工具有查看、编辑和回复此内容的权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为高度机密<br /><br />**条件**：无<br /><br />保护****：Azure (云密钥) [[2]](#footnote-2)|
+|机密\仅收件人|需要保护且仅收件人可以查看的机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为机密 <br /><br />**条件**：无<br /><br />**保护**：设置用户定义的权限 (预览 [[3]](#footnote-3)) ，在 Outlook 中应用 "不要转发"|
+|高度机密\所有员工|高度机密数据，所有员工具有查看、编辑和回复此内容的权限。 数据所有者可跟踪和撤消内容。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为高度机密<br /><br />**条件**：无<br /><br />保护：Azure (云密钥) [[2]](#footnote-2)|
 |高度机密\任何人（不受保护）|无需保护的数据。 使用此选项时需谨慎，并具有选择此选项的合理业务理由。|**已启用**：打开 <br /><br />**可视标记**：页脚（文档和电子邮件）<br /><br />归类为高度机密<br /><br />**条件**：无<br /><br />**保护**：无|
-|高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**已启用**：打开 <br /><br />视觉标记****：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />“保护”：设置用户定义的权限（预览版），在 Outlook 中应用“不转发”****|
+|高度机密\仅收件人|需要保护且仅收件人可以查看的高度机密数据。|**已启用**：打开 <br /><br />视觉标记：页脚（电子邮件）<br /><br />归类为高度机密 <br /><br />**条件**：无<br /><br />**保护**：设置用户定义的权限 (预览 [[3]](#footnote-3)) ，在 Outlook 中应用 "不要转发"|
 
 ###### <a name="footnote-1"></a>脚注 1
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配****。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“机密\所有员工”中的保护权限相匹配。
 
 ###### <a name="footnote-2"></a>脚注 2 
-保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配****。
+保护权限与[默认模板](configure-policy-templates.md#default-templates)“高度机密\所有员工”中的保护权限相匹配。
 
+###### <a name="footnote-3"></a>脚注 3
+此功能目前处于预览状态。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
 
 ### <a name="information-protection-bar"></a>信息保护栏
 
@@ -117,7 +119,7 @@ ms.locfileid: "86048283"
 
 |设置|值|
 |-------------------------------|---------------------------|
-|选择默认标签|None|
+|选择默认标签|无|
 |将审核数据发送到 Azure 信息保护分析|关|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
 |用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
@@ -125,7 +127,7 @@ ms.locfileid: "86048283"
 |在 Office 应用中显示“信息保护”栏|关|
 |向 Outlook 功能区添加“不要转发”按钮|关|
 |使用户能够使用“自定义权限”选项|关|
-|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空|
+|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 ## <a name="default-policy-before-july-31-2017"></a>2017 年 7 月 31 日之前发布的默认策略
 
@@ -165,10 +167,10 @@ ms.locfileid: "86048283"
 |设置|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
-|选择默认标签|None|
+|选择默认标签|无|
 |用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
 |对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签|关|
-|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空|
+|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 ## <a name="default-policy-before-march-21-2017"></a>2017 年 3 月 21 日之前发布的默认策略
 
@@ -178,9 +180,9 @@ ms.locfileid: "86048283"
 |-------------------------------|---------------------------|-----------------|
 |个人|仅供个人使用。 此数据将不会受组织监视。 个人信息不能包含任何与企业相关的数据。|**已启用**：打开 <br /><br />**颜色**：浅绿色<br /><br />**可视标记**：关闭 <br /><br />**条件**：无<br /><br />**保护**：无|
 |公共|此信息是内部的，企业内部或外部的所有人均可使用。|**已启用**：打开 <br /><br />**颜色**：绿色<br /><br />**可视标记**：关闭<br /><br />**条件**：无<br /><br />**保护**：无|
-|内部|此信息包括各种可由所有员工使用并可与授权客户和业务合作伙伴共享的内部业务数据。 有关内部信息的示例包括公司策略和大多数内部通信。|**已启用**：打开 <br /><br />**颜色**：蓝色 <br /><br />**可视标记**：页脚（文档和电子邮件）： <br /><br />敏感级别：内部<br /><br />**条件**：无<br /><br />**保护**：无|
-|机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**已启用**：打开 <br /><br />**颜色**：橙色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感级别：机密<br /><br />**条件**：无<br /><br />**保护**：无|
-|机密|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**可视标记**：页脚（文档和电子邮件）：<br /><br /> 敏感级别：秘密<br /><br />**条件**：无<br /><br />**保护**：无|
+|内部|此信息包括各种可由所有员工使用并可与授权客户和业务合作伙伴共享的内部业务数据。 有关内部信息的示例包括公司策略和大多数内部通信。|**已启用**：打开 <br /><br />**颜色**：蓝色 <br /><br />**视觉标记**：页脚 (文档和电子邮件) ： <br /><br />敏感级别：内部<br /><br />**条件**：无<br /><br />**保护**：无|
+|机密|此数据包括敏感业务信息。 向未经授权的用户公开此数据可能会对组织造成损坏。 有关机密信息的示例包括员工信息、各个客户项目或合同和销售帐户数据。|**已启用**：打开 <br /><br />**颜色**：橙色<br /><br />**视觉标记**：页脚 (文档和电子邮件) ：<br /><br /> 敏感级别：机密<br /><br />**条件**：无<br /><br />**保护**：无|
+|Secret|此数据包括必须予以保护的高度敏感业务信息。 向未经授权的用户公开秘密数据可能会对组织造成严重损坏。 有关秘密信息的示例包括个人身份信息、客户记录、源代码和预先公布的财务报告。|**已启用**：打开 <br /><br />**颜色**：红色<br /><br />**视觉标记**：页脚 (文档和电子邮件) ：<br /><br /> 敏感级别：秘密<br /><br />**条件**：无<br /><br />**保护**：无|
 
 
 ### <a name="sublabels"></a>子标签
@@ -203,11 +205,11 @@ ms.locfileid: "86048283"
 |设置|值|
 |-------------------------------|---------------------------|
 |所有文档和电子邮件都必须自动应用或由用户应用标签|关|
-|选择默认标签|None|
+|选择默认标签|无|
 |用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
-|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空|
+|提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 
 ## <a name="next-steps"></a>后续步骤
 
-有关配置 Azure 信息保护策略的详细信息，请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。 
+有关配置 Azure 信息保护策略的详细信息，请使用[配置组织的策略](configure-policy.md#configuring-your-organizations-policy)部分中的链接。
