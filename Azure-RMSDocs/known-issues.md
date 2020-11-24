@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/05/2020
+ms.date: 11/15/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 748ca0103885226ae646b4d4fb7761ff84ae0796
-ms.sourcegitcommit: d4ac18506e3f0e7b39466eb811d3129100512a78
+ms.openlocfilehash: 0a1ac4e5470df68076585d9f328b28c76377a26d
+ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "95566508"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95735008"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -37,11 +37,11 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 有关详细信息，请参阅 [管理员指南： Azure 信息保护客户端支持的文件类型](rms-client/client-admin-guide-file-types.md)。
 
-## <a name="known-issues-for-installing-the-aip-client"></a>安装 AIP 客户端的已知问题
+## <a name="known-issues-for-aip-and-exploit-protection"></a>AIP 和 Exploit Protection 的已知问题
 
-启用了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机不支持 Azure 信息保护客户端。
+在安装了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的 .net 2 或3计算机上，不支持 Azure 信息保护客户端。
 
-请确保在安装 AIP 之前禁用 Exploit protection。 
+如果你的 .NET 版本为2或3，但你的系统需要 .NET 4.x 版本，请确保在安装 AIP 之前禁用 Exploit protection。 
 
 若要通过 PowerShell 禁用 Exploit protection，请运行以下内容：
 
@@ -49,7 +49,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus, EnableExportAddressFilter, EnableImportAddressFilter
 ```
 
-有关详细信息，请参阅 [Azure 信息保护要求](requirements.md)。
+有关详细信息，请参阅 [Azure 信息保护统一标签客户端的其他先决条件](rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
 
 ## <a name="powershell-support-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的 PowerShell 支持
 
@@ -125,7 +125,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 1.  在 Azure 门户中，导航到 " **条件性访问** " 边栏选项卡，然后选择要修改的条件性访问策略。 
 2.  在 " **分配**" 下，选择 " **用户和组**"，然后选择 " **所有用户**"。 请确保 *未* 选中 "**所有来宾和外部用户**" 选项。
-3.  保存更改。 
+3.  保存所做更改。 
  
 如果你的组织不需要该功能，则还可以在 Azure 信息保护中完全禁用 CA，以避免此潜在问题。 
 

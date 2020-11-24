@@ -4,7 +4,7 @@ description: 面向管理员的说明和信息，介绍如何在企业网络中�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/30/2020
+ms.date: 11/15/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 468e7a5b7ef5482b1027d491adf6b6b4d8271261
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 3d16d735f6119617eb12599f110f8c22682992d4
+ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566245"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95734991"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护客户端
 
@@ -79,7 +79,7 @@ ms.locfileid: "95566245"
 
         对于 PowerPoint：`MSIP.PowerPointAddin`
 
-- 启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  
+- 使用启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的 .net 版本2或3的计算机不支持 AIP 客户端。 如果你的计算机除了上面列出的 .NET 4.x 版本之外，还具有 .NET 版本2或3，请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-aip-and-exploit-protection) 。  
 
 > [!IMPORTANT]
 > 安装 Azure 信息保护客户端需要本地管理权限。
@@ -90,8 +90,8 @@ ms.locfileid: "95566245"
 
 |安装选项  |说明  |
 |---------|---------|
-|**运行客户端可执行文件 ( .exe)**  </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。</br></br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
-|**将客户端的 Windows installer 部署 ( .msi)** </br></br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。</br></br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。</br></br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。</br></br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
+|**运行客户端可执行文件 ( .exe)**  <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。<br><br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
+|**将客户端的 Windows installer 部署 ( .msi)** <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。<br><br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。<br><br> 必须将 tis 方法用于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，因为这些计算机不支持 .exe 文件。<br><br>**注意：** 使用 .msi 安装时，您必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
 
 安装客户端后，请重复相同的安装方法以执行更新，或使用 Windows 更新来保持客户端的自动更新。 在安装新版本之前，无需卸载旧版本的客户端。
 

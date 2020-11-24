@@ -4,19 +4,19 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 10/26/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 26cb50eb6532eccee86eb28313c1cd1ac1751949
-ms.sourcegitcommit: ed3745bff0f0d4883200a310a0b63f7794149330
+ms.openlocfilehash: 0cbb554d09d24b1403c24f52fd5215fdee71ab61
+ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "95566429"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95735042"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -36,14 +36,14 @@ ms.locfileid: "95566429"
 
 |要求  |说明  |
 |---------|---------|
-|**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 </br></br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。       |
-|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 </br></br>**重要提示：** 如果查看器缺少此框架，则可执行安装 *程序不会下载或* 安装该框架。        |
-|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 </br></br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 </br></br>**重要提示：** 安装 *程序不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
+|**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 <br><br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。       |
+|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 <br><br>**重要提示：** 如果查看器缺少此框架，则可执行安装 *程序不会下载或* 安装该框架。        |
+|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 <br><br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 <br><br>**重要提示：** 安装 *程序不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
 |**屏幕分辨率大于 800 x 600**    |     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。    |
-|**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 </br></br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 </br></br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。      |
-|**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 </br></br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
+|**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 <br><br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 <br><br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。      |
+|**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 <br><br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
 |**管理员权限**| 安装 Azure 信息保护统一标签客户端需要本地管理权限。| 
-|**禁用 Exploit protection**   |启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的计算机上不支持 AIP 客户端。 请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-installing-the-aip-client) 。  |
+|**禁用 Exploit protection ( 仅限 .NET 2 或 3)**   |使用启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的 .net 2 或3的计算机不支持 AIP 客户端。 如果你的计算机除了上面列出的 .NET 4.x 版本之外，还具有 .NET 2 或3，请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-aip-and-exploit-protection) 。  |
 |||
         
 ### <a name="configure-your-group-policy-to-prevent-disabling-aip"></a>配置组策略以阻止禁用 AIP
