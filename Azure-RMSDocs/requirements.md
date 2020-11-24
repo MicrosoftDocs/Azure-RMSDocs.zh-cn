@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需满足的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 10/21/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5e52571568a54cf015269fde76603e334f0bc7b6
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 3d90fdf263c15f80e23229bba427cb8d2b68f74e
+ms.sourcegitcommit: 867a8b3d5e90ab21384b1b2322a0c5a7b63b25bd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503547"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95417296"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -219,13 +219,14 @@ Azure 信息保护有以下额外要求：
 
 ### <a name="service-tags"></a>服务标记
 
-请务必允许访问以下服务标记的所有端口：
+如果使用的是 Azure 终结点和 NSG，请务必允许访问以下服务标记的所有端口：
 
 - **AzureInformationProtection**
 - **AzureActiveDirectory**
 - **AzureFrontDoor.Frontend**
 
-Azure 信息保护服务还依赖于两个特定的 IP 地址：
+此外，在这种情况下，Azure 信息保护服务还依赖于两个特定的 IP 地址：
+
  - 13.107.6.181 
  - 13.107.9.181
  - 端口 443（对于 HTTPS 流量）
