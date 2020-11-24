@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护客户端版本的
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/17/2020
+ms.date: 11/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v1client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1a51376fc2d6114f7d23ec937b4d8ea1238d1655
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: 146fa9442aa5fcb05cebab27f1d4104bd33328f0
+ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953229"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "95566465"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure 信息保护客户端：版本发行历史记录和支持策略
 
@@ -27,7 +27,7 @@ ms.locfileid: "88953229"
 > 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 > [!TIP]
 > 对使用 Azure 信息保护统一标签客户端感兴趣，因为标签是从 Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 365 符合性中心发布的？ 从 Microsoft 下载中心下载并安装统一标签客户端时，可以将 Azure 信息保护客户端升级到 [统一的标签客户端](unifiedlabelingclient-version-release-history.md)。
@@ -40,12 +40,11 @@ ms.locfileid: "88953229"
 
 在发布新的通用版本 (GA) 前，原有的 Azure 信息保护客户端的支持期限最多为六个月。 除了此部分，文档不包含有关不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
-不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
-
 ##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本：
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|1.54.33.0 | 2019/10/23|
 |1.53.10|07/15/2019|
 |1.48.204.0|04/16/2019|
 |1.41.51.0|2018 年 11 月 27 日|
@@ -64,11 +63,13 @@ ms.locfileid: "88953229"
 
 从6/2/2019 开始，Azure 信息保护的标记服务需要使用 TLS 1.2 的连接。
 
-1.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本 **1.3.155.2**、 **1.2.4.0**和 **1.1.23.0** 不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
+1.4.21.0 发行的所有客户端版本03/15/2017 支持 TLS 1.2。 客户端版本 **1.3.155.2**、 **1.2.4.0** 和 **1.1.23.0** 不使用 TLS 1.2，因此无法再下载 Azure 信息保护策略。
 
 ### <a name="release-history"></a>版本历史记录
 
 使用以下信息可查看适用于 Windows 的 Azure 信息保护客户端的受支持版本的新增功能或更改内容。 最新版本会最先列出。
+
+所述的 Azure 信息保护功能目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
 
 > [!NOTE]
 > 小的修补程序不予列出，因此如果遇到 Azure 信息保护客户端相关问题，建议检查它是否已在最新 GA 版本中得到修复。 如果问题仍然存在，请检查当前预览版本 (（如果有）) 。
@@ -77,7 +78,7 @@ ms.locfileid: "88953229"
 
 ## <a name="version-154590"></a>版本1.54.59。0
 
-**发布**日期：12/02/2020
+**发布** 日期：02/12/2020
 
 此版本仅包含修补程序。 
 
@@ -90,16 +91,6 @@ ms.locfileid: "88953229"
 - 解决使用受保护的 PDF 文件时的客户端稳定性问题。 
 
 - 如果在电子邮件创建过程中将在电子邮件中删除标签，则现在会按预期删除保护标签。 
-
-## <a name="version-154330"></a>版本1.54.33。0
-
-**发布**日期：10/23/2019
-
-支持，08/12/2020
-
-此版本包括 RMS 客户端的 MSIPC 版本1.0.4008.0813。
-
-此版本提供了一般的稳定性和性能修复。
 
 ## <a name="next-steps"></a>后续步骤
 

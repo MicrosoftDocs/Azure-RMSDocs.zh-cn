@@ -6,18 +6,18 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 51934a4a285368a00aaf23780c7fd6c2f315ed7d
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 8c414b5b66525169b1c55ae83f60e91e69188b53
+ms.sourcegitcommit: 4815ab96e4596303af297ae4c13fb6d7083b21e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88563947"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "95566444"
 ---
 # <a name="microsoft-information-protection-sdk---profile-and-engine-object-concepts"></a>Microsoft 信息保护 SDK - 配置文件和引擎对象概念
 
 ## <a name="profiles"></a>配置文件
 
-如果 `MipContext` 是用于存储 SDK 特定的设置的类，则该配置文件是 MIP SDK 中所有 mip 标记和特定于保护的操作的根类。 使用三个 API 集中的任何一个，客户端应用程序必须创建配置文件。 将来的操作由配置文件或 *添加* 到配置文件中的其他对象执行。
+如果 `MipContext` 是用于存储 SDK 特定的设置的类，则该配置文件是 MIP SDK 中所有 mip 标记和特定于保护的操作的根类。 使用三个 API 集中的任何一个，客户端应用程序必须创建配置文件。 将来的操作由配置文件或 *添加* 到配置文件中的其他对象执行。 建议每个进程只有一个配置文件对象。 创建多个可能会导致意外的行为。 
 
 MIP SDK 中有三种类型的配置文件：
 
@@ -90,7 +90,7 @@ SDK 中有三个引擎类，每个 API 一个。 以下列表显示了引擎类�
 
 此方法加载现有引擎，如果本地状态中尚不存在引擎，则创建一个。
 
-如果应用程序未提供 `id`，则 `AddEngineAsync` 会生成新的 `id`。 接着，它会查看本地状态中是否已存在具有该 `id` 的引擎。 如果存在，它会加载该引擎。 如果本地状态中*不*存在引擎，则会通过调用必要的 API 和后端服务来创建新引擎。
+如果应用程序未提供 `id`，则 `AddEngineAsync` 会生成新的 `id`。 接着，它会查看本地状态中是否已存在具有该 `id` 的引擎。 如果存在，它会加载该引擎。 如果本地状态中 *不* 存在引擎，则会通过调用必要的 API 和后端服务来创建新引擎。
 
 在这两种情况下，如果该方法成功执行，则会加载引擎，并且引擎可供使用。
 

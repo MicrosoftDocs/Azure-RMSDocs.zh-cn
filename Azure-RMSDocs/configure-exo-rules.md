@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护标签的 Exchange Online 邮件流规则
 description: 与配置 Azure 信息保护标签的 Exchange Online 邮件流规则相关的说明和示例。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,15 +12,19 @@ ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1f1d232a056299349691c2cd38dc3068936b3f32
-ms.sourcegitcommit: 8c39347d9b7a120014120860fff89c5616641933
+ms.openlocfilehash: 7c20580298bc49e9809a1e629dc2eae4a2716646
+ms.sourcegitcommit: 31c56584f02cf849292dbf2724c036bb5d669df1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79482635"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "95566424"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
->适用对象：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+
+> 说明： *[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>
+> *如果你使用的是统一标签客户端，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/dlp-sensitivity-label-as-condition) ，以获取有关如何阻止或警告用户使用特定敏感度标签共享文件或电子邮件的详细信息。*
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -33,11 +37,11 @@ ms.locfileid: "79482635"
 
 如果电子邮件受保护，将保护配置应用为操作的邮件流规则会遭忽略。 例如，如果电子邮件受“不转发”保护，Exchange 邮件流规则无法将其更改为使用“仅加密”选项。  
 
-可以扩展和修改这些示例。 例如，添加更多条件。 若要详细了解如何配置邮件流规则，请参阅 Exchange Online 文档 [Exchange Online 中的邮件流规则（传输规则）](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)。
+可以扩展和修改这些示例。 例如，添加更多条件。 有关配置邮件流规则的详细信息，请参阅 exchange online 文档 [中的邮件流规则 (传输规则) 在 Exchange online 中](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 。
 
-若要详细了解如何将邮件流规则配置为加密电子邮件，请参阅 Office 文档[在 Office 365 中将邮件流规则定义为加密电子邮件](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)。 
+有关配置邮件流规则以加密电子邮件的详细信息，请参阅 Office 文档 [中的定义用于加密电子邮件的邮件流规则 Microsoft 365](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8) 。 
 
-## <a name="prerequisite-know-your-label-guid"></a>先决条件：了解标签 GUID
+## <a name="prerequisite-know-your-label-guid"></a>必备组件：知道标签 GUID
 
 因为 Azure 信息保护标签存储在元数据中，所以 Exchange Online 邮件流规则可以为邮件和 Office 文档附件读取此类信息。 邮件流规则不支持为 PDF 文档检查元数据。
 
@@ -49,18 +53,18 @@ ms.locfileid: "79482635"
 
 对于下面的示例，请按照以下步骤操作，新建邮件流规则：
 
-1. 在 Web 浏览器中，使用被授予全局管理员权限的工作或学校帐户，登录 Office 365。 
+1. 在 web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户登录到 Microsoft 365。 
 
-2. 选择“管理员”磁贴。
+2. 选择 " **管理员** " 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择“管理中心” > “Exchange”。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**  >  **Exchange**"。
 
-4. 在 Exchange 管理中心内：依次选择“邮件流” > “规则” > “+” > “新建规则”。 
+4. 在 Exchange 管理中心中：**邮件流**  >  **规则**  >  **+**  >  **创建新规则**。 
 
 > [!TIP]
 > 如果在配置规则时无法使用用户界面，请尝试使用其他浏览器（如 Internet Explorer）。
 
-当电子邮件在组织外部发送时，下面的示例有一个保护应用条件。 若要详细了解可以选择的其他条件，请参阅 [Exchange Online 中的邮件流规则条件和异常（谓词）](https://technet.microsoft.com/library/jj919235(v=exchg.150).aspx)。
+当电子邮件在组织外部发送时，下面的示例有一个保护应用条件。 有关您可以选择的其他条件的详细信息，请参阅 [Exchange Online 中的邮件流规则条件和异常 (谓词) ](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
 
 ### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>示例 1：向在组织外部发送时包含“常规”标签的电子邮件应用“不转发”选项的规则
@@ -75,17 +79,17 @@ ms.locfileid: "79482635"
 
 3. 依次选择“更多选项”和“添加条件”。
  
-4. 对于“和”：依次选择“邮件头”和“包含任意这些字词”：
+4. 对于“和”，依次选择“邮件头”和“包含任意这些字词”：
      
     a. 选择“输入文本”，再输入“`msip_labels`”。
      
     b. 选择“输入字词”，再输入“`MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True`”
     
-    c. 依次选择“+”和“确定”。
+    c. 选择 **+** ""，然后选择 **"确定"**。
 
 5. 对于“执行以下操作”：依次选择“修改消息安全性” > “应用 Office 365 消息加密和权限保护” > “不转发”和“确定”。
     
-    规则配置应看似如下：为 Azure 信息保护标签配置的 Exchange Online 邮件流规则 ![示例 1](./media/aip-exo-rule-ex1.png)
+    规则配置现在应如下所示：  ![ 为 Azure 信息保护标签配置的 Exchange Online 邮件流规则-示例1](./media/aip-exo-rule-ex1.png)
 
 7. 选择“保存” 
 
@@ -105,7 +109,7 @@ ms.locfileid: "79482635"
  
 4. 对于“和”：依次选择“任何附件”和“包含这些属性，包括任意这些字词”：
      
-    a. 依次选择“+” > “指定自定义附件属性”。
+    a. 选择 " **+**  >  **指定自定义附件属性**"。
   
     b. 对于“属性”，输入“`MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled`”。
     
@@ -115,7 +119,7 @@ ms.locfileid: "79482635"
 
 5. 对于“执行以下操作”：依次选择“修改消息安全性” > “应用 Office 365 消息加密和权限保护” > “加密”和“确定”。
     
-    规则配置应看似如下：为 Azure 信息保护标签配置的 Exchange Online 邮件流规则 ![示例 2](./media/aip-exo-rule-ex2.png)
+    规则配置现在应如下所示：  ![ 为 Azure 信息保护标签配置的 Exchange Online 邮件流规则-示例2](./media/aip-exo-rule-ex2.png)
 
 6. 选择“保存” 
 
@@ -126,6 +130,4 @@ ms.locfileid: "79482635"
 
 若要了解如何创建和配置用于 Exchange Online 邮件流规则的标签，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
-此外，为了帮助对包含附件的电子邮件进行分类，请考虑使用以下 Azure 信息保护[策略设置](configure-policy-settings.md)：对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签。
-
-
+此外，若要分类包含附件的电子邮件，请考虑使用以下 Azure 信息保护[策略设置](configure-policy-settings.md)：对于有附件的电子邮件，应用与这些附件的最高分类匹配的标签。

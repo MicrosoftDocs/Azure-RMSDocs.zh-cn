@@ -1,10 +1,10 @@
 ---
 title: 从 AD RMS 迁移到 Azure 信息保护 - 第 3 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 3 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 7。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/05/2020
+ms.date: 10/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f958923e0952c2d305eaa9c193385eac6531334e
-ms.sourcegitcommit: 223e26b0ca4589317167064dcee82ad0a6a8d663
+ms.openlocfilehash: b58710ebd4486319126bc2f33266d349d23fa888
+ms.sourcegitcommit: 2085eedf24a6f72cbafcbacad023122a04faccc9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "86048640"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "95566452"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>迁移第 3 阶段 - 客户端配置
 
@@ -28,23 +28,37 @@ ms.locfileid: "86048640"
 
 ## <a name="step-7-reconfigure-windows-computers-to-use-azure-information-protection"></a>步骤 7. 重新配置 Windows 计算机以使用 Azure 信息保护
 
-对于使用 Office 365 应用、Office 2019 或 Office 2016 即点即用桌面应用的 Windows 计算机：
+使用以下方法之一重新配置 Windows 计算机以使用 Azure 信息保护：
 
-- 可通过 DNS 重定向，将这些客户端重新配置为使用 Azure 信息保护。 这是客户端迁移的首选方法，因为它是最简单的。 但是，此方法限于 Windows 计算机上的 Office 2016（或更高版本）即点即用桌面应用。
+- **DNS 重定向**。 最简单和首选方法（如果支持）。 
 
-    此方法要求创建新的 SRV 记录，并在 AD RMS 发布终结点上为用户设置 NTFS 拒绝权限。
+    支持使用 Office 2016 或更高版本的桌面应用程序的 Windows 计算机，其中包括：
 
-- 对于不使用 Office 2019 或 Office 2016 即点即用版本的 Windows 计算机：
+    - Microsoft 365 应用
+    - Office 2019
+    - Office 2016 单击以运行桌面应用
 
-    不能使用 DNS 重定向，而必须使用注册表编辑。 如果混合使用能够和不能够使用 DNS 重定向的 Office 版本，可使用这种方法处理所有 Windows 计算机，或结合使用 DNS 重定向和编辑注册表。 
+    要求您创建一个新的 SRV 记录，并为用户在 AD RMS 发布端点上设置 NTFS 拒绝权限。
+
+    有关详细信息，请参阅 [使用 DNS 重定向重新配置客户端](#client-reconfiguration-by-using-dns-redirection)。
+
+- **编辑注册表**。 适用于所有受支持的环境，包括：
+
+    - 使用 Office 2016 或更高版本的 Windows 计算机，如上面列出的那样运行桌面应用
+    - 使用其他应用的 Windows 计算机
     
-    可通过编辑和部署可下载脚本，更轻松实现注册表更改。 
+    手动进行所需的注册表更改，或编辑并部署可下载的脚本，以使注册表更改。
 
-参阅下列部分，详细了解如何配置 Windows 客户端。
+    有关详细信息，请参阅 [使用注册表编辑重新配置客户端](#client-reconfiguration-by-using-registry-edits)。
+
+
+> [!TIP]
+> 如果混合使用的 Office 版本可以且不能使用 DNS 重定向，则可以结合使用 DNS 重定向和编辑注册表，或者将注册表编辑为适用于所有 Windows 计算机的单个方法。
+
 
 ## <a name="client-reconfiguration-by-using-dns-redirection"></a>通过 DNS 重定向重新配置客户端
 
-此方法仅适用于运行 Office 365 应用和 Office 2016（或更高版本）即点即用桌面应用的 Windows 客户端。 
+此方法仅适用于运行 Microsoft 365 应用和 Office 2016 (或更高版本) 单击即可运行桌面应用程序的 Windows 客户端。 
 
 1. 创建使用以下格式的 DNS SRV 记录：
     
@@ -58,7 +72,7 @@ ms.locfileid: "86048640"
     
     *\<port>* 忽略该数字。
     
-    对于 *\<your tenant URL\>* ，为你的租户指定你自己的[Azure RIGHTS MANAGEMENT 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
+    对于 *\<your tenant URL\>* ，为你的租户指定你自己的 [Azure RIGHTS MANAGEMENT 服务 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
     
     如果在 Windows Server 上使用 DNS 服务器角色，可使用下表作为示例，在 DNS 管理器控制台中指定 SRV 记录属性。
     
@@ -72,30 +86,30 @@ ms.locfileid: "86048640"
     |**端口号**|80|  
     |**提供此服务的主机**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
 
-2. 在 AD RMS 发布终结点上为运行 Office 365 应用或 Office 2016（或更高版本）的用户设置拒绝权限：
+2. 为运行 Microsoft 365 应用或 Office 2016 (或更高) 版本的用户 AD RMS 发布终结点设置拒绝权限：
 
     a. 在群集中的某个 AD RMS 服务器上，启动 Internet Information Services (IIS) 管理器控制台。
 
-    b. 导航到 "**默认**网站"，然后展开 **_wmcs**。
+    b. 导航到 " **默认** 网站"，然后展开 **_wmcs**。
 
-    c. 右键单击 "**授权**"，然后选择 "**切换到内容视图**"。
+    c. 右键单击 " **授权** "，然后选择 " **切换到内容视图**"。
 
     d. 在详细信息窗格中，右键单击 " **license**" "  >  **属性**" "  >  **编辑**"
 
-    e. 在 " **license 的权限**" 对话框中，选择 "**用户**" （如果要为所有用户设置重定向），或单击 "**添加**"，然后指定包含要重定向的用户的组。
+    e. 在 " **license 的权限** " 对话框中，选择 " **用户** " （如果要为所有用户设置重定向），或单击 " **添加** "，然后指定包含要重定向的用户的组。
     
     即使所有用户都使用支持 DNS 重定向的 Office 版本，最好还是先指定部分用户来进行分阶段迁移。
     
     f. 对于所选组，为“**读取和执行**”及“**读取**”权限选择“**拒绝**”，然后两次单击“**确定**”。
 
-    如， 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应看到以下错误消息，它将触发运行 Office 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
+    g. 若要确认此配置按预期工作，请尝试从浏览器直接连接到 licensing.asmx 文件。 应会看到以下错误消息，它将触发运行 Microsoft 365 应用或 Office 2019 或 Office 2016 的客户端查找 SRV 记录：
     
     **错误消息 401.3: 无权使用所提供的凭据查看此目录或页面（由于访问控制列表，访问被拒绝）。**
 
 
 ## <a name="client-reconfiguration-by-using-registry-edits"></a>使用注册表编辑重新配置客户端
 
-此方法适用于所有 Windows 客户端，如果不运行 Office 365 应用或 Office 2016 （或更高版本），则应使用此方法。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
+此方法适用于所有 Windows 客户端，如果这些客户端未运行 Microsoft 365 应用或 Office 2016 (或更高版本) ，则应该使用此方法。 此方法使用两个迁移脚本重新配置 AD RMS 客户端：
 
 - Migrate-Client.cmd
 
@@ -107,7 +121,7 @@ ms.locfileid: "86048640"
 
 - 使用组策略软件安装，将脚本分配给计算机。
 
-- 使用软件部署解决方案，将脚本部署给计算机。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下****，指定在设备上使用管理权限运行该脚本。 
+- 使用软件部署解决方案，将脚本部署给计算机。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下，指定在设备上使用管理权限运行该脚本。 
 
 - 如果用户具有本地管理员特权，请使用登录脚本。
 
@@ -117,7 +131,7 @@ ms.locfileid: "86048640"
 
 - 使用组策略软件安装来发布脚本供用户运行。
 
-- 使用软件部署解决方案，将脚本部署给用户。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下****，指定使用该用户的权限运行该脚本。 
+- 使用软件部署解决方案，将脚本部署给用户。 例如，使用 System Center Configuration Manager [包和程序](/sccm/apps/deploy-use/packages-and-programs)。 在包和程序的属性中，在“运行模式”下，指定使用该用户的权限运行该脚本。 
 
 - 用户登录到他们的计算机时要求其运行该脚本。
 
@@ -133,18 +147,18 @@ SET Version=20170427
 
 ### <a name="modifying-the-scripts-for-registry-edits"></a>修改脚本以实现注册表编辑
 
-1. 返回到迁移脚本 Migrate-Client.cmd**** 和 Migrate-User.cmd**** 中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
+1. 返回到迁移脚本 Migrate-Client.cmd 和 Migrate-User.cmd 中，这是之前在[准备阶段](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)下载这些脚本时提取的。
 
-2. 按照**migrate-client.cmd**中的说明修改脚本，使其包含租户的 Azure RIGHTS MANAGEMENT 服务 URL，以及你的 AD RMS 群集 EXTRANET 授权 url 和 INTRANET 授权 url 的服务器名称。 然后，使上述脚本版本递增。 跟踪脚本版本的一个好方法是使用当天的日期，格式如下： YYYYMMDD
+2. 按照 **migrate-client.cmd** 中的说明修改脚本，使其包含租户的 Azure RIGHTS MANAGEMENT 服务 URL，以及你的 AD RMS 群集 EXTRANET 授权 url 和 INTRANET 授权 url 的服务器名称。 然后，使上述脚本版本递增。 跟踪脚本版本的一个好方法是使用当天的日期，格式如下： YYYYMMDD
     
    > [!IMPORTANT]
    > 仍然注意，不要在地址前后引入多余空格。
    > 
    > 此外，如果 AD RMS 服务器使用 SSL/TLS 服务器证书，请检查字符串中许可 URL 值是否包括端口号 **443**。 例如：https://rms.treyresearch.net:443/_wmcs/licensing。 单击群集名称并查看“**群集详细信息**”时，Active Directory Rights Management Services 中会显示此信息。 如果端口号 443 包含在此 URL 中，修改脚本时请将该值包括在内。 例如 https://rms.treyresearch.net:<strong>443</strong>。 
     
-   如果需要检索* &lt; YourTenantURL &gt; *的 azure Rights Management 服务 url，请参阅返回以[识别 azure Rights Management 服务 url](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
+   如果需要检索 *&lt; YourTenantURL &gt;* 的 azure Rights Management 服务 url，请参阅返回以 [识别 azure Rights Management 服务 url](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)。
 
-3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd**** 和 Migrate-User.cmd****。 
+3. 使用此步骤开始处的说明，配置脚本部署方法，在由 AIPMigrated 组成员使用的 Windows 客户端计算机上运行 Migrate-Client.cmd 和 Migrate-User.cmd。 
 
 ## <a name="next-steps"></a>后续步骤
 

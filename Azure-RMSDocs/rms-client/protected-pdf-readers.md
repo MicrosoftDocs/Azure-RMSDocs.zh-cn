@@ -4,7 +4,7 @@ description: 为标记为分类和保护的 PDF 文档安装读取器
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/17/2020
+ms.date: 10/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,18 +14,18 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: 56aac3e677ab835b0345394be014c1a803bd0b2e
-ms.sourcegitcommit: 129370798e7d1b5baa110b2d7b2f24abd3cad5c8
+ms.openlocfilehash: e8cd7846159e2299d33b8b6533813ac8502140d3
+ms.sourcegitcommit: 2a72516a1f380adddd6501984b1989e3fa051976
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316716"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "95566436"
 ---
 # <a name="which-pdf-readers-are-supported-for-protected-pdfs"></a>受保护的 Pdf 支持哪些 PDF 读取器？
 
 用于分类和/或受保护 Pdf 的 PDF 读者使你可以打开包含敏感信息的加密 Pdf。
 
-通过 [Azure 信息保护加密 pdf (AIP) ](../what-is-information-protection.md) 可确保未经授权的人员无法读取文件的内容，甚至经过授权的人员也无法共享显示内容的屏幕或屏幕截图。
+通过 [Azure 信息保护 (AIP ](../what-is-information-protection.md) 加密 pdf) 确保未经授权的人员无法读取该文件的内容。
 
 支持 Azure 信息保护的受保护的 PDF 读者验证你是否已获得打开文档的权限，还会解密你的内容。
 
@@ -56,7 +56,7 @@ ms.locfileid: "89316716"
 
 Adobe Acrobat Reader 与 Microsoft 信息保护解决方案（例如 [Azure 信息保护](../what-is-information-protection.md) ）集成，为用户提供针对分类和/或受保护的 pdf 的简化一致的体验。
 
-[Windows](protected-pdf-readers-windows.md)和[MacOS](protected-pdf-readers-mac.md)支持 Adobe Acrobat Reader with Microsoft 信息保护集成。
+[Windows](#installing-a-protected-pdf-reader-for-windows-or-mac)和[MacOS](#installing-a-protected-pdf-reader-for-windows-or-mac)支持 Adobe Acrobat Reader with Microsoft 信息保护集成。
 
 有关详细信息，请参阅以下博客文章： 
 
@@ -84,7 +84,7 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 1. 若要在 SharePoint 中打开 PDF 文件，**请单击 "**  >  **在浏览器中打开打开**"。 
 
-    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 在浏览器中打开 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
+    :::image type="content" source="../media/edge_open_browser.png" alt-text="使用 &quot;在浏览器中打开&quot; 选项，从浏览器使用 Microsoft Edge 打开受保护的 PDF":::
  
 ## <a name="installing-a-protected-pdf-reader-for-windows-or-mac"></a>安装适用于 Windows 或 Mac 的受保护的 PDF 读取器
 

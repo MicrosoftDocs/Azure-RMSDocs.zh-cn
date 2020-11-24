@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 09/03/2020
+ms.date: 11/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 69799cb3ce484e5cd594e5520069bfec3586766c
-ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
+ms.openlocfilehash: b9eaa35d1fde58863a9f9ef9c5160a2bb103d031
+ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89447219"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "95566464"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -25,11 +25,11 @@ ms.locfileid: "89447219"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
-在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中。 Azure 信息保护版本具有 Microsoft Azure 信息保护的产品名**Microsoft Azure Information Protection**  >  **Microsoft Azure 信息保护统一标签客户端**和**更新**分类。 
+在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中。 Azure 信息保护版本具有 Microsoft Azure 信息保护的产品名 **Microsoft Azure Information Protection**  >  **Microsoft Azure 信息保护统一标签客户端** 和 **更新** 分类。 
 
 如果在目录中包括 Azure 信息保护，则意味着可以使用 WSUS 或 Configuration Manager 或使用 Microsoft 更新的其他软件部署机制来升级客户端。
 
@@ -39,17 +39,19 @@ ms.locfileid: "89447219"
 
 版本的 Azure 信息保护统一标签客户端 (GA) 版本的每个正式发行版在发布后续版本后的六个月内受支持。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
-不应在生产网络上为最终用户部署预览版本。 而是使用最新预览版来查看和试用即将在下一 GA 版本中推出的新功能或修补程序。 仅支持当前预览版。
+所述的 Azure 信息保护功能目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
 
 ##### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本：
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|2.5.33.0 |2019/10/23|
 |2.2.21.0|09/03/2019|
 |2.2.19.0|08/06/2019|
 |2.2.14.0|07/15/2019|
 |2.0.779.0|05/01/2019|
 |2.0.778.0|04/16/2019|
+| | |
 
 此页上使用的日期格式为 *月/日/年*。
 
@@ -65,11 +67,11 @@ ms.locfileid: "89447219"
 
 此客户端将 (经典) 替换 Azure 信息保护客户端。 若要将特性和功能与经典客户端进行比较，请参阅 [比较适用于 Windows 计算机的标记客户端](use-client.md#compare-the-labeling-clients-for-windows-computers)。
 
-## <a name="version-2885-public-preview"></a>版本 2.8.85 (公共预览版) 
+## <a name="version-28850"></a>版本2.8.85。0
 
-统一标记扫描器和客户端版本2.8.85
+统一标记扫描器和客户端版本2.8.85。0
 
-**发布** 09/02/2020
+**发布** 09/22/2020
 
 此版本包括以下新功能、修复和增强功能，适用于统一标记扫描器和客户端：
 
@@ -94,7 +96,7 @@ ms.locfileid: "89447219"
 > [!IMPORTANT]
 > 更改其策略和内容扫描作业的管理员现在必须了解这些更改对内容的影响，并确定是否需要完全重新扫描。
 > 
-> 例如，如果你已将 "**强制 = 关闭**"**策略强制**设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
 >
 
 #### <a name="configure-sharepoint-timeouts"></a>配置 SharePoint 超时
@@ -109,7 +111,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 统一的标记扫描器现在包含一个新的 **网络发现** 服务，使用它可以扫描指定的 IP 地址或可能包含敏感内容的网络文件共享的范围。 
 
-**网络发现**服务会根据发现的权限和访问权限，使用可能存在风险的共享位置列表更新**存储库**报告。 检查更新的 **存储库** 报告，以确保内容扫描作业包括需要扫描的所有存储库。
+**网络发现** 服务会根据发现的权限和访问权限，使用可能存在风险的共享位置列表更新 **存储库** 报告。 检查更新的 **存储库** 报告，以确保内容扫描作业包括需要扫描的所有存储库。
 
 > [!TIP]
 > 有关详细信息，请参阅 [网络发现 cmdlet](#network-discovery-cmdlets)。
@@ -126,7 +128,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
     有关详细信息，请参阅 [Azure 信息保护的中心报告 (公共预览版) ](../reports-aip.md)。
 
-1. 通过运行 [**MIPNetworkDiscovery**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery) PowerShell Cmdlet 启用网络发现。 
+1. 通过运行 [**MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery) PowerShell Cmdlet 启用网络发现。 
 
     > [!IMPORTANT]
     > 运行此 cmdlet 时，请确保使用弱用户作为 **StandardDomainsUserAccount** 参数的值，以确保报告对存储库的任何公共访问。 
@@ -143,14 +145,14 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 |Cmdlet  |说明  |
 |---------|---------|
-|[**MIPNetworkDiscoveryConfiguration**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryConfiguration)     |   获取网络发现服务是否从默认的、联机配置或从 Azure 门户导出的脱机文件中提取网络扫描数据的当前设置。      |
-|[**MIPNetworkDiscoveryJobs**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryJobs)     |    获取当前配置的网络扫描作业的列表。     |
-|[**MIPNetworkDiscoveryStatus**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryStatus)     |     获取租户中配置的所有网络扫描作业的当前状态。    |
-| [**导入-MIPNetworkDiscoveryConfiguration**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Import-MIPNetworkDiscoveryConfiguration)     |    从文件导入网络扫描作业的配置。     |
-| [**安装-MIPNetworkDiscovery**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery)| 安装网络发现服务 |
-|[**MIPNetworkDiscoveryConfiguration**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Set-MIPNetworkDiscoveryConfiguration)     |   设置网络发现服务是否从默认的、联机配置或从 Azure 门户导出的脱机文件中提取网络扫描数据的配置。      |
-|[**MIPNetworkDiscovery**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Start-MIPNetworkDiscovery)     |  立即运行特定网络扫描作业。       |
-|[**卸载-MIPNetworkDiscovery**](https://docs.microsoft.com/powershell/module/azureinformationprotection/Uninstall-MIPNetworkDiscovery)     |  卸载网络发现服务。       |
+|[**MIPNetworkDiscoveryConfiguration**](/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryConfiguration)     |   获取网络发现服务是否从默认的、联机配置或从 Azure 门户导出的脱机文件中提取网络扫描数据的当前设置。      |
+|[**MIPNetworkDiscoveryJobs**](/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryJobs)     |    获取当前配置的网络扫描作业的列表。     |
+|[**MIPNetworkDiscoveryStatus**](/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryStatus)     |     获取租户中配置的所有网络扫描作业的当前状态。    |
+| [**导入-MIPNetworkDiscoveryConfiguration**](/powershell/module/azureinformationprotection/Import-MIPNetworkDiscoveryConfiguration)     |    从文件导入网络扫描作业的配置。     |
+| [**安装-MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery)| 安装网络发现服务 |
+|[**MIPNetworkDiscoveryConfiguration**](/powershell/module/azureinformationprotection/Set-MIPNetworkDiscoveryConfiguration)     |   设置网络发现服务是否从默认的、联机配置或从 Azure 门户导出的脱机文件中提取网络扫描数据的配置。      |
+|[**MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Start-MIPNetworkDiscovery)     |  立即运行特定网络扫描作业。       |
+|[**卸载-MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Uninstall-MIPNetworkDiscovery)     |  卸载网络发现服务。       |
 | | |
 
 ### <a name="new-features-for-the-unified-labeling-client"></a>统一标签客户端的新功能
@@ -185,7 +187,7 @@ Azure 信息保护现在支持使用双密钥加密 (DKE 在扫描仪中进行�
 有关详细信息，请参阅：
 
 - [规划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)
-- Microsoft 365 文档中的[双密钥加密](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption)
+- Microsoft 365 文档中的[双密钥加密](/microsoft-365/compliance/double-key-encryption)
 
 ### <a name="fixes-and-improvements"></a>修复和改进
 
@@ -194,7 +196,7 @@ Azure 信息保护现在支持使用双密钥加密 (DKE 在扫描仪中进行�
 
 #### <a name="azure-information-protection-scanner-fixed-issues"></a>Azure 信息保护扫描程序已修复问题
 
-Azure 信息保护统一标记扫描器的版本2.8.85 中提供了以下修补程序：
+Azure 信息保护统一标记扫描器的版本2.8.85.0 中提供了以下修补程序：
 
 - [扫描包含长路径的文件](../deploy-aip-scanner-prereqs.md#file-path-requirements)的改进
 - 如果有多个 ContentDatabases，AIP 扫描器现在会扫描完整的 [SharePoint](../deploy-aip-scanner-prereqs.md#sharepoint-requirements) 环境。
@@ -203,29 +205,29 @@ Azure 信息保护统一标记扫描器的版本2.8.85 中提供了以下修补�
 
 #### <a name="azure-information-protection-client-fixed-issues"></a>Azure 信息保护客户端已修复问题
 
-Azure 信息保护统一标签客户端的版本2.8.85 中提供了以下修补程序：
+Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修补程序：
 
-- 新的解说指示，适用于 Office 应用中的 "**敏感度**![列" 图标](../media/selected-sensitivity-options.png "列图标")菜单中当前选定的任何项。 有关详细信息，请参阅 [Microsoft 365 文档中有关敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do)的页面。
+- 新的解说指示，适用于 Office 应用中的 "**敏感度**![列" 图标](../media/selected-sensitivity-options.png "列图标")菜单中当前选定的任何项。 有关详细信息，请参阅 [Microsoft 365 文档中有关敏感度标签](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do)的页面。
 - 用于在[AIP 查看器](clientv2-view-use-files.md)中查看 JPEG 文件的修复
-- 降级标签现在会自动在[审核事件](../audit-logs.md#downgrade-label-audit-logs)中包含**ProtectionOwnerBefore**
-- 更改事件现在包含[审核日志](../audit-logs.md#change-protection-audit-logs)中的**LastModifiedDate**
-- 添加了在[使用代理](../requirements.md#firewalls-and-network-infrastructure)获取令牌时对**代理 pac**文件的支持。 若要启用此修补程序，请设置新的注册表项 **UseDefaultCredentialsInProxy = 1**。
+- 降级标签现在会自动在 [审核事件](../audit-logs.md#downgrade-label-audit-logs)中包含 **ProtectionOwnerBefore**
+- 更改事件现在包含 [审核日志](../audit-logs.md#change-protection-audit-logs)中的 **LastModifiedDate**
+- 添加了在使用代理获取令牌时对 **代理 pac** 文件的支持。 有关详细信息，请参阅 [防火墙和网络基础结构要求](../requirements.md#firewalls-and-network-infrastructure)。
 - [刷新策略](../configure-policy.md#making-changes-to-the-policy)时进行身份验证的修复
 - 用于在只读模式下标记 PowerPoint 更新的 [自动内容](../configure-policy-markings.md) 的修复
 - 弹出窗口和错误文本的改进
 - 工具提示将更新以显示 [电子邮件附件](../faqs-infoprotect.md#when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling)的最高分类，同时考虑电子邮件和附件的分类。 
-- 当使用[**LabelPolicy**](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) cmdlet 修改敏感度标记策略时**报告问题**文本
-- 修复了 [**set-aipfilelabel**](https://docs.microsoft.com/powershell/module/azureinformationprotection/set-aipfilelabel?view=azureipps) cmdlet 与无效标签 ID 一起使用时显示的错误。
-- 用于在 Outlook 阅读窗格中解密 SMIME 电子邮件的性能修复。 若要实现此修补程序，请启用 [**OutlookSkipSmimeOnReadingPaneProperty**](clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。
+- 当使用 [**LabelPolicy**](/powershell/module/exchange/set-labelpolicy) cmdlet 修改敏感度标记策略时 **报告问题** 文本
+- 修复了 [**set-aipfilelabel**](/powershell/module/azureinformationprotection/set-aipfilelabel) cmdlet 与无效标签 ID 一起使用时显示的错误。
+- 用于在 Outlook 阅读窗格中解密 SMIME 电子邮件的性能修复。 若要实现此修补程序，请启用 [**OutlookSkipSmimeOnReadingPaneEnabled**](clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。
 - 用于解密包含密码加密文件的 [PST 文件](clientv2-admin-guide-file-types.md) 的修补程序。 如果 PST 文件包含受密码保护的文件，则无法再对 PST 文件进行解密。
-- 删除不包含在 [作用域内策略](../configure-policy-scope.md) 中的保护标签将不再从内容中删除任何保护。
+- 删除未包含在作用域内策略中的保护标签现在会同时从内容中删除标签和保护。
 
 ## <a name="version-271010"></a>版本2.7.101。0
 统一标记扫描器和客户端版本2.7.101。0
 
 **发布** 08/23/2020
 
-**能够**
+**解决方法：**
 
 修复了 PPT、Excel 和 Word 用户的问题，该问题导致文件冻结、崩溃或强制重复与配置了保护、水印和/或内容标记的必需标签相关的保存。
 
@@ -249,31 +251,31 @@ Azure 信息保护统一标签客户端的版本2.8.85 中提供了以下修补�
 
 **统一标记扫描器的新功能：**
 
-- [使用扫描器基于建议的条件应用标签](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#prerequisites-for-the-azure-information-protection-scanner)。 AIP 客户现可选择仅实现服务端 autolabeling。 此功能可让 AIP 最终用户始终遵循建议，而不是上一方案，只是在用户端启用了自动标记。
+- [使用扫描器基于建议的条件应用标签](../deploy-aip-scanner-prereqs.md)。 AIP 客户现可选择仅实现服务端 autolabeling。 此功能可让 AIP 最终用户始终遵循建议，而不是上一方案，只是在用户端启用了自动标记。
 
-- [了解扫描程序以前发现的哪些文件已从扫描的存储库中删除](https://docs.microsoft.com/azure/information-protection/reports-aip) 这些删除的文件之前未在 AIP 分析中报告，现已在 "扫描程序发现报告" 中提供。
+- [了解扫描程序以前发现的哪些文件已从扫描的存储库中删除](../reports-aip.md) 这些删除的文件之前未在 AIP 分析中报告，现已在 "扫描程序发现报告" 中提供。
 
-- [在出现故障时从扫描仪获取报告以应用操作事件](https://docs.microsoft.com/azure/information-protection/reports-aip#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。 
+- [在出现故障时从扫描仪获取报告以应用操作事件](../reports-aip.md#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。 
 
-- 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请 [运行新的 **AIPScannerDiagnostics** cmdlet](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#troubleshooting-using-scanner-diagnostic-tool)。 
+- 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请 [运行新的 **AIPScannerDiagnostics** cmdlet](../deploy-aip-scanner-manage.md#troubleshooting-using-the-scanner-diagnostic-tool)。 
 
-- 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用 [两个新的高级设置 **ScannerMaxCPU**和 **ScannerMinCPU**](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
+- 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用 [两个新的高级设置 **ScannerMaxCPU** 和 **ScannerMinCPU**](./clientv2-admin-guide-customizations.md#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。 
 
 - 现在，你可以根据文件属性配置统一标记扫描器来跳过特定文件。 定义文件属性列表，这些属性使用 new **[ScannerFSAttributesToSkip](clientv2-admin-guide-customizations.md#skip-or-ignore-files-during-scans-depending-on-file-attributes)** advanced 设置触发要跳过的文件。
 
 **统一标签客户端的新功能：**
 
-- 现在，在对统一标签客户端中的默认标签所做的更改时，将显示[**对齐弹出窗口**](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
+- 现在，在对统一标签客户端中的默认标签所做的更改时，将显示 [**对齐弹出窗口**](client-admin-guide-customizations.md#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)。
     
 - 与 Office 应用的视觉内容标记更流畅地集成。 有关在 Office 文档中配置内容标记的详细信息，请参阅 [如何为 Azure 信息保护配置用于视觉标记的标签](../configure-policy-markings.md)。
 
-- 新的 **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序进行的 Word 文档中的内容标记。 详细了解如何[识别现有的形状名称，以及如何使用**WordShapeNameToRemove**将其定义为删除](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solutions)。
+- 新的 **WordShapeNameToRemove** advanced 属性允许删除第三方应用程序进行的 Word 文档中的内容标记。 详细了解如何 [识别现有的形状名称，以及如何使用 **WordShapeNameToRemove** 将其定义为删除](./clientv2-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)。
 
--  (公共预览版) ** (DKE) 支持双重密钥加密 ** 。 
+-  (公共预览版) **(DKE) 支持双重密钥加密** 。 
 
     现在，你可以使用统一的标签客户端来保护高度敏感的内容，同时保持对密钥的完全控制。 DKE 要求使用两个密钥来访问受保护的内容：一个密钥存储在 Azure 中，另一个密钥由客户持有。 
 
-    有关默认的基于云的租户根密钥的详细信息，请参阅 [计划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)。 有关实现双重密钥加密的信息，请参阅 Microsoft 365 文档中的 [双密钥加密](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) 。
+    有关默认的基于云的租户根密钥的详细信息，请参阅 [计划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)。 有关实现双重密钥加密的信息，请参阅 Microsoft 365 文档中的 [双密钥加密](/microsoft-365/compliance/double-key-encryption) 。
 
 **为删除的文件生成的新审核日志**
 
@@ -308,7 +310,7 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
     
     若要查看有关通过 SharePoint 使用 Azure 信息保护的快速入门，请参阅 [快速入门：查找本地存储的文件中的敏感信息](../quickstart-findsensitiveinfo.md)。
         
-- 改善了缺少策略的用户通知。 有关统一标签客户端的标签策略的详细信息，请参阅 Microsoft 365 文档中的 [标签策略](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do) 。
+- 改善了缺少策略的用户通知。 有关统一标签客户端的标签策略的详细信息，请参阅 Microsoft 365 文档中的 [标签策略](/microsoft-365/compliance/sensitivity-labels#what-label-policies-can-do) 。
 
 - 现在，在 Excel 中，[自动标签](../configure-policy-classification.md)应用于用户在不保存的情况下开始关闭文件的情况，就像用户活动保存文件时。
 
@@ -316,7 +318,7 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 
 - [动态用户变量](../configure-policy-markings.md#using-variables-in-the-text-string) 现在按预期方式显示在文档的视觉标记中。
 
-- 只有 PDF 内容的第一页用于应用 autoclassification 规则的问题现已得到解决，基于 PDF 中所有内容的 autoclassification 现在按预期继续进行。 有关分类和标签的详细信息，请参阅 [分类和标签常见问题解答](https://docs.microsoft.com/azure/information-protection/faqs-infoprotect)。 
+- 只有 PDF 内容的第一页用于应用 autoclassification 规则的问题现已得到解决，基于 PDF 中所有内容的 autoclassification 现在按预期继续进行。 有关分类和标签的详细信息，请参阅 [分类和标签常见问题解答](../faqs-infoprotect.md)。 
 
 - 当配置了多个 Exchange 帐户并且启用了 Azure 信息保护 Outlook 客户端时，会按预期方式从辅助帐户发送邮件。 若要详细了解如何配置 Outlook 的统一标签客户端，请参阅 [Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
 
@@ -326,7 +328,7 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 
 - 默认情况下，当文件由统一的标记扫描器、PowerShell 或文件资源管理器扩展标记时，文件的 NTFS 所有者将丢失。 现在，你可以通过将新的 **[UseCopyAndPreserveNTFSOwner](clientv2-admin-guide-customizations.md#preserve-ntfs-owners-during-labeling-public-preview)** advanced 设置设置为 **true**，将系统配置为保留文件的 NTFS 所有者。 
 
-    **UseCopyAndPreserveNTFSOwner**高级设置要求在扫描仪和扫描的存储库之间具有低延迟、可靠的网络连接。
+    **UseCopyAndPreserveNTFSOwner** 高级设置要求在扫描仪和扫描的存储库之间具有低延迟、可靠的网络连接。
 
 ## <a name="version-261110"></a>版本2.6.111。0 
 
@@ -339,22 +341,22 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 - [Scanner](../deploy-aip-scanner.md)的通用版本，用于检查和标记本地数据存储中的文档。 
 
 - [扫描仪](../deploy-aip-scanner.md) 相关：
-    - [更轻松地进行本地 SharePoint 和子网站发现](https://docs.microsoft.com/azure/information-protection/quickstart-findsensitiveinfo#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
-    - 添加了 [SQL 块区大小](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#storage-requirements-and-capacity-planning-for-sql-server) 的高级属性。
-    - 如果更改了默认标签，则管理员现在能够 [停止现有扫描并执行重新扫描](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#stop-a-scan) 。
-    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关 [扫描仪优化](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner#optimizing-the-performance-of-the-scanner)的详细信息。 
+    - [更轻松地进行本地 SharePoint 和子网站发现](../quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。 
+    - 添加了 [SQL 块区大小](../deploy-aip-scanner-prereqs.md#storage-requirements-and-capacity-planning-for-sql-server) 的高级属性。
+    - 如果更改了默认标签，则管理员现在能够 [停止现有扫描并执行重新扫描](../deploy-aip-scanner-manage.md#stopping-a-scan) 。
+    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关 [扫描仪优化](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance)的详细信息。 
     - 现在，扫描仪支持对数据库和服务进行单独的部署，而只有数据库部署需要 **Sysadmin** 权限。
     - 对扫描程序性能的改进。 
 
-- 修改了 [PowerShell](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-powershell) cmdlet **set-aipfilelabel** 以允许从 PST、RAR、7zip 和 MSG 文件删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) cmdlet 启用此功能[，如下所述。](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-removal-of-protection-from-compressed-files)  
+- 修改了 [PowerShell](./clientv2-admin-guide-powershell.md) cmdlet **set-aipfilelabel** 以允许从 PST、RAR、7zip 和 MSG 文件删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](./clientv2-admin-guide-customizations.md) cmdlet 启用此功能[，如下所述。](./clientv2-admin-guide-customizations.md#enable-removal-of-protection-from-compressed-files)  
 
-- 增加了 Azure 信息保护管理员控制何时使用 .pfile 扩展的能力。 详细了解如何 [更改受保护的文件类型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#change-which-file-types-to-protect)。 
+- 增加了 Azure 信息保护管理员控制何时使用 .pfile 扩展的能力。 详细了解如何 [更改受保护的文件类型](./clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。 
 
-- 为应用程序和变量添加了动态视觉标记支持。 详细了解如何为 [视觉标记配置标签](https://docs.microsoft.com/azure/information-protection/configure-policy-markings)。 
+- 为应用程序和变量添加了动态视觉标记支持。 详细了解如何为 [视觉标记配置标签](../configure-policy-markings.md)。 
 
 - 对 [自动和建议标签的可自定义策略提示](use-client.md)进行了改进。   
 
-- 在统一标签客户端中，为 Office 应用添加了对 [脱机标签功能](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#support-for-disconnected-computers) 的支持。
+- 在统一标签客户端中，为 Office 应用添加了对 [脱机标签功能](./clientv2-admin-guide-customizations.md#support-for-disconnected-computers) 的支持。
 
 **修复：**
 
@@ -366,73 +368,6 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 - 现在按预期方式应用从 Office 用户定义的设置中添加的共同所有者权限。 
 - 当输入权限降级理由时，如果已选择其他选项，则无法再输入文本。 
 
-
-## <a name="version-25330"></a>版本2.5.33。0
-
-**发布**日期：10/23/2019
-
-支持，09/09/2020
-
-**新功能：**
-
-- 预览版本的 [扫描仪](../deploy-aip-scanner.md)，用于检查和标记文档本地数据存储。 对于此版本的扫描仪：
-    
-    - 将扫描仪配置为使用同一扫描程序配置文件时，多个扫描程序可以共享相同的 SQL Server 数据库。 此配置可以更轻松地管理多个扫描仪，并缩短扫描时间。 当你使用此配置时，请始终等待扫描仪完成安装，然后再使用同一配置文件安装另一个扫描程序。
-    
-    - 安装扫描程序时必须指定配置文件，并将扫描程序数据库命名为**AIPScannerUL_ \<profile_name> **。 *配置文件*参数对于 install-aipscanner 是必需的。
-    
-    - 即使已标记文档，也可以在所有文档上设置一个默认标签。 在 "扫描程序配置文件" 或 "存储库设置" 中，将 "重新**标记文件**" 选项设置为 "**打开**"，并选择 "新建**强制默认标签**
-    
-    - 您可以删除所有文档中的现有标签，此操作包括删除保护（如果以前已被标签应用）。 将保留独立于标签的保护。 此扫描程序配置是在扫描程序配置文件或存储库设置中通过以下设置实现的：
-        - **基于内容标记文件**： **关**
-        - **默认标签**： **无**
-        - 重新**标记文件**：**打开**并选中 "**强制默认标签**" 复选框
-    
-    - 与经典客户端的扫描程序一样，默认情况下，扫描程序可保护 Office 文件和 PDF 文件。 使用 [PowerShell 高级设置](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)时，可保护其他文件类型。
-    
-    - 扫描程序周期的开始和完成时间的事件 Id 不写入 Windows 事件日志。 请改用 Azure 门户获取此信息。
-    
-    - 已知问题：不能将新的和重命名的标签选作扫描仪配置文件或存储库设置的默认标签。 解决方法：
-        - 对于新标签：在 Azure 门户中，将要使用的 [标签添加](../configure-policy-add-remove-label.md) 到全局策略或作用域内策略。
-        - 对于重命名标签：关闭再重新打开 Azure 门户。
-    
-    可以 (经典) 从 Azure 信息保护客户端升级扫描仪。 在升级后，这会创建一个新的数据库，扫描程序在第一次运行时重新扫描所有文件。 有关说明，请参阅管理员指南中 [的升级 Azure 信息保护扫描程序](clientv2-admin-guide.md#upgrading-the-azure-information-protection-scanner) 。
-    
-    有关详细信息，请参阅博客文章公告： [统一标签 AIP 扫描程序预览版增加了扩展功能！](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Unified-labeling-AIP-scanner-preview-brings-scaling-out-and-more/ba-p/862552)
-
-- 如果要以非交互方式对文件进行标记，以及在 Azure AD 中注册应用的新过程，PowerShell cmdlet [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 具有 (*AppId*、 *AppSecret*、 *TenantId*、 *DelegatedUser*和 *OnBehalfOf*) 的新参数。 示例方案包括用于标记文档的扫描程序和自动 PowerShell 脚本。 有关说明，请参阅如何从管理员指南以 [非交互方式标记文件](clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection) 。
-    
-    请注意， *DelegatedUser* 是自上次预览版本的统一标签客户端以来的新参数，并且已注册应用的 API 权限已更改。
-
-- 新 PowerShell 标签策略高级设置，用于 [更改要保护的文件类型](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
-
-- 新 PowerShell 标签策略高级设置，用于将 [标签迁移规则扩展到 SharePoint 属性](clientv2-admin-guide-customizations.md#extend-your-label-migration-rules-to-sharepoint-properties)。
-
-- 将匹配的自定义敏感信息类型发送到 [Azure 信息保护分析](../reports-aip.md)。
-
-- 如果已 [配置了颜色](clientv2-admin-guide-customizations.md#specify-a-color-for-the-label)，则应用的标签将显示该标签的配置颜色。
-
-- 向标签中添加或更改保护设置时，客户端会在下一次保存文档时使用这些最新的保护设置重新应用标签。 同样，当下一次在 "强制" 模式下扫描文档时，扫描程序会将标签重新应用为这些最新的保护设置。
-
-- 通过从一个客户端导出文件并手动将它们复制到断开连接的计算机上，[对断开连接的计算机的支持](clientv2-admin-guide-customizations.md#support-for-disconnected-computers)。 请注意，此配置支持通过文件资源管理器、PowerShell 和扫描器进行标记。 对于 Office 应用程序，不支持此配置。
-
-- 新 cmdlet [AIPLogs](https://docs.microsoft.com/powershell/module/azureinformationprotection/export-aiplogs)，用于从%localappdata%\Microsoft\MSIP\Logs 收集所有日志文件并将其保存到具有 .zip 格式的单个压缩文件中。 如果请求发送日志文件来帮助调查报告的问题，则可以将此 .zip 文件发送到 Microsoft 支持部门。
-
-**修复：**
-
-- 您可以使用文件资源管理器成功地更改受保护的文件，并在删除该文件的密码之后右键单击。
-
-- 您可以在查看器中成功打开本机保护的文件，而无需使用 "另存为"、"导出 (导出) [使用权限](../configure-usage-rights.md#usage-rights-and-descriptions)。
-
-- 标签和策略设置按预期刷新，而不必运行 [set-aipauthentication](/powershell/module/azureinformationprotection/clear-aipauthentication?)，或手动删除%LocalAppData%\Microsoft\MSIP\mip 文件夹。
-
-**其他更改**
-
-- [重置设置](clientv2-admin-guide.md#more-information-about-the-reset-settings-option)现在会删除%LocalAppData%\Microsoft\MSIP\mip \\ *\<ProcessName.exe\>* 文件夹，而不是%LocalAppData%\Microsoft\MSIP\mip \\ *\<ProcessName\>* \mip 文件夹。
-
-- [Get-aipfilestatus](/powershell/module/azureinformationprotection/get-aipfilestatus) 现在包含受保护文档的内容 ID。
-
-
 ## <a name="next-steps"></a>后续步骤
 
 不确定是否要安装适合的客户端？  请参阅 [选择要用于 Windows 计算机的标记客户端](use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
@@ -442,4 +377,3 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 - 用户请参阅：[下载并安装客户端](install-unifiedlabelingclient-app.md)
 
 - 对于管理员： [Azure 信息保护统一标签客户端管理员指南](clientv2-admin-guide.md)
-

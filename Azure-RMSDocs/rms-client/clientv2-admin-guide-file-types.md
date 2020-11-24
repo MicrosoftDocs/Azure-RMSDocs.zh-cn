@@ -1,22 +1,22 @@
 ---
 title: 支持的文件类型-Azure 信息保护统一标签客户端
 description: 有关受支持的文件类型、文件扩展名以及负责 Windows 的 Azure 信息保护统一标签客户端的管理员的保护级别的技术详细信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 09/03/2020
+ms.date: 11/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b7da516f320e97479e59d10ef2bb778356e57189
-ms.sourcegitcommit: 9600ae255e7ccc8eeb49c50727a26e4666415fe2
+ms.openlocfilehash: b9f8a53135407e91d04542bc53c709b82662a19a
+ms.sourcegitcommit: c6b0b092735504fd76d74a46d024321673482098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89447287"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "95566456"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
 
@@ -24,7 +24,7 @@ ms.locfileid: "89447287"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> *适用于以下内容的说明： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 Azure 信息保护统一标签客户端可以将以下内容应用于文档和电子邮件：
 
@@ -52,7 +52,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 - **Microsoft XPS**：.xps .oxps
 
-- 图像****：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi、 .png、.tif、.tiff
+- 图像：.jpg、.jpe、.jpeg、.jif、.jfif、.jfi、 .png、.tif、.tiff
 
 - **Autodesk Design Review 2013**：.dwfx
 
@@ -70,7 +70,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
-示例：
+示例:
 
 - 如果 " **常规** 敏感度" 标签应用分类并且不应用保护：可以将 " **常规** " 标签应用到名为 sales.pdf 的文件，但不能将此标签应用于名为 sales.txt 的文件。
 
@@ -82,7 +82,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
-|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他所有应用程序和文件类型，常规保护提供了一种保护级别，该保护级别既包括使用 .pfile 文件类型的文件封装，又包括用于验证用户是否有权打开该文件的身份验证。|
+|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
 |保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
@@ -162,7 +162,7 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 可更改扫描程序检查文件时包含或排除的文件类型：
 
-- 通过[使用 Azure 门户](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”****。
+- 通过[使用 Azure 门户](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)，在扫描程序配置文件中配置“要扫描的文件类型”。
     
     > [!NOTE]
     > 如果在扫描时包含 .rtf 文件，请仔细监视扫描程序。 扫描程序无法成功检查某些 .rtf 文件，对于这些文件，未完成检查，必须重启服务。
@@ -189,9 +189,9 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 |PDF |.pdf|
 |文本|.txt; .xml; .csv|
 
-通过进行额外配置，还可以检查其他文件类型。 例如，可以[注册自定义文件扩展名，使用现有 Windows 筛选器处理程序处理文本文件](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters)，还可以安装软件供应商提供的其他筛选器。
+通过进行额外配置，还可以检查其他文件类型。 例如，可以[注册自定义文件扩展名，使用现有 Windows 筛选器处理程序处理文本文件](/windows/desktop/search/-search-ifilter-registering-filters)，还可以安装软件供应商提供的其他筛选器。
 
-若要检查安装了哪些筛选器，请参阅 Windows Search 开发人员指南中的[查找给定文件扩展名的筛选器处理程序](https://docs.microsoft.com/windows/desktop/search/-search-ifilter-registering-filters#finding-a-filter-handler-for-a-given-file-extension)一节。
+若要检查安装了哪些筛选器，请参阅 Windows Search 开发人员指南中的[查找给定文件扩展名的筛选器处理程序](/windows/desktop/search/-search-ifilter-registering-filters#finding-a-filter-handler-for-a-given-file-extension)一节。
 
 以下各节提供了检查 .zip 文件和 .tiff 文件的配置说明。
 
@@ -201,19 +201,19 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 1. 对于运行扫描程序或 PowerShell 会话的计算机，请安装 [Office 2010 Filter Pack SP2](https://support.microsoft.com/help/2687447/description-of-office-2010-filter-pack-sp2)。
 
-2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请使用 PowerShell 高级设置 **PFileSupportedExtensions**指定 .zip 文件扩展名，如使用 powershell 更改从扫描程序部署说明中 [保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect) 中所述。
+2. 对于扫描仪：查找敏感信息后，如果要使用标签对 .zip 文件进行分类和保护，请使用 PowerShell 高级设置 **PFileSupportedExtensions** 指定 .zip 文件扩展名，如使用 powershell 更改从扫描程序部署说明中 [保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect) 中所述。
 
 执行这些步骤后的示例方案：
 
-名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格****。 你有一个名为 " **机密 \ 财务**" 的敏感度标签，该标签配置为发现信用卡号，并自动应用带有限制访问财务组的保护的标签。
+名为“accounts.zip”的文件包含带有信用卡号的 Excel 电子表格。 你有一个名为 " **机密 \ 财务**" 的敏感度标签，该标签配置为发现信用卡号，并自动应用带有限制访问财务组的保护的标签。
 
 检查文件后，来自 PowerShell 会话的统一标签客户端会将此文件归类为 **机密 \ 财务**，并对该文件应用常规保护，以便只有财务组的成员可以将该文件解压缩，并将该文件重命名 **accounts.zip .pfile**。
 
 ### <a name="to-inspect-tiff-files-by-using-ocr"></a>使用 OCR 检查 .tiff 文件
 
-[AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) powershell 命令可以使用光学字符识别 (OCR) 在安装 Windows TIFF IFilter 功能时使用 tiff 文件扩展名检查 tiff 图像，然后在运行 PowerShell 会话的计算机上配置[Windows tiff ifilter 设置](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)。
+[AIPFileClassiciation](/powershell/module/azureinformationprotection/set-aipfileclassification) powershell 命令可以使用光学字符识别 (OCR) 在安装 Windows TIFF IFilter 功能时使用 tiff 文件扩展名检查 tiff 图像，然后在运行 PowerShell 会话的计算机上配置[Windows tiff ifilter 设置](/previous-versions/windows/it-pro/windows-7/dd744701(v=ws.10))。
 
-对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置 **PFileSupportedExtensions**指定此文件扩展名，如使用 powershell 更改从扫描程序部署说明中 [保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect) 中所述。
+对于扫描仪：查找敏感信息后，如果应使用标签对 tiff 文件进行分类和保护，请使用 PowerShell 高级设置 **PFileSupportedExtensions** 指定此文件扩展名，如使用 powershell 更改从扫描程序部署说明中 [保护的文件类型](../deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect) 中所述。
 
 ## <a name="next-steps"></a>后续步骤
 

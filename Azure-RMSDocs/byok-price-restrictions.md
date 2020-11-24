@@ -4,7 +4,7 @@ description: 当你使用客户管理的密钥 (称为 "自带密钥"）或使�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/14/2020
+ms.date: 11/09/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,16 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3e25ff7d202b7cef964f6b83259b4ff2588c2616
-ms.sourcegitcommit: 2cb5fa2a8758c916da8265ae53dfb35112c41861
+ms.openlocfilehash: cfe396cea14effdd77b912b32c7c64296806b4be
+ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88953161"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "95566469"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>自带密钥 (BYOK Azure 信息保护) 详细信息
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 
 使用 Azure 信息保护订阅的组织可以选择使用自己的密钥（而不是由 Microsoft 生成的默认密钥）来配置其租户。 此配置通常称为创建自己的密钥 (BYOK) 。
 
@@ -30,7 +30,7 @@ BYOK 和 [使用情况日志记录](log-analyze-usage.md) 与 Azure 信息保护
 
 支持的应用程序包括：
 
-- **云服务，** 例如 Microsoft SharePoint 或 Office 365
+- **云服务，** 例如 Microsoft SharePoint 或 Microsoft 365
 
 - **本地服务** ，运行通过 RMS 连接器使用 Azure Rights Management 服务的 Exchange 和 SharePoint 应用程序
 
@@ -49,7 +49,7 @@ BYOK 和 [使用情况日志记录](log-analyze-usage.md) 与 Azure 信息保护
 
 ### <a name="sharing-key-vaults-and-subscriptions"></a>共享密钥保管库和订阅
 
-建议为租户密钥使用 **专用密钥保管库** 。 专用密钥保管库有助于确保其他服务的调用不会导致超出 [服务限制](https://docs.microsoft.com/azure/key-vault/general/service-limits) 。 超过存储你的租户密钥的密钥保管库的服务限制可能会导致 Azure Rights Management 服务的响应时间限制。
+建议为租户密钥使用 **专用密钥保管库** 。 专用密钥保管库有助于确保其他服务的调用不会导致超出 [服务限制](/azure/key-vault/general/service-limits) 。 超过存储你的租户密钥的密钥保管库的服务限制可能会导致 Azure Rights Management 服务的响应时间限制。
 
 随着不同服务具有不同的密钥管理要求，Microsoft 还建议对密钥保管库使用 **专用的 Azure 订阅** 。 专用 Azure 订阅：
 
@@ -69,15 +69,15 @@ Azure Key Vault 为许多使用加密的基于云的服务和本地服务提供�
 
 在 Azure Key Vault 中存储你的租户密钥具有以下优势：
 
-|优点  |描述  |
+|优点  |说明  |
 |---------|---------|
-|**内置接口**| Azure 密钥保管库为密钥管理提供了大量内置接口，包括 PowerShell、CLI、REST API 和 Azure 门户。 </br></br>其他服务和工具已与 Key Vault 集成，以实现特定任务（例如监视）的优化功能。 </br></br>例如，使用 Operations Management Suite Log analytics 分析密钥使用情况日志，在满足指定条件时设置警报，等等。        |
-|**角色分隔**| Azure Key Vault 提供角色分隔作为公认的安全最佳做法。 </br></br>角色分隔确保 Azure 信息保护管理员可以重点关注其最高优先级，包括管理数据分类和保护，以及针对特定安全性或符合性要求的加密密钥和策略。 |
-|**主密钥位置**| Azure Key Vault 在各种不同的位置提供，并支持具有主密钥可以使用的限制的组织。 </br></br>有关详细信息，请参阅 Azure 网站上的[可用产品（按区域）](https://azure.microsoft.com/regions/services/)页。|
-|**分隔的安全域**|Azure Key Vault 对其数据中心使用单独的安全域，如北美、EMEA (欧洲、中东和非洲) 以及亚洲等区域。 </br></br>Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 |
-|**统一体验**| Azure Key Vault 还允许安全管理员存储、访问和管理证书和机密（如密码），以便使用加密的其他服务。 <br></br>使用租户密钥的 Azure Key Vault 为管理这些元素的管理员提供无缝的用户体验。|
+|**内置接口**| Azure 密钥保管库为密钥管理提供了大量内置接口，包括 PowerShell、CLI、REST API 和 Azure 门户。 <br /><br />其他服务和工具已与 Key Vault 集成，以实现特定任务（例如监视）的优化功能。 <br /><br />例如，使用 Operations Management Suite Log analytics 分析密钥使用情况日志，在满足指定条件时设置警报，等等。        |
+|**角色分隔**| Azure Key Vault 提供角色分隔作为公认的安全最佳做法。 <br /><br />角色分隔确保 Azure 信息保护管理员可以重点关注其最高优先级，包括管理数据分类和保护，以及针对特定安全性或符合性要求的加密密钥和策略。 |
+|**主密钥位置**| Azure Key Vault 在各种不同的位置提供，并支持具有主密钥可以使用的限制的组织。 <br /><br />有关详细信息，请参阅 Azure 网站上的[可用产品（按区域）](https://azure.microsoft.com/regions/services/)页。|
+|**分隔的安全域**|Azure Key Vault 对其数据中心使用单独的安全域，如北美、EMEA (欧洲、中东和非洲) 以及亚洲等区域。 <br /><br />Azure Key Vault 还使用 Azure 的其他实例，如 Microsoft Azure 德国和 Azure 政府。 |
+|**统一体验**| Azure Key Vault 还允许安全管理员存储、访问和管理证书和机密（如密码），以便使用加密的其他服务。 <br><br />使用租户密钥的 Azure Key Vault 为管理这些元素的管理员提供无缝的用户体验。|
 
-若要了解最新更新并了解其他服务如何使用  [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/basic-concepts)，请访问 [Azure Key Vault 团队博客](https://blogs.technet.microsoft.com/kv/)。
+若要了解最新更新并了解其他服务如何使用  [Azure Key Vault](/azure/key-vault/general/basic-concepts)，请访问 [Azure Key Vault 团队博客](/archive/blogs/kv/)。
 
 ## <a name="usage-logging-for-byok"></a>BYOK 的使用情况日志记录
 
@@ -88,11 +88,19 @@ Azure Key Vault 为许多使用加密的基于云的服务和本地服务提供�
 有关 BYOK 的密钥使用日志记录的详细信息，请参阅 [记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
 
 > [!TIP]
-> 为了进一步保证，可以通过 [Azure Key Vault 日志记录](https://docs.microsoft.com/azure/key-vault/general/logging)交叉引用 Azure 信息保护使用情况日志记录。 Key Vault 日志提供一种可靠的方法，用于独立监视密钥仅由 Azure Rights Management 服务使用。
+> 为了进一步保证，可以通过 [Azure Key Vault 日志记录](/azure/key-vault/general/logging)交叉引用 Azure 信息保护使用情况日志记录。 Key Vault 日志提供一种可靠的方法，用于独立监视密钥仅由 Azure Rights Management 服务使用。
 >
 > 如有必要，请通过删除对密钥保管库的权限立即撤销对密钥的访问权限。
 
 ## <a name="options-for-creating-and-storing-your-key"></a>用于创建和存储密钥的选项
+
+> [!NOTE]
+> Azure 信息保护 Azure Key Vault 托管 HSM 支持，仅适用于非生产租户，目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
+>
+> 有关托管 HSM 产品和如何设置保管库和密钥的详细信息，请参阅 [Azure Key Vault 文档](/azure/key-vault/)。 
+>
+> 下面介绍了授权密钥授权的其他说明。
+>
 
 BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 
@@ -142,11 +150,11 @@ BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 
 |要求  |说明  |
 |---------|---------|
-|**Azure 订阅**     |所有配置都需要。 </br>有关详细信息，请参阅 [验证是否有与 BYOK 兼容的 Azure 订阅](#verifying-that-you-have-a-byok-compatible-azure-subscription)。         |
-|**适用于 Azure 信息保护的 AIPService PowerShell 模块**|所有配置都需要。 </br>有关详细信息，请参阅 [安装 AIPService PowerShell 模块](./install-powershell.md)。|
-|**Azure Key Vault BYOK 的先决条件** | 如果使用的是在本地创建的、受 HSM 保护的密钥，请确保还符合 Azure Key Vault 文档中列出的 [BYOK 的先决条件](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys-byok#prerequisites) 。         |
+|**Azure 订阅**     |所有配置都需要。 <br />有关详细信息，请参阅 [验证是否有与 BYOK 兼容的 Azure 订阅](#verifying-that-you-have-a-byok-compatible-azure-subscription)。         |
+|**适用于 Azure 信息保护的 AIPService PowerShell 模块**|所有配置都需要。 <br />有关详细信息，请参阅 [安装 AIPService PowerShell 模块](./install-powershell.md)。|
+|**Azure Key Vault BYOK 的先决条件** | 如果使用的是在本地创建的、受 HSM 保护的密钥，请确保还符合 Azure Key Vault 文档中列出的 [BYOK 的先决条件](/azure/key-vault/keys/hsm-protected-keys-byok#prerequisites) 。         |
 |**Thales 固件版本11.62**    |如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则必须具有 Thales 固件版本11.62，并将 Thales 固件用于 HSM。
-|**受信任的 Microsoft 服务的防火墙旁路** |如果包含你的租户密钥的密钥保管库使用 Azure Key Vault 的虚拟网络服务终结点，则必须允许受信任的 Microsoft 服务跳过此防火墙。 </br>有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](https://docs.microsoft.com/azure/key-vault/general/overview-vnet-service-endpoints)。       |
+|**受信任的 Microsoft 服务的防火墙旁路** |如果包含你的租户密钥的密钥保管库使用 Azure Key Vault 的虚拟网络服务终结点，则必须允许受信任的 Microsoft 服务跳过此防火墙。 <br />有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/general/overview-vnet-service-endpoints)。       |
 
 #### <a name="verifying-that-you-have-a-byok-compatible-azure-subscription"></a>验证你是否有与 BYOK 兼容的 Azure 订阅
 
@@ -154,7 +162,7 @@ BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 
 免费 Azure 订阅提供对 Azure Active Directory 配置和 Azure Rights Management 自定义模板配置的访问权限 *不足以* 使用 Azure Key Vault。
 
-若要确认是否有与 BYOK 兼容的 Azure 订阅，请执行以下操作以使用 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/) cmdlet 进行验证：
+若要确认是否有与 BYOK 兼容的 Azure 订阅，请执行以下操作以使用 [Azure PowerShell](/powershell/azure/) cmdlet 进行验证：
 
 1. 以管理员身份启动 Azure PowerShell 会话。
 
@@ -162,7 +170,7 @@ BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 
 1. 将显示的令牌复制到剪贴板。 然后，在浏览器中转到， https://microsoft.com/devicelogin 然后输入复制的令牌。
 
-    有关详细信息，请参阅 [登录 Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps)。
+    有关详细信息，请参阅 [登录 Azure PowerShell](/powershell/azure/authenticate-azureps)。
 
 1. 在 PowerShell 会话中，输入 `Get-AzSubscription` 并确认显示以下值：
 
@@ -182,29 +190,32 @@ BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 
 - 保护链对 Azure 信息保护密钥的所有加密调用。 因此，你可能需要在 Azure 信息保护租户所在的同一 Azure 区域或实例中创建密钥保管库，以最大程度地减少所需的网络延迟。
 
-若要确定 Azure 信息保护租户的位置，请使用 [AipServiceConfiguration](https://docs.microsoft.com/powershell/module/aipservice/get-aipserviceconfiguration) PowerShell cmdlet 并标识 url 中的区域。 例如：
+若要确定 Azure 信息保护租户的位置，请使用 [AipServiceConfiguration](/powershell/module/aipservice/get-aipserviceconfiguration) PowerShell cmdlet 并标识 url 中的区域。 例如：
 
 ```ps
 LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing
 ```
     
-可以从 rms.na.aadrm.com 中标识区域，在此示例中，它位于北美****。
+可以从 rms.na.aadrm.com 中标识区域，在此示例中，它位于北美。
 
 下表列出了建议用于将网络延迟降到最低的 Azure 区域和实例：
 
 |Azure 区域或实例|建议的密钥保管库位置|
 |---------------|--------------------|
-|rms.**na**.aadrm.com|美国中北部或美国东部********|
+|rms.**na**.aadrm.com|美国中北部或美国东部|
 |rms.**eu**.aadrm.com|**北欧** 或 **西欧**|
 |rms.**ap**.aadrm.com|**东亚** 或 **东南亚**|
-|rms.**sa**.aadrm.com|美国西部或美国东部********|
-|rms.**govus**.aadrm.com|美国中部或美国东部 2********|
+|rms.**sa**.aadrm.com|美国西部或美国东部|
+|rms.**govus**.aadrm.com|美国中部或美国东部 2|
 |**aadrm.us**|**US Gov 弗吉尼亚州** 或 **US Gov 亚利桑那州**|
 |**aadrm.cn**|“中国东部 2”或“中国北部 2” |
 
 ### <a name="create-and-configure-your-key"></a>创建和配置密钥
 
-创建一个 Azure Key Vault 和要用于 Azure 信息保护的密钥。 有关详细信息，请参阅 [Azure Key Vault 文档](https://docs.microsoft.com/azure/key-vault/)。
+>[!IMPORTANT]
+> 有关特定于托管 hsm 的信息，请参阅 [通过 Azure CLI 为托管的 hsm 密钥启用密钥授权](#enabling-key-authorization-for-managed-hsm-keys-via-azure-cli)。
+
+创建一个 Azure Key Vault 和要用于 Azure 信息保护的密钥。 有关详细信息，请参阅 [Azure Key Vault 文档](/azure/key-vault/)。
 
 请注意以下事项：配置 BYOK 的 Azure Key Vault 和密钥：
 
@@ -225,7 +236,7 @@ LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded47
 
 #### <a name="creating-an-hsm-protected-key-on-premises-and-transferring-it-to-your-key-vault"></a>在本地创建受 HSM 保护的密钥并将其传输到密钥保管库
 
-若要在本地创建 HSM 保护的密钥并将其作为 HSM 保护的密钥传输到密钥保管库，请按照 Azure Key Vault 文档中的过程进行操作： [如何为 Azure Key Vault 生成和传输受 hsm 保护的密钥](https://docs.microsoft.com/azure/key-vault/keys/hsm-protected-keys-byok)。
+若要在本地创建 HSM 保护的密钥并将其作为 HSM 保护的密钥传输到密钥保管库，请按照 Azure Key Vault 文档中的过程进行操作： [如何为 Azure Key Vault 生成和传输受 hsm 保护的密钥](/azure/key-vault/keys/hsm-protected-keys-byok)。
 
 要使 Azure 信息保护使用传输密钥，必须允许对密钥执行所有 Key Vault 操作，包括：
 
@@ -233,7 +244,7 @@ LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded47
 - 解密
 - wrapKey
 - unwrapKey
-- 签名
+- Sign
 - 验证
 
 默认情况下，所有 Key Vault 操作都是允许的。
@@ -244,7 +255,7 @@ LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded47
 (Get-AzKeyVaultKey -VaultName <key vault name> -Name <key name>).Attributes.KeyOps
 ```
 
-如有必要，请使用 [AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) 和 *KeyOps* 参数添加允许的操作。
+如有必要，请使用 [AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) 和 *KeyOps* 参数添加允许的操作。
 
 #### <a name="configuring-azure-information-protection-with-your-key-id"></a>配置具有密钥 ID 的 Azure 信息保护
 
@@ -262,24 +273,42 @@ LicensingIntranetDistributionPointUrl : https://5c6bb73b-1038-4eec-863d-49bded47
 
 ##### <a name="enabling-key-authorization-using-the-azure-portal"></a>使用 Azure 门户启用密钥授权
 
-1. 登录到 Azure 门户，然后访问**Key**vault  >  **\<*your key vault name*>**  >  **访问策略**"  >  **添加新**项"。
+1. 登录到 Azure 门户，然后访问 **Key** vault  >  **\<*your key vault name*>**  >  **访问策略**"  >  **添加新** 项"。
 
-1. 在 " **添加访问策略** " 窗格中，从 " **配置自模板 (可选) ** 列表框中，选择" **AZURE 信息保护**"" BYOK "，然后单击 **" 确定 "**。
+1. 在 " **添加访问策略** " 窗格中，从 " **配置自模板 (可选)** 列表框中，选择" **AZURE 信息保护**"" BYOK "，然后单击 **" 确定 "**。
 
     所选模板具有以下配置：
 
-    - **选择主体**值设置为**Microsoft Rights Management Services。**
+    - **选择主体** 值设置为 **Microsoft Rights Management Services。**
     - 所选的 **密钥权限** 包括 **获取、** **解密** 和 **签名。**
 
 ##### <a name="enabling-key-authorization-using-powershell"></a>使用 PowerShell 启用密钥授权
 
-使用 GUID **00000012-0000-0000-c000-000000000000**运行 Key Vault PowerShell cmdlet [AzKeyVaultAccessPolicy](https://docs.microsoft.com/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy)，并向 Azure Rights Management 服务主体授予权限。
+使用 GUID **00000012-0000-0000-c000-000000000000** 运行 Key Vault PowerShell cmdlet [AzKeyVaultAccessPolicy](/powershell/module/az.keyvault/set-azkeyvaultaccesspolicy)，并向 Azure Rights Management 服务主体授予权限。
 
 例如：
 
 ```ps
 Set-AzKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 ```
+
+##### <a name="enabling-key-authorization-for-managed-hsm-keys-via-azure-cli"></a>通过 Azure CLI 为托管的 HSM 密钥启用密钥授权
+
+若要向 Azure Rights Management 服务主体用户授予 **托管 HSM 加密** 用户的权限，请运行以下命令：
+
+```PowerShell
+az keyvault role assignment create --hsm-name "ContosoMHSM" --role "Managed HSM Crypto User" --assignee 00000012-0000-0000-c000-000000000000 --scope /keys/contosomhsmkey
+```
+
+其中：
+- **00000012-0000-0000-c000-000000000000** 是要在此命令中使用的 GUID
+- **ContosoMHSM** 是一个示例 HSM 名称。 运行此命令时，请将此值替换为你自己的 HSM 名称。
+
+**托管 Hsm 加密用户** 用户角色允许用户对密钥进行解密、签名和获取权限，这一切都是托管 hsm 功能所必需的。 
+
+> [!NOTE]
+> 尽管托管 HSM 处于公共预览版中，但仅支持通过 Azure CLI 来授予 **托管 Hsm 加密用户** 角色。
+> 
 
 ### <a name="configure-azure-information-protection-to-use-your-key"></a>配置 Azure 信息保护以使用密钥
 
@@ -292,7 +321,7 @@ Set-AzKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'Contos
     Connect-AipService
     ```
 
-1. 运行 [AipServiceKeyVaultKey cmdlet](https://docs.microsoft.com/powershell/module/aipservice/use-aipservicekeyvaultkey)，并指定密钥 URL。 例如：
+1. 运行 [AipServiceKeyVaultKey cmdlet](/powershell/module/aipservice/use-aipservicekeyvaultkey)，并指定密钥 URL。 例如：
 
     ```ps
     Use-AipServiceKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/<key-version>"
@@ -301,13 +330,13 @@ Set-AzKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'Contos
     > [!IMPORTANT]
     > 在此示例中， `<key-version>` 是要使用的密钥的版本。 如果未指定版本，则默认情况下将使用该密钥的当前版本，该命令可能会显示为 "正在运行"。 但是，如果以后更新或续订了密钥，则即使再次运行 **AipServiceKeyVaultKey** 命令，Azure Rights Management 服务也会停止适用于你的租户。
     >
-    > 根据需要使用 [AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvaultkey) 命令来获取当前密钥的版本号。
+    > 根据需要使用 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令来获取当前密钥的版本号。
     >
-    > 例如：`Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+    > 例如： `Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
-    若要确认正确设置了 Azure 信息保护的密钥 URL，请在 Azure Key Vault 中运行 [AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvaultkey) 命令以显示密钥 url。
+    若要确认正确设置了 Azure 信息保护的密钥 URL，请在 Azure Key Vault 中运行 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令以显示密钥 url。
 
-1. 如果已激活 Azure Rights Management 服务，请运行 [AipServiceKeyProperties](https://docs.microsoft.com/powershell/module/aipservice/set-aipservicekeyproperties) ，告知 Azure 信息保护将此密钥用作 azure Rights Management 服务的活动租户密钥。
+1. 如果已激活 Azure Rights Management 服务，请运行 [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) ，告知 Azure 信息保护将此密钥用作 azure Rights Management 服务的活动租户密钥。
 
 Azure 信息保护现在已配置为使用你的密钥，而不是为你的租户自动创建的默认 Microsoft 创建的密钥。
 
