@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/10/2020
+ms.date: 11/19/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: edfd5a5f309228c7f75a895e40826b65af74e1d7
-ms.sourcegitcommit: 04b9d7ee1ce8b6662ceda5a13b7b0d5630c91d28
+ms.openlocfilehash: cd640f1fd60f1ca9872bb3741bfa5d1f0426b18e
+ms.sourcegitcommit: 1c12edc8ca4bfac9eb4e87516908cafe6e5dd42a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "95566512"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96034381"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -171,6 +171,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |PFileSupportedExtensions|[更改要保护的文件类型](#change-which-file-types-to-protect)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
+|RemoveExternalMarkingFromCustomLayouts | [删除 PowerPoint 中自定义布局的外部内容标记](#remove-external-content-marking-from-custom-layouts-in-powerpoint)|
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
@@ -446,7 +447,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例:
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -462,19 +463,14 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkin
 
 ### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
 
-指定 ExternalContentMarkingToRemove 键的字符串值时，拥有三个使用正则表达式的选项：
+为 **ExternalContentMarkingToRemove** 键指定字符串值时，有三个使用正则表达式的选项。 对于上述每种情况，使用下表的 " **示例值** " 列中所示的语法：
 
-- 用以删除页眉或页脚中所有内容的部分匹配。
-
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要完全删除这些页面或页脚。 可指定值：`*TEXT*`。
-
-- 用以删除页眉或页脚中特定字词的完全匹配。
-
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 只想删除单词 TEXT，结果使页眉或页脚字符串变为 TO REMOVE。 可指定值：`TEXT `。
-
-- 用以删除页眉或页脚中所有内容的完全匹配。
-
-    示例：页眉或页脚包含字符串 TEXT TO REMOVE。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。 可指定值：`^TEXT TO REMOVE$`。
+|选项  |示例说明 |示例值|
+|---------|---------|---------|
+|**部分匹配，删除页眉或页脚中的所有内容**     | 页眉或页脚中包含 **要删除** 的字符串文本，并且你想要完全删除这些页眉或页脚。   |`*TEXT*`  | 
+|**完成匹配以仅删除页眉或页脚中的特定词**     |    您的页眉或页脚中包含 **要删除** 的字符串文本，并且您只想删除单词 **文本** ，并将页眉或页脚字符串保留为 **删除**。      |`TEXT ` |
+|**完全匹配删除页眉或页脚中的所有内容**     |页眉或页脚中包含 **要删除** 的字符串文本。 想要删除其字符串为 TEXT TO REMOVE 的页眉或页脚。         |`^TEXT TO REMOVE$`|
+|     |         | |
 
 
 指定的字符串的匹配模式不区分大小写。 最大字符串长度为255个字符，且不能包含空格。 
@@ -495,7 +491,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 #### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
 
-如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，下面是具有两行文本的页脚：
+如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，如果您的以下页脚有两行：
 
 The file is classified as Confidential
 
@@ -517,13 +513,20 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
-PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你指定的但不属于页面或页脚的形状，可使用以下附加高级客户端设置：PowerPointShapeNameToRemove。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+PowerPoint 中的页眉和页脚作为形状实现。 
+
+若要避免删除包含您指定的文本但 *不* 是页眉或页脚的形状，请使用名为 **PowerPointShapeNameToRemove** 的其他高级客户端设置。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
 
 - 如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
 
 - 如果指定了此值，则将删除仅满足形状名称条件的形状，还将删除与 **ExternalContentMarkingToRemove** 提供的字符串相匹配的文本。
 
-**查找用作页眉或页脚的形状的名称：**
+此外，如果在 PowerPoint 中配置了自定义布局，则默认行为是忽略自定义布局中的形状。 若要从自定义布局内部显式删除外部内容标记，请将 **RemoveExternalMarkingFromCustomLayouts** advanced 属性设置为 **true。**
+
+> [!NOTE]
+> 此部分中所述的高级客户端设置支持的 PowerPoint 形状类型包括： **msoTextBox、** **msoTextEffect** 和 **msoPlaceholder**
+>
+##### <a name="find-the-name-of-the-shape-that-youre-using-as-a-header-or-footer"></a>查找要用作页眉或页脚的形状的名称
 
 1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
 
@@ -555,6 +558,22 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove
 
 ```PowerShell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
+```
+
+##### <a name="remove-external-content-marking-from-custom-layouts-in-powerpoint"></a>删除 PowerPoint 中自定义布局的外部内容标记
+
+此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
+
+默认情况下，用于删除外部内容标记的逻辑将忽略在 PowerPoint 中配置的自定义布局。 若要将此逻辑扩展到自定义布局，请将 **RemoveExternalMarkingFromCustomLayouts** advanced 属性设置为 **True**。
+
+- 密钥： **RemoveExternalMarkingFromCustomLayouts**
+
+- 值： **True**
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalMarkingFromCustomLayouts="True"}
 ```
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
@@ -1443,7 +1462,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 "nodes" : []
 ```
 
-您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参阅：
+您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详情，请参阅：
 
 - [规则条件语法](#rule-condition-syntax)
 - [规则操作语法](#rule-action-syntax)
