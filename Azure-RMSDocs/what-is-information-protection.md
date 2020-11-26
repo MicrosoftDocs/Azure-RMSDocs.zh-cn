@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to extend Microsoft 365's labeling 
 ms.custom: contperfq2
 search.appverid:
 - MET150
-ms.openlocfilehash: 4a945f07532786c268886a44de23430be9a78700
-ms.sourcegitcommit: 822b23024cfd01ea41ac6ae9370489193782f078
+ms.openlocfilehash: 7ee4c5c26792a56c2637d62a67e2921df8c99a61
+ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/15/2020
-ms.locfileid: "94634693"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94924945"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -47,7 +47,7 @@ Azure 信息保护统一标签客户端将标签、分类和保护功能扩展�
     
 ## <a name="aip-on-premises-scanner"></a>AIP 本地扫描程序
 
-借助 Azure 信息保护本地扫描程序，管理员可以扫描其网络和本地文件存储库，以发现必须标记、分类和/或保护的敏感内容。
+借助 Azure 信息保护本地扫描程序，管理员可扫描其本地文件存储库，来发现必须标记、分类和/或保护的敏感内容。
 
 使用作为统一标记客户端的一部分提供的 PowerShell cmdlet 安装本地扫描程序，并且可以使用 PowerShell 和 Azure 门户中的 Azure 信息保护区域进行管理。
 

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: b55178f6cd0bef2fa14eb7fcf9ecaefa3ea75f7a
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 432004443bf684967849b5b91acd9052cbf07eec
+ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503666"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94924969"
 ---
 # <a name="tutorial-discovering-your-sensitive-content-with-the-azure-information-protection-aip-scanner"></a>教程：使用 Azure 信息保护 (AIP) 扫描程序发现敏感内容
 
@@ -23,7 +23,7 @@ ms.locfileid: "94503666"
 >
 > 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
-Azure 信息保护客户端提供了本地扫描程序，这样系统管理员就可以扫描网络和本地文件存储库，以发现敏感内容。 
+Azure 信息保护客户端提供了本地扫描程序，使系统管理员可扫描本地文件存储库来发现敏感内容。 
 
 本教程介绍以下操作：
 

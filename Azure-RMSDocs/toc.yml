@@ -319,7 +319,7 @@
                       href: ./rms-client/client-protection-only-mode.md
                     - name: 用于操作 RMS 共享应用程序的任务
                       href: ./rms-client/upgrade-client-app.md
-        - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
+        - name: 适用于 iOS 和 Android 的 Azure 信息保护移动应用
           href: ./rms-client/mobile-app-faq.md
         - name: 受保护的 PDF 阅读器
           href: ./rms-client/protected-pdf-readers.md
