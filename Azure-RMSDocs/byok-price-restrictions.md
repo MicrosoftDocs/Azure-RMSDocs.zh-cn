@@ -14,11 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: cfe396cea14effdd77b912b32c7c64296806b4be
-ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566469"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316222"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>自带密钥 (BYOK Azure 信息保护) 详细信息
 
@@ -69,7 +69,7 @@ Azure Key Vault 为许多使用加密的基于云的服务和本地服务提供�
 
 在 Azure Key Vault 中存储你的租户密钥具有以下优势：
 
-|优点  |说明  |
+|优点  |描述  |
 |---------|---------|
 |**内置接口**| Azure 密钥保管库为密钥管理提供了大量内置接口，包括 PowerShell、CLI、REST API 和 Azure 门户。 <br /><br />其他服务和工具已与 Key Vault 集成，以实现特定任务（例如监视）的优化功能。 <br /><br />例如，使用 Operations Management Suite Log analytics 分析密钥使用情况日志，在满足指定条件时设置警报，等等。        |
 |**角色分隔**| Azure Key Vault 提供角色分隔作为公认的安全最佳做法。 <br /><br />角色分隔确保 Azure 信息保护管理员可以重点关注其最高优先级，包括管理数据分类和保护，以及针对特定安全性或符合性要求的加密密钥和策略。 |
@@ -332,7 +332,7 @@ az keyvault role assignment create --hsm-name "ContosoMHSM" --role "Managed HSM 
     >
     > 根据需要使用 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令来获取当前密钥的版本号。
     >
-    > 例如： `Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+    > 例如：`Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
     若要确认正确设置了 Azure 信息保护的密钥 URL，请在 Azure Key Vault 中运行 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令以显示密钥 url。
 

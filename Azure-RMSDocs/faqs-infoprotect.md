@@ -13,11 +13,11 @@ ms.reviewer: adhall
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: d22a79a3968e164e2bec8c3852c4ab0c181e5ef8
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566017"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316307"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>有关 Azure 信息保护中的分类和标签的常见问题
 
@@ -68,7 +68,7 @@ ms.locfileid: "95566017"
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>标记一封电子邮件时，是否有任何附件会自动获得相同的标记？
 
-不能。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
+否。 标记有附件的电子邮件时，这些附件不会继承相同的标记。 附件仍不带标签，或者保留单独应用的标签。 不过，如果电子邮件的标签应用了保护配置，此保护配置也会应用于 Office 附件。
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 解决方案和其他应用如何与 Azure 信息保护相集成？
 
@@ -80,7 +80,7 @@ ms.locfileid: "95566017"
 
 ## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>我能否创建自动包含分类的文档模板？
 
-是。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，则仅 (经典) 的 Azure 信息保护客户端，你可以创建具有所需格式的文档模板，并将分类添加为字段代码。 
+是的。 可以将标签配置为，[应用包含标签名称的页眉或页脚](configure-policy-markings.md)。 但如果不满足你的要求，则仅 (经典) 的 Azure 信息保护客户端，你可以创建具有所需格式的文档模板，并将分类添加为字段代码。 
 
 例如，文档的页眉中可能有一个显示分类的表。 或者，对引用文档分类的简介使用具体的字词。
 

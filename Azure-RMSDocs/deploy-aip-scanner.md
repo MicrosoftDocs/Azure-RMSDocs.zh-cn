@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 33e6d4205fbfc2c168514fc30cc20acbd9d8578f
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: 35bb27bbb6cbfeb8fa4291c9442c95190b92e28b
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "95566520"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316258"
 ---
 # <a name="what-is-the-azure-information-protection-unified-labeling-scanner"></a>什么是 Azure 信息保护统一标记扫描程序？
 
@@ -32,7 +32,7 @@ ms.locfileid: "95566520"
 
 AIP 扫描程序在 Windows Server 上以服务的形式运行，并允许你发现、分类和保护以下数据存储中的文件：
 
-- 使用服务器消息块 (SMB) 协议的网络共享的 **UNC 路径**。
+- 使用 SMB 或 NFS (预览) 协议的网络共享的 **UNC 路径**。
 
 - Sharepoint **文档库和** sharepoint server 2019 通过 sharepoint server 2013 的文件夹。 如果客户[扩展了针对此版 SharePoint 的支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)，则 SharePoint 2010 也会受到支持。
 

@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/19/2020
+ms.date: 11/23/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cd640f1fd60f1ca9872bb3741bfa5d1f0426b18e
-ms.sourcegitcommit: 1c12edc8ca4bfac9eb4e87516908cafe6e5dd42a
+ms.openlocfilehash: 0fe8286b9fab39a8ac9df3112866d21caa835e5f
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96034381"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316834"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -36,7 +36,7 @@ ms.locfileid: "96034381"
 
 ### <a name="how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell"></a>如何使用 Office 365 Security & 相容性中心 PowerShell 配置客户端的高级设置
 
-使用 Office 365 Security & 相容性中心 PowerShell 时，可以配置支持标签策略和标签自定义的高级设置。 例如：
+使用 Office 365 Security & 相容性中心 PowerShell 时，可以配置支持标签策略和标签自定义的高级设置。 例如:
 
 - 在 Office 应用中显示信息保护栏的设置是一个 ***标签策略高级设置** _。
 - 用于指定标签颜色的设置是 " _*_标签高级" 设置_*_。
@@ -309,7 +309,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
 
 使用下表来确定要指定的字符串值：
 
-| 字符串值| 客户端| 扫描仪|
+| 字符串值| Client| 扫描仪|
 |-------------|-------|--------|
 |\*|默认值：将保护应用于所有文件类型|将保护应用于所有文件类型|
 |Convertto-html ( ".jpg"，".png" ) |除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
@@ -765,12 +765,14 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollab
     
     - 负值 **\<**domain names, comma separated**>**
 
-例如，你为 "**机密 \ 所有员工**" 标签指定了 **OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 你现在可以指定 **OutlookJustifyTrustedDomains** 和 **contoso.com** 的其他高级客户端设置。 因此，用户可以 john@sales.contoso.com 在将其标记为 " **机密 \ 所有员工** " 时向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
+例如，假设你为 "**机密 \ 所有员工**" 标签指定了 **OutlookBlockUntrustedCollaborationLabel** advanced client 设置。 
+
+现在，可以通过 contoso.com 指定 **OutlookBlockTrustedDomains** 的其他高级客户端设置 **。** 因此， `john@sales.contoso.com` 当用户将其标记为 " **机密 \ 所有员工**" 时，用户可以向其发送电子邮件，但会阻止向 Gmail 帐户发送具有相同标签的电子邮件。
 
 示例 PowerShell 命令，其中标签策略命名为 "Global"：
 
 ```PowerShell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockTrustedDomains="gmail.com"}
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockTrustedDomains="contoso.com"}
 
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomains="contoso.com,fabrikam.com,litware.com"}
 ```
@@ -1086,7 +1088,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProp
 
 在某些情况下，你可能需要将一个或多个自定义属性应用于文档或电子邮件消息，以及敏感标签应用的元数据。
 
-例如：
+例如:
 
 - 正在 [从另一个标记解决方案](#migrate-labels-from-secure-islands-and-other-labeling-solutions)（例如 Secure Islands）进行迁移。 为了在迁移过程中实现互操作性，您希望使用敏感性标签同时应用其他标签解决方案使用的自定义属性。
 
@@ -1337,7 +1339,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip 
 
 **跳过只读或存档的文件**
 
-若要使用或逻辑，请多次运行同一属性。 例如：
+若要使用或逻辑，请多次运行同一属性。 例如:
 
 ```PowerShell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{ ScannerFSAttributesToSkip =" FILE_ATTRIBUTE_READONLY"}
@@ -1387,7 +1389,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ UseCopyAndPreserveNTFSOwne
 
 若要修改显示的默认 **其他** 文本，请将 **JustificationTextForUserText** advanced 属性与 [LabelPolicy](/powershell/module/exchange/set-labelpolicy) cmdlet 一起使用。 将值设置为要改用的文本。
 
-例如：
+例如:
 
 ``` PowerShell
 
@@ -1462,7 +1464,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 "nodes" : []
 ```
 
-您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详情，请参阅：
+您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参阅：
 
 - [规则条件语法](#rule-condition-syntax)
 - [规则操作语法](#rule-action-syntax)
@@ -1501,7 +1503,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 所有文本都支持以下动态参数： 
 
-|参数  |说明  |
+|参数  |描述  |
 |---------|---------|
 | `${MatchedRecipientsList}`  | **发送** 条件的最后一个匹配项       |
 | `${MatchedLabelName}`      | 邮件/附件 **标签，** 具有策略的本地化名称               |
@@ -1826,6 +1828,24 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
     ```PowerShell
     Set-LabelPolicy -Identity Global -AdvancedSettings @{SharepointFileWebRequestTimeout="00:10:00"}
     ```
+
+### <a name="avoid-scanner-timeouts-in-sharepoint"></a>避免 SharePoint 中的扫描程序超时
+
+如果在 SharePoint 版本2013或更高版本中具有长文件路径，请确保 SharePoint 服务器的 [httpRuntime. maxUrlLength](/dotnet/api/system.web.configuration.httpruntimesection.maxurllength) 值大于默认260个字符。
+
+此值在配置的 **HttpRuntimeSection** 类中定义 `ASP.NET` 。 如果需要更新此值，请执行以下操作：
+
+1. 备份 **web.config** 配置。 
+
+1. 根据需要更新 **maxUrlLength** 值。 例如:
+
+    ```c#
+    <httpRuntime maxRequestLength="51200" requestValidationMode="2.0" maxUrlLength="5000"  />
+    ```
+
+1. 重新启动 SharePoint web 服务器，并验证其是否已正确加载。 
+
+    例如，在 "Windows Internet Information Server (IIS) 管理器" 中，选择你的站点，然后在 " **管理网站**" 下，选择 " **重新启动**"。 
 
 ## <a name="prevent-outlook-performance-issues-with-smime-emails"></a>阻止 S/MIME 电子邮件的 Outlook 性能问题
 

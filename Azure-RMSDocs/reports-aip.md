@@ -14,11 +14,11 @@ ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 635ab25150dd18e50da8b93b4f0ec4c145320e19
-ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566468"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316800"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
 
@@ -208,7 +208,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 4. 如果你的 Azure 信息保护客户端 (经典) ，请选中此复选框，如果想要存储标识为敏感信息类型的实际数据，请选择 " **为敏感数据启用更深入的分析** "。 有关此设置的详细信息，请参阅此页上的 " [内容匹配" 以获取深入分析](#content-matches-for-deeper-analysis) 部分。
 
-5. 选择“确定”  。
+5. 选择“确定”。
 
 你现在可以查看报表。
 

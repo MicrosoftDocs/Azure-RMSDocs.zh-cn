@@ -14,11 +14,11 @@ ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: 3d90fdf263c15f80e23229bba427cb8d2b68f74e
-ms.sourcegitcommit: 867a8b3d5e90ab21384b1b2322a0c5a7b63b25bd
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417296"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316664"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 

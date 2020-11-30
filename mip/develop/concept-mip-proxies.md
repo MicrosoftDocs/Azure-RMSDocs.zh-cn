@@ -7,11 +7,11 @@ ms.topic: conceptual
 ms.date: 07/29/2020
 ms.author: tommos
 ms.openlocfilehash: fdbcf9d618612021a971af34380b65dc062c2802
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566096"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316528"
 ---
 # <a name="microsoft-information-protection-sdk---proxy-support"></a>Microsoft 信息保护 SDK-代理支持
 

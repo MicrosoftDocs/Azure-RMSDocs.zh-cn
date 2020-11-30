@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 266ff1c9ff09b9b9b1a2133601f5adf44a4c7d4a
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: a1833ca3bb60030414213076f68ca78ddb5534af
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "95566528"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316239"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描程序的先决条件
 
@@ -163,11 +163,13 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 若要扫描 SharePoint 文档库和文件夹，请确保您的 SharePoint 服务器符合以下要求：
 
-- **支持的版本。** 支持的版本包括： SharePoint 2019、SharePoint 2016 和 SharePoint 2013。 扫描程序不支持其他版本的 SharePoint。
-
-- **控制.** 使用 [版本控制](/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 如果扫描程序标签文件和 [内容审批](/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval) 是必需的，则必须向用户批准标记为 "文件" 的文件。  
-
-- **大型 SharePoint 场。** 对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 有关详细信息，请参阅 [在 SharePoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。
+|要求  |说明  |
+|---------|---------|
+|**支持的版本** | 支持的版本包括： SharePoint 2019、SharePoint 2016 和 SharePoint 2013。 <br> 扫描程序不支持其他版本的 SharePoint。     |
+|**版本控制**     |  使用 [版本控制](/sharepoint/governance/versioning-content-approval-and-check-out-planning)时，扫描程序会检查并标记上次发布的版本。 <br><br>如果扫描程序标签文件和 [内容审批](/sharepoint/governance/versioning-content-approval-and-check-out-planning#plan-content-approval) 是必需的，则必须向用户批准标记为 "文件" 的文件。       |
+|**大型 SharePoint 场** |对于大型 SharePoint 场，请检查是否需要增加列表视图阈值（默认为 5,000），以便扫描程序访问所有文件。 <br><br>有关详细信息，请参阅 [在 SharePoint 中管理大型列表和库](https://support.office.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59#__bkmkchangelimit&ID0EAABAAA=Server)。 |
+|**长文件路径**  |如果 SharePoint 中有长文件路径，请确保 SharePoint 服务器的 [httpRuntime. maxUrlLength](/dotnet/api/system.web.configuration.httpruntimesection.maxurllength) 值大于默认的260个字符。 <br><br>有关详细信息，请参阅 [避免 SharePoint 中的扫描程序超时](rms-client/clientv2-admin-guide-customizations.md#avoid-scanner-timeouts-in-sharepoint)。 | 
+| | |
 
 ## <a name="microsoft-office-requirements"></a>Microsoft Office 要求
 
@@ -184,7 +186,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 若要扫描文件路径超过260个字符的文件，请在安装了以下 Windows 版本之一的计算机上安装扫描程序，并根据需要配置计算机：
 
-|Windows 版本  |说明  |
+|Windows 版本  |描述  |
 |---------|---------|
 |**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
 |**Windows 10 或 Windows Server 2016**     | 定义以下 [组策略设置](/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
@@ -243,11 +245,21 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 尽管统一标签客户端在没有 internet 连接的情况下无法应用保护，但扫描程序仍可以基于导入的策略应用标签。
 
-若要支持断开连接的计算机，请执行以下步骤：
+若要支持断开连接的计算机，请使用以下方法之一：
+
+- 如果可能[，请使用 Azure 门户](#use-the-azure-portal-with-a-disconnected-computer) (推荐) 
+
+- [使用 PowerShell](#use-powershell-with-a-disconnected-computer)
+
+#### <a name="use-the-azure-portal-with-a-disconnected-computer"></a>将 Azure 门户与断开连接的计算机配合使用
+
+若要支持从 Azure 门户断开连接的计算机，请执行以下步骤：
 
 1.  配置策略中的标签，然后使用该 [过程支持已断开连接的计算机](rms-client/clientv2-admin-guide-customizations.md#support-for-disconnected-computers) ，启用脱机分类和标签。
 
-1. 启用内容扫描作业的脱机管理：
+1. 启用对内容和网络扫描作业的脱机管理，如下所示：
+
+    **启用内容扫描作业的脱机管理：**
 
     1. 使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将扫描仪设置为在 **脱机** 模式下工作。
 
@@ -259,7 +271,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
     
     脱机内容扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
     
-1. 启用网络扫描作业的脱机管理：
+    **启用网络扫描作业的脱机管理：**
 
     1. 使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务设置为在脱机模式下工作。
 
@@ -270,6 +282,37 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
     1.  使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/import-mipnetworkdiscoveryconfiguration) cmdlet 与群集名称相匹配的文件导入网络扫描作业。  
     
     脱机网络扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
+
+#### <a name="use-powershell-with-a-disconnected-computer"></a>将 PowerShell 用于断开连接的计算机
+
+若要仅使用 PowerShell 支持断开连接的计算机，请执行以下步骤：
+
+**仅使用 PowerShell 管理内容扫描作业：**
+
+1. 使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) cmdlet 将扫描仪设置为在 **脱机** 模式下工作。
+
+1. 使用 [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) cmdlet 创建新的内容扫描作业，确保使用必需的 `-Enforce On` 参数。
+
+1. 使用 [AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) cmdlet 添加存储库，并将路径添加到要添加的存储库。
+
+    > [!TIP]
+    > 若要阻止存储库从内容扫描作业继承设置，请添加 `OverrideContentScanJob On` 参数，以及其他设置的值。
+    >
+    > 若要编辑现有存储库的详细信息，请使用 [AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) 命令。
+    >
+ 
+1. 使用 [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) 和 [AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) cmdlet 返回有关内容扫描作业的当前设置的信息。 
+
+1. 使用 [AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) 命令可以更新现有存储库的详细信息。
+
+1. 如果需要，请使用 [AIPScan](/powershell/module/azureinformationprotection/start-aipscan) cmdlet 立即运行内容扫描作业。 
+
+    脱机内容扫描作业的结果位于： **%localappdata%\Microsoft\MSIP\Scanner\Reports**
+
+1. 如果需要删除存储库或整个内容扫描作业，请使用以下 cmdlet：
+
+    - [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob)
+    - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository)
 
 ### <a name="restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually"></a>限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库
 
@@ -347,7 +390,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 如果标签没有任何自动标记条件，请在配置扫描仪时计划使用以下选项之一：
 
-|选项  |说明  |
+|选项  |描述  |
 |---------|---------|
 |**发现所有信息类型**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 "要 **发现的信息类型** " 选项设置为 " **所有**"。 </br></br>此选项设置内容扫描作业，以扫描所有敏感信息类型的内容。      |
 |**使用建议的标签**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 " **建议标记为自动** " 选项设置为 **"打开**"。</br></br> 此设置将扫描程序配置为自动将所有建议的标签应用于内容。      |

@@ -4,7 +4,7 @@ description: 说明如何安装和配置 Azure 信息保护统一标记扫描器
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/09/2020
+ms.date: 11/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e6e90124dfae07e4ccc02a1d047fc15627b7b35f
-ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
+ms.openlocfilehash: de4c71b6cb7b6836d6757c7cd74bc21e30999a38
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566472"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316562"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -117,7 +117,7 @@ ms.locfileid: "95566472"
     
 1. 在 " **添加新的网络扫描作业** " 页上，定义以下设置：
         
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**网络扫描作业名称**     |为此作业输入有意义的名称。  此字段为必需字段。       |
     |**说明**     |   输入有意义的说明。      |
@@ -154,12 +154,12 @@ ms.locfileid: "95566472"
 
 1. 执行以下任一操作：
     
-    |选项  |说明  |
+    |选项  |描述  |
     |---------|---------|
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
     |![添加图标](media/i-add.png "添加图标")   | 选择表中列出的一个或多个存储库，然后选择 " **分配选定项** "，将其分配到内容扫描作业。          |
-    |**筛选器**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
+    |**Filter**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
     |![Log Analytics 图标](media/i-log-analytics.png "Log Analytics 图标") |在 "非托管存储库" 关系图的右上角，单击 " **Log Analytics** " 图标以跳转到这些存储库的 Log Analytics 数据。 |
     | | |
 
@@ -185,7 +185,7 @@ ms.locfileid: "95566472"
  
 1. 对于此初始配置，请配置以下设置，然后选择 " **保存** "，但不要关闭窗格。
     
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
     |**策略实施**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
@@ -194,7 +194,7 @@ ms.locfileid: "95566472"
 
 1. 既然已创建并保存了内容扫描作业，你就可以返回到 " **配置存储库** " 选项来指定要扫描的数据存储。 
 
-    指定 UNC 路径，以及 sharepoint 本地文档库和文件夹的 SharePoint Server Url。 
+    为 SharePoint 本地文档库和文件夹指定 UNC 路径和 SharePoint Server Url。 
     
     > [!NOTE]
     > Sharepoint 支持 sharepoint Server 2019、SharePoint Server 2016 和 SharePoint Server 2013。 具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)时，还支持 SharePoint Server 2010。
@@ -221,9 +221,9 @@ ms.locfileid: "95566472"
   
     如果为 **共享文档** 添加 SharePoint 路径：
     - 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 
-    例如： `http://sp2013/SharedDocuments`
+    例如：`http://sp2013/SharedDocuments`
     - 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 
-    例如： `http://sp2013/Documents/SalesReports`
+    例如：`http://sp2013/Documents/SalesReports`
     - 或者，仅指定 Sharepoint 的 **FQDN** ，例如， `http://sp2013` 在此 url 下 [发现和扫描特定 url 和副标题下的所有 Sharepoint 网站和子网站](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) 。 授予扫描器 **站点收集器审核员** 权限以启用此权限。 
     >
 
@@ -238,6 +238,7 @@ ms.locfileid: "95566472"
     |**特定 SharePoint 子网站或集合**     | 下列情况之一： <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
     |**特定 SharePoint 库**     | 下列情况之一： <br />- `http://<SharePoint server name>/<library name>` <br />- `http://SharePoint server name>/.../<library name>`       |
     |**特定 SharePoint 文件夹**     | `http://<SharePoint server name>/.../<folder name>`        |
+    | | |
     
 
 1. 重复上述步骤，根据需要添加任意数量的存储库。
@@ -262,7 +263,7 @@ ms.locfileid: "95566472"
 
 1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一节中指定的扫描仪群集名称： 
     
-    ```
+    ```PowerShell
     Install-AIPScanner -SqlServerInstance <name> -Profile <cluster name>
     ```
     
@@ -410,7 +411,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 " **自定义**"，然后选择要使用的标签       |
@@ -423,7 +424,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 **None**  |
@@ -446,7 +447,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 使用以下选项和指南来帮助优化扫描程序性能：
 
-|选项  |说明  |
+|选项  |描述  |
 |---------|---------|
 |**在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**     |  例如，将扫描仪计算机放在与扫描的数据存储相同的网络段中，或者在同一网段中放置。 <br /><br />由于要检查文件，扫描程序会将文件内容传输到运行 scanner 服务的计算机，因此网络连接的质量会影响扫描程序性能。 <br /><br />减少或消除传输数据所需的网络跃点还可以减少网络上的负载。      |
 |**确保扫描程序计算机具有可用的处理器资源**     | 检查文件内容并对文件进行加密和解密是处理密集型操作。 <br /><br />监视指定数据存储的典型扫描周期，以确定缺乏处理器资源是否会对扫描程序性能产生负面影响。        |
@@ -473,15 +474,17 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 本部分列出 Azure 信息保护扫描程序支持的 PowerShell cmdlet。
 
-> [!NOTE]
-> Azure 信息保护扫描程序是从 Azure 门户配置的。 因此，在以前的版本中用于配置数据存储库的 cmdlet 和 "扫描的文件类型" 列表现已弃用。
-> 
-
 扫描程序支持的 cmdlet 包括：
+
+- [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository)
 
 - [导出-AIPLogs](/powershell/module/azureinformationprotection/Export-AIPLogs)
 
 - [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)
+
+- [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob)
+
+- [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository)
 
 - [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
 
@@ -493,6 +496,8 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 - [导入-Set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)
 
+- [MIPNetworkDiscovery](/powershell/module/azureinformationprotection/set-mipnetworkdiscovery)
+
 - [导入-MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/Import-MIPNetworkDiscoveryConfiguration)
 
 - [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
@@ -503,6 +508,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
 
+- [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob)
+
+- [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository)
+
 - [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/Set-MIPNetworkDiscoveryConfiguration)
 
 - [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
@@ -512,6 +521,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 - [MIPNetworkDiscovery](/powershell/module/azureinformationprotection/Start-MIPNetworkDiscovery)
 
 - [停止-AIPScan](/powershell/module/azureinformationprotection/Stop-AIPScan)
+
+- [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob)
+
+- [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 

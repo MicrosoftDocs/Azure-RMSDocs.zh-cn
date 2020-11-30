@@ -13,11 +13,11 @@ ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
 ms.openlocfilehash: c3292782a3a824db1166e255be3935978c8b8ce9
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566084"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316392"
 ---
 # <a name="running-the-azure-information-protection-classic-scanner"></a>运行 Azure 信息保护经典扫描程序
 
