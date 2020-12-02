@@ -8,11 +8,11 @@ ms.date: 09/15/2020
 ms.author: tommos
 ms.custom: has-adal-ref
 ms.openlocfilehash: b0aeeabeabf6dc4c3bba39ea2f58374b98bac491
-ms.sourcegitcommit: 4815ab96e4596303af297ae4c13fb6d7083b21e9
+ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044369"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96316732"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C#)
 
