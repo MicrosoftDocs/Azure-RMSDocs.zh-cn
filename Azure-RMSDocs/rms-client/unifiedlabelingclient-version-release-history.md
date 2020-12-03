@@ -4,7 +4,7 @@ description: 请参阅适用于 Windows 的 Azure 信息保护统一标签客户
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/30/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ce85af63a70bf6ee4119e5c5fb22a797fb27df16
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 8a37c13f9ad51e2aef03c8e6377633c72f83f063
+ms.sourcegitcommit: 6e50dc8c21be370ce22ff7cbafdbed8c9f3c988f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316783"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96544634"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -121,6 +121,9 @@ ms.locfileid: "96316783"
 - 支持以斜杠 (结尾的 [SharePoint 本地](../deploy-aip-scanner-prereqs.md#sharepoint-requirements) 路径 **/**) 
 - 提高了 SharePoint 扫描 [速度](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance)
 - 支持在扫描 SharePoint 服务器时 [避免超时](clientv2-admin-guide-customizations.md#avoid-scanner-timeouts-in-sharepoint) 。
+
+### <a name="known-issues"></a>已知问题
+在此公共预览版中，扫描程序不支持应用带有 [DKE 保护](../plan-implement-tenant-key.md#double-key-encryption-dke-aip-unified-labeling-client-only) 的标签。
 
 ## <a name="version-28850"></a>版本2.8.85。0
 
