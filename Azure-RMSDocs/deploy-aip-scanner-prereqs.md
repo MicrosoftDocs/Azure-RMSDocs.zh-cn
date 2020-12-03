@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护统一标签扫描器的先
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/19/2020
+ms.date: 12/03/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a1833ca3bb60030414213076f68ca78ddb5534af
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: f426f62f071885932ad436735e5a1bfe8663fa2f
+ms.sourcegitcommit: 2b9ef3b97609dca6f6d64d78aff83e44d4aafc4d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316239"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96556019"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描程序的先决条件
 
@@ -26,7 +26,9 @@ ms.locfileid: "96316239"
 >[!NOTE]
 > 如果使用的是经典扫描程序，请参阅 [安装和部署 Azure 信息保护经典扫描器的先决条件](deploy-aip-scanner-prereqs-classic.md)。
 
-在安装 Azure 信息保护本地扫描器之前，请确保你的系统符合基本的 [Azure 信息保护要求](requirements.md)，以及特定于扫描程序的以下要求：
+在安装 Azure 信息保护本地扫描器之前，请确保你的系统符合基本的 [Azure 信息保护要求](requirements.md)。
+
+此外，以下要求特定于扫描仪：
 
 - [Windows Server 要求](#windows-server-requirements)
 - [服务帐户要求](#service-account-requirements)
@@ -38,7 +40,7 @@ ms.locfileid: "96316239"
 - [文件路径要求](#file-path-requirements)
 - [使用情况统计信息要求](#usage-statistics-requirements)
 
-如果你无法满足表中的所有要求，因为你的组织策略禁止这些要求，请参阅 [备选配置](#deploying-the-scanner-with-alternative-configurations) 部分。
+如果你无法满足为扫描程序列出的所有要求，因为你的组织策略禁止了这些要求，请参阅 [备选配置](#deploying-the-scanner-with-alternative-configurations) 部分。
 
 在生产中部署扫描仪或测试多个扫描仪的性能时，请参阅 [SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。
 
