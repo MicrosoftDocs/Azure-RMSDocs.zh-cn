@@ -1,17 +1,17 @@
 ---
 title: 结构 ApplicationInfo
-description: 与 Microsoft 信息保护 (MIP) SDK 关联的文档结构。
+description: 记录 ApplicationInfo 结构
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: reference
 ms.author: mbaldwin
 ms.date: 09/21/2020
-ms.openlocfilehash: 4971d7cf0891308733dafd0dc64d58c02343f1e4
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.openlocfilehash: d56fdcaccf67f46b2d6632ec6586e2b140717696
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565015"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535580"
 ---
 # <a name="struct-applicationinfo"></a>结构 ApplicationInfo 
 包含应用程序特定信息的结构。

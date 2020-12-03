@@ -14,12 +14,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: dev, has-adal-ref
-ms.openlocfilehash: 2fc3fecd33d6e461156e8c608eae91dee17dff2b
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: e0dedeffe2f10b1d312a865acdc64a1248144776
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566365"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536056"
 ---
 # <a name="developing-your-application"></a>开发应用程序
 
@@ -51,7 +51,7 @@ ms.locfileid: "95566365"
 >记录 BPOSId（租户 ID）值。 在后续步骤中需要用到。
 
 *示例输出* 
- ![cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
+ ![Get-aadrmconfiguration cmdlet 输出](../media/develop/output-of-Get-AadrmConfiguration.png)
 
 - 从服务断开连接：`Disconnect-AipServiceService`
 
@@ -67,12 +67,12 @@ ms.locfileid: "95566365"
   > 记录对称密钥和应用程序主体 ID 以供将来使用。
 
 *示例输出* 
- ![cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
+ ![NewMsolServicePrincipal cmdlet 输出](../media/develop/output-of-NewMsolServicePrincipal.png)
 
 - 将应用程序主体 ID、对称密钥和租户 ID 添加到应用程序的 App.config 文件。
 
 *示例 App.config 文件* 
- ![cmdlet 输出](../media/develop/example-App.config-file.png)
+ ![示例 App.config 文件](../media/develop/example-App.config-file.png)
 
 - 在 Azure 中注册应用程序后，你就可以使用 *ClientID* 和 *RedirectUri*。 有关如何在 Azure 中注册应用程序以及获取 *ClientID* 和 *RedirectUri* 的详细信息，请参阅 [为 ADAL 身份验证配置 Azure RMS](adal-auth.md)。
 
