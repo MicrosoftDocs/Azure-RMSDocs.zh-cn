@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f426f62f071885932ad436735e5a1bfe8663fa2f
-ms.sourcegitcommit: 2b9ef3b97609dca6f6d64d78aff83e44d4aafc4d
+ms.openlocfilehash: e9817c21662ed6a606a30b851aff97bbbc5bb863
+ms.sourcegitcommit: d519d0326756a389d543b6cd0e607ef5d1d087b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96556019"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "96740599"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描程序的先决条件
 
@@ -57,7 +57,8 @@ ms.locfileid: "96556019"
 |**磁盘空间**     |10 GB 可用空间 (临时文件的平均) 。 </br></br>扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 </br></br>借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。
 |**操作系统**     |-Windows Server 2019 </br>- Windows Server 2016 </br>- Windows Server 2012 R2 </br></br>**注意：** 对于非生产环境中的测试或评估目的，还可以使用 [Azure 信息保护客户端支持](requirements.md#client-devices)的任何 Windows 操作系统。
 |**网络连接**     | 扫描仪计算机可以是物理计算机或虚拟计算机，与要扫描的数据存储进行快速可靠的网络连接。 </br></br> 如果由于组织策略而无法建立 internet 连接，请参阅 [用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。 </br></br>否则，请确保此计算机具有 internet 连接，允许通过 HTTPS (端口 443) 的以下 Url：</br><br />-  \*。 aadrm.com <br />-  \*。 azurerms.com<br />-  \*。 informationprotection.azure.com <br /> -informationprotection.hosting.portal.azure.net <br /> - \*。 aria.microsoft.com <br />-  \*。 protection.outlook.com |
-| ||
+|**NFS 共享** |若要支持对 NFS 共享的扫描，必须将 NFS 服务部署在扫描仪计算机上。 <br><br>在计算机上，导航到 " **windows 功能 (打开或关闭") 设置 "** 对话框中的" windows 功能 "，然后选择以下项：" **nfs 服务**""  >  **管理工具**"和" **nfs 客户端**"。 |
+| | |
 
 ## <a name="service-account-requirements"></a>服务帐户要求
 

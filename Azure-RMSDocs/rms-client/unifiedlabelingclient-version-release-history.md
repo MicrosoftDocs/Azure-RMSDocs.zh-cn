@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8a37c13f9ad51e2aef03c8e6377633c72f83f063
-ms.sourcegitcommit: 6e50dc8c21be370ce22ff7cbafdbed8c9f3c988f
+ms.openlocfilehash: af8998f4a96649c6a14522c5f5beb025527ec556
+ms.sourcegitcommit: d519d0326756a389d543b6cd0e607ef5d1d087b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96544634"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "96740616"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -104,6 +104,16 @@ ms.locfileid: "96544634"
 ### <a name="support-for-nfs-repositories-in-content-scan-jobs"></a>内容扫描作业中的 NFS 存储库支持
 
 现在，除了 SMB 文件共享和 SharePoint 存储库外，还可以将 NFS 存储库添加到内容扫描作业。
+
+若要支持对 NFS 共享的扫描，必须在扫描仪计算机上部署 NFS 服务：
+
+1. 在计算机上，导航到 **Windows 功能 (打开或关闭 windows 功能) 设置 "** 对话框。
+
+1. 选择以下项： 
+
+    - **NFS 服务** 
+        - **管理工具**
+        - **NFS 客户端**。
 
 有关详细信息，请参阅 [创建内容扫描作业](../deploy-aip-scanner-configure-install.md#create-a-content-scan-job)。
 
