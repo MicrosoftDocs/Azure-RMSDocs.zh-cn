@@ -4,19 +4,19 @@ description: 管理员用于在企业网络上部署 Azure 信息保护统一标
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/19/2020
+ms.date: 12/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0cbb554d09d24b1403c24f52fd5215fdee71ab61
-ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
+ms.openlocfilehash: 7fabd12e3ca0dc08f8c5617b37252ac5adc22948
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95735042"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849668"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -66,7 +66,7 @@ ms.locfileid: "95735042"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-- Office 应用最小版本1805，从适用于企业的 Microsoft 365 应用程序构建9330.2078，或在向用户分配 Azure Rights Management Azure 信息保护的 azure Microsoft 365 商业版高级版时， (也称为 Azure 信息保护 for Office 365) 
+- Office 应用程序适用于 Microsoft 365 应用程序的 [支持版本的表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 应用程序 Microsoft 365 商业版或高级版，在向用户分配 azure Rights Management (也称为 Azure 信息保护 for Office 365) 
 - Microsoft 365 企业应用版
 - Office 专业增强版 2019
 - Office Professional Plus 2016

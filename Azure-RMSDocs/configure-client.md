@@ -5,19 +5,19 @@ author: mlottner
 ms.author: mlottner
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: abab1e8a35b1928dd752cd287dc20aebded9bb14
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: e19400a0901c62bd00f7cd965e23ea01c36be395
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565326"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849736"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
@@ -38,7 +38,7 @@ ms.locfileid: "95565326"
 
 有关适用于 Windows 的客户端的企业安装和配置，请参阅以下管理指南：
 
-- 统一标签客户端： [Azure 信息保护统一标签客户端管理员指南](./rms-client/clientv2-admin-guide.md)] (/rms-client/client-admin-guide.md) 
+- 统一标签客户端： [Azure 信息保护统一标签客户端管理员指南](./rms-client/clientv2-admin-guide.md)
 
 - 经典客户端： [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)
 

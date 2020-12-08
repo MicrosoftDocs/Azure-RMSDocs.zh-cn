@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 74f141054d177ccabea88f6521ebb2ba6a930be5
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 46ad00630997afd598d1476cba3c877e1a604864
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566312"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849770"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
@@ -124,7 +124,14 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”。
 
-此选项可用于使用 Exchange Online 的租户，并且可以在 web 上的 Outlook 中选择，作为 "Office 365 DLP" 操作的另一种权限保护选项，以及从 Outlook (最低版本1804（适用于企业的 Microsoft 365 应用）和最低1805版本[1804](/officeupdates/monthly-channel-2018#outlook-feature-updates-4) （如果你具有[支持 Azure RMS Microsoft 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)。 有关 Encrypt-Only 选项的详细信息，请参阅以下博客文章 Office 团队公告： [仅对 office 365 消息加密进行扩展](https://aka.ms/omefeb2018)。
+此选项可用于使用 Exchange Online 的租户，并可按如下所示进行选择：
+
+- **在 Outlook 网页上**
+- 邮件流规则的 **另一权限保护选项**
+- **作为 Office 365 DLP 操作**
+- 如果你具有 [支持 Azure RMS 的 Microsoft 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)，**请从 Outlook** 中获取 [Microsoft 365 应用按更新通道列出的支持版本](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本。 
+
+有关 Encrypt-Only 选项的详细信息，请参阅以下博客文章 Office 团队公告： [仅对 office 365 消息加密进行扩展](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除“另存为，导出”和“完全控制”以外的所有使用权限。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 
 

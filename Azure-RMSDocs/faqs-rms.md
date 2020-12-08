@@ -1,10 +1,10 @@
 ---
 title: Azure RMS 的常见问题解答 - AIP
 description: 有关 Azure 信息保护中数据保护服务 Azure Rights Management (Azure RMS) 的一些常见问题。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/16/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d5da3848ab1791a9cfe4ac00ae28193669190435
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 46d03db1a8e66b0e1753606a4a5e152047e43d22
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566016"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849719"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -88,8 +88,8 @@ Azure 信息保护上下文中出现 **自带密钥** (BYOK) 时，则表示应�
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>我对 Exchange 采用混合部署：Exchange Online 上存在一些用户，而其他用户则在 Exchange Server 上。Azure RMS 支持这种部署吗？
 绝对支持，而且很棒的是，用户能够在两种 Exchange 部署上无缝保护并使用受保护的电子邮件和附件。 对于此配置，[激活 Azure RMS](activate-service.md) 并[启用适用于 Exchange Online 的 IRM](/microsoft-365/enterprise/activate-rms-in-microsoft-365)，然后[部署并配置适用于 Exchange Server 的 RMS 连接器](deploy-rms-connector.md)。
 
-## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azurerms"></a>如果在我的生产环境中使用该保护，那么我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
-不会，你可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅 [解除授权和停用 Azure Rights Management](decommission-deactivate.md)。
+## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>如果在我的生产环境中使用该保护，那么我的公司是否就只能使用该解决方案？或者是否存在无法访问由 Azure RMS 进行保护的内容的风险？
+不会，可以始终控制并继续访问数据，即使你决定不再使用 Azure Rights Management 服务也是如此。 有关详细信息，请参阅 [解除授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>是否可以控制哪些用户能够使用 Azure RMS 来保护内容？
 是的，Azure Rights Management 服务具有针对这一应用场景的用户载入控制。 有关详细信息，请参阅[从 Azure 信息保护中激活保护服务](activate-service.md)一文中的为[分阶段部署配置加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)部分。
@@ -113,7 +113,7 @@ Azure 信息保护上下文中出现 **自带密钥** (BYOK) 时，则表示应�
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>能否将外部用户（公司外部人员）添加到自定义模板？
 
-是。 利用[保护设置](configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
+是的。 利用[保护设置](configure-policy-protection.md)（可在 Azure 门户中配置），可为组织外的用户和组甚至其他组织中的所有用户添加权限。 你可能会发现引用分步示例，[使用 Azure 信息保护保护文档协作](secure-collaboration-documents.md)很有用。 
 
 注意，如果具有 Azure 信息保护标签，必须先将自定义模板转换为标签，然后再在 Azure 门户中配置这些保护设置。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
@@ -163,7 +163,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 在保护文档之后跟踪文档：在安装了 Azure 信息保护客户端的 Windows 计算机上，使用 Office 应用程序或文件资源管理器将文档注册到文档跟踪站点。 有关说明，请参阅[跟踪和撤销文档](./rms-client/client-track-revoke.md)。 现在可以从 Mac 计算机使用 Web 浏览器访问文档跟踪站点 (https://track.azurerms.com) 来跟踪和撤销此文档。
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>当我打开受 RMS 保护的 Office 文档时，关联的临时文件是否也将受 RMS 保护？
-不能。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
+不是。 在此方案中，关联的临时文件不包含原始文档中的数据，而只包含文件打开时用户输入的内容。 与原始文件不同，临时文件明显不适合共享，将保留在设备上，受本地安全控件（例如 BitLocker 和 EFS）保护。
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>我正在寻找的一项功能似乎不适用于 SharePoint 受保护的库，是否支持对我的功能进行计划？
 目前，Microsoft SharePoint 通过使用受 IRM 保护的库来支持受 RMS 保护的文档，这些库不支持 Rights Management 模板、文档跟踪和一些其他功能。 有关详细信息，请参阅[Office 应用程序和服务](./office-apps-services-support.md)一文[中 Microsoft 365 和 sharepoint Server 中的 sharepoint](./office-apps-services-support.md#sharepoint-in-microsoft-365-and-sharepoint-server)部分。
@@ -184,9 +184,10 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>我们如何重新获取对由已离职员工保护的文件的访问权限？
 请使用[超级用户功能](configure-super-users.md)，对于受租户保护的所有文档和电子邮件，此功能会向授权用户授予完全控制使用权限。 超级用户可始终阅读此受保护的内容，并可根据需要移除保护或针对不同的用户进行重新保护。 根据需要，此相同功能可以让授权服务编写文件索引和检查文件。
 
+如果内容存储在 SharePoint 或 OneDrive 中，则管理员可以运行 [SensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedfile) cmdlet，以删除灵敏度标签和加密。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files#remove-encryption-for-a-labeled-document)。
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>在文档跟踪站点中测试吊销时，显式的消息提示人们仍可在 30 天内访问此文档—该时间段是否可配置？
 
-是。 该消息反映了此特定文件的[使用许可证](configure-usage-rights.md#rights-management-use-license)。
+是的。 该消息反映了此特定文件的[使用许可证](configure-usage-rights.md#rights-management-use-license)。
 
 如果撤销文件，仅在用户对 Azure Rights Management 服务进行身份验证时才会强制执行此操作。 因此，如果文件的使用许可证有效期为 30 天，且用户已经打开过文档，则该用户在使用许可证期间仍继续拥有该文档的访问权限。 使用许可证过期时，用户必须重新进行身份验证，此时由于文件被撤销，因此会拒绝用户访问。
 

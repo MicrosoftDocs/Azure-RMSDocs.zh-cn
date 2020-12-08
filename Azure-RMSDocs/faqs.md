@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务、Azure Rights Ma
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/09/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 36ef25b54fed8d73f33158f2c62670434c5d2f31
-ms.sourcegitcommit: 1086cf04a29bb12cdb25c1fd8429f93d423bcc69
+ms.openlocfilehash: d528c715b54c063a267694fb974ef685fe264ea3
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566501"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849753"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
@@ -158,7 +158,7 @@ Azure 信息保护 (AIP) 为组织的文档和电子邮件提供分类、标签�
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
-不能。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
+不是。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
 
 如果在未安装 Azure 信息保护策略的情况下安装经典客户端，客户端将自动在 [仅保护模式下](./rms-client/client-protection-only-mode.md)运行，这使用户可以应用 Rights Management 模板和自定义权限。 
 
@@ -182,11 +182,9 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 |---------|---------|
 |**支持的帐户类型**     | Microsoft 帐户不支持 Azure 信息保护的委派管理，即使这些帐户分配给列出的某个管理角色。         |
 |**载入控件**     |如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 <br /><br />例如，如果你配置了加入控制以便保护内容的能力限制为 *IT 部门* 组，则用于安装和配置 RMS 连接器的帐户必须是该组的成员。          |
-|**删除保护**     |  管理员无法自动删除受 Azure 信息保护保护的文档或电子邮件的保护。 <br /><br />只有被分配为超级用户的用户才可以删除保护，并且仅当启用超级用户功能时。 <br /><br />具有 Azure 信息保护管理权限的任何用户都可以启用超级用户功能，并将用户分配为超级用户，包括其自己的帐户。<br /><br />这些操作记录在管理员日志中。 <br /><br />有关详细信息，请参阅 [为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 
-       |
-|**迁移到统一的标签存储**      |  如果要将 Azure 信息保护标签迁移到统一的标签存储，请务必参阅标签迁移文档中的以下部分： <br />[支持统一标签平台的管理角色](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)。
-       |
-
+|**删除保护**     |  管理员无法自动删除受 Azure 信息保护保护的文档或电子邮件的保护。 <br /><br />只有被分配为超级用户的用户才可以删除保护，并且仅当启用超级用户功能时。 <br /><br />具有 Azure 信息保护管理权限的任何用户都可以启用超级用户功能，并将用户分配为超级用户，包括其自己的帐户。<br /><br />这些操作记录在管理员日志中。 <br /><br />有关详细信息，请参阅 [为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 <br><br>**提示：** 如果内容存储在 SharePoint 或 OneDrive 中，则管理员可以运行 [SensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedfile) cmdlet 以删除灵敏度标签和加密。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files#remove-encryption-for-a-labeled-document)。 |
+|**迁移到统一的标签存储**      |  如果要将 Azure 信息保护标签迁移到统一的标签存储，请务必参阅标签迁移文档中的以下部分： <br />[支持统一标签平台的管理角色](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)。 |
+| | |
 ### <a name="azure-information-protection-administrator"></a>Azure 信息保护管理员
 
 此 Azure Active Directory 管理员角色允许管理员配置 Azure 信息保护，但不能配置其他服务。 
@@ -253,7 +251,7 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure 信息保护是否支持本地和混合方案？
 
-是。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
+是的。 尽管 Azure 信息保护是基于云的解决方案，但它可对存储在本地和云中的文档和电子邮件进行分类、标签设置和保护。
 
 如果你有 Exchange Server、SharePoint Server 和 Windows 文件服务器，请使用以下方法中的一种或两种：
 
