@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2461aed992c46859191a118db72c97ca90815315
-ms.sourcegitcommit: 1e028d89d179d0ef81851d969f5d0dc90b8dd45c
+ms.openlocfilehash: f25b020a72a48e79b24840a597aefd4cc9e594af
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245107"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849689"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -123,8 +123,8 @@ ms.locfileid: "93245107"
 ### <a name="microsoft-365-app-support"></a>Microsoft 365 应用支持
 
 包括： 
-- Microsoft 365 商业应用版或 Microsoft 365 商业高级版中的 Office 应用最低版本 1805（内部版本 9330.2078）。 仅当用户分配有 Azure Rights Management（亦称为“适用于 Microsoft 365 商业高级版的 Azure 信息保护”）许可证时才支持。
-- Microsoft 365 企业应用版。
+- Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
+- Microsoft 365 企业应用版
 
 ### <a name="viewing-protected-documents-in-office-for-the-web"></a>在 Office 网页版中查看受保护的文档
 
@@ -132,7 +132,7 @@ ms.locfileid: "93245107"
 
 ### <a name="web-browser-support"></a>Web 浏览器支持
 
-- 使用 [具有新功能的 Microsoft 365 邮件加密](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)保护 [Office 附件](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)时，Web 浏览器支持 **Word、Excel 和 PowerPoint文件** 。
+- 使用 [具有新功能的 Microsoft 365 邮件加密](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)保护 [Office 附件](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)时，Web 浏览器支持 **Word、Excel 和 PowerPoint文件**。
 
 - 对于电子邮件，仅在以下情况下才支持 Web 浏览器：
 
@@ -170,7 +170,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 以下 Office 客户端套件支持使用 Azure Rights Management 服务保护 Windows 计算机上的文件和电子邮件：
 
-- **Office 应用最低版本 1805，Microsoft 365 商业应用版或 Microsoft 365 商业高级版中的内部版本 9330.2078** ，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
+- Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
 
 - Microsoft 365 企业应用版
 
@@ -221,11 +221,11 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 Azure 信息保护 (AIP) 客户端包括两个版本，并分别为这两个版本提供了指南，一个面向管理员，一个面向用户：
 
-- **统一标记客户端** ：
+- **统一标记客户端**：
     - [管理员指南](./rms-client/clientv2-admin-guide.md)
     - [用户指南](./rms-client/clientv2-user-guide.md)
 
-- **经典客户端** ：
+- **经典客户端**：
     - [管理员指南](./rms-client/client-admin-guide.md)
     - [用户指南](./rms-client/client-user-guide.md)
 

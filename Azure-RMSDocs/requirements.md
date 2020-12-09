@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3d90fdf263c15f80e23229bba427cb8d2b68f74e
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: d750edb4aef5bf0b2c546598bb3007f609e50cf4
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316664"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849686"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -138,9 +138,7 @@ ms.locfileid: "96316664"
 
 Azure 信息保护客户端可使用以下任意 Office 版本中的 Microsoft Word、Excel、PowerPoint 和 Outlook 对文档和电子邮件进行标记和保护：
 
-- Microsoft 365 商业应用版或 Microsoft 365 商业高级版中的 Office 应用最低版本 1805（内部版本 9330.2078）。 
-
-    仅当用户分配有 Azure Rights Management（亦称为“Microsoft 365 Azure 信息保护”）许可证时，才支持此版本。
+- Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
 
 - Microsoft 365 企业应用版
 
