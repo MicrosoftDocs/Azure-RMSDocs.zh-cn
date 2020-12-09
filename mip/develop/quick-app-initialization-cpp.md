@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 3f74606e8f5caf4b4d0d480ba36830129249c9cf
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: cc8b2f4d969e24451110a6838ce10c8eea39abd9
+ms.sourcegitcommit: 54e742defb0b8dca35047b34498ec66e61602fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91588302"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96577042"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++) 
 
@@ -245,7 +245,6 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 2. 删除生成的 `main()` 实现。 请勿删除在项目创建期间 (#pragma, #include) 由 Visual Studio 生成的预处理程序指令  。 在任何预处理程序指令之后追加以下代码：
 
    ```cpp
-   #include "mip/mip_init.h"
    #include "mip/mip_context.h"  
    #include "auth_delegate.h"
    #include "consent_delegate.h"
