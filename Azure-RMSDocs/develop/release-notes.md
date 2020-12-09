@@ -13,12 +13,12 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 ms.custom: has-adal-ref
-ms.openlocfilehash: 63beff811a9a9d6d08cfb7d2119c976e91097109
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 65e7e70d6cd144905c37d0c20c05f5841f310c42
+ms.sourcegitcommit: 03fef7cf0a7687962bfd3f0cd221541520f4a317
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566405"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862507"
 ---
 # <a name="whats-new-and-release-notes"></a>新增功能和发行说明
 
@@ -158,7 +158,7 @@ ms.locfileid: "95566405"
 
 -   在 Amazon® Kindle 设备上使用示例应用查看 .ptxt 附件时，必须先下载该文件，然后才能查看。
 
-    **解决方案** - 这是已知问题，将在后续版本中解决。
+    **解决方案** -这是一个已知问题，不太可能会得到解决。 建议改为调查 [Microsoft 信息保护 SDK](/information-protection/develop/) 。
 
 -   如果允许多个实例，则使用 SDK 的应用程序可能会崩溃。
 
@@ -197,13 +197,13 @@ ms.locfileid: "95566405"
 
 
 
-**注意**   IOS API 不支持 MDI 应用程序。
+**注意**：我们的 iOS API 不支持 MDI 应用程序。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
 **所有平台**
 
-**问**：我在保护工作流中未看到 **自定义权限** 选择 UI。 原因是什么？
+**问**：我在保护工作流中未看到 **自定义权限** 选择 UI。 为什么？
 
 **答**：这是已知问题，将在后续版本中解决。
 
@@ -211,7 +211,7 @@ ms.locfileid: "95566405"
 
 **答**：若要请求用于 Azure AD RMS 测试组织的凭据，请发送电子邮件至 <rmcstbeta@microsoft.com>。
 
-**问**：我在文档此处未看到任何有关测试层次结构的讨论。 原因是什么？
+**问**：我在文档此处未看到任何有关测试层次结构的讨论。 为什么？
 
 **答**：新的 AD RMS SDK 不存在任何测试层次结构概念。 你将始终使用生产层次结构。
 
@@ -234,7 +234,7 @@ ms.locfileid: "95566405"
 
 **答**：包含 iOS 7 及更高版本的 Xcode 5.0。
 
-**问**：我对某个操作调用了 cancel() 方法，但仍然收到了操作已完成的通知。 原因是什么？
+**问**：我对某个操作调用了 cancel() 方法，但仍然收到了操作已完成的通知。 为什么？
 
 **问**：并非所有操作都可以取消，因此最好在可能的情况下执行取消操作。
 
