@@ -1,17 +1,17 @@
 ---
 title: 快速入门 - 使用保护 API 的 MIP SDK C++ 客户端的初始化
-description: 一个演示如何为使用保护 API 的 Microsoft 信息保护 (MIP) SDK 客户端应用程序编写初始化逻辑的快速入门。
+description: 本快速入门介绍如何为使用保护 API 的 Microsoft 信息保护 (MIP) SDK 客户端应用程序编写初始化逻辑 (C++)
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: 063db1a923e66f108583b17ee998549511265bee
-ms.sourcegitcommit: dc50f9a6c2f66544893278a7fd16dff38eef88c6
+ms.openlocfilehash: 1dd25f0239d158c6c88b5b0c96d437fae38ff844
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88564130"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535954"
 ---
 # <a name="quickstart-client-application-initialization-for-protection-apis-c"></a>快速入门：保护 API (C++) 的客户端应用程序初始化
 

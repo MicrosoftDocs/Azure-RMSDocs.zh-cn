@@ -1,6 +1,6 @@
 ---
 title: 快速入门 - 使用 C# MIP SDK 保护 API 加密/解密文本
-description: 快速入门介绍如何使用 Microsoft 信息保护 SDK .NET 包装器，通过保护模板来加密和解密临时文本。
+description: 本快速入门介绍如何使用 Microsoft 信息保护 SDK .NET 包装器，通过保护模板来加密和解密临时文本 (C#)
 services: information-protection
 author: Pathak-Aniket
 ms.service: information-protection
@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
 ms.custom: has-adal-ref
-ms.openlocfilehash: 85c3575aad9315155b2fbfaad991e586435edb37
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 5fae5837ab26c4fce20ac120293eff3823dd9b70
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972146"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535818"
 ---
 # <a name="quickstart-encryptdecrypt-text-using-mip-sdk-c"></a>快速入门：使用 MIP SDK (C#) 加密/解密文本
 
@@ -98,9 +98,9 @@ ms.locfileid: "82972146"
 
 生成和测试客户端应用程序。
 
-1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
+1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
   ```console
    Original content: My secure text

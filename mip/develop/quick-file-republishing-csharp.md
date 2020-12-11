@@ -1,17 +1,17 @@
 ---
 title: 操作说明 - 重新发布场景（C#）
-description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布。
+description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布 (C#)。
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 05/01/2020
 ms.author: v-anikep
-ms.openlocfilehash: c72d284363c1ca988692d18b7007a88c88d808b5
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: c3044feb585e1e3d843f906711644f2ae861b1b5
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421105"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535869"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-republishing-quickstart-c"></a>Microsoft 信息保护 SDK - 文件 API 重新发布快速入门 (C#)
 
@@ -108,7 +108,7 @@ if (protectionHandler.AccessCheck("Edit"))
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
   ```console
     Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6

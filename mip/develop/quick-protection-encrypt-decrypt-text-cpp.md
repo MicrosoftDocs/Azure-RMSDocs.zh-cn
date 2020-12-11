@@ -1,18 +1,18 @@
 ---
 title: 快速入门 - 使用 C++ MIP SDK 保护 API 加密/解密文本
-description: 快速入门介绍如何使用 C++ Microsoft 信息保护 SDK 保护 API，通过保护模板来加密和解密临时文本。
+description: 本快速入门介绍如何使用 C++ Microsoft 信息保护 SDK 保护 API，通过保护模板来加密和解密临时文本 (C++)
 services: information-protection
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: 24d52a73620a7f186c425532f5132cac2a46f405
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.openlocfilehash: 1258bfcd6c47611b439a29406ed0e78b644a5803
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766331"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535835"
 ---
 # <a name="quickstart-encryptdecrypt-text-using-mip-sdk-c"></a>快速入门：使用 MIP SDK (C++) 加密/解密文本
 
@@ -188,13 +188,13 @@ ms.locfileid: "81766331"
    | 占位符 | 值 |
    |:----------- |:----- |
    | \<sample-text\> | 要保护的示例文本，例如：`"cipher text"`。 |
-   | \<Template-Id\> | 要用于保护文本的模板 ID。 例如：`"bb7ed207-046a-4caf-9826-647cff56b990"` |
+   | \<Template-Id\> | 要用于保护文本的模板 ID。 例如： `"bb7ed207-046a-4caf-9826-647cff56b990"` |
   
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
 生成和测试客户端应用程序。
 
-1. 使用 Ctrl+Shift+B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
+1. 使用 Ctrl+Shift+B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
 2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如先前在“列出保护模板”快速入门中采取的方式那样，每次使用提供的 $authority 和 $resourceUrl 值运行 PowerShell 脚本以获取令牌。
 

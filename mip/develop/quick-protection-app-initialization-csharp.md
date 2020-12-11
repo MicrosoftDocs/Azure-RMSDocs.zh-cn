@@ -1,17 +1,17 @@
 ---
 title: 快速入门 - 客户端应用程序初始化 - 保护 API (C#)
-description: 一个演示如何为 Microsoft 信息保护 (MIP) SDK - 保护 API C# 客户端应用程序编写初始化逻辑的快速入门。
+description: 本快速入门介绍如何为 Microsoft 信息保护 (MIP) SDK - 保护 API C# 客户端应用程序编写初始化逻辑 (C#)
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
 ms.author: v-anikep
-ms.openlocfilehash: 6222326e569d03fbb208d42aacd7efb7ab406a78
-ms.sourcegitcommit: f54920bf017902616589aca30baf6b64216b6913
+ms.openlocfilehash: 0f8ed60420b5a0c4fcc0f8264d54f696f5c439a2
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81766365"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535886"
 ---
 # <a name="quickstart-client-application-initialization-for-protection-apis-c"></a>快速入门：保护 API (C#) 的客户端应用程序初始化
 
@@ -63,7 +63,7 @@ ms.locfileid: "81766365"
 
 3. 托管包装器包含静态类 `Microsoft.InformationProtection.MIP`，用于初始化、创建 `MipContext`、加载配置文件和发布资源。 若要为文件 API 操作初始化包装器，请调用 `MIP.Initialize()`，同时传入 `MipComponent.Protection`，以加载保护操作所需的库。
 
-4. 在 Program.cs 的 `Main()` 中添加以下内容，将 \<application-id\> 替换为之前创建的、Azure AD 应用程序注册的 ID   。
+4. 在 Program.cs 的 `Main()` 中添加以下内容，将 \<application-id\> 替换为之前创建的、Azure AD 应用程序注册的 ID。
 
 ```csharp
 using System;
@@ -157,8 +157,8 @@ namespace mip_sdk_dotnet_quickstart
 
    | 占位符 | 值 | 示例 |
    |:----------- |:----- |:--------|
-   | \<应用程序 ID\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<友好名称\> | 用户定义的应用程序友好名称。 | AppInitialization |
+   | \<application-id\> | 分配给在“MIP SDK 安装和配置”中注册的应用程序的 Azure AD 应用程序 ID（2 个实例）。  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<friendly-name\> | 用户定义的应用程序友好名称。 | AppInitialization |
 
 
 4. 现在构建应用程序的最终版本并解决任何错误。 你的代码应能成功生成。

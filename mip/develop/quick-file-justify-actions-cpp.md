@@ -1,17 +1,17 @@
 ---
 title: 如何降级/删除需要理由的标签 (C++)
-description: 本文可帮助你了解如何降级或删除需要理由的标签。
+description: 本文可帮助你了解如何降级或删除需要理由的标签 (C++)。
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/14/2020
 ms.author: v-anikep
-ms.openlocfilehash: 96bd94398c2a5c0bbe2cd87c12ec8e6a0af7e18b
-ms.sourcegitcommit: 84b45c949d85a7291c088a050d2a66d356fc9af2
+ms.openlocfilehash: dd02fe709c0fc946ba7bb5d0c5fec82a0688540c
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "87135668"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96536005"
 ---
 # <a name="microsoft-information-protection-sdk-file-api---action-justification-for-lowering-a-sensitivity-label-on-a-file-c"></a>Microsoft 信息保护 SDK 文件 API - 降低文件上敏感度标签的级别的操作理由 (C++)
 

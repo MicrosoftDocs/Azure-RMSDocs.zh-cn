@@ -1,17 +1,17 @@
 ---
 title: 操作说明 - 降级/删除需要理由的标签 (C#)
-description: 本文可帮助你了解如何降级或删除需要理由的标签。
+description: 本文可帮助你了解如何降级或删除需要理由的标签 (C#)。
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 05/01/2020
 ms.author: v-anikep
-ms.openlocfilehash: 666b0c7fdbc483f638f76def37ec3082c9eb7377
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 9543934addfbd7d2b897f420e9178513ffc0c639
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316511"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535971"
 ---
 # <a name="microsoft-information-protection-sdk-file-api---action-justification-for-lowering-a-sensitivity-label-on-a-file-c"></a>Microsoft 信息保护 SDK 文件 API - 降低文件上敏感度标签的级别的操作理由 (C#)
 

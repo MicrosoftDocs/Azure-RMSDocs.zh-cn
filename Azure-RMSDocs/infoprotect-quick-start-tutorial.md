@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c8ace8c73584cdd6eb0cfe6652d944e1b95f46d8
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 37638bfbc47a4a4d075114540ec65ea5d6372a30
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91428814"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849821"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
@@ -60,7 +60,7 @@ ms.locfileid: "91428814"
 
 4. 你已从下列类别之一登录到 Office 应用：
     
-    - Office 应用最低版本 1805，Microsoft 365 商业应用版或 Microsoft 365 商业高级版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证。
+    - Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
     
     - Microsoft 365 企业应用版
     
@@ -177,7 +177,7 @@ ms.locfileid: "91428814"
     
     ![Azure 信息保护教程 - 信用卡条件摘要](./media/step2-see-condition.png)
 
-11. 对于**选择应用此标签的方式**：保留默认设置“推荐”，并且不要更改默认策略提示。 
+11. 对于 **选择应用此标签的方式**：保留默认设置“推荐”，并且不要更改默认策略提示。 
 
 12. 在“添加备注以供管理员使用”框中，键入“仅用于测试目的”。
 

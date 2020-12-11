@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: dbadf410696d6d712be12d9df6d91aaec9e32c48
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: e21a19d44c287de326c7bcd2425b94bba9b984ef
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503581"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849804"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>快速入门：为用户配置标签以便轻松保护包含敏感信息的电子邮件
 
@@ -44,11 +44,11 @@ ms.locfileid: "94503581"
 
 |要求  |说明  |
 |---------|---------|
-|支持订阅     |  你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。 </br></br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
-|AIP 已添加到 Azure 门户    |  已将“Azure 信息保护”窗格添加到 Azure 门户，并确认已激活保护服务。 </br></br>有关详细信息，请参阅[快速入门：在 Azure 门户中开始](quickstart-viewpolicy.md)。       |
+|支持订阅     |  你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的订阅。 <br><br>如果没有上述任一订阅，可以为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
+|AIP 已添加到 Azure 门户    |  已将“Azure 信息保护”窗格添加到 Azure 门户，并确认已激活保护服务。 <br><br>有关详细信息，请参阅[快速入门：在 Azure 门户中开始](quickstart-viewpolicy.md)。       |
 |要配置的现有 Azure 信息保护标签     | 使用其中一个默认标签，或者使用已创建的标签。 有关详细信息，请参阅[快速入门：为特定用户创建新的 Azure 信息保护标签](quickstart-label-specificusers.md)。 |
-|经典客户端已安装    |   若要测试新标签，需要在计算机上安装经典客户端。 </br></br>2021 年 3 月将弃用 Azure 信息保护经典客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。  |
-|登录到 Office 应用的 Windows 计算机 |若要测试新标签，你将需要运行 Windows（最低为 Windows 7 Service Pack 1）的计算机。 </br></br>在此计算机上，登录到以下 Office 应用版本之一： </br>- Office 应用最低版本 1805，Microsoft 365 商业应用版中的内部版本 9330.2078 或 Microsoft 365 商业高级版，前提是已为你分配了 Azure Rights Management 的许可证。 </br>- Microsoft 365 企业应用版。 </br>- Office Professional Plus 2019。 </br>- Office Professional Plus 2016。</br>- Office Professional Plus 2013 Service Pack 1。 </br>- Office Professional Plus 2010 Service Pack 2。|
+|经典客户端已安装    |   若要测试新标签，需要在计算机上安装经典客户端。 <br><br>2021 年 3 月将弃用 Azure 信息保护经典客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。  |
+|登录到 Office 应用的 Windows 计算机 |若要测试新标签，你将需要运行 Windows（最低为 Windows 7 Service Pack 1）的计算机。 <br><br>在此计算机上，登录到以下 Office 应用版本之一： <br><br>- Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证。 <br>- Microsoft 365 企业应用版。 <br>- Office 专业增强版 2019。 <br>- Office 专业增强版 2016。<br>- Office 专业增强版 2013 Service Pack 1。 <br>- Office 专业增强版 2010 Service Pack 2。|
 | | |
 
 有关使用 Azure 信息保护的先决条件的完整列表，请参阅 [Azure 信息保护的要求](requirements.md)。

@@ -1,18 +1,18 @@
 ---
 title: 快速入门 - 使用 MIP SDK C# 包装器列出 Microsoft 信息保护 (MIP) 租户中的敏感度标签
-description: 一个演示如何使用 Microsoft 信息保护 SDK C# 包装器列出租户中的敏感度标签的快速入门。
+description: 本快速入门介绍如何使用 Microsoft 信息保护 SDK C# 包装器列出租户中的敏感度标签 (C#)。
 author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: a9e9a2d6534cc674f8bf697543e865a3596d457b
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: 607e721ad941901b83e37de7e20949da2a9ab936
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972180"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535937"
 ---
 # <a name="quickstart-list-sensitivity-labels-c"></a>快速入门：列出敏感度标签 (C#)
 

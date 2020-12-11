@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 06/13/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: 5edca37acb2f817173142c6638775c2e95bd7439
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 44636616cf410f0976a51afa4bd110e0531de85c
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91588234"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535546"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置
 
@@ -145,7 +145,7 @@ ms.locfileid: "91588234"
 
 在 Microsoft 365 订阅预配过程中，将创建关联的 Active Directory (Azure AD) 租户。 Azure AD 租户为 Microsoft 365 用户帐户和应用程序帐户提供标识和访问管理 。 应用程序需要应用程序帐户才能访问受保护的 API（例如 MIP API）。
 
-对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息  。 表示应用程序帐户的安全主体称为[*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。
+对于运行时的身份验证和授权，帐户由安全主体表示，该安全主体派生自帐户的标识信息  。 表示应用程序帐户的安全主体称为 [*服务主体*](/azure/active-directory/develop/developer-glossary#service-principal-object)。
 
 在 Azure AD 中注册应用程序帐户以用于快速入门和 MIP SDK 示例：
 
@@ -177,7 +177,7 @@ ms.locfileid: "91588234"
 
 完成后，应用程序注册和 API 权限应如下面的示例所示：
 
-   [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
+   [![Azure AD 应用注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用权限](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
 
 要详细了解如何向注册添加 API 和权限，请参阅[配置客户端应用程序以访问 Web API](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。
 
@@ -204,7 +204,7 @@ ms.locfileid: "91588234"
    - 公司应用程序名称
    - 应用程序的简要描述
    - Azure 租户 ID 
-   - 应用程序的*应用程序 ID*
+   - 应用程序的 *应用程序 ID*
    - 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
 3. 收到你的表格后，我们会将用于数字签名的最终 IPIA 链接发送给你。 你在协议上签名后，协议将由相应的 Microsoft 客户代表签名，协议就此完成。

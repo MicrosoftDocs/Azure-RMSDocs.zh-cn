@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 2f5a9778ecd75b124f0d03e21217f5edab0c8fb1
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 1a85f4205ff4322d014a8d40daa19968b3554fa2
+ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503428"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96849787"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>教程：配置协同工作的 Azure 信息保护策略设置
 
@@ -61,7 +61,7 @@ ms.locfileid: "94503428"
 
 4. 你已从下列类别之一登录到 Office 应用：
     
-    - Office 应用最低版本 1805，Microsoft 365 商业应用版或 Microsoft 365 商业高级版中的内部版本 9330.2078，前提是已为你分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证。
+    - Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
     
     - Microsoft 365 企业应用版。
     

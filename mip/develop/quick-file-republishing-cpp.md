@@ -1,17 +1,17 @@
 ---
 title: 操作说明 - 重新发布场景（C++）
-description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布。
+description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布 (C++)。
 author: Pathak-Aniket
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 05/01/2020
 ms.author: v-anikep
-ms.openlocfilehash: 49fac8fb748cec60abbe3af779670c928c1608a1
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: a9edf2faf674968edf0121b677a79be39ec86cc7
+ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421095"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96535852"
 ---
 # <a name="file-api-re-publishing-quickstart-c"></a>文件 API 重新发布快速入门 (C++)
 
