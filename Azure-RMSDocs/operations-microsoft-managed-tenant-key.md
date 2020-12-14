@@ -1,8 +1,8 @@
 ---
 title: Microsoft 托管 - AIP 租户密钥生命周期操作
 description: 当 Microsoft 管理 Azure 信息保护租户密钥（默认）时生命周期操作的相关信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 10/23/2019
 ms.topic: how-to
@@ -13,23 +13,27 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5121fb6acac65b5325376a047bfbfa40279619f0
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 92e2d69e26e8ca13e737426c345e3c3520a7bafe
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565344"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386434"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 托管：租户密钥生命周期操作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 如果由 Microsoft 管理 Azure 信息保护的租户密钥（默认），请阅读以下部分，获取与此拓扑相关的生命周期操作的详细信息。
 
 ## <a name="revoke-your-tenant-key"></a>撤消你的租户密钥
+
 取消 Azure 信息保护订阅时，Azure 信息保护会停止使用租户密钥，用户无需执行任何操作。
 
 ## <a name="rekey-your-tenant-key"></a>重新生成租户密钥
+
 重新生成密钥也称为滚动密钥。 执行此操作时，Azure 信息保护会停止使用现有租户密钥保护文档和电子邮件，而开始使用其他密钥。 策略和模板将立即进行重新签名，但对于使用 Azure 信息保护的现有客户端和服务，此转换将逐渐完成。 因此在一段时间内，有些新内容继续使用旧租户密钥进行保护。
 
 要重新生成密钥，必须配置租户密钥对象并指定要使用的备用密钥。 然后，以前使用的密钥将自动为 Azure 信息保护 标记为“已存档”。 此配置可确保通过使用此密钥进行保护的内容仍可访问。
@@ -50,7 +54,7 @@ ms.locfileid: "95565344"
 
 若要将其他密钥选为 Azure 信息保护的活动租户密钥，请使用 AIPService 模块中的 [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) cmdlet。 若要帮助你确定要使用的密钥，请使用 [AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet。 通过运行以下命令，可以确定为 Azure 信息保护租户自动创建的默认密钥：
 
-```ps
+```PowerShell
 (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
 ```
 
@@ -74,7 +78,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
 - Microsoft 客户支持服务 (CSS) 将 Azure 信息保护配置和在一个受密码保护的文件中加密的租户密钥发送给用户。 此文件的文件扩展名为 .tpd。 执行此操作时，CSS 首先通过电子邮件向你（即启动导出的人员）发送一个工具。 你必须从命令提示符处运行该工具，如下所示：
 
-    ```ps
+    ```PowerShell
     AadrmTpd.exe -createkey
     ```
 
@@ -82,7 +86,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 
     回复来自 CSS 的电子邮件，附加名称以 **PublicKey** 开头的文件。 CSS 随后向你发送一个作为 .xml 文件的 TPD 文件，该文件使用你的 RSA 密钥进行加密。 将此文件复制到与你最初运行 AadrmTpd 工具时的相同文件夹，并使用以 **PrivateKey** 开头的文件和来自 CSS 的文件再次运行该工具。 例如：
 
-    ```ps
+    ```PowerShell
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
 
@@ -101,6 +105,7 @@ Microsoft 负责备份你的租户密钥，无需你进行任何操作。
 如果导出租户密钥的原因是不再需要使用 Azure 信息保护，最佳做法是立即从 Azure 信息保护租户中停用 Azure Rights Management 服务。 不要拖延到收到租户密钥后再执行此操作，因为此预防措施可以帮助用户将不该得到租户密钥的人得到它后导致的后果降至最低。 相关说明请参阅[解除 Azure Rights Management 授权和停用 Azure Rights Management](decommission-deactivate.md)。
 
 ## <a name="respond-to-a-breach"></a>对违规行为做出响应
+
 如果没有违规响应流程，无论如何强大的安全系统都是不完整的。 你的租户密钥可能泄漏或失窃。 即便它得到了很好的保护，在当前这代密钥技术或当前的密钥长度和算法方面也可以找到一些漏洞。
 
 Microsoft 拥有一个专业团队，负责响应其产品和服务中的安全事件。 当收到某个事件的可信报告时，该团队将参与调查事件的范围、根本原因和缓解办法。 如果此事件影响到资产，Microsoft 将通过电子邮件通知你的租户的全局管理员。

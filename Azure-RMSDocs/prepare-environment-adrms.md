@@ -1,8 +1,8 @@
 ---
 title: 为 Azure RMS 和 AD RMS 准备环境
 description: 如果 Azure Rights Management 部署了 AD RMS，则为管理员提供指导。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: conceptual
@@ -13,23 +13,25 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f4bbef451f161f40d29a7a890161592db76373a5
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: 45423a4ac7fa81d5171e260d14170bae07428ad9
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "95566005"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386366"
 ---
-# <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>在 AD RMS 时为 Azure Rights Management 准备环境
+# <a name="prepare-the-environment-for-azure-rights-management-when-you-have-ad-rms"></a>在已有 AD RMS 的情况下为 Azure Rights Management 准备环境
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>*适用 **于**： [Azure 信息保护统一标签适用于 Windows 的客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > [!IMPORTANT]
 > 使用 Active Directory Rights Management Services (AD RMS) 时的指南
 
 如果 Azure Rights Management 服务已激活，且同时还要使用 AD RMS，这样的组合不兼容。 无需执行额外的步骤，一些计算机即可能会自动开始使用 Azure Rights Management 服务，并且还连接到你的 AD RMS 群集。 这种方案不受支持，且结果不可靠，因此请务必采取其他措施。 
 
-**若要检查是否已部署 AD RMS，请执行以下操作：**
+**若要检查是否已部署 AD RMS**：
 
 1. 虽然是可选的，但大多数 AD RMS 部署都会将服务连接点 (SCP) 发布到 Active Directory，以便域计算机能够发现 AD RMS 群集。 
     
