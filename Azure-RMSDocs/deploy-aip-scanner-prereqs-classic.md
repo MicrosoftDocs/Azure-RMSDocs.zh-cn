@@ -12,21 +12,21 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4c466fbbad6314a6b0ea0dddb85d07d359a42467
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: 71dd1d8119af741bbafb8173c63622f4e99146d4
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "95566529"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382626"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-classic-scanner"></a>安装和部署 Azure 信息保护经典扫描器的先决条件
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
+>
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记扫描器，请参阅 [统一标记扫描器先决条件](deploy-aip-scanner-prereqs.md)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。 
-> 
-> 如果使用的是统一标签扫描程序，请参阅 [安装和部署 Azure 信息保护统一标签扫描器的先决条件](deploy-aip-scanner-prereqs.md)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在安装 Azure 信息保护本地扫描器之前，请确保你的系统符合基本的 [Azure 信息保护要求](requirements.md)，以及特定于扫描程序的以下要求：
 
@@ -55,7 +55,7 @@ ms.locfileid: "95566529"
 |**处理器**     |4核处理器         |
 |**RAM**     |8 GB         |
 |**磁盘空间**     |10 GB 可用空间 (临时文件的平均) 。 </br></br>扫描程序需要足够的磁盘空间，才能为其扫描的每个文件（每个核心四个文件）创建临时文件。 </br></br>借助建议的 10GB 磁盘空间，4 核处理器可以扫描 16 个文件，每个文件的大小为 625MB。 
-|**操作系统**     |-Windows Server 2019 </br>- Windows Server 2016 </br>- Windows Server 2012 R2 </br></br>**注意：** 对于非生产环境中的测试或评估目的，还可以使用 [Azure 信息保护客户端支持](requirements.md#client-devices)的任何 Windows 操作系统。
+|**操作系统**     |-Windows Server 2019 </br>- Windows Server 2016 </br>- Windows Server 2012 R2 </br></br>**注意**：对于非生产环境中的测试或评估目的，你还可以使用 [Azure 信息保护客户端支持](requirements.md#client-devices)的任何 Windows 操作系统。
 |**网络连接**     | 扫描仪计算机可以是物理计算机或虚拟计算机，与要扫描的数据存储进行快速可靠的网络连接。 </br></br> 如果由于组织策略而无法建立 internet 连接，请参阅 [用备用配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。 </br></br>否则，请确保此计算机具有 internet 连接，允许通过 HTTPS (端口 443) 的以下 Url：</br><br />-  \*。 aadrm.com <br />-  \*。 azurerms.com<br />-  \*。 informationprotection.azure.com <br /> -informationprotection.hosting.portal.azure.net <br /> - \*。 aria.microsoft.com|
 | ||
 
@@ -73,7 +73,7 @@ ms.locfileid: "95566529"
 |---------|---------|
 |**本地登录** 用户权限分配     |需要安装和配置扫描程序，但不需要运行扫描。  </br></br>确认扫描程序可以发现、分类和保护文件后，可以从服务帐户中删除此权限。  </br></br>如果由于组织策略的原因而无法在短时间内授予此权限，请参阅 [使用替代配置部署扫描程序](#deploying-the-scanner-with-alternative-configurations)。         |
 |作为服务登录的用户权限分配。     |  扫描程序安装过程中会自动将此权限授予服务帐户，此权限是安装、配置和操作扫描程序所必需的。        |
-|**数据存储库的权限**     |- **文件共享或本地文件：** 授予 " **读取**"、" **写入**" 和 " **修改** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **SharePoint：** 授予 " **完全控制** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **发现模式：** 若要仅在发现模式下运行扫描程序， **读取** 权限就足够了。         |
+|**数据存储库的权限**     |- **文件共享或本地文件**：授予 " **读取**"、" **写入**" 和 " **修改** " 权限以扫描文件，然后按配置应用 "分类和保护"。  <br /><br />- **SharePoint**：授予 " **完全控制** " 权限以扫描文件，然后按配置应用分类和保护。  <br /><br />- **发现模式**：若要仅在发现模式下运行扫描程序，请 **参阅 "读取** " 权限。         |
 |**对于重新保护或删除保护的标签**     | 若要确保扫描程序始终可以访问受保护的文件，请将此帐户设置为 Azure 信息保护的 [超级用户](configure-super-users.md) ，并确保已启用超级用户功能。 </br></br>此外，如果已为分阶段部署实现了 [载入控件](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) ，请确保已配置的载入控件中包含该服务帐户。|
 | ||
 
@@ -101,7 +101,7 @@ ms.locfileid: "95566529"
 
 - **容量。** 有关容量指导，请参阅 [SQL Server 的存储要求和容量规划](#storage-requirements-and-capacity-planning-for-sql-server)。
 
-- **[不区分大小写排序规则](/sql/relational-databases/collations/collation-and-unicode-support)**
+- **不 [区分大小写的排序规则](/sql/relational-databases/collations/collation-and-unicode-support)。**
 
 > [!NOTE]
 > 为扫描程序指定自定义群集 (配置文件) 名称时，支持同一 SQL server 上的多个配置数据库。
@@ -227,7 +227,7 @@ Windows 10 和 windows Server 2016 支持使用以下 [组策略设置](/archive
 
     但是，配置扫描程序的用户帐户仍需要扫描程序配置数据库的 **db_owner** 角色。 如果在安装程序完成之前只有 Sysadmin 角色，请 [手动向用户帐户授予 db_owner 角色](#create-a-user-and-grant-db_owner-rights-manually)。
 
-- **你根本不能拥有 Sysadmin 角色**。 如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建数据库。 
+- **你根本不能拥有 Sysadmin 角色。** 如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建数据库。 
 
     对于此配置，必须将 **db_owner** 角色分配给以下帐户： 
 
@@ -296,9 +296,9 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 
 可以使用一个帐户来运行扫描程序服务，并使用另一个帐户对 Azure Active Directory 进行身份验证：
 
-- **对于 scanner 服务帐户，请** 使用本地 Windows 帐户或 Active Directory 帐户。
+- **对于 scanner 服务帐户**，请使用本地 Windows 帐户或 Active Directory 帐户。
 
-- **对于 Azure Active Directory 帐户，请**[指定并使用 set-aipauthentication 的 Token 参数](./rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)。
+- **对于 Azure Active Directory 帐户**，请 [指定并使用 set-aipauthentication 的 Token 参数](./rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)。
 
 #### <a name="restriction-your-labels-do-not-have-auto-labeling-conditions"></a>限制：标签没有自动标记条件
 
@@ -316,10 +316,10 @@ if not exists(select * from master.sys.server_principals where sid = SUSER_SID('
 
 有关扫描仪的概述，请参阅 [部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner-classic.md)。
 
-**详细信息：**
+**详细信息**：
 
 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
 
-您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs-classic.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅 [将 PowerShell 与 Azure 信息保护经典客户端配合使用](./rms-client/client-admin-guide-powershell.md)

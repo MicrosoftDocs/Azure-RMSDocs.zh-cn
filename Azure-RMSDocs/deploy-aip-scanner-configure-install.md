@@ -5,26 +5,25 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: de4c71b6cb7b6836d6757c7cd74bc21e30999a38
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: dbbf7c0644285c56ea34b57eb0b6b6a7894bc17f
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316562"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382864"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
-
->[!NOTE] 
-> 如果使用的是 AIP 经典扫描程序，请参阅 [安装和配置 Azure 信息保护经典扫描器](deploy-aip-scanner-configure-install-classic.md)。
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
+>
+>***相关的**： [仅限 AIP 统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关经典扫描程序，请参阅 [配置和安装 Azure 信息保护经典扫描程序](deploy-aip-scanner-configure-install-classic.md)。 *
 
 在开始配置和安装 Azure 信息保护扫描程序之前，请确保系统符合 [所需的先决条件](deploy-aip-scanner-prereqs.md)。 
 
@@ -106,25 +105,25 @@ ms.locfileid: "96316562"
 |先决条件  |说明  |
 |---------|---------|
 |**安装网络发现服务**     |   如果最近升级了扫描仪，可能仍需要安装网络发现服务。 <br /><br />运行 [**MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery) cmdlet 以启用网络扫描作业。      |
-|**Azure 信息保护分析**     | 请确保已启用 Azure 信息保护分析。 <br /><br />在 Azure 门户中，请参阅 **Azure 信息保护 > 管理 > 配置分析 (预览版) 。** <br /><br />有关详细信息，请参阅 [Azure 信息保护的中心报告 (公共预览版) ](reports-aip.md)。|
+|**Azure 信息保护分析**     | 请确保已启用 Azure 信息保护分析。 <br /><br />在 Azure 门户中，请参阅 **Azure 信息保护 > 管理 > 配置分析 (预览版)**。 <br /><br />有关详细信息，请参阅 [Azure 信息保护的中心报告 (公共预览版) ](reports-aip.md)。|
 | | |
 
 #### <a name="creating-a-network-scan-job"></a>创建网络扫描作业
 
-1. 登录到 Azure 门户，并中转到 " **Azure 信息保护"。** 在左侧的 " **扫描仪** " 菜单下，选择 " **网络扫描作业" (预览)** ![网络扫描作业 "图标](media/i-network-scan-jobs.png "网络扫描作业图标")。
+1. 登录到 Azure 门户，并中转到 " **Azure 信息保护**"。 在左侧的 " **扫描仪** " 菜单下，选择 " **网络扫描作业" (预览)** ![网络扫描作业 "图标](media/i-network-scan-jobs.png "网络扫描作业图标")。
     
 1. 在 " **Azure 信息保护-网络扫描作业** " 窗格上，选择 " **添加**" " ![添加图标](media/i-add.png "添加图标")"。
     
 1. 在 " **添加新的网络扫描作业** " 页上，定义以下设置：
         
-    |设置  |描述  |
+    |设置  |说明  |
     |---------|---------|
     |**网络扫描作业名称**     |为此作业输入有意义的名称。  此字段为必需字段。       |
     |**说明**     |   输入有意义的说明。      |
-    |选择群集     |从下拉列表中，选择要用于扫描已配置网络位置的群集。  <br /><br />**提示：** 选择群集时，请确保分配的群集中的节点可以通过 SMB 访问配置的 IP 范围。      |
-    |**配置要发现的 IP 范围**     |   单击定义 IP 地址或范围。 <br /><br />在 " **选择 IP 范围** " 窗格中，输入一个可选名称，然后输入范围的起始 ip 地址和结束 ip 地址。 <br /><br />**提示：** 若要仅扫描特定的 IP 地址，请在 " **起始 ip** " 和 " **结束 ip** " 字段中输入相同的 ip 地址。      |
+    |选择群集     |从下拉列表中，选择要用于扫描已配置网络位置的群集。  <br /><br />**提示**：选择群集时，请确保分配的群集中的节点可以通过 SMB 访问配置的 IP 范围。      |
+    |**配置要发现的 IP 范围**     |   单击定义 IP 地址或范围。 <br /><br />在 " **选择 IP 范围** " 窗格中，输入一个可选名称，然后输入范围的起始 ip 地址和结束 ip 地址。 <br /><br />**提示**：若要仅扫描特定 ip 地址，请在 " **起始 ip** " 和 " **结束 ip** " 字段中输入相同的 ip 地址。      |
     |设置计划     | 定义希望此网络扫描作业运行的频率。  <br /><br />如果选择 " **每周**"，则会出现 " **运行网络扫描作业** " 设置。 选择要在一周中的哪几天运行网络扫描作业。       |
-    |设置开始时间 (UTC)     |定义希望此网络扫描作业开始运行的日期和时间。 如果已选择每日、每周或每月运行该作业，则该作业将在所选的重复周期内的指定时间运行。 <br /><br />**注意**：将日期设置为该月结束时的任何日子。 如果选择 **31，** 则网络扫描作业不会在具有30天或更少30天的任何月份中运行。    |
+    |设置开始时间 (UTC)     |定义希望此网络扫描作业开始运行的日期和时间。 如果已选择每日、每周或每月运行该作业，则该作业将在所选的重复周期内的指定时间运行。 <br /><br />**注意**：将日期设置为该月结束时的任何日子。 如果选择 **31**，则网络扫描作业不会在具有30天或更少30天的任何月份中运行。    |
     | | |
 
 1. 选择 " **保存** 保存" ![图标](media/qs-tutor/save-icon.png "保存图标") 以保存所做的更改。
@@ -154,7 +153,7 @@ ms.locfileid: "96316562"
 
 1. 执行以下任一操作：
     
-    |选项  |描述  |
+    |选项  |说明  |
     |---------|---------|
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
@@ -185,10 +184,10 @@ ms.locfileid: "96316562"
  
 1. 对于此初始配置，请配置以下设置，然后选择 " **保存** "，但不要关闭窗格。
     
-    |设置  |描述  |
+    |设置  |说明  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略实施**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**策略强制执行**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
     |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 <br />- **要扫描的文件类型**：保留默认文件类型以 **排除** <br />- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
@@ -221,9 +220,9 @@ ms.locfileid: "96316562"
   
     如果为 **共享文档** 添加 SharePoint 路径：
     - 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 
-    例如：`http://sp2013/SharedDocuments`
+    例如： `http://sp2013/SharedDocuments`
     - 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 
-    例如：`http://sp2013/Documents/SalesReports`
+    例如： `http://sp2013/Documents/SalesReports`
     - 或者，仅指定 Sharepoint 的 **FQDN** ，例如， `http://sp2013` 在此 url 下 [发现和扫描特定 url 和副标题下的所有 Sharepoint 网站和子网站](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) 。 授予扫描器 **站点收集器审核员** 权限以启用此权限。 
     >
 
@@ -235,8 +234,8 @@ ms.locfileid: "96316562"
     |路径  |语法  |
     |---------|---------|
     |**根路径**     | `http://<SharePoint server name>` <br /><br />扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 <br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
-    |**特定 SharePoint 子网站或集合**     | 下列情况之一： <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
-    |**特定 SharePoint 库**     | 下列情况之一： <br />- `http://<SharePoint server name>/<library name>` <br />- `http://SharePoint server name>/.../<library name>`       |
+    |**特定 SharePoint 子网站或集合**     | 下列类型作之一： <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
+    |**特定 SharePoint 库**     | 下列类型作之一： <br />- `http://<SharePoint server name>/<library name>` <br />- `http://SharePoint server name>/.../<library name>`       |
     |**特定 SharePoint 文件夹**     | `http://<SharePoint server name>/.../<folder name>`        |
     | | |
     
@@ -264,20 +263,20 @@ ms.locfileid: "96316562"
 1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一节中指定的扫描仪群集名称： 
     
     ```PowerShell
-    Install-AIPScanner -SqlServerInstance <name> -Profile <cluster name>
+    Install-AIPScanner -SqlServerInstance <name> -Cluster <cluster name>
     ```
     
     例如，使用配置文件名称“欧洲”：
     
-    - 对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1 -Profile Europe`
+    - 对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1 -Cluster Europe`
     
-    - 对于命名实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER -Profile Europe`
+    - 对于命名实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER -Cluster Europe`
     
-    - 对于 SQL Server Express：`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS -Profile Europe`
+    - 对于 SQL Server Express：`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS -Cluster Europe`
     
     出现提示时，请提供扫描程序服务帐户的凭据 (\<domain\user name>) 和密码。
 
-1. 使用 **管理工具** 服务验证是否已安装该服务  >  **Services**。 
+1. 使用 **管理工具** 服务验证是否已安装该服务  >  。 
     
     已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行。
 
@@ -358,13 +357,13 @@ ms.locfileid: "96316562"
 
 对于有权访问 internet 的扫描仪，此用户帐户是使用 Set-AIPAuthentication 命令为 *DelegatedUser* 参数指定的帐户。
 
-**示例1：**  用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
+**示例 1**：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
 ```
 
-**示例2：** 用于扫描程序的 PowerShell 命令，用于保护 .xml 文件和 tiff 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
+**示例 2**：用于扫描程序的 PowerShell 命令，用于保护 .xml 文件和 tiff 文件以及 Office 文件和 PDF 文件，其中的标签策略命名为 "scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".xml", ".tiff")}
@@ -411,7 +410,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |描述  |
+|设置  |说明  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 " **自定义**"，然后选择要使用的标签       |
@@ -424,7 +423,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |描述  |
+|设置  |说明  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 **None**  |
@@ -447,11 +446,11 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 使用以下选项和指南来帮助优化扫描程序性能：
 
-|选项  |描述  |
+|选项  |说明  |
 |---------|---------|
 |**在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**     |  例如，将扫描仪计算机放在与扫描的数据存储相同的网络段中，或者在同一网段中放置。 <br /><br />由于要检查文件，扫描程序会将文件内容传输到运行 scanner 服务的计算机，因此网络连接的质量会影响扫描程序性能。 <br /><br />减少或消除传输数据所需的网络跃点还可以减少网络上的负载。      |
 |**确保扫描程序计算机具有可用的处理器资源**     | 检查文件内容并对文件进行加密和解密是处理密集型操作。 <br /><br />监视指定数据存储的典型扫描周期，以确定缺乏处理器资源是否会对扫描程序性能产生负面影响。        |
-|**安装扫描程序的多个实例** | 当你指定自定义群集 (配置文件的自定义群集) 名称时，Azure 信息保护扫描程序在相同的 SQL server 实例上支持多个配置数据库。 <br /><br />多个扫描仪还可以共享同一群集 (配置文件) ，从而缩短扫描时间。|
+|**安装扫描程序的多个实例** | 当你为扫描仪指定自定义群集名称时，Azure 信息保护扫描程序在相同的 SQL server 实例上支持多个配置数据库。 <br /><br />多个扫描程序还可以共享同一群集，从而缩短扫描时间。|
 |**检查备选配置用法** |在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。 <br/><br />如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。|
 | | |
 
@@ -538,10 +537,8 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 另请参阅： [部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。
 
-**详细信息：**
+**详细信息**：
 
 - 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
-
-- 您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 - 使用 PowerShell 以交互方式对台式计算机上的文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅 [将 PowerShell 与 Azure 信息保护统一标签客户端配合使用](./rms-client/clientv2-admin-guide-powershell.md)。

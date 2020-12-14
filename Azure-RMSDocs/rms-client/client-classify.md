@@ -1,8 +1,8 @@
 ---
-title: 分类-Azure 信息保护客户端
-description: 说明如何在使用适用于 Windows 的 Azure 信息保护客户端时对文档和电子邮件进行分类。
-author: mlottner
-ms.author: mlottner
+title: 分类-Azure 信息保护经典客户端
+description: 有关使用适用于 Windows 的 Azure 信息保护经典客户端时如何对文档和电子邮件进行分类的说明。
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 03/09/2019
 ms.topic: how-to
@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 1172551ed85e9aeb8a3de66b60eeecc66efc6277
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 0b96e2680239c87a350e4dee7dbf75db75cd8340
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565985"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385941"
 ---
-# <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-client"></a>用户指南：使用 Azure 信息保护客户端对文件或电子邮件进行分类
+# <a name="user-guide-classify-a-file-or-email-with-the-azure-information-protection-classic-client"></a>用户指南：使用 Azure 信息保护经典客户端对文件或电子邮件进行分类
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用于**： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-> [!NOTE]
+> [!TIP]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](client-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
 
 在 Office 桌面应用（Word、Excel、PowerPoint、Outlook）中创建和编辑文档和电子邮件时对其进行分类最为简单。 

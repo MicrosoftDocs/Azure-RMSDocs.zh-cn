@@ -5,28 +5,28 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 06/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dbfa9b0d7a4257f73071f2ff611a4c5fd2394bc0
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: ca7b5c157a2c6d6d1162963053828e895fba1fe8
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566305"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382813"
 ---
 # <a name="configuring-and-installing-the-azure-information-protection-classic-scanner"></a>配置和安装 Azure 信息保护经典扫描程序
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
-
->[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
 >
-> 如果使用的是统一标签扫描程序，请参阅 [安装和配置 Azure 信息保护统一标签扫描器](deploy-aip-scanner-configure-install.md)。
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [安装和配置 AIP 统一标记扫描器](deploy-aip-scanner-configure-install.md)。 *
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在开始配置和安装 Azure 信息保护扫描程序之前，请确保系统符合 [所需的先决条件](deploy-aip-scanner-prereqs.md)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "95566305"
     |部分  |设置  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" </br>- **要发现的信息类型**：仅更改为 **策略** </br>- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略实施**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的 **策略** 默认值 </br>- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**策略强制执行**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的 **策略** 默认值 </br>- 重新 **标记文件**：保持默认值为 **Off**        |
     |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 </br>- **要扫描的文件类型**：保留默认文件类型以 **排除** </br>- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
@@ -123,8 +123,8 @@ ms.locfileid: "95566305"
     |路径  |语法  |
     |---------|---------|
     |**根路径**     | `http://<SharePoint server name>` </br></br>扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 </br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
-    |**特定 SharePoint 子网站或集合**     | 下列情况之一： </br>- `http://<SharePoint server name>/<subsite name>` </br>- `http://SharePoint server name>/<site collection name>/<site name>` </br></br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
-    |**特定 SharePoint 库**     | 下列情况之一： </br>- `http://<SharePoint server name>/<library name>` </br>- `http://SharePoint server name>/.../<library name>`       |
+    |**特定 SharePoint 子网站或集合**     | 下列类型作之一： </br>- `http://<SharePoint server name>/<subsite name>` </br>- `http://SharePoint server name>/<site collection name>/<site name>` </br></br>需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
+    |**特定 SharePoint 库**     | 下列类型作之一： </br>- `http://<SharePoint server name>/<library name>` </br>- `http://SharePoint server name>/.../<library name>`       |
     |**特定 SharePoint 文件夹**     | `http://<SharePoint server name>/.../<folder name>`        |
     | | |
 
@@ -153,7 +153,7 @@ ms.locfileid: "95566305"
 
 1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一节中指定的扫描仪群集名称：
 
-    ```ps
+    ```PowerShell
     Install-AIPScanner -SqlServerInstance <name> -Profile <cluster name>
     ```
 
@@ -167,7 +167,7 @@ ms.locfileid: "95566305"
 
     出现提示时，请提供扫描程序服务帐户的凭据 (`\<domain\user name>`) 和密码。
 
-1. 使用 **管理工具** 服务验证是否已安装该服务  >  **Services**。
+1. 使用 **管理工具** 服务验证是否已安装该服务  >  。
 
     已安装的服务被命名为 Azure信息保护扫描程序，并被配置为使用你创建的扫描程序服务帐户运行。
 
@@ -187,7 +187,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 
     运行 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)，指定从上一步骤中复制的值：
 
-    ```ps
+    ```PowerShell
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application> -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application>
     ```
 
@@ -195,7 +195,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 
     例如：
 
-    ```powershell
+    ```PowerShell
     Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "+LBkMvddz?WrlNCK5v0e6_=meM59sSAn" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip
     Acquired application access token on behalf of the user
     ```
@@ -234,7 +234,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 
     或者，在 PowerShell 会话中运行以下命令：
 
-    ```ps
+    ```PowerShell
     Start-AIPScan
     ```
 
@@ -268,10 +268,10 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
     ![编辑扫描程序的注册表以应用保护](./media/editregistry-scanner.png)
 
     > [!NOTE]
-    > 作为图像文件，TIFF 文件支持本机保护，生成的文件扩展名为 **ptiff。**
+    > 作为图像文件，TIFF 文件支持本机保护，生成的文件扩展名为 **ptiff**。
     >
 
-    对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护。 受保护文件的生成文件扩展名为 **.pfile。**
+    对于不支持本机保护的文件，请将文件扩展名指定为新密钥，并为 PFile 获取常规保护。 受保护文件的生成文件扩展名为 **.pfile**。
 
 有关类似于支持本机保护，但必须在注册表中指定的文本和图像文件类型的列表，请参阅 [支持分类和保护的文件类型](./rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)。
 
@@ -317,8 +317,8 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置：
 
-- **基于内容标记文件：** 设置为 **Off**
-- **默认标签：** 设置为 " **自定义**"，然后选择要使用的标签
+- **基于内容标记文件**：设置为 "**关闭**"
+- **默认标签**：设置为 " **自定义**"，然后选择要使用的标签
 
 ### <a name="identify-all-custom-conditions-and-known-sensitive-information-types"></a>标识所有自定义条件和已知的敏感信息类型
 
@@ -345,7 +345,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 |**安装扫描程序的多个实例** | 当你指定自定义群集 (配置文件的自定义群集) 名称时，Azure 信息保护扫描程序在相同的 SQL server 实例上支持多个配置数据库。 |
 |**授予特定权限并禁用低完整性级别**|确认运行扫描程序的服务帐户只包含 [服务帐户要求](deploy-aip-scanner-prereqs.md#service-account-requirements)中所述的权限。 </br></br>然后，配置 " [高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 以禁用扫描程序的低完整性级别。|
 |**检查备选配置用法** |在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。 <br/></br>如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。|
-|**减少扫描程序超时** | 减少扫描程序超时和 [高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-timeout-settings-for-the-scanner)。缩短扫描程序超时可提供更好的扫描速率和更低的内存消耗。 </br></br>**注意：** 减少扫描程序超时意味着可能会跳过某些文件。
+|**减少扫描程序超时** | 减少扫描程序超时和 [高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-timeout-settings-for-the-scanner)。缩短扫描程序超时可提供更好的扫描速率和更低的内存消耗。 </br></br>**注意**：降低扫描程序超时意味着可能会跳过某些文件。
 | | |
 
 
@@ -401,10 +401,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 另请参阅： [部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。
 
-**详细信息：**
+**详细信息**：
 
 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
 
-您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs-classic.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 要详细了解此方案及使用 PowerShell 的其他方案，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。

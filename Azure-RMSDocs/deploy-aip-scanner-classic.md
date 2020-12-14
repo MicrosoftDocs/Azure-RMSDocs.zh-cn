@@ -12,23 +12,23 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c525903e8b9bca6679455ddc5767c53f28b6d69d
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: 77d7ddb996a224e871a89227bd58872989bdc759
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "95566521"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382847"
 ---
 # <a name="what-is-the-azure-information-protection-classic-scanner"></a>什么是 Azure 信息保护经典扫描程序？
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
-
->[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
 >
-> 如果你使用的是统一标签客户端，请参阅 [什么是 Azure 信息保护统一标记扫描器？](deploy-aip-scanner.md)。
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一标记客户端的信息，请参阅 [什么是 Azure 信息保护统一标记扫描器？](deploy-aip-scanner.md)。*
 
-使用此部分中的信息来了解 Azure 信息保护扫描程序，然后了解如何成功地安装、配置、运行，并在必要时对其进行故障排除。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+使用此部分中的信息来了解 Azure 信息保护经典客户端扫描程序，然后了解如何成功地进行安装、配置、运行，并在必要时对其进行故障排除。
 
 AIP 扫描程序在 Windows Server 上以服务的形式运行，并允许你发现、分类和保护以下数据存储中的文件：
 
@@ -54,7 +54,7 @@ AIP 扫描程序可以检查 Windows 可以为其编制索引的任何文件。 
 执行以下任一操作以根据需要配置扫描：
 
 - **仅在发现模式下运行扫描程序** ，以创建查看文件标记时所发生的情况的报表。
-- **运行扫描程序以发现包含敏感信息的文件，** 而不配置应用自动分类的标签。
+- **运行扫描程序以发现包含敏感信息的文件**，而不配置应用自动分类的标签。
 - **自动运行扫描程序** 以按配置应用标签。
 - **定义 "文件类型" 列表** 以指定要扫描或排除的特定文件。
 
@@ -112,7 +112,7 @@ AIP 扫描程序在以下情况下无法标记文件：
 
     [更改要保护的文件类型](deploy-aip-scanner-configure-install.md#change-which-file-types-to-protect)时，可以添加其他类型的文件以进行保护。
 
-**示例：** 检查 .txt 文件后，扫描程序无法应用配置为仅用于分类的标签，因为 .txt 文件类型不支持分类。
+**示例**：检查 .Txt 文件后，扫描程序不能应用为分类配置的标签，因为 .txt 文件类型不支持分类。
 
 但是，如果将标签配置为分类和保护，并包含该文件类型以保护扫描程序，则扫描程序可以对文件进行标记。
 
@@ -124,10 +124,10 @@ AIP 扫描程序在以下情况下无法标记文件：
 - [配置和安装 AIP 扫描程序](deploy-aip-scanner-configure-install.md)
 - [使用 AIP scanner 扫描运行扫描](deploy-aip-scanner-manage.md)
 
-**详细信息：**
+**详细信息**：
 
 - 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
 
-- 您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+- 您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs-classic.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 - 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 要详细了解此方案及使用 PowerShell 的其他方案，请参阅[将 PowerShell 与 Azure 信息保护客户端配合使用](./rms-client/client-admin-guide-powershell.md)。

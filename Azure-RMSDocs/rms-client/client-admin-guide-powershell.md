@@ -1,34 +1,34 @@
 ---
-title: 将 PowerShell 与 Azure 信息保护客户端配合使用
-description: 管理员通过使用 PowerShell 管理 Azure 信息保护客户端的说明和信息。
-author: mlottner
-ms.author: mlottner
+title: 将 PowerShell 与 Azure 信息保护经典客户端配合使用
+description: 管理员使用 PowerShell 管理 Azure 信息保护经典客户端的说明和信息。
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 05/31/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7c5f2975b93e907d244db7c95975105f58ed1b94
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: c2c9829154a7efd3bb5aa340e37018d1085105ce
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566237"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386009"
 ---
-# <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护客户端配合使用
+# <a name="admin-guide-using-powershell-with-the-azure-information-protection-classic-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护经典客户端配合使用
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-安装 Azure 信息保护客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
+安装 Azure 信息保护经典客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
 cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 此模块包括 RMS 保护工具（不再支持）的所有 Rights Management cmdlet。 另外，还包括使用 Azure 信息保护进行标记的 cmdlet。 例如：
 
@@ -72,7 +72,7 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 如果组织使用 Azure 信息保护进行分类和保护，或仅使用 Azure 权限管理服务进行数据保护，请先阅读本部分，再开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护标签和 Azure 权限管理数据保护服务还有其他先决条件：
 
@@ -385,7 +385,7 @@ C:\Test.docx                          C:\Test.docx
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，用于保护或取消保护文件的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 
@@ -574,7 +574,7 @@ C:\Test.docx                          C:\Test.docx
 
 10. 仍在 " **AIPOnBehalfOf-证书 & 机密** " 窗格的 " **管理** " 菜单中，选择 " **公开 API**"。
 
-11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， **Set** 选择 "设置 **应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将 **API** 更改为 **http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e` 。 
+11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， 选择 "设置 **应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将 **API** 更改为 **http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e` 。 
     
     选择“保存”。
 

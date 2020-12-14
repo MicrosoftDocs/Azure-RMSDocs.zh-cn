@@ -1,10 +1,10 @@
 ---
 title: RMS 客户端部署说明 - Azure 信息保护
 description: 关于安装、支持的操作系统、注册表设置以及 Rights Management Service 客户端（RMS 客户端）版本 2（也称为 MSIPC 客户端）的服务发现的信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 03/09/2020
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,20 +12,25 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ea5c90130e250a5565975802f8696fa240cf3da0
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: ca6c4f693bd8466503242be49662bc3358fbd019
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566224"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385788"
 ---
 # <a name="rights-management-service-client-deployment-notes"></a>Rights Management Service 客户端部署说明
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 8、Windows 8.1、windows 10、windows server 2012、windows Server 2012 R2、windows server 2016*
+>***适用于**： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 8、Windows 8.1、Windows 10、Windows Server 2012、windows Server 2012 R2、windows server 2016 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客户端。 它是在 Windows 计算机上安装的软件，可用来与本地或云中的 Microsoft Rights Management 服务通信，以帮助保护对流经应用程序和设备的信息的访问和使用，无论这些信息是在组织边界的内部还是受管边界的外部。 
 
-除了与 [Azure 信息保护统一标签客户端](aip-clientv2.md)一起提供以外，RMS 客户端还可 [作为可选下载](https://www.microsoft.com/download/details.aspx?id=38396) 提供，它可以确认和接受其许可协议，并可与第三方软件自由分发，使客户端能够保护和使用受 Rights Management 服务保护的内容。
+除了与 [Azure 信息保护统一标签客户端](use-client.md)一起提供以外，RMS 客户端还可 [作为可选下载](https://www.microsoft.com/download/details.aspx?id=38396) 提供，它可以确认和接受其许可协议，并可与第三方软件自由分发，使客户端能够保护和使用受 Rights Management 服务保护的内容。
 
 
 ## <a name="redistributing-the-rms-client"></a>重新分发 RMS 客户端
@@ -36,7 +41,7 @@ Rights Management 服务客户端（RMS 客户端）版本 2 也称为 MSIPC 客
 - 使 RMS 客户端成为应用程序的必备组件。 如果采用此方法，则可能需要先向用户提供有关如何获取、安装以及更新计算机以使用该客户端的其他说明，然后用户才能使用你的应用程序。
 
 ## <a name="installing-the-rms-client"></a>安装 RMS 客户端
-RMS 客户端包含在名为 **setup_msipc_ *\<arch\>*.exe** 中，其中 *\<arch>* 为 **x86**（对于 32 位客户端计算机）或 **x64**（对于 64 位客户端计算机）。 64 位 (x64) 安装程序包将同时安装 32 位运行时组件（以与在 64 位操作系统安装上运行的 32 位应用程序兼容）以及 64 位运行时组件（以支持本机 64 位应用程序）。 32 位 (x86) 安装程序不会在 64 位 Windows 安装上运行。
+RMS 客户端包含在名为 **setup_msipc_ *\<arch\>*.exe** 中，其中 *\<arch>* 为 **x86**（对于 32 位客户端计算机）或 **x64**（对于 64 位客户端计算机）。 64位 (x64) 安装程序包安装32位运行时可执行文件，以便与在64位操作系统安装上运行的32位应用程序兼容，以及支持内置的64位应用程序的64位运行时可执行文件。 32 位 (x86) 安装程序不会在 64 位 Windows 安装上运行。
 
 > [!NOTE]
 > 若要安装 RMS 客户端，必须有提升的权限，例如，是本地计算机上管理员组的成员。
@@ -63,6 +68,7 @@ RMS 客户端包含在名为 **setup_msipc_ *\<arch\>*.exe** 中，其中 *\<arc
 |Windows Server 2012 R2|Windows 8.1|
 |Windows Server 2012|Windows 8|
 |Windows Server 2008 R2|Windows 7（最少装有 SP1）|
+| | |
 
 
 ### <a name="which-processors-or-platforms-support-the--rms-client"></a>哪些处理器或平台支持 RMS 客户端？
@@ -74,18 +80,18 @@ x86 和 x64 计算平台支持 RMS 客户端。
 ### <a name="what-files--are-associated-with-the-rms-client-software"></a>与 RMS 客户端软件关联的文件有哪些？
 以下文件将连同 RMS 客户端软件一起安装：
 
--   Msipc.dll
+-   **Msipc.dll**
 
--   Ipcsecproc.dll
+-   **Ipcsecproc.dll**
 
--   Ipcsecproc_ssp.dll
+-   **Ipcsecproc_ssp.dll**
 
--   MSIPCEvents.man
+-   **MSIPCEvents.man**
 
 除了上述文件外，RMS 客户端还将安装使用 44 种语言的多语言用户界面 (MUI) 支持文件。 若要验证支持的语言，请运行 RMS 客户端安装，然后在安装完成后，查看默认路径下的多语言支持文件夹中的内容。
 
 ### <a name="is-the-rms-client-included-by-default-when-i-install-a-supported-operating-system"></a>在我安装受支持的操作系统时，是否默认包含 RMS 客户端？
-不能。 此版本的 RMS 客户端是作为可选下载产品交付的，可在运行受支持 Microsoft Windows 操作系统版本的计算机上单独安装。
+否。 此版本的 RMS 客户端是作为可选下载产品交付的，可在运行受支持 Microsoft Windows 操作系统版本的计算机上单独安装。
 
 ### <a name="is-the-rms-client-automatically-updated-by-microsoft-update"></a>Microsoft Update 是否会自动更新 RMS 客户端？
 如果此 RMS 客户端是使用静默安装选项安装的，则 RMS 客户端将继承当前的 Microsoft 更新设置。 如果 RMS 客户端是使用基于 GUI 的安装程序安装的，则 RMS 客户端安装向导会提示启用 Microsoft 更新。
@@ -101,9 +107,10 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 |说明|客户端模式路径|服务器模式路径|
 |---------------|---------------------|---------------------|
-|许可证存储位置|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
-|模板存储位置|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
-|注册表位置|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \\*\<SID*\>|
+|**许可证存储位置**|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
+|**模板存储位置**|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\\*\<SID\>*|
+|**注册表位置**|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \\*\<SID*\>|
+| | | |
 
 > [!NOTE]
 > *\<SID*> 是用于运行服务器应用程序的帐户的安全标识符 (SID)。 例如，如果应用程序在内置网络服务帐户下运行，则将替换为 *\<SID\>* 该帐户的已知 SID 的值 (S-1-5-20) 。
@@ -114,22 +121,23 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
 |                                                                                                  任务                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             设置                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                  如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**                                                  | **重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，则会同意通过 internet 向 Microsoft 发送数据。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />对于版本 1.0.3356 或更高版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />对于 1.0.3356 之前的版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值：** 0 表示（默认）通过使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](/previous-versions/windows/desktop/msipc/environment-properties) 定义应用程序；1 表示禁用；2 表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。 |
-|                                                       仅限 AD RMS：<br /><br />**更新客户端计算机的企业服务位置**                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**值：：** \<http or https> //*RMS_Cluster_Name*/_wmcs/certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**值：：** \<http or https> //*RMS_Cluster_Name*/_wmcs/licensing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                                                                                    **启用和禁用跟踪**                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Value：** 1 表示启用跟踪，0 表示禁用跟踪（默认）                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                                                                        **更改模板刷新的频率（以天为单位）**                                                                         |                                                                                                                                                                                                                                                                                以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**值：** 一个整数值，该值指定下载之间 (最小值为 1) 的天数。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD：TemplateUpdateFrequency<br /><br />**Value：** 指定下载间隔天数的整数值（最小为 1）。                                                                                                                                                                                                                                                                                 |
-| **更改模板刷新的频率（以秒为单位）**<br /><br />重要提示：如果指定此设置，将忽略以天为单位的模板刷新频率值。 指定其中一项，而不要同时指定两项。 |                                                                                                                                                                                                                                                                   以下注册表值指定在用户计算机上刷新模板的频率。 如果未设置此值或者用于更改以天为单位的频率的值 (TemplateUpdateFrequency)，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式：**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**值：** 一个整数值，指定下载之间 (最小值为 1) 的秒数。<br /><br />**服务器模式：**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\ < *SID*><br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**值：** 一个整数值，指定下载之间 (最小值为 1) 的秒数。                                                                                                                                                                                                                                                                    |
+|                                                  如果客户端版本是 1.03102.0221 或更高版本：<br /><br />**控制应用程序数据收集**                                                  | **重要提示**：为了尊重用户隐私，作为管理员，你在启用数据收集之前必须征得用户同意。<br /><br />如果启用数据收集，则会同意通过 internet 向 Microsoft 发送数据。 Microsoft 利用此数据保证并改进 Microsoft 产品和服务的质量、安全性和完整性。 例如，Microsoft 会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。 数据还包括软件（如当前运行的软件）以及 IP 地址的配置信息。<br /><br />对于版本 1.0.3356 或更高版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />对于 1.0.3356 之前的版本： <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**值**：如果应用程序定义 (默认值为 0) 使用环境属性 [IPC_EI_DATA_COLLECTION_ENABLED](/previous-versions/windows/desktop/msipc/environment-properties)，1表示禁用，2表示启用<br /><br />**注意**：如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC。 |
+|                                                       仅限 AD RMS：<br /><br />**更新客户端计算机的企业服务位置**                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**值**：：/ \<http or https> /*RMS_Cluster_Name*/_wmcs/certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**值**：：/ \<http or https> /*RMS_Cluster_Name*/_wmcs/licensing                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                                                    **启用和禁用跟踪**                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    更新以下注册表项：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**值**：1若要启用跟踪，请使用0禁用跟踪 (默认值)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|                                                                        **更改模板刷新的频率（以天为单位）**                                                                         |                                                                                                                                                                                                                                                                                以下注册表值指定当未设置 TemplateUpdateFrequencyInSeconds 值时，在用户计算机上刷新模板的频率。  如果这两个值都未设置，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式**：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequency<br /><br />**值**：一个整数值，该值指定下载之间 (最小值为 1) 的天数。<br /><br />**服务器模式**：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD：TemplateUpdateFrequency<br /><br />**值**：一个整数值，该值指定下载之间 (最小值为 1) 的天数。                                                                                                                                                                                                                                                                                 |
+| **更改模板刷新的频率（以秒为单位）**<br /><br />重要提示：如果指定此设置，将忽略以天为单位的模板刷新频率值。 指定其中一项，而不要同时指定两项。 |                                                                                                                                                                                                                                                                   以下注册表值指定在用户计算机上刷新模板的频率。 如果未设置此值或者用于更改以天为单位的频率的值 (TemplateUpdateFrequency)，则应用程序使用 RMS 客户端（版本 1.0.1784.0）下载模板所遵循的默认刷新间隔为 1 天。 在以前的版本中，默认值为 7 天。<br /><br />**客户端模式**：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**值**：一个整数值，该值指定下载之间 (最小值为 1) 的秒数。<br /><br />**服务器模式**：<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\ < *SID*><br />REG_DWORD：TemplateUpdateFrequencyInSeconds<br /><br />**值**：一个整数值，该值指定下载之间 (最小值为 1) 的秒数。                                                                                                                                                                                                                                                                    |
 |                                                      仅限 AD RMS：<br /><br />**在下一次发布请求时立即下载模板**                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                 在测试和评估期间，你可能希望 RMS 客户端尽快下载模板。 对于此配置，可删除以下注册表项，使 RMS 客户端在下一次发布请求时立即下载模板，而不是按 TemplateUpdateFrequency 注册表设置指定的时间等待：<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\ < *Server Name*> \template <br /><br />**注意**： \<*Server Name*> 可以同时具有外部 (corprights.contoso.com) 和内部 (corprights) url，因此可能具有两个不同的条目。                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|                                                               仅限 AD RMS：<br /><br />**启用联合身份验证支持**                                                                |                                                                                                                                                                                                                                                                             如果 RMS 客户端使用联合信任连接到 AD RMS 群集，则你必须配置联合主领域。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**值：** 此注册表项的值是联合身份验证服务的统一资源标识符 (URI)（例如，“<http://TreyADFS.trey.net/adfs/services/trust>”）。<br /><br /> **请注意**：对于此值，请务必指定 http 而不是 https。 此外，如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation。 有关配置示例，请参阅[部署 Active Directory Rights Management Services 与 Active Directory 联合身份验证服务](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn758110(v=ws.11))。                                                                                                                                                                                                                                                                             |
+|                                                               仅限 AD RMS：<br /><br />**启用联合身份验证支持**                                                                |                                                                                                                                                                                                                                                                             如果 RMS 客户端使用联合信任连接到 AD RMS 群集，则你必须配置联合主领域。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_SZ: FederationHomeRealm<br /><br />**值**：此注册表项的值是联合身份验证服务 (URI) 的统一资源标识符 (例如，" <http://TreyADFS.trey.net/adfs/services/trust> " ) 。<br /><br /> **请注意**：对于此值，请务必指定 http 而不是 https。 此外，如果基于 32 位 MSIPC 的应用程序在 64 位版本的 Windows 上运行，则位置为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\Federation。 有关配置示例，请参阅[部署 Active Directory Rights Management Services 与 Active Directory 联合身份验证服务](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn758110(v=ws.11))。                                                                                                                                                                                                                                                                             |
 |                                        仅限 AD RMS：<br /><br />**支持需要对用户输入进行基于窗体的身份验证的合作伙伴联合身份验证服务器**                                         |                                                                                                                                                                                                                                                                                                                                                             默认情况下，RMS 客户端在静默模式下运行，并且不需要用户输入。 但是，合作伙伴联合身份验证服务器可能会配置为需要用户输入，例如通过基于表单的身份验证等方式。 在这种情况下，RMS 客户端必须配置为忽略静默模式，以便联合身份验证窗体显示在浏览器窗口中，并提示用户进行身份验证。<br /><br />HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\Federation<br />REG_DWORD: EnableBrowser<br /><br />**注意**：如果联合身份验证服务器配置为使用基于窗体的身份验证，则此项是必需的。 如果联合服务器配置为使用集成 Windows 身份验证，则此项不是必需的。                                                                                                                                                                                                                                                                                                                                                             |
-|                                                                      仅限 AD RMS：<br /><br />**阻止 ILS 服务使用**                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                 默认情况下，RMS 客户端支持使用受 ILS 服务保护的内容，但是可以通过设置以下注册表项对它进行配置以阻止此行为。 如果此注册表项设置为阻止 ILS 服务，则对受 ILS 服务保护的内容的任何打开和使用尝试都将返回以下错误：<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：**DisablePassportCertification**<br /><br />**Value：** 1 表示阻止 ILS 使用，0 表示允许 ILS 使用（默认）                                                                                                                                                                                                                                                                                                                                                                                                                  |
+|                                                                      仅限 AD RMS：<br /><br />**阻止 ILS 服务使用**                                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                 默认情况下，RMS 客户端支持使用受 ILS 服务保护的内容，但是可以通过设置以下注册表项对它进行配置以阻止此行为。 如果此注册表项设置为阻止 ILS 服务，则对受 ILS 服务保护的内容的任何打开和使用尝试都将返回以下错误：<br />HRESULT_FROM_WIN32(ERROR_ACCESS_DISABLED_BY_POLICY)<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD：**DisablePassportCertification**<br /><br />**值**：1要阻止 ils 消耗，0允许 (默认使用 ils)                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| | |
 
 ### <a name="managing-template-distribution-for-the-rms-client"></a>管理 RMS 客户端的模板分发
 通过模板，用户和管理员可轻松快速地应用 Rights Management 保护，并且 RMS 客户端会自动从其 RMS 服务器或服务下载模板。 如果将模板放在以下文件夹位置中，则 RMS 客户端不会从其默认位置下载任何模板，而是下载放置在该文件夹中的模板。 RMS 客户端可能会继续从其他可用 RMS 服务器下载模板。
 
-**客户端模式：**%localappdata%\Microsoft\MSIPC\UnmanagedTemplates
+**客户端模式**：%localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**服务器模式：** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>*
+**服务器模式**：%allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>*
 
 如果你使用此文件夹，则除了模板应由 AD RMS 服务器发布，并且应使用 .xml 文件扩展名以外，没有其他必须遵循的特殊命名约定。 例如，Contoso-Confidential.xml 或 Contoso-ReadOnly.xml 是有效的名称。
 
@@ -142,7 +150,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
     REG_DWORD：AllowTrustedServersOnly
 
-    **值：** 如果指定一个非零值，则 RMS 客户端只信任 TrustedServers 列表中配置的特定服务器以及 Azure Rights Management 服务。
+    **值**：如果指定一个非零值，RMS 客户端将只信任 TrustedServers 列表中配置的指定服务器以及 Azure Rights Management 服务。
 
 **将成员添加到受信任的 AD RMS 服务器列表**
 
@@ -150,7 +158,7 @@ RMS 客户端将许可证存储在本地磁盘上，并且还在 Windows 注册�
 
     REG_SZ：*\<URL_or_HostName>*
 
-    **值：** 在此注册表项位置中的字符串值可以是 DNS 域名格式（例如 adrms.contoso.com），也可以是指向受信任 AD RMS 服务器的完整 URL（例如 `https://adrms.contoso.com`）。 如果指定的 URL 以 https:// 开头，RMS 客户端会使用 SSL 或 TLS 来联系指定的 AD RMS 服务器。
+    **值**：此注册表项位置中的字符串值可以是 DNS 域名格式 (例如， **adrms.contoso.com**) 或指向可信 AD RMS 服务器的完整 url (例如 **`https://adrms.contoso.com`**) 。 如果指定的 URL 以 https:// 开头，RMS 客户端会使用 SSL 或 TLS 来联系指定的 AD RMS 服务器。
 
 ## <a name="rms-service-discovery"></a>RMS 服务发现
 RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 服务器或服务通信。 当 RMS 客户端使用受保护的内容时，也可能会发生服务发现，不过，这种情况很少出现，因为附加到内容的策略包含首选的 RMS 服务器或服务。 仅当该策略的执行不成功时，客户端才会运行服务发现。
@@ -252,9 +260,9 @@ RMS 服务发现可让 RMS 客户端在保护内容之前检查要与哪个 RMS 
 
     例如，若要将授权从位于 Contoso.com 的服务器重定向到位于 Fabrikam.com 的服务器，你可以输入以下值：
 
-    **名称：** `https://contoso.com/_wmcs/licensing`
+    **名称**：`https://contoso.com/_wmcs/licensing`
 
-    值：`https://fabrikam.com/_wmcs/licensing`
+    **值**：`https://fabrikam.com/_wmcs/licensing`
 
     > [!NOTE]
     > 如果旧的授权服务器同时指定了 Intranet URL 和 Extranet URL，则必须在“LicensingRedirection”项下同时为这两个 URL 设置新的名称和值映射。

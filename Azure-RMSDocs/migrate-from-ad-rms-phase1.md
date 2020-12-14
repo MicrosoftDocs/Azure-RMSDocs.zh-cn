@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
@@ -13,16 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 13c63f2e96b27a31b9afb91fbc8c03b9b198f9c1
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: ee761ef8ae12d638df7e05c83a5ed5d635d25b9b
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316817"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384360"
 ---
 # <a name="migration-phase-1---preparation"></a>迁移第 1 阶段 - 准备
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 1。 这些过程涉及[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 1 至 3，以及准备好迁移环境但确保对用户无任何影响。
 
@@ -60,7 +62,7 @@ Azure Rights Management 服务 URL 采用以下格式：**{GUID}.rms.[Region].aa
     (Get-AipServiceConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
     ```
 
-## <a name="step-2-prepare-for-client-migration"></a>步骤 2。 客户端迁移准备
+## <a name="step-2-prepare-for-client-migration"></a>步骤 2. 客户端迁移准备
 
 对于大多数迁移，一次性迁移所有客户端并不现实，因此很可能分批迁移客户端。 
 
@@ -146,13 +148,13 @@ Azure Rights Management 服务 URL 采用以下格式：**{GUID}.rms.[Region].aa
 
 1. 如果你有 Exchange 2013 或 Exchange 2016，请添加以下注册表值：
 
-    - **注册表路径：**`HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection`
+    - **注册表路径**： `HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection`
 
-    - **键入：** Reg_SZ
+    - **类型**： Reg_SZ
 
-    - 值：`https://\<Your Tenant URL\>/_wmcs/licensing`
+    - **值**：`https://\<Your Tenant URL\>/_wmcs/licensing`
 
-    - **数据：**`https://\<AD RMS Extranet Licensing URL\>/_wmcs/licensing`
+    - **数据**： `https://\<AD RMS Extranet Licensing URL\>/_wmcs/licensing`
 
 1. 分别运行以下 PowerShell 命令，或在脚本中运行：
 

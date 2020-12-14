@@ -1,11 +1,11 @@
 ---
-title: Azure 信息保护用户指南
-description: 适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。
-author: mlottner
-ms.author: mlottner
+title: Azure 信息保护经典客户端用户指南
+description: 适用于 Windows 的 Azure 信息保护经典客户端可帮助你保护重要文档和电子邮件，使其免受不能看到它们的用户的安全，即使转发了你的电子邮件或将你的文档保存到其他位置也是如此。
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 05/06/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
@@ -13,25 +13,28 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: ea95338f27d0ac4143804b9d7beda46f6dab2f6a
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 4492487395dd45da0b184dc001deb189ce2f7609
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565980"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385737"
 ---
-# <a name="azure-information-protection-user-guide"></a>Azure 信息保护用户指南
+# <a name="azure-information-protection-classic-client-user-guide"></a>Azure 信息保护经典客户端用户指南
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用于**： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端用户指南](clientv2-user-guide.md)。
 
-适用于 Windows 的 Azure 信息保护客户端可帮助用户保护重要文档和电子邮件，使其不对特定人员可见（即使电子邮件被转发或将文档保存到另一个位置也是如此）。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+适用于 Windows 的 Azure 信息保护经典客户端可帮助你保护重要文档和电子邮件，使其免受不能看到它们的用户的安全，即使转发了你的电子邮件或将你的文档保存到其他位置也是如此。 还可通过此客户端打开他人已通过使用 Azure 信息保护中的 Rights Management 保护技术保护的文件。
 
 你只需运行至少 Windows 8 的一台计算机。 然后从 Microsoft 下载并安装此免费客户端。
 
 
-## <a name="what-do-you-want-to-do"></a>您希望做什么？
+## <a name="what-do-you-want-to-do"></a>你希望做什么？
 
 - [下载并安装 Azure 信息保护客户端](install-client-app.md)
 

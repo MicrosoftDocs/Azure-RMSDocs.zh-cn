@@ -1,6 +1,6 @@
 ---
-title: Azure 信息保护客户端管理员指南
-description: 面向负责部署适用于 Windows 的 Azure 信息保护客户端的企业网络管理员的说明和信息。
+title: Azure 信息保护经典客户端管理员指南
+description: 负责部署适用于 Windows 的 Azure 信息保护经典客户端的企业网络管理员的说明和信息。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fc6a8cd4e891e007c9cf23d5dcb9f2381e068ac8
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: aa166cf6968af79ec22a7d3fd2a05e53e025bbe5
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566233"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385992"
 ---
-# <a name="azure-information-protection-client-administrator-guide"></a>Azure 信息保护客户端管理员指南
+# <a name="azure-information-protection-classic-client-administrator-guide"></a>Azure 信息保护经典客户端管理员指南
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端管理员指南](clientv2-admin-guide.md)。
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
-> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
+> **若要部署 AIP 经典客户端**，请打开支持票证以下载安装文件。
 
 如果你负责企业网络上的 Azure 信息保护客户端，或如果你想要获取除了 [Azure 信息保护客户端用户指南](client-user-guide.md)以外的更多技术信息，请使用本指南中的信息。 
 
@@ -59,7 +59,7 @@ Azure 信息保护客户端包括以下内容：
 
 - Windows 文件资源管理器，便于用户将分类标签和保护应用到文件的右键单击选项。
 
-- 一个查看器，可在本机应用程序无法将其打开时显示受保护的文件。
+- 当内置应用程序无法打开受保护文件时，查看器将显示这些文件。
 
 - 一个 PowerShell 模块，用于从文件应用和删除分类标签和保护。 
     
@@ -84,7 +84,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 想要运行一项服务来发现（或保护）存储在本地的文件并对其进行分类。
 
-- 想要在本机应用程序显示未安装文件或无法打开这些文档时查看受保护的文档。
+- 当内置应用程序未安装或无法打开这些文档时，你希望查看受保护的文档。
 
 - 只想通过使用文件资源管理器或使用 PowerShell 命令保护文件。
 
@@ -253,7 +253,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 使用 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) 安装扫描程序，指定新的 SQL Server 实例和配置文件名称。
 
-4. **可选：** 如果你不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表，然后将其导入到新数据库。
+4. **可选**：如果不希望扫描程序重新扫描所有文件，请导出 ScannerFiles 表，然后将其导入新数据库。
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>卸载 Azure 信息保护客户端
 
