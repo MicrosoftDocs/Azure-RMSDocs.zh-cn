@@ -1,30 +1,30 @@
 ---
 title: 通过 Azure 信息保护统一标签客户端查看受保护的文件
 description: 说明如何查看受保护的文件，该文件要求安装 Azure 信息保护统一标签查看器。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 09/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 76bbfce88fb35241ee5180221267e83a121482b4
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 9c09c4229db71f93d952868cc982f51c12fe9c00
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316749"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385227"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-view-use-files.md)。 *
 
 通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 
@@ -75,5 +75,5 @@ ms.locfileid: "96316749"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [您希望做什么？](client-user-guide.md#what-do-you-want-to-do)
+- [您希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
 

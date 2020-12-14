@@ -1,8 +1,8 @@
 ---
 title: Rights Management 连接器的注册表设置 - AIP
 description: 有关使用 RMS 连接器在服务器上进行注册表设置的信息。 配置这些设置的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 11/30/2019
 ms.topic: how-to
@@ -13,17 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fb2a081b03ae8b92fa58073b37336066f087da4c
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: e9bef060e2147fe42505174493bad44af06ff28a
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565375"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384853"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 连接器的注册表设置
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
-
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、windows Server 2012 R2、windows server 2012 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 只有当需要在运行 Exchange、SharePoint 或 Windows Server 的服务器上手动添加或检查注册表设置时，才使用以下部分的表格。 这些注册表设置将服务器配置为使用 [RMS 连接器](deploy-rms-connector.md)。 配置这些服务器的推荐方法是使用适用于 Microsoft RMS 连接器的服务器配置工具。
 
@@ -54,34 +55,34 @@ ms.locfileid: "95565375"
 
 ## <a name="exchange-2016-or-exchange-2013-registry-settings"></a>Exchange 2016 或 Exchange 2013 注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
+**注册表路径**： HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-**数据：** https:// *\<YourTenantURL>* /_wmcs/certification
-
----
-
-**注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
-
-**键入：** Reg_SZ
-
-**值：** 默认
-
-**数据：** https:// *\<YourTenantURL>* /_wmcs/licensing
+**数据**： https:// *\<YourTenantURL>* /_wmcs/certification
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\CertificationServerRedirection
+**注册表路径**： HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** https://*\<YourTenantURL>*
+**值**：默认值
+
+**数据**： https:// *\<YourTenantURL>* /_wmcs/licensing
+
+---
+
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\CertificationServerRedirection
+
+**类型**： Reg_SZ
+
+**值**： https://*\<YourTenantURL>*
 
 
-**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -89,14 +90,14 @@ ms.locfileid: "95565375"
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-值：https://<\YourTenantURL>
+**值**： Https://*< \yourtenanturl>*
 
 
-**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -105,33 +106,33 @@ ms.locfileid: "95565375"
 
 ## <a name="exchange-2010-registry-settings"></a>Exchange 2010 注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
+**注册表路径**： HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-**数据：** Https://*< \yourtenanturl>*/_wmcs/certification
+**数据**： Https://*< \yourtenanturl>*/_wmcs/certification
 
 ---
 
 **注册表路径：** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-数据：https://<\YourTenantURL>/_wmcs/Licensing
+**数据**： Https://*< \yourtenanturl>*/_wmcs/licensing
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\CertificationServerRedirection
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\CertificationServerRedirection
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-值：https://<\YourTenantURL>
+**值**： Https://*< \yourtenanturl>*
 
-**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -139,13 +140,13 @@ ms.locfileid: "95565375"
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-值：https://<\YourTenantURL>
+**值**： Https://*< \yourtenanturl>*
 
-**数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
 - http://<\ConnectorFQDN>
 
@@ -154,14 +155,14 @@ ms.locfileid: "95565375"
 
 ## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>SharePoint 2016 或 SharePoint 2013 注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-值：https://<\YourTenantURL>/_wmcs/licensing
+**值**： Https://*< \yourtenanturl>*/_wmcs/licensing
 
 
-**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是 SharePoint 服务器上的 HTTP 还是 HTTPS 到 RMS 连接器：
 
 - http://*< \connectorfqdn>*/_wmcs/licensing
 
@@ -169,13 +170,13 @@ ms.locfileid: "95565375"
 
 ---
 
-**注册表路径:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是 SharePoint 服务器上的 HTTP 还是 HTTPS 到 RMS 连接器：
 
 - http://<\ConnectorFQDN>/_wmcs/certification
 
@@ -183,14 +184,14 @@ ms.locfileid: "95565375"
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
 
-**数据：** 以下前缀之一，具体取决于 SharePoint 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+**数据**：以下其中一种，具体取决于你使用的是 SharePoint 服务器上的 HTTP 还是 HTTPS 到 RMS 连接器：
 
 - http://*< \connectorfqdn>*/_wmcs/licensing
 
@@ -201,23 +202,23 @@ ms.locfileid: "95565375"
 
 ## <a name="file-server-and-file-classification-infrastructure-registry-settings"></a>文件服务器和文件分类基础结构注册表设置
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-数据：http://<\ConnectorFQDN>/_wmcs/licensing
+**数据**： Http://*< \connectorfqdn>*/_wmcs/licensing
 
 ---
 
-**注册表路径：** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
+**注册表路径**： HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
-**键入：** Reg_SZ
+**类型**： Reg_SZ
 
-**值：** 默认
+**值**：默认值
 
-数据： http://<\ConnectorFQDN>/_wmcs/certification
+**数据**： Http://*< \connectorfqdn>*/_wmcs/certification
 
 
 返回到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)

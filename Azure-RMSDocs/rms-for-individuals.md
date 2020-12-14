@@ -1,10 +1,10 @@
 ---
 title: 个人 RMS 和 Azure 信息保护
 description: 介绍了 RMS 个人版，这是免费的自助式订阅，适用于已收到受保护文件，但无法进行身份验证的用户，因为 IT 部门没有在 Azure 中为他们托管帐户。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 11/30/2019
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,30 +12,40 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d7cd108b74d42a9d7bb7aab0480328b642697288
-ms.sourcegitcommit: 24c97b58849af4322d3211b8d3165734d5ad6c88
+ms.openlocfilehash: ac5b596c87649e32d27da8e2797bafe5b9745792
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "95565993"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384785"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>个人 RMS 和 Azure 信息保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 RMS 个人版是免费的自助式订阅，适用于需要打开受 Azure 信息保护保护的文件的用户。 如果 Azure Active Directory 无法对这些用户进行身份验证，此免费登录服务会在 Azure Active Directory 中为用户创建一个帐户。 因此，这些用户现在可以使用其公司电子邮件地址进行身份验证，然后在计算机或移动设备上阅读受保护的文件。
 
 RMS 个人版采用 Azure Active Directory 自助式注册。 如果用户已使用此订阅为组织创建帐户，作为组织管理员，你可以声明所有权，并[控制这些帐户](/azure/active-directory/users-groups-roles/domains-admin-takeover#external-admin-takeover)。 
 
-
-> [!NOTE]
-> 此免费订阅是帮助确保组织外部的授权人员可始终阅读受组织保护的文件的一种方式。 另一种方式是使用[具有新功能的 Office 365 邮件加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)以电子邮件的形式发送文档。 此电子邮件解决方案适用于所有设备上的所有电子邮件地址，并且是与组织外部人员安全地共享信息和在浏览器中查看 Office 文档的建议方式。
-> 
-> 另一选项是使用 Microsoft 帐户。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
-
 若要注册此免费帐户，用户可以转到 [Microsoft Azure 信息保护页](https://aka.ms/rms-signup)，并提供其工作电子邮件地址。 他们将收到 Microsoft 的回应电子邮件，然后通过输入详细信息以创建帐户，从而完成注册过程。 
 
 创建帐户后，最终页面显示各种设备的 Azure 信息保护客户端或查看器的下载链接、用户指南链接，以及本机支持 Rights Management 保护的当前应用程序列表的链接。 
+
+### <a name="alternatives-use-office-365-message-encryption-or-microsoft-accounts"></a>替代方法：使用 Office 365 消息加密或 Microsoft 帐户
+
+个人 RMS 是一个选项，可帮助确保组织外部的授权人员始终可以读取组织所保护的文件。 
+
+替代选项包括：
+
+- **使用 [带有新功能的 Office 365 消息加密](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)发送电子邮件。** 此电子邮件解决方案适用于所有设备上的所有电子邮件地址，并且是与组织外部人员安全地共享信息和在浏览器中查看 Office 文档的建议方式。
+ 
+- **使用 Microsoft 帐户。** 当 Microsoft 帐户用于身份验证时，并非所有应用程序都可以打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
+
 
 ## <a name="to-sign-up-for-rms-for-individuals"></a>注册个人 RMS
 

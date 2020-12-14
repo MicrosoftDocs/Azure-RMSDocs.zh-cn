@@ -5,23 +5,25 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/30/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cc54660ce021b2d00a80ad3292ed17c5c13c204a
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 0cb8120f710c3c88b12f539e265bb620f4eae981
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566248"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386349"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>为 Azure 信息保护准备用户和组
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 在为组织部署 Azure 信息保护之前，请确保组织租户在 Azure AD 中具有用户和组帐户。
 
@@ -163,7 +165,7 @@ Get-Msoluser | select DisplayName, UserPrincipalName, ProxyAddresses
 | Jagannath Reddy | jagannathreddy@contoso.com |                                  {}                                   |
 |    Ankur Roy    |    ankurroy@contoso.com    | {SMTP:ankur.roy@contoso.com, smtp: ankur.roy@onmicrosoft.contoso.com} |
 
-在本示例中：
+在此示例中：
 
 - Jagannath Reddy 的用户帐户将通过进行授权 <strong>jagannathreddy@contoso.com</strong> 。
 

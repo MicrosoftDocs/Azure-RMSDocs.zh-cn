@@ -1,11 +1,11 @@
 ---
 title: 迁移 AD RMS-Azure 信息保护 - 第 2 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 2 阶段涉及从 AD RMS 迁移到 Azure 信息保护中的步骤 4 至 6。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/02/2020
-ms.topic: conceptual
+ms.date: 11/11/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
@@ -13,16 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a354e9f787cf079e2c67a03fb58d330ab7785ce3
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: ad4fe6bd495bfe6a19ce897bf3ee5290c778a8ac
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566089"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386060"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>迁移第 2 阶段 - AD RMS 的服务器端配置
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的阶段 2。 这些过程涉及了[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)中的步骤 4-6。
 
@@ -88,6 +90,7 @@ ms.locfileid: "95566089"
 |AD RMS 数据库中的密码保护|由客户管理 (BYOK)|请参阅此表后面的 **软件保护密钥到 HSM 保护密钥的** 迁移过程。<br /><br />这需要 Azure 密钥保管库 BYOK 工具集和以下四组步骤：首先提取软件密钥并将其导入到本地 HSM，然后将密钥从本地 HSM 传送到 Azure 信息保护 HSM，之后将密钥保管库数据传送到 Azure 信息保护，最后将配置数据传送到 Azure 信息保护。|
 |使用硬件安全模块从 nCipher 以外的供应商 () HSM 保护的 HSM 保护 |由客户管理 (BYOK)|请与 HSM 的供应商联系，以获取有关如何将密钥从此 HSM 传输到 nCipher nShield 硬件安全模块 (HSM) 的说明。 然后按照此表后面的 **hsm 保护密钥到 hsm 保护** 密钥的迁移过程中的说明进行操作。|
 |通过使用外部加密提供程序进行密码保护|由客户管理 (BYOK)|请与加密提供程序的供应商联系，以获取有关如何将密钥传输到 nCipher nShield 硬件安全模块 (HSM) 的说明。 然后按照此表后面的 **hsm 保护密钥到 hsm 保护** 密钥的迁移过程中的说明进行操作。|
+| | |
 
 如果拥有无法导出的 HSM 保护密钥，仍可通过将 AD RMS 群集配置为只读模式来迁移到 Azure 信息保护。 在只读模式下，仍可打开之前受保护的内容，但新的受保护内容使用由你 (BYOK) 或 Microsoft 管理的新租户密钥。 有关详细信息，请参阅[可更新 Office 以支持从 AD RMS 到 Azure RMS 的迁移](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)。
 
@@ -108,13 +111,13 @@ ms.locfileid: "95566089"
 
 1. 连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
 
-    ```ps
+    ```PowerShell
     Connect-AipService
     ```
 
 2. 激活 Azure Rights Management 服务：
 
-    ```ps
+    ```PowerShell
     Enable-AipService
     ```
 
@@ -164,9 +167,9 @@ ms.locfileid: "95566089"
 
 本节包含示例脚本，可帮助你确定任何定义了 ANYONE 组的 AD RMS 模板，如前一节所述。
 
-**免责声明：** 此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
+**免责声明**：此示例脚本在任何 Microsoft 标准支持计划或服务下均不受支持。 此示例脚本按原样提供，不提供任何形式的保证。
 
-```ps
+```PowerShell
 import-module adrmsadmin
 
 New-PSDrive -Name MyRmsAdmin -PsProvider AdRmsAdmin -Root https://localhost -Force

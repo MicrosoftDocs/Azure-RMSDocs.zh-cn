@@ -12,19 +12,21 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 450cf34997f676e1033856e14adfc3e792fb1e04
-ms.sourcegitcommit: 1086cf04a29bb12cdb25c1fd8429f93d423bcc69
+ms.openlocfilehash: 71f07f5ffb9167ab61653cef10c610968ff74786
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566500"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384190"
 ---
 # <a name="azure-information-protection-aip-labeling-classification-and-protection"></a>Azure 信息保护 (AIP) 标签、分类和保护
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+> *适用 **于**： [Azure 信息保护统一标签适用于 Windows 的客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通过应用标签来对文档和电子邮件进行分类和保护。 
 
@@ -42,17 +44,17 @@ Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通�
 用 AIP 标记你的内容包括：
 
 - 无论数据存储在哪里或与谁共享都能检测到的分类。
-- 视觉标记，例如标头、页脚或水印。
-- 以明文形式添加到文件和电子邮件标头的元数据。 明文形式的元数据可确保其他服务能够识别分类并执行相应的操作
+- **视觉标记**，如页眉、页脚或水印。
+- **元数据**，添加到明文形式的文件和电子邮件标头。 明文形式的元数据可确保其他服务能够识别分类并执行相应的操作
 
-例如在下图中，标记服务使用[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)将电子邮件分类为“常规”：
+例如，在下图中，标签已将电子邮件分类为 " *常规*"：
 
 :::image type="content" source="media/example-email-footerv2.png" alt-text="显示 Azure 信息保护分类的示例电子邮件页脚和标头":::
 
 在此示例中，标记还：
 
-- 向电子邮件添加了“敏感度:***常规”的页脚*** 。 该页脚是显示给所有收件人的一个可视指示器，用于不得在组织外部发送的一般业务数据。
-- 电子邮件标头中嵌入的元数据。 通过标头数据，电子邮件服务可检测标签，从理论上说可创建审核条目或阻止它发送到组织外部。
+- 为 **电子邮件添加了 *敏感度页脚：常规***。 该页脚是显示给所有收件人的一个可视指示器，用于不得在组织外部发送的一般业务数据。
+- **电子邮件标头中嵌入的元数据**。 通过标头数据，电子邮件服务可检测标签，从理论上说可创建审核条目或阻止它发送到组织外部。
 
 管理员可以使用规则和条件、用户手动应用标签，也可以使用管理员定义向用户显示的建议的组合。
 
@@ -66,8 +68,8 @@ Azure RMS 使用加密、标识和授权策略。 与 AIP 标签类似，无论�
 
 保护设置可以：
 
-- 并入标签配置中，让用户只需应用标签即可对文档和电子邮件进行分类和保护。 
-- 通过支持保护但不标记的应用程序和服务自行使用。 
+- **你的标签配置的一部分**，因此用户只需应用标签即可对文档和电子邮件进行分类和保护。 
+- 由支持保护但不标记的应用程序和服务 **使用**。 
 
     对于只支持保护的应用程序和服务，保护设置用作[权限管理模板](#rights-management-templates)。
 
@@ -95,7 +97,7 @@ Azure RMS 使用加密、标识和授权策略。 与 AIP 标签类似，无论�
 
 AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终用户能够将 AIP 集成到他们的文档和电子邮件中。
 
-例如，在 Excel 中使用[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)：
+例如，在 Excel 中：
 
 ![Excel 中的 Azure 信息保护栏的示例](./media/excelproplus-infoprotect-bar.png)
 
@@ -120,7 +122,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 例如，你可能需要将敏感信息发送到使用 Gmail、Hotmail 或 Microsoft 帐户的个人电子邮件地址，或者发送给在 Office 365 或 Azure AD 中没有帐户的用户  。 这些电子邮件应静态加密并在传输中加密，且只有原始收件人才能阅读。
 
-此方案需要 [Office 365 消息加密功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人在本机电子邮件客户端中无法打开受保护的电子邮件，可以使用一次性密码，通过浏览器阅读敏感信息。
+此方案需要 [Office 365 消息加密功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)。 如果收件人无法在其内置电子邮件客户端中打开受保护的电子邮件，则他们可以使用一次性密码来读取浏览器中的敏感信息。
 
 例如，Gmail 用户可能会在收到的电子邮件中看到以下提示：
 
@@ -128,7 +130,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 对于发送电子邮件的用户，他们需要与将受保护的电子邮件发送到自己的组织中的用户时执行相同的操作。 例如，选择“请勿转发”按钮，使 AIP 客户端可添加到 Outlook 功能区。 
 
-或者，“请勿转发”功能可集成到标签中，用户可选择它来向该电子邮件同时应用分类和保护。 例如，在[统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)中：
+或者，" **不要转发** " 功能可以集成到标签中，用户可以选择将分类和保护应用到该电子邮件。 例如：
 
 ![选择配置为“不转发”的标签](./media/recipients-only-label2.png)
 
@@ -153,6 +155,11 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
 ## <a name="next-steps"></a>后续步骤
 
-在[快速入门](quickstart-viewpolicy.md)和[教程](infoprotect-quick-start-tutorial.md)的帮助下，自行配置和使用 Azure 信息保护。 
+通过我们的快速入门和教程配置和查看 Azure 信息保护：
+
+- [快速入门：部署统一标记客户端](quickstart-deploy-client.md)
+- [教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序](tutorial-install-scanner.md)
+- [教程：使用 Azure 信息保护 (AIP) 扫描程序发现敏感内容](tutorial-scan-networks-and-content.md)
+- [教程：使用 Azure 信息保护 (AIP) 防止 Outlook 中的过度共享](tutorial-preventing-oversharing.md)
 
 如果已准备好为组织部署该服务，请转到[操作方法指南](how-to-guides.md)。

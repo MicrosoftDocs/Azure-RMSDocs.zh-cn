@@ -1,6 +1,6 @@
 ---
-title: 支持的文件类型-Azure 信息保护客户端
-description: 有关支持的文件类型、文件扩展名以及负责适用于 Windows 的 Azure 信息保护客户端的管理员的保护级别的技术详细信息。
+title: 支持的文件类型-Azure 信息保护经典客户端
+description: 有关受支持的文件类型、文件扩展名以及负责 Windows 的 Azure 信息保护经典客户端的管理员的保护级别的技术详细信息。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: eb1896adf9899700fe03fa1286509602e73c90bd
-ms.sourcegitcommit: c6b0b092735504fd76d74a46d024321673482098
+ms.openlocfilehash: 67d5e173b1dbc1b749c9090746c8ed0342f064cc
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "95566460"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386093"
 ---
-# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端支持的文件类型
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-classic-client"></a>管理员指南： Azure 信息保护经典客户端支持的文件类型
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-Azure 信息保护客户端可以将以下内容应用于文档和电子邮件：
+Azure 信息保护经典客户端可将以下内容应用于文档和电子邮件：
 
 - 仅分类
 
@@ -95,7 +95,7 @@ Azure 信息保护客户端支持两个不同级别的保护，如下表中所�
 
 Azure 信息保护客户端支持保护的最大文件大小。
 
-- **Office 文件：**
+- **对于 Office 文件**：
 
 
   |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |

@@ -1,10 +1,10 @@
 ---
 title: 应用如何支持 AIP 中的 Azure 权限管理
-description: 了解最常使用的应用程序（如 Office 应用）和服务（例如 Exchange 和 SharePoint）如何使用 azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。
-author: mlottner
-ms.author: mlottner
+description: 了解最常使用的应用程序 (例如 Office 应用程序) 和服务 (如 Exchange 和 SharePoint) 可以使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,16 +12,18 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cc23496dc8ceedeb463205147a076d8a98d58c75
-ms.sourcegitcommit: 8499602fba94fbfa28d7682da2027eeed6583c61
+ms.openlocfilehash: 5ee04997191002a9b20b97c52573834483eb8813
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83746159"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383986"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>应用程序如何支持 Azure Rights Management 服务
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
 
 使用以下信息可帮助你了解最常使用的最终用户应用程序和服务如何使用 Azure 信息保护中的 Azure Rights Management 服务来帮助保护组织的文档和电子邮件。 这些应用程序包括 Word、Excel、PowerPoint 和 Outlook。 服务包括 Exchange 和 Microsoft SharePoint。
 
@@ -50,7 +52,7 @@ ms.locfileid: "83746159"
 
 -   [Office 应用程序和服务](office-apps-services-support.md)
 
--   [运行 Windows Server 和使用文件分类基础结构（FCI）的文件服务器](file-server-support.md)
+-   [运行 Windows Server 和使用文件分类基础结构 (FCI) 的文件服务器](file-server-support.md)
 
 -   [支持 RMS API 的其他应用程序](api-support.md)
 

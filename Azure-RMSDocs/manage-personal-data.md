@@ -12,20 +12,23 @@ ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 89f46156ec8e22c0e44a99c9e3d8d5f79b260129
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 128989642e78ab0d7d45f53e5fc72a2c85bbf28f
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565350"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384258"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
 在配置和使用 Azure 信息保护时，Azure 信息保护服务会存储和使用电子邮件地址和 IP 地址。 可以在以下各项中找到此个人数据：
-
-- Azure 信息保护策略
-
-- 保护服务的模板
 
 - 保护服务的超级用户和委派的管理员 
 
@@ -33,54 +36,33 @@ ms.locfileid: "95565350"
 
 - 保护服务的使用日志
 
-- 文档跟踪日志
-
 - Azure 信息保护客户端和 RMS 客户端的使用情况日志 
 
+**仅限 AIP 经典客户端**：
+
+- Azure 信息保护策略
+
+- 保护服务的模板
+
+- 文档跟踪日志
 
 [!INCLUDE [GDPR-related guidance](./includes/gdpr-intro-sentence.md)]
 
-
 ## <a name="viewing-personal-data-that-azure-information-protection-uses"></a>查看 Azure 信息保护使用的个人数据
 
-使用 Azure 门户，管理员可为作用域内策略和标签配置中的保护设置指定电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
+- **统一标记客户端**：
 
-对于配置为从 Azure Rights Management 服务应用保护的标签，还可以通过使用 [AIPService 模块](/powershell/module/aipservice)中的 PowerShell cmdlet 在保护模板中找到电子邮件地址。 此 PowerShell 模块还允许管理员按照电子邮件地址将用户指定为[超级用户](configure-super-users.md)，或 Azure Rights Management 服务的管理员。 
+    对于统一标签客户端，会在 Microsoft 365 安全中心、Microsoft 365 相容性中心或 Microsoft 365 安全 & 符合性中心配置敏感度标签和标签策略。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels)。
 
-将 Azure 信息保护用于分类和保护文档和电子邮件时，可能会将电子邮件地址和用户的 IP 地址保存在日志文件中。
+- **经典客户端**：
 
+    对于经典客户端，请使用 Azure 门户为作用域内策略指定电子邮件地址，并在标签配置中指定保护设置。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
-### <a name="protection-templates"></a>保护模板
+    对于配置为从 Azure Rights Management 服务应用保护的标签，还可以通过使用 [AIPService 模块](/powershell/module/aipservice)中的 PowerShell cmdlet 在保护模板中找到电子邮件地址。 此 PowerShell 模块还允许管理员按照电子邮件地址将用户指定为[超级用户](configure-super-users.md)，或 Azure Rights Management 服务的管理员。 
 
-运行 [AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
-
-示例：
-```
-PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
-
-
-TemplateId              : fcdbbc36-1f48-48ca-887f-265ee1268f51
-Names                   : {1033 -> Confidential}
-Descriptions            : {1033 -> This data includes sensitive business information. Exposing this data to
-                          unauthorized users may cause damage to the business. Examples for Confidential information
-                          are employee information, individual customer projects or contracts and sales account data.}
-Status                  : Archived
-RightsDefinitions       : {admin@aip500.onmicrosoft.com -> VIEW, VIEWRIGHTSDATA, EDIT, DOCEDIT, PRINT, EXTRACT,
-                          REPLY, REPLYALL, FORWARD, EXPORT, EDITRIGHTSDATA, OBJMODEL, OWNER,
-                          AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@aip500.onmicrosoft.com -> VIEW,
-                          VIEWRIGHTSDATA, EDIT, DOCEDIT, PRINT, EXTRACT, REPLY, REPLYALL, FORWARD, EXPORT,
-                          EDITRIGHTSDATA, OBJMODEL, OWNER, admin2@aip500.onmicrosoft.com -> VIEW, VIEWRIGHTSDATA, EDIT,
-                          DOCEDIT, PRINT, EXTRACT, REPLY, REPLYALL, FORWARD, EXPORT, EDITRIGHTSDATA, OBJMODEL, OWNER}
-ContentExpirationDate   : 1/1/0001 12:00:00 AM
-ContentValidityDuration : 0
-ContentExpirationOption : Never
-LicenseValidityDuration : 7
-ReadOnly                : False
-LastModifiedTimeStamp   : 1/26/2018 6:17:00 PM
-ScopedIdentities        : {}
-EnableInLegacyApps      : False
-LabelId                 :
-```
+> [!NOTE]
+> 将 Azure 信息保护用于分类和保护文档和电子邮件时，可能会将电子邮件地址和用户的 IP 地址保存在日志文件中。
+> 
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
@@ -92,7 +74,7 @@ LabelId                 :
 运行 [AipServiceAdminLog](/powershell/module/aipservice/get-aipserviceadminlog) cmdlet，从 Azure 信息保护 (azure Rights Management) 获取保护服务的管理操作日志。 此日志包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
 例如：
-```
+```PowerShell
 PS C:\Users> Get-AipServiceAdminLog -Path '.\Desktop\admin.log' -FromTime 4/1/2018 -ToTime 4/30/2018 -Verbose
 The Rights Management administration log was successfully generated and can be found at .\Desktop\admin.log.
 ```
@@ -101,7 +83,7 @@ The Rights Management administration log was successfully generated and can be f
 运行 [AipServiceUserLog](/powershell/module/aipservice/get-aipserviceuserlog) cmdlet，以检索使用 Azure 信息保护中的保护服务的最终用户操作的日志。 此日志可包含电子邮件地址和 IP 地址形式的个人数据。 日志采用纯文本形式，下载它后，可以脱机搜索特定管理员的详细信息。
 
 例如：
-```
+```PowerShell
 PS C:\Users> Get-AipServiceUserLog -Path '.\Desktop\' -FromDate 4/1/2018 -ToDate 4/30/2018 -NumberOfThreads 10
 Acquiring access to your user log…
 Downloading the log for 2018-04-01.
@@ -128,12 +110,68 @@ Downloading the log for 2018-04-24.
 Downloaded the log for 2018-04-24. The log is available at .\Desktop\rmslog-2018-04-24.log.
 ```   
 
+### <a name="usage-logs-for-the-azure-information-protection-clients-and-rms-client"></a>Azure 信息保护客户端和 RMS 客户端的使用情况日志
+
+将标签和保护应用于文档和电子邮件时，电子邮件地址和 IP 地址可以存储在用户计算机以下位置的日志文件中：
+
+- 对于 Azure 信息保护统一标签和经典客户端： **%localappdata%\Microsoft\MSIP\Logs**
+
+- 对于 RMS 客户端： **%localappdata%\Microsoft\MSIPC\msip\Logs**
+
+此外，azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志 **应用程序和服务日志**  >  **Azure 信息保护**。
+
+当 Azure 信息保护客户端运行扫描程序时，个人数据将保存到运行扫描程序的 Windows Server 计算机上的 **%localappdata%\Microsoft\MSIP\Scanner\Reports** 中。
+
+可使用以下配置，为 Azure 信息保护客户端和扫描程序禁用日志记录信息：
+
+- 对于 Azure 信息保护客户端：创建将 **LogLevel** 配置为 **Off** 的 [高级客户端设置](./rms-client/clientv2-admin-guide-customizations.md#change-the-local-logging-level)。
+
+- 对于 Azure 信息保护扫描程序：使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) Cmdlet 将 *eportlevel* 参数设置为 **Off**。
+
+[!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
+
+### <a name="protection-templates"></a>保护模板
+
+适用 **于**：仅限 AIP 经典客户端
+
+运行 [AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
+
+例如：
+```PowerShell
+PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
+
+
+TemplateId              : fcdbbc36-1f48-48ca-887f-265ee1268f51
+Names                   : {1033 -> Confidential}
+Descriptions            : {1033 -> This data includes sensitive business information. Exposing this data to
+                          unauthorized users may cause damage to the business. Examples for Confidential information
+                          are employee information, individual customer projects or contracts and sales account data.}
+Status                  : Archived
+RightsDefinitions       : {admin@aip500.onmicrosoft.com -> VIEW, VIEWRIGHTSDATA, EDIT, DOCEDIT, PRINT, EXTRACT,
+                          REPLY, REPLYALL, FORWARD, EXPORT, EDITRIGHTSDATA, OBJMODEL, OWNER,
+                          AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@aip500.onmicrosoft.com -> VIEW,
+                          VIEWRIGHTSDATA, EDIT, DOCEDIT, PRINT, EXTRACT, REPLY, REPLYALL, FORWARD, EXPORT,
+                          EDITRIGHTSDATA, OBJMODEL, OWNER, admin2@aip500.onmicrosoft.com -> VIEW, VIEWRIGHTSDATA, EDIT,
+                          DOCEDIT, PRINT, EXTRACT, REPLY, REPLYALL, FORWARD, EXPORT, EDITRIGHTSDATA, OBJMODEL, OWNER}
+ContentExpirationDate   : 1/1/0001 12:00:00 AM
+ContentValidityDuration : 0
+ContentExpirationOption : Never
+LicenseValidityDuration : 7
+ReadOnly                : False
+LastModifiedTimeStamp   : 1/26/2018 6:17:00 PM
+ScopedIdentities        : {}
+EnableInLegacyApps      : False
+LabelId                 :
+```
+
 ### <a name="document-tracking-logs"></a>文档跟踪日志
+
+适用 **于**：仅限 AIP 经典客户端
 
 运行 [AipServiceDocumentLog](/powershell/module/aipservice/get-aipservicedocumentlog) cmdlet，以从文档跟踪站点检索有关特定用户的信息。 若要获取与文档日志关联的跟踪信息，请使用 [AipServiceTrackingLog](/powershell/module/aipservice/get-aipservicetrackinglog) cmdlet。
 
 例如：
-```
+```PowerShell
 PS C:\Users> Get-AipServiceDocumentLog -UserEmail "admin@aip500.onmicrosoft.com"
 
 
@@ -187,27 +225,8 @@ IsHiddenInfo         : False
 
 没有按 ObjectID 进行任何搜索。 但是，你不受 `-UserEmail` 参数限制，并且你提供的电子邮件地址不需要成为你租户的一部分。 如果提供的电子邮件地址存储在文档跟踪日志中的任意位置，则在 cmdlet 输出中返回文档跟踪条目。
 
-### <a name="usage-logs-for-the-azure-information-protection-clients-and-rms-client"></a>Azure 信息保护客户端和 RMS 客户端的使用情况日志
-
-将标签和保护应用于文档和电子邮件时，电子邮件地址和 IP 地址可以存储在用户计算机以下位置的日志文件中：
-
-- 对于 Azure 信息保护，统一标签客户端和 Azure 信息保护客户端：%localappdata%\Microsoft\MSIP\Logs
-
-- 对于 RMS 客户端：%localappdata%\Microsoft\MSIPC\msip\Logs
-
-此外，azure 信息保护客户端将此个人数据记录到本地 Windows 事件日志 **应用程序和服务日志**  >  **Azure 信息保护**。
-
-Azure 信息保护客户端运行扫描程序时，会将个人数据保存到运行此扫描程序的 Windows Server 计算机上的 %localappdata%\Microsoft\MSIP\Scanner\Reports。
-
-可使用以下配置，为 Azure 信息保护客户端和扫描程序禁用日志记录信息：
-
-- 对于 Azure 信息保护客户端：创建将 **LogLevel** 配置为 **Off** 的 [高级客户端设置](./rms-client/client-admin-guide-customizations.md#change-the-local-logging-level)。
-
-- 对于 Azure 信息保护扫描程序：使用 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) Cmdlet 将 *eportlevel* 参数设置为 **Off**。
-
-[!INCLUDE [GDPR-related guidance](./includes/gdpr-hybrid-note.md)]
-
 ## <a name="securing-and-controlling-access-to-personal-information"></a>保护和控制对个人信息的访问
+
 只有[通过 Azure Active Directory 分配有以下管理员角色](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)之一的用户可以访问你在 Azure 门户中查看和指定的个人数据：
     
 - **Azure 信息保护管理员**
@@ -222,21 +241,23 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 - **全局管理员**
 
-- **全局读取者**
+- **全局读取器**
 
 使用 AIPService 模块查看和指定 (或旧模块) 的个人数据仅可供已向其分配了 **Azure 信息保护管理员**、 **合规性管理员**、 **合规性数据管理员** 或 **全局管理员** Azure Active Directory 角色的用户访问，或者保护服务的全局管理员角色。
 
 ## <a name="updating-personal-data"></a>更新个人数据
 
-可以为 Azure 信息保护策略中的作用域内策略和保护设置更新电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
+**统一标记客户端**：
+
+对于统一标签客户端，会在 Microsoft 365 安全中心、Microsoft 365 相容性中心或 Microsoft 365 安全 & 符合性中心配置敏感度标签和标签策略。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels)。
+
+**经典客户端**：
+
+对于经典客户端，你可以在 Azure 信息保护策略中更新作用域内策略和保护设置的电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
 对于保护设置，你可以使用 [AIPService 模块](/powershell/module/aipservice)中的 PowerShell cmdlet 来更新相同的信息。
 
 无法更新超级用户和委派管理员的电子邮件地址。 请删除指定的用户帐户，添加包含更新电子邮件地址的用户帐户。 
-
-### <a name="protection-templates"></a>保护模板
-
-运行 [AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据在 `RightsDefinitions` 属性中，因此还需要使用 [AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 cmdlet 一起使用 `Set-AipServiceTemplateProperty` 。
 
 ### <a name="super-users-and-delegated-administrators-for-the-protection-service"></a>保护服务的超级用户和委派的管理员
 
@@ -252,8 +273,21 @@ Azure 信息保护客户端运行扫描程序时，会将个人数据保存到�
 
 2. 使用 [AipServiceRoleBasedAdministrator](/powershell/module/aipservice/Add-AipServiceRoleBasedAdministrator) 添加用户和新的电子邮件地址。
 
+### <a name="protection-templates"></a>保护模板
+
+仅 **适用于**：经典客户端
+
+运行 [AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty) cmdlet 以更新保护模板。 由于个人数据在 `RightsDefinitions` 属性中，因此还需要使用 [AipServiceRightsDefinition](/powershell/module/aipservice/new-aipservicerightsdefinition) cmdlet 创建具有更新信息的权限定义对象，并将权限定义对象与 cmdlet 一起使用 `Set-AipServiceTemplateProperty` 。
+
 ## <a name="deleting-personal-data"></a>删除个人数据
-可以删除 Azure 信息保护策略中作用域内策略和保护设置的电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
+
+- **统一标记客户端**：
+
+    对于统一标签客户端，会在 Microsoft 365 安全中心、Microsoft 365 相容性中心或 Microsoft 365 安全 & 符合性中心配置敏感度标签和标签策略。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels)。
+
+- **经典客户端**：
+
+    对于经典客户端，你可以删除 Azure 信息保护策略中的作用域内策略和保护设置的电子邮件地址。 有关详细信息，请参阅[如何使用作用域内策略为特定用户配置 Azure 信息保护策略](configure-policy-scope.md)以及[如何为 Rights Management 保护配置标签](configure-policy-protection.md)。 
 
 对于保护设置，你可以使用 [AIPService 模块](/powershell/module/aipservice)中的 PowerShell cmdlet 删除相同的信息。
 

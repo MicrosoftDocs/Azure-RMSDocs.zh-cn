@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护策略概述
 description: 了解 Azure 信息保护策略中的标签和设置，并将其下载到 Azure 信息保护客户端。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 11/28/2019
+ms.date: 11/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,23 +12,22 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a0b456d8e436de77ae54f2b6a9b543d82acd1b12
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 21efcc84720849b6164a7754cf82c786a7559192
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566061"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386417"
 ---
-# <a name="overview-of-the-azure-information-protection-policy"></a>Azure 信息保护策略概述
+# <a name="overview-of-the-azure-information-protection-policies"></a>Azure 信息保护策略概述
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标签客户端，请参阅 Microsoft 365 文档中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) "。 *
 
-> [!NOTE]
-> Azure 信息保护策略适用于 Azure 信息保护客户端 (经典) ，而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
-> 
-> 如果正在查找有关敏感度标签的信息，请参阅 Microsoft 365 符合性文档。 例如，[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
 
 Azure 信息保护策略包含以下可配置的元素：
     

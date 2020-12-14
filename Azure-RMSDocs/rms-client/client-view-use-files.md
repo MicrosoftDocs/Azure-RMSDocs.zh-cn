@@ -1,11 +1,11 @@
 ---
-title: 通过 Azure 信息保护查看器查看受保护的文件
-description: 说明如何查看和使用要求安装 Azure 信息保护查看器的受保护文件。
-author: mlottner
-ms.author: mlottner
+title: 通过 Azure 信息保护经典客户端查看器查看受保护的文件
+description: 说明如何查看和使用受保护的文件，该文件要求安装 Azure 信息保护经典客户端查看器。
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 1/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
@@ -13,18 +13,21 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 19ee7b67b7774420e799876e91d1889c5c788888
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 280fb2d86bf4c4c9165c1d74df6c17da69a499c0
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566189"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385584"
 ---
-# <a name="user-guide-view-protected-files-with-the-azure-information-protection-viewer"></a>用户指南：通过 Azure 信息保护查看器查看受保护的文件
+# <a name="user-guide-view-protected-files-with-the-azure-information-protection-classic-client-viewer"></a>用户指南：通过 Azure 信息保护经典客户端查看器查看受保护的文件
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用于**： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端用户指南](clientv2-view-use-files.md)。
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 通常，你可以直接打开受保护文件进行查看。 例如，可双击电子邮件中的附件、双击文件资源管理器中的文件或单击文件的链接。
 

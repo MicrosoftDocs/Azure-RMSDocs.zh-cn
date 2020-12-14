@@ -13,21 +13,23 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c6f52dac44fc85bec09607bd6832b07484a161ac
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 842f452a5a7a62002b4c0555580258368416d2d3
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565291"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384173"
 ---
 # <a name="activating-the-protection-service-from-azure-information-protection"></a>从 Azure 信息保护中激活保护服务
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > [!NOTE]
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
-> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
+> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/clientv2-user-guide.md)。
 >
 > 有关技术支持和其他服务问题，请参阅[支持选项和社区资源](information-support.md#support-options-and-community-resources)信息。
 
@@ -38,9 +40,9 @@ ms.locfileid: "95565291"
 
 如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
 
-- **如果在2018年2月版或更高版本中获取了包含 azure Rights Management 或 Azure 信息保护的订阅：** 将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
+- **如果在2018年2月结束时获得了包含 azure Rights Management 或 Azure 信息保护的订阅**：系统将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- **如果包含 Azure Rights Management 或 Azure 信息保护的订阅是在 2018 年 2 月之前或期间获取：** 如果租户使用的是 Exchange Online，Microsoft 即将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
+- **如果包含 azure Rights Management 或 Azure 信息保护的订阅是在2018年2月之前或在年2月获取的，** 则如果你的租户使用 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
 
 如果两种后续方案都不适用，必须手动激活保护服务。 
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
@@ -13,19 +13,22 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6f095c7cfd7a41663da3fd4f19d47012fa2604b5
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 44de4e40b64cb7d76c2e0b581fd4641f462b9cd4
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316681"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386281"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 Microsoft 365 文档中的敏感标签中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) " 和 ["限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels) "。 *
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
 
 使用 Azure 信息保护中的 Azure Rights Management 服务时，会自动将保护模板下载到客户端计算机，以便用户可以从应用程序中选择它们。 但是，如果你对模板进行了更改，可能还需要执行附加步骤：
 
@@ -39,7 +42,7 @@ ms.locfileid: "96316681"
 |Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分 [：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
 |适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
-|带有[内置标记](/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus|此内置标签客户端不会下载模板，而是联机访问模板-无需执行其他步骤。|
+|带有[内置标记](/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus|此内置标签解决方案不会下载模板，而是联机访问模板-无需执行其他步骤。|
 | | |
 
 如果客户端应用程序需要下载模板 (初始或刷新) ，请在下载完成前等待30分钟，新的或更新的模板完全可操作。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 
@@ -56,19 +59,19 @@ ms.locfileid: "96316681"
     
     - 设置以天为单位的更新频率（最少为 1 天）：创建名为“TemplateUpdateFrequency”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以天为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
-        **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **注册表路径**： HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **类型:** REG_DWORD
+        **类型**：REG_DWORD
 
-        **值：** TemplateUpdateFrequency
+        **值**： TemplateUpdateFrequency
 
     - 设置以秒为单位的更新频率（最少为 1 秒）：创建名为“TemplateUpdateFrequencyInSeconds”  的新注册表值，并为该数据定义整数值，该值将指定向已下载模板下载任何更改的频率（以秒为单位）。 使用以下信息查找创建此新注册表值的注册表路径。
 
-        **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **注册表路径**： HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **类型:** REG_DWORD
+        **类型**：REG_DWORD
 
-        **值：** TemplateUpdateFrequencyInSeconds
+        **值**： TemplateUpdateFrequencyInSeconds
 
     请确保你创建并设置这两个注册表值中的其中一个，而不是对这两个注册表值都执行此操作。 如果两者均存在，将忽略 **TemplateUpdateFrequency** 。
 
@@ -78,11 +81,11 @@ ms.locfileid: "96316681"
 
 1. 使用注册表编辑器，删除“LastUpdatedTime”值的数据。 例如，数据可能显示“2015-04-20T15:52”；删除 2015-04-20T15:52，使得数据不会显示。 使用以下信息查找删除此注册表值数据的注册表路径。
 
-   **注册表路径：** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\ < *MicrosoftRMS_FQDN*> \template \\ < *user_alias*>
+   **注册表路径**： HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\ < *MicrosoftRMS_FQDN*> \template \\ < *user_alias*>
 
-   **类型:** REG_SZ
+   **类型**：REG_SZ
 
-   **值：** LastUpdatedTime
+   **值**： LastUpdatedTime
 
    > [!TIP]
    > 在注册表路径中，<*MicrosoftRMS_FQDN*> 是指你的 Microsoft RMS 服务 FQDN。 如果你想要验证此值：

@@ -1,30 +1,30 @@
 ---
 title: 将 PowerShell 与 Azure 信息保护统一标签客户端配合使用
 description: 管理员使用 PowerShell 管理 Azure 信息保护统一标签客户端的说明和信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 09/03/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2133259809b87a66fe5e63e10e1273a0412208b7
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 38e2156b0102c857d13b99233a5bad2331662606
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566188"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385482"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-unified-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护统一客户端配合使用
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-powershell.md)。 *
 
 当你安装 Azure 信息保护统一标签客户端时，将自动安装 PowerShell 命令。 这允许通过运行可放到脚本中实现自动执行的命令来管理客户端。
 
@@ -36,6 +36,7 @@ Cmdlet 随 PowerShell 模块 **AzureInformationProtection** 一起安装，其�
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|对于共享文件夹，检查文件内容，然后根据指定的条件自动标记未标记的文件。|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|对于共享文件夹，将指定的标签应用于没有标签的所有文件。|
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|以非交互方式标记文件，例如使用按计划运行的脚本。|
+| | |
 
 此模块安装在 **\ProgramFiles (x86)\Microsoft Azure Information Protection** 中，并将此文件夹添加到 **PSModulePath** 系统变量。 此模块的 .dll 命名为 **AIP.dll**。
 
@@ -54,13 +55,11 @@ Cmdlet 随 PowerShell 模块 **AzureInformationProtection** 一起安装，其�
 
 ### <a name="prerequisites-for-using-the-azureinformationprotection-module"></a>使用 AzureInformationProtection 模块的先决条件
 
-除了安装 AzureInformationProtection 模块的先决条件之外，在使用 Azure 信息保护的标记 cmdlet 时还有其他先决条件：
+除了安装 **AzureInformationProtection** 模块的先决条件之外，在使用 Azure 信息保护的标记 cmdlet 时还有其他先决条件：
 
 1. 必须激活 Azure 权限管理服务。
 
-2. 使用自己的帐户从他人的文件中删除保护： 
-
-    - 必须为你的组织启用超级用户功能，而且必须将你的帐户配置为 Azure 权限管理的超级用户。
+2. 若要使用自己的帐户从其他人的文件中删除保护，必须为你的组织启用超级用户功能，并且你的帐户必须配置为 Azure Rights Management 的超级用户。
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>先决条件 1：必须激活 Azure 权限管理服务
 

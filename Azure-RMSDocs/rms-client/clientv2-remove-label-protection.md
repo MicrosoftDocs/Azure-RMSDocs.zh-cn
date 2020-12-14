@@ -1,8 +1,8 @@
 ---
 title: 使用 Azure 信息保护统一标签客户端删除标签
 description: 有关如何使用 Azure 信息保护统一标签客户端从文件和电子邮件中删除敏感度标签和保护的说明。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 09/03/2020
 ms.topic: how-to
@@ -12,22 +12,22 @@ ms.assetid: ''
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 4009de4e147bd5102602ef946f8b892ab478e542
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: fffc0099d1a018141c15feabb746e4795be18d5b
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565360"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385363"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection"></a>用户指南：从 Azure 信息保护标记的文件和电子邮件中删除标签和保护
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-remove-label-protection.md)。 *
 
-当 [你的计算机上安装](install-client-app.md)了 Azure 信息保护统一客户端时，你可以从文件和电子邮件中删除敏感度标签和保护。
+当 [你的计算机上安装](install-unifiedlabelingclient-app.md)了 Azure 信息保护统一客户端时，你可以从文件和电子邮件中删除敏感度标签和保护。
 
 如果你删除的敏感度标签已配置为应用保护，则此操作还会删除该文件的保护。 系统可能会提示你记录删除该标签的原因。
 
@@ -72,7 +72,7 @@ ms.locfileid: "95565360"
 ## <a name="other-instructions"></a>其他说明
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：
 
-- [您希望做什么？](client-user-guide.md#what-do-you-want-to-do)
+- [您希望做什么？](clientv2-user-guide.md#what-do-you-want-to-do)
 
 ## <a name="additional-information-for-administrators"></a>为管理员提供的其他信息    
 

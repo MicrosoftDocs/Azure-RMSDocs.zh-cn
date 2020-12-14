@@ -4,27 +4,27 @@ description: 有关受支持的文件类型、文件扩展名以及负责 Window
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/03/2020
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b9f8a53135407e91d04542bc53c709b82662a19a
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 754525afeee619f8f336addd5239ea15223f986c
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316630"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385516"
 ---
-# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>管理员指南： Azure 信息保护统一标签客户端支持的文件类型
+# <a name="file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端支持的文件类型
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*>
+>***适用** 于 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012*>
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端文件类型](client-admin-guide-file-types.md)*
 
 Azure 信息保护统一标签客户端可以将以下内容应用于文档和电子邮件：
 
@@ -70,7 +70,7 @@ Azure 信息保护统一标签客户端还可以使用已知的敏感信息类�
 
 其他文件类型在受保护时也支持分类。 有关这些文件类型，请参阅[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)部分。
 
-示例：
+示例:
 
 - 如果 " **常规** 敏感度" 标签应用分类并且不应用保护：可以将 " **常规** " 标签应用到名为 sales.pdf 的文件，但不能将此标签应用于名为 sales.txt 的文件。
 
@@ -82,7 +82,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
-|描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
+|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
 |保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
@@ -94,7 +94,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
-- **Office 文件：**
+- **对于 Office 文件**：
 
   |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
   |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

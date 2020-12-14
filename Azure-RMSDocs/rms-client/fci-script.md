@@ -1,11 +1,11 @@
 ---
 title: 适用于 Azure RMS 和 FCI 的 PowerShell 脚本 - AIP
 description: 要复制和编辑的示例脚本，如“使用 Windows Server 文件分类基础结构的 RMS 保护”说明中所述。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 11/30/2019
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
@@ -13,18 +13,21 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 404ebad93a5ab9561cdc812ae5d7f9b4cb3ee693
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: cbee166e5f3c73c6574fb12b92aa93b1e462bf40
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565357"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385142"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>用于 Azure RMS 保护的 Windows PowerShell 脚本（通过使用文件服务器资源管理器 FCI）
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、windows server 2012 R2 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 此页包含要复制和编辑的示例脚本，如[使用 Windows Server 文件分类基础结构的 RMS 保护](configure-fci.md)中所述。
 

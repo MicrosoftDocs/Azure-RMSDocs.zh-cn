@@ -5,26 +5,26 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 12/07/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7fabd12e3ca0dc08f8c5617b37252ac5adc22948
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: 427143c8ee2a93e60be683b3e80b5493c0bab441
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849668"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385465"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***适用于以下内容的说明**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
 
 在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序： [Azure 信息保护的要求](../requirements.md)。 
 
@@ -37,8 +37,8 @@ ms.locfileid: "96849668"
 |要求  |说明  |
 |---------|---------|
 |**Microsoft .NET 框架4.6。2**     | 默认情况下，默认情况下，Azure 信息保护统一标签客户端完全安装需要 Microsoft .NET Framework 4.6.2 的最低版本。 <br><br>如果缺少此框架，则可执行安装程序中的安装向导将尝试下载并安装此必备组件。 在客户端安装过程中安装此必备项后，将重启计算机。       |
-|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 <br><br>**重要提示：** 如果查看器缺少此框架，则可执行安装 *程序不会下载或* 安装该框架。        |
-|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 <br><br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 <br><br>**重要提示：** 安装 *程序不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
+|**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 <br><br>**重要提示**：如果查看器缺少此框架，则可执行安装程序 *不会下载或* 安装该框架。        |
+|**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 <br><br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 <br><br>**重要说明**：安装程序 *不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
 |**屏幕分辨率大于 800 x 600**    |     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。    |
 |**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 <br><br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 <br><br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。      |
 |**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 <br><br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
@@ -66,7 +66,7 @@ ms.locfileid: "96849668"
 
 Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word、Excel、PowerPoint 和 Outlook 通过以下任一 Office 版本来标记和保护文档和电子邮件：
 
-- Office 应用程序适用于 Microsoft 365 应用程序的 [支持版本的表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 应用程序 Microsoft 365 商业版或高级版，在向用户分配 azure Rights Management (也称为 Azure 信息保护 for Office 365) 
+- Office 应用，对于[各更新通道中受支持的 Microsoft 365 应用版本表](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本，从 Microsoft 365 商业应用版或 Microsoft 365 商业高级版，前提是已为用户分配了 Azure Rights Management（亦称为“适用于 Microsoft 365 的 Azure 信息保护”）许可证
 - Microsoft 365 企业应用版
 - Office 专业增强版 2019
 - Office Professional Plus 2016
@@ -127,7 +127,7 @@ Office 邮件合并功能无法与 Azure 信息保护功能配合使用。
     
     例如：**Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
     
-    在此日志文件中搜索以下字符串：**Product: Microsoft Azure Information Protection -- Installation completed successfully**（产品：Microsoft Azure 信息保护 - 已成功完成安装）。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
+    在此日志文件中，搜索以下字符串： **Product： Microsoft Azure 信息保护--安装已成功完成**。 如果安装失败，此日志文件包含有助于标识并解决任何问题的详细信息。
 
 #### <a name="more-information-about-the-servicelocation-installation-parameter"></a>详细了解 ServiceLocation 安装参数
 

@@ -11,19 +11,23 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0a1ac4e5470df68076585d9f328b28c76377a26d
-ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
+ms.openlocfilehash: ee493790e4997f8be11244490cf6014c17e6c6fd
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95735008"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384224"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
-使用下面的列表和表来查找有关 Azure 信息保护功能相关的已知问题和限制的详细信息。
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
-> [!NOTE]
-> 本文介绍经典和统一标签客户端中的已知问题。 不确定这些客户端之间有何区别？ 请参阅 [常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+使用下面的列表和表来查找有关 Azure 信息保护功能相关的已知问题和限制的详细信息。
 
 ## <a name="client-support-for-container-files-such-as-zip-files"></a>容器文件的客户端支持，例如 .zip 文件
 
@@ -39,7 +43,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 ## <a name="known-issues-for-aip-and-exploit-protection"></a>AIP 和 Exploit Protection 的已知问题
 
-在安装了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的 .net 2 或3计算机上，不支持 Azure 信息保护客户端。
+Azure 信息保护客户端在具有 .NET 2 或3的计算机上不受支持，其中启用了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 并导致 Office 应用崩溃。
 
 如果你的 .NET 版本为2或3，但你的系统需要 .NET 4.x 版本，请确保在安装 AIP 之前禁用 Exploit protection。 
 
@@ -68,12 +72,12 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 |功能  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
-|**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规"** 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观"。**    |
+|**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
 |**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的 [DRMEncryptProperty](/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options) 注册表设置。|
 |**Word 中的内容标记**    | 当相同的页眉或页脚也包含一个表时，Microsoft Word 页眉或页脚中的 AIP [内容标记](configure-policy-markings.md) 可能会偏移或放置不正确，或者可能完全隐藏。<br><br>有关详细信息，请参阅 [何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
 |**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
 |**邮件合并**    |  Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能无法与 Azure 信息保护功能配合使用。       |
-| **S/MIME 电子邮件** | 在 Outlook 的阅读窗格中打开 S/MIME 电子邮件可能会造成性能问题。 <br><br>若要防止 S/MIME 电子邮件出现性能问题，请启用 [**OutlookSkipSmimeOnReadingPaneEnabled**](rms-client/clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。 <br><br>**注意：** 启用此属性可防止 AIP 栏或电子邮件分类显示在 Outlook 的阅读窗格中。 |
+| **S/MIME 电子邮件** | 在 Outlook 的阅读窗格中打开 S/MIME 电子邮件可能会造成性能问题。 <br><br>若要防止 S/MIME 电子邮件出现性能问题，请启用 [**OutlookSkipSmimeOnReadingPaneEnabled**](rms-client/clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。 <br><br>**注意**：启用此属性可防止 AIP 栏或电子邮件分类显示在 Outlook 的阅读窗格中。 |
 |**"发送到文件资源管理器" 选项** |如果你选择在文件资源管理器中右键单击任何文件，然后选择 " **发送到 > 邮件收件人**"，则在附加了文件的情况下打开的 Outlook 邮件可能不会显示 AIP 工具栏。 <br><br>如果发生这种情况，并且你需要使用 AIP 工具栏选项，请从 Outlook 内启动电子邮件，然后浏览到并附加要发送的文件。|
 | | |
 
@@ -83,7 +87,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="known-issues-in-the-aip-client"></a>AIP 客户端中的已知问题
 
-- **最大文件大小。** 支持大于 2 GB 的文件进行保护，但不支持解密。
+- **最大文件大小。** 支持，但不支持解密。
 
 - **AIP 查看器。** "AIP 查看器" 以纵向模式显示图像，某些宽、横向视图的图像可能显示为已拉伸。
 
@@ -121,7 +125,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 建议仅为内部用户启用基于 AIP 的条件性访问策略。
 
-**仅为内部用户启用 AIP 的条件性访问策略：**
+**仅为内部用户启用 AIP 的条件性访问策略**：
 
 1.  在 Azure 门户中，导航到 " **条件性访问** " 边栏选项卡，然后选择要修改的条件性访问策略。 
 2.  在 " **分配**" 下，选择 " **用户和组**"，然后选择 " **所有用户**"。 请确保 *未* 选中 "**所有来宾和外部用户**" 选项。

@@ -5,23 +5,25 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/24/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 17f1efc5c5e0c01f33e638d1ef674a81b17494f8
-ms.sourcegitcommit: 5b7235f7bb77cc88716f15dda0aa0d832e0f7063
+ms.openlocfilehash: bd7b94caba31ddbadf1d39754a6bb609c59aea60
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95734958"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385159"
 ---
 # <a name="what-is-the-azure-information-protection-app-for-ios-or-android"></a>什么是适用于 iOS 或 Android 的 Azure 信息保护应用？
 
-适用于：Active Directory Rights Management Services、[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 适用于 iOS 和 Android 的 Azure 信息保护 (AIP) mobile 应用程序是一个查看器应用，可用于查看受保护的电子邮件、Pdf、图像和文本文件，如果这些文件类型的常规应用不支持保护，则会很有用。 
 
@@ -91,9 +93,9 @@ ms.locfileid: "95734958"
 
 |要求  |说明  |
 |---------|---------|
-|**支持的操作系统版本**     | 最小移动操作系统包括： </br>-iOS 11  </br>-Android 6。0 </br></br>**注意：** Intel Cpu 不支持 AIP 移动应用。  |
-|**支持的登录凭据**     | 通过以下方式之一登录到 AIP 移动应用： </br></br>**工作或学校凭据。** 尝试使用你的工作或学校凭据登录。 如果有疑问，请与管理员联系，了解你的组织是否已使用移动设备扩展在本地 AD RMS，或使用 Azure 信息保护。 </br></br>**一个 Microsoft 帐户**。 如果使用个人电子邮件地址来保护文件，请使用 [Microsoft 帐户](https://signup.live.com)登录。 如果需要申请 Microsoft 帐户，可以使用自己的 Hotmail、Gmail 或其他电子邮件地址来执行此操作。 </br></br>**注意：** 并非所有应用程序都能打开受 Microsoft 帐户保护的内容。 有关详细信息，请参阅 [打开受保护文档的支持方案](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。|
-|**支持的文件类型**     | 支持的文件类型包括受保护的电子邮件、PDF 文件、图像和文本文件。 </br></br>例如，这些文件包括以下扩展名： **.rpmsg、** **.pdf、** **. ppdf、** **. .pjpg、** **.pjpeg、** **ptiff** 、.ppng **、. .ptxt** **、.** **.pxml** </br></br>有关支持的文件类型的完整列表，请参阅 [AIP 客户端管理员指南](clientv2-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)。|
+|**支持的操作系统版本**     | 最小移动操作系统包括： </br>-iOS 11  </br>-Android 6。0 </br></br>**注意**： Intel cpu 不支持 AIP 移动应用。  |
+|**支持的登录凭据**     | 通过以下方式之一登录到 AIP 移动应用： </br></br>**工作或学校凭据。** 尝试使用你的工作或学校凭据登录。 如果有疑问，请与管理员联系，了解你的组织是否已使用移动设备扩展在本地 AD RMS，或使用 Azure 信息保护。 </br></br>**一个 Microsoft 帐户。** 如果使用个人电子邮件地址来保护文件，请使用 [Microsoft 帐户](https://signup.live.com)登录。 如果需要申请 Microsoft 帐户，可以使用自己的 Hotmail、Gmail 或其他电子邮件地址来执行此操作。 </br></br>**注意**：并非所有应用程序都能打开使用 Microsoft 帐户保护的内容。 有关详细信息，请参阅 [打开受保护文档的支持方案](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。|
+|**支持的文件类型**     | 支持的文件类型包括受保护的电子邮件、PDF 文件、图像和文本文件。 </br></br>例如，这些文件包括以下扩展名： **.rpmsg**、 **.pdf**、 **. ppdf**、 **. .pjpg、** **.pjpeg**、 **ptiff** **、.ppng** **、. .ptxt**、 **. .pxml** </br></br>有关支持的文件类型的完整列表，请参阅 [AIP 客户端管理员指南](clientv2-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)。|
 | | |
 
 ## <a name="admins-testing-the-aip-mobile-apps"></a>管理员：测试 AIP 移动应用
@@ -106,11 +108,11 @@ ms.locfileid: "95734958"
 
     例如，向自己发送以下受权限保护的文件之一：
 
-    |文件类型  |Instructions  |
+    |文件类型  |说明  |
     |---------|---------|
     |**电子邮件 ( .rpmsg)**     | 使用其他设备（如 Windows 计算机上的 Outlook）向自己发送受权限保护的电子邮件，可以从移动设备访问该邮件。  |
-    |**PDF**     | 1. 从 Windows 计算机上，使用 AIP [经典](client-classify-protect.md) 或 [统一标签](clientv2-classify-protect.md) 客户端保护 PDF 文件。 </br>2. 向自己发送受保护的 PDF，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。        |
-    |**Image (。 .ptxt、.pjpg 或 .ppng)**     | 1. 从 Windows 计算机上，使用 AIP [经典](client-classify-protect.md) 或 [统一标签](clientv2-classify-protect.md) 客户端保护文本或图像文件。 </br></br>2. 向自己发送受保护的文件，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。   |
+    |**PDF**     | 1. 从 Windows 计算机上，使用 AIP 客户端 [保护 PDF](clientv2-classify-protect.md) 文件。 </br>2. 向自己发送受保护的 PDF，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。        |
+    |**Image (。 .ptxt、.pjpg 或 .ppng)**     | 1. 从 Windows 计算机上，使用 AIP 客户端 [保护文本或图像文件](clientv2-classify-protect.md) 。 </br></br>2. 向自己发送受保护的文件，或将其上传到 SharePoint 受保护的库，并将其共享到你自己的电子邮件地址。   |
 | | |
 
 1. 使用发送给你自己的电子邮件附件或链接在你的移动设备上打开受保护的文件。

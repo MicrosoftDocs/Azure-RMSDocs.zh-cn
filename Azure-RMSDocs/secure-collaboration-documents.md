@@ -4,8 +4,8 @@ description: 用于在受 Azure 信息保护保护的文档上进行协作的端
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/19/2020
-ms.topic: conceptual
+ms.date: 11/23/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
@@ -13,19 +13,22 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: fcdfc020061428959e2137a46347b49b150ad73a
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 117a943c410497cda1df9d0740ad9c91e2744e7f
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316698"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384836"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标签客户端，请参阅 Microsoft 365 文档中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) "。 *
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
 
 当你使用 Azure 信息保护时，你可以保护你的文档，而无需牺牲授权用户的协作。 一个用户创建并与他人共享以进行查看和编辑的大多数文档将是 Word、Excel 和 PowerPoint 等 Office 文档。 这些文档支持本地保护，这意味着除了授权和加密的保护功能外，它们还支持受限权限以实现更细化的控制。 
 
@@ -61,9 +64,9 @@ ms.locfileid: "96316698"
     
    - 对于第一个外部组织中的所有用户：选择“输入详细信息”，然后在组织的租户中键入域名。 例如，fabrikam.com。
     
-   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如 sales@contoso.com。
+   - 对于第二个外部组织中的组：仍在“输入详细信息”选项卡上，键入组织租户中的组的电子邮件地址。 例如，sales@contoso.com。
     
-   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如 bengi.turan@gmail.com。 
+   - 对于没有 Azure AD 帐户的用户：仍在“输入详细信息”选项卡上，键入用户的电子邮件地址。 例如，bengi.turan@gmail.com。 
 
 4. 若要向所有这些用户授予相同的权限：对于“从预设中选择权限”，可选择“共有者”、“合著者”、“审阅者”或“自定义”，以选择希望授予的权限。
     

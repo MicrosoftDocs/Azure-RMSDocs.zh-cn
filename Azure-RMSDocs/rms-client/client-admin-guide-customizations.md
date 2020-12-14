@@ -1,11 +1,11 @@
 ---
-title: 自定义配置-Azure 信息保护客户端
-description: 有关自定义适用于 Windows 的 Azure 信息保护客户端的信息。
+title: 自定义配置-Azure 信息保护经典客户端
+description: 有关自定义适用于 Windows 的 Azure 信息保护经典客户端的信息。
 author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
@@ -13,27 +13,27 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3b81566a0853776a2b06e9a731e0cb3cf11fa5ff
-ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
+ms.openlocfilehash: 994b4ae32424fe4994cbb8e7b77ed4acc5867bdb
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566477"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386196"
 ---
-# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>管理员指南：Azure 信息保护客户端的自定义配置
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-classic-client"></a>管理员指南： Azure 信息保护经典客户端的自定义配置
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端管理员指南](clientv2-admin-guide-customizations.md)。
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
 其中一些设置需要编辑注册表，一些使用的是高级设置，必须先在 Azure 门户中进行配置，再发布以供客户端下载。  
 
-### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>在门户中配置高级客户端配置设置的具体步骤
+### <a name="how-to-configure-advanced-classic-client-configuration-settings-in-the-portal"></a>如何在门户中配置高级经典客户端配置设置
 
 1. 如果尚未这样做，请在新的浏览器窗口中 [登录到 Azure 门户](../configure-policy.md#signing-in-to-the-azure-portal)，然后导航到 " **Azure 信息保护** " 窗格。
 
@@ -49,7 +49,7 @@ ms.locfileid: "95566477"
 
 6. 如果不再需要该设置并想要恢复为默认行为：在 " **高级设置** " 窗格上，选择你不再需要的设置旁边的上下文 **菜单 ("**) ，然后选择" **删除**"。 然后单击“保存并关闭”。
 
-#### <a name="available-advanced-client-settings"></a>可用高级客户端设置
+#### <a name="available-advanced-classic-client-settings"></a>可用的高级经典客户端设置
 
 |设置|应用场景和说明|
 |----------------|---------------|
@@ -124,7 +124,7 @@ ms.locfileid: "95566477"
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>如果组织拥有组合许可证，则强制执行仅保护模式
 
-如果你的组织没有任何 Azure 信息保护许可证，但有 Microsoft 365 包含用于保护数据的 Azure Rights Management 服务的许可证，则适用于 Windows 的 Azure 信息保护客户端将自动在 [仅保护模式下](client-protection-only-mode.md)运行。
+如果你的组织没有任何 Azure 信息保护许可证，但有 Microsoft 365 包含用于保护数据的 Azure Rights Management 服务的许可证，则 AIP 经典客户端会在 [仅保护模式下](client-protection-only-mode.md)自动运行。
 
 但是，如果贵组织已订阅 Azure 信息保护，默认情况下所有 Windows 计算机都可以下载 Azure 信息保护策略。 Azure 信息保护客户端不会进行许可证检查以及强制执行。 
 
@@ -138,7 +138,7 @@ ms.locfileid: "95566477"
 
 ## <a name="add-report-an-issue-for-users"></a>为用户添加“报告问题”
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 当指定以下高级客户端设置时，用户将看到一个“报告问题”选项，他们可以从“帮助和反馈”客户端对话框中选择该选项。 为链接指定 HTTP 字符串。 例如，为用户报告问题设置的自定义 Web 页面，或者发送给支持人员的电子邮件地址。 
 
@@ -164,7 +164,7 @@ ms.locfileid: "95566477"
 
 请注意，在没有 internet 连接的情况下，客户端无法使用组织的基于云的密钥 (或删除保护) 。 相反，客户端只能使用应用分类或 [HYOK](../configure-adrms-restrictions.md) 保护的标签。
 
-若要阻止 Azure 信息保护服务登录提示，可使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)，然后为计算机下载策略。 或者，也可以通过编辑注册表来阻止此登录提示。
+若要阻止 Azure 信息保护服务登录提示，可使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)，然后为计算机下载策略。 或者，也可以通过编辑注册表来阻止此登录提示。
 
 - 若要配置高级客户端设置，请执行以下操作：
     
@@ -204,7 +204,7 @@ ms.locfileid: "95566477"
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>在 Outlook 中隐藏或显示“不转发”按钮
 
-建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置来配置此选项](../configure-policy-settings.md) 。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。
+建议使用“向 Outlook 功能区添加‘不转发’按钮”这一[策略设置来配置此选项](../configure-policy-settings.md) 。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)来配置此选项。
 
 配置此设置后，将在 Outlook 功能区中隐藏或显示“不转发”按钮。 此设置对 Office 菜单中的“不转发”选项没有影响。
 
@@ -216,7 +216,7 @@ ms.locfileid: "95566477"
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>设置用户是否能够使用自定义权限选项
 
-建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置来配置此选项](../configure-policy-settings.md) 。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)来配置此选项。 
+建议使用“设置用户是否能够使用自定义权限选项”这一[策略设置来配置此选项](../configure-policy-settings.md) 。 但是，也可以使用在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)来配置此选项。 
 
 配置此设置并为用户发布策略后，用户可看到自定义权限选项，它们可用于自行选择保护设置；这些选项也可能隐藏，使得用户无法自行选择保护设置（除非系统出现提示）。
 
@@ -228,7 +228,7 @@ ms.locfileid: "95566477"
 
 ## <a name="for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer"></a>对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 配置[策略设置时，为用户或上一部分中的同等高级客户端设置提供自定义权限选项，用户无法查看或更改已在受保护文档中设置的自定义权限](../configure-policy-settings.md) 。 
 
@@ -246,7 +246,7 @@ ms.locfileid: "95566477"
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>永久隐藏 Azure 信息保护栏
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置设置为“开”时，才使用此配置](../configure-policy-settings.md) 。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 仅当“在 Office 应用中显示信息保护栏”这一项[策略设置设置为“开”时，才使用此配置](../configure-policy-settings.md) 。
 
 默认情况下，如果用户清除“主页”选项卡、“保护”组、“保护”按钮中的“显示数据条”选项，则信息保护栏将不再显示在该 Office 应用中。 但是，下次打开 Office 应用时，会自动再次显示该栏。
 
@@ -262,7 +262,7 @@ ms.locfileid: "95566477"
 
 ## <a name="enable-order-support-for-sublabels-on-attachments"></a>启用附件子标签的排序支持
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 如果具有子标签并已配置以下[策略设置](../configure-policy-settings.md)，请使用此设置：
 
@@ -280,7 +280,7 @@ ms.locfileid: "95566477"
 
 ## <a name="exempt-outlook-messages-from-mandatory-labeling"></a>使 Outlook 邮件免于强制标记
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 默认情况下，当你启用 "**所有文档和电子邮件都必须具有标签**" 的 [策略设置](../configure-policy-settings.md)时，所有已保存的文档和已发送的电子邮件都必须应用标签。 配置以下高级设置时，策略设置仅适用于 Office 文档，而不适用于 Outlook 邮件。
 
@@ -292,7 +292,7 @@ ms.locfileid: "95566477"
 
 ## <a name="enable-recommended-classification-in-outlook"></a>在 Outlook 中启用建议的分类
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 为建议的分类配置标签时，系统将提示用户接受或关闭 Word、Excel 和 PowerPoint 中建议的标签。 此设置将此标签建议扩展到也在 Outlook 中显示。
 
@@ -308,7 +308,7 @@ ms.locfileid: "95566477"
 
 ## <a name="implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent"></a>在 Outlook 中实施弹出消息，警告、证明或阻止发送电子邮件
 
-此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 当创建并配置以下高级客户端设置时，用户可以在 Outlook 中看到弹出消息，这些消息可以在发送电子邮件之前警告他们，或者要求他们提供发送电子邮件的理由，或者在存在以下任何一种情况时阻止他们发送电子邮件：
 
@@ -328,7 +328,7 @@ ms.locfileid: "95566477"
 
 当弹出消息用于特定标签时，可以按域名为收件人配置例外。
 
-弹出消息中生成的操作将记录到本地 Windows 事件日志 **应用程序和服务日志** 中  >  **Azure Information Protection**。
+弹出消息中生成的操作将记录到本地 Windows 事件日志 **应用程序和服务日志** 中  >  。
 
 - 警告消息：信息 ID 301
 
@@ -485,7 +485,7 @@ User Response: Confirmed
 
 ## <a name="set-a-different-default-label-for-outlook"></a>为 Outlook 设置不同的默认标签
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 配置此设置时，Outlook 不会应用 Azure 信息保护策略中为“选择默认标签”设置配置的默认标签。 相反，Outlook 可应用不同的默认标签，也可不应用标签。
 
@@ -501,7 +501,7 @@ User Response: Confirmed
 
 ## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>将标签配置为在 Outlook 中应用 S/MIME 保护
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 仅当具有有效的 [S/MIME 部署](/exchange/s-mime-for-message-signing-and-encryption)，且希望标签自动对电子邮件应用此保护方法（而不是 Azure 信息保护中的权限管理保护）时，才使用此设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
@@ -541,7 +541,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>使用强制标签时，删除文档的“以后再说”
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 在使用“所有文档和电子邮件都必须有一个标签”的[策略设置](../configure-policy-settings.md)时，当用户首次保存 Office 文档和发送电子邮件，系统会提示选择标签。 对于文档，用户可以选择“以后再说”暂时关闭提示以选择标签，并返回到文档。 但是不能在未选择标签的情况下关闭已保存的文档。 
 
@@ -555,7 +555,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>开启在后台持续运行的分类
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。  
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。  
 
 在你配置此设置时，它更改 Azure 信息保护客户端向文档应用自动和建议标签的[默认行为](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)： 
 
@@ -579,7 +579,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 ## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>不使用 PDF 加密 ISO 标准来保护 PDF 文件
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 当 Azure 信息保护客户端的最新版本保护 PDF 文件时，生成的文件扩展名仍为 .pdf 并遵守 PDF 加密 ISO 标准。 有关此标准的详细信息，请参阅[派生自 ISO 32000-1 的文档](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf)（由 Adobe Systems Incorporated 发布）中的第 7.6 节加密。
 
@@ -591,7 +591,7 @@ dcf781ba-727f-4860-b3c1-73479e31912b 的标签 ID 示例值：
 
 例如，如果使用不支持 PDF 加密 ISO 标准的 PDF 阅读器，则可能需要为所有用户配置此设置。 或者，在逐步采用支持新格式的 PDF 阅读器中的更改时，可能需要为部分用户配置此设置。 如果需要向已签名的 PDF 文档添加保护，则也可能使用此设置。 已签名的 PDF 文档可能受到 .ppdf 格式的额外保护，因此该保护是作为文件的包装器实现的。 
 
-要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果希望在 **EnablePDFv2Protection** 设置为 False 时由扫描程序保护 PDF 文档 **，** 则必须 [编辑注册表](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)。
+要使 Azure 信息保护扫描程序使用新设置，必须重启扫描程序服务。 此外，在默认情况下，扫描程序将不再保护 PDF 文档。 如果希望在 **EnablePDFv2Protection** 设置为 **False** 时由扫描程序保护 PDF 文档，则必须 [编辑注册表](../deploy-aip-scanner-configure-install-classic.md#change-which-file-types-to-protect)。
 
 有关新 PDF 加密的详细信息，请参阅博客文章[使用 Microsoft 信息保护进行 PDF 加密的新支持](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)。
 
@@ -662,7 +662,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>从 Secure Islands 和其他标记解决方案迁移标签
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 当前此配置与使用 PDF 加密 ISO 标准来保护 PDF 文件的新默认行为不兼容。 在这种情况下，无法通过文件资源管理器、PowerShell 或扫描程序打开 .ppdf 文件。 若要解决此问题，请使用高级客户端设置而[不使用 PDF 加密的 ISO 标准](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
 
@@ -693,7 +693,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在本示例中：
+在此示例中：
 
 - 要使用的 Azure 信息保护标签名为“Confidential”，标签 ID 为“1ace2cc3-14bc-4142-9125-bf946a70542c”。 
 
@@ -710,7 +710,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在本示例中：
+在此示例中：
 
 - 要使用的 Azure 信息保护标签名为“Highly Confidential”，标签 ID为“3e9df74d-3168-48af-8b11-037e3021813f”。
 
@@ -728,7 +728,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护将具有这些安全孤岛标签之一的文档重新标记为 "常规"。
 
-在本示例中：
+在此示例中：
 
 - 要使用的 Azure 信息保护标签名为“General”，标签 ID为“2beb8fe7-8293-444c-9768-7fdc6f75014d”。
 
@@ -744,7 +744,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>删除其他标记解决方案中的页眉和页脚
 
-此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的多项[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 借助这些设置，可以在其他标记解决方案已应用这些视觉标记的情况下，从文档中删除或替换基于文本的页眉或页脚。 例如，旧页脚包含旧标签的名称，现在使用新的标签名及其自己的页脚将标签迁移到 Azure 信息保护。
 
@@ -846,7 +846,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 > [!NOTE]
 > 如果结合使用此配置和用于[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)的配置，将优先考虑标记迁移设置。 
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。 
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。 
 
 配置此设置时，如果 Office 文档具备现有自定义属性且该属性带有与某个标记名称相匹配的值，则可对此文档进行分类（并选择性地保护）。 此自定义属性可通过另一个分类解决方案进行设置，也可由 SharePoint 设置为属性。
 
@@ -874,7 +874,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="disable-sending-discovered-sensitive-information-in-documents-to-azure-information-protection-analytics"></a>禁止将文档中发现的敏感信息发送到 Azure 信息保护分析
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 在 Office 应用中使用 Azure 信息保护客户端时，它会在首次保存文档时查找文档中的敏感信息。 提供客户端未配置为不发送审核信息， (预定义或自定义) 中找到的任何敏感信息类型都将发送到 [Azure 信息保护分析](../reports-aip.md)。 
 
@@ -896,7 +896,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="disable-sending-information-type-matches-for-a-subset-of-users"></a>禁止为一部分用户发送信息类型匹配项
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 选中 " [Azure 信息保护分析](../reports-aip.md) " 的复选框后，可以更深入地分析你的敏感数据，并为你的敏感信息类型或自定义条件收集内容匹配项。默认情况下，所有用户都将发送此信息，其中包括运行 Azure 信息保护扫描程序的服务帐户。 如果你有一些不应发送此数据的用户，请在这些用户的[作用域内策略](../configure-policy-scope.md)中创建以下高级客户端设置： 
 
@@ -907,7 +907,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="limit-the-number-of-threads-used-by-the-scanner"></a>限制扫描程序使用的线程数
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 默认情况下，扫描程序使用运行扫描程序服务的计算机上的所有可用处理器资源。 如果在扫描此服务时需要限制 CPU 使用率，请创建以下高级设置。 
 
@@ -921,7 +921,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="disable-the-low-integrity-level-for-the-scanner"></a>禁用扫描程序的低完整性级别
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 默认情况下，Azure 信息保护扫描程序在运行时的完整性级别低。 此设置可以提供更强大的安全隔离，但会牺牲性能。 如果你使用具有特权的帐户（例如本地管理员帐户）运行扫描程序，则低完整性级别是适合的，因为此设置有助于保护运行扫描程序的计算机。
 
@@ -937,7 +937,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="change-the-timeout-settings-for-the-scanner"></a>更改扫描程序的超时设置
 
-此配置使用必须在 Azure 门户中配置的 [高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal) 。
+此配置使用必须在 Azure 门户中配置的 [高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal) 。
 
 默认情况下，Azure 信息保护扫描程序的超时期限为 00:15:00 (15 分钟) 检查每个文件是否有敏感信息类型或为自定义条件配置的 regex 表达式。 当达到此内容提取过程的超时期限时，将返回超时前的所有结果，并对该文件停止进行进一步检查。 在这种情况下，如果有多个日志) ，则将在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (zipped 中记录以下错误消息： **GetContentParts 失败** ，操作在详细信息中 **被取消** 。
 
@@ -959,7 +959,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 此外，Azure 信息保护扫描程序的超时期限为 00:30:00 (30 分钟) 用于其处理的每个文件。 此值将考虑从存储库中检索文件所需的时间，并暂时将其保存在本地，以执行可包括解密、用于检查、标记和加密的内容提取的操作。
 
-尽管 Azure 信息保护扫描程序可以每分钟扫描数十到数百个文件，但如果你的数据存储库包含大量非常大的文件，则扫描程序可以超过此默认超时时间，在 Azure 门户中，将在30分钟后停止。 在这种情况下，如果有多个日志) 并且 localappdata 日志文件，将在%*localappdata*% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (zipped 中记录以下错误消息：**操作已取消**。
+尽管 Azure 信息保护扫描程序可以每分钟扫描数十到数百个文件，但如果你的数据存储库包含大量非常大的文件，则扫描程序可以超过此默认超时时间，在 Azure 门户中，将在30分钟后停止。 在这种情况下，如果有多个日志) 并且 localappdata 日志文件，将在%% \ Microsoft\MSIP\Logs\MSIPScanner.iplog (zipped 中记录以下错误消息：**操作已取消**。
 
 默认情况下，具有4核处理器的扫描程序有16个线程用于扫描，在30分钟的时间段内遇到16个大型文件的概率取决于大文件的比率。 例如，如果扫描速率为每分钟200个文件，而1% 的文件超过30分钟超时，则在超过85% 的情况下，扫描程序将遇到30分钟的超时情况。 这些超时可能会导致更长的扫描时间和更高的内存消耗。
 
@@ -973,7 +973,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 ## <a name="change-the-local-logging-level"></a>更改本地日志记录级别
 
-此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-client-configuration-settings-in-the-portal)。
+此配置使用必须在 Azure 门户中配置的[高级客户端设置](#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)。
 
 默认情况下，Azure 信息保护客户端会将客户端日志文件写入 %localappdata%\Microsoft\MSIP 文件夹。 这些文件供 Microsoft 支持部门用来排除故障。
  
@@ -995,7 +995,7 @@ PowerPoint 中的页脚以形状的形式实现。 若要避免删除那些你�
 
 - **跟踪**：详细的日志记录 (客户端) 的默认设置。 对于扫描程序，此设置会产生很大性能影响，应仅在 Microsoft 支持部门请求时，才为扫描程序启用此设置。 如果系统要求为扫描程序设置此日志记录级别，请务必在已收集相关日志后设置其他值。
 
-此高级客户端设置不会更改发送到 Azure 信息保护用于[集中报告](../reports-aip.md)的信息，也不会更改写入本地[事件日志](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)的信息。
+此高级客户端设置不会更改发送到 Azure 信息保护用于[集中报告](../reports-aip.md)的信息，也不会更改写入本地[事件日志](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-classic-client)的信息。
 
 ## <a name="integration-with-the-legacy-exchange-message-classification"></a>与旧版 Exchange 消息分类的集成
 

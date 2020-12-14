@@ -1,6 +1,6 @@
 ---
-title: Azure 信息保护客户端文件和使用情况日志记录
-description: 适用于 Windows 的 Azure 信息保护客户端的客户端文件和使用情况日志记录的相关信息。
+title: Azure 信息保护经典客户端文件和使用情况日志记录
+description: 有关适用于 Windows 的 Azure 信息保护客户端文件和使用情况日志记录的信息。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -13,23 +13,23 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4a8ee6c5f3879786b76a8466b198b0b4040a540f
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 3188392475a9da39f4187c30014ecc189248fd28
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566241"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386111"
 ---
-# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>管理员指南：Azure 信息保护客户端文件和客户端使用情况日志记录
+# <a name="admin-guide-azure-information-protection-classic-client-files-and-client-usage-logging"></a>管理员指南： Azure 信息保护经典客户端文件和客户端使用情况日志记录
 
->*适用于： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： Active Directory Rights Management Services， [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-安装 Azure 信息保护客户端后，请了解文件所在位置并监控客户端的使用状况。
+安装 Azure 信息保护经典客户端之后，您可能需要知道文件的位置，并监视客户端的使用情况。
 
 ## <a name="file-locations-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的文件位置
 
@@ -43,7 +43,7 @@ ms.locfileid: "95566241"
 
 - 对于 64 位和 32 位操作系统：**%localappdata%\Microsoft\MSIP**
 
-## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的使用情况日志记录
+## <a name="usage-logging-for-the-azure-information-protection-classic-client"></a>Azure 信息保护经典客户端的使用情况日志记录
 
 客户端将用户活动记录到本地 Windows 事件日志 **应用程序和服务日志**  >  **Azure 信息保护**。 这些事件包括以下信息：
 

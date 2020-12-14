@@ -1,27 +1,28 @@
 ---
 title: 适用于 AIP 的 Active Directory rights management services 移动设备扩展
 description: 了解 Active Directory 适用于 AIP 的移动设备扩展
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 07/28/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 59bc53914d73d64c7dc34bbc63b28bf1e70adeb4
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 874a73480e8d15380d9e69a532a1b8ff39d38eb7
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566037"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384156"
 ---
 # <a name="active-directory-rights-management-services-mobile-device-extension"></a>Active Directory Rights Management Services 移动设备扩展
 
- 
-适用于： Windows Server 2019、2016、2012 R2 和2012
+>***适用于**： Windows Server 2019、2016、2012 R2 和 2012 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=43738) 下载 Active Directory Rights Management Services (AD RMS) 移动设备扩展，并在现有 AD RMS 部署之上安装此扩展。 这允许用户在其设备支持最新的启用应用时保护和使用敏感数据。 例如，用户可以执行以下操作：
 - 使用 Azure 信息保护应用以不同格式使用受保护的文本文件， (包括 .txt、.csv 和 .xml) 。
@@ -123,7 +124,7 @@ Write-Host "Microsoft Rights Management Mobile Device Extension Configured"
 
 - 若要为 AD RMS 移动设备扩展手动配置 AD FS，请使用以下设置：
 
-|**配置**|**值**|
+|**配置**|值|
 |-----|-----|
 |**信赖方信任**|_api。|
 |**声明规则**|**属性存储**： Active Directory <br /><br />**电子邮件地址**：电子邮件地址<br /><br>**用户-名称**： UPN<br /><br /> **代理地址**： _https： \/ \/schemas.xmlsoap.org/claims/ProxyAddresses|
@@ -222,23 +223,24 @@ SRV 记录采用以下格式： _rmsdisco. _http. _tcp。 \<emailsuffix>\<portnu
 
 |字段|值|
 |------|------|
-|Domain|_tcp contoso .com
+|域|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|优先度|0
+|优先级|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com
 
 |字段|值|
 |------|------|
-|Domain|_tcp fabrikam
+|域|_tcp fabrikam
 |服务|_rmsdisco
 |协议|_http
-|优先度|0
+|优先级|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|
+| | |
 
 除了你的电子邮件域的这些 DNS SRV 记录外，还必须在 RMS 群集域中创建另一个 DNS SRV 记录。 此记录必须指定用于保护内容的 RMS 群集的 Fqdn。 RMS 所保护的每个文件都包含指向保护该文件的群集的 URL。 移动设备使用 DNS SRV 记录和记录中指定的 URL FQDN 查找可支持移动设备的相应 RMS 群集。
 
@@ -248,13 +250,14 @@ SRV 记录采用以下格式： _rmsdisco. _http. _tcp。 \<emailsuffix>\<portnu
 
 |字段|值|
 |------|------|
-|Domain|_tcp contoso .com
+|域|_tcp contoso .com
 |服务|_rmsdisco
 |协议|_http
-|优先度|0
+|优先级|0
 |重量|0
 |端口号|443
 |提供此服务的主机|_rmsserver contoso .com|
+| | |
 
 ## <a name="deploying-the-ad-rms-mobile-device-extension"></a>部署 AD RMS 移动设备扩展
 
@@ -263,7 +266,7 @@ SRV 记录采用以下格式： _rmsdisco. _http. _tcp。 \<emailsuffix>\<portnu
 1. 从 Microsoft 下载中心 ( # A0) 下载 AD RMS 移动设备扩展。
 1. 运行 **ADRMS.MobileDeviceExtension.exe** 以启动 Active Directory Rights Management Services 移动设备扩展安装向导。
 出现提示时，输入之前配置的 AD FS 服务器的 URL。
-1. 完成该向导。
+1. 完成向导。
 
 在 RMS 群集中的所有节点上运行此向导。
 
@@ -275,22 +278,22 @@ SRV 记录采用以下格式： _rmsdisco. _http. _tcp。 \<emailsuffix>\<portnu
 
 1. 将以下节点添加到文件：
 
-```powershell
-   <system.net>
-    <defaultProxy>
-        <proxy  proxyaddress="http://<proxy server>:<port>"
-                bypassonlocal="true"
-        />
-        <bypasslist>
-            <add address="<AD FS URL>" />
-        </bypasslist>
-    </defaultProxy>
-<system.net>
-```
+    ```PowerShell
+       <system.net>
+        <defaultProxy>
+            <proxy  proxyaddress="http://<proxy server>:<port>"
+                    bypassonlocal="true"
+            />
+            <bypasslist>
+                <add address="<AD FS URL>" />
+            </bypasslist>
+        </defaultProxy>
+    <system.net>
+    ```
 1. 进行以下更改，并保存该文件：
-- \<proxy-server>将替换为代理服务器的名称或地址。
-- 替换 \<port> 为将代理服务器配置为使用的端口号。
-- 替换 \<AD FS URL> 为联合身份验证服务的 URL。 不要包含 HTTP 前缀。
+    - \<proxy-server>将替换为代理服务器的名称或地址。
+    - 替换 \<port> 为将代理服务器配置为使用的端口号。
+    - 替换 \<AD FS URL> 为联合身份验证服务的 URL。 不要包含 HTTP 前缀。
 
     > [!NOTE]
     > 若要了解有关替代代理设置的详细信息，请参阅 [代理配置](/dotnet/framework/network-programming/proxy-configuration) 文档。
@@ -303,5 +306,3 @@ SRV 记录采用以下格式： _rmsdisco. _http. _tcp。 \<emailsuffix>\<portnu
 ## <a name="see-also"></a>另请参阅
 
 了解有关 Azure 信息保护的详细信息，与其他 AIP 客户联系，并使用 [API yammer 组](https://www.yammer.com/askipteam/)与 AIP 产品经理联系。 
-
-"

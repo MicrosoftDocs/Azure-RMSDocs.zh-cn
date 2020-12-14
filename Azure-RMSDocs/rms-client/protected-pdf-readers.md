@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 10/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
@@ -14,14 +14,21 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: e8cd7846159e2299d33b8b6533813ac8502140d3
-ms.sourcegitcommit: 2a72516a1f380adddd6501984b1989e3fa051976
+ms.openlocfilehash: f6ebddb276cdf77c977acc516cf1b6c3d2bbc7b4
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "95566436"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385108"
 ---
 # <a name="which-pdf-readers-are-supported-for-protected-pdfs"></a>受保护的 Pdf 支持哪些 PDF 读取器？
+
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 用于分类和/或受保护 Pdf 的 PDF 读者使你可以打开包含敏感信息的加密 Pdf。
 
@@ -50,7 +57,11 @@ ms.locfileid: "95566436"
 
 在此页上引用的 PDF 读者可以所有打开受保护的文档，这些文档符合 PDF 加密的 ISO 标准。 
 
-默认情况下，AIP 经典和统一标签客户端使用此标准，除非管理员已将其 [禁用](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
+默认情况下，AIP 客户端使用此标准。
+
+> [!NOTE]
+> **仅限经典客户端**：如果有 AIP 经典客户端，则管理员可能已将其 [禁用](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)。
+> 
 
 ### <a name="viewing-protected-pdfs-in-adobe-acrobat-reader"></a>在 Adobe Acrobat Reader 中查看受保护的 Pdf
 
@@ -66,18 +77,18 @@ Adobe Acrobat Reader 与 Microsoft 信息保护解决方案（例如 [Azure 信�
 
 ## <a name="viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac"></a>在 Windows 或 Mac 上的 Microsoft Edge 中查看受保护的 Pdf
 
-Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持。 使用 Microsoft Edge 可以确保用户无需安装或配置任何其他设置或软件即可无缝打开受保护的 PDF 文件。
+Microsoft Edge 为查看已分类和受保护的 PDF 文件提供内置支持。 使用 Microsoft Edge 可以确保用户无需安装或配置任何其他设置或软件即可无缝打开受保护的 PDF 文件。
 
 受支持的版本包括：
 
-- **Windows：** Windows 10 和以前版本通过 Windows 8。 
+- **Windows**： windows 10 和以前版本通过 windows 8。 
     
     有关早期版本的详细信息，请参阅 [对先前格式的支持](#support-for-previous-formats)。
 
-- **Mac：** macOS 版本10.12 及更高版本 
+- **Mac**： macOS 版本10.12 及更高版本 
 
 
-**说明** 
+**说明**： 
 
 1. 检查系统上安装的 [Microsoft Edge 版本](https://support.microsoft.com/help/4027011/microsoft-edge-find-out-which-version-you-have) 。 
 1. 如果 Microsoft Edge 版本为83.0.478.37 或更高版本，则可以直接在 Edge 浏览器中打开受保护的文件。 
@@ -90,7 +101,7 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
 若要在台式计算机上打开受保护的 PDF 文档，建议为你的操作系统安装适用于 Acrobat 的相关 [Microsoft 信息保护 (MIP) 插件](https://go.microsoft.com/fwlink/?linkid=2050049) 。
 
-**说明**
+**说明**：
 
 1. 如果尚未安装，请从 [adobe 网站](https://www.adobe.com/)安装 adobe Reader。
 
@@ -102,11 +113,11 @@ Microsoft Edge 提供对查看已分类和受保护的 PDF 文件的本机支持
 
     受支持的版本包括：
 
-    - **Windows：** Windows 10 和以前版本通过 Windows 8。 
+    - **Windows**： windows 10 和以前版本通过 windows 8。 
     
         有关早期版本的详细信息，请参阅 [对先前格式的支持](#support-for-previous-formats)。
 
-    - **Mac：** macOS 版本 10.12-10.14 
+    - **Mac**： macOS 版本 10.12-10.14 
 
 1. 如果系统提示进行管理员批准，请要求管理员授权该插件。
 

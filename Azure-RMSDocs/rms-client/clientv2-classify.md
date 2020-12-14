@@ -1,8 +1,8 @@
 ---
 title: 使用 Azure 信息保护统一标签客户端进行分类
 description: 使用 Azure 信息保护适用于 Windows 的统一标签客户端时，如何对文档和电子邮件进行分类的说明。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 09/03/2020
 ms.topic: how-to
@@ -11,20 +11,20 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 1cb9f1216b8b77b19b8cabb6d884512330221a87
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 3718c6b93fba7abb08dcbe08675f361b0b666c0d
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565378"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385397"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***适用于以下内容的说明**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-classify.md)。 *
 
 > [!NOTE]
 > 借助这些说明，对文档和电子邮件进行分类（但不保护）。 如果还需对文档和电子邮件进行保护，请参阅[分类和保护说明](clientv2-classify-protect.md)。 如果不确定应使用哪组说明，请与管理员或支持人员核实。
@@ -61,7 +61,7 @@ ms.locfileid: "95565378"
 
 - 你可能没有 [安装](install-unifiedlabelingclient-app.md)Azure 信息保护统一标签客户端。
 
-- 如果未在功能区上看到 " **敏感度** " 按钮，而是看到带标签的 " **保护** " 按钮，则已安装 azure 信息保护客户端 (经典) ，而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+- 如果在功能区上看不到 " **敏感度** " 按钮，而是看到带标签的 " **保护** " 按钮，则已安装 azure 信息保护经典客户端，而不是 azure 信息保护统一标签客户端。 [详细信息](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>没有显示希望看到的标签？ 
 

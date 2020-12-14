@@ -1,11 +1,11 @@
 ---
 title: 使用 Windows Server FCI 的 Azure RMS 保护 - AIP
 description: 有关将 Rights Management (RMS) 客户端与 Azure 信息保护客户端配合使用，以配置文件服务器资源管理器和文件分类基础结构 (FCI) 的说明。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 1/13/2020
-ms.topic: conceptual
+ms.date: 11/12/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
@@ -13,18 +13,21 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 127682099f082d81c93e5951b149033a96d9504b
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: e775464efbff26cf6f425bce9d395c5bffc0cce4
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566172"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385193"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
->适用于：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、Windows Server 2012 R2
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、Windows Server 2012、windows server 2012 R2 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 通过本文获取相关说明和脚本以使用 Azure 信息保护客户端和 PowerShell 配置文件服务器资源管理器和文件分类基础结构 (FCI)。
 
@@ -38,6 +41,7 @@ ms.locfileid: "95566172"
 接下来的说明适用于 Windows Server 2012 R2 或 Windows Server 2012。 如果你运行其他受支持的 Windows 版本，则可能需要调整某些步骤，以适应你的操作系统版本与本文所述的操作系统版本之间的差异。
 
 ## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>使用 Windows Server FCI 的 Azure Rights Management 保护的先决条件
+
 这些说明的先决条件：
 
 - 在你将运行使用文件分类基础结构的文件资源管理器的每个文件服务器上：
@@ -296,6 +300,7 @@ ms.locfileid: "95566172"
 此外，如果发布了想要用于 FCI 的新模板，并且在自定义文件管理任务的参数行中更改模板 ID，请在脚本中运行该行。
 
 ## <a name="modifying-the-instructions-to-selectively-protect-files"></a>修改说明可有选择性地保护文件
+
 如果按前面的说明正常操作，则可轻松修改它们以实现更复杂的配置。 例如，使用同一个脚本保护文件，但只针对包含个人身份信息的文件，然后可能选择具有更多限制权限的模板。
 
 若要进行此修改，请使用内置分类属性之一（例如“个人身份信息”）或创建你自己的新属性。 然后创建一个使用此属性的新规则。 例如，可能会选择“内容分类器”，为“个人身份信息”属性选择值“高”，并配置字符串或表达式模式（如字符串“出生日期”）以标识要为此属性配置的文件。
@@ -304,4 +309,4 @@ ms.locfileid: "95566172"
 
 ## <a name="next-steps"></a>后续步骤
 
-你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
+你可能想知道：[Windows Server FCI 和 Azure 信息保护扫描程序有何区别？](../faqs-classic.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)

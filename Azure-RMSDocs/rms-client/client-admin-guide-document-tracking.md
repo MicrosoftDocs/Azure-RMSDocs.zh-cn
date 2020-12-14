@@ -1,8 +1,8 @@
 ---
 title: Azure 信息保护的文档跟踪
 description: 面向管理员的说明和信息，介绍如何配置和使用 Azure 信息保护的文档跟踪。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 03/16/2020
 ms.topic: how-to
@@ -13,23 +13,23 @@ ms.subservice: doctrack
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 66ad27bb61e4cdc24d5c047b8f2c464ba98e5a8d
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 9ea1a6494384827d240f47068ecce6addee84035
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565341"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386179"
 ---
-# <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>管理员指南：配置和使用 Azure 信息保护的文档跟踪
+# <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection-using-the-classic-client"></a>管理员指南：配置和使用适用于 Azure 信息保护的文档跟踪使用经典客户端
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows server 2016，windows Server 2012 R2，windows server 2012*
+>***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-如果你的某个[订阅支持文档跟踪](https://www.microsoft.com/cloud-platform/azure-information-protection-features)，则默认情况下，已经为你组织中的所有用户启用了文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
+如果你有 [支持文档跟踪的订阅](https://www.microsoft.com/cloud-platform/azure-information-protection-features) 和 AIP 经典客户端，则默认情况下会为组织中的所有用户启用文档跟踪站点。 文档跟踪为用户和管理员提供有关受保护文档访问时间的信息，如有必要，可以撤销已跟踪的文档。
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>使用 PowerShell 管理文档跟踪站点
 

@@ -1,11 +1,11 @@
 ---
-title: 下载并安装 Azure 信息保护客户端
-description: 说明用户如何安装适用于 Windows 的 Azure 信息保护客户端，以便分类和保护文档和电子邮件。
+title: 下载 & 安装 Azure 信息保护经典客户端
+description: 有关用户安装 Azure 信息保护经典客户端 Windows 的说明，以便你可以对文档和电子邮件进行分类和保护。
 author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/17/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
@@ -13,19 +13,21 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 26e9f85a4e5d171232dc8d30f4502557808ac538
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: f27be62467939d116bf36aaee4189911f096aa52
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316613"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97385125"
 ---
-# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>用户指南：下载并安装 Azure 信息保护客户端
+# <a name="user-guide-download-and-install-the-azure-information-protection-classic-client"></a>用户指南：下载并安装 Azure 信息保护经典客户端
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8*
+>***适用于**： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签用户指南](install-unifiedlabelingclient-app.md)。 *
 
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 

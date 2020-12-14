@@ -4,7 +4,7 @@ description: 与 Microsoft Azure 信息保护 (AIP) 相关的单词、短语或�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/04/2020
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -14,19 +14,21 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: f5b2dd317a6cdcf5d5d164f6431f8aa3163550da
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: af5c035a19847eca18a9686cc32895c363c0a926
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "95566533"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384548"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure 信息保护的术语
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 对 Microsoft Azure 信息保护相关的单词、短语或缩略词感到迷惑吗？ 在此处查找特定于 Azure 信息保护或具有特定含义（如果在此服务上下文中使用）的术语和缩写的定义。
 
@@ -68,7 +70,7 @@ ms.locfileid: "95566533"
 
 |术语|定义|
 |--------|--------------|
-|**接受**|**仅在保护相关上下文中：** </br>打开受 Rights Management 服务保护的文档或电子邮件，以读取或使用其中内容。 </br>对于文档，使用内容包括编辑内容和向受保护文档添加新内容。 对于电子邮件，使用内容包括回复受保护邮件。<br /><br/>**在标记上下文中（有或没有保护）：** </br>读取并可能对存储在文件和电子邮件元数据中的标签信息进行操作。|
+|**接受**|**仅在保护上下文中**： </br>打开受 Rights Management 服务保护的文档或电子邮件，以读取或使用其中内容。 </br>对于文档，使用内容包括编辑内容和向受保护文档添加新内容。 对于电子邮件，使用内容包括回复受保护邮件。<br /><br/>**在带有或不带保护)  (的标记上下文中**： </br>读取并可能对存储在文件和电子邮件元数据中的标签信息进行操作。|
 |**内容密钥**|启用 RMS 的应用程序为使用 Rights Management 保护的每个文档或电子邮件创建的唯一密钥，有助于遏制信息泄漏的风险。|
 | | |
 
@@ -151,7 +153,7 @@ ms.locfileid: "95566533"
 
 |术语|定义|
 |--------|--------------|
-|**Office 消息加密**|经常缩写为 OME。<br /><br />新的 Office 365 消息加密功能与 Azure Rights Management 服务本机集成，可为内部和外部用户提供相同的电子邮件保护、自动刷新模板，并支持“创建自己的密钥 (BYOK)”方案。 </br></br>以前的 OME 实现仅面向外部收件人，需要邮件流规则，并且不支持 BYOK。|
+|**Office 消息加密**|经常缩写为 OME。<br /><br />新的 Office 365 消息加密功能与 Azure Rights Management 服务的内置集成，可为内部和外部用户提供相同的电子邮件保护、自动刷新模板以及支持自带密钥 (BYOK) 方案。 </br></br>以前的 OME 实现仅面向外部收件人，需要邮件流规则，并且不支持 BYOK。|
 | | |
 
 ### <a name="p"></a>P
@@ -201,3 +203,7 @@ ms.locfileid: "95566533"
 |**统一标签**| 也称为 *统一敏感度标签*。<br /><br /> 应用、客户端和服务可以应用的一个标签，它可以应用分类，还可以选择保护。 </br></br>在 Office 应用和服务中，统一标签作为敏感度标签实现。|
 |**取消保护**|从文件或电子邮件中删除保护控件，这些控件使用加密、标识、使用权限和访问控制策略帮助保护数据。|
 |**使用许可证**|向打开受 Rights Management 服务保护的文件或电子邮件的用户授予的每文档证书。 </br></br>该证书包含此用户对文件或电子邮件消息所具有的权限、用于加密内容的加密密钥，以及文档策略中定义的其他访问限制。|
+
+## <a name="next-steps"></a>后续步骤
+
+有关 AIP 名称的详细信息，请参阅 [Azure 信息保护-也称为 ...](aka.md)。
