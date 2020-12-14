@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ee493790e4997f8be11244490cf6014c17e6c6fd
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 26e354c883fd2e8ef5244b77635cb3e63ba9bc8e
+ms.sourcegitcommit: d578b609ddefc2580548cdb0a54a8af0ba69fbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384224"
+ms.locfileid: "97388382"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -43,7 +43,7 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 ## <a name="known-issues-for-aip-and-exploit-protection"></a>AIP 和 Exploit Protection 的已知问题
 
-Azure 信息保护客户端在具有 .NET 2 或3的计算机上不受支持，其中启用了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 并导致 Office 应用崩溃。
+Azure 信息保护客户端在具有 .NET 2 或3的计算机上不受支持，其中启用了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) ，并将导致 Office 应用程序意外运行。
 
 如果你的 .NET 版本为2或3，但你的系统需要 .NET 4.x 版本，请确保在安装 AIP 之前禁用 Exploit protection。 
 
@@ -69,7 +69,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|功能  |已知问题  |
+|Feature  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
 |**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
@@ -95,7 +95,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
     
     :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详细信息，请参阅：
+    有关详细信息，请参见:
 
     - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
     - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
