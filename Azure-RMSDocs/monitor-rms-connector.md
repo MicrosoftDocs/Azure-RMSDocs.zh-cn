@@ -1,11 +1,11 @@
 ---
 title: 监视 Rights Management 连接器 - AIP
 description: 帮助监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 11/30/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
@@ -13,16 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ab20a68a2895962095bc83904851ef3a9955dd79
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: a440f075e8bbcd4d8c2d8ee8050ef0ab1d203b54
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566217"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97381827"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、windows Server 2012 R2、windows server 2012 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 安装并配置 RMS 连接器后，可以使用以下方法和信息，从而监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的情况。
 
@@ -171,7 +173,7 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
-## <a name="logging"></a>Logging
+## <a name="logging"></a>日志记录
 
 使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0 的服务主体名称。 此名称是自动为 RMS 连接器创建。
 
@@ -181,17 +183,17 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”中找到 web.config 文件。
 
-2. 找到以下行：
+1. 找到以下行：
 
     ```sh
     <trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
     ```
 
-3. 将上一行代码替换为以下文本：
+1. 将上一行代码替换为以下文本：
     ```sh
     <trace enabled="true" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
     ```
 
-4.  停止和启动 IIS 以激活跟踪。 
+1.  停止和启动 IIS 以激活跟踪。 
 
-5.  当你捕获了所需的跟踪时，还原步骤 3 的行，并再次停止和启动 IIS。
+1.  当你捕获了所需的跟踪时，还原步骤 3 的行，并再次停止和启动 IIS。

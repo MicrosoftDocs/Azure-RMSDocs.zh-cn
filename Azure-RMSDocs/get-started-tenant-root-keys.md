@@ -4,7 +4,7 @@ description: 了解规划租户根密钥管理之后的后续步骤，包括 Mic
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/21/2020
+ms.date: 11/11/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,27 +13,33 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1dbced335e32aa874309ead00f7c3f7a5fcc42f9
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 9756710e29c82ef953633697cb989942d1844496
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565363"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382235"
 ---
 # <a name="getting-started-with-tenant-root-keys"></a>租户根密钥入门
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
-根据需要规划、创建和配置你的租户密钥后，请继续执行以下步骤：
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+根据需要 [规划、创建和配置你的租户密钥](plan-implement-tenant-key.md) 后，请继续执行以下步骤：
 
 - [开始使用你的租户密钥](#start-using-your-tenant-key)
 - [考虑使用日志记录](#consider-usage-logging)
 
 有关租户密钥支持的生命周期操作的详细信息，请参阅 [Azure 信息保护租户密钥的操作](./operations-tenant-key.md)。
 
-> [!TIP]
-> 如果你的组织需要针对高度敏感内容的本地保护，请将 [HYOK protection](configure-adrms-restrictions.md) (仅) 或 [DKE protection](plan-implement-tenant-key.md#double-key-encryption-dke-aip-unified-labeling-client-only) (仅) 的统一标签客户端。
-> 
+如果你的组织需要针对高度敏感内容的本地保护，请将 [DKE protection](plan-implement-tenant-key.md#double-key-encryption-dke) (仅) 的统一标签客户端。
+
+如果需要本地保护并且使用的是经典客户端，请改为配置 [HYOK protection](configure-adrms-restrictions.md) 。
+ 
 
 ## <a name="start-using-your-tenant-key"></a>开始使用你的租户密钥
 

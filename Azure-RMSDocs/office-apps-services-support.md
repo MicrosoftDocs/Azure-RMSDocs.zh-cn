@@ -1,8 +1,8 @@
 ---
 title: Office 应用和服务如何支持 AIP 中的 Azure RMS
 description: 最终用户 Office 应用程序（例如 Word 和 Outlook）和 Office 服务（例如 Exchange 和 SharePoint）如何使用 AIP 中的 Azure 权限管理服务来帮助保护组织的数据。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 05/31/2020
 ms.topic: conceptual
@@ -12,21 +12,26 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1aba9e7f0d6cea7edde34d66e571a6eef4599555
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 37d6eae1559f34bcbc84edecd3cc42926b4888c4
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316766"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97381589"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务是 Exchange 和 Microsoft SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 应用程序：Word、Excel、PowerPoint、Outlook
-这些应用程序可以本机方式支持 Azure 权限管理，让用户能够将保护应用于已保存文档，或者应用于要发送的电子邮件。 用户可以应用[模板](configure-policy-templates.md)以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。
+这些应用程序支持内置 Azure Rights Management，并允许用户将保护应用于已保存文档或要发送的电子邮件。 用户可以应用模板以应用保护。 或者，在 Word、Excel 和 PowerPoint 中，用户还可以针对访问、权限和使用限制选择自定义设置。
 
 例如，用户可以配置 Word 文档，使仅组织中的人员可以访问该文档。 或者，控制 Excel 电子表格是否可以编辑，或限制为只读，或者禁止打印。 对于时间敏感型文件，可以配置一个过期时间，在过期之后无法再访问该文件。 此配置可由用户或通过应用保护模板直接执行。 对于 Outlook，用户还可以选择“不要转发”选项来帮助防止数据泄漏。
 
@@ -51,8 +56,6 @@ ms.locfileid: "96316766"
 
 如果使用本地 Exchange，可以通过部署 Azure 权限管理连接器结合使用 Azure 权限管理服务和 IRM 功能。 此连接器充当本地服务器和 Azure 权限管理服务之间的中继。
 
-有关保护模板的详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
-
 如需深入了解可用于保护电子邮件的电子邮件选项，请参阅[电子邮件的“不得转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)和[电子邮件的“仅加密”选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
 
 如果已准备好配置 Exchange 以保护电子邮件：
@@ -60,6 +63,12 @@ ms.locfileid: "96316766"
 - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](configure-office365.md#exchangeonline-irm-configuration)。
 
 - 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
+
+有关详细信息，请参阅：
+
+- 统一标记客户端。 在标签管理中心配置敏感度标签和标签策略，包括 Microsoft 365 安全中心、Microsoft 365 符合性中心或 Microsoft 365 安全 & 符合性中心。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels)。
+
+- **经典客户端**。 在 Azure 门户中配置保护模板。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)。
 
 
 ## <a name="sharepoint-in-microsoft-365-and-sharepoint-server"></a>Microsoft 365 和 SharePoint Server 中的 SharePoint
@@ -107,4 +116,4 @@ Word、PowerPoint、Excel 和 PDF 文档均支持此 SharePoint IRM 保护。 �
 
 若要查看其他应用程序和服务如何支持 Azure 信息保护中的 Azure Rights Management 服务，请参阅[应用程序如何支持 Azure Rights Management 服务](applications-support.md)。
 
-如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [Azure 信息保护部署路线图](deployment-roadmap.md)。
+如果已准备好开始部署（包括配置这些应用程序和服务），请参阅 [AIP 部署路线图，了解分类、标记和保护](deployment-roadmap-classify-label-protect.md)。

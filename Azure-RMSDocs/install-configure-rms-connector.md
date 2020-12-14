@@ -1,11 +1,11 @@
 ---
 title: 安装和配置 Rights Management 连接器 - AIP
 description: 可以参考本文中的信息来安装和配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到“部署 Azure Rights Management 连接器”中的步骤 1-4。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 07/28/2020
-ms.topic: conceptual
+ms.date: 11/11/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
@@ -13,16 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dd8a63f3bc761cd7bcaa7b8b40a3309488385acb
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: ef3a9198af5fb44927438c66262e30acf439f2eb
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566385"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383850"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装和配置 Azure Rights Management 连接器
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、2016、2012 R2 和 Windows server 2012*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、2016、2012 R2 和 Windows server 2012 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 可以参考以下信息来安装和配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 
@@ -132,7 +134,7 @@ ms.locfileid: "95566385"
 
 如果在安装过程中遇到任何问题，请查看安装日志： **%LocalAppData%\Temp\Microsoft Rights Management connector_ \<date and time> 。** 
 
-例如，安装日志可能类似于 C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management connector_20170803110352.log
+例如，安装日志可能类似于 **C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management connector_20170803110352 日志**
 
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>授权服务器使用 RMS 连接器
 在至少两台计算机上安装 RMS 连接器之后，即可为你希望其使用 RMS 连接器的服务器和服务授权。 例如运行 Exchange Server 2013 或 SharePoint Server 2013 的服务器。
@@ -173,7 +175,7 @@ ms.locfileid: "95566385"
         > [!TIP]
         > 提示如果上述两个帐户是不同的，可考虑创建包含这两个帐户的单个组，以最大程度地降低管理开销。
 
--   对于使用文件分类基础结构的文件服务器，相关服务作为本地系统帐户运行，因此必须为文件服务器（例如 SERVERNAME$）的计算机帐户或包含这些计算机帐户的组授权。
+-   对于使用文件分类基础结构的文件服务器，关联服务作为本地系统帐户运行，因此你必须为文件服务器授权计算机帐户 (例如 **SERVERNAME $**) 或包含这些计算机帐户的组。
 
 在将服务器添加至列表之后，请单击 **“关闭”**。
 
@@ -191,13 +193,13 @@ ms.locfileid: "95566385"
 
 使用以下设置来配置 NLB 群集：
 
--   端口：80（对于 HTTP）或 443（对于 HTTPS）
+-   **端口**： 80 (用于 HTTP) 或 443 (HTTPS) 
 
     有关如何使用 HTTP 或 HTTPS 的详细信息，请参阅下一部分。
 
--   关联：无
+-   **关联**：无
 
--   分发方法：等于
+-  **分发方法**：等于
 
 为负载均衡的系统（为运行 RMS 连接器服务的服务器）定义的此名称是稍后将本地服务器配置为使用 Azure RMS 时要使用的组织 RMS 连接器名称。
 

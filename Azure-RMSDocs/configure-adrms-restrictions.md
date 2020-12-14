@@ -5,27 +5,27 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 10/13/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: c5e401f831cfed9080ae1454c6ee73377591c176
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: c02e7195d9edf93401b601e4d7ca243e6a14b702
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566280"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383813"
 ---
 # <a name="hold-your-own-key-hyok-details-for-azure-information-protection"></a>保存你自己的密钥 (Azure 信息保护的 HYOK) 详细信息
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [双重密钥加密](plan-implement-tenant-key.md#double-key-encryption-dke)。 *
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）  和标签管理  将于 2021 年 3 月 31 日  弃用  。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 保留你自己的密钥 (HYOK) 配置使使用经典客户端的 AIP 客户能够在保持对密钥的完全控制的同时保护高度敏感的内容。 HYOK 使用一种附加的客户端密钥，该密钥存储在本地以实现高度敏感的内容，同时还使用用于其他内容的基于云的默认保护。 
 
@@ -37,7 +37,7 @@ ms.locfileid: "95566280"
 
 基于云的密钥在 Azure Key Vault 中进行管理，这为客户提供以下好处：
 
-- **无服务器基础结构要求。** 云解决方案比本地解决方案更快速、更经济高效。
+- **无服务器基础结构要求**。 云解决方案比本地解决方案更快速、更经济高效。
 
 - 通过 **基于云的身份验证**，可以更方便地与其他组织的合作伙伴和用户共享。 
 
@@ -157,7 +157,7 @@ HYOK 是标签的管理员配置选项，无论内容使用的是基于云的密
 |**AD RMS 配置**     |你的 AD RMS 系统必须以特定方式配置为支持 HYOK。 有关详细信息，请参阅 [下文](#ad-rms-configuration-requirements)。          |
 |**目录同步**     |必须在本地 Active Directory 与 Azure Active Directory 之间配置目录同步。 </br></br>要使用 HYOK 保护标签的用户必须配置为使用单一登录。         |
 |**明确定义信任的配置**     |如果与组织外的其他人共享 HYOK 保护的内容，则必须在与其他组织的直接点对点关系中为显式定义的信任配置 AD RMS。 </br></br>使用受信任的用户域 (Tud) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任来完成此操作。         |
-|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意：** Office 2010 和 Office 2007 不受支持。        |
+|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意**：不支持 office 2010 和 office 2007。        |
 
 > [!IMPORTANT]
 > 为了满足 HYOK protection 提供的高确定性，建议执行以下操作：
@@ -174,7 +174,7 @@ HYOK 是标签的管理员配置选项，无论内容使用的是基于云的密
 
 |要求  |说明  |
 |---------|---------|
-|**Windows 版本**     |至少，以下 Windows 版本之一： </br></br>**生产环境：** Windows Server 2012 R2</br>**测试/评估环境**： Windows Server 2008 R2 Service Pack 1        |
+|**Windows 版本**     |至少，以下 Windows 版本之一： </br></br>**生产环境**： Windows Server 2012 R2</br>**测试/评估环境**： Windows Server 2008 R2 Service Pack 1        |
 |**拓扑**     |HYOK 需要以下拓扑之一： </br>-具有单个 AD RMS 群集的单个林 </br>-多个林，其中每个林都有 AD RMS 群集。 </br></br>**多个林的许可**</br> 如果有多个林，则每个 AD RMS 群集共享一个指向同一 AD RMS 群集的授权 URL。 </br>在此 AD RMS 群集上，将所有受信任的用户域 (TUD) 所有其他 AD RMS 群集中的证书。 </br>有关此拓扑的详细信息，请参阅 [可信用户域](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd983944(v=ws.10))。 </br></br>**多个林的全局策略标签**</br>如果单独的林中具有多个 AD RMS 群集，删除应用 HYOK (AD RMS) 保护并为每个群集配置[作用域策略](configure-policy-scope.md)的全局策略中的任何标签。 <br>将每个群集的用户分配到其作用域内策略，确保不会使用将导致用户分配到多个作用域内策略的组。</br>结果应是每个用户仅有一个 AD RMS 群集的标签。          |
 |**加密模式**     | 你的 AD RMS 必须配置为 [加密模式 2](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))。 </br>检查模式，方法是选中 "群集属性" AD RMS " **常规** " 选项卡。        |
 |**证书 URL 配置**     | 必须为每个 AD RMS 服务器配置证书 URL。 </br>有关详细信息，请参阅 [下文](#configuring-ad-rms-servers-to-locate-the-certification-url)。        |

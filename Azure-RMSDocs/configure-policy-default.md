@@ -10,26 +10,21 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 6f50cd82076e8906ddf2ecaf0ec2d63350fffc35
-ms.sourcegitcommit: 3780bd234c0af60d4376f1cae093b8b0ab035a9f
+ms.openlocfilehash: f68561ed0d3d655dfdeb8feb380941106ea2674c
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "95566488"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383374"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>默认 Azure 信息保护策略
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> 说明：  [适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标签客户端，请参阅 Microsoft 365 文档中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) "。 *
 
->[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
-
-> [!NOTE]
-> Azure 信息保护策略适用于 Azure 信息保护客户端 (经典) ，而不是 Azure 信息保护统一标签客户端。 不确定这些客户端之间有何区别？ 请参见[常见问题解答](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
-> 
-> 如果你正在寻找信息来为统一标签客户端配置敏感度标签和策略设置，请参阅了解 Microsoft 365 合规性文档中的 [敏感度标签](/microsoft-365/compliance/sensitivity-labels) 。
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 使用以下信息来了解如何配置 Azure 信息保护的默认策略。
 
@@ -120,13 +115,13 @@ ms.locfileid: "95566488"
 |设置|值|
 |-------------------------------|---------------------------|
 |选择默认标签|无|
-|将审核数据发送到 Azure 信息保护分析|关|
-|所有文档和电子邮件都必须自动应用或由用户应用标签|关|
-|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
-|对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签|关|
-|在 Office 应用中显示“信息保护”栏|关|
-|向 Outlook 功能区添加“不要转发”按钮|关|
-|使用户能够使用“自定义权限”选项|关|
+|将审核数据发送到 Azure 信息保护分析|关闭|
+|所有文档和电子邮件都必须自动应用或由用户应用标签|关闭|
+|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关闭|
+|对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签|关闭|
+|在 Office 应用中显示“信息保护”栏|关闭|
+|向 Outlook 功能区添加“不要转发”按钮|关闭|
+|使用户能够使用“自定义权限”选项|关闭|
 |提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 ## <a name="default-policy-before-july-31-2017"></a>2017 年 7 月 31 日之前发布的默认策略
@@ -166,10 +161,10 @@ ms.locfileid: "95566488"
 
 |设置|值|
 |-------------------------------|---------------------------|
-|所有文档和电子邮件都必须自动应用或由用户应用标签|关|
+|所有文档和电子邮件都必须自动应用或由用户应用标签|关闭|
 |选择默认标签|无|
-|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
-|对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签|关|
+|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关闭|
+|对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签|关闭|
 |提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 ## <a name="default-policy-before-march-21-2017"></a>2017 年 3 月 21 日之前发布的默认策略
@@ -204,9 +199,9 @@ ms.locfileid: "95566488"
 
 |设置|值|
 |-------------------------------|---------------------------|
-|所有文档和电子邮件都必须自动应用或由用户应用标签|关|
+|所有文档和电子邮件都必须自动应用或由用户应用标签|关闭|
 |选择默认标签|无|
-|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关|
+|用户必须提供理由以设置较低分类标签、删除标签或删除保护|关闭|
 |提供 Azure 信息保护客户端“告知详情”网页的自定义 URL|空白|
 
 

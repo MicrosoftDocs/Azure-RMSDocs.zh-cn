@@ -12,19 +12,18 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cf8cdfd170dc03cb3f2a05cc2ed22ef7b19f9bb7
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: a24332d284c8f1884d357765f4a30c07fb992df0
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316375"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382762"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2019、windows server 2016、windows Server 2012 R2*
-
->[!NOTE]
-> 如果使用的是经典扫描程序，请参阅 [安装和配置 Azure 信息保护经典扫描器](deploy-aip-scanner-configure-install-classic.md)。
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
+>
+>***相关的**： [仅限 AIP 统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关经典扫描程序，请参阅 [运行 Azure 信息保护经典扫描器](deploy-aip-scanner-manage-classic.md)。 *
 
 确认 [系统要求](deploy-aip-scanner-prereqs.md) 并 [配置并安装了扫描仪](deploy-aip-scanner-configure-install.md)后， [运行发现扫描](#run-a-discovery-cycle-and-view-reports-for-the-scanner) 以开始使用。
 
@@ -99,7 +98,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
     ![停止扫描 Azure 信息保护扫描程序](./media/scanner-stop-scan.png)
 
-- **运行 PowerShell 命令。** 运行下面的命令：
+- **运行 PowerShell 命令。** 运行以下命令：
 
     ```PowerShell
     Stop-AIPScan 
@@ -111,7 +110,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 当你希望报表包含所有文件时，如果你想要在所有文件中应用更改，以及当扫描程序在发现模式下运行，则再次检查所有文件通常非常有用。
 
-**手动运行完全重新扫描：**
+**手动运行完全重新扫描**：
 
 1. 在 Azure 门户中导航到 " **Azure 信息保护-内容扫描作业** " 窗格。
 
@@ -135,7 +134,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 > [!IMPORTANT]
 > 如果已升级到版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
 >
-> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用"，** 请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用**"，请确保运行完整的 "重新扫描" 以在内容中应用标签。
 > 
 
 ## <a name="troubleshooting-a-stopped-scan"></a>排查停止的扫描问题
@@ -185,7 +184,5 @@ Start-AIPScannerDiagnostics
 ## <a name="next-steps"></a>后续步骤
 
 - 想了解 Microsoft 的 Core Services 工程和运行团队是如何实现此扫描程序的？  请阅读以下技术案例研究：[使用 Azure 信息保护扫描程序自动执行数据保护](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)。
-
-- 您可能想知道： [Windows SERVER FCI 和 Azure 信息保护扫描程序之间的区别是什么？](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner)
 
 - 还可在台式计算机中，利用 PowerShell 以交互方式对文件进行分类和保护。 有关此方案以及使用 PowerShell 的其他方案的详细信息，请参阅 [将 PowerShell 与 Azure 信息保护统一标签客户端配合使用](./rms-client/clientv2-admin-guide-powershell.md)。

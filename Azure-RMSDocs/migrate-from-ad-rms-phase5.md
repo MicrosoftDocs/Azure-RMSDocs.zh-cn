@@ -1,11 +1,11 @@
 ---
 title: 从 AD RMS 迁移到 Azure 信息保护 - 第 5 阶段
 description: 从 AD RMS 迁移到 Azure 信息保护的第 5 阶段包括从 AD RMS 迁移到 Azure 信息保护的步骤 10 至 12。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/02/2020
-ms.topic: conceptual
+ms.date: 11/11/2020
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
@@ -13,17 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: aba2381e5cc275e3b51156b32bdf88fdae974b5e
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: abad66a1e62a4e70bc4d5a9452b47abd7dd23004
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566068"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97381997"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
-
+>***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 5 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 10-12。
 
@@ -45,10 +46,14 @@ ms.locfileid: "95566068"
 
 当确认 RMS 客户端不再与这些服务器进行通信，并且客户端成功使用 Azure 信息保护时，可以从这些服务器中删除 AD RMS 服务器角色。 如果使用的是专用服务器，则可能更倾向于在一段时间内第一次关闭服务器的采取警告步骤。 这样则可以在这段时间确保在调查客户端未使用 Azure 信息保护的原因时没有报告要求你重启这些服务器以保证服务连续性的问题。
 
-取消预配 AD RMS 服务器后，此时需要在 Azure 门户中检查模板。 例如，将其转换为标签，将其合并以便减少可供用户选择的数量，或重新配置它们。 这还将是发布默认模板的好时机。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
+在 yo 取消预配 AD RMS 服务器后，你可能想要查看模板和标签。 例如，将模板转换为标签，将其合并，以便用户可以更少地选择或重新配置。 这也是发布默认模板的好时机。
+
+对于敏感度标签和统一标签客户端，请使用标签管理中心，包括 Microsoft 365 安全中心、Microsoft 365 相容性中心或 Microsoft 365 安全 & 符合性中心。 有关详细信息，请参阅 Microsoft 365 文档。
+
+如果使用的是经典客户端，请使用 Azure 门户。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
 
 >[!IMPORTANT]
-> 此迁移结束时，AD RMS 群集不能与 Azure 信息保护和自控密钥 (HYOK) 选项结合使用。 如果决定要对 Azure 信息保护标签使用 HYOK，由于重定向现均已到位，因此所用 AD RMS 群集中的授权 URL 必须与已迁移群集中的授权 URL 不同。
+> 在此迁移结束时，AD RMS 群集不能与 Azure 信息保护一起使用，并保留你自己的密钥 ([HYOK](configure-adrms-restrictions.md)) 选项。 如果你使用的是经典客户端与 HYOK，因为现在已经有了重定向，则你使用的 AD RMS 群集必须具有与你迁移的群集中的相同的授权 Url。
 
 ### <a name="addition-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的添加配置
 
@@ -100,12 +105,12 @@ killall cfprefsd
 
 1. 在 PowerShell 会话中，请连接到 Azure Rights Management 服务，并在出现提示时，指定全局管理员凭据：
 
-    ```ps
+    ```PowerShell
     Connect-AipService
 
 2. Run the following command, and enter **Y** to confirm:
 
-    ```ps
+    ```PowerShell
     Set-AipServiceOnboardingControlPolicy -UseRmsUserLicense $False
     ```
 
@@ -113,7 +118,7 @@ killall cfprefsd
 
 3. 确认不再设置载入控件：
 
-    ```ps    
+    ```PowerShell    
     Get-AipServiceOnboardingControlPolicy
     ```
 
@@ -138,7 +143,7 @@ killall cfprefsd
 - **如果你的租户密钥由 Microsoft 管理**：请运行 PowerShell cmdlet [AipServiceKeyProperties](/powershell/module/aipservice/set-aipservicekeyproperties) 并指定为你的租户自动创建的密钥的密钥标识符。 可以通过运行 [AipServiceKeys](/powershell/module/aipservice/get-aipservicekeys) cmdlet 来确定要指定的值。 为租户自动创建的密钥包含最早创建日期，因此可以使用以下命令对其进行标识：
 
         
-    ```ps
+    ```PowerShell
     (Get-AipServiceKeys) | Sort-Object CreationTime | Select-Object -First 1
     ```
 
@@ -149,4 +154,4 @@ killall cfprefsd
 
 ## <a name="next-steps"></a>后续步骤
 
-完成迁移后，请检查[部署路线图](deployment-roadmap.md)以确定是否需要执行其他任何部署任务。
+完成迁移后，请查看 [分类、标签和保护的 AIP 部署路线图](deployment-roadmap-classify-label-protect.md) ，以确定可能需要执行的任何其他部署任务。

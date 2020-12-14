@@ -12,19 +12,21 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: d528c715b54c063a267694fb974ef685fe264ea3
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: c42f2459861b7b7167469ddadd7c3ff399d47f48
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849753"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97381948"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
 
@@ -32,13 +34,13 @@ ms.locfileid: "96849753"
 
 与 Azure 信息保护不同， [Microsoft 信息保护](https://www.microsoft.com/security/business/information-protection) 不是可以购买的订阅或产品。 它是一个框架，适用于产品和集成功能，可帮助你保护组织的敏感信息。
 
-**Microsoft 信息保护产品包括：**
+**Microsoft 信息保护产品包括**：
 - Azure 信息保护
 - Microsoft 365 信息保护，如 Microsoft 365 DLP
 - Windows 信息保护
 - Microsoft Cloud App Security
 
-**Microsoft 信息保护功能包括：**
+**Microsoft 信息保护功能包括**：
 - 统一标签管理
 - Office 应用中内置的最终用户标签体验
 - Windows 了解统一标签并对数据应用保护的能力
@@ -47,21 +49,21 @@ ms.locfileid: "96849753"
 
 有关详细信息，请参阅 [信息保护功能，帮助保护敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
-## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure 信息保护中的标签与 Office 365 中标签之间的区别是什么？
+## <a name="whats-the-difference-between-labels-in-microsoft-365-and-labels-in-azure-information-protection"></a>Azure 信息保护中 Microsoft 365 和标签之间的标签有何区别？
 
-最初， [Microsoft 365 只是使你](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30) 能够对文档和电子邮件进行分类，以便在将内容存储在 Microsoft 365 服务中时对文档和电子邮件进行分类。 
+最初，Microsoft 365 仅具有 [保留标签](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)，使你能够对文档和电子邮件进行分类，以便在将内容存储到 Microsoft 365 services 中时对其进行审核和保留。 
 
-与此相反，启用 Azure 信息保护标签可对文档和电子邮件应用一致的分类和保护策略，无论它们是存储在本地还是存储在云中。
+与此相反，Azure 信息保护标签是在 Azure 门户中使用 AIP 经典客户端配置的，因此，无论它们是存储在本地还是云中，都可以为文档和电子邮件应用一致的分类和保护策略。
 
-在奥兰多的 Microsoft Ignite 2018 宣布，Microsoft 365 现在除了保留标签外，还可以选择创建和配置 [敏感度标签](/microsoft-365/compliance/sensitivity-labels)。 可以在以下管理中心创建和配置敏感度标签：
+除了保留标签外，Microsoft 365 现在还支持 [敏感标签](/microsoft-365/compliance/sensitivity-labels) 。 可以在以下管理中心创建和配置敏感度标签：
 
 - Office 365 安全与合规中心
 - Microsoft 365 安全中心
 - Microsoft 365 合规中心
 
-通过将 [AIP 标签迁移到统一标签存储](configure-policy-migrate-labels.md)，使用 Azure 信息保护标签作为 Microsoft 365 应用的敏感度标签。
+如果在 Azure 门户中配置了旧版 AIP 标签，则建议将其迁移到敏感度标签和统一的标签客户端。 有关详细信息，请参阅[教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端](tutorial-migrating-to-ul.md)。
 
-有关统一标签管理和支持的详细信息，请参阅 [宣布信息保护功能的可用性，以帮助保护敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
+有关详细信息，请参阅[宣布推出信息保护功能以帮助保护你的敏感数据](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)。
 
 ## <a name="how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform"></a>如何确定我的租户是否在统一的标签平台上？
 
@@ -75,38 +77,48 @@ ms.locfileid: "96849753"
 
 |状态 |说明  |
 |---------|---------|
-|**停**     |  你的租户在统一的标签平台上。 <br />你可以从 "Microsoft 365 相容性中心" [创建、配置和发布标签](/microsoft-365/compliance/create-sensitivity-labels) 。       |
+|**已激活**     |  你的租户在统一的标签平台上。 <br />你可以从 "Microsoft 365 相容性中心" [创建、配置和发布标签](/microsoft-365/compliance/create-sensitivity-labels) 。       |
 |**未激活**    |  你的租户不在统一的标签平台上。 <br />有关迁移说明和指南，请参阅 [如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。       |
+| | |
 
 ## <a name="whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients"></a>Azure 信息保护经典和统一标签客户端之间有何区别？
 
-原始客户端（称为 *Azure 信息客户端* 或 *经典* 客户端）将从 Azure 下载标签和策略设置，并使你能够从 Azure 门户配置 [AIP 策略](overview-policy.md) 。
+旧的 Azure 信息保护客户端（称为 *经典* 客户端）将从 Azure 下载标签和策略设置，并使你能够从 Azure 门户配置 [AIP 策略](overview-policy.md) 。
 
-*统一标签客户端* 是一种最新的补充，它支持多个应用程序和服务使用的统一标记存储。 统一标签客户端从以下管理中心下载 [灵敏度标签](/microsoft-365/compliance/sensitivity-labels) 和策略设置：
+*统一标签客户端* 是最新的客户端，其中包含最新的更新，并且支持多个应用程序和服务使用的统一标签平台。 统一标签客户端从以下管理中心下载 [灵敏度标签](/microsoft-365/compliance/sensitivity-labels) 和策略设置：
 
 - Office 365 安全与合规中心
 - Microsoft 365 安全中心
 - Microsoft 365 合规中心
 
-如果你是管理员并且不确定要使用的客户端，请参阅 [选择要使用的 Azure 信息保护客户端](./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers)。
+如果你是管理员，请在 [选择 Windows 标签解决方案](rms-client/use-client.md#choose-your-windows-labeling-solution)中了解详细信息。
 
+### <a name="classic-client-deprecation"></a>经典客户端弃用
+
+为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 
+
+弃用后，客户端将继续按预期方式工作。 但是，管理员将无法在门户上更新策略，也不会为经典客户端提供更多的修补程序或更改。
+
+在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+如果你当前已部署了经典客户端，则建议升级到统一的标签客户端。 有关详细信息，请参阅。
+
+- [教程：从经典客户端迁移到统一的标签客户端](tutorial-migrating-to-ul.md)
+- [如何将 Azure 信息保护标签迁移到统一敏感度标签](configure-policy-migrate-labels.md)
 ### <a name="identify-the-client-you-have-installed"></a>识别已安装的客户端
 
-如果你是想要理解的用户，请选择 " **帮助和反馈** " 以显示 " **Microsoft Azure 信息保护** " 对话框。 
+如果用户想要了解是否安装了经典或统一标签客户端，则可以执行以下操作之一：
 
-例如：
+- 在 Office 应用中，检查 " **敏感度** " 或 " **保护** " 工具栏按钮。 统一标签客户端会显示 " **敏感度**" :::image type="icon" source="media/i-sensitivity.PNG" border="false"::: 按钮，而经典客户端则会显示 " **保护** " 按钮。 
 
-:::image type="content" source="media/client-about.png" alt-text="确定是否安装了经典或统一的客户端":::
+- 检查已安装的 Azure 信息保护应用程序的版本号。
 
-版本号指示客户端，如下所示：
+    - 版本 **1.x** 表示你具有经典客户端。 示例： **1.54.59.0**
+    - 版本 **2.x** 表明你具有统一的标签客户端。 示例： **2.8.85.0**
 
-- 版本 **1.x** 表示你具有经典客户端。 示例： **1.54.59.0**
-- 版本 **2.x** 表明你具有统一的标签客户端。 示例： **2.6.111.0**
+    例如，在 " **Windows 设置" > "应用和功能** " 区域中，向下滚动到 **Microsoft Azure 信息保护** 应用程序，并检查版本号。
 
-使用以下方法之一访问此对话框：
-
-- 在文件资源管理器中，右键单击文件、文件或文件夹，选择 "**分类和保护**  >  **帮助和反馈**"。
-- 在 Office 应用程序中，经典客户端具有 " **保护** " 按钮，而统一的标签客户端具有 " **敏感度** " 按钮。 选择其中一个按钮，然后选择 " **帮助和反馈**"。
+    :::image type="content" source="media/client-about.png" alt-text="查看 Azure 信息保护客户端版本":::
 
 ## <a name="when-is-the-right-time-to-migrate-my-labels"></a>何时将标签迁移到正确的时间？
 
@@ -156,14 +168,6 @@ Azure 信息保护 (AIP) 为组织的文档和电子邮件提供分类、标签�
 
 还有关于许可的问题吗？ 查看[许可的常见问答解答](https://azure.microsoft.com/pricing/details/information-protection#faq)部分是否有答案。
 
-## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
-
-不是。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
-
-如果在未安装 Azure 信息保护策略的情况下安装经典客户端，客户端将自动在 [仅保护模式下](./rms-client/client-protection-only-mode.md)运行，这使用户可以应用 Rights Management 模板和自定义权限。 
-
-如果以后购买确实包含分类和标记的订阅，客户端会在下载 Azure 信息保护策略后自动切换到标准模式。
-
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>是否必须是全局管理员才能配置 Azure 信息保护？我可以委派给其他管理员吗？
 
 Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运行 Azure 信息保护的所有管理任务。 
@@ -182,7 +186,7 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 |---------|---------|
 |**支持的帐户类型**     | Microsoft 帐户不支持 Azure 信息保护的委派管理，即使这些帐户分配给列出的某个管理角色。         |
 |**载入控件**     |如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 <br /><br />例如，如果你配置了加入控制以便保护内容的能力限制为 *IT 部门* 组，则用于安装和配置 RMS 连接器的帐户必须是该组的成员。          |
-|**删除保护**     |  管理员无法自动删除受 Azure 信息保护保护的文档或电子邮件的保护。 <br /><br />只有被分配为超级用户的用户才可以删除保护，并且仅当启用超级用户功能时。 <br /><br />具有 Azure 信息保护管理权限的任何用户都可以启用超级用户功能，并将用户分配为超级用户，包括其自己的帐户。<br /><br />这些操作记录在管理员日志中。 <br /><br />有关详细信息，请参阅 [为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 <br><br>**提示：** 如果内容存储在 SharePoint 或 OneDrive 中，则管理员可以运行 [SensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedfile) cmdlet 以删除灵敏度标签和加密。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files#remove-encryption-for-a-labeled-document)。 |
+|**删除保护**     |  管理员无法自动删除受 Azure 信息保护保护的文档或电子邮件的保护。 <br /><br />只有被分配为超级用户的用户才可以删除保护，并且仅当启用超级用户功能时。 <br /><br />具有 Azure 信息保护管理权限的任何用户都可以启用超级用户功能，并将用户分配为超级用户，包括其自己的帐户。<br /><br />这些操作记录在管理员日志中。 <br /><br />有关详细信息，请参阅 [为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)中的 "最佳安全做法" 部分。 <br><br>**提示**：如果你的内容存储在 SharePoint 或 OneDrive 中，则管理员可以运行 [SensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedfile) cmdlet 以删除灵敏度标签和加密。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files#remove-encryption-for-a-labeled-document)。 |
 |**迁移到统一的标签存储**      |  如果要将 Azure 信息保护标签迁移到统一的标签存储，请务必参阅标签迁移文档中的以下部分： <br />[支持统一标签平台的管理角色](configure-policy-migrate-labels.md#administrative-roles-that-support-the-unified-labeling-platform)。 |
 | | |
 ### <a name="azure-information-protection-administrator"></a>Azure 信息保护管理员
@@ -194,7 +198,7 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 - 激活和停用 Azure Rights Management 保护服务
 - 配置保护设置和标签
 - 配置 Azure 信息保护策略
-- 运行[Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md)和[AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet
+- 运行[Azure 信息保护客户端](./rms-client/clientv2-admin-guide-powershell.md)和[AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet
     
 若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。
 
@@ -208,7 +212,7 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 - 配置 Azure 信息保护，包括激活和停用 Azure Rights Management 保护服务
 - 配置保护设置和标签
 - 配置 Azure 信息保护策略
-- 运行 [Azure 信息保护客户端](./rms-client/client-admin-guide-powershell.md) 和 [AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet。 
+- 运行 [Azure 信息保护客户端](./rms-client/clientv2-admin-guide-powershell.md) 和 [AIPService 模块](administer-powershell.md)的所有 PowerShell cmdlet。 
 
 若要将用户分配到此管理角色，请参阅[将用户分配到 Azure Active Directory 中的管理员角色](/azure/active-directory/active-directory-users-assign-role-azure-portal)。 
 
@@ -273,11 +277,11 @@ Azure 信息保护可以分类和保护电子邮件和文档，无论它们是�
 > 
 
 > [!TIP]
-> Power BI 现在支持通过使用敏感度标签进行分类，并且可以将这些标签中的保护应用于导出为以下文件格式的数据： .pdf、.xls 和 .ppt。 有关详细信息，请参阅 [Power BI 中的数据保护](/power-bi/admin/service-security-data-protection-overview)。
+> Power BI 支持通过使用敏感度标签进行分类，并且可以将这些标签中的保护应用于导出为以下文件格式的数据： .pdf、.xls 和 .ppt。 有关详细信息，请参阅 [Power BI 中的数据保护](/power-bi/admin/service-security-data-protection-overview)。
 > 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？
 
-是，作为预览版产品/服务，现可为 Azure 信息保护配置 Azure AD 条件访问。
+是的，作为预览产品，你可以为 Azure 信息保护配置 Azure AD 条件性访问。
 
 当用户打开受 Azure 信息保护保护的文档时，管理员现可基于标准条件访问控制，阻止其租户中用户的访问或授予他们访问权限。 最常见的请求条件之一是需要多重身份验证 (MFA)。 另一常见请求条件是，设备必须[遵守 Intune 策略](/intune/protect/conditional-access-intune-common-ways-use)（以便移动设备满足密码要求和最低操作系统版本），并且计算机必须已加入域。
 
@@ -312,37 +316,6 @@ Azure 信息保护可以分类和保护电子邮件和文档，无论它们是�
 > Azure 信息保护对 Microsoft Graph 安全性的支持目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
 > 
 
-## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI 和 Azure 信息保护扫描程序之间的区别是什么？
-
-Windows Server 文件分类基础结构在过去一直都有一个选项：对文档进行分类，然后使用 [Rights Management 连接器](deploy-rms-connector.md)（仅 Office 文档）或 [PowerShell 脚本](./rms-client/configure-fci.md)（所有文件类型）保护文档。 
-
-我们现在建议你使用 [Azure 信息保护扫描程序](deploy-aip-scanner.md)。 扫描程序使用 Azure 信息保护客户端和 Azure 信息保护策略来为文档（所有文件类型）添加标签，然后可以对这些文档进行分类并且还可根据需要保护文档。
-
-这两种解决方案的主要差异是：
-
-|  |Windows Server FCI  |Azure 信息保护扫描程序  |
-|---------|---------|---------|
-|**支持的数据存储**    | Windows Server 上的本地文件夹        | - Windows 文件共享和网络连接存储<br /><br />- SharePoint Server 2016 和 SharePoint Server 2013。 对于具有[对此版本 SharePoint 的延长支持](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)的客户，还支持 SharePoint Server 2010。        |
-|**操作模式**     |真实数据         |系统地对数据存储进行一次或重复爬网         |
-|**支持的文件类型**     | - 默认保护所有文件类型 <br /><br />- 通过编辑注册表，可以从保护配置中排除特定文件类型|对文件类型的支持： <br /><br />- 默认保护 Office 文件类型和 PDF 文档 <br /><br />- 通过编辑注册表，可以将其他文件类型纳入保护|
-
-### <a name="setting-rights-management-owners"></a>设置 Rights Management 所有者
-
-默认情况下，对于 Windows Server FCI 和 Azure 信息保护扫描程序， [Rights Management 所有者](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner) 设置为保护文件的帐户。
-
-覆盖默认设置，如下所示：
-
-- **Windows SERVER FCI**：将 Rights Management 所有者设置为所有文件的单个帐户，或者为每个文件动态设置 Rights Management 所有者。 
-
-    若要动态设置 Rights Management 所有者，请使用 -OwnerMail [源文件所有者电子邮件] 参数和值。 此配置使用文件“所有者”属性中的用户帐户名从 Active Directory 检索用户的电子邮件地址。
-
-- **Azure 信息保护扫描程序：** 对于新保护的文件，请通过在扫描程序配置文件中指定 **默认所有者** 设置，将 Rights Management 所有者设置为指定数据存储中所有文件的单个帐户。 
-
-    不支持为每个文件动态设置 Rights Management 所有者，也不会更改以前受保护文件的 Rights Management 所有者。 
-
-    > [!NOTE]
-    > 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
-
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>我听说过，Azure 信息保护即将推出新版本，何时发布？
 
 本技术文档不包含即将发布的版本的相关信息。 对于这种类型的信息，请使用 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?&filters=Azure%20Information%20Protection%2CO365%20Information%20Protection#owRoadmapMainContent)查看 [企业移动性 + 安全性博客](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)。
@@ -372,10 +345,6 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
 
 - [数据保护 FAQ](faqs-rms.md)
 
+- [仅经典客户端的常见问题解答](faqs-classic.md)
+
 如果你的问题未得到解答，请参阅 [Azure 信息保护的信息和支持](information-support.md)中列出的链接和资源。
-
-此外，我们还为最终用户制作了常见问题解答：
-
-- [适用于 iOS 和 Android 的 Azure 信息保护应用的常见问题解答](./rms-client/mobile-app-faq.md)
-
-- [适用于 Mac 计算机的 RMS 共享应用的常见问题解答](/previous-versions/msdn10/dn451248(v=msdn.10))

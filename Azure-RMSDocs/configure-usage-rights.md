@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
@@ -13,23 +13,28 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 46ad00630997afd598d1476cba3c877e1a604864
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: 42921437537d7daa93ceda374aa247a8601707d8
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849770"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382881"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 
+> 为保持完整性，本文包括已在 2018 年 1 月 8 日停用的 Azure 经典门户中的值。
 
 当你为加密配置敏感度标签或保护模板时，你可以选择在用户、管理员或配置的服务选择标签或模板时将自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。 另外，用户还可以选择并应用使用权限本身。
 
 本文介绍如何为所使用的应用程序配置所需的使用权限，并了解这些权限是如何由应用程序进行解释的。 但是，应用程序在实现权限的方式上可能会有所不同，因此请始终查阅其文档，并使用用户对应用程序进行测试，以便在生产环境中进行部署之前查看行为。
 
-> [!NOTE] 
-> 为保持完整性，本文包括已在 2018 年 1 月 8 日停用的 Azure 经典门户中的值。
 
 ## <a name="usage-rights-and-descriptions"></a>使用权限和说明
 下表列出并说明了 Rights Management 支持的使用权限，以及它们的使用和解释方式。 它们按公用名列出，公用名通常是你看待使用权限作为在代码中使用的单字值（策略中的编码值）的更友好版本进行显示或引用的方式。 
@@ -38,7 +43,9 @@ ms.locfileid: "96849770"
 
 - **Api 常量或值** 是 MSIPC API 调用的 SDK 名称，可在编写用于检查使用权限的应用程序时使用，也可将使用权限添加到策略。
 
-- **标签管理中心** 指的是在何处配置敏感度标签，可以是 Microsoft 365 符合性中心、Microsoft 365 安全中心或 Office 365 安全 & 符合性中心。
+- **标签管理中心** 是指配置敏感度标签的位置，可以是 Microsoft 365 符合性中心、Microsoft 365 安全中心或 Microsoft 365 安全 & 符合性中心。
+
+    如果使用的是经典客户端，请在 Azure 门户中配置标签和标签策略。
 
 
 |使用权限|描述|实现|
@@ -87,16 +94,6 @@ ms.locfileid: "96849770"
 ###### <a name="footnote-4"></a>脚注 4
 不包括在标签管理中心、Azure 门户或适用于 Windows 的 Azure 信息保护客户端中。
 
-## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
-下表列出了创建默认模板时包含的使用权限。 使用权限按各自的[公用名](#usage-rights-and-descriptions)列出。
-
-这些默认模板是在购买订阅时创建的，并且可以在 Azure 门户和[PowerShell](/powershell/module/aipservice/set-aipservicetemplateproperty)中[更改](configure-policy-templates.md)名称和使用权限。 
-
-|模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
-|----------------|--------------------|----------|
-|\<*organization name> -仅查看机密 * <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
-|\<*organization name>信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
-
 ## <a name="do-not-forward-option-for-emails"></a>电子邮件的“不得转发”选项
 
 Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、Exchange 邮件流规则和 Exchange 的 DLP 操作）具有电子邮件的附加信息权限保护选项：不得转发。 
@@ -129,7 +126,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 - **在 Outlook 网页上**
 - 邮件流规则的 **另一权限保护选项**
 - **作为 Office 365 DLP 操作**
-- 如果你具有 [支持 Azure RMS 的 Microsoft 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)，**请从 Outlook** 中获取 [Microsoft 365 应用按更新通道列出的支持版本](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本。 
+- 如果你具有 [支持 Azure RMS 的 Microsoft 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)，请 **从 Outlook** 中获取 [Microsoft 365 应用按更新通道列出的支持版本](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本。 
 
 有关 Encrypt-Only 选项的详细信息，请参阅以下博客文章 Office 团队公告： [仅对 office 365 消息加密进行扩展](https://aka.ms/omefeb2018)。
 
@@ -196,6 +193,19 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 - 使用 PowerShell 配置模板时，使用许可证有效期从 [AipServiceTemplateProperty](/powershell/module/aipservice/set-aipservicetemplateproperty)和 [AipServiceTemplate](/powershell/module/aipservice/add-aipservicetemplate) cmdlet 中的 *LicenseValidityDuration* 参数获取其值。
     
     有关使用 PowerShell 配置此设置的详细信息和指南，请参阅每个 cmdlet 的帮助。
+
+## <a name="rights-included-in-the-default-templates"></a>默认模板中包括的权限
+
+适用 **于**：仅限 AIP 经典客户端
+
+下表列出了创建默认模板时包含的使用权限。 使用权限按各自的[公用名](#usage-rights-and-descriptions)列出。
+
+这些默认模板是在购买订阅时创建的，并且可以在 Azure 门户和[PowerShell](/powershell/module/aipservice/set-aipservicetemplateproperty)中[更改](configure-policy-templates.md)名称和使用权限。 
+
+|模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
+|----------------|--------------------|----------|
+|\<*organization name> -仅查看机密 * <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|\<*organization name>信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
 ## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)

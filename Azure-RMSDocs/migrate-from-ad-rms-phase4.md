@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/26/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
@@ -13,17 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e7431ebdf016b89e1750b833dc4fca2d9646b195
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 0b13ccec5c4ca4fcdad1ac145a289a727fddd38a
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316715"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382014"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>迁移第 4 阶段 - 支持服务配置
 
->*适用于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
-
+>***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 4 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 8-9。
 
@@ -149,15 +150,15 @@ ms.locfileid: "96316715"
 
 对于所有 Exchange 服务器，将以下注册表值添加到 LicenseServerRedirection，具体视 Exchange 版本而定：
 
-1. 对于 **exchange 2013 和 exchange 2016，请** 添加以下注册表值：
+1. 对于 **exchange 2013 和 exchange 2016**，请添加以下注册表值：
 
-    - **注册表路径：**`HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection`
+    - **注册表路径**： `HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection`
 
-    - **键入：** Reg_SZ
+    - **类型**： Reg_SZ
 
-    - 值：`https://\<AD RMS Intranet Licensing URL\>/_wmcs/licensing`
+    - **值**：`https://\<AD RMS Intranet Licensing URL\>/_wmcs/licensing`
 
-    - **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+    - **数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
         - `http://\<connector FQDN\>/_wmcs/licensing`
         
@@ -165,13 +166,13 @@ ms.locfileid: "96316715"
 
 1. 对于 Exchange 2013，请添加以下附加注册表值：
 
-    - **注册表路径：**`HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection` 
+    - **注册表路径**： `HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection` 
 
-    - **键入：** Reg_SZ
+    - **类型**： Reg_SZ
 
-    - **值：** https:// \<AD RMS Extranet Licensing URL\> /_wmcs/licensing
+    - **值**： https:// \<AD RMS Extranet Licensing URL\> /_wmcs/licensing
 
-    - **数据：** 以下前缀之一，具体取决于 Exchange 服务器与 RMS 连接器之间的连接是使用 HTTP 还是 HTTPS：
+    - **数据**：以下其中一种，具体取决于你使用的是从 Exchange 服务器到 RMS 连接器的 HTTP 还是 HTTPS：
 
         - `http://\<connector FQDN\>/_wmcs/licensing`
 

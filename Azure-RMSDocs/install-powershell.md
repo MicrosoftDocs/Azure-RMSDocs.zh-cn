@@ -5,35 +5,37 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/01/2019
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 57d8ac29ea58eab7820d642876e246b5ff985c4e
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 8cc07942c5ccb901518957a304c60adfe5c86a8f
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "95566377"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383714"
 ---
 # <a name="installing-the-aipservice-powershell-module"></a>安装 AIPService PowerShell 模块
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息来帮助你为 Azure 信息保护中的保护服务安装 Windows PowerShell 模块。 此模块的名称为 AIPService，它将替换名为 AADRM 的以前的版本。
 
 可以使用此 PowerShell 模块从命令行 (Azure Rights Management) ，方法是使用任何具有 internet 连接且满足下一节中列出的先决条件的 Windows 计算机。 适用于 Azure 信息保护的 Windows PowerShell 支持自动化脚本，或者可能是高级配置方案所必需的。 有关模块支持的管理任务和配置的详细信息，请参阅 [使用 PowerShell 管理 Azure 信息保护中的保护](administer-powershell.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 此表列出了安装和使用适用于 Azure 信息保护中的保护服务的 AIPService PowerShell 模块的先决条件。
 
 |要求|更多信息|
 |---------------|--------------------|
-|Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如需安装更高版本的 Windows PowerShell，请参阅[升级现有 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
+|Windows PowerShell 的最低版本：3.0|你可在 PowerShell 会话中键入 `$PSVersionTable`，以确认正在运行的 Windows PowerShell 的版本。 <br /><br /> 如需安装更高版本的 Windows PowerShell，请参阅[升级现有 Windows PowerShell](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)。|
 |Microsoft .NET Framework 的最低版本：4.5<br /><br />请注意：较高版本的操作系统都附带此版本的 Microsoft .NET Framework，因此只有在你的客户端操作系统低于 Windows 8.0 或服务器操作系统低于 Windows Server 2012 的情况下，才需要手动安装它。|如果尚未安装 Microsoft .NET Framework 的最低版本，则可以下载 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)。<br /><br />AIPService 模块使用的某些类需要此最低版本的 Microsoft .NET 框架。|
 
 ## <a name="if-you-have-the-aadrm-module-installed"></a>如果已安装 AADRM 模块
@@ -44,7 +46,7 @@ AIPService 模块取代了较旧的模块 AADRM。 如果安装了较旧的模�
 
 如果从 PowerShell 库安装了 AADRM 模块，若要卸载它，请使用 "以 **管理员身份运行** " 选项启动 PowerShell 会话，然后键入：
 
-```ps
+```PowerShell
 Uninstall-Module -Name AADRM
 ```
 
@@ -62,7 +64,7 @@ AIPService 模块位于 [PowerShell 库](https://www.powershellgallery.com/) 上
 
 若要安装 AIPService 模块，请使用 "以 **管理员身份运行** " 选项启动 PowerShell 会话，然后键入：
 
-```ps
+```PowerShell
 Install-Module -Name AIPService
 ```
 
@@ -70,15 +72,15 @@ Install-Module -Name AIPService
 
 如果从库中安装了以前版本的 AIPService 模块，请键入以下内容将其更新为最新版本：
 
-```ps
+```PowerShell
 Update-Module -Name AIPService
 ```
 
 ## <a name="next-steps"></a>后续步骤
 
-在 Windows PowerShell 会话中，确认已安装模块的版本。 如果从较旧版本进行升级，则此检查非常重要：
+在 Windows PowerShell 会话中，确认已安装模块的版本。 如果从较旧版本进行升级，则此检查非常重要：
 
-```ps
+```PowerShell
 (Get-Module AIPService –ListAvailable).Version
 ```
 
@@ -88,13 +90,13 @@ Update-Module -Name AIPService
 
 若要查看可用的 cmdlet，请键入以下命令：
 
-```ps
+```Powershell
 Get-Command -Module AIPService
 ```
 
 使用 `Get-Help <cmdlet_name>` 命令查看有关特定 cmdlet 的帮助，使用 **-online** 参数以在 Microsoft 文档网站上查看最新的帮助。 例如：
 
-```powershell
+```PowerShell
 Get-Help Connect-AipService -online
 ```
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
@@ -13,22 +13,29 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: caf5e33e58e266ba05f337000fe769b257eec832
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 0954f3caa116ee100ed819f71f5be04f36392bd9
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316338"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382167"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>使用 Azure Rights Management 服务帮助用户保护文件
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 为组织部署和配置 Azure 信息保护之后，请为用户、管理员和技术支持提供以下帮助和指导：
 
 -   **最终用户信息**
     
-    让用户知道如何以及何时保护包含敏感信息的文档和电子邮件。 尽可能为现有工作流提供此信息，以便可以将附加步骤并入已熟悉的过程，而不是引入新过程。 请务必让他们知道你的业务的相关优势（和风险），并提供有关何时应该保护文件和电子邮件的指导。 如果已配置[模板](configure-policy-templates.md)，请提供有关在模板名称和描述不足以帮助用户选择正确模板时应该选择哪个模板的说明。
+    让用户知道如何以及何时保护包含敏感信息的文档和电子邮件。 尽可能为现有工作流提供此信息，以便可以将附加步骤并入已熟悉的过程，而不是引入新过程。 请务必让他们知道你的业务的相关优势（和风险），并提供有关何时应该保护文件和电子邮件的指导。 
+
+    如果你有 AIP 经典客户端并且配置了 [模板](configure-policy-templates.md)，请提供有关在模板名称和描述不足以选择正确的模板名称和说明时要选择哪个模板的说明。
     
     > [!TIP]
     > 最终用户示例视频
@@ -43,7 +50,7 @@ ms.locfileid: "96316338"
     
 -   **技术支持信息**
     
-    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)。
+    如果用户拥有 Azure 信息保护客户端，支持人员可要求他们使用“帮助和反馈”选项，获取例如 Office 版本是否无法支持保护，以及当前登录的用户帐户等信息。 还可使用此选项收集日志文件并重置客户端。 有关详细信息，请参阅管理员指南：[安装检查和疑难解答](./rms-client/clientv2-admin-guide.md#installation-checks-and-troubleshooting)。
     
     如果有合法请求对受保护文档拥有完全访问权限，请确保技术支持使用 Azure 信息保护 [超级用户功能](configure-super-users.md)来请求此访问权限。 例如，法律部门或经理可能会在某员工离职后发出此类请求。
     
@@ -61,10 +68,11 @@ ms.locfileid: "96316338"
         
         若要确认 Azure Active Directory 能否授权特定用户或组保护或使用受保护内容，请使用[准备用户和组以便使用 Azure 信息保护](prepare.md)中的验证检查。
         
-        如果用户报告称可以打开受保护内容，但没有相应权限，问题可能在于用户不在为 Rights Management 模板配置的正确组中。 或者，问题可能在于[需要重新为用户或组配置模板](configure-policy-templates.md)。 
-        
         如果用户拥有的权限与预期不同，请查看[使用权限表](configure-usage-rights.md#usage-rights-and-descriptions)中的权限说明和任何特定于应用程序的实现。
 
+        **仅限经典客户端**：如果用户报告他们可以打开受保护的内容，但没有所需的权限，则问题可能是用户不在为 Rights Management 模板配置的正确组中。 或者，问题可能在于[需要重新为用户或组配置模板](configure-policy-templates.md)。 
+        
+        
 请参阅以下关于应用程序特定信息的部分，帮助用户保护文档和电子邮件。
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>在 Azure 信息保护客户端中使用信息保护
@@ -73,11 +81,12 @@ ms.locfileid: "96316338"
 
 使用 Azure 信息保护客户端，除了可以更轻松地保护文档和电子邮件之外，用户还可以跟踪受保护文档。 如果之前获得授权的用户无法再访问跟踪的文档，还可以撤销这些文档。
 
-有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
+有关如何将此客户端用于 Windows 计算机的说明，请参阅 [Azure 信息保护客户端用户指南](./rms-client/clientv2-user-guide.md)。
 
 
 ## <a name="using-information-protection-with-office-365-office-2019-office-2016-or-office-2013"></a>在 Office 365、Office 2019、Office 2016 或 Office 2013 中使用信息保护
-如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 他们也不会在功能区上看到“保护”按钮，或在文件资源管理器中看到“分类和保护”。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
+
+如果使用的是 Azure 权限管理服务，但尚未安装 Azure 信息保护客户端，那么用户就不会在 Office 桌面应用程序中看到 Azure 信息保护栏。 它们也不会在功能区上看到 " **敏感度** " 按钮，也不会从文件资源管理器进行 **分类和保护** 。 这些附加内容有助于用户更轻松地保护文档和电子邮件。 对于这些用户，他们必须遵循类似以下步骤的说明。
 
 > [!TIP]
 > 若要查找应用程序特定帮助，以及有关在这些应用程序中使用信息保护的说明，请搜索 **IRM** 和应用程序名称及版本。

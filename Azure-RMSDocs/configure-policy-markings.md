@@ -5,25 +5,28 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 09/29/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: a1ed0a5b10db4ffd0a50b8738cb85cbff973eaa5
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 5454713bc942daa48fc5c33dfdb66bd1bcdec2e0
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316409"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383238"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
->[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标签客户端，请参阅 Microsoft 365 文档中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) "。 *
+
+> [!NOTE] 
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
 
 当文档或电子邮件中分配一个标签时，可以选择几个选项，以便方便地显示所选的分类。 这些可视标记是页眉、页脚和水印。
 
@@ -64,7 +67,7 @@ ms.locfileid: "96316409"
     当你对保存在 Microsoft SharePoint、OneDrive for work 或 school 或 OneDrive for home 中的文件使用 " [自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) " 时，不会应用可视标记，除非你将 " [高级客户端" 设置](./rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background) 配置为启用分类以在后台连续运行。
 
 > [!NOTE]
-> 若要详细了解 AIP 客户端中的视觉标记支持和内置的标记 Office 功能，请参阅 [比较 Windows 计算机的标记客户端](rms-client/use-client.md#compare-the-labeling-clients-for-windows-computers)。
+> 若要详细了解 AIP 客户端中的视觉标记支持以及内置的标记 Office 功能，请参阅 [选择 Windows 标记解决方案](rms-client/use-client.md#choose-your-windows-labeling-solution)。
 > 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>配置标签的视觉标记
@@ -99,7 +102,7 @@ ms.locfileid: "96316409"
 
 - `${User.Name}`，针对文档或电子邮件的所有者（按 Windows 登录用户名）。 例如：rsimone
 
-- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如： rsimone@vanarsdelltd.com
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 
@@ -107,7 +110,7 @@ ms.locfileid: "96316409"
 >此语法区分大小写。
 
 >[!TIP]
-> 还可以使用 [字段代码将标签名称插入](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification) 到文档或模板中。
+> 还可以使用 [字段代码将标签名称插入](faqs-classic.md#can-i-create-a-document-template-that-automatically-includes-the-classification) 到文档或模板中。
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
@@ -122,21 +125,21 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 > [!NOTE]
 >此语句中的该语法区分大小写。
 
-示例：
+示例:
 
-- **仅为 Word 文档设置页眉文本：**
+- **仅设置 Word 文档的标题文本**：
 
     `${If.App.Word}This Word document is sensitive ${If.End}`
 
     仅在 Word 文档页眉中，标签应用页眉文本“此 Word 文档包含敏感内容”。 没有页眉文本应用于其他 Office 应用程序。
 
-- **为 Word、Excel 和 Outlook 设置页脚文本，为 PowerPoint 设置不同的页脚文本：**
+- 为 **Word、Excel 和 Outlook 设置页脚文本，并为 PowerPoint 提供不同的页脚文本**：
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
     在 Word、Excel 和 Outlook 中，标签应用页脚文本“此内容是机密的”。 在 PowerPoint 中，标签应用页脚文本“此演示文稿是机密的”。
 
-- **为 Word 和 PowerPoint 设置特定的水印文本，然后为 Word、Excel 和 PowerPoint 设置水印文本：**
+- **为 word 和 Powerpoint 设置特定水印文本，然后为 word、Excel 和 PowerPoint 设置水印文本**：
 
     `${If.App.WP}This content is ${If.End}Confidential`
 

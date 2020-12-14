@@ -1,11 +1,11 @@
 ---
 title: 为 Azure Rights Management 配置应用程序 - AIP
 description: 有关管理员配置应用程序和服务以支持 Azure 信息保护的 Azure Rights Management 保护服务的说明。
-author: cabailey
-ms.author: cabailey
-manager: barbkess
-ms.date: 11/30/2019
-ms.topic: how-to
+author: batamig
+ms.author: bagol
+manager: rkarlin
+ms.date: 11/11/2020
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
@@ -13,23 +13,30 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9deba7b1f62e501d49944410c4347743be3341cf
-ms.sourcegitcommit: b763a7204421a4c5f946abb7c5cbc06e2883199c
+ms.openlocfilehash: 1f8100e22f1608ebbd678ec5f97f77b4abd53ff0
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "95565328"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383646"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>为 Azure Rights Management 配置应用程序
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > [!NOTE]
 > 此信息适用于已部署了 Azure 信息保护的 IT 管理员和顾问。 如果你要寻找有关如何针对特定应用程序使用 Rights Management 功能，或者如何打开权限保护文件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
 >
-> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)。
+> 例如，对于 Office 应用程序，请单击帮助图标并输入搜索词，例如 **Rights Management** 或 **IRM**。 有关适用于 Windows 的 Azure 信息保护客户端，请参阅 [Azure 信息保护客户端用户指南](./rms-client/clientv2-user-guide.md)。
 
-为组织部署 Azure 信息保护之后，请使用以下信息配置应用程序、Azure 信息保护客户端和服务。 例如，Word 2019、Word 2016 和 Word 2013 等 Office 应用程序。 此外，服务（如 Exchange Online (传输规则、数据丢失防护、请勿转发和消息加密) 和 Microsoft SharePoint (受保护的库) 。 若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
+为组织部署 Azure 信息保护后，请使用以下信息来配置应用程序、Azure 信息保护客户端和服务，例如：
+
+- **Office 应用程序**，如 word 2019、word 2016 和 word 2013。 
+- **服务**（如 Exchange Online (传输规则、数据丢失防护、请勿转发和消息加密) 和 Microsoft SharePoint (受保护的库) 。 
+
+若要了解这些应用程序和服务如何支持 Azure 信息保护中的数据保护服务，请参阅[应用程序如何支持 Azure 权限管理服务](applications-support.md)。
 
 > [!IMPORTANT]
 > 有关支持的版本和其他要求的信息，请参阅 [Azure 信息保护的要求](requirements.md)。
@@ -53,7 +60,10 @@ ms.locfileid: "95565328"
 除了这些应用程序和服务外，还有一些支持 Rights Management API 的其他应用程序。 此类别包括使用 Rights Management SDK 内部编写的业务线应用程序，以及来自软件供应商的使用 Rights Management SDK 编写的应用程序。 对于这些应用程序，请按照应用程序随附的说明操作。
 
 ## <a name="next-steps"></a>后续步骤
-将应用程序配置为支持 Azure Rights Management 服务后，使用 [Azure 信息保护部署路线图](deployment-roadmap.md)检查在你向用户和管理员推出 Azure 信息保护前，是否有想要执行的其他配置步骤。 如果没有，你可能会发现以下操作信息很有用：
+
+将应用程序配置为支持 Azure Rights Management 服务后，使用 [AIP 部署路线图进行分类、标记和保护](deployment-roadmap-classify-label-protect.md) ，以检查向用户和管理员推出 Azure 信息保护之前是否需要执行其他配置步骤。 
+
+如果没有，你可能会发现以下操作信息很有用：
 
 - [验证 Azure Rights Management 服务](verify.md)
 

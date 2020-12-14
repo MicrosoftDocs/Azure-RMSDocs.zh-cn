@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 09/10/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
@@ -13,21 +13,22 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e5e5e4195f22be28bd290ab3cac9d96e6ca142e2
-ms.sourcegitcommit: d31cb53de64bafa2097e682550645cadc612ec3e
+ms.openlocfilehash: 4f1dd3d2c832cebfe8cb8a994570d81e7544d8cf
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96316457"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383000"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows server 2016、windows Server 2012 R2、windows server 2012*
-
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、windows Server 2012 R2、windows server 2012 *
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤5。
 
-**先决条件：** 在开始之前，请确保：
+**先决条件**：在开始之前，请确保具备以下条件：
     - 已安装并配置 RMS 连接器
     - 检查与将使用连接器的服务器相关的任何 [先决条件](deploy-rms-connector.md#prerequisites-for-the-rms-connector) 。
 
@@ -63,7 +64,7 @@ ms.locfileid: "96316457"
 
 使用适用于 Microsoft RMS 连接器的服务器配置工具自动编辑你的注册表设置。
 
-**优势包括：**
+**优点包括**：
 
 - 不直接编辑注册表。 可以使用脚本进行自动编辑。
 
@@ -78,7 +79,7 @@ ms.locfileid: "96316457"
 
 **优点包括**：不需要连接到运行 RMS 连接器的服务器。
 
-**缺点包括：**
+**缺点包括**：
 
 - 更多管理开销，容易发生错误。
 
@@ -88,7 +89,7 @@ ms.locfileid: "96316457"
 
 ### <a name="how-to-use-the-server-configuration-tool-for-microsoft-rms-connector"></a>如何使用适用于 Microsoft RMS 连接器的服务器配置工具
 
-1.  如果尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 **( # A0) ，请** 从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载它。
+1.  如果尚未下载适用于 Microsoft RMS 连接器的服务器配置工具的脚本 **( # A0)**，请从 [Microsoft 下载中心](https://go.microsoft.com/fwlink/?LinkId=314106)下载它。
 
 2.  将 **GenConnectorConfig.ps1** 文件保存在运行该工具的计算机上。 
 
@@ -96,7 +97,7 @@ ms.locfileid: "96316457"
 
 3.  确定如何运行工具：
     
-    |方法  |描述  |
+    |方法  |说明  |
     |---------|---------|
     |**就地**     |  从要配置为与 RMS 连接器通信的服务器以交互方式运行该工具。 <br><br>**提示**：这对于一次性配置（例如测试环境）非常有用。       |
     |**软件部署**     |  运行该工具以生成注册表文件，然后将其部署到一个或多个相关服务器。 <br><br>使用支持软件部署的系统管理应用程序（如 System Center Configuration Manager）部署注册表文件。       |
@@ -114,7 +115,7 @@ ms.locfileid: "96316457"
 
 若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 
 
-输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 `https:\//connector.contoso.com`。 
+输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，`https:\//connector.contoso.com`。 
 
 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
@@ -215,7 +216,7 @@ ms.locfileid: "96316457"
 
 2.  在与 RMS 连接器通信的 SharePoint 服务器上执行以下任一操作：
 
-    -   **运行适用于 Microsoft RMS 连接器的服务器配置工具。** 
+    -   **运行适用于 Microsoft RMS 连接器的服务器配置工具** 
 
         有关详细信息，请参阅 [如何使用适用于 MICROSOFT RMS 连接器的服务器配置工具](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)。
 
@@ -257,7 +258,7 @@ ms.locfileid: "96316457"
 
 2. 在为文件分类基础结构配置的、将与 RMS 连接器通信的文件服务器上执行以下任一操作：
 
-    -   **运行适用于 Microsoft RMS 连接器的服务器配置工具。** 
+    -   **运行适用于 Microsoft RMS 连接器的服务器配置工具** 
     
         有关详细信息，请参阅 [如何使用适用于 MICROSOFT RMS 连接器的服务器配置工具](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)。
 

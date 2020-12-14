@@ -1,10 +1,10 @@
 ---
 title: Azure RMS 的工作原理 - Azure 信息保护
 description: 详细解说 Azure RMS 的工作原理、它使用的加密控件以及此过程工作原理的分步图示。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 11/30/2019
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,16 +13,18 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9604ca61aff2d01d66e6f328b88ca264ab031785
-ms.sourcegitcommit: 551e3f5b8956da49383495561043167597a230d9
+ms.openlocfilehash: 8adba522d85bec9d2d1062c510b10ae9b96368a3
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86136638"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97381742"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS 的工作原理 揭秘
 
->*适用于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
 
 了解 Azure RMS 工作原理时的一个要点是，Azure 信息保护的这种数据保护服务不会在保护过程中查看或存储你的数据。 要保护的信息永远不会发送或存储到 Azure 中，除非显式将其存储在 Azure 中，或者使用其他可用于在 Azure 中存储数据的云服务。 Azure RMS 只会在文档中保存数据，除已获授权的用户和服务以外，其他任何人都无法读取该文档：
 
@@ -49,6 +51,7 @@ ms.locfileid: "86136638"
 |算法：AES<br /><br />密钥长度：128 位和 256 位 [[1]](#footnote-1)|内容保护|
 |算法：RSA<br /><br />密钥长度：2048 位 [[2]](#footnote-2)|密钥保护|
 |SHA-256|证书签名|
+| | |
 
 ###### <a name="footnote-1"></a>脚注 1 
 
@@ -80,7 +83,8 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 工作原理演练：首次使用、内容保护、内容使用
-为了更详细地了解 Azure RMS 的工作原理，让我们通过在[激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用 Rights Management 服务（有时称为**初始化用户环境**或引导的过程）时，**保护内容**（文档或电子邮件），然后**使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
+
+为了更详细地了解 Azure RMS 的工作原理，让我们通过在 [激活 Azure Rights Management 服务](activate-service.md)之后，当用户首次在其 Windows 计算机上使用 Rights Management 服务（有时称为 **初始化用户环境** 或引导的过程）时，**保护内容**（文档或电子邮件），然后 **使用**（打开并使用）被其他某人保护的内容，来演练一个典型的工作流。
 
 初始化用户环境后，该用户可以保护文档，或使用该计算机上的受保护文档。
 
@@ -113,7 +117,7 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 ![RMS 文档保护 - 步骤 2，策略已创建](./media/AzRMS_documentprotection2.png)
 
-**步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的[使用权](configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
+**步骤 2 中发生的情况**：RMS 客户端随后会为文档创建一个包含策略的证书，策略包括用户或组的 [使用权](configure-usage-rights.md)和其他限制，例如过期日期。 这些设置可在管理员之前配置的模板中进行定义，或在内容受保护时进行指定（有时称为“临时策略”）。   
 
 用于标识所选用户和组的主要 Azure AD 属性是 Azure AD ProxyAddresses 属性，该属性用于存储用户或组的所有电子邮件地址。 但是，如果用户帐户的 AD ProxyAddresses 属性中没有任何值，则改用用户的 UserPrincipalName 值。
 
@@ -155,19 +159,24 @@ Azure 信息保护客户端在以下情况中使用 256 位：
 
 - **移动设备**：当移动设备通过 Azure Rights Management 服务保护或使用文件时，流程要简单得多。 因为每个事务（保护或使用内容）是独立的，移动设备首先不会经历用户初始化过程。 与 Windows 计算机一样，移动设备将连接到 Azure Rights Management 服务并进行身份验证。 为了保护内容，移动设备将提交一个策略，然后 Azure Rights Management 服务将为移动设备发送一个发布许可证和对称密钥用于保护文档。 为了使用内容，当移动设备连接到 Azure Rights Management 服务并进行身份验证时，它们将文档策略发送到 Azure Rights Management 服务，并请求一个使用许可证以使用文档。 在响应中，Azure Rights Management 服务会将所需的密钥和限制发送到移动设备。 这两个进程使用 TLS 来保护密钥交换和其他通信。
 
-- **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 此方案让你可以将 Azure Rights Management 服务与本地服务结合使用。
+- **RMS 连接器**：当 Azure Rights Management 服务与 RMS 连接器结合使用时，流程保持不变。 唯一的差别在于，连接器充当本地服务（如 Exchange Server 和 SharePoint Server）与 Azure Rights Management 服务之间的中继。 连接器本身不执行任何操作，例如用户环境初始化，或者加密或解密。 它只会中继通常要定向到 AD RMS 服务器的通信，处理每一端使用的协议之间的转换。 使用此方案可将 Azure Rights Management 服务与本地服务结合使用。
 
 - **常规保护 (.pfile)**：当 Azure Rights Management 服务对文件提供一般性保护时，流程基本上与内容保护相同，不过，RMS 客户端将创建一个授予所有权限的策略。 使用该文件时，会先将它解密，然后将它传递到目标应用程序。 使用这种方案可以保护所有文件，即使它们本机不支持 RMS。
 
-- “Microsoft 帐户”****：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
+- “Microsoft 帐户”：使用 Microsoft 帐户对电子邮件地址进行身份验证时，Azure 信息保护可以授权其可供使用。 但是，并非所有应用程序都可以在使用 Microsoft 帐户进行身份验证时打开受保护的内容。 [详细信息](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。
 
 ## <a name="next-steps"></a>后续步骤
 
-若要了解 Azure Rights Management 服务的详细信息，请参阅**了解和探索**部分中的其他文章（如[应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
+若要了解 Azure Rights Management 服务的详细信息，请参阅 **了解和探索** 部分中的其他文章（如 [应用程序如何支持 Azure Rights Management 服务](applications-support.md)），了解现有应用程序如何通过与 Azure Rights Management 集成来提供信息保护解决方案。 
 
-请查看 [Azure 信息保护术语](./terminology.md)，熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，请确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果要进一步研究并亲自尝试一下，请使用[编辑策略并创建新标签](infoprotect-quick-start-tutorial.md)教程。
+请查看 [Azure 信息保护术语](./terminology.md)，熟悉在配置和使用 Azure Rights Management 服务时可能遇到的术语。此外，请确保在开始部署前查看 [Azure 信息保护的要求](requirements.md)。 如果你想要深入研究并亲自尝试一下，请使用快速入门和教程：
 
-做好开始为组织部署数据保护的准备时，请使用 [Azure 信息保护部署路线图](deployment-roadmap.md)获取部署步骤和操作说明链接。
+- [快速入门：部署统一标记客户端](quickstart-deploy-client.md)
+- [教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序](tutorial-install-scanner.md)
+- [教程：使用 Azure 信息保护 (AIP) 扫描程序发现敏感内容](tutorial-scan-networks-and-content.md)
+- [教程：使用 Azure 信息保护 (AIP) 防止 Outlook 中的过度共享](tutorial-preventing-oversharing.md)
+
+如果已准备好开始为组织部署数据保护，请使用 [AIP 部署路线图进行分类、标记和保护](deployment-roadmap-classify-label-protect.md) 部署步骤，并提供有关操作说明的链接。
 
 > [!TIP]
 > 提示有关其他信息和帮助，请使用 [Azure 信息保护的信息和支持](information-support.md)中的资源与链接。

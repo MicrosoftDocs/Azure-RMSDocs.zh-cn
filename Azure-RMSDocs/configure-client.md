@@ -1,52 +1,49 @@
 ---
 title: Azure 信息保护客户端 - 安装和配置
 description: 有关在 Windows 计算机和移动设备上部署 Azure 信息保护客户端的管理员信息。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: conceptual
+ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e19400a0901c62bd00f7cd965e23ea01c36be395
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: ca4dfed92aafb690da28e5164496b924c9c3fe7e
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849736"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97383595"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>
+>***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-运行 Office 2010 的计算机需要 Azure 信息保护客户端 (经典) 或 Azure 信息保护统一标签客户端向 Azure 信息保护服务进行身份验证。
+运行 Office 2010 的计算机要求 Azure 信息保护客户端向 Azure 信息保护服务进行身份验证。
 
-不确定这两个客户端之间有何区别？  请参阅 [Azure 信息保护客户端和 Azure 信息保护统一标签客户端之间有何区别？](faqs.md#whats-the-difference-between-azure-information-protection-and-microsoft-information-protection)
+建议为所有 Windows 计算机提供 AIP 统一标签客户端，因为它们安装了一个 Office 外接程序，使用户可以直接从 Office 功能区对文档进行标记和保护。 该客户端还为内置保护服务不支持的文件类型提供标记和保护 (Azure Rights Management) ，并提供 Office 应用无法打开的受保护文件的查看器。 IOS 和 Android 有一个类似的查看器。
 
-对于所有 Windows 计算机，也建议使用这些客户端，因为它们安装 Office 加载项，以便用户可以直接从 Office 功能区轻松地标签和保护文档和电子邮件。 这些客户端还为受保护服务 (Azure Rights Management) 提供的文件类型提供标记和保护，并提供 Office 应用无法打开的受保护文件的查看器。 IOS 和 Android 有一个类似的查看器。
-
-经典客户端还支持文档跟踪站点，使用户可以跟踪和撤销受保护的文件。
+如果安装了 AIP 经典客户端，则还会有一个文档跟踪站点，供用户跟踪和撤消受保护的文件。
 
 ## <a name="the-azure-information-protection-client-for-windows-installation-and-configuration"></a>适用于 Windows 的 Azure 信息保护客户端：安装和配置
 
-有关适用于 Windows 的客户端的企业安装和配置，请参阅以下管理指南：
+有关适用于 Windows 的客户端的企业安装和配置，请参阅 [Azure 信息保护统一标签客户端管理员指南](./rms-client/clientv2-admin-guide.md)。
 
-- 统一标签客户端： [Azure 信息保护统一标签客户端管理员指南](./rms-client/clientv2-admin-guide.md)
+如果要为一台计算机快速安装和测试这些客户端，请参阅 [下载并安装 Azure 信息保护统一标签客户端](./rms-client/install-unifiedlabelingclient-app.md)。
 
-- 经典客户端： [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)
+**仅限经典客户端**：如果已安装经典客户端，请改用以下链接：
 
-但是，如果要为一台计算机快速安装和测试这些客户端，请参阅用户指南中的以下说明：
-
-- 统一标签客户端： [下载并安装 Azure 信息保护统一标签客户端](./rms-client/install-unifiedlabelingclient-app.md)
-
-- 经典客户端：从[Azure 信息保护客户端用户指南](./rms-client/client-user-guide.md)[下载并安装 azure 信息保护客户端](./rms-client/install-client-app.md)。
+- [Azure 信息保护客户端管理员指南](./rms-client/client-admin-guide.md)
+- [下载并安装 Azure 信息保护客户端](./rms-client/install-client-app.md)。
 
 ## <a name="the-azure-information-protection-app-for-ios-and-android-installation-and-management"></a>适用于 iOS 和 Android 的 Azure 信息保护应用：安装和管理
 
