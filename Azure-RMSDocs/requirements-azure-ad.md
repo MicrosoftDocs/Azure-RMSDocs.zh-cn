@@ -12,16 +12,18 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: 1dfb6879533e4bb567f97d56a88cd1df2915e338
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 43aaafadaabbf26309c4a40926b970d90aeadc47
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178166"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386230"
 ---
 # <a name="additional-azure-ad-requirements-for-azure-information-protection"></a>Azure 信息保护的其他 Azure AD 要求
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>
+>相关内容：*[AIP 统一标记客户端和 AIP 经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
 使用 Azure 信息保护时，[Azure AD 目录是需要满足的一项要求](requirements.md#azure-active-directory)。 使用 Azure AD 目录中的帐户登录到 Azure 门户，在门户中可以配置 Azure 信息保护设置。
 
@@ -31,9 +33,16 @@ ms.locfileid: "92178166"
 
 ## <a name="computers-running-office-2010"></a>运行 Office 2010 的计算机
 
-除了 Azure AD 帐户，运行 Microsoft Office 2010 的计算机还需要使用 [Azure 信息保护统一标签客户端](./rms-client/aip-clientv2.md)或 [Azure 信息保护经典客户端](./rms-client/aip-client.md) 对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。
+除了 Azure AD 帐户，运行 Microsoft 2010 的计算机还需要使用适用于 Windows 的 Azure 信息保护客户端对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。 
 
 如果你的用户帐户已联合（例如，使用 AD FS），这些计算机必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
+
+建议部署 Azure 信息保护统一标记客户端。 如果你尚未升级，则系统可能仍会部署 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。 有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)。
+
+> [!NOTE]
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 
+>
+> 在此时间框架内，所有当前 Azure 信息保护客户都可以转换到 Microsoft 信息保护统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 ## <a name="support-for-certificate-based-authentication-cba"></a>支持基于证书的身份验证 (CBA)
 
@@ -45,7 +54,7 @@ ms.locfileid: "92178166"
 
 若要将多因素身份验证 (MFA) 和 Azure 信息保护结合起来使用，至少需要安装以下内容之一：
 
-- **Microsoft Office，** 版本 2013 或更高版本
+- Microsoft Office，版本 2013 或更高版本
 - **AIP 客户端**。 没有最低版本要求。 适用于 Windows 的 AIP 客户端以及适用于 iOS 和 Android 的查看器应用均支持 MFA。
 - **适用于 Mac 计算机的 Rights Management 共享应用**。 自 2015 年 9 月版起，RMS 共享应用已支持 MFA。
 
@@ -73,7 +82,7 @@ Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。
 如果部署连接器或扫描程序，以下帐户不得要求执行 MFA：
 
 - 安装和配置连接器的帐户。
-- 连接器在 Azure AD 中创建的服务主体帐户 Aadrm_S-1-7-0****。
+- 连接器在 Azure AD 中创建的服务主体帐户 Aadrm_S-1-7-0。
 - 运行扫描程序的服务帐户。
 
 ## <a name="user-upn-values-dont-match-their-email-addresses"></a>用户 UPN 值与其电子邮件地址不匹配
@@ -92,7 +101,7 @@ Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。
 
 有关详细信息，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。
 
-## <a name="authenticating-on-premises-using-adfs-or-another-authentication-provider"></a>使用 AD FS 或其他身份验证提供程序在本地进行身份验证
+## <a name="authenticating-on-premises-using-ad-fs-or-another-authentication-provider"></a>使用 AD FS 或其他身份验证提供程序在本地进行身份验证
 
 如果使用的移动设备或 Mac 计算机使用 AD FS 或等效的身份验证提供程序在本地进行身份验证，则需要在以下配置之一中使用 AD FS：
 

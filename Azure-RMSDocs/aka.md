@@ -1,10 +1,10 @@
 ---
 title: Azure 信息保护也称为
 description: Azure 信息保护经过多次名称更改，你可能知道的是它以前的名称。
-author: mlottner
-ms.author: mlottner
+author: batamig
+ms.author: bagol
 manager: rkarlin
-ms.date: 04/28/2020
+ms.date: 11/08/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,18 +12,20 @@ ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5a9e9e18734480f139a9e88f06c0fbb1772448c3
-ms.sourcegitcommit: d01580c266de1019de5f895d65c4732f2c98456b
+ms.openlocfilehash: 40ceb9ebb8ef4f78869583408501e8bbd7c9948a
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92178267"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384037"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure 信息保护 - 也称为...
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
-Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发展而形成，实现权限管理保护。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
+Azure 信息保护 (AIP) 由实现权限管理保护的著名 Microsoft 技术长期发展而形成。 这是个长时演变过程，你可能通过其先前名称了解到此解决方案。 或者，可能在文档、UI 和日志文件中看到对这些名称的引用。 
 
 以下部分列出了其中一些名称。
 
@@ -32,17 +34,17 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
 
 ## <a name="cloud-based-solutions"></a>基于云的解决方案
 
-- **Azure 权限管理**或 **Azure 权限管理服务** - 常缩写为 Azure RMS**
+- **Azure 权限管理** 或 **Azure 权限管理服务** - 常缩写为 Azure RMS
 
-- **Azure Active Directory Rights Management** - 常缩写为 AADRM**
+- **Azure Active Directory Rights Management** - 常缩写为 AADRM
 
-- **Microsoft Azure Active Directory Rights Management** - 常缩写为 Microsoft Azure AD Rights Management**
+- **Microsoft Azure Active Directory Rights Management** - 常缩写为 Microsoft Azure AD Rights Management
 
 ## <a name="on-premises-solutions"></a>本地解决方案
 
-- **Active Directory Rights Management Services** - 常缩写为 AD RMS**
+- **Active Directory Rights Management Services** - 常缩写为 AD RMS
 
-- **Windows Rights Management Services** - 常缩写为 Windows RMS**
+- **Windows Rights Management Services** - 常缩写为 Windows RMS
 
 ## <a name="other-names"></a>其他名称
 
@@ -54,7 +56,7 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
     
     常用标签，有时会在基于云的版本正式发布时使用，以便在与其本地早期版本比较时强调部署的全新易用性。
 
-- **信息权限管理** - 常缩写为 IRM**
+- **信息权限管理** - 常缩写为 IRM
     
     技术的 Office 实现，支持当前的本地版本 (AD RMS) 和基于云的版本 (Azure RMS)。 
 
@@ -75,3 +77,7 @@ Azure 信息保护（有时缩写为 AIP）由著名 Microsoft 技术长期发�
 ## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>如何评估或购买最新版本
 
 有关如何购买或评估 Azure 信息保护以及可用于订阅计划的不同功能的详细信息，请参阅 [Azure 信息保护](https://www.microsoft.com/cloud-platform/azure-information-protection)站点。
+
+## <a name="next-steps"></a>后续步骤
+
+有关详细信息，请参阅 [Azure 信息保护术语](terminology.md)。

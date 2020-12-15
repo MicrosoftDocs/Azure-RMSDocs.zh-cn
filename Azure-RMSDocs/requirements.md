@@ -13,16 +13,18 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d750edb4aef5bf0b2c546598bb3007f609e50cf4
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: 2b621f78610d411a7ab980429fcb1dd960cbebff
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849686"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386213"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
 >适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>
+>相关内容：*[AIP 统一标记客户端和 AIP 经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
 在部署 Azure 信息保护之前，请确保系统满足以下先决条件：
 
@@ -36,7 +38,7 @@ ms.locfileid: "96849686"
 
 必须有以下计划之一，具体视你要使用的 Azure 信息保护功能而定：
 
-- [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 使用 Azure 信息保护扫描程序或客户端（经典或统一标记）进行分类、标记和保护所必需
+- [Azure 信息保护计划](https://azure.microsoft.com/pricing/details/information-protection/)。 需要它才可使用 Azure 信息保护扫描程序或客户端进行分类、标记和保护。
 
 - [包括 Azure 信息保护的 Office 365 计划](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)。 仅进行保护所必需。
 
@@ -85,7 +87,7 @@ ms.locfileid: "96849686"
 
 ### <a name="supported-operating-systems-for-client-devices"></a>客户端设备支持的操作系统
 
-以下操作系统既支持 Azure 信息保护统一标记客户端，也支持 Azure 信息保护客户端： 
+以下操作系统支持适用于 Windows 的 Azure 信息保护客户端：
 
 - Windows 10（x86 和 x64）。 Windows 10 RS4 内部版本及更高版本中不支持手写。
  
@@ -98,8 +100,6 @@ ms.locfileid: "96849686"
 - **Windows Server 2016**
 
 - Windows Server 2012 R2 和 Windows Server 2012
-
-[两个客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)都可便于用户对文档和电子邮件进行分类和标记。
 
 若要详细了解旧版 Windows 中的支持，请联系 Microsoft 帐户或支持代表。
 
@@ -152,13 +152,13 @@ Azure 信息保护客户端可使用以下任意 Office 版本中的 Microsoft W
 
 Office 的其他版本无法通过使用 Rights Management 服务保护文档和电子邮件。 对于这些版本，只支持使用 Azure 信息保护进行分类，不会向用户显示应用保护的标签。 
 
-这些标签本来会显示在 Azure 信息保护栏或统一标记客户端中的 Office 功能区上（通过经典客户端中的“保护”按钮，或统一标记客户端中的“敏感度”按钮）。 
+标签出现在 Office 文档顶部显示的某一栏中，可通过统一标记客户端中的“敏感度”按钮或传统客户端中的“保护”按钮进行访问 。
 
 有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
 
 ### <a name="office-features-and-capabilities-not-supported"></a>不支持的 Office 特性和功能
 
-- Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。
+- 适用于 Windows 的 Azure 信息保护客户端都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。
 
 - Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能无法与 Azure 信息保护功能配合使用。
 
@@ -175,9 +175,9 @@ Azure 信息保护有以下额外要求：
     要在使用代理获取令牌时支持 Proxy.pac 文件，请添加以下新的注册表项：
 
     - 路径：`Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP\`
-    - 密钥：`UseDefaultCredentialsInProxy`
+    - 键：`UseDefaultCredentialsInProxy`
     - 类型：`DWORD`
-    - 值：`1`
+    - **值**：`1`
     
 - TLS 客户端到服务连接。 不要终止与 aadrm.com URL 的任何 TLS 客户端到服务连接（例如，为了执行数据包级别检查）。 那样做会打破 RMS 客户端用于 Microsoft 托管 CA 的证书固定，导致无法确保其与 Azure Rights Management 服务的通信安全。
      

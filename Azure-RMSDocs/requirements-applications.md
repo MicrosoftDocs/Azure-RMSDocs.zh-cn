@@ -1,6 +1,6 @@
 ---
 title: 适用于 Azure 信息保护的 RMS 数据保护应用程序支持
-description: 确定对 Azure Rights Management (Azure RMS) 服务提供本机支持的应用程序和解决方案。 Azure RMS 为 Azure 信息保护 (AIP) 提供数据保护。
+description: 确定对 Azure Rights Management Service (Azure RMS) 提供内置支持的应用程序和解决方案。 Azure RMS 为 Azure 信息保护 (AIP) 提供数据保护。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -13,18 +13,21 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f25b020a72a48e79b24840a597aefd4cc9e594af
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: 0c86d31ef5dbfe3afd7e901bc43758c61ee0ba67
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849689"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386247"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
+>
+>相关内容：*[AIP 统一标记客户端和 AIP 经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
-此页上列出的应用程序和解决方案对 Azure Rights Management Service（简称 Azure RMS，为 Azure 信息保护提供数据保护）服务提供本机支持。
+
+此页上列出的应用程序和解决方案对 Azure Rights Management Service（简称 Azure RMS，为 Azure 信息保护提供数据保护）服务提供内置支持。
 
 这些应用程序和解决方案称为“启用 RMS”的应用程序和解决方案，通过使用 Rights Management API 将 Rights Management 和[使用情况限制](configure-usage-rights.md)紧密集成。
 
@@ -207,7 +210,7 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 所有版本的 Office for Mac 2019 和 Office for Mac 2016 都支持使用受保护的内容。
 
 > [!TIP]
-> 要开始使用 Office for Mac 保护文档，以下常见问题解答可能有用：[如何配置 Mac 计算机以保护和跟踪文档？](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
+> 如果在 Mac 计算机上使用经典客户端，你可能会发现以下常见问题解答非常有用：[如何配置 Mac 计算机以保护和跟踪文档？](faqs-classic.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 > 
 ## <a name="azure-information-protection-apps-for-ios-and-android"></a>适用于 iOS 和 Android 的 Azure 信息保护应用
 
@@ -219,21 +222,34 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 
 ## <a name="the-azure-information-protection-client-for-windows"></a>适用于 Windows 的 Azure 信息保护客户端
 
-Azure 信息保护 (AIP) 客户端包括两个版本，并分别为这两个版本提供了指南，一个面向管理员，一个面向用户：
+若要使用 Azure 信息保护，必须在整个系统中部署 AIP 客户端。 
 
-- **统一标记客户端**：
-    - [管理员指南](./rms-client/clientv2-admin-guide.md)
-    - [用户指南](./rms-client/clientv2-user-guide.md)
+从 [Microsoft Azure 信息保护页面](https://go.microsoft.com/fwlink/?LinkId=303970)下载统一标记客户端安装。 
 
-- **经典客户端**：
-    - [管理员指南](./rms-client/client-admin-guide.md)
-    - [用户指南](./rms-client/client-user-guide.md)
+有关详细信息，请参阅：
 
-从 [Microsoft Azure 信息保护页](https://go.microsoft.com/fwlink/?LinkId=303970)上下载相关应用。
+- [Azure 信息保护的客户端](rms-client/use-client.md)
+- [统一标记客户端管理员指南](./rms-client/clientv2-admin-guide.md)
+- [统一标记客户端用户指南](./rms-client/clientv2-user-guide.md)
+
+### <a name="aips-classic-client"></a>AIP 经典客户端
+
+如果你尚未升级，则可能仍会部署旧版 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。
+
+有关部署和使用经典客户端的详细信息，请参阅：
+
+- [AIP 经典客户端](./rms-client/aip-client.md)
+- [经典客户端管理员指南](./rms-client/client-admin-guide.md)
+- [经典客户端用户指南](./rms-client/client-user-guide.md)。
 
 > [!NOTE]
-> 不确定这两个版本之间的差异？ 请参阅相关 [FAQ](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 
+>
+> 在此时间框架内，所有当前 Azure 信息保护客户都可以转换到 Microsoft 信息保护统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+>
 > 
+>
+
 ## <a name="rights-management-sharing-app"></a>权限管理共享应用
 
 对于 Mac 计算机，Rights Management 共享应用提供了一个查看器，可查看受保护的 PDF 文件 (.ppdf)、受保护的文本图像和受常规保护的文件。 它也可保护图像文件，但不能保护其他文件。 若要保护这些计算机上的 Office 文件，请使用 Office for Mac 或 Microsoft 365 企业应用版。 
