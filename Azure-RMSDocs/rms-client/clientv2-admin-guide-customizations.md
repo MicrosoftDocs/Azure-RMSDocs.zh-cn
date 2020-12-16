@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/23/2020
+ms.date: 12/14/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2b4f7842ddc33ae170d756fa132883ac1fe8f07a
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: cbaeca78592e0f5626b183d521644fea6d77084f
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385635"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583449"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -130,12 +130,14 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 如果为用户配置了多个标签策略，每个都有可能不同的策略设置，则将根据管理中心中策略的顺序应用最后一个策略设置。 有关详细信息，请参阅 [标签策略优先级 (订单问题) ](/microsoft-365/compliance/sensitivity-labels#label-policy-priority-order-matters)
 
-使用最后一个策略设置，使用相同的逻辑应用标签策略高级设置。 
+使用最后一个策略设置，使用相同的逻辑应用标签策略高级设置。
 
 > [!NOTE]
-> [OutlookDefaultLabel](#set-a-different-default-label-for-outlook)高级标签策略设置当前存在异常，这使你可以为 Outlook 设置不同的默认标签。
+> 在当前 GA 版中，" [OutlookDefaultLabel](#set-a-different-default-label-for-outlook) 高级标签" 策略设置存在例外，可用于为 Outlook 设置不同的默认标签。
 > 
-> 如果 OutlookDefaultLabel 设置发生冲突，则根据管理中心中的策略顺序，从 *第一个* 策略设置中获取配置。
+> 如果 [OutlookDefaultLabel](#set-a-different-default-label-for-outlook) 设置发生冲突，则根据管理中心中的策略顺序，从第一个策略设置中获取配置。 
+>
+> 此异常已作为 [2.9.109.0](unifiedlabelingclient-version-release-history.md#version-291090-public-preview) 公共预览版的一部分被删除。
 
 #### <a name="available-advanced-settings-for-label-policies"></a>标签策略的可用高级设置
 
@@ -153,6 +155,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |EnableCustomPermissionsForCustomProtectedFiles|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |EnableLabelByMailHeader|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |EnableLabelBySharePointProperties|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)
+| EnableOutlookDistributionListExpansion | [为 Outlook 通讯组列表内的收件人实现阻止消息](#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) |
 |HideBarByDefault|[在 Office 应用程序中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
 |JustificationTextForUserText | [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels) |
 |LogMatchedContent|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
@@ -160,6 +163,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |OutlookBlockUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookCollaborationRule| [自定义 Outlook 弹出消息](#customize-outlook-popup-messages)|
 |OutlookDefaultLabel|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
+|OutlookGetEmailAddressesTimeOutMSProperty | [在为通讯组列表中的收件人实施阻止消息时，修改在 Outlook 中展开通讯组列表的超时](#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) |
 |OutlookJustifyTrustedDomains|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookJustifyUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |OutlookRecommendationEnabled|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
@@ -170,8 +174,10 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |OutlookWarnUntrustedCollaborationLabel|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |PFileSupportedExtensions|[更改要保护的文件类型](#change-which-file-types-to-protect)|
 |PostponeMandatoryBeforeSave|[使用强制标签时，删除文档的“以后再说”](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
+| PowerPointRemoveAllShapesByShapeName|[删除页眉和页脚中特定形状名称的所有形状，而不是按形状内的文本删除形状](#remove-all-shapes-of-a-specific-shape-name) |
+|PowerPointShapeNameToRemove |[避免从 PowerPoint 删除包含指定文本且不是页眉/页脚的形状](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers) |
 |RemoveExternalContentMarkingInApp|[删除其他标记解决方案中的页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)|
-|RemoveExternalMarkingFromCustomLayouts | [删除 PowerPoint 中自定义布局的外部内容标记](#remove-external-content-marking-from-custom-layouts-in-powerpoint)|
+|RemoveExternalMarkingFromCustomLayouts|[从 PowerPoint 自定义布局中显式删除外部内容标记](#extend-external-marking-removal-to-custom-layouts) |
 |ReportAnIssueLink|[为用户添加“报告问题”](#add-report-an-issue-for-users)|
 |RunPolicyInBackground|[开启在后台持续运行的分类](#turn-on-classification-to-run-continuously-in-the-background)
 |ScannerConcurrencyLevel|[限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner)|
@@ -179,6 +185,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |SharepointWebRequestTimeout| [配置 SharePoint 超时](#configure-sharepoint-timeouts)|
 |SharepointFileWebRequestTimeout |[配置 SharePoint 超时](#configure-sharepoint-timeouts)|
 |UseCopyAndPreserveNTFSOwner | [在标记期间保留 NTFS 所有者](#preserve-ntfs-owners-during-labeling-public-preview)
+| | |
 
 用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
 
@@ -409,7 +416,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 
 通过定义要删除的所有形状的名称并避免在所有形状中检查文本（这是一种消耗大量资源的过程），避免删除包含要忽略的文本的形状。
 
-如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在 **RemoveExternalContentMarkingInApp** 项值中，则将检查在 **ExternalContentMarkingToRemove** 值中指定的文本的所有形状。 
+如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在 **RemoveExternalContentMarkingInApp** 项值中，则将检查在 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 值中指定的文本的所有形状。 
 
 查找要使用的形状的名称并希望排除：
 
@@ -447,7 +454,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例:
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -459,7 +466,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInApp="WX"}
 ```
 
-然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，指定页眉或页脚的内容以及如何删除或替换它们。
+然后需要至少一个高级客户端设置 ExternalContentMarkingToRemove，[](#how-to-configure-externalcontentmarkingtoremove)指定页眉或页脚的内容以及如何删除或替换它们。
 
 ### <a name="how-to-configure-externalcontentmarkingtoremove"></a>如何配置 ExternalContentMarkingToRemove
 
@@ -513,19 +520,66 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
-PowerPoint 中的页眉和页脚作为形状实现。 
+PowerPoint 中的页眉和页脚作为形状实现。 对于 **msoTextBox**、 **msoTextEffect**、 **msoPlaceholder** 和 **msoAutoShape** 形状类型，以下高级设置提供了额外的优化：
 
-若要避免删除包含您指定的文本但 *不* 是页眉或页脚的形状，请使用名为 **PowerPointShapeNameToRemove** 的其他高级客户端设置。 我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。
+- [PowerPointShapeNameToRemove](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers)
+- [RemoveExternalMarkingFromCustomLayouts](#extend-external-marking-removal-to-custom-layouts)
 
-- 如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp 键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本。 
+此外， [PowerPointRemoveAllShapesByShapeName](#remove-all-shapes-of-a-specific-shape-name) 可以根据形状名称删除任何形状类型。
 
-- 如果指定了此值，则将删除仅满足形状名称条件的形状，还将删除与 **ExternalContentMarkingToRemove** 提供的字符串相匹配的文本。
+有关详细信息，请参阅 [查找要用作页眉或页脚的形状的名称](#find-the-name-of-the-shape-that-youre-using-as-a-header-or-footer)。
 
-此外，如果在 PowerPoint 中配置了自定义布局，则默认行为是忽略自定义布局中的形状。 若要从自定义布局内部显式删除外部内容标记，请将 **RemoveExternalMarkingFromCustomLayouts** advanced 属性设置为 **true。**
+##### <a name="avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers"></a>避免从 PowerPoint 删除包含指定文本且不是页眉/页脚的形状
+
+若要避免删除包含您指定的文本但不是页眉或页脚的形状，请使用名为 PowerPointShapeNameToRemove 的其他高级客户端设置 **。** 
+
+我们还建议使用此设置来避免检查所有形状中的文本，因为这将占用大量资源。 
+
+- 如果未指定这项附加的高级客户端设置，并且 PowerPoint 包括在 RemoveExternalContentMarkingInApp [](#remove-headers-and-footers-from-other-labeling-solutions)键值中，将对所有形状检查你在 ExternalContentMarkingToRemove 值中指定的文本[](#how-to-configure-externalcontentmarkingtoremove)。 
+
+- 如果指定了此值，则将删除仅满足形状名称条件的形状，还将删除与 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 提供的字符串相匹配的文本。
+
+例如：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove="fc"}
+```
+
+##### <a name="extend-external-marking-removal-to-custom-layouts"></a>将外部标记删除扩展到自定义布局
+
+此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
+
+默认情况下，用于删除外部内容标记的逻辑将忽略在 PowerPoint 中配置的自定义布局。 若要将此逻辑扩展到自定义布局，请将 **RemoveExternalMarkingFromCustomLayouts** advanced 属性设置为 **True**。
+
+- 密钥： **RemoveExternalMarkingFromCustomLayouts**
+
+- 值： **True**
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalMarkingFromCustomLayouts="True"}
+```
+
+##### <a name="remove-all-shapes-of-a-specific-shape-name"></a>删除特定形状名称的所有形状
+
+如果你使用的是 PowerPoint 自定义布局，并且想要从页眉和页脚中删除特定形状名称的所有形状，请使用 **PowerPointRemoveAllShapesByShapeName** advanced 设置，并使用要删除的形状的名称。
+
+使用 **PowerPointRemoveAllShapesByShapeName** 设置将忽略形状内的文本，而使用形状名称标识要移除的形状。
+
+例如：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointRemoveAllShapesByShapeName="Arrow: Right"}
+```
 
 > [!NOTE]
-> 此部分中所述的高级客户端设置支持的 PowerPoint 形状类型包括： **msoTextBox**、 **msoTextEffect** 和 **msoPlaceholder**
+> 若要定义 **PowerPointRemoveAllShapesByShapeName** 设置，当前还必须定义 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 设置，即使不需要 **ExternalContentMarkingToRemove** 提供的功能也是如此。
 >
+> 如果要定义 **PowerPointRemoveAllShapesByShapeName**，请同时定义 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 和 [PowerPointShapeNameToRemove](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers) ，以避免删除比预期更多的形状。
+>
+
+
 ##### <a name="find-the-name-of-the-shape-that-youre-using-as-a-header-or-footer"></a>查找要用作页眉或页脚的形状的名称
 
 1. 在 PowerPoint 中，显示“选择”窗格：“格式”选项卡 >“排列”组 >“选择”窗格。
@@ -560,21 +614,6 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointShapeNameToRemove
 Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkingInAllSlides="True"}
 ```
 
-##### <a name="remove-external-content-marking-from-custom-layouts-in-powerpoint"></a>删除 PowerPoint 中自定义布局的外部内容标记
-
-此配置使用策略 [高级设置](#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
-
-默认情况下，用于删除外部内容标记的逻辑将忽略在 PowerPoint 中配置的自定义布局。 若要将此逻辑扩展到自定义布局，请将 **RemoveExternalMarkingFromCustomLayouts** advanced 属性设置为 **True**。
-
-- 密钥： **RemoveExternalMarkingFromCustomLayouts**
-
-- 值： **True**
-
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
-
-```PowerShell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalMarkingFromCustomLayouts="True"}
-```
 
 ## <a name="disable-custom-permissions-in-file-explorer"></a>在文件资源管理器中禁用自定义权限
 
@@ -743,6 +782,10 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyUntrustedColl
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollaborationLabel="0eb351a6-0c2d-4c1d-a5f6-caa80c9bdeec,40e82af6-5dad-45ea-9c6a-6fe6d4f1626b"}
 ```
 
+> [!NOTE]
+> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) 高级设置。
+>
+
 #### <a name="to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels"></a>为特定标签配置的弹出消息免除域名
 
 对于在这些弹出消息中指定的标签，可以免除特定域名，使用户不会看到其电子邮件地址中包含该域名的收件人的邮件。 在这种情况下，发送电子邮件时不会受消息干扰。 若要指定多个域，将其添加为单个字符串，以逗号分隔。
@@ -782,6 +825,10 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockTrustedDomains=
 
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomains="contoso.com,fabrikam.com,litware.com"}
 ```
+
+> [!NOTE]
+> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) 高级设置。
+>
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label"></a>若要针对没有标签的电子邮件或附件实现用于警告、验证或阻止的弹出消息：
 
@@ -876,6 +923,28 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookOverrideUnlabeledCol
 
 ```PowerShell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
+```
+
+### <a name="to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview"></a>若要为 Outlook 通讯组列表中的收件人实现拦截消息 (公共预览版) 
+
+默认情况下， [OutlookBlockTrustedDomains](#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels) 和 [OutlookBlockUntrustedCollaborationLabel](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent) 高级设置仅适用于通讯组列表之外的电子邮件。 
+
+若要将对这些阻止消息的支持扩展到 Outlook 通讯组列表中的收件人，请将 **EnableOutlookDistributionListExpansion** advanced 设置设置为 **true**：
+
+- 密钥： **EnableOutlookDistributionListExpansion**
+- 值： **true**
+
+此高级属性使 Outlook 可以扩展分发列表，目的是确保根据需要显示阻止消息。 展开分发列表的默认超时为 **2000** 秒。
+
+若要修改此超时，请为所选策略创建以下高级设置：
+
+- 密钥： **OutlookGetEmailAddressesTimeOutMSProperty**
+- 值： *整数，以秒为单位*
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableOutlookDistributionListExpansion="true"} @{OutlookGetEmailAddressesTimeOutMSProperty="3000"}
 ```
 
 ## <a name="disable-sending-audit-data-to-azure-information-protection-analytics"></a>禁止向 Azure 信息保护分析发送审核数据
@@ -986,7 +1055,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -1006,7 +1075,7 @@ Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Se
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -1026,7 +1095,7 @@ Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomPrope
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -1125,7 +1194,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProp
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在此示例中：
+在本示例中：
 
 - 敏感度标签命名为 " **机密** "，并创建名为 "Secret" 的自定义 **属性，其** 值为 " **机密**"。
 
@@ -1206,7 +1275,8 @@ Set-Label -Identity "Confidential" -AdvancedSettings @{DefaultSubLabelId="8faca7
 对于 Word、Excel 和 PowerPoint，自动分类在后台持续运行。
 
 此行为不会对 Outlook 变化。
-当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，此行为将为存储在 SharePoint 中的文档启用自动和建议的分类和保护。 由于已运行条件规则，因此大型文件可实现更快保存。
+
+当 Azure 信息保护统一标签客户端定期检查文档中指定的条件规则时，只要启用了自动保存，此行为就会对存储在 SharePoint 或 OneDrive 中的 Office 文档启用自动和建议的分类和保护。 由于条件规则已经运行，因此较大的文件也会更快速地保存。
 
 条件规则不会作为用户类型实时运行。 而会在文档发生修改时作为后台任务定期运行。
 
@@ -1487,9 +1557,9 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 | **Or**    |在所有子节点上执行 *或*       |
 | **不仅**   | *不* 用于其自己的子级      |
 | **只有**    | 返回 *不* 用于其自身的子级，导致其行为与 **所有**        |
-| **发送**，后跟 **域： listOfDomains**    |检查以下各项之一： <br />-如果父代为 **Except**，则检查是否 **所有** 收件人都位于某个域中<br />-如果父代为其他任何内容，但 **除外**，则检查 **任何** 收件人是否位于某个域中。   |
-| **EMailLabel**，后跟标签 | 下列类型作之一：  <br />-标签 ID <br />-null （如果未标记）             |
-| **AttachmentLabel**，后跟 **Label** 和 **supportedExtensions**    | 下列类型作之一：  <br /><br />**true**： <br />-如果父对象 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件<br />-如果父代为其他任何内容 **，但除外，** 则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 <br />-如果未 **加标签，并且 label = null** <br /><br /> **false**：对于所有其他情况 
+| **发送**，后跟 **域： listOfDomains**    |检查以下各项之一： <br>-如果父代为 **Except**，则检查是否 **所有** 收件人都位于某个域中<br>-如果父代为其他任何内容，但 **除外**，则检查 **任何** 收件人是否位于某个域中。   |
+| **EMailLabel**，后跟标签 | 下列类型作之一：  <br>-标签 ID <br>-null （如果未标记）             |
+| **AttachmentLabel**，后跟 **标签** 和支持的 **扩展**   | 下列类型作之一：  <br><br>**true** <br>-如果父对象 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件<br>-如果父代为其他任何内容，但 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 <br>-如果未 **加标签，并且 label = null** <br><br> **false：** 对于所有其他情况 <br><br>**注意**：如果 **extensions** 属性为空或缺失，则规则中包含 (扩展名) 支持的所有文件类型。
 | | |
 
 #### <a name="rule-action-syntax"></a>规则操作语法
@@ -1540,7 +1610,9 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 在此示例中， **89a453df-5df4-4976-8191-259d0cf9560a** 是 **内部** 标签的 ID，内部域包括 **contoso.com** 和 **microsoft.com**。
 
-```powershell
+由于未指定任何特定的扩展，因此包括所有受支持的文件类型。
+
+```PowerShell
 {   
     "type" : "And",     
     "nodes" : [         
@@ -1590,7 +1662,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 在下面的示例中，要求添加标签的附件列表为： **.doc，. docm，.docx，.dot，.dot，。 dotx、. potm、. potx、. ppsm、. ppsx、.ppt、. pptm、.pptx、. .vdw、.vsd、.** .vsdm、. .vssm、. .vstm、. .vssx、.xls、. .vstx、. .xlsb、.xlsx、. xlsm、. xltm、. xltx、。
 
-```powershell
+```PowerShell
 {   
     "type" : "And",     
     "nodes" : [         
@@ -1674,7 +1746,9 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 此类警告消息在技术上被视为一种理由，因为用户必须选择 " **我接受**"。
 
-``` powershell
+由于未指定任何特定的扩展，因此包括所有受支持的文件类型。
+
+``` PowerShell
 {   
     "type" : "And",     
     "nodes" : [         
@@ -1729,11 +1803,11 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 下面的 **json 代码** 会使 Outlook 在用户发送内部电子邮件没有标签（带有具有特定标签的附件）时向用户发出警告。 
 
-在此示例中， **bcbef25a-c4db-446b-9496-1b558d9edd0e** 是附件标签的 ID。
+在此示例中， **bcbef25a-c4db-446b-9496-1b558d9edd0e** 是附件的标签 ID，规则适用于 .docx、.xlsx 和 .pptx 文件。
 
 默认情况下，带标签的附件的电子邮件不会自动接收相同标签。
 
-```powershell
+```PowerShell
 {   
     "type" : "And",     
     "nodes" : [         
@@ -1766,6 +1840,8 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 #### <a name="example-5-prompt-for-a-justification-with-two-predefined-options-and-an-extra-free-text-option"></a>示例5：提示是否有两个预定义的选项，以及一个额外的可用文本选项
 
 下面的 **json** 代码使 Outlook 提示用户提供其操作的理由。 对齐文本包括两个预定义的选项以及第三个可用文本选项。
+
+由于未指定任何特定的扩展，因此包括所有受支持的文件类型。
 
 ```PowerShell
 {   

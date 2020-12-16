@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: f27be62467939d116bf36aaee4189911f096aa52
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 1749ccdacaa19279ccf8ddafcf817bb28d50edcf
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385125"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583653"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-classic-client"></a>用户指南：下载并安装 Azure 信息保护经典客户端
 
@@ -27,7 +27,7 @@ ms.locfileid: "97385125"
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签用户指南](install-unifiedlabelingclient-app.md)。 *
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 如果管理员没有为你安装 Azure 信息保护客户端，你可自行安装。 必须是电脑的本地管理员才可安装此客户端，这样可对文档和电子邮件进行标记和保护。
 
@@ -53,9 +53,9 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 
 1. 单击“关闭”  。 开始使用 Azure 信息保护客户端之前：    
 
-    - 如果你的计算机运行 Office 2010，请重启计算机，然后转到下一节完成最后步骤。    
+    - **如果计算机运行的是 Office 2010**，请重新启动计算机，然后在最后一步中转到 [下一部分](#installing-the-azure-information-protection-client-with-office-2010) 。  
         
-    - 对于其他版本的 Office，请重新启动所有 Office 应用程序和文件管理器的所有实例。 安装已完成，现可使用客户端标记和保护文档及电子邮件。    
+    - **对于其他版本的 office**，请重新启动所有 office 应用程序和文件资源管理器的所有实例。 安装已完成，现可使用客户端标记和保护文档及电子邮件。    
 
 ### <a name="installing-the-azure-information-protection-client-with-office-2010"></a>利用 Office 2010 安装 Azure 信息保护客户端    
 通过上述说明安装 Azure 信息保护客户端之后：    
@@ -67,6 +67,8 @@ Azure 信息保护经典客户端在3月2021中被弃用。
 3. 如果看到“用户访问控制”对话框，请单击“是”，以便 Azure 信息保护客户端更新注册表。
 
 你的安装已完成，现可使用 Azure 信息保护来标识和保护文档及电子邮件。
+
+有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 ## <a name="other-instructions"></a>其他说明    
 有关操作方法说明的详细信息，请参阅 Azure 信息保护用户指南：

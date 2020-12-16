@@ -12,12 +12,12 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: bd7b94caba31ddbadf1d39754a6bb609c59aea60
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 69a0f87bd47e164f709dee4159a810141515a343
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385159"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583687"
 ---
 # <a name="what-is-the-azure-information-protection-app-for-ios-or-android"></a>什么是适用于 iOS 或 Android 的 Azure 信息保护应用？
 
@@ -95,7 +95,7 @@ ms.locfileid: "97385159"
 |---------|---------|
 |**支持的操作系统版本**     | 最小移动操作系统包括： </br>-iOS 11  </br>-Android 6。0 </br></br>**注意**： Intel cpu 不支持 AIP 移动应用。  |
 |**支持的登录凭据**     | 通过以下方式之一登录到 AIP 移动应用： </br></br>**工作或学校凭据。** 尝试使用你的工作或学校凭据登录。 如果有疑问，请与管理员联系，了解你的组织是否已使用移动设备扩展在本地 AD RMS，或使用 Azure 信息保护。 </br></br>**一个 Microsoft 帐户。** 如果使用个人电子邮件地址来保护文件，请使用 [Microsoft 帐户](https://signup.live.com)登录。 如果需要申请 Microsoft 帐户，可以使用自己的 Hotmail、Gmail 或其他电子邮件地址来执行此操作。 </br></br>**注意**：并非所有应用程序都能打开使用 Microsoft 帐户保护的内容。 有关详细信息，请参阅 [打开受保护文档的支持方案](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)。|
-|**支持的文件类型**     | 支持的文件类型包括受保护的电子邮件、PDF 文件、图像和文本文件。 </br></br>例如，这些文件包括以下扩展名： **.rpmsg**、 **.pdf**、 **. ppdf**、 **. .pjpg、** **.pjpeg**、 **ptiff** **、.ppng** **、. .ptxt**、 **. .pxml** </br></br>有关支持的文件类型的完整列表，请参阅 [AIP 客户端管理员指南](clientv2-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)。|
+|**支持的文件类型**     | 支持的文件类型包括受保护的电子邮件、PDF 文件、图像和文本文件。 </br></br>例如，这些文件包括以下扩展名： **.rpmsg**、 **.pdf**、 **. ppdf**、 **. .pjpg**、 **.pjpeg**、 **ptiff** **、.ppng** **、. .ptxt**、 **. .pxml** </br></br>有关支持的文件类型的完整列表，请参阅 [AIP 客户端管理员指南](clientv2-admin-guide-file-types.md#supported-file-types-for-classification-and-protection)。|
 | | |
 
 ## <a name="admins-testing-the-aip-mobile-apps"></a>管理员：测试 AIP 移动应用

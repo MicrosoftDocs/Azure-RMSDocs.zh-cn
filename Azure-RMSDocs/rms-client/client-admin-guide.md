@@ -13,12 +13,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: aa166cf6968af79ec22a7d3fd2a05e53e025bbe5
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 1f0b074a1eb766ce266cf7b7fe92f20d9088e43d
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385992"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583432"
 ---
 # <a name="azure-information-protection-classic-client-administrator-guide"></a>Azure 信息保护经典客户端管理员指南
 
@@ -27,7 +27,7 @@ ms.locfileid: "97385992"
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端管理员指南](clientv2-admin-guide.md)。
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 > **若要部署 AIP 经典客户端**，请打开支持票证以下载安装文件。
 
@@ -92,7 +92,7 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 想要从文件和容器（取消保护）批量删除加密，以进行数据恢复。
 
-- 运行 Office 2010 并且想要通过使用 Azure 权限管理服务保护文档和电子邮件。
+- 运行 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) ，并想要使用 Azure Rights Management 服务保护文档和电子邮件。 
 
 示例显示了 Office 应用程序中的 Azure 信息保护客户端加载项、组织的分类标签，以及功能区上新的“保护”按钮：
 

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 427143c8ee2a93e60be683b3e80b5493c0bab441
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 1c0280de31b36358cd670c1d1b147dd4132ac6ac
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385465"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583415"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -40,7 +40,7 @@ ms.locfileid: "97385465"
 |**Microsoft .NET Framework 4.5.2**     | 如果 Azure 信息保护查看器是单独安装的，则查看器应用程序需要 Microsoft .NET Framework 4.5.2 的最低版本。 <br><br>**重要提示**：如果查看器缺少此框架，则可执行安装程序 *不会下载或* 安装该框架。        |
 |**Windows PowerShell 最低版本4。0**     |   客户端的 PowerShell 模块需要最低版本的 Windows PowerShell 4.0，这些版本可能需要安装在较早的操作系统上。 <br><br>有关详细信息，请参阅[如何：安装 Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)。 <br><br>**重要说明**：安装程序 *不会检查或* 安装此必备组件。 若要确认正在运行的 Windows PowerShell 的版本，请在 PowerShell 会话中键入 `$PSVersionTable`。      |
 |**屏幕分辨率大于 800 x 600**    |     当右键单击文件资源管理器中的文件或文件夹时，分辨率 800x600 及以下无法完全显示“分类和保护 - Azure信息保护”对话框。    |
-|**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 Office 2010 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 <br><br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 <br><br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。      |
+|**Microsoft Online Services 登录助手 7.250.4303.0**     |   运行 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 的计算机需要 Microsoft Online Services 登录助手版本7.250.4303.0，此版本包含在客户端安装中。 <br><br>如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 <br><br>例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。      |
 |**KB 4482887**     | 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 <br><br>如果已有 Office 365 1902 或更高版本，则不需要此更新。        |
 |**管理员权限**| 安装 Azure 信息保护统一标签客户端需要本地管理权限。| 
 |**禁用 Exploit protection ( 仅限 .NET 2 或 3)**   |使用启用了 [Exploit protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) 的 .net 2 或3的计算机不支持 AIP 客户端。 如果你的计算机除了上面列出的 .NET 4.x 版本之外，还具有 .NET 2 或3，请确保在安装 AIP 客户端之前 [禁用 Exploit protection](../known-issues.md#known-issues-for-aip-and-exploit-protection) 。  |
@@ -109,13 +109,17 @@ Office 邮件合并功能无法与 Azure 信息保护功能配合使用。
     
     帮助屏幕中未列出的其他参数：
     
-    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。 [详细信息](#more-information-about-the-servicelocation-installation-parameter) 
+    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。 有关详细信息，请参阅：
+
+        - [有关 **ServiceLocation** 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter) 
+        - [AIP for Windows 和 Office 版本（扩展支持）](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)
+
     
     - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。 
 
 3. 若要完成安装： 
 
-    - 如果计算机运行的是 Office 2010，请重新启动计算机。 
+    - 如果计算机运行的是 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)，请重新启动计算机。 
         
         如果未使用 ServiceLocation 参数安装客户端，则在首次打开使用 Azure 信息保护统一客户端 (（例如，Word) ）的某个 Office 应用程序时，必须在首次使用时确认要更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。 
     
@@ -131,17 +135,17 @@ Office 邮件合并功能无法与 Azure 信息保护功能配合使用。
 
 #### <a name="more-information-about-the-servicelocation-installation-parameter"></a>详细了解 ServiceLocation 安装参数
 
-如果为具有 Office 2010 的用户安装客户端，并且他们没有本地管理权限，请指定用于 Azure 权限管理服务的 ServiceLocation 参数和 URL。 此参数和值将创建和设置以下注册表项：
+当你为具有 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 的用户安装客户端，并且这些用户没有本地管理权限时，请为你的 Azure Rights Management 服务指定 ServiceLocation 参数和 URL。 此参数和值将创建和设置以下注册表项：
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation
+`HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation`
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+`HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing`
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing`
 
-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation`
 
-使用以下过程标识要为 ServiceLocation 参数指定的值。 
+使用以下过程来确定要为 **ServiceLocation** 参数指定的值。 
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
@@ -157,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
     剩余字符串就是要为 ServiceLocation 参数指定的值。
 
-有关为 Office 2010 和 Azure RMS 无提示安装客户端的示例：`AzInfoProtection_UL.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
+用于 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 和 Azure RMS 的无提示安装客户端的示例： `AzInfoProtection_UL.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 
 
 ### <a name="to-install-the-azure-information-protection-unified-labeling-client-by-using-the-msi-installer"></a>使用 .msi 安装程序安装 Azure 信息保护统一标签客户端
@@ -174,14 +178,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
     
     |Office 版本|操作系统|软件|操作|
     |--------------------|--------------|----------------|---------------------|
-    |Office 365 1902 或更高版本之外的所有版本|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
-    |Office 2016|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
-    |Office 2013|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
-    |Office 2010|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
-    |Office 2010|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
-    |Office 2010|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
-    
-   
+    |**Office 365 1902 或更高版本之外的所有版本**|仅限于 Windows 10 版本 1809，操作系统内部版本早于 17763.348|[KB 4482887](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887)|安装|
+    |**Office 2016**|所有支持的版本|64 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=55007)<br /><br />32 位：[KB3178666](https://www.microsoft.com/download/details.aspx?id=54999)<br /><br /> 版本：1.0|安装|
+    |**Office 2013**|所有支持的版本|64 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54992)<br /><br /> 32 位：[KB3172523](https://www.microsoft.com/download/details.aspx?id=54979) <br /><br />版本：1.0|安装|
+    |[**Office 2010**](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)|所有支持的版本|[Microsoft Online Services 登录助手](https://www.microsoft.com/download/details.aspx?id=28177)<br /><br /> 版本：2.1|安装|
+    |[**Office 2010**](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
+    |[**Office 2010**](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
+    | | | | |
 
 1. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。
 

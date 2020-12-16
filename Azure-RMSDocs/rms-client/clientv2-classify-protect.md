@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 4b95b8f3242a9200500f8904992a13c4661ca31f
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 775eca70267f2caa70599dd3b1d8a33020121a74
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385431"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583466"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
@@ -134,7 +134,7 @@ ms.locfileid: "97385431"
         
     - **过期访问**：仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
     
-     请注意，如果此设置此前通过 Office 2010 应用的自定义权限配置，则指定到期日期不会显示在此对话框中，但仍然会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
+     请注意，如果以前使用 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 应用中的自定义权限配置此设置，则不会在此对话框中显示指定的到期日期，但仍会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
 
 5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 

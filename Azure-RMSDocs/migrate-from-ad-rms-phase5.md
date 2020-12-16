@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: abad66a1e62a4e70bc4d5a9452b47abd7dd23004
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: f4ae6c5addbea7293192b085bade9f17b798c23c
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97381997"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583585"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
@@ -55,9 +55,9 @@ ms.locfileid: "97381997"
 >[!IMPORTANT]
 > 在此迁移结束时，AD RMS 群集不能与 Azure 信息保护一起使用，并保留你自己的密钥 ([HYOK](configure-adrms-restrictions.md)) 选项。 如果你使用的是经典客户端与 HYOK，因为现在已经有了重定向，则你使用的 AD RMS 群集必须具有与你迁移的群集中的相同的授权 Url。
 
-### <a name="addition-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的添加配置
+### <a name="additional-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的附加配置
 
-如果迁移的客户端运行的是 Office 2010，则在 AD RMS 服务器取消预配后，用户在打开受保护内容时可能会遇到延迟。 或者，用户可能会看到他们没有打开受保护内容的凭据的消息。 若要解决这些问题，请为这些计算机创建网络重定向，这会将 AD RMS URL FQDN 重定向到计算机 (127.0.0.1) 的本地 IP 地址。 可以通过在每台计算机上配置本地 hosts 文件或使用 DNS 来实现此目的。
+如果迁移的客户端运行的是 Office 2010，则在取消预配 AD RMS 服务器后，用户可能会遇到延迟打开受保护的内容。 或者，用户可能会看到他们没有打开受保护内容的凭据的消息。 若要解决这些问题，请为这些计算机创建网络重定向，这会将 AD RMS URL FQDN 重定向到计算机 (127.0.0.1) 的本地 IP 地址。 可以通过在每台计算机上配置本地 hosts 文件或使用 DNS 来实现此目的。
 
 通过本地主机文件重定向：
 
@@ -71,6 +71,7 @@ ms.locfileid: "97381997"
 
 - 创建新的主机 (AD RMS URL FQDN 的) 记录，其 IP 地址为127.0.0.1。
 
+有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 ## <a name="step-11-complete-client-migration-tasks"></a>步骤 11. 完成客户端迁移任务
 
 对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574(v=ws.11))时创建的 DNS SRV 记录。
@@ -124,7 +125,11 @@ killall cfprefsd
 
     在输出中，**授权** 应显示 **False**，并且对于 **SecurityGroupOjbectId** 未显示任何 GUID
 
-最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft**  >  **Windows**  >  **Active Directory Rights Management Services 客户端**
+最后，如果使用的是 Office 2010 且已在 Windows 任务计划程序库中启用了“AD RMS 权限策略模板管理（自动）”任务，请禁用此任务，因为它不用于 Azure 信息保护客户端。 
+
+此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft**  >  **Windows**  >  **Active Directory Rights Management Services 客户端**。 
+
+有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12. 重新生成 Azure 信息保护租户密钥
 

@@ -11,21 +11,21 @@ ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: c02e7195d9edf93401b601e4d7ca243e6a14b702
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 2e82b7c4cd99b5e880cc59db77a5a844d0e28030
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383813"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583602"
 ---
 # <a name="hold-your-own-key-hyok-details-for-azure-information-protection"></a>保存你自己的密钥 (Azure 信息保护的 HYOK) 详细信息
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [双重密钥加密](plan-implement-tenant-key.md#double-key-encryption-dke)。 *
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 保留你自己的密钥 (HYOK) 配置使使用经典客户端的 AIP 客户能够在保持对密钥的完全控制的同时保护高度敏感的内容。 HYOK 使用一种附加的客户端密钥，该密钥存储在本地以实现高度敏感的内容，同时还使用用于其他内容的基于云的默认保护。 
 
@@ -157,7 +157,7 @@ HYOK 是标签的管理员配置选项，无论内容使用的是基于云的密
 |**AD RMS 配置**     |你的 AD RMS 系统必须以特定方式配置为支持 HYOK。 有关详细信息，请参阅 [下文](#ad-rms-configuration-requirements)。          |
 |**目录同步**     |必须在本地 Active Directory 与 Azure Active Directory 之间配置目录同步。 </br></br>要使用 HYOK 保护标签的用户必须配置为使用单一登录。         |
 |**明确定义信任的配置**     |如果与组织外的其他人共享 HYOK 保护的内容，则必须在与其他组织的直接点对点关系中为显式定义的信任配置 AD RMS。 </br></br>使用受信任的用户域 (Tud) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任来完成此操作。         |
-|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意**：不支持 office 2010 和 office 2007。        |
+|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意**：不支持 office 2010 和 office 2007。  有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。      |
 
 > [!IMPORTANT]
 > 为了满足 HYOK protection 提供的高确定性，建议执行以下操作：
@@ -234,4 +234,4 @@ HYOK 是标签的管理员配置选项，无论内容使用的是基于云的密
 
 ## <a name="next-steps"></a>后续步骤
 
-将系统配置为支持 HYOK 时，请继续为 HYOK 保护配置标签。 有关详细信息，请参阅 [如何为 Rights Management 保护配置标签](configure-policy-protection.md)。
+将系统配置为支持 HYOK 时，请继续为 HYOK 保护配置标签。 有关详细信息，请参阅[如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)。

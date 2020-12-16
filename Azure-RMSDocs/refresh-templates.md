@@ -13,36 +13,36 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 44de4e40b64cb7d76c2e0b581fd4641f462b9cd4
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: e3410c4daa148bed163e9ab45d2449864716c926
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386281"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583500"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 Microsoft 365 文档中的敏感标签中的 " [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels) " 和 ["限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels) "。 *
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 
 使用 Azure 信息保护中的 Azure Rights Management 服务时，会自动将保护模板下载到客户端计算机，以便用户可以从应用程序中选择它们。 但是，如果你对模板进行了更改，可能还需要执行附加步骤：
 
 |应用程序或服务|如何在更改后刷新模板|
 |--------------------------|---------------------------------------------|
-|Exchange Online<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。|
-|Azure 信息保护客户端|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。|
-|Azure 信息保护统一标识客户端|对于 Office 应用程序，每次打开应用程序时，模板都会自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护统一标签客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。<br /><br /> 对于文件资源管理器、PowerShell 和扫描程序，客户端不会下载模板，只需将其联机访问，无需执行其他步骤。|
-|Microsoft 365 应用、Office 2019、Office 2016 和 Office 2013|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分 [： Microsoft 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#microsoft-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
-|Office 2010|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。|
-|Exchange 內部部署与权限管理连接器<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
-|Office 2019 for Mac 和 Office 2016 for Mac|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分 [：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
-|适用于 Mac 计算机的 RMS 共享应用|自动刷新 – 无需额外的步骤。|
-|带有[内置标记](/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus|此内置标签解决方案不会下载模板，而是联机访问模板-无需执行其他步骤。|
+|**Exchange Online**<br /><br />适用于传输规则和 Outlook Web App |1 小时内自动刷新 – 无需额外的步骤。|
+|**Azure 信息保护经典客户端**|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。|
+|**Azure 信息保护统一标识客户端**|对于 Office 应用程序，每次打开应用程序时，模板都会自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护统一标签客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。<br /><br /> 对于文件资源管理器、PowerShell 和扫描程序，客户端不会下载模板，只需将其联机访问，无需执行其他步骤。|
+|**Microsoft 365 应用、Office 2019、Office 2016 和 Office 2013**|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分 [： Microsoft 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#microsoft-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
+|**Office 2010**|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。 <br><br>有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。|
+|**Exchange 內部部署与权限管理连接器**<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
+|**Office 2019 for Mac 和 Office 2016 for Mac**|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分 [：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
+|**适用于 Mac 计算机的 RMS 共享应用**|自动刷新 – 无需额外的步骤。|
+|**带有 [内置标记](/microsoft-365/compliance/sensitivity-labels-office-apps#support-for-sensitivity-label-capabilities-in-apps)的 Office 365 ProPlus**|此内置标签解决方案不会下载模板，而是联机访问模板-无需执行其他步骤。|
 | | |
 
 如果客户端应用程序需要下载模板 (初始或刷新) ，请在下载完成前等待30分钟，新的或更新的模板完全可操作。 实际时间会因多种因素而异，例如模板配置的大小和复杂性以及网络连接。 

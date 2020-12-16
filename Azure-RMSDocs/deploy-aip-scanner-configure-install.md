@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dbbf7c0644285c56ea34b57eb0b6b6a7894bc17f
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: e17e42850904590df6a0c223032fd07306e0815b
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382864"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583704"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -166,18 +166,20 @@ ms.locfileid: "97382864"
 
 发现 **公共访问** 具有 **读取** 或 **读/写** 功能的存储库可能具有必须保护的敏感内容。 如果 **公共访问** 为 false，则根本无法通过公共方式访问存储库。
 
-仅当已在 [**MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery) Cmdlet 的 **StandardDomainsUserAccount** 参数中设置弱帐户时，才会报告对存储库的公共访问。
+仅当已在 [**MIPNetworkDiscovery**](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery)或 [**MIPNetworkDiscoveryConfiguration**](/powershell/module/azureinformationprotection/Set-MIPNetworkDiscoveryConfiguration) cmdlet 的 **StandardDomainsUserAccount** 参数中设置弱帐户时，才会报告对存储库的公共访问。
 
 - 这些参数中定义的帐户用于模拟将弱用户访问存储库的权限。 如果定义的弱用户可以访问存储库，这意味着可以公开访问存储库。 
 
 - 若要确保正确报告公共访问权限，请确保在这些参数中指定的用户仅是 **域用户** 组的成员。
-       
+
 ### <a name="create-a-content-scan-job"></a>创建内容扫描作业
 
 深入了解你的内容，扫描敏感内容的特定存储库。 
 
 你可能只想在运行网络扫描作业来分析网络中的存储库之后执行此操作，但也可以自行定义存储库。
- 
+
+**若要在 Azure 门户上创建内容扫描作业：**
+
 1. 在左侧的 " **扫描仪** " 菜单下，选择 " **内容扫描作业**"。 
    
 1. 在 " **Azure 信息保护-内容扫描作业** " 窗格上，选择 " **添加**" " ![添加图标](media/i-add.png "保存图标")"。
@@ -255,18 +257,20 @@ ms.locfileid: "97382864"
 1. 登录到将要运行扫描程序的 Windows Server 计算机。 使用具有本地管理员权限并具有写入到 SQL Server master 数据库权限的帐户。
 
     > [!IMPORTANT]
+    > 安装 scanner 之前，必须在计算机上安装 AIP 统一标签客户端。 
+    >
     > 有关详细信息，请参阅 [安装和部署 Azure 信息保护扫描程序的先决条件](deploy-aip-scanner-prereqs.md)。
     >
  
 1. 使用“以管理员身份运行”选项打开 Windows PowerShell 会话。
 
-1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在上一节中指定的扫描仪群集名称： 
+1. 运行 [install-aipscanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet，指定要在其中为 Azure 信息保护扫描程序创建数据库的 SQL Server 实例，以及在 [上一节中指定](#create-a-scanner-cluster)的扫描仪群集名称： 
     
     ```PowerShell
     Install-AIPScanner -SqlServerInstance <name> -Cluster <cluster name>
     ```
     
-    例如，使用配置文件名称“欧洲”：
+    示例，使用 **欧洲** 的扫描仪群集名称：
     
     - 对于默认实例：`Install-AIPScanner -SqlServerInstance SQLSERVER1 -Cluster Europe`
     
@@ -274,7 +278,9 @@ ms.locfileid: "97382864"
     
     - 对于 SQL Server Express：`Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS -Cluster Europe`
     
-    出现提示时，请提供扫描程序服务帐户的凭据 (\<domain\user name>) 和密码。
+    出现提示时，请提供扫描程序服务帐户的 Active Directory 凭据。
+
+    使用以下语法： `\<domain\user name>` 。 例如： `contoso\scanneraccount`
 
 1. 使用 **管理工具** 服务验证是否已安装该服务  >  。 
     
@@ -404,6 +410,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 - [将默认标签应用于数据存储库中的所有文件](#apply-a-default-label-to-all-files-in-a-data-repository)
 - [从数据存储库中的所有文件删除现有标签](#remove-existing-labels-from-all-files-in-a-data-repository)
 - [标识所有自定义条件和已知的敏感信息类型](#identify-all-custom-conditions-and-known-sensitive-information-types)
+
 ### <a name="apply-a-default-label-to-all-files-in-a-data-repository"></a>将默认标签应用于数据存储库中的所有文件
 
 在此配置中，存储库中所有未标记的文件都标有为存储库或内容扫描作业指定的默认标签。 文件标记为 "无检查"。 
@@ -493,6 +500,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 - [MIPNetworkDiscoveryStatus](/powershell/module/azureinformationprotection/Get-MIPNetworkDiscoveryStatus)
 
+- [MIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-mipscannercontentscanjob)
+
+- [MIPScannerRepository](/powershell/module/azureinformationprotection/get-mipscannerrepository)
+
 - [导入-Set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration)
 
 - [MIPNetworkDiscovery](/powershell/module/azureinformationprotection/set-mipnetworkdiscovery)
@@ -503,6 +514,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 - [安装-MIPNetworkDiscovery](/powershell/module/azureinformationprotection/Install-MIPNetworkDiscovery)
 
+- [MIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-mipscannercontentscanjob)
+
+- [MIPScannerRepository](/powershell/module/azureinformationprotection/remove-mipscannerrepository)
+
 - [Set-AIPScanner](/powershell/module/azureinformationprotection/Set-AIPScanner)
 
 - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)
@@ -512,6 +527,10 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository)
 
 - [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/Set-MIPNetworkDiscoveryConfiguration)
+
+- [MIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-mipscannercontentscanjob)
+
+- [MIPScannerRepository](/powershell/module/azureinformationprotection/set-mipscannerrepository)
 
 - [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
 
@@ -530,6 +549,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 - [卸载-MIPNetworkDiscovery](/powershell/module/azureinformationprotection/Uninstall-MIPNetworkDiscovery)
 
 - [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)
+
 
 ## <a name="next-steps"></a>后续步骤
 

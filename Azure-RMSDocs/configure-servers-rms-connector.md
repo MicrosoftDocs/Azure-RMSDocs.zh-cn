@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4f1dd3d2c832cebfe8cb8a994570d81e7544d8cf
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 43e9731197231c8bccf2c5d00aec81b20ab3c889
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383000"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583551"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -134,10 +134,13 @@ ms.locfileid: "97383000"
 
 在将这些服务器配置为使用连接器之后，本地安装在这些服务器上的客户端应用程序可能无法使用 RMS。 发生这种情况的原因是应用程序试图使用连接器而不是直接使用 RMS，但这种方式不受支持。
 
-此外，如果在 Exchange 服务器上本地安装 Office 2010，则在将服务器配置为使用连接器之后，客户端应用的 IRM 功能可能从该计算机运行，但这不受支持。
+此外，如果在 Exchange 服务器上本地安装 Office 2010，则在将服务器配置为使用连接器之后，客户端应用的 IRM 功能可能从该计算机运行，但这不受支持。 
 
 在上述两种情况下，你必须在没有配置为使用连接器的单独计算机上安装客户端应用程序。 然后它们即可正确地直接使用 RMS。
 
+> [!NOTE]
+> 有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+> 
 ## <a name="configuring-an-exchange-server-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 以下 Exchange 角色将与 RMS 连接器通信：
 

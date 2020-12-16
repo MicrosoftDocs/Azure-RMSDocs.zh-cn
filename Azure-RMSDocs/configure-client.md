@@ -12,28 +12,31 @@ ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ca4dfed92aafb690da28e5164496b924c9c3fe7e
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 2da5d348f497a74e88c0bf11da023be6e3cb0152
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383595"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583534"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure 信息保护客户端：安装和配置客户端
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 >***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE]
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-运行 Office 2010 的计算机要求 Azure 信息保护客户端向 Azure 信息保护服务进行身份验证。
+建议为所有 Windows 计算机提供 AIP 统一标签客户端，因为它会安装一个 Office 加载项，使用户能够直接从 Office 功能区对文档进行标记和保护。 
 
-建议为所有 Windows 计算机提供 AIP 统一标签客户端，因为它们安装了一个 Office 外接程序，使用户可以直接从 Office 功能区对文档进行标记和保护。 该客户端还为内置保护服务不支持的文件类型提供标记和保护 (Azure Rights Management) ，并提供 Office 应用无法打开的受保护文件的查看器。 IOS 和 Android 有一个类似的查看器。
+该客户端还提供：
 
-如果安装了 AIP 经典客户端，则还会有一个文档跟踪站点，供用户跟踪和撤消受保护的文件。
+- 内置保护服务不支持的文件类型的标签和保护 (Azure Rights Management) 。
+- Office 应用程序无法打开的受保护文件的查看器。 IOS 和 Android 有一个类似的查看器。
+- 用于跟踪和撤消对受保护文件的访问权限的功能。
 
+运行 Office 2010 的计算机要求 Azure 信息保护客户端向 Azure 信息保护服务进行身份验证。 有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 ## <a name="the-azure-information-protection-client-for-windows-installation-and-configuration"></a>适用于 Windows 的 Azure 信息保护客户端：安装和配置
 
 有关适用于 Windows 的客户端的企业安装和配置，请参阅 [Azure 信息保护统一标签客户端管理员指南](./rms-client/clientv2-admin-guide.md)。

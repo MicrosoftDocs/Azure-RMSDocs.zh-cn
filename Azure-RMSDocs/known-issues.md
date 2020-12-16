@@ -11,21 +11,21 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 26e354c883fd2e8ef5244b77635cb3e63ba9bc8e
-ms.sourcegitcommit: d578b609ddefc2580548cdb0a54a8af0ba69fbf4
+ms.openlocfilehash: e18c18322783a4f953c898cb96232ab35b642dca
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97388382"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583619"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 >***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 使用下面的列表和表来查找有关 Azure 信息保护功能相关的已知问题和限制的详细信息。
 
@@ -69,7 +69,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|Feature  |已知问题  |
+|功能  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
 |**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
@@ -87,19 +87,55 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="known-issues-in-the-aip-client"></a>AIP 客户端中的已知问题
 
-- **最大文件大小。** 支持，但不支持解密。
+- [最大文件大小](#maximum-file-sizes)
+- [AIP 查看器](#aip-viewer)
+- [跟踪和撤消文档访问](#tracking-and-revoking-document-access-public-preview)
 
-- **AIP 查看器。** "AIP 查看器" 以纵向模式显示图像，某些宽、横向视图的图像可能显示为已拉伸。
+### <a name="maximum-file-sizes"></a>最大文件大小
 
-    例如，原始图像显示在左侧下方，在右侧的 AIP 查看器中显示为横向扩展版本。 
+支持大于 2 GB 的文件进行保护，但不支持解密。
+
+### <a name="aip-viewer"></a>AIP 查看器
+
+"AIP 查看器" 以纵向模式显示图像，某些宽、横向视图的图像可能显示为已拉伸。
+
+例如，原始图像显示在左侧下方，在右侧的 AIP 查看器中显示为横向扩展版本。 
     
-    :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
+:::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-    有关详细信息，请参见:
+有关详细信息，请参阅：
 
-    - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
-    - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
+- [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
+- [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
 
+### <a name="tracking-and-revoking-document-access-public-preview"></a> (公共预览版跟踪和撤消文档访问) 
+
+使用统一标签客户端跟踪和撤消文档访问具有以下已知问题：
+
+- [受保护的电子邮件中的多个附件](#multiple-attachments-in-a-protected-email)
+- [通过 SharePoint 访问的文档](#documents-accessed-via-sharepoint)
+
+有关详细信息，请参阅 [管理员指南：使用 Azure 信息保护跟踪和撤消文档访问](rms-client/track-and-revoke-admin.md) 和 [用户指南：使用 Azure 信息保护撤销文档访问权限](rms-client/revoke-access-user.md)。
+
+#### <a name="multiple-attachments-in-a-protected-email"></a>受保护的电子邮件中的多个附件
+
+如果将多个文档附加到电子邮件，然后保护并发送该电子邮件，则每个附件会获得相同的 Id 为值。 
+
+此 Id 为值将仅与已打开的第一个文件一起返回。 搜索其他附件不会返回获取跟踪数据所需的 Id 为值。      
+
+此外，撤消其中一个附件的访问权限还会撤消同一受保护电子邮件中其他附件的访问权限。
+
+#### <a name="documents-accessed-via-sharepoint"></a>通过 SharePoint 访问的文档
+    
+- 上载到 SharePoint 的受保护文档将丢失其 Id 为值。 
+
+    这意味着不会跟踪数据，并且任何访问吊销都不会应用于存储在 SharePoint 中的文件。
+
+- 如果用户从 SharePoint 下载文件，并从本地计算机访问该文件，则在本地打开文档时，会将新的 Id 为应用到该文档。 
+    
+    使用原始 Id 为值跟踪数据时，不会包括为用户下载的文件执行的任何访问权限。 此外，根据原始 Id 为值撤消访问权限将不会撤销对任何已下载文件的访问权限。
+
+    在这种情况下，管理员可能能够使用 PowerShell 查找已下载的文件，以查找要跟踪或撤销访问权限的新 Id 为值。
 
 ## <a name="aip-for-windows-and-office-versions-in-extended-support"></a>AIP for Windows 和 Office 版本（扩展支持）
 
