@@ -1,9 +1,12 @@
 - name: Azure 信息保护文档
   href: index.yml
 - name: 概述
+  expanded: true
   items:
     - name: 什么是 Azure 信息保护？
       href: what-is-information-protection.md
+    - name: AIP 中的新增功能
+      href: ./rms-client/unifiedlabelingclient-version-release-history.md
     - name: AIP 要求
       items:
         - name: 概述
@@ -12,10 +15,13 @@
           href: requirements-azure-ad.md
         - name: 针对保护措施的应用程序支持
           href: requirements-applications.md
+        - name: 支持的文件类型
+          href: ./rms-client/clientv2-admin-guide-file-types.md
+        - name: 本地扫描程序要求
+          href: deploy-aip-scanner-prereqs.md
     - name: AIP 也称为…
       href: aka.md
 - name: 快速入门
-  expanded: true
   items:
     - name: 部署客户端
       href: quickstart-deploy-client.md
@@ -33,10 +39,10 @@
   items:
     - name: AIP 分类和保护
       href: aip-classification-and-protection.md
-    - name: Azure 信息保护权限管理
-      href: what-is-azure-rms.md
-    - name: Rights Management 保护
+    - name: Azure Rights Management
       items:
+        - name: 概述
+          href: what-is-azure-rms.md
         - name: Rights Management 保护的工作原理
           href: how-does-it-work.md
         - name: 应用程序如何支持 Azure Rights Management 保护
@@ -45,25 +51,47 @@
               href: applications-support.md
             - name: Office 应用程序和服务
               href: office-apps-services-support.md
-            - name: 运行 Windows Server 和使用文件分类基础结构的文件服务器
-              href: file-server-support.md
             - name: 支持 RMS API 的其他应用程序
               href: api-support.md
-    - name: 个人 RMS 和 Azure 信息保护
-      href: rms-for-individuals.md
-    - name: Azure 信息保护和 AD RMS
-      items:
-        - name: 比较本地解决方案和 AD RMS
+        - name: 个人 RMS 和 Azure 信息保护
+          href: rms-for-individuals.md
+        - name: Azure 信息保护和 AD RMS
           href: compare-on-premise.md
+        - name: RMS 客户端部署说明
+          href: ./rms-client/client-deployment-notes.md
+    - name: 你的 Azure 信息保护租户密钥
+      href: plan-implement-tenant-key.md
+- name: 操作指南
+  items:
+    - name: 常见方案操作说明
+      href: how-to-guides.md
+    - name: 为服务进行规划并做好准备
+      items:
+        - name: 部署路线图
+          href: deployment-roadmap-classify-label-protect.md
+        - name: 配置创建自己的密钥 (BYOK) 保护
+          href: byok-price-restrictions.md
+        - name: 开始使用租户根钥
+          href: get-started-tenant-root-keys.md
+        - name: 租户密钥的操作
+          items:
+            - name: 概述
+              href: operations-tenant-key.md
+            - name: 由 Microsoft 管理
+              href: operations-microsoft-managed-tenant-key.md
+            - name: 由客户管理
+              href: operations-customer-managed-tenant-key.md
+        - name: 准备用户和组
+          href: prepare.md
         - name: 管理 Active Directory 移动设备扩展
           href: active-directory-rights-manage-mobile-device.md
         - name: 从 AD RMS 迁移
           items:
             - name: 概述
               href: migrate-from-ad-rms-to-azure-rms.md
-            - name: 准备
+            - name: 第 1 阶段 - 准备
               href: migrate-from-ad-rms-phase1.md
-            - name: 服务器端配置
+            - name: 第 2 阶段 - 服务器端配置
               items:
                 - name: 概述
                   href: migrate-from-ad-rms-phase2.md
@@ -73,44 +101,12 @@
                   href: migrate-hsmkey-to-hsmkey.md
                 - name: 软件密钥到 HSM 密钥
                   href: migrate-softwarekey-to-hsmkey.md
-            - name: 客户端配置
+            - name: 第 3 阶段 - 客户端配置
               href: migrate-from-ad-rms-phase3.md
-            - name: Reporting Services 配置
+            - name: 第 4 阶段 - 支持服务配置
               href: migrate-from-ad-rms-phase4.md
-            - name: 迁移后任务
+            - name: 第 5 阶段 - 迁移后任务
               href: migrate-from-ad-rms-phase5.md
-    - name: Azure 信息保护策略
-      href: overview-policy.md
-    - name: 安全性
-      items:
-        - name: 安全基线
-          href: security-baseline.md
-- name: 操作指南
-  items:
-    - name: 常见方案操作说明
-      href: how-to-guides.md
-    - name: 为服务进行规划并做好准备
-      items:
-        - name: 部署路线图
-          items:
-            - name: 概述
-              href: deployment-roadmap.md
-            - name: 用于分类、标签和保护的路线图
-              href: deployment-roadmap-classify-label-protect.md
-            - name: 仅用于保护的路线图（经典客户端）
-              href: deployment-roadmap-protect-only.md
-        - name: 计划和实现你的租户密钥
-          items:
-            - name: 支持的密钥类型
-              href: plan-implement-tenant-key.md
-            - name: 配置创建自己的密钥 (BYOK) 保护
-              href: byok-price-restrictions.md
-            - name: 配置保留自己的密钥 (BYOK) 保护
-              href: configure-adrms-restrictions.md
-            - name: 开始使用租户根钥
-              href: get-started-tenant-root-keys.md
-        - name: 准备用户和组
-          href: prepare.md
     - name: 配置和使用该服务
       items:
         - name: 激活保护
@@ -135,9 +131,91 @@
           href: configure-usage-rights.md
         - name: 为发现服务或数据恢复配置超级用户
           href: configure-super-users.md
-        - name: 配置 Azure 信息保护策略
+        - name: 部署本地统一标记扫描程序
           items:
             - name: 概述
+              href: deploy-aip-scanner.md
+            - name: 配置并安装统一标记扫描程序
+              href: deploy-aip-scanner-configure-install.md
+            - name: 运行统一标记扫描程序
+              href: deploy-aip-scanner-manage.md
+        - name: 部署 RMS 连接器
+          items:
+            - name: 概述
+              href: deploy-rms-connector.md
+            - name: 安装并配置连接器
+              href: install-configure-rms-connector.md
+            - name: 配置服务器
+              items:
+                - name: 概述
+                  href: configure-servers-rms-connector.md
+                - name: 注册表设置
+                  href: rms-connector-registry-settings.md
+            - name: 监视连接器
+              href: monitor-rms-connector.md
+        - name: 验证 Azure Rights Management 服务
+          href: verify.md
+        - name: 使用 Azure 信息保护报告
+          href: reports-aip.md
+        - name: 帮助用户保护文件
+          href: help-users.md
+        - name: 日志记录和分析使用情况
+          href: log-analyze-usage.md
+        - name: 管理用于 Azure 信息保护的个人数据
+          href: manage-personal-data.md
+        - name: 解除授权并停用
+          href: decommission-deactivate.md
+        - name: 使用 PowerShell 进行管理
+          items:
+            - name: 概述
+              href: administer-powershell.md
+            - name: 安装 AIPService PowerShell 模块
+              href: install-powershell.md
+    - name: 部署和使用该客户端
+      items:
+        - name: 概述
+          href: ./rms-client/use-client.md
+        - name: 统一标记客户端管理指南
+          items:
+            - name: 概述
+              href: ./rms-client/clientv2-admin-guide.md
+            - name: 为用户安装客户端
+              href: ./rms-client/clientv2-admin-guide-install.md
+            - name: 自定义
+              href: ./rms-client/clientv2-admin-guide-customizations.md
+            - name: 客户端文件和使用情况日志记录
+              href: ./rms-client/clientv2-admin-guide-files-and-logging.md
+            - name: PowerShell 命令
+              href: ./rms-client/clientv2-admin-guide-powershell.md
+        - name: 统一标记客户端用户指南
+          items:
+            - name: 概述
+              href: ./rms-client/clientv2-user-guide.md
+            - name: 下载并安装客户端
+              href: ./rms-client/install-unifiedlabelingclient-app.md
+            - name: 对文件或电子邮件进行分类
+              href: ./rms-client/clientv2-classify.md
+            - name: 对文件或电子邮件进行分类和保护
+              href: ./rms-client/clientv2-classify-protect.md
+            - name: 打开受保护的文件
+              href: ./rms-client/clientv2-view-use-files.md
+            - name: 删除标签和保护
+              href: ./rms-client/clientv2-remove-label-protection.md
+        - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
+          href: ./rms-client/mobile-app-faq.md
+        - name: 受保护的 PDF 阅读器
+          href: ./rms-client/protected-pdf-readers.md
+    - name: 经典客户端方案的操作说明
+      items:
+        - name: 仅用于保护的路线图
+          href: deployment-roadmap-protect-only.md
+        - name: 配置保留自己的密钥 (BYOK) 保护
+          href: configure-adrms-restrictions.md
+        - name: 配置 Azure 信息保护策略
+          items:
+            - name: 关于 AIP 策略
+              href: overview-policy.md
+            - name: 策略配置概述
               href: configure-policy.md
             - name: 默认策略
               href: configure-policy-default.md
@@ -177,16 +255,6 @@
           href: secure-collaboration-documents.md
         - name: 配置 Azure 信息保护标签的邮件流规则
           href: configure-exo-rules.md
-        - name: Azure 信息保护统一标记扫描程序
-          items:
-            - name: 概述
-              href: deploy-aip-scanner.md
-            - name: 统一标记扫描程序先决条件
-              href: deploy-aip-scanner-prereqs.md
-            - name: 配置并安装统一标记扫描程序
-              href: deploy-aip-scanner-configure-install.md
-            - name: 运行统一标记扫描程序
-              href: deploy-aip-scanner-manage.md
         - name: Azure 信息保护经典扫描程序
           items:
             - name: 概述
@@ -197,137 +265,55 @@
               href: deploy-aip-scanner-configure-install-classic.md
             - name: 运行经典扫描程序
               href: deploy-aip-scanner-manage-classic.md
-        - name: Azure 信息保护报表
-          href: reports-aip.md
-        - name: 部署 RMS 连接器
+            - name: Azure 信息保护扫描程序 - 以前的版本
+              href: deploy-aip-scanner-previousversions.md
+        - name: Azure 信息保护经典客户端
           items:
             - name: 概述
-              href: deploy-rms-connector.md
-            - name: 安装并配置连接器
-              href: install-configure-rms-connector.md
-            - name: 配置服务器
+              href: ./rms-client/aip-client.md
+            - name: 版本历史记录
+              href: ./rms-client/client-version-release-history.md
+            - name: 管理员指南
               items:
                 - name: 概述
-                  href: configure-servers-rms-connector.md
-                - name: 注册表设置
-                  href: rms-connector-registry-settings.md
-            - name: 监视连接器
-              href: monitor-rms-connector.md
-        - name: 验证 Azure Rights Management 服务
-          href: verify.md
-        - name: 帮助用户保护文件
-          href: help-users.md
-        - name: 日志记录和分析使用情况
-          href: log-analyze-usage.md
-        - name: 租户密钥的操作
-          items:
-            - name: 概述
-              href: operations-tenant-key.md
-            - name: 由 Microsoft 管理
-              href: operations-microsoft-managed-tenant-key.md
-            - name: 由客户管理
-              href: operations-customer-managed-tenant-key.md
-        - name: 管理用于 Azure 信息保护的个人数据
-          href: manage-personal-data.md
-        - name: 解除授权并停用
-          href: decommission-deactivate.md
-        - name: 使用 PowerShell 进行管理
-          items:
-            - name: 概述
-              href: administer-powershell.md
-            - name: 安装 AIPService PowerShell 模块
-              href: install-powershell.md
-    - name: 部署和使用该客户端
-      items:
-        - name: 客户端部署解决方案
-          items:
-            - name: 概述
-              href: ./rms-client/use-client.md
-            - name: Azure 信息保护统一标识客户端
+                  href: ./rms-client/client-admin-guide.md
+                - name: 为用户安装客户端
+                  href: ./rms-client/client-admin-guide-install.md
+                - name: 自定义
+                  href: ./rms-client/client-admin-guide-customizations.md
+                - name: 客户端文件和使用情况日志记录
+                  href: ./rms-client/client-admin-guide-files-and-logging.md
+                - name: 文档跟踪
+                  href: ./rms-client/client-admin-guide-document-tracking.md
+                - name: 支持的文件类型
+                  href: ./rms-client/client-admin-guide-file-types.md
+                - name: PowerShell 命令
+                  href: ./rms-client/client-admin-guide-powershell.md
+            - name: 用户指南
               items:
                 - name: 概述
-                  href: ./rms-client/aip-clientv2.md
-                - name: 版本历史记录
-                  href: ./rms-client/unifiedlabelingclient-version-release-history.md
-                - name: 管理员指南
-                  items:
-                    - name: 概述
-                      href: ./rms-client/clientv2-admin-guide.md
-                    - name: 为用户安装客户端
-                      href: ./rms-client/clientv2-admin-guide-install.md
-                    - name: 自定义
-                      href: ./rms-client/clientv2-admin-guide-customizations.md
-                    - name: 客户端文件和使用情况日志记录
-                      href: ./rms-client/clientv2-admin-guide-files-and-logging.md
-                    - name: 支持的文件类型
-                      href: ./rms-client/clientv2-admin-guide-file-types.md
-                    - name: PowerShell 命令
-                      href: ./rms-client/clientv2-admin-guide-powershell.md
-                - name: 用户指南
-                  items:
-                    - name: 概述
-                      href: ./rms-client/clientv2-user-guide.md
-                    - name: 下载并安装客户端
-                      href: ./rms-client/install-unifiedlabelingclient-app.md
-                    - name: 对文件或电子邮件进行分类
-                      href: ./rms-client/clientv2-classify.md
-                    - name: 对文件或电子邮件进行分类和保护
-                      href: ./rms-client/clientv2-classify-protect.md
-                    - name: 打开受保护的文件
-                      href: ./rms-client/clientv2-view-use-files.md
-                    - name: 删除标签和保护
-                      href: ./rms-client/clientv2-remove-label-protection.md
-            - name: Azure 信息保护客户端（经典版）
-              items:
-                - name: 概述
-                  href: ./rms-client/aip-client.md
-                - name: 版本历史记录
-                  href: ./rms-client/client-version-release-history.md
-                - name: 管理员指南
-                  items:
-                    - name: 概述
-                      href: ./rms-client/client-admin-guide.md
-                    - name: 为用户安装客户端
-                      href: ./rms-client/client-admin-guide-install.md
-                    - name: 自定义
-                      href: ./rms-client/client-admin-guide-customizations.md
-                    - name: 客户端文件和使用情况日志记录
-                      href: ./rms-client/client-admin-guide-files-and-logging.md
-                    - name: 文档跟踪
-                      href: ./rms-client/client-admin-guide-document-tracking.md
-                    - name: 支持的文件类型
-                      href: ./rms-client/client-admin-guide-file-types.md
-                    - name: PowerShell 命令
-                      href: ./rms-client/client-admin-guide-powershell.md
-                - name: 用户指南
-                  items:
-                    - name: 概述
-                      href: ./rms-client/client-user-guide.md
-                    - name: 下载并安装客户端
-                      href: ./rms-client/install-client-app.md
-                    - name: 对文件或电子邮件进行分类
-                      href: ./rms-client/client-classify.md
-                    - name: 对文件或电子邮件进行分类和保护
-                      href: ./rms-client/client-classify-protect.md
-                    - name: 跟踪和撤消文档
-                      href: ./rms-client/client-track-revoke.md
-                    - name: 打开受保护的文件
-                      href: ./rms-client/client-view-use-files.md
-                    - name: 删除标签和保护
-                      href: ./rms-client/client-remove-label-protection.md
-                    - name: 仅保护模式
-                      href: ./rms-client/client-protection-only-mode.md
-                    - name: 用于操作 RMS 共享应用程序的任务
-                      href: ./rms-client/upgrade-client-app.md
-        - name: 适用于 iOS 和 Android 的 Azure 信息保护移动应用
-          href: ./rms-client/mobile-app-faq.md
-        - name: 受保护的 PDF 阅读器
-          href: ./rms-client/protected-pdf-readers.md
-        - name: RMS 客户端部署说明
-          href: ./rms-client/client-deployment-notes.md
+                  href: ./rms-client/client-user-guide.md
+                - name: 下载并安装客户端
+                  href: ./rms-client/install-client-app.md
+                - name: 对文件或电子邮件进行分类
+                  href: ./rms-client/client-classify.md
+                - name: 对文件或电子邮件进行分类和保护
+                  href: ./rms-client/client-classify-protect.md
+                - name: 跟踪和撤消文档
+                  href: ./rms-client/client-track-revoke.md
+                - name: 打开受保护的文件
+                  href: ./rms-client/client-view-use-files.md
+                - name: 删除标签和保护
+                  href: ./rms-client/client-remove-label-protection.md
+                - name: 仅保护模式
+                  href: ./rms-client/client-protection-only-mode.md
+                - name: 用于操作 RMS 共享应用程序的任务
+                  href: ./rms-client/upgrade-client-app.md
         - name: 使用 Windows Server FCI 的 RMS 保护
           items:
-            - name: 概述
+            - name: 运行 Windows Server 和使用文件分类基础结构的文件服务器
+              href: file-server-support.md
+            - name: 配置文件分类基础结构
               href: ./rms-client/configure-fci.md
             - name: PowerShell 脚本
               href: ./rms-client/fci-script.md
@@ -481,6 +467,8 @@
           href: faqs-infoprotect.md
         - name: FAQ - 数据保护
           href: faqs-rms.md
+        - name: FAQ - 仅限经典客户端
+          href: faqs-classic.md
     - name: 已知问题
       href: known-issues.md
     - name: 信息和支持

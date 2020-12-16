@@ -8,16 +8,16 @@ metadata:
   ms.service: information-protection
   ms.topic: landing-page
   ms.collection: M365-security-compliance
-  author: mlottner
-  ms.author: mlottner
+  author: batamig
+  ms.author: bagol
   manager: rkarlin
-  ms.date: 04/02/2019
-  ms.openlocfilehash: a2f73c9aa0207af5b7ba77b3b53c271eb8722cb2
-  ms.sourcegitcommit: 1086cf04a29bb12cdb25c1fd8429f93d423bcc69
+  ms.date: 12/08/2020
+  ms.openlocfilehash: ef5cc6624b8d6e1af2750ebf1f4fbb5c54f72dd2
+  ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/09/2020
-  ms.locfileid: "94379157"
+  ms.lasthandoff: 12/14/2020
+  ms.locfileid: "97382133"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -27,12 +27,10 @@ landingContent:
       url: what-is-information-protection.md
     - text: 常见问题解答
       url: faqs.md
-- title: 入门
-  linkLists:
-  - linkListType: overview
-    links:
     - text: 要求
       url: requirements.md
+- title: 入门
+  linkLists:
   - linkListType: quickstart
     links:
     - text: 部署统一标记客户端
@@ -45,28 +43,38 @@ landingContent:
       url: tutorial-scan-networks-and-content.md
     - text: 防止滥用共享
       url: tutorial-preventing-oversharing.md
+  - linkListType: how-to-guide
+    links:
+    - text: 查看受保护的非 Office 文件
+      url: ./rms-client/clientv2-view-use-files.md
+    - text: 常见方案的管理操作说明
+      url: how-to-guides.md
 - title: 保持最新
   linkLists:
   - linkListType: whats-new
     links:
-    - text: 前 5 个建议的 Ignite 会话
-      url: what-is-information-protection.md#additional-resources
-    - text: 最新统一标记客户端版本
+    - text: 推荐的热门 Ignite 会话
+      url: what-is-information-protection.md#top-ignite-sessions
+    - text: AIP 统一标记客户端的新增功能
       url: ./rms-client/unifiedlabelingclient-version-release-history.md
 - title: 对本地数据存储中的数据进行分类和保护
   linkLists:
+  - linkListType: overview
+    links:
+    - text: 关于本地扫描程序
+      url: deploy-aip-scanner.md
   - linkListType: how-to-guide
     links:
-    - text: 部署扫描程序
-      url: deploy-aip-scanner.md
+    - text: 配置并安装扫描程序
+      url: deploy-aip-scanner-configure-install.md
+    - text: 运行扫描程序
+      url: deploy-aip-scanner-manage.md
 - title: 自定义客户端
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 统一标记客户端：高级设置
+    - text: 统一标记客户端的高级设置
       url: ./rms-client/clientv2-admin-guide-customizations.md
-    - text: 经典客户端：高级设置
-      url: ./rms-client/client-admin-guide-customizations.md
 - title: Microsoft 信息保护 SDK
   linkLists:
   - linkListType: overview
@@ -87,15 +95,21 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 选择标记客户端
-      url: ./rms-client/use-client.md#choose-which-labeling-client-to-use-for-windows-computers
+    - text: 选择 Windows 标记解决方案
+      url: ./rms-client/use-client.md#choose-your-windows-labeling-solution
+  - linkListType: tutorial
+    links:
+    - text: 迁移到统一标记解决方案
+      url: tutorial-migrating-to-ul.md
   - linkListType: how-to-guide
     links:
-    - text: 迁移到统一标记客户端
-      url: tutorial-migrating-to-ul.md
+    - text: 将 AIP 标签迁移到统一敏感度标签
+      url: configure-policy-migrate-labels.md
 - title: 监视标签使用情况和发现敏感信息
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 中心报告
       url: reports-aip.md
+    - text: 审核日志引用
+      url: audit-logs.md
