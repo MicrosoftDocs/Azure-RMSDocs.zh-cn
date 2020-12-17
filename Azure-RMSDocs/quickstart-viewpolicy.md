@@ -10,24 +10,27 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: b0128abb8d75418596459ac142a49dbbfa06b646
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: b9d9e559a3d007bb0242525fa93bb5b62338b467
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503615"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386077"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 相关内容：*[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
-本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护客户端（经典）的策略设置。
+>[!NOTE]
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
+本快速入门包含以下内容：将 Azure 信息保护添加到 Azure 门户、确认保护服务已激活、创建默认标签（如果没有标签），并查看 Azure 信息保护经典客户端的策略设置。
 
 所需时间：在 10 分钟内即可完成本快速入门。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要完成本快速入门，你需要：
 
@@ -131,7 +134,7 @@ ms.locfileid: "94503615"
 
     有关详细信息，请参阅 Microsoft 365 文档中的[了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
-经典客户端安装：
+经典客户端说明：
 
 若要查看经典客户端的默认 Azure 信息保护策略设置，请执行以下操作：
 

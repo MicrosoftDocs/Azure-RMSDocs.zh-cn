@@ -4,30 +4,33 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/19/2020
+ms.date: 11/10/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 0ab3f66437882f6c458b3e4793be935d5f14686d
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 2b5bc28e18778a3ad7d4304632611df102577f92
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503649"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97386400"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护经典客户端或统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 相关内容：*[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+>[!NOTE]
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 本快速入门将介绍如何使 SharePoint 允许扫描，以及安装和配置 Azure 信息保护扫描程序，以查找存储在本地数据存储中的任何敏感数据。
 
 所需时间：在 15 分钟内即可完成此配置。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要完成本快速入门，你需要：
 
@@ -147,7 +150,7 @@ ms.locfileid: "94503649"
 >
 ## <a name="see-detailed-results"></a>查看详细结果
 
-使用文件资源管理器，在 %localappdata%\Microsoft\MSIP\Scanner\Reports 中找到扫描程序报告。 打开 .csv 文件格式的详细报告文件。
+使用文件资源管理器，在 %***localappdata%\Microsoft\MSIP\Scanner\Reports*** 中找到扫描程序报告。 打开 .csv 文件格式的详细报告文件。
 
 在 Excel 中：
 
@@ -191,12 +194,9 @@ Uninstall-AIPScanner
 
 此命令不会删除以下项目，如果你在学习本快速入门教程后不需要使用这些项目，必须手动删除它们：
 
-- 安装 Azure 信息保护扫描程序时通过运行 Install-AIPScanner cmdlet 创建的 SQL Server 数据库：
+- 安装 Azure 信息保护扫描程序时通过运行 Install-AIPScanner cmdlet 创建的 SQL Server 数据库：AIPScanner_\<profile>
 
-    - 对于经典客户端：AIPScanner_\<profile>
-    - 对于统一标签客户端：AIPScannerUL_\<profile_name>
-
-- 位于 %localappdata%\Microsoft\MSIP\Scanner\Reports 中的扫描程序报告。
+- 位于 %***localappdata%\Microsoft\MSIP\Scanner\Reports*** 中的扫描程序报告。
 
 - 向域帐户授予的针对本地计算机的“作为服务登录”用户权限分配。
 
@@ -206,12 +206,5 @@ Uninstall-AIPScanner
 
 如果要对包含敏感信息的文件进行分类和保护，必须配置标签以实现自动分类和保护：
 
-对于经典客户端：
-
 - [如何配置 Azure 信息保护的自动和建议分类的条件](configure-policy-classification.md)
 - [如何配置标签以进行 Rights Management 保护](configure-policy-protection.md)
-
-对于统一标记客户端：
-
-- [将敏感度标签自动应用到内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)
-- [通过在敏感度标签中使用加密来限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels)

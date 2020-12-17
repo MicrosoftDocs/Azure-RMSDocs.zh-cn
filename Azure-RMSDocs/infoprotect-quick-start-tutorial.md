@@ -10,23 +10,23 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 37638bfbc47a4a4d075114540ec65ea5d6372a30
-ms.sourcegitcommit: 13dac930fabafeb05d71d7ae8acf5c0a78c12397
+ms.openlocfilehash: a2617dfa156ed9b67034a63646f09b5bd6e67b0c
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96849821"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97382303"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-and-create-a-new-label"></a>教程：配置 Azure 信息保护策略设置并创建新标签
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[适用于 Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+>相关内容：*[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
-> 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。
+> 若要部署 AIP 经典客户端，请提交支持票证以获取下载访问权限。
 
 > [!TIP]
 > 如果对经典客户端使用了不同的标签客户端，请参阅 [Microsoft 365 符合性文档](/microsoft-365/compliance/sensitivity-labels)，了解本教程的等效说明。
@@ -56,7 +56,7 @@ ms.locfileid: "96849821"
     
     有关这些步骤，请参阅[快速入门：将 Azure 信息保护添加到 Azure 门户和查看策略](quickstart-viewpolicy.md)。
 
-3. Azure 信息保护客户端（经典）安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
+3. Azure 信息保护经典客户端安装在 Windows 计算机上（最低版本为 Windows 7 Service Pack 1）。 
 
 4. 你已从下列类别之一登录到 Office 应用：
     
@@ -284,5 +284,5 @@ ms.locfileid: "96849821"
 
 若要详细了解如何编辑 Azure 信息保护策略，请参阅[配置 Azure 信息保护策略](configure-policy.md)。
 
-若要详细了解记录标签活动的位置，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)。
+若要详细了解记录标签活动的位置，请参阅 [Azure 信息保护客户端的使用日志记录](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-classic-client)。
 

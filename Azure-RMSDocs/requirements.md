@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2b621f78610d411a7ab980429fcb1dd960cbebff
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: b5e64f9537ee9c8f7f684e708c5de35ec28f3400
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386213"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583364"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -69,10 +69,11 @@ ms.locfileid: "97386213"
 
 预览版支持按条件访问受 Azure 信息保护进行保护的文档。 有关详情，请参阅：[我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
-对于特定方案（如当使用 Office 2010、基于证书的身份验证或多重身份验证时，或当 UPN 值与用户电子邮件地址不一致时），还需要满足额外的先决条件。 有关详细信息，请参阅 [Azure 信息保护的额外 Azure AD 要求](requirements-azure-ad.md)。
+对于特定方案，例如在使用基于证书的身份验证或多重身份验证时、当 UPN 值与用户电子邮件地址不一致时，或者在使用 [Office 2010](known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 时，还需要满足额外的先决条件。
 
 有关详细信息，请参阅：
 
+- [Azure 信息保护的其他 Azure AD 要求](requirements-azure-ad.md)。
 - [什么是 Azure AD Directory？](/azure/active-directory/fundamentals/active-directory-whatis)
 - [将本地 Active Directory 域与 Azure Active Directory 集成](/azure/architecture/reference-architectures/identity/azure-ad)。
 
@@ -154,7 +155,7 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 标签出现在 Office 文档顶部显示的某一栏中，可通过统一标记客户端中的“敏感度”按钮或传统客户端中的“保护”按钮进行访问 。
 
-有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
+有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)和[适用于 Windows 和 Office 版本的 AIP（扩展支持）](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 ### <a name="office-features-and-capabilities-not-supported"></a>不支持的 Office 特性和功能
 

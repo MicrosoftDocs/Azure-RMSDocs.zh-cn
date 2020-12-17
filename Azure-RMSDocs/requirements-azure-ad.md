@@ -12,12 +12,12 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: 43aaafadaabbf26309c4a40926b970d90aeadc47
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 7ac67d72d329f9782a80c434f936cadad3e13882
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386230"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97583347"
 ---
 # <a name="additional-azure-ad-requirements-for-azure-information-protection"></a>Azure 信息保护的其他 Azure AD 要求
 
@@ -37,7 +37,9 @@ ms.locfileid: "97386230"
 
 如果你的用户帐户已联合（例如，使用 AD FS），这些计算机必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
 
-建议部署 Azure 信息保护统一标记客户端。 如果你尚未升级，则系统可能仍会部署 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。 有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)。
+建议部署 Azure 信息保护统一标记客户端。 如果你尚未升级，则系统可能仍会部署 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。 
+
+有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)和[适用于 Windows 和 Office 版本的 AIP（扩展支持）](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 > [!NOTE]
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 

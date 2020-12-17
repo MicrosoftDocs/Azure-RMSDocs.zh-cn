@@ -1,5 +1,5 @@
 ---
-title: 教程 - 从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端
+title: 教程 - 从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记解决方案
 description: 从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端的分步操作教程。
 author: batamig
 ms.author: bagol
@@ -10,18 +10,18 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: f988ba63671164463a4ad1b566daab7df123e057
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 649983dd43145b5752ed4d65f257e3def4278533
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503632"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384649"
 ---
-# <a name="tutorial-migrating-from-the-azure-information-protection-aip-classic-client-to-the-unified-labeling-client"></a>教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端
+# <a name="tutorial-migrating-from-the-azure-information-protection-aip-classic-client-to-unified-labeling-solution"></a>教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记解决方案
 
->适用范围：  [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明： *[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 相关内容：*[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 > [!NOTE]
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用。
@@ -29,7 +29,7 @@ ms.locfileid: "94503632"
 > 在此时间框架内，所有 Azure 信息保护经典客户端客户都可以使用 Microsoft 信息保护统一标记平台转换到 AIP 统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 
-本教程介绍如何将组织的 Azure 信息保护部署从经典客户端迁移到统一标记客户端。
+本教程介绍如何将组织的 Azure 信息保护部署从经典客户端和 Azure 门户中的标签/标签策略管理迁移到统一标记解决方案和 [Microsoft 365 敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
 
 所需时间：完成迁移所需的时间取决于策略的复杂程度以及使用的 AIP 功能。 在后台迁移时，你可以继续使用经典客户端。
 
@@ -43,9 +43,9 @@ ms.locfileid: "94503632"
 > * 将策略复制到统一标记平台
 > * 部署统一标记客户端
 
-## <a name="why-migrate-to-the-unified-labeling-platform"></a>为什么要将策略复制到统一标记平台？
+## <a name="why-migrate-to-the-unified-labeling-solution"></a>为何要迁移到统一标记解决方案？
 
-迁移到统一标记客户端，不仅能够应对[计划的经典客户端弃用](https://aka.ms/aipclassicsunset)，还能有效地保护整个数字资产中的敏感数据。 迁移后，可将 Microsoft 信息保护 (MIP) 用于 Microsoft 365 云服务、本地、第三方 SaaS 应用程序等。
+迁移到统一标记解决方案，不仅能够应对[计划的经典客户端弃用](https://aka.ms/aipclassicsunset)，还能有效地保护整个数字资产中的敏感数据。 迁移后，可将 Microsoft 信息保护 (MIP) 用于 Microsoft 365 云服务、本地、第三方 SaaS 应用程序等。
 
 MIP 支持许多基本信息保护功能的内置标记服务，使你能够仅为内置标记不支持的额外功能保留客户端使用。
 
@@ -64,7 +64,7 @@ MIP 支持许多基本信息保护功能的内置标记服务，使你能够仅�
 查看以下文章，了解使用统一标记客户端时使用的信息保护功能有何不同：
 
 - [了解 Microsoft 365 中的内置标记功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
-- [比较经典和统一标记客户端的支持](rms-client/use-client.md#compare-the-labeling-clients-for-windows-computers)
+- [比较适用于 Windows 计算机的标记解决方案](rms-client/use-client.md#compare-the-labeling-solutions-for-windows-computers)
 - [了解如何管理统一标记管理中心中不支持开箱即用的标签设置](configure-policy-migrate-labels.md#label-settings-that-are-not-supported-in-the-admin-centers)
 
 > [!TIP]
@@ -107,7 +107,7 @@ MIP 支持许多基本信息保护功能的内置标记服务，使你能够仅�
 
 但是，对管理中心中的已迁移标签所做的编辑不同步到 Azure 门户。 如果在管理中心进行编辑，并且需要在 Azure 门户中更新它们，请返回到门户以发布更新。
 
-若要在 Azure 门户中发布更新的标签：
+若要在 Azure 门户中发布更新的标签，请执行以下操作：
 
 1. 在“Azure 信息保护”区域的左侧“管理”下，选择“统一标记” 。
 
@@ -147,7 +147,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
     |注意事项  |说明  |
     |---------|---------|
     |复制策略会复制你的所有策略     |     复制策略不支持仅复制特定策略 - 现在要么复制所有策略，要么都不复制。   |
-    |复制时会自动发布策略     |  将策略复制到统一标记客户端会自动将其发布到统一标记支持的所有客户端。 <br /><br />   **重要事项：** 如果不想发布策略，请不要复制它们。     |
+    |复制时会自动发布策略     |  将策略复制到统一标记客户端会自动将其发布到统一标记支持的所有客户端。 <br /><br />   **重要提示**：如果不想发布策略，请不要复制它们。     |
     |复制时会覆盖具有相同名称的现有策略     |   如果你的管理中心中已有同名策略，则复制策略将覆盖该策略中定义的任何设置。   <br /><br />从 Azure 门户复制的所有策略都通过以下语法命名：`AIP_<policy name>`。    |
     |不会复制某些客户端设置     | 某些客户端设置不会复制到统一标记平台，迁移后必须手动配置。 <br /><br />有关详细信息，请参阅[配置高级标记设置](#configuring-advanced-labeling-settings)|
     | | |
@@ -261,7 +261,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
 
 有关详情，请参阅： 
 
-- [比较 Windows 计算机的标签客户端](rms-client/use-client.md#compare-the-labeling-clients-for-windows-computers)
+- [比较适用于 Windows 计算机的标记解决方案](rms-client/use-client.md#compare-the-labeling-solutions-for-windows-computers)
 - [快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端](quickstart-deploy-client.md)
 
 可以从 [Microsoft 下载中心](https://aka.ms/aipclient)下载 Azure 信息保护统一标记客户端。 

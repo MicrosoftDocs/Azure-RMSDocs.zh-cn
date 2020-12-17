@@ -10,18 +10,18 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 432004443bf684967849b5b91acd9052cbf07eec
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: 17ee31a93e21314d9881af14feafc81ddb550092
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94924969"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384632"
 ---
 # <a name="tutorial-discovering-your-sensitive-content-with-the-azure-information-protection-aip-scanner"></a>教程：使用 Azure 信息保护 (AIP) 扫描程序发现敏感内容
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> 说明：[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 相关内容：**[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 Azure 信息保护客户端提供了本地扫描程序，使系统管理员可扫描本地文件存储库来发现敏感内容。 
 
@@ -64,7 +64,7 @@ Azure 信息保护客户端提供了本地扫描程序，使系统管理员可�
 > 此功能仅从版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850) 开始提供，并且当前处于预览阶段。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
 > 
 
-若要创建网络扫描作业：
+若要创建网络扫描作业，请执行以下操作：
 
 1. 作为[受支持的管理员](#tutorial-prerequisites)登录到 [Azure 门户](https://portal.azure.com/)，然后导航到“Azure 信息保护”区域。
         
@@ -191,7 +191,7 @@ Azure 信息保护客户端提供了本地扫描程序，使系统管理员可�
 |类型  |说明  |
 |---------|---------|
 |.txt 摘要文件     |  包括扫描所用的时间、扫描的文件数以及匹配信息类型的文件数量。       |
-|.csv 详细信息文件。     | 包含扫描的每个文件的详细说明。 对于每个扫描周期，目录最多可容纳 60 个报告。         |
+|.csv 详细信息文件     | 包含扫描的每个文件的详细说明。 对于每个扫描周期，目录最多可容纳 60 个报告。         |
 |     |         |
 
 ## <a name="next-steps"></a>后续步骤
@@ -201,7 +201,7 @@ Azure 信息保护客户端提供了本地扫描程序，使系统管理员可�
 - [教程：使用 Azure 信息保护 (AIP) 防止过度共享](tutorial-preventing-oversharing.md)
 - [教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端](tutorial-migrating-to-ul.md)
 
-**请参阅：**
+另请参阅：
 
 - [什么是 Azure 信息保护统一标记扫描程序？](deploy-aip-scanner.md)
 - [安装和部署 Azure 信息保护统一标记扫描程序的先决条件](deploy-aip-scanner-prereqs.md)

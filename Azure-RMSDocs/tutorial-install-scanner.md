@@ -10,18 +10,18 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: a645e8e6cbda725a167f789481579be070e3c99c
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 73bcb5e636b8a5e4456ad80f8435a27dfc898339
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503683"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384768"
 ---
 # <a name="tutorial-installing-the-azure-information-protection-aip-unified-labeling-scanner"></a>教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> [适用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)的说明
+> 相关内容：**[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 本教程介绍如何安装 Azure 信息保护 (AIP) 本地扫描程序。 通过扫描程序，AIP 管理员能够扫描其网络和内容共享以获取敏感数据，并应用组织策略中配置的分类和保护标签。
 
@@ -99,7 +99,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 
     :::image type="content" source="media/qs-tutor/qs-add-new-cluster.png" alt-text="添加用于教程的新群集":::
 
-1. 创建初始内容扫描作业。 在左侧的“扫描程序”菜单中，选择 :::image type="icon" source="media/i-content-scan-jobs.png" border="false":::“内容扫描作业”，然后选择 :::image type="icon" source="media/i-add.PNG" border="false":::“添加”  。
+1. 创建初始内容扫描作业。 在左侧的“扫描程序”菜单中，选择 :::image type="icon" source="media/i-content-scan-jobs.png" border="false":::“内容扫描作业”，然后选择 :::image type="icon" source="media/i-add.PNG" border="false":::“添加”。
 
 1. 在“添加新的内容扫描作业”窗格中，输入内容扫描作业有意义的名称和可选说明。
 
@@ -111,7 +111,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 
 1. 关闭内容扫描作业的详细信息窗格，然后返回到 :::image type="icon" source="media/i-content-scan-jobs.png" border="false":::“内容扫描作业”网格。 
 
-    在为内容扫描作业显示的新行中的“群集名称”列中，选择“+ 分配到群集” 。 然后，在右侧显示的“分配到群集”窗格中，选择群集。 
+    在为内容扫描作业显示的新行中的“群集名称”列中，选择“+ 分配到群集”。 然后，在右侧显示的“分配到群集”窗格中，选择群集。 
 
     :::image type="content" source="media/qs-tutor/assign-cluster-all.png" alt-text="分配到群集":::
 
@@ -154,7 +154,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 
 有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](rms-client/clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
-若要获取扫描程序的 Azure AD 令牌：
+若要获取扫描程序的 Azure AD 令牌，请执行以下操作：
 
 1. 在 Azure 门户中，创建 Azure AD 应用程序来指定用于身份验证的访问令牌。
 
@@ -176,7 +176,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
     ``` 
 
     > [!TIP]
-    > 如果无法向扫描服务帐户授予“本地登录”的安装权限，请将 OnBehalfOf 参数与 Set-AIPAuthentication（而非 DelegatedUser 参数）一起使用   。
+    > 如果无法向扫描程序服务帐户授予“本地登录”的安装权限，请将 OnBehalfOf 参数与 Set-AIPAuthentication（而非 DelegatedUser 参数）一起使用。
 
 扫描程序现在具有要对 Azure AD 进行身份验证的令牌。 只要在 Azure Active Directory 中配置过，此令牌就有效。 如果令牌过期，则必须重复此过程。
 
@@ -193,7 +193,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 > [!NOTE]
 > 此功能目前处于预览状态。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
 
-若要安装网络发现服务：
+若要安装网络发现服务，请执行以下操作：
 
 1. 在扫描程序计算机上，以管理员的身份打开 PowerShell 会话。
 
@@ -247,7 +247,7 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 >若要扫描有风险的存储库以寻找敏感数据，然后进行分类并避免外部用户使用这些数据，请使用找到的存储库的详细信息更新内容扫描作业。
 >
 
-**请参阅：**
+另请参阅：
 
 - [什么是 Azure 信息保护统一标记扫描程序？](deploy-aip-scanner.md)
 - [安装和部署 Azure 信息保护统一标记扫描程序的先决条件](deploy-aip-scanner-prereqs.md)

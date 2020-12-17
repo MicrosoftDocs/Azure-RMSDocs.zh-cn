@@ -9,19 +9,21 @@ ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
 Customer intent: As an administrator, I want to extend Microsoft 365's labeling and classification functionality to the File Explorer, PowerShell, third party apps and services, and more.
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 search.appverid:
 - MET150
-ms.openlocfilehash: 7ee4c5c26792a56c2637d62a67e2921df8c99a61
-ms.sourcegitcommit: 72694afc0e74fd51662e40db2844cdb322632428
+ms.openlocfilehash: aa41b20152df55f7153f4c8cedd013041460b596
+ms.sourcegitcommit: ad2b3e0b6f438f9ffc0bca975653bd13f1b7d131
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94924945"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514930"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通过将标签应用到内容来对文档和电子邮件进行发现、分类和保护。
 
@@ -65,12 +67,12 @@ Azure 信息保护统一标签客户端将标签、分类和保护功能扩展�
 
 ## <a name="microsoft-information-protection-sdk"></a>Microsoft 信息保护 SDK
 
-Microsoft 信息保护 SDK 将敏感度标签扩展到第三方应用和服务。 开发人员可以使用 SDK 生成本机支持，以便为文件应用标签和保护。
+Microsoft 信息保护 SDK 将敏感度标签扩展到第三方应用和服务。 开发人员可以使用 SDK 生成内置支持，以便为文件应用标签和保护。
 
 例如，可以使用 MIP SDK：
 
 - 向正在导出的文件应用分类标签的业务线应用程序。
-- CAD/CAM 设计应用程序为 Microsoft 信息保护标记提供本机支持。
+- CAD/CAM 设计应用程序为 Microsoft 信息保护标记提供内置支持。
 - 云访问安全代理或数据丢失防护解决方案推断使用 Azure 信息保护加密的数据。
 
 有关详细信息，请参阅 [Microsoft 信息保护 SDK 概述](/information-protection/develop/overview)。
@@ -101,10 +103,20 @@ Microsoft 信息保护 SDK 将敏感度标签扩展到第三方应用和服务�
 |**常见问题解答和已知问题**     | [有关 Azure 信息保护的常见问题](faqs.md) </br> [已知问题 - Azure 信息保护](known-issues.md)       |
 |**支持选项**     | [Azure 信息保护的支持选项](information-support.md)        |
 |**Yammer**     |  [Azure 信息保护](https://www.yammer.com/AskIPTeam)       |
-|Ignite 2020     |  - [在云、本地、终结点和远程工作环境中强化信息保护和管理](https://myignite.microsoft.com/sessions/ceba117f-9bc7-4426-9ebc-753d94c6a476)</br>- [通过智能数据保护和合规性解决方案成为风险管理英雄](https://myignite.microsoft.com/sessions/9a1e2716-55f5-4c3e-8626-0cb77e60eb87)</br>- [了解你的数据，保护你的数据，并通过 Microsoft 信息保护防止数据丢失](https://myignite.microsoft.com/sessions/46ff69cf-2c8f-4e61-a923-f72f5740f02f)</br>- [咨询专家：询问有关 Microsoft 合规性的任何信息：信息保护与管理、内部风险、合规性管理等](https://myignite.microsoft.com/sessions/5ce48b36-9827-4d60-8540-90546333063d)       |
 |**新增功能**     | 在 Microsoft 365 和 SharePoint 管理中心中关注与 AIP 相关的新功能：   </br>[- Microsoft 365 管理中心有哪些新增功能？](/microsoft-365/admin/whats-new-in-preview) </br>- [Sharepoint 管理中心中有哪些新增功能？](/sharepoint/what-s-new-in-admin-center)     |
 |     |         |
 
+#### <a name="top-ignite-sessions"></a>排名靠前的 Ignite 会话
+
+请参阅来自 Ignite 2020 的以下录制会话：
+
+- [在云、本地、终结点和远程工作环境中强化信息保护和管理](https://myignite.microsoft.com/sessions/ceba117f-9bc7-4426-9ebc-753d94c6a476)
+
+- [通过智能数据保护和合规性解决方案成为风险管理英雄](https://myignite.microsoft.com/sessions/9a1e2716-55f5-4c3e-8626-0cb77e60eb87)
+
+- [了解你的数据，保护你的数据，并通过 Microsoft 信息保护防止数据丢失](https://myignite.microsoft.com/sessions/46ff69cf-2c8f-4e61-a923-f72f5740f02f)
+
+- [咨询专家：询问有关 Microsoft 合规性的任何信息：信息保护与管理、内部风险、合规性管理等](https://myignite.microsoft.com/sessions/5ce48b36-9827-4d60-8540-90546333063d)
 ## <a name="aips-classic-client"></a>AIP 经典客户端
 
 Azure 信息保护经典客户端是早期版本的 AIP，管理员可以通过它直接在 Azure 门户中管理分类标签。
@@ -114,6 +126,6 @@ Azure 信息保护经典客户端是早期版本的 AIP，管理员可以通过�
 建议迁移到统一标记以支持这些功能，以及 SharePoint、Microsoft 365 应用、适用于 Web 和移动设备 Outlook、PowerBI 数据保护等。 有关详细信息，请参阅[教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记客户端](tutorial-migrating-to-ul.md)。
 
 >[!NOTE] 
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护客户端（经典）和标签管理将于 2021 年 3 月 31 日弃用。 
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 
 >
 > 在此时间框架内，所有当前 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记解决方案转换到统一标记。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。

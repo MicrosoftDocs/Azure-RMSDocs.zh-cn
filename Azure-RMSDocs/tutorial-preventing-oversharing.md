@@ -10,18 +10,18 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 851bc48926c6634fc7d5a529aa2910e11974f3a7
-ms.sourcegitcommit: df6ee1aca02e089e3a72006ecf0747f14213979c
+ms.openlocfilehash: 10f142fb09d8ad65b773f5e02f03233b454da240
+ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94503411"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97384530"
 ---
 # <a name="tutorial-preventing-oversharing-in-outlook-using-azure-information-protection-aip"></a>教程：使用 Azure 信息保护 (AIP) 防止 Outlook 中的过度共享
 
->适用范围：[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->说明：[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
+> 相关内容：**[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 作为系统管理员，你需要确保组织的内容保持安全，并且仅与受信任的用户共享。 用户不当共享内容的最常见方式之一是通过电子邮件。 配置策略以防止通过 Outlook 过度共享，例如仅将访问权限限制于特定用户，或仅允许用户与受信任的外部用户共享内容。
 
@@ -223,7 +223,7 @@ ms.locfileid: "94503411"
 > 在生产环境中，建议使用 OutlookUnlabeledCollaborationAction 高级属性定义规则，或使用下述 json 文件定义复杂规则，而不要同时使用这两种方法，以避免将问题复杂化。
 >
 
-**使用 json 文件定义规则：**
+若要使用 JSON 文件定义规则，请执行以下操作：
 
 1. 使用以下代码创建名为 OutlookCollaborationRule_1.json 的 .json 文件 ：
 
@@ -310,7 +310,7 @@ ms.locfileid: "94503411"
 
 现在，可以启动 Windows 事件查看器，查看日志以了解发生的操作。
 
-**查看事件查看器以寻找 AIP 日志记录事件：**
+若要检查事件查看器中是否有 AIP 日志记录事件，请执行以下操作：
 
 在客户端计算机上，打开 Windows 事件查看器应用程序，然后导航到“应用程序和服务日志” > “Azure 信息保护” 。
 
@@ -318,7 +318,7 @@ ms.locfileid: "94503411"
 
 - 警告消息：信息 ID 301
 - 解释消息：信息 ID 302
-- 阻止邮件：信息 ID 303
+- 阻止消息：信息 ID 303
 
 例如：
 
@@ -409,6 +409,6 @@ Action Source:
 
 将相同的方法应用于多个收件人和标签，或应用于附件，其中标记状态有时对用户不太明显。
 
-例如，你可能想要在标记为“公共”的电子邮件中显示一条弹出消息，但附加了标记为“常规”的 PowerPoint 演示文稿 。
+例如，你可能想要在标记为“公共”的电子邮件中显示一条弹出消息，但附加了标记为“常规”的 PowerPoint 演示文稿。
 
 有关高级属性和 Outlook 自定义的详细信息，请参阅[管理员指南：Azure 信息保护统一标记客户端的自定义配置](rms-client/clientv2-admin-guide-customizations.md)。
