@@ -135,7 +135,7 @@
           items:
             - name: 概述
               href: deploy-aip-scanner.md
-            - name: 配置并安装统一标记扫描程序
+            - name: 配置和安装统一标记扫描程序
               href: deploy-aip-scanner-configure-install.md
             - name: 运行统一标记扫描程序
               href: deploy-aip-scanner-manage.md
@@ -181,6 +181,8 @@
               href: ./rms-client/clientv2-admin-guide.md
             - name: 为用户安装客户端
               href: ./rms-client/clientv2-admin-guide-install.md
+            - name: 跟踪和撤销访问
+              href: ./rms-client/track-and-revoke-admin.md
             - name: 自定义
               href: ./rms-client/clientv2-admin-guide-customizations.md
             - name: 客户端文件和使用情况日志记录
@@ -201,6 +203,8 @@
               href: ./rms-client/clientv2-view-use-files.md
             - name: 删除标签和保护
               href: ./rms-client/clientv2-remove-label-protection.md
+            - name: 撤销文档访问
+              href: ./rms-client/revoke-access-user.md
         - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
           href: ./rms-client/mobile-app-faq.md
         - name: 受保护的 PDF 阅读器
