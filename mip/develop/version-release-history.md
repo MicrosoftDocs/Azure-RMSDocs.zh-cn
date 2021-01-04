@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
 manager: barbkess
-ms.openlocfilehash: 3e58c7efe669aa6c3405a5fd1c2056e96a933ff6
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.openlocfilehash: fe246ceb2f54d24318373b95c36733a977b560dc
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565042"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701724"
 ---
 # <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) 软件开发工具包 (SDK) 版本发行历史记录和支持策略
 
 ## <a name="servicing"></a>维护
 
-发布下一个 GA 版本后，每 (GA) 版本都支持6个月。 文档可能不包含有关不支持的版本的信息。 修补程序和新功能仅适用于最新的 GA 版本。
+发布下一个 GA 版本后，每年支持 (GA) 版本。 文档可能不包含有关不支持的版本的信息。 修补程序和新功能仅适用于最新的 GA 版本。
 
 不应在生产中部署预览版本。 请改用最新的预览版本来测试新功能或即将推出的新功能或修补程序。 仅支持最新的预览版本。
 
@@ -27,9 +27,25 @@ ms.locfileid: "95565042"
 使用以下信息可查看受支持版本的新增功能或更改内容。 最新版本会最先列出。
 
 > [!NOTE]
-> 不会列出小修补程序，因此，如果您在使用 SDK 时遇到问题，我们建议您检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版。
+> 未列出次要修补程序。 如果 SDK 出现问题，我们建议你检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版。
 >  
 > 若要获得技术支持，请访问 [Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。
+
+## <a name="version-17147"></a>版本1.7.147
+
+### <a name="file-sdk"></a>文件 SDK
+
+- .PBIX 文件格式的次要 bug 修复。
+
+## <a name="version-17145"></a>版本1.7.145
+
+**发布日期：** 2020年11月13日
+
+### <a name="general-changes"></a>常规更改
+
+- 更新了 NuGet 包以仅复制更新而不是始终复制依赖项。
+- .NET 上的调试配置将使用本机库的发行版。 我们发现，在调试模式下向远程服务器部署 .NET 解决方案的客户需要安装 VC + + 调试运行时，这并不是很简单。 如果需要在中调试到本机库，请将 SDK 可再发行版本中的 Dll 复制到项目文件夹中 (https://ala.ms/mipsdkbins)
+- 修复了一个为 .NET Core 项目生成警告的 bug。
 
 ## <a name="version-17133"></a>版本1.7.133
 

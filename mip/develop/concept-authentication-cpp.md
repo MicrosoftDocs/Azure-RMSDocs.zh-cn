@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: e4f734560c4d3942995f7547f41648bd765bb1b1
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 9cc8d3b874e4971907770ee18508f331acf1ea2d
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555834"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701622"
 ---
 # <a name="microsoft-information-protection-sdk---authentication-concepts"></a>Microsoft 信息保护 SDK - 身份验证概念
 
@@ -24,17 +24,17 @@ ms.locfileid: "75555834"
 `mip::AuthDelegate::AcquireOAuth2Token` 接受以下参数，并返回一个布尔值，指示令牌获取是否成功：
 
 - `mip::Identity`：要验证的用户或服务的标识（如果已知）。
-- `mip::AuthDelegate::OAuth2Challenge`：接受四个参数、**颁发机构**、**资源**、**声明**和**作用域**。 **Authority** 是将针对其生成令牌的服务。 **Resource** 是我们正在尝试访问的服务。 如果被调用，SDK 会负责将这些参数传递给委托。 **声明**是保护服务所需的标签特定声明。 **范围**是访问资源所需的 Azure AD 权限范围。 
+- `mip::AuthDelegate::OAuth2Challenge`：接受四个参数、 **颁发机构**、 **资源**、 **声明** 和 **作用域**。 **Authority** 是将针对其生成令牌的服务。 **Resource** 是我们正在尝试访问的服务。 如果被调用，SDK 会负责将这些参数传递给委托。 **声明** 是保护服务所需的标签特定声明。 **范围** 是访问资源所需的 Azure AD 权限范围。 
 - `mip::AuthDelegate::OAuth2Token`：令牌结果写入此对象。 加载引擎时，SDK 将使用它。 除了我们的身份验证实现，没必要在任何地方获取或设置此值。
 
 **重要说明：** 应用程序不直接调用 `AcquireOAuth2Token`。 SDK 将在需要时调用此函数。
 
-## <a name="consent"></a>Consent
+## <a name="consent"></a>同意
 
-在应用程序获权访问帐户标识下的受保护资源/API 之前，Azure AD 要求应用程序先获得同意。 同意记录为帐户的租户中的权限的永久确认，适用于特定帐户（用户同意）或所有帐户（管理员同意）。 根据所访问的 API、应用程序所寻求的权限以及用于登录的帐户，同意过程会出现在各种场景中： 
+在应用程序获权访问帐户标识下的受保护资源/API 之前，Azure AD 要求应用程序先获得同意。 同意记录为帐户的租户中的权限的永久确认、特定帐户 (用户同意) 或 (管理员同意) 的所有帐户。 根据所访问的 API、应用程序所寻求的权限以及用于登录的帐户，同意过程会出现在各种场景中： 
 
-- 如果你或管理员未通过“授予权限”功能显式预先同意访问权限，则应用程序注册所在的*同一租户*中的帐户登录时会出现同意过程。
-- 如果应用程序注册为多租户，并且租户管理员未事先代表所有用户预先同意，则*不同租户*中的帐户登录时会出现同意过程。
+- 如果你或管理员未通过“授予权限”功能显式预先同意访问权限，则应用程序注册所在的 *同一租户* 中的帐户登录时会出现同意过程。
+- 如果应用程序注册为多租户，并且租户管理员未事先代表所有用户预先同意，则 *不同租户* 中的帐户登录时会出现同意过程。
 
 `mip::Consent` 枚举类实现了一种易于使用的方法，允许应用程序开发人员根据 SDK 正在访问的终结点提供自定义同意体验。 通知可以告知用户将收集哪些数据、如何删除数据或者法律或符合性策略要求的任何其他信息。 用户授予同意后，应用程序即可继续运行。 
 
@@ -70,7 +70,7 @@ public:
 
 #### <a name="consent_delegate_implcpp"></a>consent_delegate_impl.cpp
 
-当 SDK 需要同意时，SDK *会*调用 `GetUserConsent` 方法，并将 URL 作为参数传入。 在下面的示例中，通知用户 SDK 将连接到所提供的 URL，并为用户提供命令行选项。 根据用户的选择，用户接受或拒绝向 SDK 传递的许可。 如果用户拒绝同意，则应用程序将引发异常，并且不会对保护服务进行调用。 
+当 SDK 需要同意时，SDK *会* 调用 `GetUserConsent` 方法，并将 URL 作为参数传入。 在下面的示例中，通知用户 SDK 将连接到所提供的 URL，并为用户提供命令行选项。 根据用户的选择，用户接受或拒绝向 SDK 传递的许可。 如果用户拒绝同意，则应用程序将引发异常，并且不会对保护服务进行调用。 
 
 ```cpp
 Consent ConsentDelegateImpl::GetUserConsent(const string& url) {
@@ -101,7 +101,7 @@ Consent ConsentDelegateImpl::GetUserConsent(const string& url) {
 }
 ```
 
-对于测试和开发目的，可以实现简单的 `ConsentDelegate`，如下所示：
+对于测试和开发目的，可以实现如下所示的简单 `ConsentDelegate` 操作：
 
 ```cpp
 Consent ConsentDelegateImpl::GetUserConsent(const string& url) {
@@ -115,5 +115,4 @@ Consent ConsentDelegateImpl::GetUserConsent(const string& url) {
 
 为简单起见，演示委托的示例将通过调用外部脚本来实现令牌获取。 此脚本可以替换为任何其他类型的脚本（开源 OAuth2 库或自定义 OAuth2 库）。
 
-- [使用 PowerShell 获取访问令牌](concept-authentication-acquire-token-ps.md)
 - [使用 Python 获取访问令牌](concept-authentication-acquire-token-py.md)

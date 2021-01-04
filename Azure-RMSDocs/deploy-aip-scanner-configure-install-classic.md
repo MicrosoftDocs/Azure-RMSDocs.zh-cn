@@ -8,16 +8,17 @@ ms.date: 06/29/2020
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ROBOTS: NOINDEX
 ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ca7b5c157a2c6d6d1162963053828e895fba1fe8
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 9a139aaa4e36a45d23821ae71b27262c5b8c3f89
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382813"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97806288"
 ---
 # <a name="configuring-and-installing-the-azure-information-protection-classic-scanner"></a>配置和安装 Azure 信息保护经典扫描程序
 
@@ -26,7 +27,7 @@ ms.locfileid: "97382813"
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [安装和配置 AIP 统一标记扫描器](deploy-aip-scanner-configure-install.md)。 *
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在开始配置和安装 Azure 信息保护扫描程序之前，请确保系统符合 [所需的先决条件](deploy-aip-scanner-prereqs.md)。
 

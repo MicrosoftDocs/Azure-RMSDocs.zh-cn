@@ -4,25 +4,25 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/15/2020
+ms.date: 12/29/2020
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e18c18322783a4f953c898cb96232ab35b642dca
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 1ee51978452a4f420478f2938020578166f49335
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583619"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805982"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
 >适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -45,15 +45,15 @@ Azure 信息保护查看器无法打开受保护的 PDF 文档中的附件。 �
 
 Azure 信息保护客户端在具有 .NET 2 或3的计算机上不受支持，其中启用了 [Exploit Protection](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) ，并将导致 Office 应用程序意外运行。
 
-如果你的 .NET 版本为2或3，但你的系统需要 .NET 4.x 版本，请确保在安装 AIP 之前禁用 Exploit protection。 
+在这种情况下，我们建议升级 .NET 版本。 有关详细信息，请参阅 [Microsoft .NET 框架要求](rms-client/reqs-ul-client.md#microsoft-net-framework-requirements)。
+
+如果必须保留 .NET 版本2或3，请确保在安装 AIP 之前禁用 Exploit protection。 
 
 若要通过 PowerShell 禁用 Exploit protection，请运行以下内容：
 
 ```PowerShell
 Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus, EnableExportAddressFilter, EnableImportAddressFilter
 ```
-
-有关详细信息，请参阅 [Azure 信息保护统一标签客户端的其他先决条件](rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
 
 ## <a name="powershell-support-for-the-azure-information-protection-client"></a>Azure 信息保护客户端的 PowerShell 支持
 
@@ -85,17 +85,11 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 发布策略可能需要长达24小时。
 
-## <a name="known-issues-in-the-aip-client"></a>AIP 客户端中的已知问题
-
-- [最大文件大小](#maximum-file-sizes)
-- [AIP 查看器](#aip-viewer)
-- [跟踪和撤消文档访问](#tracking-and-revoking-document-access-public-preview)
-
-### <a name="maximum-file-sizes"></a>最大文件大小
+## <a name="maximum-file-sizes"></a>最大文件大小
 
 支持大于 2 GB 的文件进行保护，但不支持解密。
 
-### <a name="aip-viewer"></a>AIP 查看器
+## <a name="known-issues-for-the-aip-viewer"></a>AIP 查看器的已知问题
 
 "AIP 查看器" 以纵向模式显示图像，某些宽、横向视图的图像可能显示为已拉伸。
 
@@ -108,7 +102,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
 - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
 
-### <a name="tracking-and-revoking-document-access-public-preview"></a> (公共预览版跟踪和撤消文档访问) 
+## <a name="known-issues-for-track-and-revoke-features-public-preview"></a> (公开预览版跟踪和撤消功能的已知问题) 
 
 使用统一标签客户端跟踪和撤消文档访问具有以下已知问题：
 
@@ -127,30 +121,35 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 #### <a name="documents-accessed-via-sharepoint"></a>通过 SharePoint 访问的文档
     
-- 上载到 SharePoint 的受保护文档将丢失其 Id 为值。 
+- 上载到 SharePoint 的受保护文档丢失其 **id 为** 值，无法跟踪或撤销访问权限。
 
-    这意味着不会跟踪数据，并且任何访问吊销都不会应用于存储在 SharePoint 中的文件。
-
-- 如果用户从 SharePoint 下载文件，并从本地计算机访问该文件，则在本地打开文档时，会将新的 Id 为应用到该文档。 
+- 如果用户从 SharePoint 下载文件，并从本地计算机访问该文件，则在本地打开文档时，会将新的 **id 为** 应用到该文档。 
     
-    使用原始 Id 为值跟踪数据时，不会包括为用户下载的文件执行的任何访问权限。 此外，根据原始 Id 为值撤消访问权限将不会撤销对任何已下载文件的访问权限。
+    使用原始 **id 为** 值跟踪数据时，不会包括为用户下载的文件执行的任何访问权限。 此外，根据原始 **id 为** 值撤消访问权限将不会撤销对任何已下载文件的访问权限。
 
-    在这种情况下，管理员可能能够使用 PowerShell 查找已下载的文件，以查找要跟踪或撤销访问权限的新 Id 为值。
+    在这种情况下，管理员可能能够使用 PowerShell 查找已下载的文件，以查找要跟踪或撤销访问权限的新 **id 为** 值。
 
+### <a name="knowns-issues-for-the-aip-client-and-onedrive"></a>AIP 客户端和 OneDrive 的 Knowns 问题
+
+如果你的文档存储在 OneDrive 中并且应用了敏感度标签，并且管理员更改了标记策略中的标签以添加保护，则新应用的保护不会自动应用于标记的文档。 
+
+在这种情况下，请手动重新标记文档以根据需要应用保护。
 ## <a name="aip-for-windows-and-office-versions-in-extended-support"></a>AIP for Windows 和 Office 版本（扩展支持）
 
 - [**Windows 7 扩展支持于2020年1月14日结束**](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。 
 
-    强烈建议升级到较新版本的 Windows 10。 但是，如果你有 (ESU) 的扩展安全更新和支持协定，则可以使用 AIP 支持来继续保护 Windows 7 系统的安全。
+    强烈建议升级到较新版本的 Windows 10。 
+
+    但是，如果你有 (ESU) 的扩展安全更新和支持协定，则可以使用 AIP 支持来继续保护 Windows 7 系统的安全。
 
     有关详细信息，请与支持人员联系。
 
-- [**Office 2010 当前提供扩展支持**](https://support.microsoft.com/lifecycle/search?alpha=office%202010)。 
+- [**Office 2010 扩展支持于2020年10月13日结束**](https://support.microsoft.com/lifecycle/search?alpha=office%202010)。 
 
-    此支持将于10月13日（2020）结束，将不会进行扩展。 此外，不会为 Office 2010 提供 ESU，强烈建议升级到较新版本的 Office 365。 
+    此支持将不会扩展，并且不会为 Office 2010 提供 ESU。 
+
+    强烈建议升级到较新版本的 Office 365。 
     
-    对于当前在扩展支持中运行 Office 2010 的客户，AIP 支持在2020年10月13日之前可用。 
-
     有关详细信息，请与支持人员联系。
 
 ## <a name="aip-based-conditional-access-policies"></a>基于 AIP 的条件性访问策略

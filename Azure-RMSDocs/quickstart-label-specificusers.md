@@ -8,14 +8,15 @@ ms.date: 07/19/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e706cd2ec04d60b1520839fb76c21105ebf95625
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 31a4b4151d692a7bcb25516081b70de57a96ee16
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386298"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97807461"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>快速入门：为特定用户创建新的 Azure 信息保护标签
 

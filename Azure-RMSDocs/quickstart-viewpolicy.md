@@ -8,14 +8,15 @@ ms.date: 07/19/2020
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: information-protection
+ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: b9d9e559a3d007bb0242525fa93bb5b62338b467
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 0d3f289986688bab7e50f22bf9a9dc8c35f7ba5e
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386077"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97807495"
 ---
 # <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>快速入门：在 Azure 门户中开始使用 Azure 信息保护
 

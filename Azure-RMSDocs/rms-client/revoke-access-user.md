@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: abb96719d51658226211653b4ab4d171fcaa6b2e
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: f834aa10a522336067cc68ce9edd20284488b888
+ms.sourcegitcommit: b9d7986590382750e63d9059206a40d28fc63eef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97592731"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97764095"
 ---
 # <a name="user-guide-revoke-document-access-with-azure-information-protection-public-preview"></a>用户指南：使用 Azure 信息保护撤销文档访问 (公开预览版) 
 
@@ -51,7 +51,7 @@ ms.locfileid: "97592731"
  
 1. 在出现的确认消息中，单击 **"是"** 以继续。
 
-已吊销访问权限，其他用户将无法再访问该文档。
+已吊销访问权限，其他用户将无法再访问该文档。 如果允许 [脱机访问](/microsoft-365/compliance/encryption-sensitivity-labels#assign-permissions-now) ，用户可以继续访问已撤消的文档，直到脱机策略期限过期。 
 
 ### <a name="dont-see-the-revoke-access-option"></a>看不到吊销访问权限选项？
 
@@ -64,6 +64,8 @@ ms.locfileid: "97592731"
 - 你可能没有安装最新的 AIP 统一标签客户端版本，或者你可能需要在安装后重新启动 Office 应用或计算机。 
 
     有关详细信息，请参阅 [用户指南：下载并安装 Azure 信息保护客户端](install-client-app.md)。
+
+- 您的管理员可能已关闭组织中的 [跟踪功能](track-and-revoke-admin.md#turn-off-track-and-revoke-features-for-your-tenant) 。
 
 ## <a name="revoking-access-where-the-document-protection-has-been-changed-on-a-copy"></a>撤消对副本上的文档保护进行了更改的访问权限
 
@@ -80,4 +82,4 @@ ms.locfileid: "97592731"
 
 - [AIP 统一标签客户端用户指南](clientv2-user-guide.md)
 - [AIP 统一标签客户端管理员指南](clientv2-admin-guide.md)
-- [跟踪和撤消文档访问的已知问题](../known-issues.md#tracking-and-revoking-document-access-public-preview)
+- [跟踪和撤销功能的已知问题](../known-issues.md#known-issues-for-track-and-revoke-features-public-preview)

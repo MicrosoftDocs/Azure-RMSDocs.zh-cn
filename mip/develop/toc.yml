@@ -91,8 +91,6 @@
           href: concept-authentication-cpp.md
         - name: 实现身份验证委托 (C++)
           href: concept-authentication-delegate-cpp.md
-        - name: 获取访问令牌 (PowerShell)
-          href: concept-authentication-acquire-token-ps.md
         - name: 获取访问令牌 (Python)
           href: concept-authentication-acquire-token-py.md
     - name: 同意

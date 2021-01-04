@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 536811aa07df108a0c5cbb44bad5ba5ff2e6f292
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 37d626fc3cf907191aed9760d1452082d732044f
+ms.sourcegitcommit: 0f76655985b49b4b8868d5f8893e20978f4dc4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384870"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97747131"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -25,10 +25,10 @@ ms.locfileid: "97384870"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 
 Azure 信息保护统一标签客户端提供了一个客户端-服务器解决方案，可帮助保护组织的文档和电子邮件，并替代了 [用于 Microsoft Office 的内置标记解决方案](/microsoft-365/compliance/sensitivity-labels)。 
@@ -138,7 +138,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 
 你还可以 [自行安装 RMS 客户端](https://www.microsoft.com/download/details.aspx?id=38396)，以支持 [从受 IRM 保护的库和 OneDrive 同步文件](/onedrive/deploy-on-windows)，并为希望将 rights management 保护集成到业务线应用程序的开发人员提供支持。
 
-## <a name="compare-the-labeling-solutions-for-windows-computers"></a>比较 Windows 计算机的标记解决方案
+## <a name="compare-the-labeling-solutions-for-windows-computers"></a>比较适用于 Windows 计算机的标记解决方案
 
 使用下表来帮助比较 Windows 计算机的三个标记解决方案支持的功能。
 
@@ -148,7 +148,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 - [Azure 信息保护客户端的详细比较](#detailed-comparisons-for-the-azure-information-protection-clients)
 - [未计划在 Azure 信息保护统一标签客户端中的功能](#features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client)
 
-|功能|经典客户端|统一标签客户端|Office 内置标签解决方案|
+|功能|经典客户端|统一标记客户端|Office 内置标签解决方案|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |**手动标记**| ![是](../media/yes-icon.png)   | ![是](../media/yes-icon.png)   |![是](../media/yes-icon.png) |
 |**默认标签**| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)|
@@ -176,8 +176,8 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 |**HYOK 支持**| ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|  ![否](../media/no-icon.png)|
 |**使用情况日志记录事件查看器**| ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)| ![否](../media/no-icon.png)|
 |**在 Outlook 中显示“不可转发”按钮**| ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|  ![否](../media/no-icon.png)|
-|**跟踪受保护文档**| ![是](../media/yes-icon.png) | ![是 ](../media/yes-icon.png) <sup>5</sup> |  ![否](../media/no-icon.png)|
-|**吊销受保护的文档**| ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|  ![否](../media/no-icon.png)|
+|**跟踪受保护的文档**| ![是 ](../media/yes-icon.png) <sup>5</sup> | ![是 ](../media/yes-icon.png) <sup>5</sup> |  ![否](../media/no-icon.png)|
+|**吊销受保护的文档**| ![是 ](../media/yes-icon.png) <sup>5</sup> |  ![是 ](../media/yes-icon.png) <sup>5</sup>|  ![否](../media/no-icon.png)|
 |**仅保护模式** (无标签) | ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|  ![否](../media/no-icon.png)|
 |**支持帐户切换**|  ![否](../media/no-icon.png)|  ![否](../media/no-icon.png)| ![是](../media/yes-icon.png) |
 |**支持远程桌面服务**| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |
@@ -191,13 +191,13 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 
 <sup>1</sup> 这些设置以及 [在 Azure 门户中配置的高级客户端设置](client-admin-guide-customizations.md#how-to-configure-advanced-classic-client-configuration-settings-in-the-portal)支持许多其他设置。
 
-<sup>2</sup> 这些设置以及其他许多设置都受支持，作为 [你用 PowerShell 配置的高级设置](clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
+<sup>2</sup> 这些设置以及其他许多设置都受支持，作为 [你用 PowerShell 配置的高级设置](clientv2-admin-guide-customizations.md#configuring-advanced-settings-for-the-client-via-powershell)。
 
 <sup>3</sup> 由文件资源管理器和 PowerShell 支持。 在 Office 应用中，用户可以选择 "**文件信息**" "  >  **保护文档**" "  >  **限制访问**"。
 
 <sup>4</sup> 对于文件资源管理器和 PowerShell 命令，用户必须连接到 internet 才能保护文件。
 
-<sup>5</sup> 统一标签客户端不支持经典客户端支持的文档跟踪站点。 但是，如果不需要首先注册要跟踪的文档，管理员就可以使用 [集中报告](../reports-aip.md) 来确定是否从 Windows 计算机访问受保护的文档，以及访问是被授予还是被拒绝。 
+<sup>5</sup>有关详细信息，请参阅：**统一标记客户端**：[管理员指南 (公共预览版)](track-and-revoke-admin.md)  |   [用户指南 (公共预览版)](revoke-access-user.md)。 仅全局管理员支持跟踪。 **经典客户端**：[管理员指南](client-admin-guide-document-tracking.md)  |  [用户指南](client-track-revoke.md)。 管理员还可以使用 [集中报告](../reports-aip.md) 来确定是否从 Windows 计算机访问受保护的文档，以及访问是被授予还是被拒绝。
 
 <sup>6</sup> 标签和保护操作不受支持。 但是，对于 AD RMS 部署，当你使用 [Active Directory Rights Management Services 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574\(v=ws.11\))时，查看器可以打开受保护的文档。
 
@@ -210,7 +210,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 如果 Azure 信息保护经典客户端和 Azure 信息保护统一标签客户端都支持同一功能，请使用以下列表来帮助确定两个客户端之间的功能差异：
 
 
-|功能 |经典客户端|统一标签客户端|
+|功能 |经典客户端|统一标记客户端|
 |--------------|-----------------------------------|-----------------------------------------------------------|
 |**安装**| 安装本地演示策略的选项 | 没有本地演示策略|
 |**在 Office 应用中应用标签时选择并显示标签**|通过功能区上的“保护”按钮 <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|

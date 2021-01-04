@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e505ef4153732fe68b1475112cb2ab97d520433e
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: f124e6c1bbf8b77760744885492e1c5663d02443
+ms.sourcegitcommit: 0f76655985b49b4b8868d5f8893e20978f4dc4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383221"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97747114"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -26,7 +26,7 @@ ms.locfileid: "97383221"
 > 适用 **于** [Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作 [支持统一标签的客户端和服务](#clients-and-services-that-support-unified-labeling)的敏感度标签。
 
@@ -55,7 +55,7 @@ ms.locfileid: "97383221"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-## <a name="before-you-begin"></a>准备阶段
+## <a name="before-you-begin"></a>开始之前
 
 标签迁移具有很多优点，但不可逆。 在迁移之前，请确保你已了解以下更改和注意事项：
 
@@ -77,7 +77,7 @@ ms.locfileid: "97383221"
 不会迁移策略，包括策略设置和谁有权访问策略（作用域内策略）以及所有高级客户端设置。 在标签迁移后配置这些设置的选项包括：
 
 - 用于敏感度标签的管理中心。
-- [Office 365 Security & 符合性 PowerShell](/powershell/exchange/office-365-scc/office-365-scc-powershell)，你必须使用它来配置 [高级客户端设置](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)。
+- [Office 365 Security & 符合性 PowerShell](/powershell/exchange/office-365-scc/office-365-scc-powershell)，你必须使用它来 [配置高级客户端设置](rms-client/clientv2-admin-guide-customizations.md#configuring-advanced-settings-for-the-client-via-powershell)。
     
 > [!IMPORTANT]
 > 管理中心并不支持已迁移标签中的所有设置。 使用[管理中心不支持的标签设置](#label-settings-that-are-not-supported-in-the-admin-centers)部分中的表，来帮助识别这些设置和建议的操作过程。
@@ -216,7 +216,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 - 你无法有选择地选择要复制的策略和设置。 **全局** 策略 (的所有策略和所有作用域内策略) 会自动选择复制，并会复制支持作为标签策略设置的所有设置。 如果已具有同名的标签策略，则会使用 Azure 门户中的策略设置来覆盖它。
 
-- 不会复制某些高级客户端设置，因为对于 Azure 信息保护统一标签客户端，这些设置支持作为 *标签高级设置* ，而不是策略设置。 可以通过 [Microsoft 365 Security & 相容性中心 PowerShell](./rms-client/clientv2-admin-guide-customizations.md#how-to-configure-advanced-settings-for-the-client-by-using-office-365-security--compliance-center-powershell)配置这些标签高级设置。 未复制的高级客户端设置：
+- 不会复制某些高级客户端设置，因为对于 Azure 信息保护统一标签客户端，这些设置支持作为 *标签高级设置* ，而不是策略设置。 可以通过 [Microsoft 365 Security & 相容性中心 PowerShell](rms-client/clientv2-admin-guide-customizations.md#configuring-advanced-settings-for-the-client-via-powershell)配置这些标签高级设置。 未复制的高级客户端设置：
     - [LabelbyCustomProperty](./rms-client/client-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)
     - [LabelToSMIME](./rms-client/client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 

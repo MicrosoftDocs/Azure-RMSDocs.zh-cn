@@ -9,16 +9,17 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
+ROBOTS: NOINDEX
 ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 994b4ae32424fe4994cbb8e7b77ed4acc5867bdb
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 3c7105d93f396380c47711611b83d24909431cbc
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386196"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97807478"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-classic-client"></a>管理员指南： Azure 信息保护经典客户端的自定义配置
 
@@ -27,7 +28,7 @@ ms.locfileid: "97386196"
 >***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [统一标签客户端管理员指南](clientv2-admin-guide-customizations.md)。
 
 > [!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 请参阅以下高级配置相关信息，在管理 Azure 信息保护客户端时，可能需要用于特定方案或一部分用户。
 
@@ -693,7 +694,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
 - 要使用的 Azure 信息保护标签名为“Confidential”，标签 ID 为“1ace2cc3-14bc-4142-9125-bf946a70542c”。 
 
@@ -710,7 +711,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
 - 要使用的 Azure 信息保护标签名为“Highly Confidential”，标签 ID为“3e9df74d-3168-48af-8b11-037e3021813f”。
 
@@ -728,7 +729,7 @@ Azure 信息保护客户端已下载包含该新设置的客户端策略时，�
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护将具有这些安全孤岛标签之一的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
 - 要使用的 Azure 信息保护标签名为“General”，标签 ID为“2beb8fe7-8293-444c-9768-7fdc6f75014d”。
 

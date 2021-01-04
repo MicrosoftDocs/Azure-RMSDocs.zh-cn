@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: cc8b2f4d969e24451110a6838ce10c8eea39abd9
-ms.sourcegitcommit: 54e742defb0b8dca35047b34498ec66e61602fa6
+ms.openlocfilehash: 688fe04d993ae1d286458fa9d41b0915838e6406
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96577042"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701673"
 ---
 # <a name="quickstart-client-application-initialization-c"></a>快速入门：客户端应用程序初始化 (C++) 
 
@@ -350,13 +350,6 @@ MIP SDK 使用类可扩展性实现身份验证，该机制可与客户端应用
 
 4. 现在构建应用程序的最终版本并解决任何错误。 代码应已成功构建，但在完成下一个快速入门之前，代码将无法正常运行。 如果运行该应用程序，将看到类似于以下内容的输出。 除非完成下一个快速入门，否则你将没有访问令牌可提供。
 
-   ```console
-   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-   Set $authority to: https://login.windows.net/common/oauth2/authorize
-   Set $resourceUrl to: https://syncservice.o365syncservice.com/
-   Sign in with user account:
-   Enter access token:
-   ```
 
 ## <a name="next-steps"></a>后续步骤
 
