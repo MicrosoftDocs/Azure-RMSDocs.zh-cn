@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/15/2020
+ms.date: 12/29/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7da6699fb2640791f78972f4271a6d846405731a
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: e4193a0345708d4c90e3469df8b1102d45a85af7
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583670"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805948"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -45,6 +45,7 @@ ms.locfileid: "97583670"
 
 |客户端版本|发布日期|
 |--------------|-------------|
+|2.6.111.0 | 03/09/2020|
 |2.5.33.0 |2019/10/23|
 |2.2.21.0|09/03/2019|
 |2.2.19.0|08/06/2019|
@@ -131,7 +132,7 @@ ms.locfileid: "97583670"
 
 ### <a name="added-support-for-additional-sensitive-information-types"></a>添加了对其他敏感信息类型的支持
 
-我们在 Azure 信息保护中添加了对其他敏感信息类型的支持，如 **澳大利亚商业号码**、 **澳大利亚公司编号** 或 **奥地利标识卡。**
+我们在 Azure 信息保护中添加了对其他敏感信息类型的支持，如 **澳大利亚商业号码**、 **澳大利亚公司编号** 或 **奥地利标识卡**。
 
 有关详细信息，请参阅 Microsoft 365 文档中的 [敏感信息类型实体定义](/microsoft-365/compliance/sensitive-information-type-entity-definitions) 。
 
@@ -147,7 +148,15 @@ ms.locfileid: "97583670"
 
 - [管理员指南：使用 Azure 信息保护跟踪和撤消文档访问](track-and-revoke-admin.md)
 - [用户指南：使用 Azure 信息保护撤销文档访问](revoke-access-user.md)
-- [跟踪和撤消文档访问的已知问题](../known-issues.md#tracking-and-revoking-document-access-public-preview)
+- [跟踪和撤消文档访问的已知问题](../known-issues.md#known-issues-for-track-and-revoke-features-public-preview)
+
+如果你的组织或区域中的隐私要求要求你关闭文档跟踪功能，请参阅 [跟踪和撤销管理员过程](track-and-revoke-admin.md#turn-off-track-and-revoke-features-for-your-tenant)。
+
+**从经典客户端升级**
+
+AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#using-a-web-browser-to-track-and-revoke-documents-that-you-have-registered)跟踪和撤消功能。 使用统一标签客户端时，此跟踪门户不相关。
+ 
+若要使用统一标签客户端查看跟踪数据，请使用 PowerShell 命令，如 [管理员指南](track-and-revoke-admin.md)中所述。
 
 ### <a name="fixes-and-improvements-for-the-unified-labeling-scanner"></a>统一标签扫描程序的修复和改进
 
@@ -171,11 +180,11 @@ ms.locfileid: "97583670"
 
 - Outlook 预览模式现在 [为发现事件生成审核日志](../audit-logs.md#discover-audit-logs)
 
-- [建议的标签](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 和 [水印](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 在 Outlook 中按预期方式应用。 
+- [建议的标签](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 和 [视觉标记](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 按预期应用于 Outlook。 
 
-- 为通讯组列表中的联系人添加了对 [OutlookBlockTrustedDomains](clientv2-admin-guide-customizations.md#to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels) 和 [OutlookBlockUntrustedCollaborationLabel](clientv2-admin-guide-customizations.md#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels) 设置的支持。
+- 添加了对 [在 Outlook 通讯组列表中查找收件人](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview)的支持，例如在配置 [OutlookBlockTrustedDomains](clientv2-admin-guide-customizations.md#to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels) 和 [OutlookBlockUntrustedCollaborationLabel](clientv2-admin-guide-customizations.md#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels) 设置时。
 
-    若要对此进行配置，请将 [EnableOutlookDistributionListExpansion](clientv2-admin-guide-customizations.md#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) 值设置为 **true**。 你可能还希望引发默认超时值，如 [OutlookGetEmailAddressesTimeOutMSProperty](clientv2-admin-guide-customizations.md#to-implement-block-messages-for-recipients-inside-an-outlook-distribution-list-public-preview) 设置中所定义。
+    当启用此功能时，我们建议您还会引发默认超时值，如 [OutlookGetEmailAddressesTimeOutMSProperty](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) 设置中所定义。
 
 - 如果为用户配置了多个标签策略，每个标签策略都有冲突的高级设置，则将更新为使用的 [优先级顺序](clientv2-admin-guide-customizations.md#order-of-precedence---how-conflicting-settings-are-resolved) 。
 
@@ -251,7 +260,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 1. 请确保已启用 Azure 信息保护分析。
 
-    在 Azure 门户中，请参阅 **Azure 信息保护 > 管理 > 配置分析 (预览版) 。**
+    在 Azure 门户中，请参阅 **Azure 信息保护 > 管理 > 配置分析 (预览版)**。
 
     有关详细信息，请参阅 [Azure 信息保护的中心报告 (公共预览版) ](../reports-aip.md)。
 
@@ -379,7 +388,7 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 
 - [在出现故障时从扫描仪获取报告以应用操作事件](../reports-aip.md#friendly-schema-reference-for-event-functions)。 使用报表来了解失败的操作事件，并发现阻止将来出现的方法。
 
-- 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请 [运行新的 **AIPScannerDiagnostics** cmdlet](../deploy-aip-scanner-manage.md#troubleshooting-using-the-scanner-diagnostic-tool)。
+- 介绍了 AIP scanner 诊断分析器工具，用于检测和分析常见扫描程序错误。 若要开始使用 AIP scanner 诊断，请 [运行 **AIPScannerDiagnostics** cmdlet](../deploy-aip-scanner-tsg.md#troubleshooting-using-the-scanner-diagnostic-tool)。
 
 - 你现在可以管理和限制扫描仪计算机上的最大 CPU 消耗。 了解如何使用 [两个新的高级设置 **ScannerMaxCPU** 和 **ScannerMinCPU**](./clientv2-admin-guide-customizations.md#limit-cpu-consumption)阻止100% 的 cpu 使用率并管理 cpu 使用情况。
 
@@ -444,53 +453,16 @@ TLS 安装程序不支持 TLS 1.2 的客户必须转到支持 TLS 1.2 的安装�
 
 - 只有 PDF 内容的第一页用于应用 autoclassification 规则的问题现已得到解决，基于 PDF 中所有内容的 autoclassification 现在按预期继续进行。 有关分类和标签的详细信息，请参阅 [分类和标签常见问题解答](../faqs-infoprotect.md)。
 
-- 当配置了多个 Exchange 帐户并且启用了 Azure 信息保护 Outlook 客户端时，会按预期方式从辅助帐户发送邮件。 若要详细了解如何配置 Outlook 的统一标签客户端，请参阅 [Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
+- 当配置了多个 Exchange 帐户并且启用了 Azure 信息保护 Outlook 客户端时，会按预期方式从辅助帐户发送邮件。 若要详细了解如何配置 Outlook 的统一标签客户端，请参阅 [配置组策略以阻止禁用 AIP](reqs-ul-client.md#configure-your-group-policy-to-prevent-disabling-aip)。
 
 - 如果将具有较高机密性标签的文档拖放到电子邮件中，则该电子邮件现在会自动按预期方式接收更高的机密性标签。 有关对客户端功能进行标记的详细信息，请参阅 [标签客户端比较表](use-client.md#compare-the-labeling-solutions-for-windows-computers)。
 
-- 如果电子邮件地址同时包含撇号 ( ") 和句点 (，则现在会按预期将自定义权限应用于电子邮件。 ) 有关使用 Outlook 配置统一标签客户端的详细信息，请参阅 [Azure 信息保护统一标签客户端的其他先决条件](clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。
+- 如果电子邮件地址同时包含撇号 ( ") 和句点 (，则现在会按预期将自定义权限应用于电子邮件。 ) 有关使用 Outlook 配置统一标签客户端的详细信息，请参阅 [配置组策略以阻止禁用 AIP](reqs-ul-client.md#configure-your-group-policy-to-prevent-disabling-aip)。
+
 
 - 默认情况下，当文件由统一的标记扫描器、PowerShell 或文件资源管理器扩展标记时，文件的 NTFS 所有者将丢失。 现在，你可以通过将新的 **[UseCopyAndPreserveNTFSOwner](clientv2-admin-guide-customizations.md#preserve-ntfs-owners-during-labeling-public-preview)** advanced 设置设置为 **true**，将系统配置为保留文件的 NTFS 所有者。
 
     **UseCopyAndPreserveNTFSOwner** 高级设置要求在扫描仪和扫描的存储库之间具有低延迟、可靠的网络连接。
-
-## <a name="version-261110"></a>版本2.6.111。0
-
-**发布** 03/09/2020
-
-支持，12/29/2020
-
-### <a name="new-features-version-261110"></a>新功能，版本2.6.111。0
-
-- [Scanner](../deploy-aip-scanner.md)的通用版本，用于检查和标记本地数据存储中的文档。
-
-- [扫描仪](../deploy-aip-scanner.md) 相关：
-    - [更轻松地进行本地 SharePoint 和子网站发现](../quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories)。 不再需要设置每个特定站点。
-    - 添加了 [SQL 块区大小](../deploy-aip-scanner-prereqs.md#storage-requirements-and-capacity-planning-for-sql-server) 的高级属性。
-    - 如果更改了默认标签，则管理员现在能够 [停止现有扫描并执行重新扫描](../deploy-aip-scanner-manage.md#stopping-a-scan) 。
-    - 默认情况下，现在，扫描器会设置最小遥测数据，以提高扫描速度，缩短日志大小，并且信息类型现在会缓存在数据库中。 了解有关 [扫描仪优化](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance)的详细信息。
-    - 现在，扫描仪支持对数据库和服务进行单独的部署，而只有数据库部署需要 **Sysadmin** 权限。
-    - 对扫描程序性能的改进。
-
-- 修改了 [PowerShell](./clientv2-admin-guide-powershell.md) cmdlet **set-aipfilelabel** 以允许从 PST、RAR、7zip 和 MSG 文件删除保护。 此功能在默认情况下处于禁用状态，必须使用[LabelPolicy](./clientv2-admin-guide-customizations.md) cmdlet 启用此功能[，如下所述。](./clientv2-admin-guide-customizations.md#enable-removal-of-protection-from-compressed-files)  
-
-- 增加了 Azure 信息保护管理员控制何时使用 .pfile 扩展的能力。 详细了解如何 [更改受保护的文件类型](./clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
-
-- 为应用程序和变量添加了动态视觉标记支持。 详细了解如何为 [视觉标记配置标签](../configure-policy-markings.md)。
-
-- 对 [自动和建议标签的可自定义策略提示](use-client.md)进行了改进。
-
-- 在统一标签客户端中，为 Office 应用添加了对 [脱机标签功能](./clientv2-admin-guide-customizations.md#support-for-disconnected-computers) 的支持。
-
-### <a name="fixes-and-improvements-version-261110"></a>修补和改进，版本2.6.111。0
-
-- 如果用户尝试不成功地打开受保护的 TIFF 文件，并且 tiff 文件是由 RightFax 创建的，则 TIFF 文件现在会打开并保持稳定。  
-- 已解决受保护的 txt 和 PDF 文件的以前损坏。
-- 更正了 Log Analytics 中的 **自动** 和 **手动** 标记之间的不一致标签。
-- 新电子邮件和用户上一次打开的电子邮件之间确定的意外继承问题现已解决。  
-- 将 **.msg** 文件作为 **pfile** 的保护现在按预期方式工作。
-- 现在按预期方式应用从 Office 用户定义的设置中添加的共同所有者权限。
-- 当输入权限降级理由时，如果已选择其他选项，则无法再输入文本。
 
 ## <a name="next-steps"></a>后续步骤
 

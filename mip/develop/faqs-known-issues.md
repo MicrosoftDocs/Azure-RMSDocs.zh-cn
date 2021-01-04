@@ -6,18 +6,24 @@ ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 03/05/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 9b0f9e3fa619762e08d32fb17da576d58f92071d
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: 0fbb704024a87cbee30016a2f5130d788609cea3
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566040"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701554"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
 本文提供对常见问题 (FAQ) 的解答，以及针对已知问题和常见错误的疑难解答指南。
 
 ## <a name="frequently-asked-questions"></a>常见问题 
+
+### <a name="file-parsing"></a>文件分析
+
+**问**：我是否能写入目前正在用文件 SDK 阅读的同一文件？
+
+MIP SDK 不支持同时读取和写入同一文件。 任何标记的文件都将导致输入文件的 *副本* 应用了标签操作。 应用程序必须将原始文件替换为标记文件。 
 
 ### <a name="sdk-string-handling"></a>SDK 字符串处理
 
@@ -72,9 +78,3 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 > "ProxyAuthenticatonError：不支持代理身份验证"
 
 MIP SDK 不支持使用经过身份验证的代理。 若要修复此消息，代理管理员应将 Microsoft 信息保护服务终结点设置为绕过代理。 " [Office 365 url 和 IP 地址范围](/office365/enterprise/urls-and-ip-address-ranges) " 页上提供了这些终结点的列表。 MIP SDK 要求 `*.protection.outlook.com` (第9行) 和 Azure 信息保护服务终结点 (行 73) 绕过代理身份验证。
-
-### <a name="issues-in-net-core"></a>.NET Core 中的问题
-
-**问**： NuGet 包是否适用于 .net Core？ 
-
-NuGet 包将安装到 .NET Core 项目，但将无法运行。 我们正在努力为 Windows 修复此操作，但目前尚不提供支持其他平台的时间线。

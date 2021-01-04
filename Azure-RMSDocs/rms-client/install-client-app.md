@@ -9,16 +9,17 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
+ROBOTS: NOINDEX
 ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 1749ccdacaa19279ccf8ddafcf817bb28d50edcf
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: fa5b1bb2d88691e7862de0c678c746ff327ad820
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583653"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805965"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-classic-client"></a>用户指南：下载并安装 Azure 信息保护经典客户端
 

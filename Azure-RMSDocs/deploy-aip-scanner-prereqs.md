@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护统一标签扫描器的先
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/03/2020
+ms.date: 12/17/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 49c614e4d124e7001a446c784a816b42ec91e111
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: a3b4f110b1958ec055720da218c52cce4c3fc0f4
+ms.sourcegitcommit: f944025b6c026906f0010c9e7f9d8d54f20a6be7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382575"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97705711"
 ---
 # <a name="requirements-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的要求
 
@@ -318,62 +318,80 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 ### <a name="restriction-you-cannot-be-granted-sysadmin-or-databases-must-be-created-and-configured-manually"></a>限制：无法获得 Sysadmin 角色，或必须手动创建和配置数据库
 
+根据需要，使用以下过程手动创建数据库并授予 **db_owner** 角色。
+
+- [Scanner 数据库的过程](#manually-create-a-database-and-user-for-the-scanner-and-grant-db_owner-rights)
+- [网络发现数据库的过程](#manually-create-a-database-and-user-for-the-network-discovery-service-and-grant-db_owner-rights)
+
 如果可以 *暂时* 授予 Sysadmin 角色以安装扫描程序，则可以在扫描程序安装完成后删除此角色。
 
 根据组织的要求，执行下列操作之一：
 
-- **您可以暂时拥有 Sysadmin 角色。** 如果你暂时拥有 Sysadmin 角色，系统会自动为你创建数据库，并且会自动向扫描程序的服务帐户授予所需的权限。
-
-    但是，配置扫描程序的用户帐户仍需要扫描程序配置数据库的 **db_owner** 角色。 如果在安装程序完成之前只有 Sysadmin 角色，请 [手动向用户帐户授予 db_owner 角色](#create-a-user-and-grant-db_owner-rights-manually)。
-
-- **你根本不能拥有 Sysadmin 角色**。 如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建数据库。
-
-    对于此配置，必须将 **db_owner** 角色分配给以下帐户：
-
-    - 扫描程序的服务帐户
-    - 用于安装程序的用户帐户
-    - 用于配置扫描程序的用户帐户
-
-    用于安装和配置扫描程序的用户帐户通常是相同的。 如果使用不同的帐户，则它们都需要扫描程序配置数据库的 db_owner 角色。 根据需要创建此用户和权限。 如果指定自己的群集名称，则配置数据库将命名 **AIPScannerUL_<cluster_name>**。
+|限制  |说明  |
+|---------|---------|
+|**可以暂时拥有 Sysadmin 角色**     |  如果你暂时拥有 Sysadmin 角色，系统会自动为你创建数据库，并且会自动向扫描程序的服务帐户授予所需的权限。 <br><br>但是，配置扫描程序的用户帐户仍需要扫描程序配置数据库的 **db_owner** 角色。 如果在安装程序完成之前只有 Sysadmin 角色，请手动向用户帐户授予 **db_owner** 角色。       |
+|**你根本不能拥有 Sysadmin 角色**     |  如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建数据库。 <br><br>对于此配置，必须将 **db_owner** 角色分配给以下帐户： <br>-用于扫描程序的服务帐户<br>-用于安装程序的用户帐户<br>-扫描程序配置的用户帐户 <br><br>用于安装和配置扫描程序的用户帐户通常是相同的。 如果使用不同的帐户，则它们都需要扫描程序配置数据库的 **db_owner** 角色。 根据需要创建此用户和权限。 如果指定自己的群集名称，则配置数据库将命名 **AIPScannerUL_<cluster_name>**。  |
+| | |
 
 此外：
 
 - 您必须是将运行扫描程序的服务器上的本地管理员
 - 必须为将运行扫描程序的服务帐户授予对以下注册表项的 "完全控制" 权限：
 
-    - HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server
-    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server
+    - `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\Server`
+    - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server`
 
 如果在配置这些权限后出现错误，则在安装扫描程序时，可以忽略该错误，并且可以手动启动 scanner 服务。
 
-#### <a name="create-a-user-and-grant-db_owner-rights-manually"></a>手动创建用户并授予 db_owner 权限
+#### <a name="manually-create-a-database-and-user-for-the-scanner-and-grant-db_owner-rights"></a>手动为扫描程序创建数据库和用户，并授予 db_owner 权限
 
-若要创建用户并授予对此数据库的 db_owner 权限，请要求 Sysadmin 执行以下步骤：
+如果需要手动创建扫描仪数据库和/或创建用户并授予对数据库的 **db_owner** 权限，请要求您的系统管理员执行以下步骤：
 
 1. 为扫描程序创建数据库：
 
-    ```cli
+    ```sql
     **CREATE DATABASE AIPScannerUL_[clustername]**
 
     **ALTER DATABASE AIPScannerUL_[clustername] SET TRUSTWORTHY ON**
     ```
 
-2. 向运行 install 命令的用户授予权限，并用于运行扫描程序管理命令。
-
-    SQL 脚本：
+2. 向运行安装命令的用户授予权限，并用于运行扫描程序管理命令。 使用以下脚本：
 
     ```sql
     if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
     USE DBName IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
     ```
 
-3. 向扫描程序服务帐户授予权限。
+3. 向扫描程序服务帐户授予权限。 使用以下脚本：
 
-    SQL 脚本：
     ```sql
     if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
     ```
 
+#### <a name="manually-create-a-database-and-user-for-the-network-discovery-service-and-grant-db_owner-rights"></a>手动为网络发现服务创建数据库和用户，并授予 db_owner 权限
+
+如果需要手动创建 [网络发现](deploy-aip-scanner-configure-install.md#create-a-network-scan-job-public-preview) 数据库和/或创建用户并授予对数据库的 **db_owner** 权限，请要求您的系统管理员执行以下步骤：
+
+1. 为网络发现服务创建数据库：
+
+    ```sql
+    **CREATE DATABASE AIPNetworkDiscovery_[clustername]**
+
+    **ALTER DATABASE AIPNetworkDiscovery_[clustername] SET TRUSTWORTHY ON**
+    ```
+
+2. 向运行安装命令的用户授予权限，并用于运行扫描程序管理命令。 使用以下脚本：
+
+    ```sql
+    if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
+    USE DBName IF NOT EXISTS (select * from sys.database_principals where sid = SUSER_SID('domain\user')) BEGIN declare @X nvarchar(500) Set @X = 'CREATE USER ' + quotename('domain\user') + ' FROM LOGIN ' + quotename('domain\user'); exec sp_addrolemember 'db_owner', 'domain\user' exec(@X) END
+    ```
+
+3. 向 scanner 服务帐户授予权限。 使用以下脚本：
+
+    ```sql
+    if not exists(select * from master.sys.server_principals where sid = SUSER_SID('domain\user')) BEGIN declare @T nvarchar(500) Set @T = 'CREATE LOGIN ' + quotename('domain\user') + ' FROM WINDOWS ' exec(@T) END
+    ```
 ### <a name="restriction-the-service-account-for-the-scanner-cannot-be-granted-the-log-on-locally-right"></a>限制：无法向扫描程序的服务帐户授予“本地登录”权限
 
 如果你的组织策略禁止对服务帐户在 **本地登录** ，请将 *OnBehalfOf* 参数用于 set-aipauthentication。

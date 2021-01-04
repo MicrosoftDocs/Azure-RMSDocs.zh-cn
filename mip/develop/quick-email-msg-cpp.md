@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/08/2020
 ms.author: v-anikep
-ms.openlocfilehash: ab070974fc8c03236269a40b2230862e87e19e6b
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.openlocfilehash: b070a8ef35ff1bb71a6a87b19621f347626ef085
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96536008"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701605"
 ---
 # <a name="file-api---process-email-msg-files-c"></a>文件 API - 处理电子邮件 .msg 文件 (C++)
 
@@ -218,36 +218,6 @@ int main()
 ## <a name="build-and-test-the-application"></a>生成和测试应用程序
 
 使用 F6（生成解决方案）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
-
-```Console
-    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-    Set $authority to: https://login.windows.net/common
-    Set $resourceUrl to: https://syncservice.o365syncservice.com/
-    Sign in with user account: User@Contoso.onmicrosoft.com
-    Enter access token: <Paste token here>
-    Press any key to continue . . .
-
-    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-    Set $authority to: https://login.windows.net/common
-    Set $resourceUrl to: https://aadrm.com
-    Sign in with user account: User@Contoso.onmicrosoft.com
-    Enter access token: <Paste token here>
-    Press any key to continue . . .
-
-    Protection applied to file: C:\Test_protected.msg
-
-    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-    Set $authority to: https://login.windows.net/37f4583d-9985-4e7f-a1ab-71afd8b55ba0
-    Set $resourceUrl to: https://aadrm.com
-    Sign in with user account: User@Contoso.onmicrosoft.com
-    Enter access token: <Paste token here>
-    Press any key to continue . . .
-    Original file: C:\Test.msg
-    Protected file: C:\Test_protected.msg
-    TemplateID applied to protected file : 667466bf-a01b-4b0a-8bbf-a79a3d96f720
-    Protection Owner of protected file : User@Contoso.OnMicrosoft.com
-
-```
 
 ## <a name="troubleshooting"></a>疑难解答
 

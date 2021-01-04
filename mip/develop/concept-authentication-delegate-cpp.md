@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 5f21c837c1bcd48fe23f3df2647d401390ee81f5
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: e1b21d78f45d1040766d2b4e13b98ba638770106
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556225"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701571"
 ---
 # <a name="microsoft-information-protection-sdk---implementing-an-authentication-delegate-c"></a>Microsoft 信息保护 SDK - 实现身份验证委托 (C++)
 
@@ -113,5 +113,4 @@ bool AuthDelegateImpl::AcquireOAuth2Token(
 
 若要完成身份验证实现，必须在 `AcquireToken()` 函数后面生成代码。 以下示例介绍了几种获取令牌的方法。
 
-- [简单/PowerShell 令牌获取示例](concept-authentication-acquire-token-ps.md)
 - [Python 令牌获取示例](concept-authentication-acquire-token-py.md)

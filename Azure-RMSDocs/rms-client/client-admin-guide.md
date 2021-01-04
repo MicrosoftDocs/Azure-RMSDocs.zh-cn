@@ -9,16 +9,17 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
+ROBOTS: NOINDEX
 ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1f0b074a1eb766ce266cf7b7fe92f20d9088e43d
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: adfc8fcb0ce9ea8c227aad74e7d686a96d081b8c
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583432"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97807342"
 ---
 # <a name="azure-information-protection-classic-client-administrator-guide"></a>Azure 信息保护经典客户端管理员指南
 
