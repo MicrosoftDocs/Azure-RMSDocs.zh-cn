@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: fa795fa29e39bc9fe5abc9a68febcd168a5bb502
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 468cbe031b22ba07127b75295da98ee9a081048a
+ms.sourcegitcommit: 73befea74644d272e2d8d1d4b95df55c7741ccbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386332"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762326"
 ---
 # <a name="quickstart-deploying-the-azure-information-protection-aip-unified-labeling-client"></a>快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端
 
@@ -35,21 +35,21 @@ Azure 信息保护 (AIP) 统一标记客户端是 [Microsoft 信息保护](https
 
 - [Azure 信息保护要求](requirements.md)。 描述在组织中部署 AIP 客户端的详细系统要求，例如 Azure 信息保护订阅和 Azure Active Directory。 还列出受支持的客户端设备和受支持的应用程序。
 
-- [统一标记客户端先决条件](rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)。 列出安装 AIP 客户端的每台计算机的系统要求。
+- [统一标记客户端要求](./rms-client/reqs-ul-client.md)。 列出安装 AIP 客户端的每台计算机的系统要求。
 
 ## <a name="install-the-aip-client"></a>安装 AIP 客户端
 
 AIP 提供下列客户端安装选项：
 
-- [下载并运行 .exe 文件](rms-client/clientv2-admin-guide-install.md#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-executable-installer)。 对于大多数用例，建议使用此安装。 安装可以交互或静默运行。
+- [下载并运行 .exe 文件](rms-client/clientv2-admin-guide-install.md#install-the-aip-unified-labeling-client-using-the-executable-installer)。 对于大多数用例，建议使用此安装。 安装可以交互或静默运行。
 
     安装完成后，系统可能会提示你重启计算机或 Office 软件。 根据需要重启以继续。
 
-- [下载并运行 .msi 文件](rms-client/clientv2-admin-guide-install.md#to-install-the-azure-information-protection-unified-labeling-client-by-using-the-msi-installer)。 支持使用集中部署机制的无提示安装，如组策略、Configuration Manager 或 Microsoft Intune。
+- [下载并运行 .msi 文件](rms-client/clientv2-admin-guide-install.md#install-the-unified-labeling-client-using-the-msi-installer)。 支持使用集中部署机制的无提示安装，如组策略、Configuration Manager 或 Microsoft Intune。
 
 [Microsoft 下载站点](https://www.microsoft.com/download/details.aspx?id=53018)提供 AIP 客户端安装文件。 
 
-有关详细信息，请参阅[安装 AIP 客户端的选项](rms-client/clientv2-admin-guide-install.md#options-to-install-the-azure-information-protection-unified-labeling-client-for-users)。
+有关详细信息，请参阅[管理员指南：为用户安装 Azure 信息保护统一标记客户端](rms-client/clientv2-admin-guide-install.md)。
 
 > [!TIP]
 > 若要测试运行 AIP 客户端的最新功能，请在测试系统上部署公共预览版本。 有关详细信息，请参阅 AIP 统一标记客户端[版本发布历史记录](rms-client/unifiedlabelingclient-version-release-history.md)。

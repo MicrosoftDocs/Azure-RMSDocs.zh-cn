@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 01/18/2019
 ms.author: v-anikep
 ms.custom: has-adal-ref
-ms.openlocfilehash: cc38554ccd9d1ff33c41c4d9adf37b097b7b8547
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.openlocfilehash: d319af8e65e2eae958ef215d30dfa84c09ae7145
+ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535903"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "97701639"
 ---
 # <a name="quickstart-list-protection-templates-c"></a>快速入门：列出保护模板 (C++)
 
@@ -88,19 +88,9 @@ ms.locfileid: "96535903"
 
 2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如果多次提示并且请求的值相同，则可以重用以前生成的令牌：
 
-   ```console
-   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-   Set $authority to: https://login.windows.net/common/oauth2/authorize
-   Set $resourceUrl to: https://syncservice.o365syncservice.com/
-   Sign in with user account: user1@tenant.onmicrosoft.com
-   Enter access token:
-   ```
-
 3. 要生成用于在提示中输入的访问令牌，请返回 PowerShell 脚本并执行以下操作：
 
-   - 更新 `$authority` 和 `$resourceUrl` 变量。 它们必须与在步骤 2 的控制台输出中指定的值匹配。 这些值由 MIP SDK 在 `AcquireOAuth2Token()` 的 `challenge` 参数中提供：
-     - `$authority` 应为 `https://login.windows.net/common/oauth2/authorize`
-     - `$resourceUrl` 应为 `https://syncservice.o365syncservice.com/` 或 `https://aadrm.com`
+   - 更新 `$authority` 和 `$resourceUrl` 变量。 它们必须与在步骤 2 的控制台输出中指定的值匹配。
    - 运行 PowerShell 脚本。 `Get-ADALToken` cmdlet 会触发类似于以下示例的 Azure AD 身份验证提示。 指定在步骤 2 的控制台输出中提供的同一帐户。 成功登录后，访问令牌将被放置在剪贴板上。
 
      [![Visual Studio 获取令牌登录](media/quick-file-list-labels-cpp/acquire-token-sign-in.png)](media/quick-file-list-labels-cpp/acquire-token-sign-in.png#lightbox)
@@ -128,20 +118,11 @@ ms.locfileid: "96535903"
    > 复制并保存一个或多个保护模板的 ID（例如，`f42a3342-8706-4288-bd31-ebb85995028z`），因为你将在下一个快速入门中使用它。
 
 ## <a name="troubleshooting"></a>疑难解答
-
-### <a name="problems-during-execution-of-powershell-script"></a>执行 PowerShell 脚本时出现的问题
-
-| “摘要” | 错误消息 | 解决方案 |
-|---------|---------------|----------|
-| 应用程序注册或 PowerShell 脚本中的重定向 URI 不正确 (AADSTS50011) |AADSTS50011：请求中指定的回复 URL 与为应用程序配置的回复 URL 不匹配: "ac6348d6-0d2f-4786-af33-07ad46e69bfc"。 | 通过完成以下步骤之一，验证正在使用的重定向 URI：<br><br><li>更新 Azure AD 应用程序配置中的重定向 URI，以匹配 PowerShell 脚本。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md#register-a-client-application-with-azure-active-directory)，验证是否已正确配置重定向 URI 属性。<br><li>更新 PowerShell 脚本中的 `redirectUri` 变量，以匹配应用程序注册。 |
-| 登录帐户不正确 (AADSTS50020) | AADSTS50020:来自标识提供者“https://sts.windows.net/72f988bl-86f1-41af-91ab-2d7cd011db47/ ”的用户帐户“user@domain.com”不存在于租户 "Organization name" 中，且无法访问该租户中的应用程序 "0edbblll-8773-44de-b87c-b8c6276d41eb"。 | 完成以下步骤之一：<br><br><li>重新运行 PowerShell 脚本，但务必使用 Azure AD 应用程序注册所在的同一租户中的帐户。<br><li>如果登录帐户是正确的，则 PowerShell 主机会话可能已在其他帐户下进行身份验证。 在这种情况下，请在退出脚本主机后重新打开，然后再次尝试运行它。<br><li>如果将此快速入门用于 Web 应用（而非本机应用），并且需要使用其他租户中的帐户登录，请确保为 Azure AD 应用程序注册启用多租户使用。 可以使用应用程序注册中的“编辑清单”功能进行验证，并确保它指定 `"availableToOtherTenants": true,`。 |
-| 应用程序注册中的权限不正确 (AADSTS65005) | *AADSTS65005:资源无效。客户端已请求访问某个资源，但该资源未在客户端应用程序注册中的所需权限中列出。客户端应用 ID:0edbblll-8773-44de-b87c-b8c6276d41eb。来自请求的资源值: https://syncservice.o365syncservice.com/ 。资源应用 ID:870c4f2e-85b6-4d43-bdda-6ed9a579b725。来自应用注册的有效资源列表：00000002-0000-0000-c000-000000000000。* | 更新 Azure AD 应用程序配置中的权限请求。 请参阅 [MIP SDK 安装和配置](setup-configure-mip.md#register-a-client-application-with-azure-active-directory)，验证是否在应用程序注册中正确配置了权限请求。 |
-
 ### <a name="problems-during-execution-of-c-application"></a>执行 C++ 应用程序时出现的问题
 
 | “摘要” | 错误消息 | 解决方案 |
 |---------|---------------|----------|
-| 访问令牌不正确 | 发生异常...访问令牌是否不正确/过期?<br><br>API 调用失败: profile_add_engine_asyn 失败原因: [class mip::PolicySyncException] 策略获取失败，请求失败并显示 http 状态代码:401，x-ms-diagnostics: [2000001;reason=“无法解析随请求提交的 OAuth 令牌。”;error_category="invalid_token"]，correlationId:[35bc0023-3727-4eff-8062-000006d5d672]'<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe (process 29924) 已退出，代码为 0。<br><br>按任意键关闭此窗口... | 如果项目成功生成，但出现类似于左侧的输出，则表示 `AcquireOAuth2Token()` 方法中可能包含无效或过期的令牌。 返回到[创建 PowerShell 脚本以生成访问令牌](#create-a-powershell-script-to-generate-access-tokens)并重写访问令牌，再次更新 `AcquireOAuth2Token()`然后重新生成/重新测试。 还可以使用 [jwt.ms](https://jwt.ms/) 单页 Web 应用程序检查并验证令牌及其声明。 |
+| 访问令牌不正确 | _发生异常...访问令牌是否不正确/过期?<br><br>API 调用失败: profile_add_engine_asyn 失败原因: [class mip::PolicySyncException] 策略获取失败，请求失败并显示 http 状态代码:401, x-ms-diagnostics: [2000001;reason="无法解析与请求一起提交的 OAuth 令牌。";error_category="invalid_token"], correlationId:[35bc0023-3727-4eff-8062-000006d5d672]'<br><br>C:\VSProjects\MipDev\Quickstarts\AppInitialization\x64\Debug\AppInitialization.exe（进程 29924）已退出，代码为 0。<br><br>按任意键以关闭此窗口。 . .* | 如果项目成功生成，但出现类似于左侧的输出，则表示 `AcquireOAuth2Token()` 方法中可能包含无效或过期的令牌。 返回到[创建 PowerShell 脚本以生成访问令牌](#create-a-powershell-script-to-generate-access-tokens)并重写访问令牌，再次更新 `AcquireOAuth2Token()`然后重新生成/重新测试。 还可以使用 [jwt.ms](https://jwt.ms/) 单页 Web 应用程序检查并验证令牌及其声明。 |
 
 ## <a name="next-steps"></a>后续步骤
 

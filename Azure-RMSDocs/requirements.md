@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b5e64f9537ee9c8f7f684e708c5de35ec28f3400
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 229b67b152845cfb1e0499f1df9eb08ba28b49df
+ms.sourcegitcommit: 73befea74644d272e2d8d1d4b95df55c7741ccbe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583364"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762294"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -129,11 +129,11 @@ ms.locfileid: "97583364"
 
 ### <a name="additional-requirements-per-client"></a>每个客户端的额外要求
 
-每个 Azure 信息保护客户端都有额外的先决条件。 有关详细信息，请参阅：
+每个 Azure 信息保护客户端都有额外要求。 有关详细信息，请参阅：
 
-- [Azure 信息保护统一标记客户端先决条件](./rms-client/clientv2-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-unified-labeling-client)
+- [Azure 信息保护统一标记客户端要求](./rms-client/reqs-ul-client.md)
 
-- [Azure 信息保护客户端先决条件](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
+- [Azure 信息保护客户端要求](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)
 
 ## <a name="applications"></a>应用程序
 

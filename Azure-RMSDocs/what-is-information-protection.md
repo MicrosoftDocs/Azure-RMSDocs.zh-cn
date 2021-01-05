@@ -12,12 +12,12 @@ Customer intent: As an administrator, I want to extend Microsoft 365's labeling 
 ms.custom: contperf-fy21q2
 search.appverid:
 - MET150
-ms.openlocfilehash: aa41b20152df55f7153f4c8cedd013041460b596
-ms.sourcegitcommit: ad2b3e0b6f438f9ffc0bca975653bd13f1b7d131
+ms.openlocfilehash: 6bebd942d24029288d0ca0602fd32901e2685abc
+ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514930"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97582922"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -93,7 +93,7 @@ Microsoft 信息保护 SDK 将敏感度标签扩展到第三方应用和服务�
 
 准备好自定义 AIP 后，请参阅[管理员指南：Azure 信息保护统一标记客户端的自定义配置](rms-client/clientv2-admin-guide-customizations.md)。
 
-若要入门 MIP SDK，请参阅 [Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)。
+若要开始使用 MIP SDK，请参阅 [Microsoft 信息保护 (MIP) SDK 安装和配置](/information-protection/develop/setup-configure-mip)。
 
 ### <a name="additional-resources"></a>其他资源
 

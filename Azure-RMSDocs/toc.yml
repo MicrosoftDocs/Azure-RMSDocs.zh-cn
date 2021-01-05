@@ -17,6 +17,8 @@
           href: requirements-applications.md
         - name: 支持的文件类型
           href: ./rms-client/clientv2-admin-guide-file-types.md
+        - name: 统一标记客户端要求
+          href: ./rms-client/reqs-ul-client.md
         - name: 本地扫描程序要求
           href: deploy-aip-scanner-prereqs.md
     - name: AIP 也称为…
@@ -139,6 +141,8 @@
               href: deploy-aip-scanner-configure-install.md
             - name: 运行统一标记扫描程序
               href: deploy-aip-scanner-manage.md
+            - name: 对扫描程序进行故障排除
+              href: deploy-aip-scanner-tsg.md
         - name: 部署 RMS 连接器
           items:
             - name: 概述
