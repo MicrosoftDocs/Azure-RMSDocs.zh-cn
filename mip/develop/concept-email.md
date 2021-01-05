@@ -1,17 +1,17 @@
 ---
 title: 如何使用 MIP SDK 处理电子邮件
 description: 本文将帮助你了解如何使用 MIP SDK 文件 API 处理 .msg 和 .rpmsg 文件的方案。
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: conceptual
 ms.date: 04/08/2020
-ms.author: v-anikep
-ms.openlocfilehash: 074a0f6868796c68cf02a5a6cf4e105f9afeff19
-ms.sourcegitcommit: 36413b0451ae28045193c04cbe2d3fb2270e9773
+ms.author: mbaldwin
+ms.openlocfilehash: 52526409b6d08efde1064063b9f36564baa6a378
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405181"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864764"
 ---
 # <a name="file-api-email-message-file-processing"></a>文件 API 电子邮件文件处理
 
@@ -31,7 +31,7 @@ MIP SDK 支持解密和加密电子邮件。 尽管在此方案中将会涉及�
 > [!IMPORTANT]
 > 当前不支持对 .msg 文件执行标记操作。
 
-如前文所述，`mip::FileEngine` 实例化需要一个设置对象 `mip::FileEngineSettings`。 `mip::FileEngineSettings`可用于为自定义设置传递参数，应用程序需要为特定实例设置该参数。 FileEngineSettings 的 CustomSettings 属性用于将的标志设置为 `enable_msg_file_type` ，以启用对 .msg 文件的处理。
+如前文所述，`mip::FileEngine` 实例化需要一个设置对象 `mip::FileEngineSettings`。 `mip::FileEngineSettings` 可用于为自定义设置传递参数，应用程序需要为特定实例设置该参数。 FileEngineSettings 的 CustomSettings 属性用于将的标志设置为 `enable_msg_file_type` ，以启用对 .msg 文件的处理。
 
 .Msg 文件保护操作伪代码可能如下所示：
 
@@ -40,19 +40,19 @@ MIP SDK 支持解密和加密电子邮件。 尽管在此方案中将会涉及�
 - `mip::FileHandler`指向要保护的文件的构造。
 - 选择要保护的模板，并使用的方法将保护设置为文件 `mip::FileHandler` `SetProtection` 。
 
-请参阅保护 API[快速入门：列出模板](quick-protection-list-templates-cpp.md)了解有关如何列出保护模板的信息。
+请参阅保护 API [快速入门：列出模板](quick-protection-list-templates-cpp.md) 了解有关如何列出保护模板的信息。
 
 ## <a name="file-api-operations-for-rpmsg-files"></a>.Rpmsg 文件的文件 API 操作
 
-MIP SDK 不支持符合 MIME （通常为 .EML）的消息。 相反，SDK 公开检查函数，该函数能够对嵌入的 **.rpmsg**文件进行解密，并将一组字节流呈现为输出。 由 SDK 使用者提取 .rpmsg 文件，并将其传递给 API。 Office 邮件加密方案存在此文件名的变体，API 还将接受 message_v2、v3 或 v4 文件。
+MIP SDK 不支持 MIME 兼容 (通常为 .EML) 消息。 相反，SDK 公开检查函数，该函数能够对嵌入的 **.rpmsg** 文件进行解密，并将一组字节流呈现为输出。 由 SDK 使用者提取 .rpmsg 文件，并将其传递给 API。 Office 邮件加密方案存在此文件名的变体，API 还将接受 message_v2、v3 或 v4 文件。
 
-通常，在电子邮件传输过程中，邮件网关和数据丢失防护（DLP）服务会处理 MIME 兼容的消息。 当邮件受到保护时，邮件的内容将存储在附件 *.rpmsg*中。 此附件包含加密的电子邮件正文和任何属于原始邮件的附件。 *.Rpmsg*文件附加到纯文本包装电子邮件，然后发送到邮件服务。 一旦该消息离开 Exchange 或 Exchange Online 边界，就会采用符合 MIME 标准的格式，以便可以将其发送到其目标。
+通常，邮件网关和数据丢失防护 (DLP) 服务在电子邮件传输过程中处理 MIME 兼容的消息。 当邮件受到保护时，邮件的内容将存储在附件 *.rpmsg* 中。 此附件包含加密的电子邮件正文和任何属于原始邮件的附件。 *.Rpmsg* 文件附加到纯文本包装电子邮件，然后发送到邮件服务。 一旦该消息离开 Exchange 或 Exchange Online 边界，就会采用符合 MIME 标准的格式，以便可以将其发送到其目标。
 
-在大多数情况下，DLP 合作伙伴需要能够从消息中获取附件和纯文本字节，以对照 DLP 策略进行检查和评估。 检查 API 采用 .rpmsg 作为输入并返回字节流作为输出。 这些字节流包含消息的纯文本字节以及附件。 应用程序开发人员负责处理这些流，并对它们执行一些有用的操作（检查、递归解密，等等）。
+在大多数情况下，DLP 合作伙伴需要能够从消息中获取附件和纯文本字节，以对照 DLP 策略进行检查和评估。 检查 API 采用 .rpmsg 作为输入并返回字节流作为输出。 这些字节流包含消息的纯文本字节以及附件。 它由应用程序开发人员负责处理这些流，并通过 (检查、递归解密等 ) 执行一些有用的操作。
 
-`Inspect`API 是通过类实现的，该类 `mip::FileInspector` 公开用于检查受支持的文件类型的操作。 `mip::MsgInspector`这种扩展会 `mip::FileInspector` 公开特定于 .rpmsg 文件格式的解密操作。 MIP SDK 不支持 *.rpmsg*文件的任何发布方案。
+`Inspect`API 是通过类实现的，该类 `mip::FileInspector` 公开用于检查受支持的文件类型的操作。 `mip::MsgInspector` 这种扩展会 `mip::FileInspector` 公开特定于 .rpmsg 文件格式的解密操作。 MIP SDK 不支持 *.rpmsg* 文件的任何发布方案。
 
-`mip::MsgInspector`类公开以下成员：
+`mip::MsgInspector` 类公开以下成员：
 
 ```cpp
 public const std::vector<uint8_t>& GetBody()
@@ -62,9 +62,9 @@ public InspectorType GetInspectorType() const
 public std::shared_ptr<Stream> GetFileStream() const
 ```
 
-有关更多详细信息，请参阅[API 参考](./reference/mip-sdk-reference.md)。
+有关更多详细信息，请参阅 [API 参考](./reference/mip-sdk-reference.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-- 查看[文件 API-处理电子邮件文件（c + +）快速入门](quick-email-msg-cpp.md)
-- 查看[文件 API-处理电子邮件文件（c #）快速入门](quick-email-msg-csharp.md)
+- 查看 [文件 API-处理电子邮件文件 (c + +) 快速入门](quick-email-msg-cpp.md)
+- 查看 [文件 API-处理电子邮件文件 (c # ) 快速入门](quick-email-msg-csharp.md)

@@ -1,17 +1,17 @@
 ---
 title: 标签和保护-Microsoft 信息保护 SDK
 description: Microsoft 信息保护软件开发工具包操作。
-author: Pathak-Aniket
-ms.author: v-anikep
+author: msmbaldwin
+ms.author: mbaldwin
 ms.date: 08/20/2020
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: 22cea33a439d8d0ca014095f3f2b7144f112fd93
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.openlocfilehash: 2e18b9ae65a4915807fdcb8fc37dd18396270fee
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565078"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865003"
 ---
 # <a name="labeling-and-pre-existing-protection-in-microsoft-information-protection-sdk"></a>Microsoft 信息保护 SDK 中的标签和预先存在的保护
 

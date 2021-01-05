@@ -1,17 +1,17 @@
 ---
 title: 所需的 API 权限-Microsoft 信息保护 SDK
 description: Microsoft 信息保护软件开发工具包操作所需的 API 权限的技术详细信息。
-author: Pathak-Aniket
-ms.author: v-anikep
+author: msmbaldwin
+ms.author: mbaldwin
 ms.date: 08/20/2020
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: ce44c0d8b65f477fdd7b08f34cfe2aacc890d259
-ms.sourcegitcommit: 6b159e050176a2cc1b308b1e4f19f52bb4ab1340
+ms.openlocfilehash: d1d7e026ffb3b35d2d26f40c6b48baa9a0991a8d
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "95566101"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864866"
 ---
 # <a name="api-permissions-for-the-microsoft-information-protection-sdk"></a>Microsoft 信息保护 SDK 的 API 权限
 

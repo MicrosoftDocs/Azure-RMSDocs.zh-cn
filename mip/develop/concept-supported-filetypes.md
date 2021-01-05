@@ -1,17 +1,17 @@
 ---
 title: 支持的文件类型-Microsoft 信息保护 SDK
 description: 有关受支持的文件类型、文件扩展名以及负责 Microsoft 信息保护软件开发工具包的管理员的保护级别的技术详细信息。
-author: Pathak-Aniket
-ms.author: v-anikep
+author: msmbaldwin
+ms.author: mbaldwin
 ms.date: 08/16/2020
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: ecd0a1ba426cc8b0e1f037d929b3082133fc1fdb
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.openlocfilehash: e247a31b364c40f270538d73815464491fca7647
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565079"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864849"
 ---
 # <a name="file-types-supported-by-the-microsoft-information-protection-sdk"></a>Microsoft 信息保护 SDK 支持的文件类型
 
