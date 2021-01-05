@@ -9,14 +9,15 @@ ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
+ROBOTS: NOINDEX
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 2e82b7c4cd99b5e880cc59db77a5a844d0e28030
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 4f96e1f19d38df201aab9b05cd046e8f49a16c2e
+ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583602"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97805829"
 ---
 # <a name="hold-your-own-key-hyok-details-for-azure-information-protection"></a>保存你自己的密钥 (Azure 信息保护的 HYOK) 详细信息
 
