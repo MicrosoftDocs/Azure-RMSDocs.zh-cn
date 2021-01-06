@@ -1,18 +1,18 @@
 ---
 title: 快速入门 - 使用 C++ MIP SDK 列出可供 Microsoft 信息保护 (MIP) 租户中经过身份验证的用户使用的保护模板
 description: 本快速入门介绍如何使用 Microsoft 信息保护 C++ SDK 保护 API 列出可供用户使用的保护模板 (C++)
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 01/18/2019
-ms.author: v-anikep
+ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: d319af8e65e2eae958ef215d30dfa84c09ae7145
-ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
+ms.openlocfilehash: 62f694248da10c7663c551240b204711b52163d5
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97701639"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865059"
 ---
 # <a name="quickstart-list-protection-templates-c"></a>快速入门：列出保护模板 (C++)
 

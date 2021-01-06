@@ -7,12 +7,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 6923bdf83f76a3e2a30e49bae27e9f7be963a623
-ms.sourcegitcommit: a3f901e479abbe056f8936a96b7253f0826d1415
+ms.openlocfilehash: 41c91ed1453b0819be727d333e15987ee9b3da3a
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "75556021"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865155"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C++)
 
@@ -138,7 +138,7 @@ ms.locfileid: "75556021"
    {
         cout << "An exception occurred... did you specify a valid label ID?\n\n" << e.what() << "'\n";
         system("pause");
-        return 1;
+        return 1; 
    }
 
    // Commit changes, save as a different/output file
@@ -228,17 +228,12 @@ ms.locfileid: "75556021"
 
 生成和测试客户端应用程序。 
 
-1. 使用 F6（生成解决方案  ）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
+1. 使用 F6（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
 2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如先前在“列出敏感度标签”快速入门中采取的方式那样，每次使用提供的 $authority 和 $resourceUrl 值运行 PowerShell 脚本以获取令牌。 
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-   Set $authority to: https://login.windows.net/common/oauth2/authorize
-   Set $resourceUrl to: https://syncservice.o365syncservice.com/
-   Sign in with user account: user1@tenant.onmicrosoft.com
-   Enter access token: <paste-access-token-here>
-   Press any key to continue . . .
 
    Sensitivity labels for your organization:
    Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
@@ -251,21 +246,7 @@ ms.locfileid: "75556021"
    Applying Label ID 074e457c-5848-4542-9a6f-34a182080e7z to c:\Test\Test.docx
    Committing changes
 
-   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-   Set $authority to: https://login.windows.net/common/oauth2/authorize
-   Set $resourceUrl to: https://aadrm.com
-   Sign in with user account: user1@tenant.onmicrosoft.com
-   Enter access token: <paste-access-token-here>
-   Press any key to continue . . .
-
    Label committed to file: c:\Test\Test_labeled.docx
-   Press any key to continue . . .
-
-   Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-   Set $authority to: https://login.windows.net/94f69844-8d34-4794-bde4-3ac89ad2b664/oauth2/authorize
-   Set $resourceUrl to: https://aadrm.com
-   Sign in with user account: user1@tenant.onmicrosoft.com
-   Enter access token: <paste-access-token-here>
    Press any key to continue . . .
 
    Getting the label committed to file: c:\Test\Test_labeled.docx

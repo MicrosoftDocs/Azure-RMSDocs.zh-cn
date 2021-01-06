@@ -1,17 +1,17 @@
 ---
 title: 如何降级/删除需要理由的标签 (C++)
-description: 本文可帮助你了解如何降级或删除需要理由的标签 (C++)。
-author: Pathak-Aniket
+description: 本文可帮助你了解如何降级或删除需要理由的标签。
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/14/2020
-ms.author: v-anikep
-ms.openlocfilehash: dd02fe709c0fc946ba7bb5d0c5fec82a0688540c
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.author: mbaldwin
+ms.openlocfilehash: d6ffccc19a5d2343fdb175b3c59ec52be5c7ad0f
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96536005"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865274"
 ---
 # <a name="microsoft-information-protection-sdk-file-api---action-justification-for-lowering-a-sensitivity-label-on-a-file-c"></a>Microsoft 信息保护 SDK 文件 API - 降低文件上敏感度标签的级别的操作理由 (C++)
 
@@ -164,16 +164,9 @@ system("pause");
 
 1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 如先前在“设置/获取敏感度标签”快速入门中采取的方式那样，每次使用提供的 $authority 和 $resourceUrl 值运行 PowerShell 脚本以获取令牌。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireOAuth2Token()` 方法时，应用程序都会提示输入访问令牌。 
 
-  ```console
-    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-    Set $authority to: https://login.windows.net/common
-    Set $resourceUrl to: https://syncservice.o365syncservice.com/
-    Sign in with user account: user1@tenant.onmicrosoft.com
-    Enter access token: <paste-access-token-here>
-    Press any key to continue . . .
-
+  ```console   
     Non-Business : 87ba5c36-17cf-14793-bbc2-bd5b3a9f95cz
     Public : 83867195-f2b8-2ac2-b0b6-6bb73cb33afz
     General : f42a3342-8706-4288-bd31-ebb85995028z
@@ -184,12 +177,6 @@ system("pause");
     Applying Label ID f55c2dea-db0f-47cd-8520-a52e1590fb6z to c:\Test\Test.docx
     Committing changes
 
-    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:
-    Set $authority to: https://login.windows.net/common
-    Set $resourceUrl to: https://aadrm.com
-    Sign in with user account: user1@tenant.onmicrosoft.com
-    Enter access token: <paste-access-token-here>
-    Press any key to continue . . .
 
     Label committed to file: c:\Test\Test.docx
     Press any key to continue . . .
@@ -204,7 +191,7 @@ system("pause");
     Getting the label committed to file: c:\Test\Test_labeled.docx
     Name: Highly Confidential
     Id: f55c2dea-db0f-47cd-8520-a52e1590fb6z
-    Press any key to continue . . .
+    Press any key to continue . . . 
 
     Applying new Label ID f42a3342-8706-4288-bd31-ebb85995028z to c:\Test\Test_labeled.docx
     Please provide justification for downgrading a label:

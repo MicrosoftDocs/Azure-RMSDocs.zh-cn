@@ -1,17 +1,17 @@
 ---
 title: 文件 API - 处理电子邮件 .msg 文件 (C++)
 description: 本文可帮助你了解如何使用 MIP SDK 文件 API 处理 .msg 文件 (C++)。
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 04/08/2020
-ms.author: v-anikep
-ms.openlocfilehash: b070a8ef35ff1bb71a6a87b19621f347626ef085
-ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
+ms.author: mbaldwin
+ms.openlocfilehash: 111b928538dd6222da55cb2ee5664549e272f785
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97701605"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865308"
 ---
 # <a name="file-api---process-email-msg-files-c"></a>文件 API - 处理电子邮件 .msg 文件 (C++)
 

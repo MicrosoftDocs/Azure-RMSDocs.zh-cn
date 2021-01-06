@@ -1,18 +1,18 @@
 ---
 title: 快速入门 - 使用 MIP SDK C# 包装器列出可供 Microsoft 信息保护 (MIP) 租户中经过身份验证的用户使用的保护模板
 description: 本快速入门介绍如何使用 Microsoft 信息保护 SDK 保护 API C# 包装器列出可供用户使用的保护模板 (C#)
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
-ms.author: v-anikep
+ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: 88c385d783df55b8270740357372c6345da8701a
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.openlocfilehash: 28de8cb2b14aef158707dc0b4dd7cb2e3f8a6947
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535914"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865053"
 ---
 # <a name="quickstart-list-templates-c"></a>快速入门：列出模板 (C#)
 

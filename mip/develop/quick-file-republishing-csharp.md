@@ -1,17 +1,17 @@
 ---
 title: 操作说明 - 重新发布场景（C#）
 description: 本文将帮助你了解如何将保护处理程序重复用于场景的重新发布 (C#)。
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 05/01/2020
-ms.author: v-anikep
-ms.openlocfilehash: c3044feb585e1e3d843f906711644f2ae861b1b5
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.author: mbaldwin
+ms.openlocfilehash: 45855aac47210e434315b31b6284251e25f3318d
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535869"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865189"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-republishing-quickstart-c"></a>Microsoft 信息保护 SDK - 文件 API 重新发布快速入门 (C#)
 

@@ -2,17 +2,17 @@
 title: 快速入门 - 使用 C++ MIP SDK 保护 API 加密/解密文本
 description: 本快速入门介绍如何使用 C++ Microsoft 信息保护 SDK 保护 API，通过保护模板来加密和解密临时文本 (C++)
 services: information-protection
-author: Pathak-Aniket
+author: msmbaldwin
 ms.service: information-protection
 ms.topic: quickstart
 ms.date: 03/30/2020
-ms.author: v-anikep
-ms.openlocfilehash: 1258bfcd6c47611b439a29406ed0e78b644a5803
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.author: mbaldwin
+ms.openlocfilehash: 2875af45fb33a89398548cff45d1d6481c3a7ed7
+ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535835"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865138"
 ---
 # <a name="quickstart-encryptdecrypt-text-using-mip-sdk-c"></a>快速入门：使用 MIP SDK (C++) 加密/解密文本
 
