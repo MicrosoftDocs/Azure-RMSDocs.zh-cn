@@ -4,7 +4,7 @@ description: 介绍管理员如何跟踪受保护文档的文档访问，以及�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/24/2020
+ms.date: 01/07/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 6c83aa89c06dbf7c6cab5ac014db72eed5e91f06
-ms.sourcegitcommit: b9d7986590382750e63d9059206a40d28fc63eef
+ms.openlocfilehash: 7b60438ad3d1e8a971c58a7f29b2f8b41dd84c91
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764129"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98163733"
 ---
 # <a name="administrator-guide-track-and-revoke-document-access-with-azure-information-protection-public-preview"></a>管理员指南：使用 Azure 信息保护跟踪和撤消文档访问 (公开预览版) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "97764129"
 >
 >***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [管理员指南：配置和使用适用于 AIP 的文档跟踪使用经典客户端](client-admin-guide-document-tracking.md)。 *
 
-如果已升级到 [版本 2.9.109.0](unifiedlabelingclient-version-release-history.md#version-291090-public-preview) 或更高版本，则在下次通过 AIP 统一标签客户端打开时，将自动注册尚未注册跟踪的所有受保护文档。
+如果已升级到 [版本 2.9.111.0](unifiedlabelingclient-version-release-history.md#version-291110) 或更高版本，则在下次通过 AIP 统一标签客户端打开时，将自动注册尚未注册跟踪的所有受保护文档。 支持跟踪和撤消受保护的文档，即使它们未标记。
 
 为跟踪注册文档可使 [Microsoft 365 全局管理员](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles) 跟踪访问详细信息，包括成功的访问事件和拒绝的尝试，并根据需要撤消访问权限。 
 

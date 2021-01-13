@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a3b4f110b1958ec055720da218c52cce4c3fc0f4
-ms.sourcegitcommit: f944025b6c026906f0010c9e7f9d8d54f20a6be7
+ms.openlocfilehash: 3f0093e2877ffe15232ed5704dcf2567b8ed99c4
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97705711"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164175"
 ---
 # <a name="requirements-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的要求
 
@@ -154,7 +154,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 如果标签没有自动标记条件，请参阅下面的 [替代配置说明](#restriction-your-labels-do-not-have-auto-labeling-conditions) 。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)
 - [将敏感度标签自动应用到内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)
@@ -287,7 +287,11 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 #### <a name="use-powershell-with-a-disconnected-computer"></a>将 PowerShell 用于断开连接的计算机
 
-若要仅使用 PowerShell 支持断开连接的计算机，请执行以下步骤：
+执行以下过程，仅使用 PowerShell 支持断开连接的计算机。
+
+> [!IMPORTANT]
+> [Azure 中国世纪互联扫描服务器](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#manage-azure-information-protection-content-scan-jobs)的管理员 *必须* 使用此过程来管理其内容扫描作业。
+> 
 
 **仅使用 PowerShell 管理内容扫描作业**：
 

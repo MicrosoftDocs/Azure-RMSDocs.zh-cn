@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3deab3f361667a79905ab91842361d270b4323d7
-ms.sourcegitcommit: b9d7986590382750e63d9059206a40d28fc63eef
+ms.openlocfilehash: ccedda605f736647766a0a5b2465e9ef90f2dbcc
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764163"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164141"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -51,7 +51,7 @@ FUTURE task - reorganize this topic by feature type so that admins can read rela
 > [!IMPORTANT]
 > 不要在字符串值中使用空格。 这些字符串值中的空白字符串将阻止应用标签。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [标签策略高级设置语法](#label-policy-advanced-settings)
 - [标签高级设置语法](#label-advanced-settings)
@@ -159,13 +159,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 使用最后一个策略设置，使用相同的逻辑应用标签策略高级设置。
 
-> [!NOTE]
-> 在当前 GA 版中，" [OutlookDefaultLabel](#set-a-different-default-label-for-outlook) 高级标签" 策略设置存在例外，可用于为 Outlook 设置不同的默认标签。
-> 
-> 如果 [OutlookDefaultLabel](#set-a-different-default-label-for-outlook) 设置发生冲突，则根据管理中心中的策略顺序，从第一个策略设置中获取配置。 
->
-> 此异常已作为 [2.9.109.0](unifiedlabelingclient-version-release-history.md#version-291090-public-preview) 公共预览版的一部分被删除。
-
 ## <a name="advanced-setting-references"></a>高级设置引用
 
 以下部分介绍标签策略和标签的可用高级设置：
@@ -179,7 +172,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 |功能  |高级设置  |
 |---------|---------|
-|**Outlook 和电子邮件设置**     | - [配置标签以在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook) <br> - [自定义 Outlook 弹出消息](#customize-outlook-popup-messages) <br>- [在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)<br> - [使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling) <br>- [对于带有附件的电子邮件，应用与这些附件的最高分类匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)<br>- [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) <br>- [在 Outlook 中实现弹出消息，警告、调整或阻止发送电子邮件](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)   <br>- [为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook) |
+|**Outlook 和电子邮件设置**     | - [配置标签以在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook) <br> - [自定义 Outlook 弹出消息](#customize-outlook-popup-messages) <br>- [在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)<br> - [使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling) <br>- [对于带有附件的电子邮件，应用与这些附件的最高分类匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)<br>- [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients) <br>- [在 Outlook 中实现弹出消息，警告、调整或阻止发送电子邮件](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)   <br>- [为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)     |
 |**PowerPoint 设置** | - [避免从 PowerPoint 删除包含指定文本且不是页眉/页脚的形状](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers)<br>- [从 PowerPoint 自定义布局中显式删除外部内容标记](#extend-external-marking-removal-to-custom-layouts)<br>- [删除页眉和页脚中特定形状名称的所有形状，而不是按形状内的文本删除形状](#remove-all-shapes-of-a-specific-shape-name)  |
 |**文件资源管理器设置**     | - [在文件资源管理器中始终向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) <br>  - [在文件资源管理器中禁用自定义权限](#disable-custom-permissions-in-file-explorer)      |
 |**性能改进设置**     | - [限制 CPU 消耗](#limit-cpu-consumption) <br>- [限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)        |
@@ -205,7 +198,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**EnableCustomPermissionsForCustomProtectedFiles**|[对于受自定义权限保护的文件，始终在文件资源管理器中向用户显示自定义权限](#for-files-protected-with-custom-permissions-always-display-custom-permissions-to-users-in-file-explorer) |
 |**EnableLabelByMailHeader**|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |**EnableLabelBySharePointProperties**|[从 Secure Islands 和其他标记解决方案迁移标签](#migrate-labels-from-secure-islands-and-other-labeling-solutions)
-| **EnableOutlookDistributionListExpansion** | [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) |
+| **EnableOutlookDistributionListExpansion** | [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients) |
 | **EnableTrackAndRevoke** | [ (公共预览版关闭文档跟踪功能) ](#turn-off-document-tracking-features-public-preview) |
 |**HideBarByDefault**|[在 Office 应用程序中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
 |**JustificationTextForUserText** | [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels) |
@@ -214,7 +207,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**OutlookBlockUntrustedCollaborationLabel**|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |**OutlookCollaborationRule**| [自定义 Outlook 弹出消息](#customize-outlook-popup-messages)|
 |**OutlookDefaultLabel**|[为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)|
-|**OutlookGetEmailAddressesTimeOutMSProperty** | 在为通讯组列表[中的收件人实施阻止消息时，修改在 Outlook 中展开通讯组列表的超时](#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview))  |
+|**OutlookGetEmailAddressesTimeOutMSProperty** | 在为通讯组列表[中的收件人实施阻止消息时，修改在 Outlook 中展开通讯组列表的超时](#expand-outlook-distribution-lists-when-searching-for-email-recipients))  |
 |**OutlookJustifyTrustedDomains**|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |**OutlookJustifyUntrustedCollaborationLabel**|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |**OutlookRecommendationEnabled**|[在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)|
@@ -468,7 +461,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 |设置  |说明  |
 |---------|---------|
 |**WordShapeNameToRemove**     |  删除 Word 文档中的任何形状，其中的形状名称与 **WordShapeNameToRemove** advanced 属性中定义的名称相匹配。  <br><br>有关详细信息，请参阅 [使用 WordShapeNameToRemove 高级属性](#use-the-wordshapenametoremove-advanced-property)。     |
-|**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参阅： <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
+|**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参见: <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
 |     |         |
 
 ### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
@@ -522,7 +515,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例:
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -564,7 +557,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkin
 Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
 ```
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [多行页眉或页脚](#multiline-headers-or-footers)
 - [针对 PowerPoint 的优化](#optimization-for-powerpoint)
@@ -652,7 +645,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointRemoveAllShapesBy
 > 如果要定义 **PowerPointRemoveAllShapesByShapeName**，请同时定义 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 和 [PowerPointShapeNameToRemove](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers) ，以避免删除比预期更多的形状。
 >
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [查找要用作页眉或页脚的形状的名称](#find-the-name-of-the-shape-that-youre-using-as-a-header-or-footer)
 - [删除 PowerPoint 中自定义布局的外部内容标记](#remove-external-content-marking-from-custom-layouts-in-powerpoint)
@@ -830,7 +823,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:h
 > [!TIP]
 > 若要确保即使在从 Outlook 外部共享文档 (文件 > 共享时显示弹出窗口， **> 附加副本)**，还需要配置 [PostponeMandatoryBeforeSave](#remove-not-now-for-documents-when-you-use-mandatory-labeling) 高级设置。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [实现警告、对齐或阻止特定标签的弹出消息](#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels)
 - [为不带标签的电子邮件或附件实现警告、对齐或阻止弹出消息](#to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label)
@@ -874,7 +867,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookBlockUntrustedCollab
 >有关详细信息，请参阅 [自定义 Outlook 弹出消息](#customize-outlook-popup-messages)。
 > 
 > [!TIP]
-> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) 高级设置。
+> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#expand-outlook-distribution-lists-when-searching-for-email-recipients) 高级设置。
 >
 
 #### <a name="to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels"></a>为特定标签配置的弹出消息免除域名
@@ -908,7 +901,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookJustifyTrustedDomain
 ```
 
 > [!NOTE]
-> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) 高级设置。
+> 若要确保根据需要显示你的块消息（即使是位于 Outlook 通讯组列表中的收件人），请确保添加 [EnableOutlookDistributionListExpansion](#expand-outlook-distribution-lists-when-searching-for-email-recipients) 高级设置。
 >
 
 ### <a name="to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label"></a>为不带标签的电子邮件或附件实现警告、对齐或阻止弹出消息
@@ -984,7 +977,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookOverrideUnlabeledCol
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookUnlabeledCollaborationActionOverrideMailBodyBehavior="Warn"}
 ```
 
-## <a name="expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview"></a>搜索电子邮件收件人 (公开预览版时展开 Outlook 通讯组列表) 
+## <a name="expand-outlook-distribution-lists-when-searching-for-email-recipients"></a>搜索电子邮件收件人时展开 Outlook 通讯组列表
 
 此配置使用策略 [高级设置](#configuring-advanced-settings-for-the-client-via-powershell) ，你必须使用 Office 365 Security & 相容性中心 PowerShell 进行配置。
 
@@ -1121,7 +1114,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅 [从其他标签解决方案中删除页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
-示例:
+示例：
 
 - [示例 1：相同标签名称的一对一映射](#example-1-one-to-one-mapping-of-the-same-label-name)
 - [示例 2：不同标签名称的一对一映射](#example-2-one-to-one-mapping-for-a-different-label-name)
@@ -1137,7 +1130,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -1157,7 +1150,7 @@ Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Se
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -1177,7 +1170,7 @@ Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomPrope
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在本示例中：
+在此示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -1281,7 +1274,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProp
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在本示例中：
+在此示例中：
 
 - 敏感度标签命名为 " **机密** "，并创建名为 "Secret" 的自定义 **属性，其** 值为 " **机密**"。
 
@@ -1624,7 +1617,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 "nodes" : []
 ```
 
-您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参阅：
+您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参见:
 
 - [规则条件语法](#rule-condition-syntax)
 - [规则操作语法](#rule-action-syntax)

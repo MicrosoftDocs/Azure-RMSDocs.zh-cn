@@ -13,12 +13,12 @@ ROBOTS: NOINDEX
 ms.reviewer: shakella
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ca365962d470d009411e4e02de885acd2e7fb043
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 7c76e7e79acb0cd12bfcbe2d71a1fee3ce78b1ba
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806917"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164277"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>配置 Azure 信息保护标签的 Exchange Online 邮件流规则
 
@@ -33,9 +33,9 @@ ms.locfileid: "97806917"
 
 - 默认标签为不应用保护的“常规”。 对于有此标签且在外部发送的电子邮件，额外应用“不转发”保护操作。
 
-- 如果有“机密\合作伙伴”标签的附件通过电子邮件方式发送给组织外部人员，且电子邮件不受保护，请额外应用“仅加密”保护操作。
+- 如果通过电子邮件将包含 **机密 \ 合作伙伴** 标签的附件通过电子邮件发送给组织外部的人员，而不保护电子邮件，请应用 "仅加密" 保护操作。
 
-如果电子邮件受保护，将保护配置应用为操作的邮件流规则会遭忽略。 例如，如果电子邮件受“不转发”保护，Exchange 邮件流规则无法将其更改为使用“仅加密”选项。  
+如果电子邮件受保护，将保护配置应用为操作的邮件流规则会遭忽略。 例如，通过 "不转发" 保护的电子邮件无法被 Exchange 邮件流规则更改为使用 "仅加密" 选项。  
 
 可以扩展和修改这些示例。 例如，添加更多条件。 有关配置邮件流规则的详细信息，请参阅 exchange online 文档 [中的邮件流规则 (传输规则) 在 Exchange online 中](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 。
 
@@ -95,7 +95,7 @@ ms.locfileid: "97806917"
 
 若要详细了解“不转发”选项，请参阅[适用于电子邮件的“不转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)。
 
-### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>示例 2：向在组织外部发送时附件包含“机密/合作伙伴”标签的电子邮件应用“仅加密”选项的规则
+### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>示例2：当电子邮件具有标记为 " **机密 \ 伙伴** " 的附件，并且在组织外部发送这些电子邮件时，将 "仅加密" 选项应用于电子邮件的规则
 
 在此示例中，机密\合作伙伴子标签的 GUID 为 0e421e6d-ea17-4fdb-8f01-93a3e71333b8。 替换为要对此规则使用的自己的标签或子标签 GUID。 
 
@@ -123,7 +123,7 @@ ms.locfileid: "97806917"
 
 6. 选择“保存” 
 
-若要详细了解“加密”选项，请参阅[适用于电子邮件的“仅加密”选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
+有关加密选项的详细信息，请参阅 [电子邮件的仅加密选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
 
 
 ## <a name="next-steps"></a>后续步骤

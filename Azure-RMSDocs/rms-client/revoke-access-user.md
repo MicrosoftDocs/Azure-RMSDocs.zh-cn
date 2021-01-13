@@ -4,7 +4,7 @@ description: 介绍最终用户如何使用 AIP 客户端撤消受保护文档�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 10/21/2020
+ms.date: 01/07/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: f834aa10a522336067cc68ce9edd20284488b888
-ms.sourcegitcommit: b9d7986590382750e63d9059206a40d28fc63eef
+ms.openlocfilehash: 294d93666eed55616bbe033215abef0e9dcf62b7
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97764095"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98163767"
 ---
 # <a name="user-guide-revoke-document-access-with-azure-information-protection-public-preview"></a>用户指南：使用 Azure 信息保护撤销文档访问 (公开预览版) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "97764095"
 >
 >***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [用户指南：使用 AIP 经典客户端时跟踪和撤销文档](client-track-revoke.md)。 *
 
-本文介绍如何撤消 Microsoft Office 保护的文档的访问权限。
+本文介绍如何撤消 Microsoft Office 保护的文档的访问权限。 支持跟踪和撤消受保护的文档，即使它们未标记。
 
 吊销受保护文档的访问权限可以防止其他用户访问该文档，即使您之前已向他们授予了访问权限。 有关详细信息，请参阅 [用户指南：通过 Azure 信息保护统一标签客户端对其进行分类和保护](clientv2-classify-protect.md)。
 

@@ -12,24 +12,24 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 69a0f87bd47e164f709dee4159a810141515a343
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 4b936baf799808fadbdaaefc0ae1fd55a6853fb2
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583687"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164432"
 ---
 # <a name="what-is-the-azure-information-protection-app-for-ios-or-android"></a>什么是适用于 iOS 或 Android 的 Azure 信息保护应用？
 
 >***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 适用于 iOS 和 Android 的 Azure 信息保护 (AIP) mobile 应用程序是一个查看器应用，可用于查看受保护的电子邮件、Pdf、图像和文本文件，如果这些文件类型的常规应用不支持保护，则会很有用。 
 
 例如，如果受保护的电子邮件在你的电子邮件移动应用中显示为附件，你可能想要使用 AIP 移动应用来查看该电子邮件。
 
-有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)。
+有关应用中支持的保护功能的详细信息， [支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)。 
 
 > [!NOTE]
 > AIP 移动应用仅适用于 *查看器，* 并且不允许你创建新的电子邮件或回复电子邮件，或者创建或编辑受保护的文件。 AIP 移动应用程序也无法打开受保护的 Pdf 或电子邮件的附件。
@@ -39,26 +39,19 @@ ms.locfileid: "97583687"
 
 从以下位置之一下载并安装 AIP 移动应用：
 
-**iTunes**
+**iTunes**：
 
-:::image type="content" source="../media/develop/ios-icon.png" alt-text="iTunes" link="https://apps.apple.com/app/microsoft-rights-management/id689516635" border="false":::
+:::image type="content" source="../media/ios-icon.png" alt-text="iTunes" link="https://apps.apple.com/app/microsoft-rights-management/id689516635" border="false":::  
 
-**Google Play**
+**Google Play**：
 
-:::image type="content" source="../media/develop/android-icon.png" alt-text="Google Play" link="https://play.google.com/store/apps/details?id=com.microsoft.ipviewer" border="false":::
+:::image type="content" source="../media/android-icon.png" alt-text="Google Play" link="https://play.google.com/store/apps/details?id=com.microsoft.ipviewer" border="false"::: 
 
-**AIP 下载页面**
-
-:::image type="content" source="../media/aip-icon.png" alt-text="Azure 信息保护下载页" border="false":::
-
-选择 "**移动设备**" 部分中的 [iOS](https://apps.apple.com/app/microsoft-rights-management/id689516635)或 [Android](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)图标。
-
-**公司门户**
+**公司门户**：
 
 如果你的移动设备由 Microsoft Intune 管理，则你可以从公司门户下载 AIP 移动应用。 
 
-有关详细信息，请与系统管理员联系。
-
+有关详细信息，请与系统管理员联系。 
 ## <a name="ios-view-protected-files-on-your-device"></a>iOS：在设备上查看受保护的文件
 
 [安装 AIP 移动应用](#download-and-install-the-aip-app-for-your-device)后，打开受保护的电子邮件或文件。 

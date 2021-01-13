@@ -12,12 +12,12 @@ ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ROBOTS: NOINDEX
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 4f96e1f19d38df201aab9b05cd046e8f49a16c2e
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 9b608b8f38c157320558cf5ae5011ef601773b2e
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805829"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164226"
 ---
 # <a name="hold-your-own-key-hyok-details-for-azure-information-protection"></a>保存你自己的密钥 (Azure 信息保护的 HYOK) 详细信息
 
@@ -81,7 +81,7 @@ HYOK 保护不提供基于云的保护的优点，并且通常以 "数据不透�
 
 Microsoft 365 服务和其他联机服务无法对 HYOK 保护的内容进行解密。
 
-对于电子邮件，此功能损失包括恶意软件扫描器、Encrypt-Only 保护、数据丢失防护 (DLP) 解决方案、邮件路由规则、日记、电子数据展示、存档解决方案和 Exchange ActiveSync。
+对于电子邮件，此功能损失包括恶意软件扫描器、仅加密保护、数据丢失防护 (DLP) 解决方案、邮件路由规则、日记、电子数据展示、存档解决方案和 Exchange ActiveSync。
 
 用户可能不理解为什么某些设备无法打开受 HYOK 保护的电子邮件，从而导致对技术支持的额外呼叫。 在通过电子邮件配置 HYOK 保护时，请注意这些严重限制。
 

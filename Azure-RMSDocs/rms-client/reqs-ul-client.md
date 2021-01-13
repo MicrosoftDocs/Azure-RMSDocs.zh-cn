@@ -4,19 +4,19 @@ description: 针对需要了解在企业网络上安装统一标签客户端的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/27/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c93b0a338f25b058e517c4c2bb746ccaa6e41a69
-ms.sourcegitcommit: 0ac52ea741f205692406f0f82c74c65c23ee3467
+ms.openlocfilehash: dbd9d86e1ce2103f144e51314950cf67be31eef6
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2020
-ms.locfileid: "97792307"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164379"
 ---
 # <a name="additional-requirements-for-installing-the-unified-labeling-client-on-enterprise-networks"></a>在企业网络上安装统一标签客户端的其他要求
 
@@ -24,7 +24,7 @@ ms.locfileid: "97792307"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
->***适用于以下内容的说明**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
+>*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
 
 在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序： [Azure 信息保护的要求](../requirements.md)。 
 
@@ -100,13 +100,12 @@ ms.locfileid: "97792307"
 |PowerPoint     |   `MSIP.PowerPointAddin`      |
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
-    
 
 ## <a name="next-steps"></a>后续步骤
 
 继续  [管理指南：为用户安装 Azure 信息保护统一标签客户端](clientv2-admin-guide-install.md)。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [客户端文件和使用情况日志记录](clientv2-admin-guide-files-and-logging.md)
 

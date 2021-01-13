@@ -12,18 +12,18 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f124e6c1bbf8b77760744885492e1c5663d02443
-ms.sourcegitcommit: 0f76655985b49b4b8868d5f8893e20978f4dc4da
+ms.openlocfilehash: 9e72c64fe59626f5f670712a2503308047e1aff8
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97747114"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164294"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
-> **适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+> 适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
-> 适用 **于** [Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *适用 **于** [Windows 的 Azure 信息保护客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -55,7 +55,7 @@ ms.locfileid: "97747114"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 标签迁移具有很多优点，但不可逆。 在迁移之前，请确保你已了解以下更改和注意事项：
 
@@ -171,7 +171,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 ###### <a name="footnote-1"></a>脚注 1
 
-在 Outlook 中，保留保护，但有一个例外：在使用 Encrypt-Only 选项保护电子邮件时，将删除该保护。
+在 Outlook 中，保留保护，但有一个例外：在使用 "仅加密" 选项保护电子邮件时 (**加密**) ，则会删除该保护。
 
 
 ###### <a name="footnote-2"></a>脚注 2
@@ -294,7 +294,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 如果尚未这样做，请安装 Azure 信息保护统一标签客户端。 
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [Azure 信息保护统一标签客户端-版本发行历史记录和支持策略](rms-client/unifiedlabelingclient-version-release-history.md)
 - [Azure 信息保护统一标记客户端管理员指南](rms-client/clientv2-admin-guide.md)

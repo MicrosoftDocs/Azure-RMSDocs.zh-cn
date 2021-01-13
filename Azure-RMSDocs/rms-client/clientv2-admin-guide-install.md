@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 016dfba5d945c0411b3c6858922a2e919282e94e
-ms.sourcegitcommit: 73befea74644d272e2d8d1d4b95df55c7741ccbe
+ms.openlocfilehash: 69cf01252a95476a41ac5f82f7d0546afe285041
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762343"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164498"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -24,7 +24,7 @@ ms.locfileid: "97762343"
 >
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
 >
->***适用于以下内容的说明**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
+>*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
 
 在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序： [Azure 信息保护要求](../requirements.md) ，以及 [在企业网络上安装统一标签客户端的其他要求](reqs-ul-client.md)。
 
@@ -88,7 +88,7 @@ Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word�
     |参数  |说明  |
     |---------|---------|
     |**AllowTelemetry = 0**     |    使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。     |
-    |**ServiceLocation**     |  如果要在运行 Office 2010 的计算机上安装客户端，并且你的用户不是其计算机上的本地管理员，或者你不希望系统向他们发出提示，请使用此参数。 <br><br>有关详细信息，请参阅： <br>- [有关 **ServiceLocation** 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter) <br> - [AIP for Windows 和 Office 版本（扩展支持）](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)      |
+    |**ServiceLocation**     |  如果要在运行 Office 2010 的计算机上安装客户端，并且你的用户不是其计算机上的本地管理员，或者你不希望系统向他们发出提示，请使用此参数。 <br><br>有关详细信息，请参见: <br>- [有关 **ServiceLocation** 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter) <br> - [AIP for Windows 和 Office 版本（扩展支持）](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)      |
 
     | | |
 

@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/29/2020
+ms.date: 01/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e4193a0345708d4c90e3469df8b1102d45a85af7
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: ce99003d95edd8202a1fddb2bb5eae2559100055
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805948"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164396"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -69,33 +69,33 @@ ms.locfileid: "97805948"
 
 统一标签客户端取代了 Azure 信息保护经典客户端。 若要将特性和功能与经典客户端进行比较，请参阅 [比较适用于 Windows 计算机的标记解决方案](use-client.md#compare-the-labeling-solutions-for-windows-computers)。
 
-## <a name="version-291090-public-preview"></a>版本 2.9.109.0 (公共预览版) 
+## <a name="version-291110"></a>版本2.9.111。0
 
-统一标记扫描器和客户端版本2.9.109。0
+统一标记扫描器和客户端版本2.9.111。0
 
-**版本** 12/16/2020
+**版本** 1/13/2021
 
 此版本包括以下新功能、修补程序和增强功能，适用于统一标记扫描器和客户端：
 
 - **用于扫描程序的新功能**：
 
     - [对断开连接的扫描程序服务器的 PowerShell 支持](#powershell-support-for-disconnected-scanner-servers)
-    - [内容扫描作业中的 NFS 存储库支持](#support-for-nfs-repositories-in-content-scan-jobs)
+    - [内容扫描作业中的 NFS 存储库支持](#support-for-nfs-repositories-in-content-scan-jobs-public-preview)
     - [添加了对其他敏感信息类型的支持](#added-support-for-additional-sensitive-information-types)
 
 - **适用于客户端的新功能**：
 
-    - [跟踪文档访问权限并撤消访问权限](#track-document-access-and-revoke-access)
+    - [跟踪文档访问权限并撤消访问权限](#track-document-access-and-revoke-access-public-preview)
     - [添加了对其他敏感信息类型的支持](#added-support-for-additional-sensitive-information-types)
 
-- **修补和改进：**
+- **修补和改进**：
 
     - [统一标签扫描程序的修复和改进](#fixes-and-improvements-for-the-unified-labeling-scanner)
     - [统一标签客户端的修复和改进](#fixes-and-improvements-for-the-unified-labeling-client)
 
 ### <a name="powershell-support-for-disconnected-scanner-servers"></a>对断开连接的扫描程序服务器的 PowerShell 支持
 
-[Azure 信息保护本地扫描器](../deploy-aip-scanner.md)现在支持管理内容扫描作业，适用于无法通过 PowerShell 连接到 internet 的扫描仪服务器。
+[Azure 信息保护本地扫描器](../deploy-aip-scanner.md)现在支持通过 PowerShell 管理内容扫描作业，对于无法连接到 internet 的扫描仪服务器（如使用[Azure 中国世纪互联扫描仪服务器](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#manage-azure-information-protection-content-scan-jobs)）。
 
 为了支持断开连接的扫描程序服务器，我们添加了以下新 cmdlet：
 
@@ -114,7 +114,7 @@ ms.locfileid: "97805948"
 
 有关详细信息，请参阅 [扫描程序服务器何时无法建立 internet 连接](../deploy-aip-scanner-prereqs.md#restriction-the-scanner-server-cannot-have-internet-connectivity) 和 [配置扫描仪](../deploy-aip-scanner-configure-install.md#configure-the-scanner-in-the-azure-portal)。
 
-### <a name="support-for-nfs-repositories-in-content-scan-jobs"></a>内容扫描作业中的 NFS 存储库支持
+### <a name="support-for-nfs-repositories-in-content-scan-jobs-public-preview"></a> (公开预览版的内容扫描作业中的 NFS 存储库支持) 
 
 现在，除了 SMB 文件共享和 SharePoint 存储库外，还可以将 NFS 存储库添加到内容扫描作业。
 
@@ -136,15 +136,15 @@ ms.locfileid: "97805948"
 
 有关详细信息，请参阅 Microsoft 365 文档中的 [敏感信息类型实体定义](/microsoft-365/compliance/sensitive-information-type-entity-definitions) 。
 
-### <a name="track-document-access-and-revoke-access"></a>跟踪文档访问权限并撤消访问权限
+### <a name="track-document-access-and-revoke-access-public-preview"></a> (公共预览版跟踪文档访问和撤销访问权限) 
 
-升级到版本2.9.109.0 后，尚未注册跟踪的所有文档将在下一次在安装了 AIP 统一标签客户端的计算机上打开。
+升级到版本2.9.111.0 后，尚未注册跟踪的所有受保护文档将在下一次在安装了 AIP 统一标签客户端的计算机上打开。 支持跟踪和撤消受保护的文档，即使它们未标记。
 
 让你的文档注册到跟踪使管理员能够使用 PowerShell 来跟踪文档访问，并在需要时撤销访问权限。
 
 升级后，最终用户还可以撤消对已保护文档的访问权限。 若要撤消 Microsoft Office 应用的访问权限，请使用 "**敏感度**" 菜单上的 "新建 **吊销访问权限**" 选项。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [管理员指南：使用 Azure 信息保护跟踪和撤消文档访问](track-and-revoke-admin.md)
 - [用户指南：使用 Azure 信息保护撤销文档访问](revoke-access-user.md)
@@ -160,14 +160,13 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 
 ### <a name="fixes-and-improvements-for-the-unified-labeling-scanner"></a>统一标签扫描程序的修复和改进
 
-[Azure 信息保护统一标记扫描器](../deploy-aip-scanner.md)的版本2.9.109.0 中提供了以下修补程序：
+[Azure 信息保护统一标记扫描器](../deploy-aip-scanner.md)的版本2.9.111.0 中提供了以下修补程序：
 
 - 添加了对 **-**) [扫描程序数据库](../deploy-aip-scanner-prereqs.md) 名称中的连字符 (的支持
 - 当 "**[基于内容的标签文件](../deploy-aip-scanner-configure-install.md#create-a-content-scan-job)**" 选项设置为 "**关闭**" 时，报表中的更新
 - [改进了](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance) 大量信息类型匹配的内存消耗
 - 支持以斜杠 (结尾的 [SharePoint 本地](../deploy-aip-scanner-prereqs.md#sharepoint-requirements) 路径 **/**) 
 - 提高了 SharePoint 扫描 [速度](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance)
-
 - 支持在扫描 SharePoint 服务器时 [避免超时](clientv2-admin-guide-customizations.md#avoid-scanner-timeouts-in-sharepoint) 。
 
 ### <a name="fixes-and-improvements-for-the-unified-labeling-client"></a>统一标签客户端的修复和改进
@@ -182,9 +181,9 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 
 - [建议的标签](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 和 [视觉标记](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do) 按预期应用于 Outlook。 
 
-- 添加了对 [在 Outlook 通讯组列表中查找收件人](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview)的支持，例如在配置 [OutlookBlockTrustedDomains](clientv2-admin-guide-customizations.md#to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels) 和 [OutlookBlockUntrustedCollaborationLabel](clientv2-admin-guide-customizations.md#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels) 设置时。
+- 添加了对 [在 Outlook 通讯组列表中查找收件人](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients)的支持，例如在配置 [OutlookBlockTrustedDomains](clientv2-admin-guide-customizations.md#to-exempt-domain-names-for-pop-up-messages-configured-for-specific-labels) 和 [OutlookBlockUntrustedCollaborationLabel](clientv2-admin-guide-customizations.md#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels) 设置时。
 
-    当启用此功能时，我们建议您还会引发默认超时值，如 [OutlookGetEmailAddressesTimeOutMSProperty](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients-public-preview) 设置中所定义。
+    当启用此功能时，我们建议您还会引发默认超时值，如 [OutlookGetEmailAddressesTimeOutMSProperty](clientv2-admin-guide-customizations.md#expand-outlook-distribution-lists-when-searching-for-email-recipients) 设置中所定义。
 
 - 如果为用户配置了多个标签策略，每个标签策略都有冲突的高级设置，则将更新为使用的 [优先级顺序](clientv2-admin-guide-customizations.md#order-of-precedence---how-conflicting-settings-are-resolved) 。
 
@@ -254,7 +253,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 **使用网络发现服务**
 
-1. 升级扫描仪版本，并确保扫描仪群集配置正确。 有关详细信息，请参阅：
+1. 升级扫描仪版本，并确保扫描仪群集配置正确。 有关详细信息，请参见:
     - [升级扫描仪](../deploy-aip-scanner-configure-install.md#upgrading-your-scanner)
     - [创建扫描仪群集](../deploy-aip-scanner-configure-install.md#create-a-scanner-cluster)
 
@@ -314,7 +313,7 @@ AIP 管理员现在可以在最终用户更改文档和电子邮件的分类标�
 
 Azure 信息保护现在支持使用双密钥加密 (DKE 在扫描仪中进行基于) 模板的标记，以及使用文件资源管理器和 PowerShell。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [规划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)
 - Microsoft 365 文档中的[双密钥加密](/microsoft-365/compliance/double-key-encryption)
@@ -412,7 +411,7 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 
 现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
 - [Azure 信息保护的中央报告](../reports-aip.md)

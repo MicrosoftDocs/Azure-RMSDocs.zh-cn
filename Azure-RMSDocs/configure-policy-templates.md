@@ -14,12 +14,12 @@ ms.subservice: aiplabels
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c4b88b2c0e2bbdff7f77d4eb36256a771dc9f5b6
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 03a1f0d7d28db24614bb92fa78de41fdd11a12f9
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806322"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98163682"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>配置和管理用于 Azure 信息保护的模板
 
@@ -42,7 +42,7 @@ ms.locfileid: "97806322"
 - 租户的模板显示在 " **Azure 信息保护-标签**" 窗格的 "**保护模板**" 部分中。 若要导航到此窗格，请选择 "**分类**  >  **标签**" 菜单选项。 不会显示任何标签。 还可看到特定于分类和标签的配置设置，但这些设置要么对模板没有任何影响，要么无法进行配置。 
 
 >[!NOTE]
->在某些应用程序和服务中，你可能会看到[不转发](configure-usage-rights.md#do-not-forward-option-for-emails)和[仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)（或加密）显示为模板。 这些不是可以编辑或删除的模板，而是默认情况下随 Exchange 服务提供的选项。
+>在某些应用程序和服务中，你可能会看到 " [不转发](configure-usage-rights.md#do-not-forward-option-for-emails) " 和 " [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails) " (**加密**) 显示为模板。 这些不是可以编辑或删除的模板，而是默认情况下随 Exchange 服务提供的选项。
 
 ## <a name="default-templates"></a>默认模板
 

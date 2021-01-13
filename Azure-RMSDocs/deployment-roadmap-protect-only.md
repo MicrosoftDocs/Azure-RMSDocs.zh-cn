@@ -13,18 +13,18 @@ ROBOTS: NOINDEX
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 873d000a7ce6ce67588f82b98f2ed570d55805ad
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 293ed29ba70ae5f4adff5530d782ecb661a6f9dd
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805999"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164107"
 ---
 # <a name="azure-information-protection-deployment-roadmap-for-protection-only"></a>仅限保护的 Azure 信息保护部署路线图
 
 >适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->相关内容：*[适用于 Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>***相关** 内容：适用于 [Windows 的 Azure 信息保护经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关统一的标记客户端，请参阅 [AIP 部署路线图，了解分类、标签和保护](deployment-roadmap-classify-label-protect.md)。 *
 
 > [!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
@@ -146,7 +146,7 @@ ms.locfileid: "97805999"
 
 现在，你可以保护数据，并记录公司如何使用保护服务。 
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - [使用 Azure Rights Management 服务帮助用户保护文件](./help-users.md)
 - [记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)

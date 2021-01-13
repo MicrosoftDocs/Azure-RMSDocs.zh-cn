@@ -12,21 +12,21 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 37d6eae1559f34bcbc84edecd3cc42926b4888c4
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 758fb47d41a4ca15e202fb5f18e3b94706bbb493
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97381589"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164600"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 应用程序和服务如何支持 Azure 权限管理 
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 *
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 最终用户 Office 应用程序和 Office 服务可使用 Azure 信息保护中的 Azure 权限管理服务来帮助保护组织的数据。 Office 应用程序包括 Word、Excel、PowerPoint 和 Outlook。 Office 服务是 Exchange 和 Microsoft SharePoint。 支持 Azure 权限管理服务的 Office 配置通常使用术语“信息权限管理 (IRM)”。
 
@@ -56,7 +56,7 @@ ms.locfileid: "97381589"
 
 如果使用本地 Exchange，可以通过部署 Azure 权限管理连接器结合使用 Azure 权限管理服务和 IRM 功能。 此连接器充当本地服务器和 Azure 权限管理服务之间的中继。
 
-如需深入了解可用于保护电子邮件的电子邮件选项，请参阅[电子邮件的“不得转发”选项](configure-usage-rights.md#do-not-forward-option-for-emails)和[电子邮件的“仅加密”选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
+有关可用于保护电子邮件的电子邮件选项的详细信息，请参阅 " [不要转发电子邮件的选项](configure-usage-rights.md#do-not-forward-option-for-emails) " 和 " [仅加密" 选项](configure-usage-rights.md#encrypt-only-option-for-emails)。
 
 如果已准备好配置 Exchange 以保护电子邮件：
 
@@ -64,7 +64,7 @@ ms.locfileid: "97381589"
 
 - 对于 Exchange 內部部署，请参阅[部署 Azure 权限管理连接器](deploy-rms-connector.md)。
 
-有关详细信息，请参阅：
+有关详细信息，请参见:
 
 - 统一标记客户端。 在标签管理中心配置敏感度标签和标签策略，包括 Microsoft 365 安全中心、Microsoft 365 符合性中心或 Microsoft 365 安全 & 符合性中心。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels)。
 

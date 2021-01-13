@@ -13,21 +13,21 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 42921437537d7daa93ceda374aa247a8601707d8
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 39fedde68cfe771d29e9fda1be4a9f2883cf1ede
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382881"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164243"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 > 
 > 为保持完整性，本文包括已在 2018 年 1 月 8 日停用的 Azure 经典门户中的值。
 
@@ -117,9 +117,9 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 > [!NOTE] 
 > 当要求只有发件人选择的收件人才能看到电子邮件中的信息时，请使用 **不得转发**。 使用模板，使电子邮件将权限限制于管理员提前指定的、与发件人所选收件人相互独立的一组人员。
 
-## <a name="encrypt-only-option-for-emails"></a>电子邮件的“仅加密”选项
+## <a name="encrypt-only-option-for-emails"></a>电子邮件的 "仅加密" 选项
 
-当 Exchange Online 使用 Office 365 邮件加密的新功能后，一项新的电子邮件选项将变为可用：“仅加密”。
+当 Exchange Online 使用 Office 365 邮件加密的新功能时，将提供一个新的 **加密** 电子邮件选项用于加密数据，而不会产生额外的限制。
 
 此选项可用于使用 Exchange Online 的租户，并可按如下所示进行选择：
 
@@ -128,7 +128,7 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 - **作为 Office 365 DLP 操作**
 - 如果你具有 [支持 Azure RMS 的 Microsoft 365 应用](requirements-applications.md#windows-computers-for-information-rights-management-irm)，请 **从 Outlook** 中获取 [Microsoft 365 应用按更新通道列出的支持版本](/officeupdates/update-history-microsoft365-apps-by-date)中列出的版本。 
 
-有关 Encrypt-Only 选项的详细信息，请参阅以下博客文章 Office 团队公告： [仅对 office 365 消息加密进行扩展](https://aka.ms/omefeb2018)。
+有关 "仅加密" 选项的详细信息，请参阅以下博客文章： [仅限在 office 365 消息加密中推出](https://aka.ms/omefeb2018)。
 
 选择此选项后，电子邮件会被加密，且收件人必须要进行身份验证。 收件人将具有除“另存为，导出”和“完全控制”以外的所有使用权限。 此使用权限的组合意味着除了无法删除保护外，收件人不会有任何限制。 例如，收件人可以复制、打印和转发此电子邮件。 
 
@@ -204,8 +204,8 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 |模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
 |----------------|--------------------|----------|
-|\<*organization name> -仅查看机密 * <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
-|\<*organization name>信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|\<*organization name> -仅查看机密 * <br /><br />or<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|\<*organization name>信息 <br /><br />or <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
 ## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)

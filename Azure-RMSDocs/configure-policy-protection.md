@@ -12,12 +12,12 @@ ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 85932860538bbdbc073c49aa12e241b6adad3c09
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: fc02a679cfbc389cb4f09e72018f0b96a30a8b0a
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806645"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164312"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -101,7 +101,7 @@ ms.locfileid: "97806645"
     
     大多数情况下，为权限设置选择“Azure (云密钥)”。 请勿选择“HYOK (AD RMS)”，除非已阅读并了解此“自留密钥”(HYOK) 配置随附的先决条件和限制。 有关详细信息，请参阅 [AD RMS 保护的自留密钥 (HYOK) 要求和限制](configure-adrms-restrictions.md)。 若要继续配置 HYOK (AD RMS)，请转到步骤 9。
     
-6. 选择以下选项之一：
+6. 选择下列选项之一：
     
    - **设置权限**：在此门户中定义新的保护设置。
     
@@ -275,7 +275,7 @@ ms.locfileid: "97806645"
 
 
 > [!NOTE]
-> Exchange Online 即将推出新选项 - [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)。 此选项不可用于标签配置。 不过，如果知道收件人是谁，可以使用此示例来配置拥有同一组使用权限的标签。 
+> Exchange Online 正在推出一个新选项 " [仅加密](configure-usage-rights.md#encrypt-only-option-for-emails)"。 此选项不可用于标签配置。 不过，如果知道收件人是谁，可以使用此示例来配置拥有同一组使用权限的标签。 
 
 用户在“收件人”框中指定电子邮件地址时，该地址必须与为此标签配置指定的用户地址相同。 因为用户可能属于组并且拥有多个电子邮件地址，所以他们指定的电子邮件地址不必与针对权限指定的电子邮件地址完全匹配， 虽然这是确保成功对收件人授权的最简单方法。 若要详细了解如何向用户授予权限，请参阅[准备用户和组以便使用 Azure 信息保护](prepare.md)。 
 
@@ -291,7 +291,7 @@ ms.locfileid: "97806645"
     
     注意：请勿对电子邮件选择“查看器”，并且如果选择“自定义”，请确保包括“编辑和保存”。
     
-    要从 Exchange Online 中选择与新的“仅加密”选项匹配的相同权限，请选择“自定义”。 然后选择“另存为，导出(导出)”和“完全控制(所有者)”之外的所有权限。
+    若要选择与 Exchange Online 中的 " **加密** " 选项相同的权限，而不会对其应用其他限制，请选择 " **自定义**"。 然后选择“另存为，导出(导出)”和“完全控制(所有者)”之外的所有权限。
 
 5. 若要指定其他应具有不同权限的用户，请重复步骤 3 和 4。
 
