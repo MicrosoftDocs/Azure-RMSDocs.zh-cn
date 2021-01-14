@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dda6d51f6130ab0fd34f2bcf0a72600898603f48
-ms.sourcegitcommit: 4381c7cf2a87002caba5eb0cab3046466a2f293e
+ms.openlocfilehash: c001f032281e323c6a4ca72530b1f005c3a1c268
+ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98124387"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98164566"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -235,7 +235,6 @@ Azure 信息保护有以下额外要求：
  - 端口 443（对于 HTTPS 流量）
 
 请务必创建规则来允许对这些特定 IP 地址进行出站访问，以及通过此端口进行访问。
-
 
 ## <a name="supported-on-premises-servers-for-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
