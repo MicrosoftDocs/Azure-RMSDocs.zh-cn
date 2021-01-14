@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ce99003d95edd8202a1fddb2bb5eae2559100055
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 3e5a34268b2b0144c49c7ce6150d725b642184e5
+ms.sourcegitcommit: d68537b88ac6b43846d574359938fb45277cb850
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164396"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98195409"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -80,12 +80,12 @@ ms.locfileid: "98164396"
 - **用于扫描程序的新功能**：
 
     - [对断开连接的扫描程序服务器的 PowerShell 支持](#powershell-support-for-disconnected-scanner-servers)
-    - [内容扫描作业中的 NFS 存储库支持](#support-for-nfs-repositories-in-content-scan-jobs-public-preview)
+    -  (公开预览版的[内容扫描作业中的 NFS 存储库支持](#support-for-nfs-repositories-in-content-scan-jobs-public-preview)) 
     - [添加了对其他敏感信息类型的支持](#added-support-for-additional-sensitive-information-types)
 
 - **适用于客户端的新功能**：
 
-    - [跟踪文档访问权限并撤消访问权限](#track-document-access-and-revoke-access-public-preview)
+    -  (公共预览版[跟踪文档访问和撤销访问权限](#track-document-access-and-revoke-access-public-preview)) 
     - [添加了对其他敏感信息类型的支持](#added-support-for-additional-sensitive-information-types)
 
 - **修补和改进**：
@@ -95,9 +95,9 @@ ms.locfileid: "98164396"
 
 ### <a name="powershell-support-for-disconnected-scanner-servers"></a>对断开连接的扫描程序服务器的 PowerShell 支持
 
-[Azure 信息保护本地扫描器](../deploy-aip-scanner.md)现在支持通过 PowerShell 管理内容扫描作业，对于无法连接到 internet 的扫描仪服务器（如使用[Azure 中国世纪互联扫描仪服务器](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#manage-azure-information-protection-content-scan-jobs)）。
+[Azure 信息保护本地扫描器](../deploy-aip-scanner.md)现在支持通过 PowerShell 管理内容扫描作业，适用于无法连接到 Internet 或[Azure 中国世纪互联设施 (中国主权 cloud) ](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#manage-azure-information-protection-content-scan-jobs)的扫描仪服务器。
 
-为了支持断开连接的扫描程序服务器，我们添加了以下新 cmdlet：
+为了支持断开连接或 Azure 中国世纪互联扫描服务器，我们添加了以下新 cmdlet：
 
 |Cmdlet  |说明  |
 |---------|---------|
@@ -198,6 +198,8 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 统一标记扫描器和客户端版本2.8.85。0
 
 **发布** 09/22/2020
+
+**支持** ，7/13/2021
 
 此版本包括以下新功能、修复和增强功能，适用于统一标记扫描器和客户端：
 
@@ -352,6 +354,8 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 
 **发布** 08/23/2020
 
+**支持** ，3/22/2021
+
 **修复**：
 
 修复了 PPT、Excel 和 Word 用户的问题，该问题导致文件冻结、崩溃或强制重复与配置了保护、水印和/或内容标记的必需标签相关的保存。
@@ -361,6 +365,8 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 统一标记扫描器和客户端版本2.7.99。0
 
 **发布** 07/20/2020
+
+**支持** ，2/23/2021
 
 **修补和改进**：
 
@@ -373,6 +379,8 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 统一标记扫描器和客户端版本2.7.96。0
 
 **发布** 06/29/2020
+
+**支持** ，1/20/2021
 
 - [适用于统一标签客户端的新功能，版本2.7.96。0](#new-features-for-the-unified-labeling-client-version-27960)
 - [适用于统一标记扫描器的新功能，版本2.7.96。0](#new-features-for-the-unified-labeling-scanner-version-27960)
