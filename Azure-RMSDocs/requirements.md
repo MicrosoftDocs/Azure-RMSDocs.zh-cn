@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需满足的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/19/2020
+ms.date: 01/12/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 229b67b152845cfb1e0499f1df9eb08ba28b49df
-ms.sourcegitcommit: 73befea74644d272e2d8d1d4b95df55c7741ccbe
+ms.openlocfilehash: dda6d51f6130ab0fd34f2bcf0a72600898603f48
+ms.sourcegitcommit: 4381c7cf2a87002caba5eb0cab3046466a2f293e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762294"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98124387"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -224,13 +224,18 @@ Azure 信息保护有以下额外要求：
 - **AzureActiveDirectory**
 - **AzureFrontDoor.Frontend**
 
-此外，在这种情况下，Azure 信息保护服务还依赖于两个特定的 IP 地址：
+此外，在这种情况下，Azure 信息保护服务还依赖于以下 IP 地址和端口：
 
+ - 13.107.9.198
+ - 13.107.6.198
+ - 2620:1ec:4::198
+ - 2620:1ec:a92::198
  - 13.107.6.181 
  - 13.107.9.181
  - 端口 443（对于 HTTPS 流量）
 
 请务必创建规则来允许对这些特定 IP 地址进行出站访问，以及通过此端口进行访问。
+
 
 ## <a name="supported-on-premises-servers-for-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的本地服务器
 
