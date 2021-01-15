@@ -1,17 +1,17 @@
 ---
 title: 类 FileEngine：： Settings
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 fileengine：： settings 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 05fb06ec06943b39209c980236643e50d873d451
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 56b4bf62af04b3b84c5ed291ce9ccb0fa0d3ee28
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565141"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215419"
 ---
 # <a name="class-fileenginesettings"></a>类 FileEngine：： Settings 
   
@@ -45,10 +45,8 @@ public void SetDelegatedUserEmail (const std：： string& delegatedUserEmail)  
 public const std：： string& GetDelegatedUserEmail ( # A2 const  |  获取委托的用户。
 public void SetLabelFilter (const std：： vector \<LabelFilterType\>& deprecatedLabelFilters)   |  设置标签筛选器。
 public const std：： vector \<LabelFilterType\>& GetLabelFilter ( # A2 const  |  获取通过弃用的函数 SetLabelFilter 设置的标签筛选器。
-public void ConfigureFunctionality (LabelFilterType labelFilterType，bool 已启用)   |  启用或禁用功能。
-public const std：： map \<LabelFilterType, bool\>& GetConfiguredFunctionality ( # A2 const  |  获取已配置的功能。
-public void SetClassifierEnabled (分类器 classifierType，已启用 bool)   |  启用或禁用对分类类型的支持。
-public const std：： map \<Classifier, bool\>& GetConfiguredClassifierSupport ( # A2 const  |  获取支持的分类器替代。
+public void ConfigureFunctionality (FunctionalityFilterType functionalityFilterType，bool 已启用)   |  启用或禁用功能。
+public const std：： map \<FunctionalityFilterType, bool\>& GetConfiguredFunctionality ( # A2 const  |  获取已配置的功能。
 public void SetAuthDelegate (const std：： shared_ptr \<AuthDelegate\>& authDelegate)   |  设置引擎身份验证委托。
 public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取引擎身份验证委托。
   
@@ -229,7 +227,7 @@ public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取引擎�
 启用或禁用功能。
 
 参数：  
-* **labelFilterType**：功能的类型。 
+* **functionalityFilterType**：功能的类型。 
 
 
 * **enabled**：若要启用，则为 True，禁用 false
@@ -242,24 +240,6 @@ public std::shared_ptr\<AuthDelegate\> GetAuthDelegate() const  |  获取引擎�
 
   
 **返回**：将类型映射到布尔值，指示是否已启用该类型
-  
-### <a name="setclassifierenabled-function"></a>SetClassifierEnabled 函数
-启用或禁用对分类类型的支持。
-
-参数：  
-* **classifierType**：分类器的类型 
-
-
-* **enabled**：若要启用，则为 True，禁用 false
-
-
-默认情况下仅启用 SensitiveInformation classifers
-  
-### <a name="getconfiguredclassifiersupport-function"></a>GetConfiguredClassifierSupport 函数
-获取支持的分类器替代。
-
-  
-**返回**：将类型映射到布尔值，指示是否已使用支持对其进行了覆盖
   
 ### <a name="setauthdelegate-function"></a>SetAuthDelegate 函数
 设置引擎身份验证委托。

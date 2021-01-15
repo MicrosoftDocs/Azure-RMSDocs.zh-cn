@@ -6,13 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
-manager: barbkess
-ms.openlocfilehash: fe246ceb2f54d24318373b95c36733a977b560dc
-ms.sourcegitcommit: 437057990372948c9435b620052a7398360264b9
+ms.openlocfilehash: 3e3d32dd5e66ee6948567bc43ebd5ecfa16154b6
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97701724"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215504"
 ---
 # <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) 软件开发工具包 (SDK) 版本发行历史记录和支持策略
 
@@ -31,11 +30,70 @@ ms.locfileid: "97701724"
 >  
 > 若要获得技术支持，请访问 [Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。
 
+## <a name="version-1886"></a>版本1.8.86
+
+**发布日期：** 2021年1月13日
+
+### <a name="general-changes"></a>常规更改
+
+- 添加了对 ARM 上 Mac 的支持。
+- 已签署 Mac 的所有 .dylib 文件。
+- 所有三个 Sdk 完全支持所有云。
+- 将 `TelemetryConfiguration` 重命名为 `DiagnosticConfiguration`。
+- 更新 `MipContext` 为接受 `DiagnosticConfiguration` 而不是 `TelemetryConfiguration` 。
+- 公开了新 `TelemetryDelegate` 的和 `AuditDelegate` 。
+- 几个自定义设置的名称已更改，并将在1.9 版中删除。 它们将继续与版本1.8 中的更新名称并行工作。 
+
+| 新名称          | 旧名称                   |
+| ----------------- | -------------------------- |
+| is_debug_audit    | is_debug_telemetry         |
+| is_audit_disabled | is_built_in_audit_disabled |
+
+### <a name="file-sdk"></a>文件 SDK
+
+- 添加了对具有双重密钥加密的用户定义标签的支持。
+- 添加了一个 API， `MsgInspector.BodyType` 用于公开 MSG 文件的正文编码类型。
+- 添加了 Api 以支持 User-Defined 权限的双密钥加密。
+- 为添加了标志，该标志 `mip::FileHandler` 允许调用方禁用审核发现事件发送。 这修复了使用 `ClassifyAsync()` API 会导致重复发现事件的情况。
+- 修复了以下错误： 
+  - 设置对 XPS 文件的保护失败。
+  - 从 SharePoint Online 上传/下载并删除自定义权限后，不能打开文件。
+  - `RemoveProtection()` 函数将接受 .rpmsg 输入。 现在只接受 MSG 文件。
+  - 尝试跟踪或撤消未保护的文件时出现故障。
+
+### <a name="policy-sdk"></a>策略 SDK
+
+- `ActionId`从默认的元数据属性中删除，以确保 Microsoft Office 和 SharePoint Online 标记的文档之间的一致性。
+- 添加了对 Azure 监控范围特定标签的支持。
+- 添加了通过委托重写遥测和审核的功能。
+  - 审核委派提供将 AIP 审核事件发送到 AIP Analytics 以外的目标的功能，或除 AIP 分析以外的其他功能。
+- 为添加了标志，该标志 `mip::PolicyHandler` 允许调用方发现审核发现事件发送。 这修复了使用 `ClassifyAsync()` API 会导致重复发现事件的情况。
+- 修复了在某些情况下无法打开加密的策略数据库的 bug。
+- 公开 `AuditDelegate` 的新，允许开发人员覆盖默认的 MIP SDK 审核管道并将事件发送到其自己的基础结构。 
+- `mip::ClassifierUniqueIdsAndContentFormats``GetContentFormat()`现在返回， `std::string` 而不是 `mip::ContentFormat` 。 此更改将在 .NET 和 Java 包装器中复制。 
+- `ContentFormat.Default` 现在为 `ContentFormat.File` 。
+
+### <a name="protection-sdk"></a>保护 SDK
+
+- 添加了一个 `ProtectionEngineSettings.SetAllowCloudServiceOnly` 属性，该属性将在为 true 时禁止任何与 Active Directory Rights Management Services 群集的连接。 仅使用云环境。
+- 添加了获取委派许可证的支持。
+  - 委托许可证允许服务代表用户提取内容许可证。
+  - 这允许服务查看权限数据并代表用户解密，而无需对服务进行其他调用。  
+
+### <a name="java-wrapper-public-preview"></a>Java 包装 (公共预览版) 
+
+- 添加了对跟踪和撤消到 Java 包装器的支持。
+- 已将流支持添加到 Java 包装器
+
+### <a name="c-api"></a>C API
+
+- 已从 C API 删除 **MIP_FLIGHTING_FEATURE_KEEP_PDF_LINEARIZATION** 标志。
+
 ## <a name="version-17147"></a>版本1.7.147
 
 ### <a name="file-sdk"></a>文件 SDK
 
-- .PBIX 文件格式的次要 bug 修复。
+- .PBIX 文件格式的次要 bug 修复。 
 
 ## <a name="version-17145"></a>版本1.7.145
 
@@ -83,7 +141,7 @@ ms.locfileid: "97701724"
 
 - 修复了 `mip::Identity` 从缓存引擎中未正确加载的 bug。
 - 添加了针对新创建的发布许可证的隐式注册。
-- 添加了对用于支持 Office 文件中 DKE 的 cyptographic 算法的支持。
+- 添加了对用于在 Office 文件中支持 DKE 的加密算法的支持。
 - 已使 `documentId` 和 `owner` 参数成为可选参数。
 
 ### <a name="c-apis"></a>C Api
@@ -116,15 +174,15 @@ ms.locfileid: "97701724"
 ### <a name="general-sdk-changes"></a>常规 SDK 更改
 
 - 为所有非 ADRMS HTTP 通信强制执行 TLS 1.2。
-- 已将 iOS/MacOS HTTP 实现从 NSURLConnection 迁移到 NSURLSession。
+- 已将 iOS/macOS HTTP 实现从 NSURLConnection 迁移到 NSURLSession。
 - 已将 iOS 遥测组件从 Aria SDK 迁移到 1DS SDK。
-- 遥测组件现在使用适用于 iOS、MacOs 和 Linux 的 MIP HttpDelegate。  (以前仅) win32。
+- 遥测组件现在使用适用于 iOS、macOs 和 Linux 的 MIP HttpDelegate。  (以前仅) win32。
 - 提高了 C API 的类型安全性。
 - 将 AuthDelegate 从配置文件移动到 c + +、c # 和 Java Api 中的引擎。
 - AuthDelegate 从的构造函数移 `Profile::Settings` 到 `Engine::Settings` 。
 - 向 NoPolicyError 添加了类别，以提供有关策略同步失败的原因的详细信息。
 - 已添加 `PolicyEngine::GetTenantId` 方法。
-- 添加了显式主权云支持。
+- 为所有云添加了显式支持。
   - `Engine::Settings::SetCloud`用于设置目标云 (GCC 高、21-Vianet 等的新方法 ) 。
   - `Engine::Settings::SetCloudEndpointBaseUrl`已识别的云不再需要现有的方法调用。
 - 已为 iOS 二进制文件启用 bitcode。
@@ -161,7 +219,7 @@ ms.locfileid: "97701724"
 
 - 支持对文档跟踪进行注册和吊销。
 - 新支持在发布时生成预许可证。
-- 公开了保护服务使用的公共 Microsoft SSL 证书。
+- 公开了保护服务使用的公共 Microsoft TLS 证书。
    - `GetMsftCert` 和 `GetMsftCertPEM`
    - 如果应用程序覆盖 `HttpDelegate` 接口，则它必须信任此 CA 颁发的服务器证书。
    - 此要求在2020中应延迟删除。    
@@ -276,7 +334,7 @@ ms.locfileid: "97701724"
 - 性能改进和 bug 修复
 - 将 StorageType 枚举重命名为 CacheStorageType
 - Android 链接到 libc + + 而不是 gnustl
-- 已删除 previouslydeprecated Api
+- 删除了以前不推荐使用的 Api
   - 文件/策略/配置文件：：设置必须使用 MipContext 进行初始化
   - 已删除 "文件/策略/配置文件：：设置路径"、"应用程序信息"、"记录器委托"、"遥测" 和 "日志级别 getter/setter"。 这些属性由 MipContext 管理
 - Apple 平台上更好的静态库支持
@@ -306,7 +364,7 @@ ms.locfileid: "97701724"
 
 ### <a name="protection-sdk"></a>保护 SDK
 
-- 已删除 previouslydeprecated Api
+- 删除了以前不推荐使用的 Api
   - 已删除 ProtectionEngine：： CreateProtectionHandlerFromDescriptor [Async] (使用 ProtectionEngine：： CreateProtectionHandlerForPublishing [Async] ) 
   - 已删除 ProtectionEngine：： CreateProtectionHandlerFromPublishingLicense [Async] (使用 ProtectionEngine：： CreateProtectionHandlerForConsumption [Async] ) 
 - 完成 c # API
@@ -348,7 +406,7 @@ ms.locfileid: "97701724"
 - 现在支持解密受保护的消息文件。
 - 检查 .rpmsg 文件是通过和支持的。 `mip::FileInspector` `mip::FileHandler::InspectAsync()`
 - 磁盘上的缓存现在可以有选择性地加密。
-- 保护 SDK 现在支持中国主权 cloud。
+- 保护 SDK 现在支持中文云客户。
 - Android 上的 Arm64 支持。
 - IOS 上的 Arm64e 支持。
 - 现在可以禁用 (EUL) 缓存的最终用户许可证。

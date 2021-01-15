@@ -1,20 +1,20 @@
 ---
-title: 类 FileIOError
-description: 记录 (MIP) SDK 的 Microsoft 信息保护的 fileioerror：：未定义的类。
+title: 类事件
+description: 记录事件：：未定义的 Microsoft 信息保护类 (MIP) SDK。
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.author: bryanla
 ms.date: 01/13/2021
-ms.openlocfilehash: a1d1d31901eab5bdb31cc5690f4fa207b06e2834
+ms.openlocfilehash: 712bdc3d816c107b21634dc4e21998d42b6a76f2
 ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/14/2021
-ms.locfileid: "98215436"
+ms.locfileid: "98224921"
 ---
-# <a name="class-fileioerror"></a>类 FileIOError 
-文件 IO 错误。
+# <a name="class-event"></a>类事件 
+单个审核/遥测事件。
   
 ## <a name="summary"></a>总结
  成员                        | 说明                                

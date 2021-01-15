@@ -1,17 +1,17 @@
 ---
 title: 类 Executionstate&
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 executionstate&：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: f73c3e366f1be0647d2c9a7de78f37b6a9a95549
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 543b46f8ceb731e7ea7c4e513f1a42c25a080521
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565145"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215453"
 ---
 # <a name="class-executionstate"></a>类 Executionstate& 
 执行引擎所需的所有状态的接口。
@@ -28,7 +28,7 @@ public AssignmentMethod GetNewLabelAssignmentMethod() const  |  获取新标签�
 public virtual std：： vector \<std::pair\<std::string, std::string\> \> GetNewLabelExtendedProperties ( # A1 const  |  返回新标签的扩展属性。
 public std：： vector \<MetadataEntry\> GetContentMetadata (const std：： vector \<std::string\>& 名称，const std：： Vector \<std::string\>& namePrefixes) const  |  从内容中获取元数据项。
 public std::shared_ptr\<ProtectionDescriptor\> GetProtectionDescriptor() const  |  获取保护描述符。
-public ContentFormat GetContentFormat() const  |  获取内容格式。
+public std：： string GetContentFormat ( # A1 const  |  获取内容格式。
 public virtual MetadataVersion GetContentMetadataVersion ( # A1 const  |  获取租户的应用程序支持的最高元数据版本。
 public ActionType GetSupportedActions() const  |  获取描述所有受支持操作类型的掩码枚举。
 公共虚拟 std：： shared_ptr \<ClassificationResults\> GetClassificationResults (const std：： vector \<std::shared_ptr\<ClassificationRequest\> \> &) 常量  |  返回分类结果的映射。
@@ -93,9 +93,7 @@ public virtual std：： map \<std::string, std::string\> GetAuditMetadata ( # A
 获取内容格式。
 
   
-**返回结果**：DEFAULT、EMAIL 
-  
-**另请参阅**：mip::ContentFormat
+**返回**：内容格式
   
 ### <a name="getcontentmetadataversion-function"></a>GetContentMetadataVersion 函数
 获取租户的应用程序支持的最高元数据版本。
