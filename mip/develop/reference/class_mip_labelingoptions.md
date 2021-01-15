@@ -1,17 +1,17 @@
 ---
 title: 类 LabelingOptions
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 labelingoptions：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: e0cb9e8aba27c27feb67c660d61743851460988e
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 6527ebcade57088db51f46d25321f0783b56b878
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565098"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213787"
 ---
 # <a name="class-labelingoptions"></a>类 LabelingOptions 
 用于为 SetLabel/DeleteLabel 方法配置标记选项的接口。
@@ -30,28 +30,28 @@ public void SetExtendedProperties (const std：： vector \<std::pair\<std::stri
 ## <a name="members"></a>成员
   
 ### <a name="labelingoptions-function"></a>LabelingOptions 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getassignmentmethod-function"></a>GetAssignmentMethod 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="isdowngradejustified-function"></a>IsDowngradeJustified 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getjustificationmessage-function"></a>GetJustificationMessage 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getextendedproperties-function"></a>GetExtendedProperties 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="setdowngradejustification-function"></a>SetDowngradeJustification 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="setextendedproperties-function"></a>SetExtendedProperties 函数
-尚无记录。
+_尚无记录。_

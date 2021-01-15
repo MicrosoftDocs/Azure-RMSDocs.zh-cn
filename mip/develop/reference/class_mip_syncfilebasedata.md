@@ -1,17 +1,17 @@
 ---
 title: 类 SyncFileBaseData
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 syncfilebasedata：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 737facf312e0d3dfe5384fc18be685bccec69091
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: cf9df373ecc6b0c9a62a0b3db0623483816647af
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565162"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214246"
 ---
 # <a name="class-syncfilebasedata"></a>类 SyncFileBaseData 
   
@@ -23,4 +23,4 @@ public virtual ~ SyncFileBaseData ( # A1  | _尚无记录。_
 ## <a name="members"></a>成员
   
 ### <a name="syncfilebasedata-function"></a>~ SyncFileBaseData 函数
-尚无记录。
+_尚无记录。_

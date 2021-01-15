@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionHandler：:P ublishingSettings
 description: 记录 Microsoft 信息保护 (MIP) SDK 的 protectionhandler：:p ublishingsettings 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: c5edcb9eca5e14d0f0f611f32e2f91d9ed2fcb25
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: bbefbe143d434669692b6e60734698d7bd4b575f
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565176"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214518"
 ---
 # <a name="class-protectionhandlerpublishingsettings"></a>类 ProtectionHandler：:P ublishingSettings 
 用于创建 ProtectionHandler 以保护新内容的设置。
@@ -43,7 +43,7 @@ public const std：： string& GetPreLicenseUserEmail ( # A2 const  |  获取预
 
   
 ### <a name="getprotectiondescriptor-function"></a>GetProtectionDescriptor 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getisauditedextractionallowed-function"></a>GetIsAuditedExtractionAllowed 函数

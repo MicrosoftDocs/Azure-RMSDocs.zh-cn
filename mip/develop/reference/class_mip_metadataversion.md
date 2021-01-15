@@ -1,17 +1,17 @@
 ---
 title: 类 MetadataVersion
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 metadataversion：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 05154ec7777fb94478c2065f6e637dea47d58d28
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 35ed3ef28cd4a1a822c11f64b422a474edcd4b53
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565087"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213600"
 ---
 # <a name="class-metadataversion"></a>类 MetadataVersion 
 MetadataVersion 的接口。 MetadataVersion 确定哪些元数据是活动的，以及如何对其进行处理。

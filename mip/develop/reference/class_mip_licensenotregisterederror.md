@@ -1,17 +1,17 @@
 ---
 title: 类 LicenseNotRegisteredError
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 licensenotregisterederror：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 31d15d2a50dcb9d7d6a7e68e2903385c7514b902
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: e00f9ff2131bc2a8d3ab2eea9c16c9e8659913a5
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565096"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213702"
 ---
 # <a name="class-licensenotregisterederror"></a>类 LicenseNotRegisteredError 
 未注册许可证。
@@ -21,4 +21,4 @@ ms.locfileid: "95565096"
 --------------------------------|---------------------------------------------
   
 ## <a name="members"></a>成员
-尚无记录。
+_尚无记录。_

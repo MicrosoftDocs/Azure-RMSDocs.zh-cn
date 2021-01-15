@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionDescriptorBuilder
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectiondescriptorbuilder：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 2e5573a896ef0935c33e85a2ed7f73451ced8e7c
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 388e8b46aa125e3de2429098ec6a59b0ddb9fffc
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565188"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214705"
 ---
 # <a name="class-protectiondescriptorbuilder"></a>类 ProtectionDescriptorBuilder 
 构造 ProtectionDescriptor，用于描述与一段内容相关的保护。

@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectDoNotForwardDkAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectdonotforwarddkaction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 9702c9c783466298a43661a8382ebec21d598101
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: e69a7606850d93bb2be21b8b10e58bdaf56cdb69
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565195"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214824"
 ---
 # <a name="class-protectdonotforwarddkaction"></a>类 ProtectDoNotForwardDkAction 
 一个操作类，该操作类指定对文档添加 "不向双重密钥保护"。

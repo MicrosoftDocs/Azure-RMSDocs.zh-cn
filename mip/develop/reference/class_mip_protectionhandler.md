@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionHandler
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionhandler：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: e38aaf0e4dfee1d10f67f175eb50119fe3aa484d
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: d70e32793ede4a1184672f3f8755112766ba571b
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565180"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214603"
 ---
 # <a name="class-protectionhandler"></a>类 ProtectionHandler 
 管理特定保护配置的保护相关操作。
@@ -213,9 +213,9 @@ public CipherMode GetCipherMode ( # A1 const  |  获取保护处理程序的密�
   
 ### <a name="prelicenseformat-enum"></a>PreLicenseFormat 枚举
 
+预许可格式。
+
  值                         | 说明                                
 --------------------------------|---------------------------------------------
 Xml            | MSIPC 使用的旧版 XML/SOAP 格式
 Json            | MIP SDK 和 RMS SDK 使用的 JSON/REST 格式
-
-预许可格式。

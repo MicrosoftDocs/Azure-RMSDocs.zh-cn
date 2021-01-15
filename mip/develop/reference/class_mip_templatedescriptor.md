@@ -1,17 +1,17 @@
 ---
 title: 类 TemplateDescriptor
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 templatedescriptor：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 4da253f92ea4f2abc9c1d5d6a85792d9a6aff433
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: a133d154c1e0129443058c4b3c0a90a33204887b
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565269"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214161"
 ---
 # <a name="class-templatedescriptor"></a>类 TemplateDescriptor 
   

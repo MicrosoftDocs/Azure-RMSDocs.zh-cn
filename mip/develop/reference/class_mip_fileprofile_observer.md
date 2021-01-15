@@ -1,17 +1,17 @@
 ---
 title: 类 FileProfile：：观察程序
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 fileprofile：： observer 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 62e578f8f3527a4749fedfc88a2b32de5c6e95db
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 56bad4dfc1fde5f6cfe2d390fef1555ba0afe6d7
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565131"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215266"
 ---
 # <a name="class-fileprofileobserver"></a>类 FileProfile：：观察程序 
 Observer 接口，供客户端获取配置文件相关事件的通知。
@@ -38,7 +38,7 @@ public virtual void OnAddPolicyEngineStarting (bool requiresPolicyFetch)   |  �
 ## <a name="members"></a>成员
   
 ### <a name="observer-function"></a>~ 观察程序函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="onloadsuccess-function"></a>OnLoadSuccess 函数
@@ -84,4 +84,4 @@ public virtual void OnAddPolicyEngineStarting (bool requiresPolicyFetch)   |  �
 无论 AddEngineAsync 操作是否需要 (HTTP 操作及其关联延迟) 完成，应用程序都可以使用此可选回调。
   
 ### <a name="observer-function"></a>观察程序函数
-尚无记录。
+_尚无记录。_

@@ -1,17 +1,17 @@
 ---
 title: 类 LabelActionData
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 labelactiondata：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 0ab02ba1a8b0d8d9f8b2632f34e49c6102c2912c
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: b8290426dff4614512bd7408899087d9b4700591
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565103"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213923"
 ---
 # <a name="class-labelactiondata"></a>类 LabelActionData 
   
@@ -25,12 +25,12 @@ public virtual ~ LabelActionData ( # A1  | _尚无记录。_
 ## <a name="members"></a>成员
   
 ### <a name="getlabelid-function"></a>GetLabelId 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getlabelactiondatatype-function"></a>GetLabelActionDataType 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="labelactiondata-function"></a>~ LabelActionData 函数
-尚无记录。
+_尚无记录。_

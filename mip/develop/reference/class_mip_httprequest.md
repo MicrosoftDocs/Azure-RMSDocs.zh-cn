@@ -1,17 +1,17 @@
 ---
 title: 类 HttpRequest
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 httprequest：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 9384976b01899f6d37b6ac55073014bb4a49e924
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: c613729664141eb96e2cd1844107fcc1d9a4fa18
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565120"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215215"
 ---
 # <a name="class-httprequest"></a>类 HttpRequest 
 描述单个 HTTP 请求的接口。

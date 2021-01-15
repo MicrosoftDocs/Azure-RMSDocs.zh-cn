@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionHandler：： ConsumptionSettings
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionhandler：： consumptionsettings 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 627845405fc0d4fc2523e958e2226d343d0013cc
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 8ac0e4d3067528d6e860244abca2d70f0cf6a530
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565023"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214586"
 ---
 # <a name="class-protectionhandlerconsumptionsettings"></a>类 ProtectionHandler：： ConsumptionSettings 
 用于创建 ProtectionHandler 以使用现有内容的设置。
@@ -91,7 +91,7 @@ public const std：： string& GetContentName ( # A2 const  | _尚无记录。_
 当正在进行身份验证的用户/应用程序代表其他用户时，将指定委派的用户
   
 ### <a name="setcontentname-function"></a>SetContentName 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getdelegateduseremail-function"></a>GetDelegatedUserEmail 函数
@@ -101,4 +101,4 @@ public const std：： string& GetContentName ( # A2 const  | _尚无记录。_
 **返回**：已委派的用户在进行身份验证的用户/应用程序代表其他用户时指定了委派的用户
   
 ### <a name="getcontentname-function"></a>GetContentName 函数
-尚无记录。
+_尚无记录。_

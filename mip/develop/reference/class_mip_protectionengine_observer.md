@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionEngine：：观察程序
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionengine：： observer 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 7a576882376caa8cc5f9c5c1b3d3036ee7e57b21
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: b9243a1b7d9addaceaec907a368f7e651c99fbd5
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565186"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214620"
 ---
 # <a name="class-protectionengineobserver"></a>类 ProtectionEngine：：观察程序 
 接收 ProtectionEngine 相关通知的接口。
@@ -30,6 +30,8 @@ public virtual void OnRegisterContentForTrackingAndRevocationSuccess (const std�
 public virtual void OnRegisterContentForTrackingAndRevocationFailure (const std：： exception_ptr& 错误，const std：： shared_ptr \<void\>& 上下文)   |  当注册内容以进行跟踪 & 吊销失败时调用。
 public virtual void OnRevokeContentSuccess (const std：： shared_ptr \<void\>& 上下文)   |  当的吊销成功时调用。
 public virtual void OnRevokeContentFailure (const std：： exception_ptr& 错误，const std：： shared_ptr \<void\>& 上下文)   |  当内容撤消失败时调用。
+public virtual void OnCreateDelegatedLicensesSuccess (std：： vector \<std::shared_ptr\<DelegationLicense\> \> delegatedLicenses，const std：： shared_ptr \<void\>& 上下文)   |  当创建委托许可证成功时调用。
+public virtual void OnCreateDelegatedLicensesFailure (const std：： exception_ptr& 错误，const std：： shared_ptr \<void\>& 上下文)   |  当创建委托许可证失败时调用。
   
 ## <a name="members"></a>成员
   
@@ -143,3 +145,24 @@ public virtual void OnRevokeContentFailure (const std：： exception_ptr& 错�
 
 
 应用程序可将任何类型的上下文 (例如，std：:p romise，std：： function) 到 ProtectionEngine：： RevokeContentAsync，并且同一上下文将按原样转发到 ProtectionEngine：： Observer：： OnRevokeContentSuccess 或 ProtectionEngine：： Observer：： OnRevokeContentFailure
+  
+### <a name="oncreatedelegatedlicensessuccess-function"></a>OnCreateDelegatedLicensesSuccess 函数
+当创建委托许可证成功时调用。
+
+参数：  
+* **上下文**：传递到 ProtectionEngine：： CreateDelegationLicensesAsync 的上下文相同。
+
+
+应用程序可将任何类型的上下文 (例如，std：:p romise，std：： function) 到 ProtectionEngine：： CreateDelegationLicensesAsync，并且同一上下文将按原样转发到 ProtectionEngine：： Observer：： OnCreateDelegatedLicensesSuccess 或 ProtectionEngine：： Observer：： OnCreateDelegatedLicensesFailure。
+  
+### <a name="oncreatedelegatedlicensesfailure-function"></a>OnCreateDelegatedLicensesFailure 函数
+当创建委托许可证失败时调用。
+
+参数：  
+* **错误**：发生的错误 
+
+
+* **上下文**：传递到 ProtectionEngine：： CreateDelegationLicensesAsync 的上下文相同
+
+
+应用程序可将任何类型的上下文 (例如，std：:p romise，std：： function) 到 ProtectionEngine：： CreateDelegationLicensesAsync，并且同一上下文将按原样转发到 ProtectionEngine：： Observer：： OnCreateDelegatedLicensesSuccess 或 ProtectionEngine：： Observer：： OnCreateDelegatedLicensesFailure

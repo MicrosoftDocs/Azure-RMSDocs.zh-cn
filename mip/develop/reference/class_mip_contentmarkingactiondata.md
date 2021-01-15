@@ -1,17 +1,17 @@
 ---
 title: 类 ContentMarkingActionData
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 contentmarkingactiondata：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 165fbaae25b57e2963b55105b2f42de99f71b900
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 44f9adcf94230e7e652b51cad40de7b89b3aaa48
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565200"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215368"
 ---
 # <a name="class-contentmarkingactiondata"></a>类 ContentMarkingActionData 
   
@@ -30,32 +30,32 @@ public virtual ~ ContentMarkingActionData ( # A1  | _尚无记录。_
 ## <a name="members"></a>成员
   
 ### <a name="gettext-function"></a>GetText 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getfontname-function"></a>GetFontName 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getfontcolor-function"></a>GetFontColor 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getcontentmarkalignment-function"></a>GetContentMarkAlignment 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getfontsize-function"></a>GetFontSize 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getmargin-function"></a>GetMargin 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getcontentmarkplacement-function"></a>GetContentMarkPlacement 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="contentmarkingactiondata-function"></a>~ ContentMarkingActionData 函数
-尚无记录。
+_尚无记录。_

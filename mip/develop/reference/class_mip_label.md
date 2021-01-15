@@ -1,17 +1,17 @@
 ---
 title: 类标签
 description: 记录标签：：未定义的 Microsoft 信息保护类 (MIP) SDK。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 6a0bd370dd8a0f08156861995c498f4f3710e9e2
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 726c61d1b73389bfdc10afb961177659e5a137d4
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565111"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213889"
 ---
 # <a name="class-label"></a>类标签 
 单个 Microsoft 信息保护标签的抽象。
@@ -31,6 +31,7 @@ public std::weak_ptr\<Label\> GetParent() const  |  获取父标签。
 public const std：： vector \<std::shared_ptr\<Label\> \>& GetChildren ( # A2 const  |  获取当前标签的子标签。
 public const std：： vector \<std::pair\<std::string, std::string\> \>& GetCustomSettings ( # A2 const  |  获取标签的自定义设置。
 public ActionSource GetActionSource() const  |  获取标签的操作源。
+public const std：： vector \<std::string\>& GetContentFormats ( # A2 const  |  获取内容类型。
   
 ## <a name="members"></a>成员
   
@@ -106,3 +107,9 @@ public ActionSource GetActionSource() const  |  获取标签的操作源。
 
   
 **返回**：操作源
+  
+### <a name="getcontentformats-function"></a>GetContentFormats 函数
+获取内容类型。
+
+  
+<Returns>

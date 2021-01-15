@@ -1,17 +1,17 @@
 ---
 title: 类 ProtectionEngine
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 protectionengine：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: f87b65f85693850ea3344aa2b1340f9fc4de4e73
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 6df50823102c7cf897dceb2d6d576384431ccfc6
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565187"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98214671"
 ---
 # <a name="class-protectionengine"></a>类 ProtectionEngine 
 管理与特定标识有关的保护相关操作。
@@ -35,6 +35,8 @@ public void RegisterContentForTrackingAndRevocation (const std：： vector \<ui
 public std：： shared_ptr \<AsyncControl\> RegisterContentForTrackingAndRevocationAsync (const std：： vector \<uint8_t\>& serializedPublishingLicense，const std：： String& contentName，bool isOwnerNotificationEnabled，const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  注册发布许可证 (PL) 用于文档跟踪 & 吊销。
 public void RevokeContent (const std：： vector \<uint8_t\>& serializedPublishingLicense，const std：： shared_ptr \<void\>& 上下文)   |  对内容执行撤消。
 public std：： shared_ptr \<AsyncControl\> RevokeContentAsync (const std：： vector \<uint8_t\>& serializedPublishingLicense，const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  对内容执行撤消。
+public std：： vector \<std::shared_ptr\<DelegationLicense\> \> CreateDelegationLicenses (const DelegationLicenseSettings& settings，const std：： shared_ptr \<void\>& 上下文)   |  创建委托许可证。
+public std：： shared_ptr \<AsyncControl\> CreateDelegationLicensesAsync (Const DelegationLicenseSettings& settings，const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  创建委托许可证。
   
 ## <a name="members"></a>成员
   
@@ -280,3 +282,35 @@ public std：： shared_ptr \<AsyncControl\> RevokeContentAsync (const std：：
 
   
 **返回**： Async control 对象。
+  
+### <a name="createdelegationlicenses-function"></a>CreateDelegationLicenses 函数
+创建委托许可证。
+
+参数：  
+* **设置**：委派设置 
+
+
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
+
+
+
+  
+**返回**：委托许可证的矢量使用此方法为用户列表创建许可证
+  
+### <a name="createdelegationlicensesasync-function"></a>CreateDelegationLicensesAsync 函数
+创建委托许可证。
+
+参数：  
+* **设置**：委派设置 
+
+
+* **observer**：实现 ProtectionHandler::Observer 接口的类 
+
+
+* **上下文**：将以不透明转发到观察者和可选 HttpDelegate 的客户端上下文
+
+
+
+  
+**返回**： Async control 对象。
+使用此方法为用户列表创建许可证。 接收回拨中的 DelegationLicense 矢量 OnCreateDelegatedLicensesSuccess 在 OnCreateDelegatedLicensesFailure 中发送失败

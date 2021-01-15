@@ -1,17 +1,17 @@
 ---
 title: 类 FileEngine
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 fileengine：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 5cb3e5142c6dd154b2c4a39324cccf82f3e41a8d
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 5b9c3d33fe538810975d4f156aef36280fdd4bda
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565142"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215317"
 ---
 # <a name="class-fileengine"></a>类 FileEngine 
 此类提供适用于所有引擎功能的接口。
@@ -23,15 +23,15 @@ public const Settings& GetSettings() const  |  返回引擎设置。
 public const std：： vector \<std::shared_ptr\<SensitivityTypesRulePackage\> \>& ListSensitivityTypes ( # A2 const  |  列出与策略引擎关联的敏感度类型。
 public const std：： shared_ptr \<Label\> GetDefaultSensitivityLabel ( # A1 const  |  获取默认敏感度标签。
 public std：： shared_ptr \<Label\> GetLabelById (const std：： string& id) const  |  根据提供的 id 获取标签。
-public const std：： vector \<std::shared_ptr\<Label\> \>& ListSensitivityLabels ( # A2  |  返回敏感度标签列表。
+public const std：： vector \<std::shared_ptr\<Label\> \> ListSensitivityLabels ( # A1  |  返回敏感度标签列表。
 public const std::string& GetMoreInfoUrl() const  |  提供用于查找有关策略/标签详细信息的 URL。
 public const std：： string& GetPolicyFileId ( # A2 const  |  获取策略文件 ID。
 public const std：： string& GetSensitivityFileId ( # A2 const  |  获取敏感度文件 ID。
 public bool IsLabelingRequired() const  |  检查策略是否规定必须标记文档。
 public std：： chrono：： time_point \<std::chrono::system_clock\> GetLastPolicyFetchTime ( # A1 const  |  获取上次提取策略的时间。
 public const std：： string& GetPolicyDataXml ( # A2 const  |  获取策略数据 XML，该 XML 描述与此策略关联的设置、标签和规则。
-public std：： shared_ptr \<AsyncControl\> CreateFileHandlerAsync (const std：： string& inputFilePath，const std：： string& actualFilePath，Bool isAuditDiscoveryEnabled，const std：： shared_ptr \<FileHandler::Observer\>& fileHandlerObserver，const std：： shared_ptr \<void\>& context，const std：： shared_ptr \<FileExecutionState\>& fileExecutionState)   |  开始创建给定文件路径的文件处理程序。
-public std：： shared_ptr \<AsyncControl\> CreateFileHandlerAsync (const std：： shared_ptr \<Stream\>& inputStream，const std：： String& actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr \<FileHandler::Observer\>& fileHandlerObserver，const std：： shared_ptr \<void\>& context，const std：： shared_ptr \<FileExecutionState\>& fileExecutionState)   |  开始创建给定文件流的文件处理程序。
+public std：： shared_ptr \<AsyncControl\> CreateFileHandlerAsync (const std：： string& inputFilePath，const std：： string& actualFilePath，Bool isAuditDiscoveryEnabled，const std：： shared_ptr \<FileHandler::Observer\>& fileHandlerObserver，const std：： shared_ptr \<void\>& context，const std：： shared_ptr \<FileExecutionState\>& fileExecutionState，bool isGetSensitivityLabelAuditDiscoveryEnabled)   |  开始创建给定文件路径的文件处理程序。
+public std：： shared_ptr \<AsyncControl\> CreateFileHandlerAsync (const std：： shared_ptr \<Stream\>& inputStream，const std：： String& actualFilePath，bool isAuditDiscoveryEnabled，const std：： shared_ptr \<FileHandler::Observer\>& fileHandlerObserver，const std：： shared_ptr \<void\>& context，const std：： shared_ptr \<FileExecutionState\>& fileExecutionState，bool isGetSensitivityLabelAuditDiscoveryEnabled)   |  开始创建给定文件流的文件处理程序。
 public void SendApplicationAuditEvent(const std::string& level, const std::string& eventType, const std::string& eventData)  |  将特定于应用程序的事件记录到审核管道。
 public const std：： vector \<std::pair\<std::string, std::string\> \>& GetCustomSettings ( # A2 const  |  获取自定义设置的列表。
 public bool HasClassificationRules ( # A1 const  |  获取策略是否具有自动或建议规则。
@@ -116,6 +116,9 @@ public bool HasClassificationRules ( # A1 const  |  获取策略是否具有自�
 * **context**：将以不透明形式传递回观察程序的客户端上下文。 
 
 
+* **isGetSensitivityLabelAuditDiscoveryEnabled**：表示是否对 getSensitivityLabel 触发审核发现。 
+
+
 
   
 **返回**： Async control 对象。
@@ -137,6 +140,9 @@ public bool HasClassificationRules ( # A1 const  |  获取策略是否具有自�
 
 
 * **context**：将以不透明形式传递回观察程序的客户端上下文。 
+
+
+* **isGetSensitivityLabelAuditDiscoveryEnabled**：表示是否对 getSensitivityLabel 触发审核发现。 
 
 
 

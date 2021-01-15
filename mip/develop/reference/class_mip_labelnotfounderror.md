@@ -1,17 +1,17 @@
 ---
 title: 类 LabelNotFoundError
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 labelnotfounderror：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 4fc7e3f29753cafbdd09de9b4f7c0f58da367510
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 93527b8d9b6898a3b26c1511a58828cd21ef10e7
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565097"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213753"
 ---
 # <a name="class-labelnotfounderror"></a>类 LabelNotFoundError 
 标签 ID 无法识别。
@@ -21,4 +21,4 @@ ms.locfileid: "95565097"
 --------------------------------|---------------------------------------------
   
 ## <a name="members"></a>成员
-尚无记录。
+_尚无记录。_
