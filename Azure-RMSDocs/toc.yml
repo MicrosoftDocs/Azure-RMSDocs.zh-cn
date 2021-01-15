@@ -209,7 +209,7 @@
               href: ./rms-client/clientv2-remove-label-protection.md
             - name: 撤销文档访问
               href: ./rms-client/revoke-access-user.md
-        - name: 适用于 iOS 和 Android 的 Azure 信息保护应用
+        - name: 适用于 iOS 和 Android 的 AIP 应用
           href: ./rms-client/mobile-app-faq.md
         - name: 受保护的 PDF 阅读器
           href: ./rms-client/protected-pdf-readers.md
