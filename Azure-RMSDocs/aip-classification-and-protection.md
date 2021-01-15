@@ -12,21 +12,21 @@ Customer intent: As an administrator, I want to label documents and emails to cl
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 71f07f5ffb9167ab61653cef10c610968ff74786
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 3465bdb2eaf1efce3524d2f28332b094ba31db5d
+ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384190"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240846"
 ---
 # <a name="azure-information-protection-aip-labeling-classification-and-protection"></a>Azure 信息保护 (AIP) 标签、分类和保护
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
 > *适用 **于**： [Azure 信息保护统一标签适用于 Windows 的客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通过应用标签来对文档和电子邮件进行分类和保护。 
 
@@ -110,7 +110,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 “分类和保护”菜单选项的工作方式与 Office 应用程序汇总的“应用保护”栏类似，用户可选择标签或设置自定义权限。
 
 > [!TIP]
-> 高级用户或管理员可能会发现，PowerShell 命令可用来更高效地管理和设置多个文件的分类和保护。 客户端中有[相关的 PowerShell 命令](https://docs.microsoft.com/powershell/module/azureinformationprotection)，它们也可单独安装。
+> 高级用户或管理员可能会发现，PowerShell 命令可用来更高效地管理和设置多个文件的分类和保护。 客户端中有[相关的 PowerShell 命令](/powershell/module/azureinformationprotection)，它们也可单独安装。
 
 用户和管理员可使用文档跟踪站点来监视受保护的文档、查看谁何时访问了这些文档。 如果他们怀疑存在误用，则还可以撤消对这些文档的访问权限。 例如：
 
@@ -150,7 +150,7 @@ AIP 客户端会向 Office 应用程序安装“信息保护”栏，让最终�
 
     或者，使用扫描程序向数据存储库中的所有文档应用默认标签，这样就无需检查文件内容。 仅在报告模式下使用扫描程序，来发现你可能不知道的敏感信息。
 
-- **云数据存储**：请使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](https://docs.microsoft.com/cloud-app-security/use-case-information-protection) 
+- **云数据存储**：请使用 [Microsoft Cloud App Security](/cloud-app-security/azip-integration) 将标签应用于 Box、SharePoint 和 OneDrive 中的文档。 要查看教程，请参阅[自动应用 Azure 信息保护分类标签](/cloud-app-security/use-case-information-protection) 
 
 
 ## <a name="next-steps"></a>后续步骤
