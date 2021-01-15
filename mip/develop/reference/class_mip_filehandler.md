@@ -1,17 +1,17 @@
 ---
 title: 类 FileHandler
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 filehandler：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: bf3866fb1ec06156ebf40b2efed8c44f8af4a4ce
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 77b94fdd79334b842cc2ad1f19cf9a17ddc04439
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565137"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98211492"
 ---
 # <a name="class-filehandler"></a>类 FileHandler 
 适用于所有文件处理函数的接口。
@@ -22,8 +22,8 @@ ms.locfileid: "95565137"
 public std：： shared_ptr \<ContentLabel\> GetLabel ( # A1  |  开始从文件检索敏感度标签。
 公共 std：： vector \<std::pair\<std::string, std::string\> \> GetProperties (uint32_t 版本)   |  根据版本 Retrievs 文件 propertries。
 public std：： shared_ptr \<ProtectionHandler\> GetProtection ( # A1  |  开始从文件检索保护策略。
-public std：： shared_ptr \<AsyncControl\> RegisterContentForTrackingAndRevocationAsync (Bool isOwnerNotificationEnabled，const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  # # # # 个参数
-public std：： shared_ptr \<AsyncControl\> RevokeContentAsync (const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  对内容执行吊销。
+public void RegisterContentForTrackingAndRevocationAsync (bool isOwnerNotificationEnabled，const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  # # # # 个参数
+public void RevokeContentAsync (const std：： shared_ptr \<ProtectionEngine::Observer\>& 观察程序，const std：： shared_ptr \<void\>& 上下文)   |  对内容执行吊销。
 public void ClassifyAsync (const std：： shared_ptr \<void\>& 上下文)   |  在处理程序中执行规则，并返回要执行的操作的列表。
 public void InspectAsync (const std：： shared_ptr \<void\>& 上下文)   |  创建文件检查器对象，该对象用于检索兼容文件格式的文件内容。
 public void SetLabel (const std：： shared_ptr \<Label\>& label，Const LabelingOptions& LabelingOptions，Const ProtectionSettings& ProtectionSettings)   |  设置文件的敏感度标签。

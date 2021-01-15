@@ -1,17 +1,17 @@
 ---
 title: 类 AddContentFooterAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 addcontentfooteraction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 58f4e72361f9dfbe1e13b1d636f5cb6acd287784
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 1ecebda7a6df2fcba2bca531b7cc6e28eefdde99
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565246"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212478"
 ---
 # <a name="class-addcontentfooteraction"></a>类 AddContentFooterAction 
 指定向文档添加内容脚注的操作类。

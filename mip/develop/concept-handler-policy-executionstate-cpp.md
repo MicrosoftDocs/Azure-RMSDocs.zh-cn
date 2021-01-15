@@ -7,12 +7,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: tommos
-ms.openlocfilehash: c3973488cb8c3ec109a5a11dea1e540f09db92d4
-ms.sourcegitcommit: 99eccfe44ca1ac0606952543f6d3d767088de425
+ms.openlocfilehash: 732ca5e87b83f578dad3b40f842e31ea29e95c08
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75555698"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212716"
 ---
 # <a name="implement-executionstate"></a>实现 ExecutionState
 
@@ -27,7 +27,7 @@ ms.locfileid: "75555698"
 
 `ExecutionState` 公开以下虚拟成员。 每一个都为策略引擎提供一些上下文，以返回关于应用程序应执行哪些操作的信息。 此外，此信息可用于向 Azure 信息保护报告功能提供审核信息。
 
-| 成员                                                                             | Returns                                                                                                              |
+| 成员                                                                             | 返回                                                                                                              |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | `std::shared_ptr<mip::Label> GetNewLabel()`                                        | 返回应用于对象的标签。                                                                       |
 | `mip::DataState GetDataState()`                                                    | 返回对象的 mip：:D ataState。                                                                            |
@@ -38,7 +38,7 @@ ms.locfileid: "75555698"
 | `std::vector<std::pair<std::string, std::string>> GetNewLabelExtendedProperties()` | 返回字符串的 std::pairs 的 std :: vector，其中包含将要用于文档的自定义元数据。 |
 | `std::vector<std::pair<std::string, std::string>> GetContentMetadata()`            | 返回字符串的 std::pairs 的 std :: vector，其中包含当前的内容元数据。                               |
 | `std::shared_ptr<mip::ProtectionDescriptor> GetProtectionDescriptor()`             | 返回指向 mip::ProtectionDescriptor 的指针                                                                     |
-| `mip::ContentFormat GetContentFormat()`                                            | 返回 mip::ContentFormat                                                                                           |
+| `std::string GetContentFormat()`                                            | 返回字符串                                                                                           |
 | `mip::ActionType GetSupportedActions()`                                            | 返回标签的 mip::ActionTypes。                                                                              |
 | `std::shared_ptr<mip::ClassificationResults>`                                      | 如果实现，则返回分类结果的列表。                                                            |
 
@@ -57,7 +57,7 @@ struct ExecutionStateOptions {
     bool isDowngradeJustified = false;
     std::string downgradeJustification;
     std::string templateId;
-    mip::ContentFormat contentFormat = mip::ContentFormat::DEFAULT;
+    std::string contentFormat = mip::GetFileContentFormat();
     mip::ActionType supportedActions;
     bool generateAuditEvent;
 };
@@ -67,5 +67,5 @@ struct ExecutionStateOptions {
 
 ### <a name="next-steps"></a>后续步骤
 
-- 了解如何根据当前状态和所需状态，[为新的或现有的标签确定计算操作](concept-handler-policy-computeactions-cpp.md)。
+- 了解如何根据当前状态和所需状态， [为新的或现有的标签确定计算操作](concept-handler-policy-computeactions-cpp.md)。
 - [从 GitHub 下载策略 Api 示例，并试用策略 api](https://azure.microsoft.com/resources/samples/?sort=0&term=mipsdk+policyapi)

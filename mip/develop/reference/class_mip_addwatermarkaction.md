@@ -1,17 +1,17 @@
 ---
 title: 类 AddWatermarkAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 addwatermarkaction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 60120fbfb9d35cdb92c312af62bddf456dc88cfd
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 8b5767999b666e6cd8a2b9f42d9d86e690000681
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565242"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212359"
 ---
 # <a name="class-addwatermarkaction"></a>类 AddWatermarkAction 
 指定添加水印的操作类。

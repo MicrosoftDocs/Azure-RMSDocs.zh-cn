@@ -1,17 +1,17 @@
 ---
 title: 类 AuthDelegate：： OAuth2Token
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 authdelegate：： oauth2token 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: a8532e1950977e421fa25b426fa4e4061e610d8d
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 4db3d2fbb2299b30b85516047ec237d2f23d7cd9
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565224"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212036"
 ---
 # <a name="class-authdelegateoauth2token"></a>类 AuthDelegate：： OAuth2Token 
 一个类，其中包含应用程序提供的访问令牌信息。

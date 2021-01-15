@@ -1,17 +1,17 @@
 ---
 title: 类 ContentLabel
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 contentlabel：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: a60244b9db9b3087dde71cbdbcf63ba170cb06c3
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 9263f9ecd926cafe4aedd578804912aed9faa128
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565202"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98211679"
 ---
 # <a name="class-contentlabel"></a>类 ContentLabel 
 Microsoft 信息保护标签的抽象，应用于一段内容，通常是一个文档。

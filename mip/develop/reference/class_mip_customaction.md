@@ -1,17 +1,17 @@
 ---
 title: 类 CustomAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 customaction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: fc67920b517f3a9f75c395b42350cec9d75b23b3
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: d1fb231d76ba2b5f076d42bbeeff95618c7386f3
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565194"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98211696"
 ---
 # <a name="class-customaction"></a>类 CustomAction 
 CustomAction 是一个通用操作类，它捕获操作的所有子属性作为属性包。 调用方负责理解操作的含义。

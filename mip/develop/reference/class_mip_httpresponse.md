@@ -1,17 +1,17 @@
 ---
 title: 类 Httpresponse.cache
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 httpresponse.cache：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 0a08b2bea4834375a01897b3d657772112463b89
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 8e4a8c392c6e18197e3b9b376482f3145d1ecd3f
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565116"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98211390"
 ---
 # <a name="class-httpresponse"></a>类 Httpresponse.cache 
 描述单个 HTTP 响应的接口，由客户端应用在重写 HttpDelegate 时实现。

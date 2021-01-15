@@ -1,17 +1,17 @@
 ---
 title: 类 TemplateNotFoundError
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 templatenotfounderror：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 0ba4eae1c1c3d846c5e696a55a8a089b18a583ed
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 48182ae5d821aeed65e8c28b086dce0349b9af03
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565268"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212852"
 ---
 # <a name="class-templatenotfounderror"></a>类 TemplateNotFoundError 
 RMS 服务无法识别模板 ID。
@@ -36,15 +36,15 @@ public const std：： map \<std::string, std::string\>& GetDebugInfo ( # A2 con
 ## <a name="members"></a>成员
   
 ### <a name="mmessage"></a>mMessage
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="mdebuginfo"></a>mDebugInfo
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="mname"></a>mName
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="geterrorcode-function"></a>GetErrorCode 函数
@@ -110,9 +110,9 @@ public const std：： map \<std::string, std::string\>& GetDebugInfo ( # A2 con
   
 ### <a name="errorcode-enum"></a>ErrorCode 枚举
 
+错误输入错误的错误代码。
+
  值                         | 说明                                
 --------------------------------|---------------------------------------------
 常规            | 常规错误输入错误
 FileIsTooLargeForProtection            | 文件太大，无法进行保护
-
-错误输入错误的错误代码。

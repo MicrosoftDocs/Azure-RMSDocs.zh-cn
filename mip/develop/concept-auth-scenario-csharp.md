@@ -1,29 +1,29 @@
 ---
 title: '概念-Microsoft 信息保护 (MIP) SDK c # 客户端的身份验证方案'
 description: '有关 Microsoft Information Protection SDK c # 客户端应用程序的身份验证方案的技术详细信息。'
-author: msmbaldwin
-ms.author: mbaldwin
+author: Pathak-Aniket
+ms.author: v-anikep
 ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: 7a22bc297b3330b3cdb738ff16e013d0d1f0dc87
-ms.sourcegitcommit: 8e48016754e6bc6d051138b3e3e3e3edbff56ba5
+ms.openlocfilehash: bee7cb6854aa58f6d5c3c6781984875c8ee347a1
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865325"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212614"
 ---
 # <a name="quickstart-public-and-confidential-clients-c"></a>快速入门：公共和机密客户端 (c # ) 
 
-使用 MIP SDK 生成应用程序时，有两种常见方案。 一个方案会看到用户直接针对 Azure AD 进行身份验证，在其他应用程序中，使用机密服务主体密钥或证书进行身份验证。
+使用 MIP SDK 生成应用程序时，有两种常见方案。 第一种情况是，用户直接对 Azure AD 进行身份验证。 在第二种情况下，应用程序使用机密服务主体密钥或证书进行身份验证。
 
 ## <a name="public-client-applications"></a>公共客户端应用程序
 
-这些应用程序通常是桌面或移动应用程序，在设备上运行的应用程序将提示用户进行身份验证，用户直接连接到后端 MIP 服务。 在这种情况下，应该使用身份验证库来确保用户能够登录到 Azure AD、满足任何多重因素或条件访问要求，并获得相应资源的 OAuth2 令牌。
+这些应用程序是在设备上运行的应用程序将提示用户进行身份验证的桌面应用程序或移动应用程序。 用户直接连接到后端 MIP 服务。 在这种情况下，应该使用身份验证库来确保用户可以登录到 Azure AD、满足任何多重身份验证或条件访问要求，并获得相应资源的 OAuth2 令牌。
 
-有关详细信息，请参阅 Azure AD [公有客户端身份验证流文档](/azure/active-directory/develop/msal-net-initializing-client-applications#initializing-a-public-client-application-from-configuration-options)
+有关详细信息，请参阅 [公共客户端身份验证流文档](/azure/active-directory/develop/msal-net-initializing-client-applications#initializing-a-public-client-application-from-configuration-options)
 
-下面是一个快速代码截图，演示使用 Microsoft 身份验证 SDK 客户端应用程序的公共客户端身份验证流 (MSAL) 。
+下面是一个快速代码截图，演示使用 Microsoft 身份验证 SDK 客户端应用程序 (MSAL) 的公共客户端身份验证流。
 
 ```csharp
 
@@ -45,15 +45,28 @@ public string AcquireToken(Identity identity, string authority, string resource,
 }
 ```
 
-租户-GUID 表示 Azure AD 租户的租户 GUID，而应用程序 ID 是 Azure AD 门户上应用程序注册中的应用程序 ID。
+**租户 guid** 是 Azure AD 租户的唯一租户 guid。
+**应用** 程序 id 是 Azure AD 门户上应用程序注册中的应用程序 id。
 
 ## <a name="confidential-client-applications"></a>机密客户端应用程序
 
-这些应用程序通常是基于云或服务的应用程序，用户不直接连接到后端 MIP 服务，但该服务需要标记、保护或取消保护启用了 MIP 的内容。 在此方案中，应用程序必须存储用于身份验证的一些证书或应用程序机密，才能 Azure AD，并使用该机密获取后端 MIP 服务的令牌。 然后，它可以使用 MIP SDK 的委托功能，代表经过身份验证的用户保护或使用内容。
+这些应用程序是基于云或服务的应用程序，用户不直接连接到后端 MIP 服务。 服务需要标记、保护或取消保护启用了 MIP 的内容。 在这种情况下，应用程序必须存储证书或应用程序机密。 这些机密将用于 Azure AD 身份验证，并使用该机密获取后端 MIP 服务的令牌。 然后，它可以使用 MIP SDK 的委托功能，代表经过身份验证的用户保护或使用内容。
 
-有关详细信息，请参阅 Azure AD [机密客户端身份验证流文档](/azure/active-directory/develop/msal-net-initializing-client-applications#initializing-a-confidential-client-application-from-code)
+将 MIP SDK 与基于服务的应用程序集成需要使用客户端凭据授予流。  (MSAL) 的 Microsoft 身份验证库可用于在类似于公用客户端应用程序中看到的模式下实现此功能。 本文将简要介绍如何 `IAuthDelegate` 在 .net 中使用此流来更新适用于基于服务的应用程序的身份验证 SDK。 在发布时，没有适用于 c + + 的 MSAL 版本，但可以通过 [直接 REST 调用](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)来实现这一流。
 
-下面是使用 Microsoft 身份验证 SDK 客户端应用程序的机密客户端身份验证流的快速代码截图， (MSAL) 。 应用程序可以使用 AD 证书或客户端密码进行身份验证。
+有关详细信息，请参阅 [机密客户端身份验证流文档](/azure/active-directory/develop/msal-net-initializing-client-applications#initializing-a-confidential-client-application-from-code)
+
+下面是一个快速代码截图，演示使用 Microsoft 身份验证 SDK 客户端应用程序 (MSAL) 的机密客户端身份验证流。 应用程序可以使用 AD 证书或客户端密码进行身份验证。
+
+> [!NOTE]
+> 在下面的示例中，请特别注意此行。 
+>
+> ```csharp
+> string[] scopes = new string[] { resource[resource.Length - 1].Equals('/') ? $"{resource}.default" : $"{resource}/.default" };
+> ```
+> 这将从提供给方法的资源构造 MSAL 范围 `AcquireToken()` 。 
+
+### <a name="msal-confidential-client-example"></a>MSAL 机密客户端示例
 
 ```csharp
 public string AcquireToken(Identity identity, string authority, string resource, string claim)
@@ -99,5 +112,5 @@ public string AcquireToken(Identity identity, string authority, string resource,
 }
 
 ```
-
-租户-GUID 表示 Azure AD 租户的租户 GUID，而应用程序 ID 是 Azure AD 门户上应用程序注册中的应用程序 ID。
+**租户 guid** 是 Azure AD 租户的唯一租户 guid。
+**应用** 程序 id 是 Azure AD 门户上应用程序注册中的应用程序 id。

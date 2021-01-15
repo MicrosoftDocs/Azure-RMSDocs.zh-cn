@@ -1,17 +1,17 @@
 ---
 title: 类 PolicyProfile：： Settings
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 policyprofile：： settings 类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 2ec38a34f2522448704f1be91d03c62761cafdf6
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: 49cff6afb3f42b427e656f886eef82fff6bde51e
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565051"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98213345"
 ---
 # <a name="class-policyprofilesettings"></a>类 PolicyProfile：： Settings 
 PolicyProfile 在其创建期间及其整个生存期内使用的 Settings。
@@ -97,11 +97,11 @@ public ~Settings()  | _尚无记录。_
 任务可以引用阻止其析构的配置文件对象，taskdispatcher 不应共享队列。
   
 ### <a name="setsessionid-function"></a>SetSessionId 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="getsessionid-function"></a>GetSessionId 函数
-尚无记录。
+_尚无记录。_
 
   
 ### <a name="setcustomsettings-function"></a>SetCustomSettings 函数
@@ -119,4 +119,4 @@ public ~Settings()  | _尚无记录。_
 **返回结果**：名称/值对列表。
   
 ### <a name="settings-function"></a>~ Settings 函数
-尚无记录。
+_尚无记录。_

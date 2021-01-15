@@ -1,17 +1,17 @@
 ---
 title: 类 AddContentHeaderAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 addcontentheaderaction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 090bf4e1ad70238d6023a914fba4786a97a25a0d
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: e5a2993af705855dde94f5be37e22f1e9ab87c99
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565245"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212445"
 ---
 # <a name="class-addcontentheaderaction"></a>类 AddContentHeaderAction 
 指定添加内容头的操作类。

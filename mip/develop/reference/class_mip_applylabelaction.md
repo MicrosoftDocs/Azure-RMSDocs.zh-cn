@@ -1,17 +1,17 @@
 ---
 title: 类 ApplyLabelAction
 description: 记录 (MIP) SDK 的 Microsoft 信息保护的 applylabelaction：：未定义的类。
-author: msmbaldwin
+author: BryanLa
 ms.service: information-protection
 ms.topic: reference
-ms.author: mbaldwin
-ms.date: 09/21/2020
-ms.openlocfilehash: 1de755d141cd86441ef3eb756d1f46dbdd73f2c4
-ms.sourcegitcommit: 3f5f9f7695b9ed3c45e9230cd8b8cb39a1c5a5ed
+ms.author: bryanla
+ms.date: 01/13/2021
+ms.openlocfilehash: a88a913ea5dfd958e5ed073f0dff6f0bac1b527f
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "95565231"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98212240"
 ---
 # <a name="class-applylabelaction"></a>类 ApplyLabelAction 
 应用标签操作要求，必须调用应用程序，才能应用特定标签。
