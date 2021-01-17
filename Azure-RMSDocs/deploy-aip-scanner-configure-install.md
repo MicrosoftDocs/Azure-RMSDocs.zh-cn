@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e17e42850904590df6a0c223032fd07306e0815b
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 8cc4a6123a9b292212f573c75f2807905c646675
+ms.sourcegitcommit: 5e5631e03959034f37705b4f61aead3d35e8cd8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583704"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540197"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -158,7 +158,7 @@ ms.locfileid: "97583704"
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
     |![添加图标](media/i-add.png "添加图标")   | 选择表中列出的一个或多个存储库，然后选择 " **分配选定项** "，将其分配到内容扫描作业。          |
-    |**Filter**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
+    |**筛选器**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
     |![Log Analytics 图标](media/i-log-analytics.png "Log Analytics 图标") |在 "非托管存储库" 关系图的右上角，单击 " **Log Analytics** " 图标以跳转到这些存储库的 Log Analytics 数据。 |
     | | |
 
@@ -189,7 +189,7 @@ ms.locfileid: "97583704"
     |设置  |说明  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略强制执行**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**策略实施**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
     |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 <br />- **要扫描的文件类型**：保留默认文件类型以 **排除** <br />- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
@@ -325,6 +325,8 @@ ms.locfileid: "97583704"
 
 运行初始发现扫描后，请继续 [配置扫描仪以应用分类和保护](#configure-the-scanner-to-apply-classification-and-protection)。
 
+> [!NOTE]
+> 有关详细信息，请参阅 [如何以非交互方式为 Azure 信息保护标记文件](rms-client/clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)
 ## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>将扫描程序配置为应用分类和保护
 
 默认设置将扫描程序配置为运行一次，并将其配置为仅报告模式。

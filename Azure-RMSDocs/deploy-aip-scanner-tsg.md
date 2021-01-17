@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d9eadd907059bd128ac08c761128e0f1926c9f81
-ms.sourcegitcommit: 0ac52ea741f205692406f0f82c74c65c23ee3467
+ms.openlocfilehash: 16a8eb244cf920c9ebd9b2ee0a6a023b7782c25a
+ms.sourcegitcommit: 5e5631e03959034f37705b4f61aead3d35e8cd8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2020
-ms.locfileid: "97792290"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540096"
 ---
 # <a name="troubleshooting-your-unified-labeling-on-premises-scanner-deployment"></a>排查您的统一标签本地扫描器部署问题
 
@@ -69,7 +69,7 @@ Start-AIPScannerDiagnostics
 
 使用下列部分来了解扫描仪生成的特定错误消息，以及解决此问题的故障排除或解决方案操作：
 
-|错误类型 |疑难解答  |
+|错误类型 |故障排除  |
 |---------|---------|
 |**身份验证错误**     |  - [身份验证令牌不被接受](#authentication-token-not-accepted) <br>  - [缺少身份验证令牌](#authentication-token-missing)|
 |**策略错误数**     |  - [缺少策略](#policy-missing) <br>- [策略不包括任何自动标记条件](#policy-doesnt-include-any-automatic-labeling-condition)      |
@@ -90,7 +90,7 @@ Start-AIPScannerDiagnostics
 
 如果 [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 命令失败，请确保在 Azure 门户中正确定义权限。
 
-有关详细信息，请参阅 [创建和配置 set-aipauthentication 的 Azure AD 应用程序](rms-client/clientv2-admin-guide-powershell.md#to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication)。
+有关详细信息，请参阅 [创建和配置 set-aipauthentication 的 Azure AD 应用程序](rms-client/clientv2-admin-guide-powershell.md#create-and-configure-azure-ad-applications-for-set-aipauthentication)。
 
 ### <a name="authentication-token-missing"></a>缺少身份验证令牌
 

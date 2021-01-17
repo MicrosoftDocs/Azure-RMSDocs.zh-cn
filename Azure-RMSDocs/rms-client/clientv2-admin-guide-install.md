@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 69cf01252a95476a41ac5f82f7d0546afe285041
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 8c2441a9272e62577fcaf88c14fb7e6bb6cdbdde
+ms.sourcegitcommit: 5e5631e03959034f37705b4f61aead3d35e8cd8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164498"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "98540168"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -89,7 +89,6 @@ Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word�
     |---------|---------|
     |**AllowTelemetry = 0**     |    使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。     |
     |**ServiceLocation**     |  如果要在运行 Office 2010 的计算机上安装客户端，并且你的用户不是其计算机上的本地管理员，或者你不希望系统向他们发出提示，请使用此参数。 <br><br>有关详细信息，请参见: <br>- [有关 **ServiceLocation** 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter) <br> - [AIP for Windows 和 Office 版本（扩展支持）](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)      |
-
     | | |
 
 1. 若要完成安装： 
