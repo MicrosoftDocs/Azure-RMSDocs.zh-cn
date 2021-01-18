@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dbd9d86e1ce2103f144e51314950cf67be31eef6
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: f9915049894e0892ead767f2ddf392575eb8a99d
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164379"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560281"
 ---
 # <a name="additional-requirements-for-installing-the-unified-labeling-client-on-enterprise-networks"></a>在企业网络上安装统一标签客户端的其他要求
 
 >***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
 
@@ -82,6 +82,10 @@ ms.locfileid: "98164379"
 如果有登录助手的更高版本，请先卸载它，然后再安装 Azure 信息保护统一标签客户端。 
 
 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。 
+
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+>
 
 仅适用于 Windows 10 版本 1809，操作系统内部版本早于 17763.348，安装 [2019 年 3 月 1 日—KB4482887 (OS 内部版本 17763.348)](https://support.microsoft.com/help/4482887/windows-10-update-kb4482887) 以确保信息保护栏在 Office 应用程序中正确显示。 如果已有 Office 365 1902 或更高版本，则不需要此更新。    
 

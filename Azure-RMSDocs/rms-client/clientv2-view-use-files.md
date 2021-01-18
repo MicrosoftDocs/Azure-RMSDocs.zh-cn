@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 9c09c4229db71f93d952868cc982f51c12fe9c00
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 1d8b9741f9b69d6fc53842e4239348ccc1354232
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385227"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559806"
 ---
 # <a name="user-guide-view-protected-files-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端查看受保护的文件
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-view-use-files.md)。 *
 

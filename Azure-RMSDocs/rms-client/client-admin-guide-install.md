@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2efab361e4ea1b74fdedf6cc6cc9735338d3633b
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 5eab2eee3fb0117bc3efd21c2605fc8d0293178d
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164090"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560367"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-classic-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护经典客户端
 
@@ -62,8 +62,9 @@ ms.locfileid: "98164090"
 
     如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。
 
-    有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
-
+    > [!IMPORTANT]
+    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    >
 
 - **KB 4482887**
 
@@ -96,7 +97,7 @@ ms.locfileid: "98164090"
 
 使用下列选项之一来为用户安装客户端：
 
-|安装选项  |说明  |
+|安装选项  |描述  |
 |---------|---------|
 |**运行客户端可执行文件 ( .exe)**  <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。<br><br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
 |**将客户端的 Windows installer 部署 ( .msi)** <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。<br><br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。<br><br> 对于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，你必须使用此方法，因为这些计算机不支持 .exe 文件。<br><br>**注意**：使用 .Msi 安装时，必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
@@ -121,27 +122,23 @@ ms.locfileid: "98164090"
     有关无提示仅安装 PowerShell cmdlet 的示例：`AzInfoProtection.exe  PowerShellOnly=true /quiet`
 
     帮助屏幕中未列出的其他参数：
-
-    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。 
-    
-        有关详细信息，请参阅 [ServiceLocation 安装参数](#more-information-about-the-servicelocation-installation-parameter) 和 [AIP For Windows 和 Office 版本](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)的详细信息。
-
+ 
     - **DowngradeDotNetRequirement**：使用此参数可以不遵守一定要有 Microsoft Framework .NET 版本 4.6.2 的要求。 [详细信息](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
 
     - **AllowTelemetry=0**：使用此参数来禁用安装选项“通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护”。
 
+    - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。  有关详细信息，请参阅 [ServiceLocation 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter)。 
+    
+        > [!IMPORTANT]
+        > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+        >
+
 1. 如果要以交互方式安装，请选择安装 **演示策略** 的选项（如果无法连接到 Microsoft 365 或 Azure Active Directory），但想要通过使用本地策略查看和体验 Azure 信息保护的客户端，以便进行演示。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
 
-1. 若要完成安装：
+1. 若要完成安装，请重新启动所有 Office 应用程序和文件资源管理器的所有实例。
 
-    - **如果计算机运行的是 Office 2010**，请重新启动计算机。
-
-        如果客户端未使用 **ServiceLocation** 参数安装，则当你首次打开使用 Azure 信息保护栏的 Office 应用程序 (例如，Word) 时，你必须在此首次使用时确认更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。
-
-        有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
-
-
-    - **对于其他版本的 office**，请重新启动所有 office 应用程序和文件资源管理器的所有实例。
+    **仅限 office 2010**：如果你的计算机运行的是 [office 2010](../known-issues.md#aip-and-legacy-windows-and-office-versions)，请重新启动计算机。 如果客户端未使用 **ServiceLocation** 参数安装，则当你首次打开使用 Azure 信息保护栏的 Office 应用程序 (例如，Word) 时，你必须在此首次使用时确认更新注册表的任何提示。 利用[服务发现](client-deployment-notes.md#rms-service-discovery)功能填充注册表项。
+    
 
 1. 可以查看默认在 %temp% 文件夹中创建的安装日志文件来确认安装是否成功。 可以使用 **/log** 安装参数更改此位置。
 
@@ -153,7 +150,14 @@ ms.locfileid: "98164090"
 
 #### <a name="more-information-about-the-servicelocation-installation-parameter"></a>详细了解 ServiceLocation 安装参数
 
-当你为具有 Office 2010 的用户安装客户端，并且这些用户没有本地管理权限时，请为你的 Azure Rights Management 服务指定 **ServiceLocation** 参数和 URL。 此参数和值将创建和设置以下注册表项：
+当你为具有 Office 2010 的用户安装客户端，并且这些用户没有本地管理权限时，请为你的 Azure Rights Management 服务指定 **ServiceLocation** 参数和 URL。 
+
+    
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+>
+
+此参数和值将创建和设置以下注册表项：
 
 `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation`
 
@@ -164,8 +168,6 @@ ms.locfileid: "98164090"
 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation`
 
 使用 [以下过程](#to-identify-the-value-to-specify-for-the-servicelocation-parameter) 来确定要为 **ServiceLocation** 参数指定的值。
-
-有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 ##### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>若要标识要为 ServiceLocation 参数指定的值
 
@@ -181,7 +183,7 @@ ms.locfileid: "98164090"
 
     其余字符串是要为 **ServiceLocation** 参数指定的值。
 
-用于 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 和 Azure RMS 的无提示安装客户端的示例： 
+用于 [Office 2010](../known-issues.md#aip-and-legacy-windows-and-office-versions) 和 Azure RMS 的无提示安装客户端的示例： 
 
 `AzInfoProtection_UL.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
 
@@ -191,7 +193,7 @@ ms.locfileid: "98164090"
 
 如果安装这一 Microsoft .NET Framework 更高版本不可行，可以在安装客户端时使用 **DowngradeDotNetRequirement=True** 参数和值，这样就可以在已安装 Microsoft .NET Framework 版本 4.5.1 的情况下忽略这项要求。
 
-例如： `AzInfoProtection.exe DowngradeDotNetRequirement=True`
+例如：`AzInfoProtection.exe DowngradeDotNetRequirement=True`
 
 建议谨慎使用此参数。还请注意，将 Azure 信息保护客户端与旧版 Microsoft .NET Framework 结合使用时，Office 应用程序存在报告的尚未解决的问题。 如果确实遇到了尚未解决的问题，请先升级到建议的版本，然后再尝试其他故障排除解决方案。 
 
@@ -215,12 +217,14 @@ ms.locfileid: "98164090"
     |**Office 2010**|Windows 8.1 和 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|如果未安装 KB2843630 或 KB2919355，则进行安装|
     |**Office 2010**|Windows 8 和 Windows Server 2012|[KB2843630](https://www.microsoft.com/download/details.aspx?id=41708)<br /><br /> 文件名中包含的版本号：v3|安装|
     | | | | |
-
-    有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+    
+    > [!IMPORTANT]
+    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    >
 
 1. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。
 
-    > [!NOTE]
+    > [!TIP]
     > 默认情况下，启用 " **通过将使用情况统计信息发送到 Microsoft 安装" 选项来帮助改进 Azure 信息保护** 。 若要禁用此选项，请确保执行下列操作之一：
     >
     >- 在安装过程中，指定 **AllowTelemetry = 0**

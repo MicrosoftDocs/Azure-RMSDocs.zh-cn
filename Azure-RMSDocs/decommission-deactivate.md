@@ -13,18 +13,18 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: b26e06a20e35bd56c44f4a44f0ffbc019a99865e
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 7ffa9a2d6725f4cc70b2cb50cc2218a4d05960e9
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583517"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559721"
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>解除 Azure 信息保护授权并停用对 Azure 信息保护的保护
 
 >适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 可以通过使用 Azure 信息保护中的 Azure 权限管理服务，始终控制你组织是否保护内容。 如果你确定不再想要使用此信息保护服务，我们可以保证你仍可以访问以前保护的内容。
 
@@ -41,9 +41,9 @@ ms.locfileid: "97583517"
 
 |如果这适用于你…|… 采取的措施：|
 |----------------------------|--------------|
-|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项，将客户端重定向到本地部署。 有关说明，请参阅 RMS 客户端部署说明中的 [服务发现部分](./rms-client/client-deployment-notes.md) 。 <br><br>对于 Office 2010，请使用 Office 2010 的 **LicenseServerRedirection** 注册表项，如 [office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。|
+|你希望所有用户继续使用 Rights Management，但使用本地解决方案而不使用 Azure 信息保护    →|使用 Office 2016 或 Office 2013 的 **LicensingRedirection** 注册表项，将客户端重定向到本地部署。 有关说明，请参阅 RMS 客户端部署说明中的 [服务发现部分](./rms-client/client-deployment-notes.md) 。 <br><br>对于 Office 2010，请使用 Office 2010 的 **LicenseServerRedirection** 注册表项，如 [office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 <br><br>**重要提示**： Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。|
 |你想要完全停止使用 Rights Management    →|赋予指定管理员[超级用户权限](configure-super-users.md)，并为此用户安装 [Azure 信息保护客户端](./rms-client/client-admin-guide-install.md)。<br /><br />然后，此管理员可以使用此客户端的 PowerShell 模块批量解密受 Azure 信息保护保护的文件夹中的文件。 文件还原到未受保护状态，因此可在不使用 Azure 信息保护或 AD RMS 等 Rights Management 技术的情况下进行读取。 由于此 PowerShell 模块可与 Azure 信息保护和 AD RMS 一起使用，因此你可以选择在停用 Azure 信息保护中的保护服务或组合之前或之后对文件进行解密。|
-|无法识别所有受 Azure 信息保护保护的文件。 或者，你希望所有用户都可以自动读取任何丢失的受保护的文件   →|按照 RMS 客户端部署说明中的 [服务发现部分](./rms-client/client-deployment-notes.md)中所述，在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 office 2013 的 **LicensingRedirection** 注册表项。 <br><br>**对于 Office 2010：** <br>-使用 **LicenseServerRedirection** 注册表项，如 [Office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 <br>-通过将 **DisableCreation** 设置为 **1** 来防止用户保护新文件，如 [Office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 <br><br>有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。|
+|无法识别所有受 Azure 信息保护保护的文件。 或者，你希望所有用户都可以自动读取任何丢失的受保护的文件   →|按照 RMS 客户端部署说明中的 [服务发现部分](./rms-client/client-deployment-notes.md)中所述，在所有客户端计算机上部署注册表设置，方法是使用 Office 2016 和 office 2013 的 **LicensingRedirection** 注册表项。 <br><br>**对于 Office 2010**： <br>-使用 **LicenseServerRedirection** 注册表项，如 [Office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 <br>-通过将 **DisableCreation** 设置为 **1** 来防止用户保护新文件，如 [Office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。 <br><br>**重要提示**： Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。|
 |你需要针对任何丢失文件的受控的手动恢复服务    →|赋予数据恢复组中的指定用户[超级用户权限](configure-super-users.md)，并为这些用户安装 [Azure 信息保护客户端](./rms-client/client-admin-guide-install.md)，以便在标准用户请求此操作时取消文件保护。<br /><br />在所有计算机上，部署注册表设置以防止用户通过将 **DisableCreation** 设置为 **1** 来保护新文件，如 [Office 注册表设置](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772637(v=ws.10))中所述。|
 | | |
 

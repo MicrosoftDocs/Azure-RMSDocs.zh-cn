@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 775eca70267f2caa70599dd3b1d8a33020121a74
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 73ed28791e0a4bde8349e4e500f7e5b40fad5918
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583466"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559993"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-unified-labeling-client"></a>用户指南：通过 Azure 信息保护统一标签客户端进行分类和保护
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-classify-protect.md)。 *
 
@@ -126,15 +126,13 @@ ms.locfileid: "97583466"
 
 4. 如果已选择自定义权限选项，此时指定以下项：
 
-   - **选择权限**：选择你希望用户在保护所选文件时具有的访问级别。
-    
-   - **选择用户、组或组织**：指定哪些人应拥有你为一个或多个文件选择的权限。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 
-    
-     或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。
-        
-    - **过期访问**：仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。
-    
-     请注意，如果以前使用 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 应用中的自定义权限配置此设置，则不会在此对话框中显示指定的到期日期，但仍会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。
+    |选项  |描述  |
+    |---------|---------|
+    |**选择权限**     | 在保护所选文件时选择希望用户具有的访问级别。        |
+    |**选择用户、组或组织**     |  指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 <br><br>或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。       |
+    |**访问权限过期**     |  仅为时间敏感的文件选择此选项，以使指定的人员无法在设置日期后打开选定的一个或哪些文件。 仍可以打开原始文件，但在设置日期的午夜（当前时区）过后，指定的人员将无法打开该文件。 <br><br>**注意**：如果以前使用 Office 2010 应用中的自定义权限配置此设置，则不会在此对话框中显示指定的到期日期，但仍会设置到期日期。 此显示问题仅适用于在 Office 2010 中配置了到期日期的情况。<br><br>   **重要提示**： Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。       |
+    |     |         |
+
 
 5. 单击“应用”，然后等到“工作完成”消息出现即可查看结果。 然后单击 **“关闭”**。
 

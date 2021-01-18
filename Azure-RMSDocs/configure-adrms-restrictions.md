@@ -12,12 +12,12 @@ ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 ROBOTS: NOINDEX
 ms.subservice: hyok
 ms.custom: admin
-ms.openlocfilehash: 9b608b8f38c157320558cf5ae5011ef601773b2e
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 129c07876106d02174b1bab1d4eea82205160b69
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164226"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559568"
 ---
 # <a name="hold-your-own-key-hyok-details-for-azure-information-protection"></a>保存你自己的密钥 (Azure 信息保护的 HYOK) 详细信息
 
@@ -158,7 +158,7 @@ HYOK 是标签的管理员配置选项，无论内容使用的是基于云的密
 |**AD RMS 配置**     |你的 AD RMS 系统必须以特定方式配置为支持 HYOK。 有关详细信息，请参阅 [下文](#ad-rms-configuration-requirements)。          |
 |**目录同步**     |必须在本地 Active Directory 与 Azure Active Directory 之间配置目录同步。 </br></br>要使用 HYOK 保护标签的用户必须配置为使用单一登录。         |
 |**明确定义信任的配置**     |如果与组织外的其他人共享 HYOK 保护的内容，则必须在与其他组织的直接点对点关系中为显式定义的信任配置 AD RMS。 </br></br>使用受信任的用户域 (Tud) 或使用 Active Directory 联合身份验证服务 (AD FS) 创建的联合信任来完成此操作。         |
-|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意**：不支持 office 2010 和 office 2007。  有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。      |
+|**Microsoft Office 支持的版本**     | 保护或使用受 HYOK 保护的内容的用户必须具有： </br></br>-支持 Rights Management (IRM 的信息的 Office 版本)  </br>-在 Windows 7 Service Pack 1 或更高版本上运行 Microsoft Office Professional Plus 版本2013或更高版本 Service Pack 1。 </br>-对于 Office 2016 Microsoft Installer ( .msi) 版本，你必须将 [更新4018295用于 Microsoft Office 2016，年3月 6 2018 日发布](https://support.microsoft.com/help/4018295/march-6-2018-update-for-office-2016-kb4018295)。 </br></br>**注意**：不支持 office 2010 和 office 2007。  有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。      |
 
 > [!IMPORTANT]
 > 为了满足 HYOK protection 提供的高确定性，建议执行以下操作：

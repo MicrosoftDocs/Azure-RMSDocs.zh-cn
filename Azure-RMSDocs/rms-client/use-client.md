@@ -12,18 +12,18 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 37d626fc3cf907191aed9760d1452082d732044f
-ms.sourcegitcommit: 0f76655985b49b4b8868d5f8893e20978f4dc4da
+ms.openlocfilehash: 0019699301b68df2d6ee4fd05d29a0e64734fc6e
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97747131"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559857"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
 >***适用于**： Active Directory Rights Management Services， [azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，[azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，windows 8，windows server 2019，windows Server 2016，Windows server 2012 R2，windows server 2012 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >相关内容：*[AIP 统一标记客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
@@ -148,7 +148,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 - [Azure 信息保护客户端的详细比较](#detailed-comparisons-for-the-azure-information-protection-clients)
 - [未计划在 Azure 信息保护统一标签客户端中的功能](#features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client)
 
-|功能|经典客户端|统一标记客户端|Office 内置标签解决方案|
+|功能|经典客户端|统一标签客户端|Office 内置标签解决方案|
 |:------|:------------:|:---------------------:|:-----------------------------:|
 |**手动标记**| ![是](../media/yes-icon.png)   | ![是](../media/yes-icon.png)   |![是](../media/yes-icon.png) |
 |**默认标签**| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)|
@@ -210,7 +210,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 如果 Azure 信息保护经典客户端和 Azure 信息保护统一标签客户端都支持同一功能，请使用以下列表来帮助确定两个客户端之间的功能差异：
 
 
-|功能 |经典客户端|统一标记客户端|
+|功能 |经典客户端|统一标签客户端|
 |--------------|-----------------------------------|-----------------------------------------------------------|
 |**安装**| 安装本地演示策略的选项 | 没有本地演示策略|
 |**在 Office 应用中应用标签时选择并显示标签**|通过功能区上的“保护”按钮 <br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|通过功能区上的“敏感度”按钮<br /><br /> 通过“信息保护”栏（功能区下方的水平栏）|

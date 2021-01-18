@@ -13,18 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 43e9731197231c8bccf2c5d00aec81b20ab3c889
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 3a616092ac1b74c2ae530898c69a61f071e93ea1
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583551"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559789"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、windows Server 2012 R2、windows server 2012 *
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息可帮助你配置将使用 Azure Rights Management (RMS) 连接器的本地服务器。 这些过程涉及 [部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤5。
 
@@ -97,7 +97,7 @@ ms.locfileid: "97583551"
 
 3.  确定如何运行工具：
     
-    |方法  |说明  |
+    |方法  |描述  |
     |---------|---------|
     |**就地**     |  从要配置为与 RMS 连接器通信的服务器以交互方式运行该工具。 <br><br>**提示**：这对于一次性配置（例如测试环境）非常有用。       |
     |**软件部署**     |  运行该工具以生成注册表文件，然后将其部署到一个或多个相关服务器。 <br><br>使用支持软件部署的系统管理应用程序（如 System Center Configuration Manager）部署注册表文件。       |
@@ -115,7 +115,7 @@ ms.locfileid: "97583551"
 
 若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 
 
-输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，`https:\//connector.contoso.com`。 
+输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 `https:\//connector.contoso.com`。 
 
 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
@@ -138,8 +138,8 @@ ms.locfileid: "97583551"
 
 在上述两种情况下，你必须在没有配置为使用连接器的单独计算机上安装客户端应用程序。 然后它们即可正确地直接使用 RMS。
 
-> [!NOTE]
-> 有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
 > 
 ## <a name="configuring-an-exchange-server-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 以下 Exchange 角色将与 RMS 连接器通信：

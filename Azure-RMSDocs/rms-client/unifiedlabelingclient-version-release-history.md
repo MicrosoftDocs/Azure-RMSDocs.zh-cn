@@ -12,18 +12,18 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3e5a34268b2b0144c49c7ce6150d725b642184e5
-ms.sourcegitcommit: d68537b88ac6b43846d574359938fb45277cb850
+ms.openlocfilehash: 91f8975ddd3fe262a1ca7a0df1a7392fbda59a6a
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195409"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559772"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
 >***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [AIP 经典客户端版本发行历史记录和支持策略](client-version-release-history.md)。 *
 

@@ -13,18 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a3c174a8afba4571df1546ebeeebc790bd4cdc99
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 80a1a42642ab0d611c64da34e3bf5a86a219f447
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583568"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560401"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
 >***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用下面的一组指令将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护。 
 
@@ -70,19 +70,30 @@ ms.locfileid: "97583568"
         
       - 多个林、多个 RMS 群集
         
-    注意：默认情况下，多个 AD RMS 群集将迁移到单个 Azure 信息保护租户。 如果想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个租户中。
-
+    > [!NOTE]
+    > 默认情况下，多个 AD RMS 群集将迁移到单个 Azure 信息保护的租户。 如果想要迁移到单独的 Azure 信息保护租户，必须将它们视为不同的迁移。 不能将一个 RMS 群集的密钥导入到多个租户中。
+    >
+ 
 - **运行 Azure 信息保护的所有要求，包括 Azure 信息保护的订阅 (azure Rights Management 服务未激活)**：
 
     请参阅 [Azure 信息保护的要求](./requirements.md)。
 
-    **如果你的计算机运行的是 Office 2010**，则必须安装 [Azure 信息保护客户端](rms-client/use-client.md) ，以提供对云服务的用户进行身份验证的功能。 有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
-
-    **对于更高版本的 Office**，Azure 信息保护客户端是分类和标签 *所必需* 的，并且是 *可选的，但* 如果你只想要保护数据，则建议使用该客户端。 
+    Azure 信息保护客户端是分类和标签 *所必需* 的，并且是 *可选的，但* 如果你只想要保护数据，建议使用该客户端。 
 
     有关详细信息，请参阅 [Azure 信息保护统一标签客户端](./rms-client/clientv2-admin-guide.md)的管理指南。
 
-    尽管要求必须拥有 Azure 信息保护订阅才能迁移 AD RMS，但我们建议在开始迁移之前不要激活 Rights Management 服务。 迁移过程包括此激活步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护租户之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以凭借额外的步骤从 AD RMS 迁移。
+    尽管要求必须拥有 Azure 信息保护订阅才能迁移 AD RMS，但我们建议在开始迁移之前不要激活 Rights Management 服务。 
+
+    迁移过程包括此激活步骤，在从 AD RMS 导出密钥和模板并将其导入到 Azure 信息保护租户之后执行此操作。 但是，如果 Rights Management 服务已激活，你仍可以凭借额外的步骤从 AD RMS 迁移。
+
+    **仅限 Office 2010**： 
+
+    如果你的计算机运行的是 Office 2010，则必须安装 [Azure 信息保护客户端](rms-client/use-client.md) ，以提供对云服务的用户进行身份验证的功能。 
+
+    > [!IMPORTANT]
+    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    >  
+    
 
 
 - **Azure 信息保护的准备工作**：
@@ -219,7 +230,10 @@ ms.locfileid: "97583568"
     
 不再需要准备阶段配置的载入控件。 但是，如果因选择同时迁移所有内容（而非分步迁移）而未使用载入控件，可跳过有关删除载入控件的说明。
     
-如果 Windows 计算机运行的是 Office 2010，请检查是否需要禁用“AD RMS 权限策略模板管理（自动）”任务。 有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+如果 Windows 计算机运行的是 Office 2010，请检查是否需要禁用“AD RMS 权限策略模板管理（自动）”任务。
+
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
 
 **步骤12：重新生成 Azure 信息保护租户密钥**
 

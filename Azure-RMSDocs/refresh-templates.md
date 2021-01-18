@@ -14,12 +14,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c96fa834e53c044c88393fc9ba2000be89c6a112
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 35968d8e7c22fa4ad0bb232dae9d2b6dd8362286
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807410"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560239"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 
@@ -39,7 +39,7 @@ ms.locfileid: "97807410"
 |**Azure 信息保护经典客户端**|每当在客户端上的 Azure 信息保护策略刷新时，都会自动刷新：<br /><br /> - 打开支持 Azure 信息保护栏的 Office 应用程序时。 <br /><br /> - 右键单击以分类和保护文件或文件夹时。 <br /><br /> - 运行 PowerShell cmdlet 以实现标记和保护（Get-AIPFileStatus 和 Set-AIPFileLabel）。<br /><br /> - 启动 Azure 信息保护扫描程序服务时，以及本地策略已执行超过一小时时。 此外，扫描程序服务每小时检查一次更改，并将在下一个扫描周期中使用这些更改。<br /><br /> - 每 24 小时一次。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。|
 |**Azure 信息保护统一标识客户端**|对于 Office 应用程序，每次打开应用程序时，模板都会自动刷新。<br /><br /> 此外，由于此客户端与 Office 紧密集成，因此对于 Azure 信息保护统一标签客户端，还会刷新适用于 Microsoft 365 应用、Office 2019、Office 2016 或 Office 2013 的任何刷新模板。<br /><br /> 对于文件资源管理器、PowerShell 和扫描程序，客户端不会下载模板，只需将其联机访问，无需执行其他步骤。|
 |**Microsoft 365 应用、Office 2019、Office 2016 和 Office 2013**|自动刷新 – 按计划刷新：<br /><br />- 对于更高版本的 Office：默认刷新时间间隔为 7 天。<br /><br />若要强制执行比计划更快的刷新，请参阅以下部分 [： Microsoft 365 应用、office 2019、office 2016 和 office 2013：如何强制刷新模板](#microsoft-365-apps-office-2019-office-2016-and-office-2013-how-to-force-a-refresh-for-templates)。|
-|**Office 2010**|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。 <br><br>有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。|
+|**Office 2010**|当用户注销 Windows 后重新登录并等待长达 1 小时时自动刷新。 <br><br>**重要提示**： Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。|
 |**Exchange 內部部署与权限管理连接器**<br /><br />适用于传输规则和 Outlook Web App|自动刷新 – 无需额外的步骤。 但是，Outlook Web App 可将该 UI 缓存一天。|
 |**Office 2019 for Mac 和 Office 2016 for Mac**|当你打开受保护的内容时自动刷新。 若要强制执行刷新，请参阅以下部分 [：适用于 mac 的 office 2019 和适用于 mac 的 office 2016：如何强制刷新模板](#office-2019-for-mac-and-office-2016-for-mac-how-to-force-a-refresh-for-templates)。|
 |**适用于 Mac 计算机的 RMS 共享应用**|自动刷新 – 无需额外的步骤。|

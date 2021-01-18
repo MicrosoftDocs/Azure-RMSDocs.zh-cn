@@ -13,18 +13,18 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: f4ae6c5addbea7293192b085bade9f17b798c23c
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: fd030502c6d6583e72be63fa424ff8186ebaadc7
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583585"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560299"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>迁移第 5 阶段- 迁移后任务
 
 >***适用** 于： Active Directory Rights Management Services、 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用以下信息，完成从 AD RMS 迁移到 Azure 信息保护的第 5 阶段。 这些过程包括[从 AD RMS 迁移到 Azure 信息保护](migrate-from-ad-rms-to-azure-rms.md)的步骤 10-12。
 
@@ -53,25 +53,26 @@ ms.locfileid: "97583585"
 如果使用的是经典客户端，请使用 Azure 门户。 有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。
 
 >[!IMPORTANT]
-> 在此迁移结束时，AD RMS 群集不能与 Azure 信息保护一起使用，并保留你自己的密钥 ([HYOK](configure-adrms-restrictions.md)) 选项。 如果你使用的是经典客户端与 HYOK，因为现在已经有了重定向，则你使用的 AD RMS 群集必须具有与你迁移的群集中的相同的授权 Url。
-
+> 在此迁移结束时，AD RMS 群集不能与 Azure 信息保护一起使用，并保留你自己的密钥 ([HYOK](configure-adrms-restrictions.md)) 选项。 
+>
+> 如果你使用的是经典客户端与 HYOK，因为现在已经有了重定向，则你使用的 AD RMS 群集必须具有与你迁移的群集中的相同的授权 Url。
+>
 ### <a name="additional-configuration-for-computers-that-run-office-2010"></a>运行 Office 2010 的计算机的附加配置
+
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> 
 
 如果迁移的客户端运行的是 Office 2010，则在取消预配 AD RMS 服务器后，用户可能会遇到延迟打开受保护的内容。 或者，用户可能会看到他们没有打开受保护内容的凭据的消息。 若要解决这些问题，请为这些计算机创建网络重定向，这会将 AD RMS URL FQDN 重定向到计算机 (127.0.0.1) 的本地 IP 地址。 可以通过在每台计算机上配置本地 hosts 文件或使用 DNS 来实现此目的。
 
-通过本地主机文件重定向：
-
-- 在本地 hosts 文件中添加以下行，将替换为 `<AD RMS URL FQDN>` AD RMS 群集的值，不含前缀或网页：
+- **通过本地主机的重定向文件**：在本地 hosts 文件中添加以下行，将替换为 `<AD RMS URL FQDN>` AD RMS 群集的值，不含前缀或网页：
 
     ```sh
     127.0.0.1 <AD RMS URL FQDN>
     ```
 
-通过 DNS 重定向：
+- **通过 DNS 进行重定向**：创建新主机 (AD RMS URL FQDN 的) 记录，其 IP 地址为127.0.0.1。
 
-- 创建新的主机 (AD RMS URL FQDN 的) 记录，其 IP 地址为127.0.0.1。
-
-有关 AIP 和 Office 2010 的详细信息，请参阅 [AIP For Windows And office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 ## <a name="step-11-complete-client-migration-tasks"></a>步骤 11. 完成客户端迁移任务
 
 对于移动设备客户端和 Mac 计算机：删除在部署 [AD RMS 移动设备扩展](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn673574(v=ws.11))时创建的 DNS SRV 记录。
@@ -129,7 +130,8 @@ killall cfprefsd
 
 此任务通常是使用组策略启用的，它支持 AD RMS 部署。 可以在以下位置找到此任务： **Microsoft**  >  **Windows**  >  **Active Directory Rights Management Services 客户端**。 
 
-有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>步骤 12. 重新生成 Azure 信息保护租户密钥
 

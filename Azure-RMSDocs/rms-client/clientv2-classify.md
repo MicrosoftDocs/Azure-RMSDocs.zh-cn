@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: f5096aa3eaf9b51bd929b25bdf69d42dbcaea50c
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 5c95995477e05ba1cd7bfea2b517b762bfa6748b
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164481"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559976"
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-the-azure-information-protection-unified-labeling-client-for-windows"></a>用户指南：使用适用于 Windows 的 Azure 信息保护统一标签客户端对文件或电子邮件进行分类
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、windows 10、Windows 8.1、Windows 8 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端用户指南](client-classify.md)。 *
 

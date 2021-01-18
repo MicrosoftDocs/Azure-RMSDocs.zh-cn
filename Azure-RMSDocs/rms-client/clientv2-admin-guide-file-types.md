@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 754525afeee619f8f336addd5239ea15223f986c
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 40b2a6de06fb20f8fab0d1a1d7e8a774fe2b54fc
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385516"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560180"
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-unified-labeling-client"></a>Azure 信息保护统一标签客户端支持的文件类型
 
 >***适用** 于 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012*>
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端文件类型](client-admin-guide-file-types.md)*
 
@@ -82,7 +82,7 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 |保护类型|本机|泛型|
 |----------------------|----------|-----------|
-|说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
+|描述|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
 |保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
 |文件类型默认值|这是以下文件类型的默认保护级别：<br /><br />- 文本和图像文件<br /><br />- Microsoft Office（Word、Excel、PowerPoint）文件<br /><br />- 可移植文档格式 (.pdf)<br /><br />有关详细信息，请参阅以下部分：[支持分类和保护的文件类型](#supported-file-types-for-classification-and-protection)。|这是针对不受本机保护支持的其他所有文件类型（例如 .vsdx、.rtf 等）的默认保护。|
 
@@ -94,22 +94,28 @@ Azure 信息保护统一标签客户端支持两个不同级别的保护，如�
 
 Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
-- **对于 Office 文件**：
+**对于 Office 文件**：
 
-  |                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
-  |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-  |             Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 位：512 MB<br /><br />64 位：512 MB                                          |
-  |           Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制                       |
-  | PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制 |
+|                                                     Office 应用程序                                                      |                                                支持的最大文件大小                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|             Word 2010<br /><br />Word 2013<br /><br />Word 2016             |                                          32 位：512 MB<br /><br />64 位：512 MB                                          |
+|           Excel 2010<br /><br />Excel 2013<br /><br />Excel 2016           |                      32 位：2 GB<br /><br />64 位：仅受可用磁盘空间和内存限制                       |
+| PowerPoint 2010<br /><br />PowerPoint 2013<br /><br />PowerPoint 2016 | 32 位：仅受可用磁盘空间和内存限制<br /><br />64 位：仅受可用磁盘空间和内存限制 |
+| | |
 
-- **对于其他所有文件**：
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+>
 
-  - 若要保护其他文件类型，并在 Azure 信息保护查看器中打开这些文件类型：文件大小上限仅受可用磁盘空间和内存限制。
+**对于其他所有文件**：
 
-  - 若要使用 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet 取消保护文件：.pst 文件支持的文件大小上限为 5GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
+- **若要保护其他文件类型**，并在 Azure 信息保护查看器中打开这些文件类型：最大文件大小仅受可用磁盘空间和内存限制。
 
-    提示：如果需要在大型 .pst 文件中搜索或恢复受保护的项目，请参阅[使用 Unprotect-RMSFile 进行电子数据展示的指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
+- 使用 [protect-rmsfile](/powershell/module/azureinformationprotection/unprotect-rmsfile) Cmdlet **取消对文件的保护**： .pst 文件支持的最大文件大小为 5 GB。 其他文件类型的文件大小上限仅受可用磁盘空间和内存限制
 
+> [!TIP]
+> 若要搜索或恢复大型 .pst 文件中受保护的项，请参阅 [使用电子数据展示的 Unprotect-RMSFile 指南](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)。
+> 
 ### <a name="supported-file-types-for-classification-and-protection"></a>支持用于分类和保护的文件类型
 
 下表列出了支持 Azure 信息保护统一标签客户端的本机保护的文件类型的子集，还可以进行分类。

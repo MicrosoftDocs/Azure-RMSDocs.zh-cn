@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ccedda605f736647766a0a5b2465e9ef90f2dbcc
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 9f4cc024066769c750f2fef946d9c5581cb99314
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164141"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560333"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -30,7 +30,7 @@ FUTURE task - reorganize this topic by feature type so that admins can read rela
 
 >***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-customizations.md)。 *
 
@@ -458,7 +458,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 
 可以通过两种方法从其他标签解决方案中删除分类：
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**WordShapeNameToRemove**     |  删除 Word 文档中的任何形状，其中的形状名称与 **WordShapeNameToRemove** advanced 属性中定义的名称相匹配。  <br><br>有关详细信息，请参阅 [使用 WordShapeNameToRemove 高级属性](#use-the-wordshapenametoremove-advanced-property)。     |
 |**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参见: <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
@@ -515,7 +515,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例：
+示例:
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -809,7 +809,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:h
 
 满足这些条件时，用户将看到一个弹出消息，其中包含以下操作之一：
 
-|类型  |说明  |
+|类型  |描述  |
 |---------|---------|
 |**不再**     | 用户可以确认、发送或取消。        |
 |**采用**     |  系统会提示用户调整 (预定义选项或自由格式) ，然后用户可以发送或取消电子邮件。 <br>对齐文本将写入电子邮件 x 标头，以便其他系统（如数据丢失防护 (DLP) services）可以读取该文本。       |
@@ -1114,7 +1114,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅 [从其他标签解决方案中删除页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
-示例：
+示例:
 
 - [示例 1：相同标签名称的一对一映射](#example-1-one-to-one-mapping-of-the-same-label-name)
 - [示例 2：不同标签名称的一对一映射](#example-2-one-to-one-mapping-for-a-different-label-name)
@@ -1306,7 +1306,7 @@ Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertT
 
 仅当使用的是 [S/MIME 部署](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) 并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
-|配置  |键/值  |
+|Configuration  |键/值  |
 |---------|---------|
 |**S/MIME 数字签名**     |   若要为 S/MIME 数字签名配置高级设置，请为所选标签输入以下字符串： <br><br>-Key： **SMimeSign** <br><br>-Value： **True**      |
 |**S/MIME 加密**     |   若要配置 S/MIME 加密的高级设置，请为所选标签输入以下字符串：<br><br>-Key： **SMimeEncrypt**<br><br>-Value： **True**      |
@@ -1407,7 +1407,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 此外：
 
-|方案  |说明  |
+|方案  |描述  |
 |---------|---------|
 |**仍登录到旧帐户**     |  完成这些步骤后，如果 Azure 信息保护的统一标签客户端仍以旧帐户登录，请从 Internet Explorer 中删除所有 cookie，然后重复步骤1和2。       |
 |**使用单一登录**    |    如果使用的是单一登录，必须在删除令牌文件后注销 Windows，再使用其他用户帐户登录。 <br><br>然后，Azure 信息保护的统一标签客户端会使用当前登录的用户帐户自动进行身份验证。     |
@@ -1656,7 +1656,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 所有文本都支持以下动态参数： 
 
-|参数  |说明  |
+|参数  |描述  |
 |---------|---------|
 | `${MatchedRecipientsList}`  | **发送** 条件的最后一个匹配项       |
 | `${MatchedLabelName}`      | 邮件/附件 **标签**，具有策略的本地化名称               |

@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 8d4e19358fd9286eda3c7dcd1f65606d761c068b
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: d6c4ea5c07330efd429577ee569f8f899f63ae0d
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583398"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559738"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-unified-labeling-client"></a>用户指南：下载并安装 Azure 信息保护统一标签客户端
 
@@ -42,13 +42,19 @@ ms.locfileid: "97583398"
 
 4. 如果系统提示继续操作，请单击“是”，然后等待安装完成。
 
-6. 单击“关闭”  。 开始使用 Azure 信息保护统一标签客户端之前：
+6. 单击 **“关闭”** 。 
 
-    - **如果计算机运行的是 Office 2010**，请重新启动计算机，然后在最后一步中转到下一部分。    
-        
-    - **对于其他版本的 office**，请重新启动所有 office 应用程序和文件资源管理器的所有实例。 安装已完成，现可使用客户端标记和保护文档及电子邮件。
+    在开始使用 Azure 信息保护统一标签客户端之前，请重新启动所有 Office 应用程序和文件资源管理器的所有实例。 安装已完成，现可使用客户端标记和保护文档及电子邮件。
 
+    > [!NOTE]
+    > 如果计算机运行的是 Office 2010，请重新启动计算机，然后在最后一步中转到 [下一部分](#installing-the-azure-information-protection-unified-labeling-client-with-office-2010) 。   
+    >
+     
 ### <a name="installing-the-azure-information-protection-unified-labeling-client-with-office-2010"></a>利用 Office 2010 安装 Azure 信息保护统一标签客户端
+
+> [!IMPORTANT]
+> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> 
 
 通过上述说明安装 Azure 信息保护统一标签客户端之后：
 
@@ -59,8 +65,6 @@ ms.locfileid: "97583398"
 3. 如果看到“用户访问控制”对话框，请单击“是”，以便 Azure 信息保护客户端更新注册表。
 
 安装已完成，现可使用 Azure 信息保护统一标签客户端来对文档及电子邮件进行标签和保护。
-
-有关详细信息，请参阅 [AIP For Windows And Office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
 
 ## <a name="other-instructions"></a>其他说明    
 Azure 信息保护统一标签客户端用户指南中的更多操作说明。

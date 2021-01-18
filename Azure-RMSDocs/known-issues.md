@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5a512bd03a627fb80503f07b98e4340d8ea9fce4
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 8064138db9d3d8356c9b12eef769bebabfd5a556
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164345"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559636"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -135,7 +135,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 如果你的文档存储在 OneDrive 中并且应用了敏感度标签，并且管理员更改了标记策略中的标签以添加保护，则新应用的保护不会自动应用于标记的文档。 
 
 在这种情况下，请手动重新标记文档以根据需要应用保护。
-## <a name="aip-for-windows-and-office-versions-in-extended-support"></a>AIP for Windows 和 Office 版本（扩展支持）
+## <a name="aip-and-legacy-windows-and-office-versions"></a>AIP 和旧版 Windows 和 Office 版本
 
 - [**Windows 7 扩展支持于2020年1月14日结束**](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。 
 
@@ -165,7 +165,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 1.  在 Azure 门户中，导航到 " **条件性访问** " 边栏选项卡，然后选择要修改的条件性访问策略。 
 2.  在 " **分配**" 下，选择 " **用户和组**"，然后选择 " **所有用户**"。 请确保 *未* 选中 "**所有来宾和外部用户**" 选项。
-3.  保存更改。 
+3.  保存所做更改。 
  
 如果你的组织不需要该功能，则还可以在 Azure 信息保护中完全禁用 CA，以避免此潜在问题。 
 

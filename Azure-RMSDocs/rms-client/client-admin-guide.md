@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: adfc8fcb0ce9ea8c227aad74e7d686a96d081b8c
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 49f80d17e62bbe7e520696460ec39df396e439e4
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807342"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560350"
 ---
 # <a name="azure-information-protection-classic-client-administrator-guide"></a>Azure 信息保护经典客户端管理员指南
 
@@ -93,8 +93,10 @@ Azure 信息保护客户端最适合用于其 Azure 服务；Azure 信息保护�
 
 - 想要从文件和容器（取消保护）批量删除加密，以进行数据恢复。
 
-- 运行 [Office 2010](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support) ，并想要使用 Azure Rights Management 服务保护文档和电子邮件。 
+- 运行 Office 2010 并且想要通过使用 Azure 权限管理服务保护文档和电子邮件。 
 
+    请注意，Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    
 示例显示了 Office 应用程序中的 Azure 信息保护客户端加载项、组织的分类标签，以及功能区上新的“保护”按钮：
 
 ![具有默认策略的 Azure 信息保护栏](../media/word2016-calloutsv2.png)
@@ -221,7 +223,7 @@ Azure 信息保护团队会定期更新 Azure 信息保护客户端，以提供�
 
 3. 通过 (GA) 版本安装当前的正式发行版来升级 Azure 信息保护客户端。 
 
-4. 在 PowerShell 会话中，使用你在步骤1中指定的相同配置文件名称运行 **install-aipscanner** 命令。 例如： `Update-AIPScanner –Profile Europe`
+4. 在 PowerShell 会话中，使用你在步骤1中指定的相同配置文件名称运行 **install-aipscanner** 命令。 例如：`Update-AIPScanner –Profile Europe`
 
 5. 仅当扫描程序在断开连接的计算机上运行时：立即运行 [set-aipscannerconfiguration](/powershell/module/azureinformationprotection/Import-AIPScannerConfiguration) 并指定包含导出的设置的文件。
 

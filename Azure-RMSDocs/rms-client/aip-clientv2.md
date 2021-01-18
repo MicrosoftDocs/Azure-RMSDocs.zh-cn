@@ -13,18 +13,18 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 0988f4c98cc18b1cfb9119187fe203092ea33d4d
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 1c8739df61008ae04bd5f101f8d667c2cf275c56
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386145"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560197"
 ---
 # <a name="azure-information-protection-unified-labeling-client-for-windows"></a>适用于 Windows 的 Azure 信息保护统一标签客户端
 
 >***适用于**： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)，windows 10，Windows 8.1，Windows 8，Windows Server 2019，Windows Server 2016，windows Server 2012 R2，windows server 2012 *
 >
->*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP For Windows And office 版本中的扩展支持](../known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。*
+>*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅适用于 [Windows 的 Azure 信息保护经典客户端](aip-client.md)。 *
 

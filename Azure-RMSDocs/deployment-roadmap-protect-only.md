@@ -13,12 +13,12 @@ ROBOTS: NOINDEX
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 293ed29ba70ae5f4adff5530d782ecb661a6f9dd
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 404e3d9db620011befb1a5d9a79f8186a8721cb7
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164107"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98559415"
 ---
 # <a name="azure-information-protection-deployment-roadmap-for-protection-only"></a>仅限保护的 Azure 信息保护部署路线图
 
@@ -100,7 +100,7 @@ ms.locfileid: "98164107"
 
     考虑现在或之后配置以下任一功能。
     
-    |功能  |说明  |
+    |功能  |描述  |
     |---------|---------|
     |**用于保护设置的自定义模板**     |  如果默认模板不足以满足你的组织的需要，请配置自定义模板。 </br>有关详细信息，请参阅[配置和管理 Azure 信息保护的模板](./configure-policy-templates.md)。       |
     |**使用情况日志记录**     | 配置使用日志记录，以监视组织如何使用保护服务。 </br>有关详细信息，请参阅 [记录和分析 Azure 信息保护中的保护使用情况](./log-analyze-usage.md)。        |
@@ -112,10 +112,8 @@ ms.locfileid: "98164107"
 
 1. **部署 Azure 信息保护经典客户端**
     
-    为用户安装经典客户端以支持 Office 2010，以保护除 Office 文档和电子邮件之外的文件，以及跟踪受保护的文档，并为此客户端提供用户培训。 
-
-    有关详细信息，请参阅适用于 windows 的 [Azure 信息保护经典客户端](./rms-client/aip-client.md) 和 [适用于 windows 和 Office 版本的 AIP 扩展支持](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
-
+    安装经典客户端以保护除 Office 文档和电子邮件之外的文件，以及跟踪受保护的文档，并为此客户端提供用户培训。 有关详细信息，请参阅适用 [于 Windows 的 Azure 信息保护经典客户端](./rms-client/aip-client.md)。
+ 
 2. **配置 Office 应用程序和服务**
     
     为信息权限管理配置 Office 应用程序和服务 (SharePoint 或 Exchange Online 中的 IRM) 功能。 
