@@ -1,6 +1,6 @@
 ---
 title: Azure 信息保护的其他 Azure AD 先决条件
-description: 了解 Azure 信息保护在特定方案中的其他 Azure AD 先决条件，例如多重身份验证或基于证书的身份验证，或使用 Office 2010 的计算机等。
+description: 了解 Azure 信息保护在特定方案中的其他 Azure AD 先决条件，例如多重身份验证或基于证书的身份验证等。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -12,12 +12,12 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.subservice: prereqs
 ms.suite: ems
 ms.custom: admin, has-adal-ref
-ms.openlocfilehash: 7ac67d72d329f9782a80c434f936cadad3e13882
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 7ba843beac002261cd1ada865767b414e22560ae
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97583347"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560384"
 ---
 # <a name="additional-azure-ad-requirements-for-azure-information-protection"></a>Azure 信息保护的其他 Azure AD 要求
 
@@ -25,26 +25,16 @@ ms.locfileid: "97583347"
 >
 >相关内容：*[AIP 统一标记客户端和 AIP 经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。
 
+> [!NOTE]
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 
+>
+> 在此时间框架内，所有当前 Azure 信息保护客户都可以转换到 Microsoft 信息保护统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+
 使用 Azure 信息保护时，[Azure AD 目录是需要满足的一项要求](requirements.md#azure-active-directory)。 使用 Azure AD 目录中的帐户登录到 Azure 门户，在门户中可以配置 Azure 信息保护设置。
 
 如果拥有包含 Azure 信息保护或 Azure Rights Management 的订阅，你的 Azure AD 目录则将自动为你创建（如有需要）。
 
 以下部分列出了特定方案中的其他 AIP 和 Azure AD 要求。 
-
-## <a name="computers-running-office-2010"></a>运行 Office 2010 的计算机
-
-除了 Azure AD 帐户，运行 Microsoft 2010 的计算机还需要使用适用于 Windows 的 Azure 信息保护客户端对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。 
-
-如果你的用户帐户已联合（例如，使用 AD FS），这些计算机必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
-
-建议部署 Azure 信息保护统一标记客户端。 如果你尚未升级，则系统可能仍会部署 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。 
-
-有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)和[适用于 Windows 和 Office 版本的 AIP（扩展支持）](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
-
-> [!NOTE]
-> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 
->
-> 在此时间框架内，所有当前 Azure 信息保护客户都可以转换到 Microsoft 信息保护统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 ## <a name="support-for-certificate-based-authentication-cba"></a>支持基于证书的身份验证 (CBA)
 
@@ -110,5 +100,18 @@ Rights Management 连接器和 Azure 信息保护扫描程序不支持 MFA。
 - 服务器版本不得低于 **Windows Server 2012 R2**
 - 支持 OAuth 2.0 协议的备用身份验证提供程序
 
+## <a name="computers-running-office-2010"></a>运行 Office 2010 的计算机
+
+> [!IMPORTANT]
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> 
+
+除了 Azure AD 帐户，运行 Microsoft 2010 的计算机还需要使用适用于 Windows 的 Azure 信息保护客户端对 Azure 信息保护及其数据保护服务 Azure Rights Management 进行身份验证。 
+
+如果你的用户帐户已联合（例如，使用 AD FS），这些计算机必须使用 Windows 集成身份验证。 在此方案中，基于表单的身份验证无法对 Azure 信息保护的用户进行身份验证。
+
+建议部署 Azure 信息保护统一标记客户端。 如果你尚未升级，则系统可能仍会部署 [Azure 信息保护经典客户端](./rms-client/aip-client.md)。 
+
+有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)。
 ## <a name="next-steps"></a>后续步骤
 若要查看其他要求，请参阅 [Azure 信息保护的要求](requirements.md)。

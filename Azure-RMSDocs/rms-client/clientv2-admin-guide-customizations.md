@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/23/2020
+ms.date: 01/18/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9f4cc024066769c750f2fef946d9c5581cb99314
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 553646119c5e83bbc475d77ab35a83ce5866e858
+ms.sourcegitcommit: d2fdba748daf47ee9aeadbdf3ce154ef399eadaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560333"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98569089"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -40,6 +40,8 @@ FUTURE task - reorganize this topic by feature type so that admins can read rela
 > 这些设置需要编辑注册表或指定高级设置。 高级设置使用 [Office 365 Security & 相容性中心 PowerShell](/powershell/exchange/office-365-scc/office-365-scc-powershell)。
 > 
 
+
+
 ## <a name="configuring-advanced-settings-for-the-client-via-powershell"></a>通过 PowerShell 配置客户端的高级设置
 
 使用 Microsoft 365 Security & 相容性中心 PowerShell 配置用于自定义标签策略和标签的高级设置。 
@@ -53,13 +55,14 @@ FUTURE task - reorganize this topic by feature type so that admins can read rela
 
 有关详细信息，请参见:
 
-- [标签策略高级设置语法](#label-policy-advanced-settings)
-- [标签高级设置语法](#label-advanced-settings)
+- [标签策略高级设置语法](#label-policy-advanced-settings-syntax)
+- [标签高级设置语法](#label-advanced-settings-syntax)
+- [正在检查当前的高级设置](#checking-your-current-advanced-settings)
 - [设置高级设置的示例](#examples-for-setting-advanced-settings)
 - [指定标签策略或标签标识](#specifying-the-label-policy-or-label-identity)
 - [优先顺序-如何解决冲突的设置](#order-of-precedence---how-conflicting-settings-are-resolved)
 - [高级设置引用](#advanced-setting-references)
-### <a name="label-policy-advanced-settings"></a>标签策略高级设置
+### <a name="label-policy-advanced-settings-syntax"></a>标签策略高级设置语法
 
 "标签策略高级" 设置的一个示例是在 Office 应用中显示信息保护栏的设置。
 
@@ -75,7 +78,7 @@ Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key="value1,value2"}
 Set-LabelPolicy -Identity <PolicyName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
 ```
 
-### <a name="label-advanced-settings"></a>标签高级设置
+### <a name="label-advanced-settings-syntax"></a>标签高级设置语法
 
 标签高级设置的一个示例是指定标签颜色的设置。
 
@@ -91,27 +94,49 @@ Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key="value1,value2"}
 Set-Label -Identity <LabelGUIDorName> -AdvancedSettings @{Key=ConvertTo-Json("value1", "value2")}
 ```
 
+
+
+### <a name="checking-your-current-advanced-settings"></a>正在检查当前的高级设置
+
+若要检查当前的高级设置设置是否有效，请运行以下命令：
+
+**若要检查 *标签策略* 的高级设置**，请使用以下语法：
+
+对于名为 **Global** 的标签策略：
+
+```PowerShell
+(Get-LabelPolicy -Identity Global).settings
+```
+
+**若要检查 *标签* 高级设置**，请使用以下语法：
+
+对于名为 **Public** 的标签：
+
+```powershell
+(Get-Label -Identity Public).settings
+```
+
 ### <a name="examples-for-setting-advanced-settings"></a>设置高级设置的示例
 
-**示例1：** 为单个字符串值设置标签策略高级设置：
+**示例 1**：为单个字符串值设置标签策略高级设置：
 
 ```PowerShell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions="False"}
 ```
 
-**示例2：** 为单个字符串值设置标签高级设置：
+**示例 2**：为单个字符串值设置标签高级设置：
 
 ```PowerShell
 Set-Label -Identity Internal -AdvancedSettings @{smimesign="true"}
 ```
 
-**示例3：** 为多个字符串值设置标签高级设置：
+**示例 3**：为多个字符串值设置标签高级设置：
 
 ```PowerShell
 Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties=ConvertTo-Json("Migrate Confidential label,Classification,Confidential", "Migrate Secret label,Classification,Secret")}
 ```
 
-**示例4：** 通过指定空字符串值删除标签策略高级设置：
+**示例 4**：通过指定空字符串值删除标签策略高级设置：
 
 ```PowerShell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableCustomPermissions=""}
@@ -233,12 +258,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**UseCopyAndPreserveNTFSOwner** | [在标记期间保留 NTFS 所有者](#preserve-ntfs-owners-during-labeling-public-preview)
 | | |
 
-#### <a name="check-label-policy-settings"></a>检查标签策略设置
-用于检查标签策略设置对名为 "Global" 的标签策略有效的示例 PowerShell 命令：
-
-```PowerShell
-(Get-LabelPolicy -Identity Global).settings
-```
 
 ### <a name="label-advanced-setting-reference"></a>标签高级设置参考
 
@@ -253,13 +272,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**SMimeEncrypt**|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |**SMimeSign**|[将标签配置为在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook)|
 
-#### <a name="check-label-settings"></a>检查标签设置
-
-用于检查标签设置对名为 "Public" 的标签有效的示例 PowerShell 命令：
-
-```PowerShell
-(Get-Label -Identity Public).settings
-```
 
 ## <a name="display-the-information-protection-bar-in-office-apps"></a>在 Office 应用中显示“信息保护”栏
 
@@ -371,13 +383,13 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
 |Convertto-html ( ".jpg"，".png" ) |除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名 | 除了 Office 文件类型和 PDF 文件，还会将保护应用到指定的文件扩展名
 | | | |
 
-**示例1：**  用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "Scanner"：
+**示例 1**：用于扫描程序的 PowerShell 命令，用于保护所有文件类型，其中标签策略命名为 "scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions="*"}
 ```
 
-**示例2：** 用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "Scanner"：
+**示例 2**：用于扫描程序的 PowerShell 命令，用于保护 .txt 文件和 .csv 文件以及 Office 文件和 PDF 文件，其中标签策略命名为 "scanner"：
 
 ```PowerShell
 Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=ConvertTo-Json(".txt", ".csv")}
@@ -401,23 +413,23 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=C
 |\<null value>| 默认值的行为类似于默认的保护值。|
 |Convertto-html ( "dwg"，".zip" ) |除了前面的列表，"dwg" 和 ".zip" 变为 P\<EXT>| 
 
-对于此设置，以下扩展始终变为 **P \<EXT> ：** ".txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，". .jfi"，".png"，".tif"，"tiff"，".gif" ) 。 值得注意的是，".ptxt" 不是 ".pfile"。 
+对于此设置，以下扩展始终变为 **P \<EXT>**： ".txt"，".xml"，".bmp"，". jt"，".jpg"，"jpeg"，". jpe"，". jif"，"jfif"，". .jfi"，".png"，".tif"，"tiff"，".gif" ) 。 值得注意的是，".ptxt" 不是 ".pfile"。 
 
 仅当启用了高级属性- [**PFileSupportedExtension**](#pfilesupportedextension)的 pfile 保护时， **AdditionalPPrefixExtensions** 才有效。 
 
-**示例1：** 与保护 "dwg" 变为 ".pfile" 的默认行为类似的 PowerShell 命令：
+**示例 1**： PowerShell 命令的行为类似于默认行为，即保护 "dwg" 变为 ".pfile"：
 
 ```PowerShell
 Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =""}
 ```
 
-**示例2：**  PowerShell 命令：在文件受到保护时，将 (.pfile) 中的所有 .Pfile 扩展更改为纯保护 () pdwg：
+**示例 2**： PowerShell 命令：在文件受到保护时，将 (.pfile) 中的所有 .pfile 扩展更改为纯保护 ( pdwg) ：
 
 ```PowerShell
 Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions ="*"}
 ```
 
-**示例3：** 使用此服务时将 "dwg" 更改为 "pdwg" 的 PowerShell 命令将保护此文件：
+**示例 3**：使用此服务时将 "dwg" 更改为 "pdwg" 的 PowerShell 命令将保护此文件：
 
 ```PowerShell
 Set-LabelPolicy -AdvancedSettings @{ AdditionalPPrefixExtensions =ConvertTo-Json(".dwg")}
@@ -458,7 +470,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 
 可以通过两种方法从其他标签解决方案中删除分类：
 
-|设置  |描述  |
+|设置  |说明  |
 |---------|---------|
 |**WordShapeNameToRemove**     |  删除 Word 文档中的任何形状，其中的形状名称与 **WordShapeNameToRemove** advanced 属性中定义的名称相匹配。  <br><br>有关详细信息，请参阅 [使用 WordShapeNameToRemove 高级属性](#use-the-wordshapenametoremove-advanced-property)。     |
 |**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参见: <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
@@ -478,7 +490,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 > 如果未在此附加高级属性设置中指定 Word 形状，并且 Word 包含在 **RemoveExternalContentMarkingInApp** 项值中，则将检查在 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 值中指定的文本的所有形状。 
 >
 
-**查找要使用的形状的名称并希望排除：**
+**查找要使用的形状的名称并希望排除**：
 
 1. 在 Word 中，显示 " **选择** " 窗格： " **主页** " 选项卡 > **编辑** 组 > **选择** "选项" > **选择 "窗格**。
 
@@ -809,7 +821,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:h
 
 满足这些条件时，用户将看到一个弹出消息，其中包含以下操作之一：
 
-|类型  |描述  |
+|类型  |说明  |
 |---------|---------|
 |**不再**     | 用户可以确认、发送或取消。        |
 |**采用**     |  系统会提示用户调整 (预定义选项或自由格式) ，然后用户可以发送或取消电子邮件。 <br>对齐文本将写入电子邮件 x 标头，以便其他系统（如数据丢失防护 (DLP) services）可以读取该文本。       |
@@ -1098,11 +1110,11 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 此配置选项的结果是，Azure 信息保护统一标签客户端会应用新的敏感度标签，如下所示：
 
-- **对于 Office 文档：** 在桌面应用中打开文档时，新的敏感度标签将显示为 "已设置"，并在保存文档时应用。
+- **对于 Office 文档**：在桌面应用中打开文档时，新的敏感度标签将显示为 "已设置"，并在保存文档时应用。
 
-- **对于 PowerShell：** [set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 [AIPFileClassificiation](/powershell/module/azureinformationprotection/set-aipfileclassification) 可以应用新的敏感度标签。
+- **对于 PowerShell**： [set-aipfilelabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 和 [AIPFileClassificiation](/powershell/module/azureinformationprotection/set-aipfileclassification) 可以应用新的敏感度标签。
 
-- **对于文件资源管理器：** 在 "Azure 信息保护" 对话框中，将显示新的 "敏感度" 标签，但并不设置。
+- **对于文件资源管理器**：在 "Azure 信息保护" 对话框中，将显示新的敏感度标签，但并不设置。
 
 此配置要求你为要映射到旧标签的每个敏感度标签指定一个名为 **labelByCustomProperties** 的高级设置。 然后，使用以下语法设置每个条目的值：
 
@@ -1306,7 +1318,7 @@ Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertT
 
 仅当使用的是 [S/MIME 部署](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) 并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
-|Configuration  |键/值  |
+|配置  |键/值  |
 |---------|---------|
 |**S/MIME 数字签名**     |   若要为 S/MIME 数字签名配置高级设置，请为所选标签输入以下字符串： <br><br>-Key： **SMimeSign** <br><br>-Value： **True**      |
 |**S/MIME 加密**     |   若要配置 S/MIME 加密的高级设置，请为所选标签输入以下字符串：<br><br>-Key： **SMimeEncrypt**<br><br>-Value： **True**      |
@@ -1407,7 +1419,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 此外：
 
-|方案  |描述  |
+|方案  |说明  |
 |---------|---------|
 |**仍登录到旧帐户**     |  完成这些步骤后，如果 Azure 信息保护的统一标签客户端仍以旧帐户登录，请从 Internet Explorer 中删除所有 cookie，然后重复步骤1和2。       |
 |**使用单一登录**    |    如果使用的是单一登录，必须在删除令牌文件后注销 Windows，再使用其他用户帐户登录。 <br><br>然后，Azure 信息保护的统一标签客户端会使用当前登录的用户帐户自动进行身份验证。     |
@@ -1424,7 +1436,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 如果计算机在一段时间内无法连接到 internet，则可以导出和复制为统一标签客户端手动管理策略的文件。
 
-**支持从统一标签客户端断开连接的计算机：**
+**支持从统一标签客户端断开连接的计算机**：
 
 1. 在 Azure AD 中选择或创建一个用户帐户，你将使用该帐户下载要在断开连接的计算机上使用的标签和策略设置。
 
@@ -1636,7 +1648,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 | **只有**    | 返回 *不* 用于其自身的子级，导致其行为与 **所有**        |
 | **发送**，后跟 **域： listOfDomains**    |检查以下各项之一： <br>-如果父代为 **Except**，则检查是否 **所有** 收件人都位于某个域中<br>-如果父代为其他任何内容，但 **除外**，则检查 **任何** 收件人是否位于某个域中。   |
 | **EMailLabel**，后跟标签 | 下列类型作之一：  <br>-标签 ID <br>-null （如果未标记）             |
-| **AttachmentLabel**，后跟 **标签** 和支持的 **扩展**   | 下列类型作之一：  <br><br>**true** <br>-如果父对象 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件<br>-如果父代为其他任何内容，但 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 <br>-如果未 **加标签，并且 label = null** <br><br> **false：** 对于所有其他情况 <br><br>**注意**：如果 **extensions** 属性为空或缺失，则规则中包含 (扩展名) 支持的所有文件类型。
+| **AttachmentLabel**，后跟 **标签** 和支持的 **扩展**   | 下列类型作之一：  <br><br>**true**： <br>-如果父对象 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **所有** 附件<br>-如果父代为其他任何内容，但 **除外**，则检查标签中是否存在具有一个受支持的扩展名的 **任何** 附件 <br>-如果未 **加标签，并且 label = null** <br><br> **false**：对于所有其他情况 <br><br>**注意**：如果 **extensions** 属性为空或缺失，则规则中包含 (扩展名) 支持的所有文件类型。
 | | |
 
 #### <a name="rule-action-syntax"></a>规则操作语法
@@ -1656,7 +1668,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 所有文本都支持以下动态参数： 
 
-|参数  |描述  |
+|参数  |说明  |
 |---------|---------|
 | `${MatchedRecipientsList}`  | **发送** 条件的最后一个匹配项       |
 | `${MatchedLabelName}`      | 邮件/附件 **标签**，具有策略的本地化名称               |
@@ -1994,7 +2006,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 
 此值在配置的 **HttpRuntimeSection** 类中定义 `ASP.NET` 。 
 
-**若要更新 HttpRuntimeSection** 类： * *
+**更新 HttpRuntimeSection 类**：
 
 1. 备份 **web.config** 配置。 
 

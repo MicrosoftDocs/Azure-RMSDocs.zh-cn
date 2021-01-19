@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c001f032281e323c6a4ca72530b1f005c3a1c268
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 50f8a118327f5a04748c4327175298694b0c84f4
+ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164566"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98560265"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -69,7 +69,7 @@ ms.locfileid: "98164566"
 
 预览版支持按条件访问受 Azure 信息保护进行保护的文档。 有关详情，请参阅：[我看到 Azure 信息保护被列为可用于条件访问的云应用 - 工作原理是什么？](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
-对于特定方案，例如在使用基于证书的身份验证或多重身份验证时、当 UPN 值与用户电子邮件地址不一致时，或者在使用 [Office 2010](known-issues.md#aip-for-windows-and-office-versions-in-extended-support) 时，还需要满足额外的先决条件。
+对于特定方案（如当使用基于证书的身份验证或多重身份验证时，或当 UPN 值与用户电子邮件地址不一致时），还需要满足额外的先决条件。
 
 有关详细信息，请参阅：
 
@@ -155,7 +155,11 @@ Office 的其他版本无法通过使用 Rights Management 服务保护文档和
 
 标签出现在 Office 文档顶部显示的某一栏中，可通过统一标记客户端中的“敏感度”按钮或传统客户端中的“保护”按钮进行访问 。
 
-有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)和[适用于 Windows 和 Office 版本的 AIP（扩展支持）](known-issues.md#aip-for-windows-and-office-versions-in-extended-support)。
+有关详细信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](requirements-applications.md)。
+
+> [!IMPORTANT]
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> 
 
 ### <a name="office-features-and-capabilities-not-supported"></a>不支持的 Office 特性和功能
 
