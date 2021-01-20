@@ -4,7 +4,7 @@ description: 介绍管理员如何跟踪受保护文档的文档访问，以及�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/07/2021
+ms.date: 01/20/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 7b60438ad3d1e8a971c58a7f29b2f8b41dd84c91
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 935e6a3439a06887a91981cb8ed69a342172b686
+ms.sourcegitcommit: 99a58f50b08abc546073657c66247553faeecf8b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98163733"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98608615"
 ---
 # <a name="administrator-guide-track-and-revoke-document-access-with-azure-information-protection-public-preview"></a>管理员指南：使用 Azure 信息保护跟踪和撤消文档访问 (公开预览版) 
 
@@ -103,12 +103,12 @@ ms.locfileid: "98163733"
 
 ### <a name="un-revoke-access"></a>撤消访问权限
 
-如果你意外地撤销了对特定文档的访问权限，请使用 **id 为** Cmdlet 和 [AipServiceDocumentRevoke](/powershell/module/aipservice/clear-aipservicedocumentrevoke) cmdlet 来取消对该访问的访问。 
+如果你意外地撤销了对特定文档的访问权限，请使用 **id 为** Cmdlet 和 [AipServiceDocumentRevoked](/powershell/module/aipservice/clear-aipservicedocumentrevoked) cmdlet 来取消对该访问的访问。 
 
 例如：
 
 ```PowerShell
-Clear-AipServiceDocumentRevoke -ContentId   0e421e6d-ea17-4fdb-8f01-93a3e71333b8 -IssuerName testIssuer
+Clear-AipServiceDocumentRevoked -ContentId   0e421e6d-ea17-4fdb-8f01-93a3e71333b8 -IssuerName testIssuer
 ```
 
 文档访问权限被授予在 **IssuerName** 参数中定义的用户。
