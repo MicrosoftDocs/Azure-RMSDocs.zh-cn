@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 746e1a8763c94a3193b7719d5af9326c2d274347
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 177c877cc1963d40be336bf8ec979a03b7e890c1
+ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97805914"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240829"
 ---
 # <a name="tutorial-migrating-from-the-azure-information-protection-aip-classic-client-to-unified-labeling-solution"></a>教程：从 Azure 信息保护 (AIP) 经典客户端迁移到统一标记解决方案
 
@@ -29,7 +29,7 @@ ms.locfileid: "97805914"
 > 在此时间框架内，所有 Azure 信息保护经典客户端客户都可以使用 Microsoft 信息保护统一标记平台转换到 AIP 统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 >
 
-本教程介绍如何将组织的 Azure 信息保护部署从经典客户端和 Azure 门户中的标签/标签策略管理迁移到统一标记解决方案和 [Microsoft 365 敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)。
+本教程介绍如何将组织的 Azure 信息保护部署从经典客户端和 Azure 门户中的标签/标签策略管理迁移到统一标记解决方案和 [Microsoft 365 敏感度标签](/microsoft-365/compliance/sensitivity-labels)。
 
 所需时间：完成迁移所需的时间取决于策略的复杂程度以及使用的 AIP 功能。 在后台迁移时，你可以继续使用经典客户端。
 
@@ -63,7 +63,7 @@ MIP 支持许多基本信息保护功能的内置标记服务，使你能够仅�
 
 查看以下文章，了解使用统一标记客户端时使用的信息保护功能有何不同：
 
-- [了解 Microsoft 365 中的内置标记功能](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps)
+- [了解 Microsoft 365 中的内置标记功能](/microsoft-365/compliance/sensitivity-labels-office-apps)
 - [比较适用于 Windows 计算机的标记解决方案](rms-client/use-client.md#compare-the-labeling-solutions-for-windows-computers)
 - [了解如何管理统一标记管理中心中不支持开箱即用的标签设置](configure-policy-migrate-labels.md#label-settings-that-are-not-supported-in-the-admin-centers)
 
@@ -137,7 +137,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
 此功能目前处于预览状态。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
 
 > [!NOTE]
-> 复制策略具有某些限制。 你还可以从头开始，在标记管理中心手动创建策略。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
+> 复制策略具有某些限制。 你还可以从头开始，在标记管理中心手动创建策略。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)。
 > 
 
 若要复制策略： 
@@ -184,7 +184,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
 
 ### <a name="configure-advanced-labeling-settings-in-powershell"></a>在 PowerShell 中配置高级标记设置
 
-1. 连接到 Office 365 安全与合规中心 PowerShell 模块。 有关详细信息，请参阅[安全与合规中心 PowerShell 文档](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
+1. 连接到 Office 365 安全与合规中心 PowerShell 模块。 有关详细信息，请参阅[安全与合规中心 PowerShell 文档](/powershell/exchange/connect-to-scc-powershell)。
 
 1. 若要定义高级标签设置，请使用 Set-Label cmdlet，指定 AdvancedSettings 参数、要向其应用设置的标签，以及定义设置的键/值对 。
     
@@ -205,7 +205,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
     - [为父标签指定默认子标签](rms-client/clientv2-admin-guide-customizations.md#specify-a-default-sublabel-for-a-parent-label)
     - [将标签配置为在 Outlook 中应用 S/MIME 保护](rms-client/clientv2-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
     - [使用自定义属性定义标签](rms-client/clientv2-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions) 
-    - [定义标签翻译](https://docs.microsoft.com/powershell/module/exchange/set-label)。 
+    - [定义标签翻译](/powershell/module/exchange/set-label)。 
 
     有关可用高级配置的详细信息，请参阅[管理员指南：Azure 信息保护统一标记客户端的自定义配置](rms-client/clientv2-admin-guide-customizations.md)。
 
@@ -225,10 +225,10 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
 - Microsoft 365 安全中心
 - Microsoft 365 安全与合规中心
 
-有关详细信息，请参阅 Microsoft 365 文档中的[敏感度标签能执行的操作](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do)。
+有关详细信息，请参阅 Microsoft 365 文档中的[敏感度标签能执行的操作](/microsoft-365/compliance/sensitivity-labels#what-sensitivity-labels-can-do)。
 
 > [!TIP]
-> 如果你有任何用于 Office 365 DLP 或 Microsoft Cloud App Security 的自定义敏感信息类型，请将它们按原样应用于统一标记。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)。
+> 如果你有任何用于 Office 365 DLP 或 Microsoft Cloud App Security 的自定义敏感信息类型，请将它们按原样应用于统一标记。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/apply-sensitivity-label-automatically)。
 >  
 
 ## <a name="deploy-a-unified-labeling-client"></a>部署统一标记客户端
@@ -294,7 +294,7 @@ New-Label -Name 'aipscopetest' -Tooltip 'aipscopetest' -Comment 'admin notes' -D
  
 ## <a name="next-steps"></a>后续步骤
 
-根据需要迁移标签、策略和已部署的客户端后，请继续[仅在标记管理中心（包括 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）中管理标签和标记策略](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。
+根据需要迁移标签、策略和已部署的客户端后，请继续[仅在标记管理中心（包括 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）中管理标签和标记策略](/microsoft-365/compliance/create-sensitivity-labels)。
 
 使用统一标记平台，你只需返回到 Azure 门户中的 Azure 信息保护区域，以：
 

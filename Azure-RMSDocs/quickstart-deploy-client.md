@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 468cbe031b22ba07127b75295da98ee9a081048a
-ms.sourcegitcommit: 73befea74644d272e2d8d1d4b95df55c7741ccbe
+ms.openlocfilehash: 74999f960b13c64cd16891060f373d669ac90bab
+ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762326"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240794"
 ---
 # <a name="quickstart-deploying-the-azure-information-protection-aip-unified-labeling-client"></a>快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端
 
@@ -23,7 +23,7 @@ ms.locfileid: "97762326"
 >
 > 相关内容：**[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
-Azure 信息保护 (AIP) 统一标记客户端是 [Microsoft 信息保护](https://aka.ms/MIPdocs) 解决方案的一部分，它扩展了 Microsoft 365 提供的敏感度标记的内置功能。 
+Azure 信息保护 (AIP) 统一标记客户端是 [Microsoft 信息保护](/microsoft-365/compliance/information-protection) 解决方案的一部分，它扩展了 Microsoft 365 提供的敏感度标记的内置功能。 
 
 除了 Office 应用程序之外，客户端还为文件资源管理器和 PowerShell 中的标签和保护提供最终用户支持。 借助统一标签客户端随附的扫描程序，管理员可以扫描网络和内容共享，以发现敏感内容。 
 
@@ -69,4 +69,3 @@ AIP 提供下列客户端安装选项：
 - [已知问题 - Azure 信息保护](known-issues.md) 
 - [有关 Azure 信息保护的常见问题](faqs.md) 
 - [管理员指南：Azure 信息保护统一标记客户端的自定义配置](rms-client/clientv2-admin-guide-customizations.md)        
-    

@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 10f142fb09d8ad65b773f5e02f03233b454da240
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 6936402c9b58bf46b94e71ab597ce04c0391f59d
+ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384530"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240812"
 ---
 # <a name="tutorial-preventing-oversharing-in-outlook-using-azure-information-protection-aip"></a>教程：使用 Azure 信息保护 (AIP) 防止 Outlook 中的过度共享
 
@@ -41,7 +41,7 @@ ms.locfileid: "97384530"
 |---------|---------|
 |计算机需求     | 请确保： <br /><br />- 有 Windows 计算机，其中安装了 Azure 信息保护统一标记客户端。 有关详细信息，请参阅[快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端](quickstart-deploy-client.md)。 <br /><br />- 已安装 PowerShell，并且你可以以管理员身份运行 PowerShell。 <br /><br />- 可以登录到 Outlook。 做好在本教程中多次重启 Outlook 的准备。     |
 |Azure 信息保护订阅     |   你需要包含 [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection/)的 Azure 订阅。 <br /><br />如果没有上述任一订阅，则请为组织创建一个[免费](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)帐户。       |
-|敏感度标签和测试策略     |  在策略中配置的“常规”敏感度标签。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。 <br /><br />建议使用测试策略完成本教程，以免影响活动策略。 <br />请确保你可以随时使用策略名称以及“常规”标签的 GUID。   |
+|敏感度标签和测试策略     |  在策略中配置的“常规”敏感度标签。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/create-sensitivity-labels)。 <br /><br />建议使用测试策略完成本教程，以免影响活动策略。 <br />请确保你可以随时使用策略名称以及“常规”标签的 GUID。   |
 | | |
 
 现在就开始吧。 
@@ -399,7 +399,7 @@ Action Source:
 
 如果要删除策略，请到创建策略的管理中心执行此操作、包括 Microsoft 365 合规性中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心。
 
-有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)
+有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy)
 
 删除后，在客户端计算机上重启 Outlook，使其不再配置为本教程中定义的设置。
 

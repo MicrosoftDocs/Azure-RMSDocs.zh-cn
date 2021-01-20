@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 73bcb5e636b8a5e4456ad80f8435a27dfc898339
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 54bb64810e2dc71f6356dfe60c0443dccfb87315
+ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384768"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240863"
 ---
 # <a name="tutorial-installing-the-azure-information-protection-aip-unified-labeling-scanner"></a>教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "97384768"
 |客户端已安装    |   在计算机上安装 AIP 统一标记客户端以访问扫描程序安装。 <br /><br />从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并运行 AzInfoProtection_UL.exe。 <br /><br />安装完成后，系统可能会提示你重启计算机或 Office 软件。 根据需要重启以继续。 <br /><br />有关详细信息，请参阅[快速入门：部署 Azure 信息保护 (AIP) 统一标记客户端](quickstart-deploy-client.md)。|
 |**SQL Server**     | 若要运行扫描程序，你需要在扫描程序计算机上安装 SQL Server。 <br /><br /> 若要安装，请转到 [SQL Server 下载页](https://www.microsoft.com/sql-server/sql-server-downloads)，然后选择要安装的安装选项下的“立即下载”。 在安装程序中，选择“基本”安装类型。 <br /><br />**注意**：我们建议为生产环境安装 SQL Server Enterprise，仅为测试环境安装 Express。       |
 |**Azure Active Directory 帐户**     |  使用标准的云连接环境时，要用于扫描程序的域服务帐户必须同步到 [Azure Active Directory](https://azure.microsoft.com/services/active-directory/)。 如果正在脱机工作，则不需要这样做。 <br /><br />如果你不确定你的帐户，请联系你的系统管理员来验证同步状态。   |
-|敏感度标签和已发布的策略 |必须已创建敏感度标签，并将至少有一个标签的策略发布到标记管理中心，用于扫描程序服务帐户。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)。 |
+|敏感度标签和已发布的策略 |必须已创建敏感度标签，并将至少有一个标签的策略发布到标记管理中心，用于扫描程序服务帐户。 <br /><br />在标记管理中心（包括 Microsoft 365 合规中心、Microsoft 365 安全中心或 Microsoft 365 安全与合规中心）配置敏感度标签。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/create-sensitivity-labels)。 |
 | | |
 
 确认先决条件后，[在 Azure 门户中配置 Azure 信息保护](#configure-azure-information-protection-in-the-azure-portal)。
