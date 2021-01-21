@@ -7,12 +7,12 @@ ms.topic: quickstart
 ms.date: 06/13/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: 44636616cf410f0976a51afa4bd110e0531de85c
-ms.sourcegitcommit: 6322f840388067edbe3642661e313ff225be5563
+ms.openlocfilehash: 5daada951fb888fc7aa01071236af751ec38e002
+ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96535546"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98215521"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>Microsoft 信息保护 (MIP) SDK 的安装和配置
 
@@ -27,7 +27,7 @@ ms.locfileid: "96535546"
 - [如何使用 Azure 信息保护进行保护？](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
 
 > [!IMPORTANT]
-> 为了尊重用户隐私，在启用自动日志记录之前必须征得用户同意  。 以下示例是 Microsoft 用于日志记录通知的标准消息：
+> 为了尊重用户隐私，你必须在启用自动日志记录之前取得用户同意。 以下示例是 Microsoft 用于日志记录通知的标准消息：
 >
 > *启用错误和性能日志记录即表示同意向 Microsoft 发送错误和性能数据。Microsoft 会通过 Internet 收集错误和性能数据（统称“数据”）。Microsoft 利用此数据来保证并改进 Microsoft 产品和服务的质量、安全性和完整性。例如，会分析性能和可靠性（如使用哪些功能、功能的响应速度、设备性能、用户界面交互和遇到的任何产品问题）。数据还包括当前运行的软件以及 IP 地址的配置信息。*
 
@@ -102,7 +102,7 @@ ms.locfileid: "96535546"
 
    **Tar.gz/.Zip 下载**
 
-   Tar.gz 和 .Zip 下载项各自包含额外压缩文件，每个 API 一个。 这些压缩文件的命名如下，其中 \<API\> = `file`、`protection` 或 `upe` 和 \<OS\> = 平台：`mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。 例如，Debian 上用于保护 API 二进制文件和标头文件的文件将是：`mip_sdk_protection_debian9_1.0.0.0.tar.gz`。 每个包含的 .tar.gz/.zip 拆分到三个目录中：
+   Tar.gz 和 .Zip 下载内容包含压缩文件，每个 API 对应一个。 这些压缩文件的命名如下，其中 \<API\> = `file`、`protection` 或 `upe` 和 \<OS\> = 平台：`mip_sdk_<API>_<OS>_1.0.0.0.zip (or .tar.gz)`。 例如，Debian 上用于保护 API 二进制文件和标头文件的文件将是：`mip_sdk_protection_debian9_1.0.0.0.tar.gz`。 每个包含的 .tar.gz/.zip 拆分到三个目录中：
 
    - **Bins:** 用于每个平台体系结构的编译的二进制文件（在适用情况下）。
    - **Include:** 头文件 (C++)。
@@ -155,7 +155,7 @@ ms.locfileid: "96535546"
 
 1. 按照[向 Azure AD 注册应用，注册新应用程序](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#register-a-new-application-using-the-azure-portal)一节中的步骤进行操作。 出于测试目的，在完成指导步骤时，请对给定属性使用以下值：
     - **支持的帐户类型** - 选择“仅此组织目录中的帐户”。
-    - **重定向 URI** - 将重定向 URI 类型设置为“公共客户端(移动和桌面)”。 由于 SDK 使用简单的控制台客户端应用程序，因此请使用格式为 `<app-name>://authorize` 的 URI。
+    - **重定向 URI** - 将重定向 URI 类型设置为“公共客户端(移动和桌面)”。 如果应用程序使用的是 Microsoft 身份验证库 (MSAL)，请使用 `http://localhost`。 否则，请使用 `<app-name>://authorize` 格式。
 
 2. 完成后，将返回“已注册的应用”页面查看新的应用程序注册  。 复制并保存“应用程序(客户端) ID”  字段中的 GUID，因为稍后需要在快速入门中用到它。
 
@@ -164,7 +164,7 @@ ms.locfileid: "96535546"
 4. 现在，将添加应用程序在运行时需要的 MIP API 和权限：
    - 在“选择 API”  页上，单击“Azure Rights Management Services”  。
    - 在“Azure Rights Management Services”  API 页上，单击“委托的权限”  。
-   - 在“选择权限”  部分中，选中“user_impersonation”  权限。 这样一来，应用程序可以代表用户创建和访问受保护的内容。
+   - 在“选择权限”  部分中，选中“user_impersonation”  权限。 此权限允许应用程序代表用户创建和访问受保护的内容。
    - 单击“添加权限”  以保存。
 
 5. 重复步骤 #4，但这次当进入“选择 API”页面时，需要搜索 API  。
@@ -177,7 +177,7 @@ ms.locfileid: "96535546"
 
 完成后，应用程序注册和 API 权限应如下面的示例所示：
 
-   [![Azure AD 应用注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用权限](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
+   [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-registration-overview.png)](media/setup-mip-client/aad-app-registration-overview.png#lightbox) [![Azure AD 应用程序注册](media/setup-mip-client/aad-app-api-permissions.png)](media/setup-mip-client/aad-app-api-permissions.png#lightbox)
 
 要详细了解如何向注册添加 API 和权限，请参阅[配置客户端应用程序以访问 Web API](/azure/active-directory/develop/quickstart-v1-update-azure-ad-app#configure-a-client-application-to-access-web-apis)。 此处可以找到有关添加客户端应用程序所需的 API 和权限信息。
 
@@ -194,7 +194,7 @@ ms.locfileid: "96535546"
    - 请求者的姓氏和名字
    - 请求者的电子邮件地址
 
-2. 收到 IPIA 请求后，我们会将一份表格（Word 文档格式）发送给你。 请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=IPIA%20Response%20for%20<company-name>)：
+2. 收到你的 IPIA 请求后，我们将发送一份表单（Word 文档格式）给你。 请查看 IPIA 的条款和条件，然后将包含以下信息的表格通过电子邮件发送到 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=IPIA%20Response%20for%20<company-name>)：
 
    - 公司依法登记的名称
    - 公司注册地的州/省（美国/加拿大）或国家/地区
@@ -219,7 +219,7 @@ ms.locfileid: "96535546"
 - 应用程序的应用程序 ID
 - 用于紧急情况通信的公司联系人、电子邮件和电话号码
 
-你发送电子邮件后，我们最迟会在 72 小时内向你发送已收到邮件的确认信。
+允许在电子邮件发送后的最长 72 小时内确认收到邮件。
 
 ## <a name="ensure-your-app-has-the-required-runtime"></a>确保应用具有所需的运行时
 
