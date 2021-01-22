@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: de6aa96fefb8dbd2fd10c8ea265e509f20aef2d4
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: f23d9da0aae7d3cae681c829187f8371c84ca167
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384445"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659079"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 权限管理是什么？
 
@@ -93,7 +93,7 @@ Azure RMS 支持广泛的平台和应用程序，包括：
 |---------|---------|
 |**常用设备** </br>不止是 Windows 计算机     | [客户端设备](requirements.md#client-devices)包括： </br></br>- Windows 计算机和手机 </br>- Mac 计算机 </br>- iOS 平板电脑和手机 </br>- Android 平板电脑和手机        |
 |**本地服务**     | Azure Rights Management 除了[与 Office 365 无缝集成](office-apps-services-support.md)以外，在部署 [RMS 连接器](deploy-rms-connector.md)时，还可以将 Azure Rights Management 与以下本地服务结合使用： </br></br>- Exchange Server </br>- SharePoint Server </br>- 运行文件分类基础结构的 Windows Server        |
-|**应用程序扩展性**     |Azure Rights Management 可与 Microsoft Office 应用程序和服务紧密集成，并使用 [Azure 信息保护客户端](./rms-client/use-client.md )扩展对其他应用程序的支持。 </br></br>[Azure 信息保护 SDK](./develop/developers-guide.md) 为内部开发人员和软件供应商提供了 API，用于编写支持 Azure 信息保护的自定义应用程序。 </br></br>有关详细信息，请参阅[支持 Rights Management API 的其他应用程序](api-support.md)。         |
+|**应用程序扩展性**     |Azure Rights Management 可与 Microsoft Office 应用程序和服务紧密集成，并使用 [Azure 信息保护客户端](./rms-client/use-client.md )扩展对其他应用程序的支持。 </br></br>[Microsoft 信息保护 SDK](/information-protection/develop/) 为内部开发人员和软件供应商提供了 API，用于编写支持 Azure 信息保护的自定义应用程序。 </br></br>有关详细信息，请参阅[支持 Rights Management API 的其他应用程序](api-support.md)。         |
 | | |
 
 ### <a name="infrastructure-features"></a>基础结构功能
