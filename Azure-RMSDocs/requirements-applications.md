@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0c86d31ef5dbfe3afd7e901bc43758c61ee0ba67
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 13454e0642cfaf60ed3bd742050cd3eb0d3a38dc
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386247"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659130"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>支持 Azure Rights Management 数据保护的应用程序
 
@@ -263,8 +263,6 @@ Azure RMS 已紧密集成到 Word、Excel、PowerPoint 和 Outlook 应用中，�
 除了上面列出的应用程序，支持 Azure Rights Management 服务的 API 的任何应用程序都可与 Azure 信息保护集成。 
 
 示例可能包括内部编写的业务线应用程序或软件供应商的应用程序（使用 RSM SDK 编写）。
-
-有关详细信息，请参阅 [Azure 信息保护开发人员指南](./develop/developers-guide.md)。
 
 ## <a name="applications-that-are-not-supported-by-azure-rms"></a>不受 Azure RMS 支持的应用程序
 

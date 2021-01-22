@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6787f7d3bfcc2cb877291399d9519a707b1ef248
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: fdcc7103795fda20ae253d9f96c2aeb3f29d185f
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164073"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98658994"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-classic-client"></a>管理员指南： Azure 信息保护经典客户端支持的文件类型
 
@@ -82,7 +82,7 @@ Azure 信息保护客户端还可以使用已知的敏感信息类型或用户�
 
 Azure 信息保护客户端支持两个不同级别的保护，如下表中所述。
 
-|保护类型|Native|泛型|
+|保护类型|本机|泛型|
 |----------------------|----------|-----------|
 |说明|对于文本、图像、Microsoft Office（Word、Excel、PowerPoint）文件、pdf 文件和其他支持 Rights Management 服务的应用程序文件类型，本机保护提供了同时包括权限的加密和强制执行的强保护级别。|对于其他支持的文件类型，通用保护提供了一种保护级别，其中包括使用 .pfile 文件类型和身份验证的文件封装，以验证用户是否有权打开该文件。|
 |保护|通过以下方式强制执行文件保护：<br /><br />- 必须在通过电子邮件接收文件的用户或通过文件被授予访问权限或共享权限的用户成功通过身份验证之后，才能呈现受保护的内容。<br /><br />- 此外，无论是使用 Azure 信息保护查看器（适用于受保护的文本和图像文件）还是使用关联的应用程序（适用于其他所有受支持的文件类型）呈现内容时，都会强制执行内容所有者在文件处于受保护状态时所设置的使用权限和策略。|通过以下方式强制执行文件保护：<br /><br />- 必须在经授权可打开文件的人员以及被授予访问权限的人员成功通过身份验证之后才能呈现受保护的内容。 如果授权失败，则文件不会打开。<br /><br />- 将显示由内容所有者设置的使用权限和策略，以向授权用户通知预期使用策略。<br /><br />- 将对已授权的用户打开和访问文件的操作执行审核日志记录。 但不强制执行使用权限。|
@@ -199,7 +199,7 @@ Azure 信息保护客户端支持保护的最大文件大小。
 
 进行这些注册表更改后，无需重启计算机。 不过，如果使用 PowerShell 命令来保护文件，必须启动新的 PowerShell 会话，这样更改才能生效。
 
-若要详细了解如何通过编辑注册表来更改文件的默认保护级别，请参阅开发人员指南中的[文件 API 配置](../develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。
+对于本文档中的开发人员，常规保护被称为“PFile”。
 
 ## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
 

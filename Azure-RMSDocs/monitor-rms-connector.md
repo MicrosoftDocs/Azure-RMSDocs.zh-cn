@@ -4,7 +4,7 @@ description: 帮助监视连接器和组织使用 Azure 信息保护中 Azure Ri
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/30/2019
+ms.date: 01/20/2021
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,18 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a440f075e8bbcd4d8c2d8ee8050ef0ab1d203b54
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 49b74533f745906ee919173884c8bc4bafdb52fa
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97381827"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659096"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>监视 Azure Rights Management 连接器
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2016、windows Server 2012 R2、windows server 2012 *
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 安装并配置 RMS 连接器后，可以使用以下方法和信息，从而监视连接器和组织使用 Azure 信息保护中 Azure Rights Management 服务的情况。
 
@@ -173,27 +173,31 @@ RMS 连接器使用应用程序事件日志来记录 “Microsoft RMS 连接器�
 
 如果你最近添加了新的服务器帐户以使用连接器，你可以检查计数器“上次授权策略更新后的时间”来确认在你对其更新后，连接器已经下载了列表，或者你是否需要等待稍长的时间（最多 15 分钟）。
 
-## <a name="logging"></a>日志记录
+## <a name="logging"></a>Logging
 
 使用情况日志记录可帮助你识别电子邮件和文档何时受到保护以及何时使用。 当 RMS 连接器用于保护和使用内容时，日志中的用户 ID 字段包含 Aadrm_S-1-7-0 的服务主体名称。 此名称是自动为 RMS 连接器创建。
 
 有关使用日志记录的详细信息，请参阅 [记录和分析 Azure 信息保护中的保护使用情况](log-analyze-usage.md)。
 
-如果需要更详细的日志记录以供诊断使用，可以使用 Windows Sysinternals 中的 [Debugview](/sysinternals/downloads/debugview)。 在 IIS 中修改默认网站的 web.config 文件，启用对 RMS 连接器的跟踪：
+如果出于诊断目的需要更详细的日志记录，请使用 Windows Sysinternals 中的 [DebugView](/sysinternals/downloads/debugview) 将日志输出到调试管道。 
 
-1. 在“%programfiles%\Microsoft Rights Management connector\Web Service”中找到 web.config 文件。
+1. 以管理员身份启动 DebugView，然后选择 "**捕获**  >  **捕获全局 Win32**"。
 
-1. 找到以下行：
+1. 通过修改 IIS 中默认网站的 **web.config** 文件，为 RMS 连接器启用跟踪：
 
-    ```sh
-    <trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
-    ```
+    1. 找到 **%programfiles%\Microsoft Rights Management Connector\Web Service** 文件夹中的 **web.config** 文件。
 
-1. 将上一行代码替换为以下文本：
-    ```sh
-    <trace enabled="true" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
-    ```
+    1. 找到以下行：
+
+        ```sh
+        <trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
+        ```
+
+    1. 将上一行代码替换为以下文本：
+        ```sh
+        <trace enabled="true" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
+        ```
 
 1.  停止和启动 IIS 以激活跟踪。 
 
-1.  当你捕获了所需的跟踪时，还原步骤 3 的行，并再次停止和启动 IIS。
+1.  在 DebugView 中捕获所需的跟踪后，请在步骤3中恢复该行，并再次停止并启动 IIS。

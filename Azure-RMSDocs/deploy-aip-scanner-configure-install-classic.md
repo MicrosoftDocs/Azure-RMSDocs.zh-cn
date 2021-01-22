@@ -13,12 +13,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9a139aaa4e36a45d23821ae71b27262c5b8c3f89
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 112593d0d26deca85dad62d580c73553f4a26107
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806288"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659181"
 ---
 # <a name="configuring-and-installing-the-azure-information-protection-classic-scanner"></a>配置和安装 Azure 信息保护经典扫描程序
 
@@ -89,7 +89,7 @@ ms.locfileid: "97806288"
     |部分  |设置  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" </br>- **要发现的信息类型**：仅更改为 **策略** </br>- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略强制执行**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的 **策略** 默认值 </br>- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**策略实施**     | - **强制**：选择 "**关闭**" </br>- **基于内容标记文件**：将默认值设置为 **on** </br>- **默认标签**：保留默认的 **策略** 默认值 </br>- 重新 **标记文件**：保持默认值为 **Off**        |
     |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 </br>- **要扫描的文件类型**：保留默认文件类型以 **排除** </br>- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
@@ -252,7 +252,7 @@ Azure AD 令牌允许扫描程序对 Azure 信息保护服务进行身份验证�
 - 指定要保护的其他文件类型
 - 指定要应用 (本机或泛型) 的保护类型
 
-有关详细信息，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。
+对于本文档中的开发人员，常规保护被称为“PFile”。
 
 若要使受支持的文件类型与客户端保持一致，则所有文件都将自动通过本机或一般保护进行保护：
 

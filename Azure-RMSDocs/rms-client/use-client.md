@@ -4,7 +4,7 @@ description: Microsoft Azure 信息保护提供客户端-服务器解决方案�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/03/2020
+ms.date: 01/20/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 0019699301b68df2d6ee4fd05d29a0e64734fc6e
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: fcd21a58dabe65f1de88694f97dc57975bc19450
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98559857"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659062"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -184,7 +184,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 |**支持 AD RMS**| ![是](../media/yes-icon.png) |  ![无 ](../media/no-icon.png) <sup>6</sup> |  ![否](../media/no-icon.png)|
 |**支持 Microsoft Office 97-2003 格式**| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |  ![无 ](../media/no-icon.png) <sup>8</sup>|
 |**双重密钥加密**|  ![否](../media/no-icon.png)| ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|
-|**政府社区云** | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|
+|**政府社区云** | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png)|
 | | | | |
 
 **脚注**：

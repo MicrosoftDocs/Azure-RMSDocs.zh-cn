@@ -13,12 +13,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 514eaf2f935d4ec454b57dbaf2ce1c97c029c4b8
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 6dffbe4480d5b6d1c2a01813d982e2a36ce81933
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806237"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659147"
 ---
 # <a name="deploying-previous-versions-of-the-azure-information-protection-classic-client-scanner"></a>部署以前版本的 Azure 信息保护经典客户端扫描器
 
@@ -340,7 +340,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 
 ### <a name="editing-the-registry-for-the-scanner"></a>编辑扫描程序的注册表
 
-若要更改默认扫描程序行为以保护 Office 文件和 PDF 以外的文件类型，必须手动编辑注册表并指定想要保护的其他文件类型以及保护类型（本机或泛型）。 有关说明，请参阅开发人员指南中的[文件 API 配置](develop/file-api-configuration.md)。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
+若要更改默认扫描程序行为以保护 Office 文件和 PDF 以外的文件类型，必须手动编辑注册表并指定想要保护的其他文件类型以及保护类型（本机或泛型）。 对于本文档中的开发人员，常规保护被称为“PFile”。 此外，特定于扫描程序：
 
 - 扫描仪具有其自己的默认行为：默认情况下仅保护 Office 文件格式和 PDF 文档。 如果未修改注册表，则扫描程序不会保护任何其他文件类型或为其设置标签。
 
