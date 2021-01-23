@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: fcd21a58dabe65f1de88694f97dc57975bc19450
-ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
+ms.openlocfilehash: e715ca9f5131095e38e0fb9589494924ae36210f
+ms.sourcegitcommit: b82640b2af14b383a3d4d73692f3da907dc0f191
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98659062"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98711863"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -153,7 +153,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 |**手动标记**| ![是](../media/yes-icon.png)   | ![是](../media/yes-icon.png)   |![是](../media/yes-icon.png) |
 |**默认标签**| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)| ![是](../media/yes-icon.png)|
 |**建议或自动标记** <br />适用于 Word、Excel、PowerPoint、Outlook|![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |
-|**强制标记**| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |  ![否](../media/no-icon.png)|
+|**强制标记**| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |  ![是](../media/yes-icon.png)|
 |**用户定义的标签权限**： <br />不转发电子邮件| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |
 |**用户定义的标签权限**： <br />Word、Excel、PowerPoint 的自定义权限| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |
 |**标签的多语言支持**| ![是](../media/yes-icon.png) | ![是](../media/yes-icon.png) |![是](../media/yes-icon.png) |
