@@ -5,18 +5,18 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/10/2020
-ms.topic: quickstart
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ROBOTS: NOINDEX
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: f57d8722cc1e42c196253a76f7338cd2a8e6c700
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 19070e1e661718c70b21cd16d76130afed91b17f
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807002"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809382"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 

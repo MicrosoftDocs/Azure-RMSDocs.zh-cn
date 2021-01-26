@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: overview
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 Customer intent: As an administrator, I want to extend Microsoft 365's labeling and classification functionality to the File Explorer, PowerShell, third party apps and services, and more.
 ms.custom: contperf-fy21q2
 search.appverid:
 - MET150
-ms.openlocfilehash: 6bebd942d24029288d0ca0602fd32901e2685abc
-ms.sourcegitcommit: efeb486e49c3e370d7fd8244687cd3de77cd8462
+ms.openlocfilehash: 8bc04ea9c8d26dc33a8fbb6cdcc52bd78257f41a
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97582922"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808527"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
