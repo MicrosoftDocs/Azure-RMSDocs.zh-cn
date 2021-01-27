@@ -5,24 +5,24 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 07/28/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 874a73480e8d15380d9e69a532a1b8ff39d38eb7
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 3fca14f82db5cd78727b14cc417517921baa0f7b
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384156"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808588"
 ---
 # <a name="active-directory-rights-management-services-mobile-device-extension"></a>Active Directory Rights Management Services 移动设备扩展
 
 >***适用于**： Windows Server 2019、2016、2012 R2 和 2012 *
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=43738) 下载 Active Directory Rights Management Services (AD RMS) 移动设备扩展，并在现有 AD RMS 部署之上安装此扩展。 这允许用户在其设备支持最新的启用应用时保护和使用敏感数据。 例如，用户可以执行以下操作：
 - 使用 Azure 信息保护应用以不同格式使用受保护的文本文件， (包括 .txt、.csv 和 .xml) 。
@@ -124,7 +124,7 @@ Write-Host "Microsoft Rights Management Mobile Device Extension Configured"
 
 - 若要为 AD RMS 移动设备扩展手动配置 AD FS，请使用以下设置：
 
-|**配置**|值|
+|**配置**|**值**|
 |-----|-----|
 |**信赖方信任**|_api。|
 |**声明规则**|**属性存储**： Active Directory <br /><br />**电子邮件地址**：电子邮件地址<br /><br>**用户-名称**： UPN<br /><br /> **代理地址**： _https： \/ \/schemas.xmlsoap.org/claims/ProxyAddresses|

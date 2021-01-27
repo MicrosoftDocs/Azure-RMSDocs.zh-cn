@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 ms.date: 11/09/2020
 manager: rkarlin
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
@@ -13,21 +13,21 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 25ea3c8e008334ec50f81f0c5fcef15690132ef6
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 99c1fa6379f346477431caa884b687d39d500b7a
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386264"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808817"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 使用 Azure 信息保护分析进行集中报告，以帮助跟踪对组织数据进行分类和保护的标签。 此外：
 
@@ -50,7 +50,7 @@ ms.locfileid: "97386264"
 
 例如，用于集中报表的 Azure 信息保护分析显示以下数据：
 
-|报告  |显示的示例数据 |
+|报表  |显示的示例数据 |
 |---------|---------|
 |**使用情况报告**     |  选择时间段以显示以下任何内容： <br /><br />     -正在应用哪些标签 <br /><br />-正在标记的文档和电子邮件数量 <br /><br />-受保护的文档和电子邮件数量 <br /><br />-为文档和电子邮件标记了多少用户和多少设备 <br /><br />-正在使用哪些应用程序进行标记     |
 |**活动日志**     | 选择时间段以显示以下任何内容： <br /><br />      -扫描程序以前发现的哪些文件已从扫描的存储库中删除 <br /> <br /> -特定用户执行了哪些标记操作 <br /><br /> -从特定设备执行了哪些标记操作<br /> <br />    -哪些用户访问了特定标记的文档<br /> <br />-对特定文件路径执行了哪些标记操作<br /> <br />-特定应用程序执行了哪些标签操作，如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security <br /> <br />-用户或拒绝用户访问哪些受保护的文档，即使这些用户未安装 Azure 信息保护客户端或组织外 <br /> <br />-向下钻取到报告文件，查看 **活动详细** 信息以了解其他信息      |
@@ -169,7 +169,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
 - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
     - **安全读者**
-    - **全局读取器**
+    - **全局读取者**
 
 #### <a name="required-azure-log-analytics-roles"></a>必需的 Azure Log Analytics 角色
 
@@ -237,7 +237,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 在 "Azure 信息保护" 窗格中，找到 " **仪表板** " 菜单选项，然后选择下列选项之一：
 
-|报告  |说明  |
+|报表  |说明  |
 |---------|---------|
 |**使用情况报表 (预览)**     |  使用此报表查看标签是如何使用的。       |
 |**(预览的活动日志)**     |  使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外，对于受保护的文档，你可以查看在组织内部和外部用户 (成功或拒绝的访问尝试) ，即使他们没有安装 Azure 信息保护客户端。 <br><br>  此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。     |
@@ -265,7 +265,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |-----------|-----------|
 |**时间**|事件时间：格式 YYYY-MM-YYYY-MM-DDTHH： MM： SS 中的 UTC|
 |**User**|User：格式 UPN 或 DOMAIN\USER|
-|**项路径**|完整项目路径或电子邮件主题|
+|**ItemPath**|完整项目路径或电子邮件主题|
 |**ItemName**|文件名或电子邮件主题 |
 |**方法**|标签分配方法：手动、自动、建议、默认或强制|
 |**活动**|审核活动： DowngradeLabel、UpgradeLabel、RemoveLabel、NewLabel、发现、Access、RemoveCustomProtection、ChangeCustomProtection、NewCustomProtection 或 FileRemoved |
@@ -278,7 +278,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |**MachineName** |FQDN （如果可用）;否则为主机名|
 |**DeviceRisk**|WDATP 可用时的设备风险评分|
 |**平台**|设备平台 (Win、OSX、Android、iOS)  |
-|**ApplicationName**|应用程序友好名称|
+|ApplicationName|应用程序友好名称|
 |**AIPVersion**|执行审核操作的 Azure 信息保护客户端的版本 |
 |**TenantId**|Azure AD 租户 ID |
 |**AzureApplicationId**|Azure AD 已注册应用程序 ID (GUID) |

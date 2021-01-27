@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 06/25/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 344a2c8ed5f4912a96af2031accb9476358a2930
-ms.sourcegitcommit: c6aa8f8ecec8950ac6104fc6f47a102e54804a95
+ms.openlocfilehash: 9815969701e1dee352d2b2ad5d2874de6c8df204
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "97706097"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809581"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 

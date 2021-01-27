@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: fc02a679cfbc389cb4f09e72018f0b96a30a8b0a
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 4687241aa49bd760b3d246300f2e5004fe756591
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164312"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809729"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>如何配置标签以进行 Rights Management 保护
 
@@ -236,7 +236,7 @@ ms.locfileid: "98164312"
 
 3. 在“添加权限”窗格，选择“输入详细信息”。
 
-4. 输入其他组织的域名，例如 **fabrikam.com**。 然后选择“添加”  。
+4. 输入其他组织的域名，例如 **fabrikam.com**。 然后选择“添加”。
 
 5. 在“从预设中选择权限”中，选择“查看器”，然后选择“确定”。
 

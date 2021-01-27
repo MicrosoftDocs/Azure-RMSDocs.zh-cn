@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
@@ -13,12 +13,12 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 39fedde68cfe771d29e9fda1be4a9f2883cf1ede
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 16cc8ae0424f307ae7f0ed864ca36f1a91230977
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164243"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809644"
 ---
 # <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
@@ -204,8 +204,8 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 |模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
 |----------------|--------------------|----------|
-|\<*organization name> -仅查看机密 * <br /><br />or<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
-|\<*organization name>信息 <br /><br />or <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|\<*organization name> -仅查看机密 * <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|\<*organization name>信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
 
 ## <a name="see-also"></a>另请参阅
 [配置和管理 Azure 信息保护的模板](configure-policy-templates.md)

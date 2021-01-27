@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3c7105d93f396380c47711611b83d24909431cbc
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: f35a486291b3e13bc415d5bbbc80b9019b6e0075
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807478"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808942"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-classic-client"></a>管理员指南： Azure 信息保护经典客户端的自定义配置
 

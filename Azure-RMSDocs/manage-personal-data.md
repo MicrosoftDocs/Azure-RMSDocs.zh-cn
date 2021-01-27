@@ -5,28 +5,28 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 10/04/2019
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 128989642e78ab0d7d45f53e5fc72a2c85bbf28f
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 985f567189cbc65920b53af3f797d5c62d2671c5
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384258"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809458"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>管理用于 Azure 信息保护的个人数据
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 在配置和使用 Azure 信息保护时，Azure 信息保护服务会存储和使用电子邮件地址和 IP 地址。 可以在以下各项中找到此个人数据：
 
@@ -136,7 +136,7 @@ Downloaded the log for 2018-04-24. The log is available at .\Desktop\rmslog-2018
 
 运行 [AipServiceTemplate](/powershell/module/aipservice/get-aipservicetemplate) cmdlet 以获取保护模板列表。 可以使用模板 ID 获取特定模板的详细信息。 `RightsDefinitions` 对象显示个人数据，如果有的话。 
 
-例如：
+示例：
 ```PowerShell
 PS C:\Users> Get-AipServiceTemplate -TemplateId fcdbbc36-1f48-48ca-887f-265ee1268f51 | select *
 
@@ -241,7 +241,7 @@ IsHiddenInfo         : False
 
 - **全局管理员**
 
-- **全局读取器**
+- **全局读取者**
 
 使用 AIPService 模块查看和指定 (或旧模块) 的个人数据仅可供已向其分配了 **Azure 信息保护管理员**、 **合规性管理员**、 **合规性数据管理员** 或 **全局管理员** Azure Active Directory 角色的用户访问，或者保护服务的全局管理员角色。
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 09/29/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
@@ -13,18 +13,18 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a6733944ef8a88c9caaae017fa7eb2045b74b3ce
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 10d804c903f9e9ada962674b7c49b9c4e3a413d5
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382949"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809656"
 ---
 # <a name="configuring-super-users-for-azure-information-protection-and-discovery-services-or-data-recovery"></a>为 Azure 信息保护和发现服务或数据恢复配置超级用户
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 Azure 信息保护中的 Azure Rights Management 服务的超级用户功能可以确保经授权的人员和服务始终可以阅读和检查 Azure Rights Management 为你的组织保护的数据。 如有必要，可以删除或更改保护。
 

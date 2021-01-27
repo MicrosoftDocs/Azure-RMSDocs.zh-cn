@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 01/20/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 935e6a3439a06887a91981cb8ed69a342172b686
-ms.sourcegitcommit: 99a58f50b08abc546073657c66247553faeecf8b
+ms.openlocfilehash: e3d9c81c42c202fc09dd6ab11559c915bdfeafef
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98608615"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809851"
 ---
 # <a name="administrator-guide-track-and-revoke-document-access-with-azure-information-protection-public-preview"></a>管理员指南：使用 Azure 信息保护跟踪和撤消文档访问 (公开预览版) 
 

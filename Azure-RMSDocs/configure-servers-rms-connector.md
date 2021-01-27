@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 09/10/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
@@ -13,12 +13,12 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3a616092ac1b74c2ae530898c69a61f071e93ea1
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: e07d4f634d774be91df03c279705f52e9bee6c8c
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98559789"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809678"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>为 Azure Rights Management 连接器配置服务器
 
@@ -97,7 +97,7 @@ ms.locfileid: "98559789"
 
 3.  确定如何运行工具：
     
-    |方法  |描述  |
+    |方法  |说明  |
     |---------|---------|
     |**就地**     |  从要配置为与 RMS 连接器通信的服务器以交互方式运行该工具。 <br><br>**提示**：这对于一次性配置（例如测试环境）非常有用。       |
     |**软件部署**     |  运行该工具以生成注册表文件，然后将其部署到一个或多个相关服务器。 <br><br>使用支持软件部署的系统管理应用程序（如 System Center Configuration Manager）部署注册表文件。       |
@@ -115,7 +115,7 @@ ms.locfileid: "98559789"
 
 若要运行脚本，你必须输入组织的 RMS 连接器的 URL。 
 
-输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如 `https:\//connector.contoso.com`。 
+输入协议前缀（HTTP:// 或 HTTPS://），以及你在 DNS 中为连接器的负载平衡地址定义的连接器名称， 例如，`https:\//connector.contoso.com`。 
 
 然后，此工具会使用该 URL 来联系运行 RMS 连接器的服务器，并获取用于创建所需配置的其他参数。
 
@@ -139,7 +139,7 @@ ms.locfileid: "98559789"
 在上述两种情况下，你必须在没有配置为使用连接器的单独计算机上安装客户端应用程序。 然后它们即可正确地直接使用 RMS。
 
 > [!IMPORTANT]
-> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
 > 
 ## <a name="configuring-an-exchange-server-to-use-the-connector"></a>将 Exchange 服务器配置为使用连接器
 以下 Exchange 角色将与 RMS 连接器通信：

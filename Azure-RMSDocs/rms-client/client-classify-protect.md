@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 23fa2b6b52355f87a135234b218bcef6d5517ca7
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: b3fe9b0cbe0a709ffd5a256abf1d65af4ec4b535
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560214"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808626"
 ---
 # <a name="user-guide-classify-and-protect-with-the-azure-information-protection-classic-client"></a>用户指南：通过 Azure 信息保护经典客户端进行分类和保护
 
@@ -166,7 +166,7 @@ ms.locfileid: "98560214"
 
 4. 如果选择了 "自定义权限" 选项，请指定以下选项
     
-    |选项  |描述  |
+    |选项  |说明  |
     |---------|---------|
     |**选择权限**     |    在保护所选文件时选择希望用户具有的访问级别。     |
     |**选择用户、组或组织**     |  指定应对文件具有选定权限的人员。 键入他们的完整电子邮件地址、组电子邮件地址或相应组织中所有用户的组织域名。 </br>或者，可以使用“通讯簿”图标从 Outlook 通讯簿选择用户或组。       |

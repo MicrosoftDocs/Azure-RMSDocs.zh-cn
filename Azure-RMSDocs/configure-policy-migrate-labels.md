@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9e72c64fe59626f5f670712a2503308047e1aff8
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 1751368b74d6ed2800bfd2e7432a4ce4a5844f0a
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164294"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809759"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -55,7 +55,7 @@ ms.locfileid: "98164294"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="before-you-begin"></a>开始之前
 
 标签迁移具有很多优点，但不可逆。 在迁移之前，请确保你已了解以下更改和注意事项：
 
@@ -294,7 +294,7 @@ Azure 信息保护客户端 (经典) 可以使用列出的所有标签设置而�
 
 如果尚未这样做，请安装 Azure 信息保护统一标签客户端。 
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [Azure 信息保护统一标签客户端-版本发行历史记录和支持策略](rms-client/unifiedlabelingclient-version-release-history.md)
 - [Azure 信息保护统一标记客户端管理员指南](rms-client/clientv2-admin-guide.md)

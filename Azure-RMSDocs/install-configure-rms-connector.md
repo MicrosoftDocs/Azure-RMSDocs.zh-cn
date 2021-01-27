@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/11/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
@@ -13,18 +13,18 @@ ms.subservice: connector
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ef3a9198af5fb44927438c66262e30acf439f2eb
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 0bdf9feb0b81d6fe39dba3545b171c60ec0661b5
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383850"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809492"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>安装和配置 Azure Rights Management 连接器
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、2016、2012 R2 和 Windows server 2012 *
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 可以参考以下信息来安装和配置 Azure Rights Management (RMS) 连接器。 这些过程涉及到[部署 Azure Rights Management 连接器](deploy-rms-connector.md)中的步骤 1-4。
 

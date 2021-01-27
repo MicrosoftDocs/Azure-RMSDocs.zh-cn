@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 12/29/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: c4403b700b269519117993f7b2c01c91272a8c5c
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 2a930f1e4b1a26fa18cb2b2bc75bcbbf4612e7c9
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806560"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809786"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>如何配置 Azure 信息保护可视标记的标签
 
@@ -103,7 +103,7 @@ ms.locfileid: "97806560"
 
 - `${User.Name}` 表示由当前登录的 Windows 用户使用的文档或电子邮件的所有者的显示名称。 例如： Rosalind Simone
 
-- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如： rsimone@vanarsdelltd.com
+- `${User.PrincipalName}`，针对文档或电子邮件的所有者（按 Azure 信息保护客户端登录电子邮件地址 (UPN)）。 例如：rsimone@vanarsdelltd.com
 
 - `${Event.DateTime}`，针对设置所选标签时的日期和时间。 例如：2016/8/16 下午 1:30
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 05/31/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
@@ -13,12 +13,12 @@ ROBOTS: NOINDEX
 ms.subservice: v1client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: cd07207751a3ad7f6bf929f0d94d9f8802f15436
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 7df480389741a900326477e8d6088ac9dc6da596
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164549"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808672"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-classic-client"></a>管理员指南：将 PowerShell 与 Azure 信息保护经典客户端配合使用
 
@@ -73,7 +73,7 @@ cmdlet 是使用 PowerShell 模块 AzureInformationProtection 进行安装。 �
 如果组织使用 Azure 信息保护进行分类和保护，或仅使用 Azure 权限管理服务进行数据保护，请先阅读本部分，再开始使用 PowerShell 命令。
 
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块这一先决条件之外，Azure 信息保护标签和 Azure 权限管理数据保护服务还有其他先决条件：
 
@@ -386,7 +386,7 @@ C:\Test.docx                          C:\Test.docx
 当你的组织仅使用 Active Directory Rights Management Services 时，请阅读本节，然后才开始使用 PowerShell 命令来保护或取消保护文件。
 
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 
 除了安装 AzureInformationProtection 模块的先决条件之外，用于保护或取消保护文件的帐户必须具有读取和执行权限才能访问 ServerCertification.asmx：
 
@@ -577,7 +577,7 @@ C:\Test.docx                          C:\Test.docx
 
 11. 在 " **AIPOnBehalfOf-公开 API** " 窗格上， 选择 "设置 **应用程序 id uri** " 选项，然后在 "**应用程序 id uri** " 值中，将 **API** 更改为 **http**。 此字符串类似于以下示例： `http://d244e75e-870b-4491-b70d-65534953099e` 。 
     
-    选择“保存”。
+    选择“保存”。 
 
 12. 返回 " **AIPOnBehalfOf-公开 API** " 窗格，选择 " **+ 添加作用域**"。
 

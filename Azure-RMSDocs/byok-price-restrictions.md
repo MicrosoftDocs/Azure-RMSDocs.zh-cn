@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
@@ -13,18 +13,18 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 53c5edea2593a653eec82ec5a61efed58ae76c1f
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: bc9da85af00c0f183d79347b0b723da8e090aaa4
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383918"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809819"
 ---
 # <a name="bring-your-own-key-byok-details-for-azure-information-protection"></a>自带密钥 (BYOK Azure 信息保护) 详细信息
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 使用 Azure 信息保护订阅的组织可以选择使用自己的密钥（而不是由 Microsoft 生成的默认密钥）来配置其租户。 此配置通常称为创建自己的密钥 (BYOK) 。
 
@@ -159,7 +159,7 @@ BYOK 支持在 Azure Key Vault 或本地创建的密钥。
 |**适用于 Azure 信息保护的 AIPService PowerShell 模块**|所有配置都需要。 <br />有关详细信息，请参阅 [安装 AIPService PowerShell 模块](./install-powershell.md)。|
 |**Azure Key Vault BYOK 的先决条件** | 如果使用的是在本地创建的、受 HSM 保护的密钥，请确保还符合 Azure Key Vault 文档中列出的 [BYOK 的先决条件](/azure/key-vault/keys/hsm-protected-keys-byok#prerequisites) 。         |
 |**Thales 固件版本11.62**    |如果要使用软件密钥到硬件密钥从 AD RMS 迁移到 Azure 信息保护，则必须具有 Thales 固件版本11.62，并将 Thales 固件用于 HSM。
-|**受信任的 Microsoft 服务的防火墙旁路** |如果包含你的租户密钥的密钥保管库使用 Azure Key Vault 的虚拟网络服务终结点，则必须允许受信任的 Microsoft 服务跳过此防火墙。 <br />有关详细信息，请参阅 [Azure Key Vault 虚拟网络服务终结点](/azure/key-vault/general/overview-vnet-service-endpoints)。       |
+|**受信任的 Microsoft 服务的防火墙旁路** |如果包含你的租户密钥的密钥保管库使用 Azure Key Vault 的虚拟网络服务终结点，则必须允许受信任的 Microsoft 服务跳过此防火墙。 <br />有关详细信息，请参阅 [Azure Key Vault 的虚拟网络服务终结点](/azure/key-vault/general/overview-vnet-service-endpoints)。       |
 | | |
 
 #### <a name="verifying-that-you-have-a-byok-compatible-azure-subscription"></a>验证你是否有与 BYOK 兼容的 Azure 订阅
@@ -340,7 +340,7 @@ az keyvault role assignment create --hsm-name "ContosoMHSM" --role "Managed HSM 
     >
     > 根据需要使用 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令来获取当前密钥的版本号。
     >
-    > 例如： `Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+    > 例如：`Get-AzKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
     若要确认正确设置了 Azure 信息保护的密钥 URL，请在 Azure Key Vault 中运行 [AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvaultkey) 命令以显示密钥 url。
 

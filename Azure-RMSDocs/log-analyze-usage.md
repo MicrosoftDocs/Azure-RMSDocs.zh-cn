@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/11/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
@@ -13,21 +13,21 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 06b32848bd1e2b0fa939474e74c174a674427eec
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: fb948fcfabd9456aa77f96465c59b572869ab10e
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384377"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809471"
 ---
 # <a name="logging-and-analyzing-the-protection-usage-from-azure-information-protection"></a>记录和分析 Azure 信息保护中的保护使用情况
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 使用此信息来帮助你了解如何在 azure 信息保护中使用保护服务 (Azure Rights Management) 的使用日志记录。 此保护服务为组织的文档和电子邮件提供数据保护，并可以记录每个请求。 这些请求包括在用户保护文档和电子邮件以及使用此内容时，管理员为该服务执行的操作，以及 Microsoft 操作员为了支持 Azure 信息保护部署而执行的操作。 
 
@@ -139,13 +139,13 @@ Azure 信息保护将日志作为一系列 blob 写入。
 | **相关性 id** | 文本          | 在 RMS 客户端日志和服务器日志之间通用的针对给定请求的 GUID。<br /><br />此值有助于你解决客户端问题。                                                                                                                                        | cab52088-8925-4371-be34-4b71a3112356                                                                                                |
 | **内容-id**     | 文本          | 包括在大括号中的 GUID，标识受保护内容（例如某个文档）。<br /><br />只有当 request-type 为 AcquireLicense 时，此字段才具有值，对于其他所有请求类型，此字段都为空。                                                                                   | {bb4af47b-cfed-4719-831d-71b98191a4f2}                                                                                              |
 | **owner-email**    | 字符串        | 文档所有者的电子邮件地址。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                                                                                     | alice@contoso.com                                                                                                                   |
-| **n**         | 字符串        | 文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                                                                                          | alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                                             |
+| **颁发者**         | 字符串        | 文档发布者的电子邮件地址。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                                                                                          | alice@contoso.com（或）FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com’                                             |
 | **模板-id**   | 字符串        | 用于保护文档的模板的 ID。 <br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                                                                               | {6d9371a6-4e2d-4e97-9a38-202233fed26e}                                                                                              |
 | **文件名**      | 字符串        | 使用适用于 Windows 的 Azure 信息保护客户端跟踪的受保护文档的文件名。 <br /><br />目前，某些文件（如 Office 文档）显示为 GUID 而不是实际文件名。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。 | TopSecretDocument.docx                                                                                                              |
 | **date-published** | Date          | 保护文档时的日期。<br /><br /> 如果请求类型为 RevokeAccess，则此字段为空。                                                                                                                                                                                           | 2015-10-15T21:37:00                                                                                                                 |
 | **c-info**         | 字符串        | 有关发出请求的客户端平台的信息。<br /><br />特定字符串各不相同，具体取决于应用程序（例如操作系统或浏览器）。                                                                                                            | 'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64' |
 | **c-ip**           | 地址       | 发出请求的客户端的 IP 地址。                                                                                                                                                                                                                                                     | 64。51。202。144                                                                                                                       |
-| **admin-action**   | Bool          | 管理员是否已在管理员模式下访问文档跟踪站点。                                                                                                                                                                                                              | True                                                                                                                                |
+| **admin-action**   | Bool          | 管理员是否已在管理员模式下访问文档跟踪站点。                                                                                                                                                                                                              | 正确                                                                                                                                |
 | **acting-as-user** | 字符串        | 管理员正在访问其文档跟踪站点的用户的电子邮件地址。                                                                                                                                                                                                     | 'joe@contoso.com'                                                                                                                   |
 |                    |               |                                                                                                                                                                                                                                                                                                      |                                                                                                                                     |
 

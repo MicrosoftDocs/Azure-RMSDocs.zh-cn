@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 01/18/2021
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 553646119c5e83bbc475d77ab35a83ce5866e858
-ms.sourcegitcommit: d2fdba748daf47ee9aeadbdf3ce154ef399eadaf
+ms.openlocfilehash: 925ef5dda1f470dbba6f173df427d4672b853167
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98569089"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809933"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -53,7 +53,7 @@ FUTURE task - reorganize this topic by feature type so that admins can read rela
 > [!IMPORTANT]
 > 不要在字符串值中使用空格。 这些字符串值中的空白字符串将阻止应用标签。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [标签策略高级设置语法](#label-policy-advanced-settings-syntax)
 - [标签高级设置语法](#label-advanced-settings-syntax)
@@ -195,7 +195,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 以下部分按产品和功能集成列出了本页中所述的高级设置：
 
-|功能  |高级设置  |
+|Feature  |高级设置  |
 |---------|---------|
 |**Outlook 和电子邮件设置**     | - [配置标签以在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook) <br> - [自定义 Outlook 弹出消息](#customize-outlook-popup-messages) <br>- [在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)<br> - [使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling) <br>- [对于带有附件的电子邮件，应用与这些附件的最高分类匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)<br>- [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients) <br>- [在 Outlook 中实现弹出消息，警告、调整或阻止发送电子邮件](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)   <br>- [为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)     |
 |**PowerPoint 设置** | - [避免从 PowerPoint 删除包含指定文本且不是页眉/页脚的形状](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers)<br>- [从 PowerPoint 自定义布局中显式删除外部内容标记](#extend-external-marking-removal-to-custom-layouts)<br>- [删除页眉和页脚中特定形状名称的所有形状，而不是按形状内的文本删除形状](#remove-all-shapes-of-a-specific-shape-name)  |
@@ -473,7 +473,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PostponeMandatoryBeforeSave
 |设置  |说明  |
 |---------|---------|
 |**WordShapeNameToRemove**     |  删除 Word 文档中的任何形状，其中的形状名称与 **WordShapeNameToRemove** advanced 属性中定义的名称相匹配。  <br><br>有关详细信息，请参阅 [使用 WordShapeNameToRemove 高级属性](#use-the-wordshapenametoremove-advanced-property)。     |
-|**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参见: <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
+|**RemoveExternalContentMarkingInApp** <br><br>**ExternalContentMarkingToRemove**   |    允许您从 Word、Excel 和 PowerPoint 文档中删除或替换基于文本的页眉或页脚。 <br><br>有关详细信息，请参阅： <br>- [使用 RemoveExternalContentMarkingInApp 高级属性](#use-the-removeexternalcontentmarkinginapp-advanced-property)<br>- [如何配置 ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove)。    |
 |     |         |
 
 ### <a name="use-the-wordshapenametoremove-advanced-property"></a>使用 WordShapeNameToRemove 高级属性
@@ -569,7 +569,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{RemoveExternalContentMarkin
 Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*TEXT*"}
 ```
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [多行页眉或页脚](#multiline-headers-or-footers)
 - [针对 PowerPoint 的优化](#optimization-for-powerpoint)
@@ -657,7 +657,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{PowerPointRemoveAllShapesBy
 > 如果要定义 **PowerPointRemoveAllShapesByShapeName**，请同时定义 [ExternalContentMarkingToRemove](#how-to-configure-externalcontentmarkingtoremove) 和 [PowerPointShapeNameToRemove](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers) ，以避免删除比预期更多的形状。
 >
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [查找要用作页眉或页脚的形状的名称](#find-the-name-of-the-shape-that-youre-using-as-a-header-or-footer)
 - [删除 PowerPoint 中自定义布局的外部内容标记](#remove-external-content-marking-from-custom-layouts-in-powerpoint)
@@ -835,7 +835,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ReportAnIssueLink="mailto:h
 > [!TIP]
 > 若要确保即使在从 Outlook 外部共享文档 (文件 > 共享时显示弹出窗口， **> 附加副本)**，还需要配置 [PostponeMandatoryBeforeSave](#remove-not-now-for-documents-when-you-use-mandatory-labeling) 高级设置。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [实现警告、对齐或阻止特定标签的弹出消息](#to-implement-the-warn-justify-or-block-pop-up-messages-for-specific-labels)
 - [为不带标签的电子邮件或附件实现警告、对齐或阻止弹出消息](#to-implement-the-warn-justify-or-block-pop-up-messages-for-emails-or-attachments-that-dont-have-a-label)
@@ -1142,7 +1142,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 要求：安全孤岛标签为 "机密" 的文档应由 Azure 信息保护重新标记为 "机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Confidential”，存储在名为“Classification”的自定义属性中。
 
@@ -1162,7 +1162,7 @@ Set-Label -Identity Confidential -AdvancedSettings @{labelByCustomProperties="Se
 
 要求：通过安全孤岛标记为 "敏感" 的文档应由 Azure 信息保护重新标记为 "高度机密"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签名为“Sensitive”，存储在名为“Classification”的自定义属性中。
 
@@ -1182,7 +1182,7 @@ Set-Label -Identity "Highly Confidential" -AdvancedSettings @{labelByCustomPrope
 
 要求：你有两个安全孤岛标签，其中包含 "内部" 一词，并且你希望 Azure 信息保护统一标签客户端将具有这些安全孤岛标签的文档重新标记为 "常规"。
 
-在此示例中：
+在本示例中：
 
 - Secure Islands 标签包含单词“Internal”，存储在名为“Classification”的自定义属性中。
 
@@ -1286,7 +1286,7 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableLabelBySharePointProp
 
 要求： Azure 信息保护统一标签客户端标记为 "机密" 的文档应具有名为 "分类" 的附加自定义属性，其值为 "Secret"。
 
-在此示例中：
+在本示例中：
 
 - 敏感度标签命名为 " **机密** "，并创建名为 "Secret" 的自定义 **属性，其** 值为 " **机密**"。
 
@@ -1629,7 +1629,7 @@ AIP 使用你输入的键中的序列号来确定规则的处理顺序。 定义
 "nodes" : []
 ```
 
-您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参见:
+您必须至少具有两个节点，第一个节点表示规则的条件，最后一个表示规则的操作。 有关详细信息，请参阅：
 
 - [规则条件语法](#rule-condition-syntax)
 - [规则操作语法](#rule-action-syntax)

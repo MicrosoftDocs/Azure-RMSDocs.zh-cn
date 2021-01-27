@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
 ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: e2767a97e84634a9faffec1e8776311dc826e17f
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: f6a9f17a6679d9752f11b5209d9ce083c8ef8009
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806593"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809791"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>如何在 Azure 信息保护中配置不同语言的标签和模板
 

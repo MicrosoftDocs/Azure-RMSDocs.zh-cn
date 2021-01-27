@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/15/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5eab2eee3fb0117bc3efd21c2605fc8d0293178d
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: c744d29bb687ec16683e6a94c557698cb1448e4e
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560367"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808661"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-classic-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护经典客户端
 
@@ -63,7 +63,7 @@ ms.locfileid: "98560367"
     如果已安装登录助手的更高版本，请先将其卸载，然后再安装 Azure 信息保护客户端。 例如，通过使用 **"控制面板" "**  >  **程序和功能**"  >  **卸载或更改程序** 来检查版本并卸载登录助手。
 
     > [!IMPORTANT]
-    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    > Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
     >
 
 - **KB 4482887**
@@ -97,7 +97,7 @@ ms.locfileid: "98560367"
 
 使用下列选项之一来为用户安装客户端：
 
-|安装选项  |描述  |
+|安装选项  |说明  |
 |---------|---------|
 |**运行客户端可执行文件 ( .exe)**  <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)      | 建议运行的客户端版本的客户端以交互方式或无提示方式运行安装。<br><br> 运行 .exe 文件具有最大的灵活性，但建议使用它，因为它还会检查许多先决条件，还可以安装任何缺少的必备组件。 |
 |**将客户端的 Windows installer 部署 ( .msi)** <br><br> [说明](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)    | Azure 信息保护客户端 Windows installer 仅支持使用集中部署机制的无提示安装。<br><br> 例如，在使用组策略进行部署、Configuration Manager 和 Microsoft Intune 时，请使用 .msi 文件。<br><br> 对于由 Intune 管理的 Windows 10 电脑和移动设备管理 (MDM) ，你必须使用此方法，因为这些计算机不支持 .exe 文件。<br><br>**注意**：使用 .Msi 安装时，必须手动检查先决条件，并安装或卸载所需的任何依赖软件。 |
@@ -130,7 +130,7 @@ ms.locfileid: "98560367"
     - **ServiceLocation**：如果要在运行 Office 2010 的计算机上安装客户端，且你的用户不是其计算机上的本地管理员，或者你不希望系统会向他们发出提示，请使用此参数。  有关详细信息，请参阅 [ServiceLocation 安装参数的详细信息](#more-information-about-the-servicelocation-installation-parameter)。 
     
         > [!IMPORTANT]
-        > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+        > Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
         >
 
 1. 如果要以交互方式安装，请选择安装 **演示策略** 的选项（如果无法连接到 Microsoft 365 或 Azure Active Directory），但想要通过使用本地策略查看和体验 Azure 信息保护的客户端，以便进行演示。 当客户端连接到 Azure 信息保护服务时，此演示策略被替换为组织的 Azure 信息保护策略。
@@ -154,7 +154,7 @@ ms.locfileid: "98560367"
 
     
 > [!IMPORTANT]
-> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
 >
 
 此参数和值将创建和设置以下注册表项：
@@ -219,7 +219,7 @@ ms.locfileid: "98560367"
     | | | | |
     
     > [!IMPORTANT]
-    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    > Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
     >
 
 1. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection.msi /quiet`。 但是，你可能需要指定[可执行安装程序说明](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)中记录的其他安装参数。

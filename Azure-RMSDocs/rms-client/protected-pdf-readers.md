@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 10/29/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
@@ -14,21 +14,21 @@ ms.suite: ems
 ms.custom: user
 search.appverid:
 - MET150
-ms.openlocfilehash: f6ebddb276cdf77c977acc516cf1b6c3d2bbc7b4
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 16623f1182b248647ef0018ec6b4b21a2cf6f329
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97385108"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809863"
 ---
 # <a name="which-pdf-readers-are-supported-for-protected-pdfs"></a>受保护的 Pdf 支持哪些 PDF 读取器？
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 用于分类和/或受保护 Pdf 的 PDF 读者使你可以打开包含敏感信息的加密 Pdf。
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 08/04/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
@@ -14,12 +14,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 35968d8e7c22fa4ad0bb232dae9d2b6dd8362286
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: ad85c6f833bd866cebab65e883a7fee169a75b96
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560239"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808777"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>为用户和服务刷新模板
 

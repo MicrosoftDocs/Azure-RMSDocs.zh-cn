@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/29/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8cc4a6123a9b292212f573c75f2807905c646675
-ms.sourcegitcommit: 5e5631e03959034f37705b4f61aead3d35e8cd8c
+ms.openlocfilehash: ba1c39f50e6861b134d09b3ba0ec2de870437962
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "98540197"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809613"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -158,7 +158,7 @@ ms.locfileid: "98540197"
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
     |![添加图标](media/i-add.png "添加图标")   | 选择表中列出的一个或多个存储库，然后选择 " **分配选定项** "，将其分配到内容扫描作业。          |
-    |**筛选器**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
+    |**Filter**     |   "筛选器" 行显示当前应用的任何筛选条件。 选择用于修改其设置的任何条件，或选择 " **添加筛选器** " 以添加新的筛选条件。 <br /><br />选择 " **筛选器** " 以应用所做的更改，并使用更新的筛选器刷新该表。       |
     |![Log Analytics 图标](media/i-log-analytics.png "Log Analytics 图标") |在 "非托管存储库" 关系图的右上角，单击 " **Log Analytics** " 图标以跳转到这些存储库的 Log Analytics 数据。 |
     | | |
 
@@ -222,9 +222,9 @@ ms.locfileid: "98540197"
   
     如果为 **共享文档** 添加 SharePoint 路径：
     - 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 
-    例如： `http://sp2013/SharedDocuments`
+    例如：`http://sp2013/SharedDocuments`
     - 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 
-    例如： `http://sp2013/Documents/SalesReports`
+    例如：`http://sp2013/Documents/SalesReports`
     - 或者，仅指定 Sharepoint 的 **FQDN** ，例如， `http://sp2013` 在此 url 下 [发现和扫描特定 url 和副标题下的所有 Sharepoint 网站和子网站](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) 。 授予扫描器 **站点收集器审核员** 权限以启用此权限。 
     >
 
@@ -233,7 +233,7 @@ ms.locfileid: "98540197"
 
     添加 SharePoint 路径时，请使用以下语法：
     
-    |路径  |语法  |
+    |`Path`  |语法  |
     |---------|---------|
     |**根路径**     | `http://<SharePoint server name>` <br /><br />扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 <br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
     |**特定 SharePoint 子网站或集合**     | 下列类型作之一： <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
@@ -280,7 +280,7 @@ ms.locfileid: "98540197"
     
     出现提示时，请提供扫描程序服务帐户的 Active Directory 凭据。
 
-    使用以下语法： `\<domain\user name>` 。 例如： `contoso\scanneraccount`
+    使用以下语法： `\<domain\user name>` 。 例如：`contoso\scanneraccount`
 
 1. 使用 **管理工具** 服务验证是否已安装该服务  >  。 
     

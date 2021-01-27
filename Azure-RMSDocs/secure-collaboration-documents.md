@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/23/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
@@ -14,12 +14,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 2224aa0ff69eeb29da0accb6bded70dbe94c60db
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 57f26f92535560a86377a34dcdfbb00a3453d73e
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806968"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809830"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 

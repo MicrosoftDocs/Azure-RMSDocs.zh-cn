@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 1/13/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
@@ -14,12 +14,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: 273e67e2b244cd61ade2bb5d654baf9384743bc7
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 88b71ee4034868f4abf7c9d1566839acb7e5ddc4
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164209"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98808693"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-the-azure-information-protection-classic-client"></a>用户指南：使用 Azure 信息保护经典客户端时跟踪和撤销文档
 

@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/11/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 80a1a42642ab0d611c64da34e3bf5a86a219f447
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 04534d6bce6c0db554a30b3690957c8aeeae433d
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560401"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809446"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -91,7 +91,7 @@ ms.locfileid: "98560401"
     如果你的计算机运行的是 Office 2010，则必须安装 [Azure 信息保护客户端](rms-client/use-client.md) ，以提供对云服务的用户进行身份验证的功能。 
 
     > [!IMPORTANT]
-    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    > Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
     >  
     
 
@@ -233,7 +233,7 @@ ms.locfileid: "98560401"
 如果 Windows 计算机运行的是 Office 2010，请检查是否需要禁用“AD RMS 权限策略模板管理（自动）”任务。
 
 > [!IMPORTANT]
-> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](known-issues.md#aip-and-legacy-windows-and-office-versions)。
 
 **步骤12：重新生成 Azure 信息保护租户密钥**
 

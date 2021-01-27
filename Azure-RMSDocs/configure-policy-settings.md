@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 03/16/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 ROBOTS: NOINDEX
 ms.subservice: aiplabels
 ms.custom: admin
-ms.openlocfilehash: 8d81923142bdcb37b171148a8a4b63cdc076d594
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 06b54317abbd5258bddd43ee18febc6470c1ba89
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806339"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809744"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>如何为 Azure 信息保护配置策略设置
 

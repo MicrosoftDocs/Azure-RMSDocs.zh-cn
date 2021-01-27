@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/03/2019
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
@@ -13,12 +13,12 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 7ffa9a2d6725f4cc70b2cb50cc2218a4d05960e9
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 058e814ba2759cf70ca1cc36875992ea1ab69ab7
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98559721"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809627"
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>解除 Azure 信息保护授权并停用对 Azure 信息保护的保护
 

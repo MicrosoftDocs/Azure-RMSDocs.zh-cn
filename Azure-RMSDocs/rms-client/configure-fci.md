@@ -5,7 +5,7 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/12/2020
-ms.topic: how-to
+ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
@@ -14,12 +14,12 @@ ms.subservice: fci
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 96527b929784fd6819fb9881a2f6c8c09aa6460b
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: 0020cec23dc8261621f524dbb6c8cc76009150a6
+ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97807053"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98809877"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>使用 Windows Server 文件分类基础结构 (FCI) 的 RMS 保护
 
@@ -59,7 +59,7 @@ ms.locfileid: "97807053"
     
   - 如果要更改特定文件扩展名保护（本机或常规）的默认级别，需已编辑注册表，如管理员指南中的[更改文件的默认保护级别](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files)部分所述。
     
-  - 你具有 internet 连接，并且已配置了计算机设置（如果代理服务器需要这些设置）。 例如： `netsh winhttp import proxy source=ie`
+  - 你具有 internet 连接，并且已配置了计算机设置（如果代理服务器需要这些设置）。 例如：`netsh winhttp import proxy source=ie`
     
 - 已将本地 Active Directory 用户帐户与 Azure Active Directory 或 Microsoft 365 （包括其电子邮件地址）同步。 对于所有需要访问受 FCI 和 Azure Rights Management 服务保护的文件的用户来说，这都是必需的。 如果你未执行此步骤（例如，在测试环境中），可能会阻止用户访问这些文件。 如果你需要有关此要求的详细信息，请参阅 [准备用户和组以便使用 Azure 信息保护](../prepare.md)。
     
