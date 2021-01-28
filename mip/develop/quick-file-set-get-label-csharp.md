@@ -1,6 +1,6 @@
 ---
 title: 快速入门 - 使用 C# MIP SDK 对文件设置和获取敏感度标签
-description: 一个演示如何使用 Microsoft 信息保护 SDK .NET 包装器对文件设置和获取敏感度标签的快速入门。
+description: 一个演示如何使用 Microsoft 信息保护 SDK .NET 包装器对文件设置和获取敏感度标签的快速入门教程 (C#)
 services: information-protection
 author: msmbaldwin
 ms.service: information-protection
@@ -8,12 +8,12 @@ ms.topic: quickstart
 ms.date: 07/30/2019
 ms.author: mbaldwin
 ms.custom: has-adal-ref
-ms.openlocfilehash: dc26f9c1f75157d81b160790e53bc27fd2c2b059
-ms.sourcegitcommit: 298843953f9792c5879e199fd1695abf3d25aa70
+ms.openlocfilehash: aaa7857146bc2dbc806e20097657831445e48949
+ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "82972163"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98659028"
 ---
 # <a name="quickstart-set-and-get-a-sensitivity-label-c"></a>快速入门：设置和获取敏感度标签 (C#)
 
@@ -91,9 +91,9 @@ ms.locfileid: "82972163"
 
 生成和测试客户端应用程序。
 
-1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序  。 如果没有生成错误，请使用 F5（开始调试  ）来运行应用程序。
+1. 使用 CTRL-SHIFT-B（“生成解决方案”）来生成客户端应用程序。 如果没有生成错误，请使用 F5（开始调试）来运行应用程序。
 
-2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证  。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
+2. 如果项目成功生成并运行，则每次 SDK 调用 `AcquireToken()` 方法时，应用程序都可能提示通过 ADAL 进行身份验证。 如果已有缓存凭据，你就不会看到登录和查看标签列表的提示（后跟已应用标签和已修改文件的相关信息）。
 
   ```console
   Personal : 73c47c6a-eb00-4a6a-8e19-efaada66dee6
