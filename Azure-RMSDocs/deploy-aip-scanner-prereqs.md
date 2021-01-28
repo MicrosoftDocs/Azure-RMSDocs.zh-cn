@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护统一标签扫描器的先
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/17/2020
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3f0093e2877ffe15232ed5704dcf2567b8ed99c4
-ms.sourcegitcommit: 78c7ab80be7c292ea4bc62954a4e29c449e97439
+ms.openlocfilehash: 1ef4eb6a25a61f385b1f02b6a32925f6c83c6224
+ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98164175"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98958085"
 ---
 # <a name="requirements-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的要求
 
@@ -37,7 +37,6 @@ ms.locfileid: "98164175"
 - [SharePoint 要求](#sharepoint-requirements)
 - [Microsoft Office 要求](#microsoft-office-requirements)
 - [文件路径要求](#file-path-requirements)
-- [使用情况统计信息要求](#usage-statistics-requirements)
 
 如果你无法满足为扫描程序列出的所有要求，因为你的组织策略禁止了这些要求，请参阅 [备选配置](#deploying-the-scanner-with-alternative-configurations) 部分。
 
@@ -154,7 +153,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 如果标签没有自动标记条件，请参阅下面的 [替代配置说明](#restriction-your-labels-do-not-have-auto-labeling-conditions) 。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [了解敏感度标签](/microsoft-365/compliance/sensitivity-labels)
 - [将敏感度标签自动应用到内容](/microsoft-365/compliance/apply-sensitivity-label-automatically)
@@ -195,13 +194,6 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 |**Windows 10 1607 或更高版本**     |  选择启用更新的 **MAX_PATH** 功能。 有关详细信息，请参阅 [在 Windows 10 版本1607及更高版本中启用长路径](/windows/win32/fileio/naming-a-file#enable-long-paths-in-windows-10-version-1607-and-later)。      |
 | | |
 
-## <a name="usage-statistics-requirements"></a>使用情况统计信息要求
-
-使用以下方法之一禁用使用情况统计信息：
-
-- 将 [AllowTelemetry](./rms-client/client-admin-guide-install.md#to-install-the-azure-information-protection-client-by-using-the-executable-installer) 参数设置为0
-
-- 请确保在扫描程序安装过程中未选择 " **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护** " 选项。
 
 ## <a name="deploying-the-scanner-with-alternative-configurations"></a>使用备用配置部署扫描程序
 

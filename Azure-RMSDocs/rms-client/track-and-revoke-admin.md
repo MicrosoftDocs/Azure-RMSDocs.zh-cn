@@ -13,12 +13,12 @@ ms.subservice: doctrack
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: user
-ms.openlocfilehash: e3d9c81c42c202fc09dd6ab11559c915bdfeafef
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: fc9b1f4f3e23302832c55eea4c871a27d11b6813
+ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809851"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98958102"
 ---
 # <a name="administrator-guide-track-and-revoke-document-access-with-azure-information-protection-public-preview"></a>管理员指南：使用 Azure 信息保护跟踪和撤消文档访问 (公开预览版) 
 
@@ -105,9 +105,12 @@ ms.locfileid: "98809851"
 
 如果你意外地撤销了对特定文档的访问权限，请使用 **id 为** Cmdlet 和 [AipServiceDocumentRevoked](/powershell/module/aipservice/clear-aipservicedocumentrevoked) cmdlet 来取消对该访问的访问。 
 
+若要使用 **AipServiceDocumentRevoked** cmdlet，必须先加载 **AipService.dll**。
+
 例如：
 
 ```PowerShell
+Import-Module -Name "C:\Program Files\WindowsPowerShell\Modules\AIPService\1.0.0.4\AipService.dll"
 Clear-AipServiceDocumentRevoked -ContentId   0e421e6d-ea17-4fdb-8f01-93a3e71333b8 -IssuerName testIssuer
 ```
 

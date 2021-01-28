@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 8064138db9d3d8356c9b12eef769bebabfd5a556
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 675f0a3f9a8ef3c3614bb1c59e0508ee028cbae8
+ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98559636"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98958119"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -69,12 +69,12 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|功能  |已知问题  |
+|Feature  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
 |**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
 |**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的 [DRMEncryptProperty](/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options) 注册表设置。|
-|**Outlook 对象模型访问** | -在 Azure 信息保护标签中不支持通过 Outlook 对象模型访问通讯簿时显示的提示的 [PromptOOMAddressBookAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-accesses-an-address-book-by-using-the-outlook-object-model) 注册表设置。 <br><br>- [PromptOOMAddressInformationAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-reads-address-information-by-using-the-outlook-object-model) 注册表设置，它控制在程序读取地址信息时显示的提示，不适用于 Azure 信息保护标签。|
+|**Outlook 对象模型访问** | -在 Azure 信息保护标签中不支持通过 Outlook 对象模型访问通讯簿时显示的提示的 [PromptOOMAddressBookAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-accesses-an-address-book-by-using-the-outlook-object-model) 注册表设置。 <br><br>-" [PromptOOMAddressInformationAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-reads-address-information-by-using-the-outlook-object-model) " 注册表设置，它控制在程序读取地址信息时显示的提示，不支持 Azure 信息保护标签。|
 |**Word 中的内容标记**    | 当相同的页眉或页脚也包含一个表时，Microsoft Word 页眉或页脚中的 AIP [内容标记](configure-policy-markings.md) 可能会偏移或放置不正确，或者可能完全隐藏。<br><br>有关详细信息，请参阅 [何时应用视觉标记](configure-policy-markings.md#when-visual-markings-are-applied)。 |
 |**附加到电子邮件的文件** |由于最新的 Windows 更新中的限制， [Microsoft Outlook 受 Azure Rights Management 保护](office-apps-services-support.md)，因此在打开该文件后，附加到电子邮件的文件可能会被锁定。 |
 |**邮件合并**    |  Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能无法与 Azure 信息保护功能配合使用。       |
@@ -98,7 +98,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
     
 :::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
     
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
 - [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
@@ -107,11 +107,15 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 使用统一标签客户端跟踪和撤消文档访问具有以下已知问题：
 
+- [受密码保护的文档](#password-protected-documents)
 - [受保护的电子邮件中的多个附件](#multiple-attachments-in-a-protected-email)
 - [通过 SharePoint 访问的文档](#documents-accessed-via-sharepoint)
 
-有关详细信息，请参阅 [管理员指南：使用 Azure 信息保护跟踪和撤消文档访问](rms-client/track-and-revoke-admin.md) 和 [用户指南：使用 Azure 信息保护撤销文档访问权限](rms-client/revoke-access-user.md)。
+有关详细信息，请参阅 [管理员指南](rms-client/track-and-revoke-admin.md) 和 [用户指南](rms-client/revoke-access-user.md) 过程。
 
+#### <a name="password-protected-documents"></a>受密码保护的文档
+
+跟踪和撤消功能不支持受密码保护的文档。
 #### <a name="multiple-attachments-in-a-protected-email"></a>受保护的电子邮件中的多个附件
 
 如果将多个文档附加到电子邮件，然后保护并发送该电子邮件，则每个附件会获得相同的 Id 为值。 
@@ -130,7 +134,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
     在这种情况下，管理员可能能够使用 PowerShell 查找已下载的文件，以查找要跟踪或撤销访问权限的新 **id 为** 值。
 
-### <a name="knowns-issues-for-the-aip-client-and-onedrive"></a>AIP 客户端和 OneDrive 的 Knowns 问题
+### <a name="known-issues-for-the-aip-client-and-onedrive"></a>AIP 客户端和 OneDrive 的已知问题
 
 如果你的文档存储在 OneDrive 中并且应用了敏感度标签，并且管理员更改了标记策略中的标签以添加保护，则新应用的保护不会自动应用于标记的文档。 
 

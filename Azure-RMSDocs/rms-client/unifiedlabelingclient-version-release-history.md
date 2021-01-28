@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/07/2021
+ms.date: 01/27/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 91f8975ddd3fe262a1ca7a0df1a7392fbda59a6a
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 30ed80c43494db6b9ad8c33827d138d3c7ae2065
+ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98559772"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98958136"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -45,6 +45,7 @@ ms.locfileid: "98559772"
 
 |客户端版本|发布日期|
 |--------------|-------------|
+| 2.7.96  |01/20/2021 |
 |2.6.111.0 | 03/09/2020|
 |2.5.33.0 |2019/10/23|
 |2.2.21.0|09/03/2019|
@@ -144,7 +145,7 @@ ms.locfileid: "98559772"
 
 升级后，最终用户还可以撤消对已保护文档的访问权限。 若要撤消 Microsoft Office 应用的访问权限，请使用 "**敏感度**" 菜单上的 "新建 **吊销访问权限**" 选项。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [管理员指南：使用 Azure 信息保护跟踪和撤消文档访问](track-and-revoke-admin.md)
 - [用户指南：使用 Azure 信息保护撤销文档访问](revoke-access-user.md)
@@ -255,7 +256,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 **使用网络发现服务**
 
-1. 升级扫描仪版本，并确保扫描仪群集配置正确。 有关详细信息，请参见:
+1. 升级扫描仪版本，并确保扫描仪群集配置正确。 有关详细信息，请参阅：
     - [升级扫描仪](../deploy-aip-scanner-configure-install.md#upgrading-your-scanner)
     - [创建扫描仪群集](../deploy-aip-scanner-configure-install.md#create-a-scanner-cluster)
 
@@ -315,7 +316,7 @@ AIP 管理员现在可以在最终用户更改文档和电子邮件的分类标�
 
 Azure 信息保护现在支持使用双密钥加密 (DKE 在扫描仪中进行基于) 模板的标记，以及使用文件资源管理器和 PowerShell。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [规划和实现 Azure 信息保护租户密钥](../plan-implement-tenant-key.md)
 - Microsoft 365 文档中的[双密钥加密](/microsoft-365/compliance/double-key-encryption)
@@ -419,7 +420,7 @@ Azure 信息保护统一标签客户端的版本2.8.85.0 中提供了以下修�
 
 现在，每次扫描程序检测到现在已被删除的文件之前，都会生成审核日志。
 
-有关详细信息，请参见:
+有关详细信息，请参阅：
 
 - [文件已删除审核日志](../audit-logs.md#file-removed-audit-logs)
 - [Azure 信息保护的中央报告](../reports-aip.md)

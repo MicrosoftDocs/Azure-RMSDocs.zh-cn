@@ -4,7 +4,7 @@ description: 有关排查统一标签本地扫描程序部署问题的说明
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/27/2020
+ms.date: 01/26/2021
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 16a8eb244cf920c9ebd9b2ee0a6a023b7782c25a
-ms.sourcegitcommit: 5e5631e03959034f37705b4f61aead3d35e8cd8c
+ms.openlocfilehash: 46a994c5191e82d68f318e4900e0a5d45c1e176b
+ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "98540096"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98958068"
 ---
 # <a name="troubleshooting-your-unified-labeling-on-premises-scanner-deployment"></a>排查您的统一标签本地扫描器部署问题
 
@@ -69,12 +69,12 @@ Start-AIPScannerDiagnostics
 
 使用下列部分来了解扫描仪生成的特定错误消息，以及解决此问题的故障排除或解决方案操作：
 
-|错误类型 |故障排除  |
+|错误类型 |疑难解答  |
 |---------|---------|
 |**身份验证错误**     |  - [身份验证令牌不被接受](#authentication-token-not-accepted) <br>  - [缺少身份验证令牌](#authentication-token-missing)|
 |**策略错误数**     |  - [缺少策略](#policy-missing) <br>- [策略不包括任何自动标记条件](#policy-doesnt-include-any-automatic-labeling-condition)      |
 |**DB/架构错误**     |  - [数据库错误](#database-errors) <br> - [架构不匹配或已过时](#mismatched-or-outdated-schema)  |
-|**其他错误**     |  - [阻塞扫描进程](#stuck-scanner-processes) <br>- [无法连接到远程服务器](#unable-to-connect-to-remote-server) <br>- [发送请求时出错](#error-occurred-while-sending-the-request) <br>- [缺少内容扫描作业或配置文件](#missing-content-scan-job-or-profile) <br>- [未配置存储库](#no-repositories-configured) <br>- [找不到群集](#no-cluster-found)   |
+|**其他错误**     |  - [基础连接已关闭](#underlying-connection-was-closed) <br> - [阻塞扫描进程](#stuck-scanner-processes) <br>- [无法连接到远程服务器](#unable-to-connect-to-remote-server) <br>- [发送请求时出错](#error-occurred-while-sending-the-request) <br>- [缺少内容扫描作业或配置文件](#missing-content-scan-job-or-profile) <br>- [未配置存储库](#no-repositories-configured) <br>- [找不到群集](#no-cluster-found)   |
 |     |         |
 
 
@@ -193,6 +193,20 @@ Acquired application access token on behalf of CONTOSO\scanner.
 
 
 <!--Other errors-->
+
+### <a name="underlying-connection-was-closed"></a>基础连接已关闭
+
+**错误消息**
+
+`System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Authentication failed because the remote party has closed the transport stream.`
+
+**解决方案**
+
+此错误通常表示未启用 TLS 1.2。
+
+有关详细信息，请参阅 [防火墙和网络基础结构](requirements.md#firewalls-and-network-infrastructure)。 
+
+若要启用 TLS 1.2，请参阅如何在企业移动性 + 安全性文档中 [启用 tls 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client) 。
 
 ### <a name="stuck-scanner-processes"></a>阻塞扫描进程
 
