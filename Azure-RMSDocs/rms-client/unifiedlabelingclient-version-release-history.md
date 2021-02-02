@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/27/2021
+ms.date: 02/02/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 30ed80c43494db6b9ad8c33827d138d3c7ae2065
-ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
+ms.openlocfilehash: 065007e14f96c0d4cfddf4ea93a680c5e6bdf138
+ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98958136"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99473015"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -93,6 +93,14 @@ ms.locfileid: "98958136"
 
     - [统一标签扫描程序的修复和改进](#fixes-and-improvements-for-the-unified-labeling-scanner)
     - [统一标签客户端的修复和改进](#fixes-and-improvements-for-the-unified-labeling-client)
+
+- **已知问题**：在 2.9.111) 的最新 GA (版本中发现了一个问题，其中某些用户在以下情况下无法查看受保护的文件：
+    
+    - 当受保护的文件与未配置 AIP 策略的用户（例如外部用户）共享时。 此问题仅在 [AIP 查看器应用](clientv2-view-use-files.md)中发生。
+
+    - 当带有作用域标签的内容与不包括在标签范围内的用户或组共享时。 [AIP 查看器应用](clientv2-view-use-files.md)和通过[文件资源管理器](clientv2-classify-protect.md#using-file-explorer-to-classify-and-protect-files)查看或分类共享内容时，都会出现此问题。
+    
+    我们正在积极处理此问题，并提供更新的交付计划进行修复。
 
 ### <a name="powershell-support-for-disconnected-scanner-servers"></a>对断开连接的扫描程序服务器的 PowerShell 支持
 
@@ -208,7 +216,7 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 
     - [对检测到的更改进行可选的完全重新扫描](#optional-full-rescans-for-changes-detected)
     - [配置 SharePoint 超时](#configure-sharepoint-timeouts)
-    - [网络发现支持](#network-discovery-support)
+    -  (公开预览版的[网络发现支持](#network-discovery-support-public-preview)) 
 
 - **适用于客户端的新功能**：
 
@@ -245,14 +253,14 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 有关详细信息，请参阅 [配置 SharePoint 超时](clientv2-admin-guide-customizations.md#configure-sharepoint-timeouts)。
 
-### <a name="network-discovery-support"></a>网络发现支持
+### <a name="network-discovery-support-public-preview"></a> (公开预览版的网络发现支持) 
 
 统一的标记扫描器现在包含一个新的 **网络发现** 服务，使用它可以扫描指定的 IP 地址或可能包含敏感内容的网络文件共享的范围。
 
 **网络发现** 服务会根据发现的权限和访问权限，使用可能存在风险的共享位置列表更新 **存储库** 报告。 检查更新的 **存储库** 报告，以确保内容扫描作业包括需要扫描的所有存储库。
 
 > [!TIP]
-> 有关详细信息，请参阅 [网络发现 cmdlet](#network-discovery-cmdlets)。
+> 有关详细信息，请参阅 [网络发现 cmdlet](#network-discovery-cmdlets-public-preview)。
 
 **使用网络发现服务**
 
@@ -277,7 +285,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 1. 使用 "新建 [**存储库**](../deploy-aip-scanner-configure-install.md#analyze-risky-repositories-found-public-preview) " 窗格上生成的报表查找可能存在风险的其他网络文件共享。 将所有危险的文件共享添加到 [内容扫描作业](../deploy-aip-scanner-configure-install.md#create-a-content-scan-job) ，以扫描添加的存储库中的敏感内容。
 
-#### <a name="network-discovery-cmdlets"></a>网络发现 cmdlet
+#### <a name="network-discovery-cmdlets-public-preview"></a> (公开预览版的网络发现 cmdlet) 
 
 为网络发现添加的 PowerShell cmdlet 包括：
 

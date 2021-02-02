@@ -12,12 +12,12 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: e715ca9f5131095e38e0fb9589494924ae36210f
-ms.sourcegitcommit: b82640b2af14b383a3d4d73692f3da907dc0f191
+ms.openlocfilehash: fd76ce1c8efa79050869a93a311f0ae80d59d0b4
+ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98711863"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99473032"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure 信息保护的客户端
 
@@ -227,7 +227,7 @@ RMS 客户端仅提供保护，并自动与某些应用程序（包括 Office �
 |**对附件的子标签订购支持** | 使用[高级客户端设置](client-admin-guide-customizations.md#enable-order-support-for-sublabels-on-attachments)启用 | 默认情况下启用，无需配置|
 |**更改文件类型的默认保护行为**| 使用 [注册表编辑](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) 替代本机保护和常规保护的默认值 | 使用 [PowerShell](clientv2-admin-guide-customizations.md#change-which-file-types-to-protect) 更改受保护的文件类型|
 |**自动重新扫描** | 每次扫描程序检测到策略或标签设置发生更改时，都会自动运行完全重新扫描 | 从版本 [2.8.85.0](unifiedlabelingclient-version-release-history.md#version-28850)开始，管理员可以选择在更改策略或内容扫描作业设置后跳过完全重新扫描。 |
-|**网络发现** |对于经典扫描程序，网络发现功能不可用 | 管理员可以通过扫描指定的 IP 地址或范围来发现其他危险的存储库。|
+| (公开预览版的 **网络发现**)  |对于经典扫描程序，网络发现功能不可用 | 管理员可以通过扫描指定的 IP 地址或范围来发现其他危险的存储库。|
 | | | |
 
 ### <a name="features-not-planned-to-be-in-the-azure-information-protection-unified-labeling-client"></a>未计划在 Azure 信息保护统一标签客户端中的功能

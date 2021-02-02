@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1ef4eb6a25a61f385b1f02b6a32925f6c83c6224
-ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
+ms.openlocfilehash: 767438db1703c60a545f0b38234f4d7c57b9b569
+ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98958085"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99472998"
 ---
 # <a name="requirements-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的要求
 
@@ -267,7 +267,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
     
     **启用网络扫描作业的脱机管理**：
 
-    1. 使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务设置为在脱机模式下工作。
+    1. 使用 [MIPNetworkDiscoveryConfiguration](/powershell/module/azureinformationprotection/set-mipnetworkdiscoveryconfiguration) Cmdlet 将网络发现服务 (公共预览) 设置为在脱机模式下工作。
 
     1. 在 Azure 门户中配置网络扫描作业。 有关详细信息，请参阅 [创建网络扫描作业](deploy-aip-scanner-configure-install.md#creating-a-network-scan-job)。
     
