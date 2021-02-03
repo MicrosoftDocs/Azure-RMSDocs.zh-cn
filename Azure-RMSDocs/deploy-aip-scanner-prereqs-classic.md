@@ -4,7 +4,7 @@ description: 列出安装和部署 Azure 信息保护经典扫描器的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 08/27/2020
+ms.date: 02/03/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: e68879b51d53862744cdeebbae587c5db7b74daa
-ms.sourcegitcommit: b32c16e41ba36167b5a3058b56a73183bdd4306d
+ms.openlocfilehash: fb1d7a7ce57eb6ae8659b7e268726143d4ca4028
+ms.sourcegitcommit: 1aba7f2d5c15f2657d1db293118f6670bf99323d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97806169"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99505265"
 ---
 # <a name="prerequisites-for-installing-and-deploying-the-azure-information-protection-classic-scanner"></a>安装和部署 Azure 信息保护经典扫描器的先决条件
 
@@ -39,7 +39,6 @@ ms.locfileid: "97806169"
 - [SharePoint 要求](#sharepoint-requirements)
 - [Microsoft Office 要求](#microsoft-office-requirements)
 - [文件路径要求](#file-path-requirements)
-- [使用情况统计信息要求](#usage-statistics-requirements)
 
 如果你无法满足表中的所有要求，因为你的组织策略禁止这些要求，请参阅 [备选配置](#deploying-the-scanner-with-alternative-configurations) 部分。
 
@@ -174,15 +173,6 @@ ms.locfileid: "97806169"
 Windows 10 和 windows Server 2016 支持使用以下 [组策略设置](/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10)的路径长度大于260个字符：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置**  >  **启用 Win32 长路径**
 
 有关支持长文件路径的详细信息，请参阅 Windows 10 开发人员文档中的[最大路径长度限制](/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation)一节。
-
-## <a name="usage-statistics-requirements"></a>使用情况统计信息要求
-
-使用以下方法之一禁用使用情况统计信息：
-
-- 将 [AllowTelemetry](./rms-client/client-admin-guide-install.md#to-install-the-azure-information-protection-client-by-using-the-executable-installer) 参数设置为0
-
-- 请确保在扫描程序安装过程中未选择 " **通过向 Microsoft 发送使用情况统计信息来帮助改进 Azure 信息保护** " 选项。
-
 
 ## <a name="deploying-the-scanner-with-alternative-configurations"></a>使用备用配置部署扫描程序
 
