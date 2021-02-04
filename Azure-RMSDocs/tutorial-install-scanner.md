@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 54bb64810e2dc71f6356dfe60c0443dccfb87315
-ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
+ms.openlocfilehash: e9c6769781c81e03c6ed47f12b62eb3afefb40a7
+ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240863"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99473049"
 ---
 # <a name="tutorial-installing-the-azure-information-protection-aip-unified-labeling-scanner"></a>教程：安装 Azure 信息保护 (AIP) 统一标记扫描程序
 
@@ -180,9 +180,9 @@ Azure 信息保护可能在 Azure 门户中不可用，或者当前可能未激�
 
 扫描程序现在具有要对 Azure AD 进行身份验证的令牌。 只要在 Azure Active Directory 中配置过，此令牌就有效。 如果令牌过期，则必须重复此过程。
 
-继续[安装可选的网络发现服务](#install-the-network-discovery-service)，通过该服务，你能够扫描网络存储库中可能存在风险的内容，然后将这些存储库添加到内容扫描作业中。
+继续[安装可选的网络发现服务](#install-the-network-discovery-service-public-preview)，通过该服务，你能够扫描网络存储库中可能存在风险的内容，然后将这些存储库添加到内容扫描作业中。
 
-## <a name="install-the-network-discovery-service"></a>安装网络发现服务
+## <a name="install-the-network-discovery-service-public-preview"></a>安装网络发现服务（公共预览版）
 
 从 AIP 统一标记客户端的版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850) 开始，管理员可以使用 AIP 扫描程序扫描网络存储库，然后添加任何看似对内容扫描作业有风险的存储库。
 

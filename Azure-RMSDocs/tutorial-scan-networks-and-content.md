@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: e3b8c14c63c3ac6300c84349212db0e177a0dd7d
-ms.sourcegitcommit: e8e4ca39278f1557e14cc8586fe357d8ebce2072
+ms.openlocfilehash: db57d4cdcf0d9153af2c6c1310019e8d1700e96c
+ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240880"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99473066"
 ---
 # <a name="tutorial-discovering-your-sensitive-content-with-the-azure-information-protection-aip-scanner"></a>教程：使用 Azure 信息保护 (AIP) 扫描程序发现敏感内容
 
@@ -94,7 +94,7 @@ Azure 信息保护客户端提供了本地扫描程序，使系统管理员可�
 :::image type="content" source="media/qs-tutor/scanned-network.png" alt-text="已刷新的网络扫描作业":::
 
 > [!TIP]
-> 如果网络扫描作业未运行，请检查并确保在扫描程序计算机上[已正确安装网络发现服务](tutorial-install-scanner.md#install-the-network-discovery-service)。
+> 如果网络扫描作业未运行，请检查并确保在扫描程序计算机上[已正确安装网络发现服务](tutorial-install-scanner.md#install-the-network-discovery-service-public-preview)。
 
 继续[将有风险的存储库添加到内容扫描作业](#add-risky-repositories-to-a-content-scan-job)。
 
