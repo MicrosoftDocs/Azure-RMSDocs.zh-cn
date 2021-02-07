@@ -4,7 +4,7 @@ description: 有关排查统一标签本地扫描程序部署问题的说明
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/26/2021
+ms.date: 02/01/2021
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 46a994c5191e82d68f318e4900e0a5d45c1e176b
-ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
+ms.openlocfilehash: 84b2434004149c03888d15fdec34d2910b45ae9d
+ms.sourcegitcommit: 7aa72a673a97d84a7aac36d912b118d68b4a5228
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98958068"
+ms.lasthandoff: 02/07/2021
+ms.locfileid: "99804413"
 ---
 # <a name="troubleshooting-your-unified-labeling-on-premises-scanner-deployment"></a>排查您的统一标签本地扫描器部署问题
 
@@ -204,9 +204,11 @@ Acquired application access token on behalf of CONTOSO\scanner.
 
 此错误通常表示未启用 TLS 1.2。
 
-有关详细信息，请参阅 [防火墙和网络基础结构](requirements.md#firewalls-and-network-infrastructure)。 
+有关详细信息，请参阅：
 
-若要启用 TLS 1.2，请参阅如何在企业移动性 + 安全性文档中 [启用 tls 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client) 。
+- [防火墙和网络基础结构要求](requirements.md#firewalls-and-network-infrastructure)
+- [如何启用 TLS 1。2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client) 
+- [在 Office Online Server 中启用 TLS 1.1 和 TLS 1.2 支持](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
 
 ### <a name="stuck-scanner-processes"></a>阻塞扫描进程
 
@@ -268,9 +270,11 @@ Acquired application access token on behalf of CONTOSO\scanner.
 
 此错误通常表示未启用 TLS 1.2。
 
-有关详细信息，请参阅 [防火墙和网络基础结构](requirements.md#firewalls-and-network-infrastructure)。 
+有关详细信息，请参阅：
 
-若要启用 TLS 1.2，请参阅如何在企业移动性 + 安全性文档中 [启用 tls 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client) 。
+- [防火墙和网络基础结构要求](requirements.md#firewalls-and-network-infrastructure)
+- [如何启用 TLS 1。2](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client) 
+- [在 Office Online Server 中启用 TLS 1.1 和 TLS 1.2 支持](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
 
 
 ### <a name="missing-content-scan-job-or-profile"></a>缺少内容扫描作业或配置文件
