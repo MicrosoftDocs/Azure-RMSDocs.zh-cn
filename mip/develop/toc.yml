@@ -123,6 +123,8 @@
           href: concept-classification-labels.md
         - name: 标签和保护行为
           href: concept-labeling-and-protection.md
+        - name: 用户定义的权限
+          href: concept-user-defined-permissions.md
     - name: 元数据
       href: concept-mip-metadata.md
     - name: 异步观察程序 (C++)
