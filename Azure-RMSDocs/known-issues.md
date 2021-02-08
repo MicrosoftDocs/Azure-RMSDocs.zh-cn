@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/12/2021
+ms.date: 02/08/2021
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 675f0a3f9a8ef3c3614bb1c59e0508ee028cbae8
-ms.sourcegitcommit: 3136ce04e185b93503585466b7ab4b5bb1df6827
+ms.openlocfilehash: 87ed3e51e063baa864d0e58f391777aa9b4426ee
+ms.sourcegitcommit: 34b029c05998681ff4af845cc51ee13cf3f2b58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98958119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99817816"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -69,7 +69,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="aip-known-issues-in-office-applications"></a>AIP Office 应用程序中的已知问题
 
-|Feature  |已知问题  |
+|功能  |已知问题  |
 |---------|---------|
 |**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
 |**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
@@ -109,7 +109,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 - [受密码保护的文档](#password-protected-documents)
 - [受保护的电子邮件中的多个附件](#multiple-attachments-in-a-protected-email)
-- [通过 SharePoint 访问的文档](#documents-accessed-via-sharepoint)
+- [通过 SharePoint 或 OneDrive 访问的文档](#documents-accessed-via-sharepoint-or-onedrive)
 
 有关详细信息，请参阅 [管理员指南](rms-client/track-and-revoke-admin.md) 和 [用户指南](rms-client/revoke-access-user.md) 过程。
 
@@ -124,11 +124,11 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 此外，撤消其中一个附件的访问权限还会撤消同一受保护电子邮件中其他附件的访问权限。
 
-#### <a name="documents-accessed-via-sharepoint"></a>通过 SharePoint 访问的文档
+#### <a name="documents-accessed-via-sharepoint-or-onedrive"></a>通过 SharePoint 或 OneDrive 访问的文档
     
-- 上载到 SharePoint 的受保护文档丢失其 **id 为** 值，无法跟踪或撤销访问权限。
+- 上载到 SharePoint 或 OneDrive 的受保护文档将丢失其 **id 为** 值，并且无法跟踪或撤销访问权限。
 
-- 如果用户从 SharePoint 下载文件，并从本地计算机访问该文件，则在本地打开文档时，会将新的 **id 为** 应用到该文档。 
+- 如果用户从 SharePoint 或 OneDrive 下载文件，并从本地计算机访问该文件，则在本地打开该文档时，新的 **id 为** 将应用到该文档。 
     
     使用原始 **id 为** 值跟踪数据时，不会包括为用户下载的文件执行的任何访问权限。 此外，根据原始 **id 为** 值撤消访问权限将不会撤销对任何已下载文件的访问权限。
 

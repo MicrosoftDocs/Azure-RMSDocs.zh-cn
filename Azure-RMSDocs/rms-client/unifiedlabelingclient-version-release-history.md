@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/02/2021
+ms.date: 02/08/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 065007e14f96c0d4cfddf4ea93a680c5e6bdf138
-ms.sourcegitcommit: d3548610fbfee6006e12acd5471e085edf2da483
+ms.openlocfilehash: 3bfd20785f1af97352a6e8094f224a3647474ba6
+ms.sourcegitcommit: 34b029c05998681ff4af845cc51ee13cf3f2b58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99473015"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99817799"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -65,16 +65,31 @@ ms.locfileid: "99473015"
 
 > [!NOTE]
 > 不会列出小修补程序，因此，如果你遇到与统一标签客户端有关的问题，我们建议你检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版本 (（如果有）) 。
->  
+>
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 统一标签客户端取代了 Azure 信息保护经典客户端。 若要将特性和功能与经典客户端进行比较，请参阅 [比较适用于 Windows 计算机的标记解决方案](use-client.md#compare-the-labeling-solutions-for-windows-computers)。
 
+## <a name="version-29116"></a>版本2.9.116 
+
+统一标记扫描器和客户端版本2.9.116 
+
+**发布** 02/08/2021
+
+**修复的问题** 在以下情况下，用户现在能够按预期方式查看受保护的文件：
+
+- 当受保护的文件与未配置 AIP 策略的用户（例如外部用户）共享时。 此问题仅发生在 [AIP 查看器应用程序](clientv2-view-use-files.md)中。
+
+- 当带有作用域标签的内容与不包括在标签范围内的用户或组共享时。 [AIP 查看器应用](clientv2-view-use-files.md)和通过[文件资源管理器](clientv2-classify-protect.md#using-file-explorer-to-classify-and-protect-files)查看或分类共享内容时，均已发生此问题。
+
+有关详细信息，请参阅 [AIP 统一标签客户端用户指南](clientv2-user-guide.md)。
 ## <a name="version-291110"></a>版本2.9.111。0
 
 统一标记扫描器和客户端版本2.9.111。0
 
-**版本** 1/13/2021
+**发布** 01/13/2021
+
+**支持** ，08/08/2021
 
 此版本包括以下新功能、修补程序和增强功能，适用于统一标记扫描器和客户端：
 
@@ -95,12 +110,10 @@ ms.locfileid: "99473015"
     - [统一标签客户端的修复和改进](#fixes-and-improvements-for-the-unified-labeling-client)
 
 - **已知问题**：在 2.9.111) 的最新 GA (版本中发现了一个问题，其中某些用户在以下情况下无法查看受保护的文件：
-    
+
     - 当受保护的文件与未配置 AIP 策略的用户（例如外部用户）共享时。 此问题仅在 [AIP 查看器应用](clientv2-view-use-files.md)中发生。
 
     - 当带有作用域标签的内容与不包括在标签范围内的用户或组共享时。 [AIP 查看器应用](clientv2-view-use-files.md)和通过[文件资源管理器](clientv2-classify-protect.md#using-file-explorer-to-classify-and-protect-files)查看或分类共享内容时，都会出现此问题。
-    
-    我们正在积极处理此问题，并提供更新的交付计划进行修复。
 
 ### <a name="powershell-support-for-disconnected-scanner-servers"></a>对断开连接的扫描程序服务器的 PowerShell 支持
 
