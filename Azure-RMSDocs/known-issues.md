@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/08/2021
+ms.date: 02/09/2021
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 87ed3e51e063baa864d0e58f391777aa9b4426ee
-ms.sourcegitcommit: 34b029c05998681ff4af845cc51ee13cf3f2b58b
+ms.openlocfilehash: 1b90b0df202719f6cadab0671db9f118be58ad72
+ms.sourcegitcommit: 14baaa98c5bd0136a2039a4739d59103b027f431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99817816"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105243"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -92,16 +92,27 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 ## <a name="known-issues-for-the-aip-viewer"></a>AIP 查看器的已知问题
 
+- [横向视图](#landscape-views-in-the-aip-viewer)
+- [外部用户](#external-users-and-the-aip-viewer)
+
+有关详细信息，请参阅 [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)。
+### <a name="landscape-views-in-the-aip-viewer"></a>AIP 查看器中的横向视图
+
 "AIP 查看器" 以纵向模式显示图像，某些宽、横向视图的图像可能显示为已拉伸。
 
 例如，原始图像显示在左侧下方，在右侧的 AIP 查看器中显示为横向扩展版本。 
-    
-:::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
-    
-有关详细信息，请参阅：
 
-- [**经典客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/client-view-use-files.md)
-- [**统一标签客户端**：通过 Azure 信息保护查看器查看受保护的文件](rms-client/clientv2-view-use-files.md)
+:::image type="content" source="media/client-viewer-stretched-images.PNG" alt-text="客户端查看器中的拉伸图像":::
+
+### <a name="external-users-and-the-aip-viewer"></a>外部用户和 AIP 查看器 
+
+如果外部用户在 Azure AD 中已经有了 guest 帐户，则当用户打开受保护的文档时，AIP 查看器可能会显示错误，告知他们无法使用个人帐户登录。
+
+如果出现此类错误，用户必须安装 [具有 MIP 扩展的 Adobe ACROBAT DC](https://helpx.adobe.com/il_en/acrobat/kb/mip-plugin-download.html) 才能打开受保护的文档。
+
+使用 MIP 扩展安装 Adobe Acrobat DC 后打开受保护的文档时，用户可能仍会看到一个错误，指出租户中不存在所选用户帐户，并提示他们选择帐户。 
+
+这是预期的错误。 在提示窗口中，选择 " **返回** " 以继续打开受保护的文档。
 
 ## <a name="known-issues-for-track-and-revoke-features-public-preview"></a> (公开预览版跟踪和撤消功能的已知问题) 
 

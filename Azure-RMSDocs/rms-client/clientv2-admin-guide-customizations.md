@@ -4,7 +4,7 @@ description: 有关自定义适用于 Windows 的 Azure 信息保护统一标签
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/18/2021
+ms.date: 02/09/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 925ef5dda1f470dbba6f173df427d4672b853167
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: dec2d96f05f419c0a0f13f50210ed59d0bf67213
+ms.sourcegitcommit: 14baaa98c5bd0136a2039a4739d59103b027f431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809933"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105294"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -195,7 +195,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 以下部分按产品和功能集成列出了本页中所述的高级设置：
 
-|Feature  |高级设置  |
+|功能  |高级设置  |
 |---------|---------|
 |**Outlook 和电子邮件设置**     | - [配置标签以在 Outlook 中应用 S/MIME 保护](#configure-a-label-to-apply-smime-protection-in-outlook) <br> - [自定义 Outlook 弹出消息](#customize-outlook-popup-messages) <br>- [在 Outlook 中启用建议的分类](#enable-recommended-classification-in-outlook)<br> - [使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling) <br>- [对于带有附件的电子邮件，应用与这些附件的最高分类匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)<br>- [搜索电子邮件收件人时展开 Outlook 通讯组列表](#expand-outlook-distribution-lists-when-searching-for-email-recipients) <br>- [在 Outlook 中实现弹出消息，警告、调整或阻止发送电子邮件](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)   <br>- [为 Outlook 设置不同的默认标签](#set-a-different-default-label-for-outlook)     |
 |**PowerPoint 设置** | - [避免从 PowerPoint 删除包含指定文本且不是页眉/页脚的形状](#avoid-removing-shapes-from-powerpoint-that-contain-specified-text-and-are-not-headers--footers)<br>- [从 PowerPoint 自定义布局中显式删除外部内容标记](#extend-external-marking-removal-to-custom-layouts)<br>- [删除页眉和页脚中特定形状名称的所有形状，而不是按形状内的文本删除形状](#remove-all-shapes-of-a-specific-shape-name)  |
@@ -203,9 +203,8 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**性能改进设置**     | - [限制 CPU 消耗](#limit-cpu-consumption) <br>- [限制扫描程序使用的线程数](#limit-the-number-of-threads-used-by-the-scanner) <br>- [阻止 S/MIME 电子邮件的 Outlook 性能问题](#prevent-outlook-performance-issues-with-smime-emails)        |
 |**用于与其他标记解决方案集成的设置**     | - [从安全孤岛迁移标签和其他标签解决方案](#migrate-labels-from-secure-islands-and-other-labeling-solutions) <br> - [从其他标记解决方案中删除页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)    |
 |**AIP 分析设置**     |   - [禁止向 Azure 信息保护分析发送审核数据](#disable-sending-audit-data-to-azure-information-protection-analytics) <br>- [向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)      |
-|**常规设置**     | - [为用户添加 "报告问题"](#add-report-an-issue-for-users) <br>- [应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied) <br>-  [更改本地日志记录级别](#change-the-local-logging-level) <br>- [更改要保护的文件类型](#change-which-file-types-to-protect)<br>- [配置 SharePoint 超时](#configure-sharepoint-timeouts)<br>- [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels)<br>-  [在 Office 应用中显示信息保护栏](#display-the-information-protection-bar-in-office-apps) <br>- [启用从压缩文件中删除保护](#enable-removal-of-protection-from-compressed-files) <br>-  [在 (公开预览版的标签期间保留 NTFS 所有者) ](#preserve-ntfs-owners-during-labeling-public-preview) <br> -  [使用必需标签时，删除文档的 "Not now"](#remove-not-now-for-documents-when-you-use-mandatory-labeling) <br>-  [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes) <br>-  [指定标签的颜色](#specify-a-color-for-the-label)<br>-  [为父标签指定默认子标签](#specify-a-default-sublabel-for-a-parent-label)<br>-  [支持更改 \<EXT> 。.PFILE 到 P\<EXT>](#additionalpprefixextensions)  <br>-  [支持断开连接的计算机](#support-for-disconnected-computers)     <br>-  [启用分类以在后台连续运行](#turn-on-classification-to-run-continuously-in-the-background) <br>- [ (公共预览版关闭文档跟踪功能) ](#turn-off-document-tracking-features-public-preview)   |
+|**常规设置**     | - [为用户添加 "报告问题"](#add-report-an-issue-for-users) <br>- [应用标签时应用自定义属性](#apply-a-custom-property-when-a-label-is-applied) <br>-  [更改本地日志记录级别](#change-the-local-logging-level) <br>- [更改要保护的文件类型](#change-which-file-types-to-protect)<br>- [配置 Office 文件的 autolabeling 超时](#configure-the-autolabeling-timeout-on-office-files) <br>- [配置 SharePoint 超时](#configure-sharepoint-timeouts)<br>- [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels)<br>-  [在 Office 应用中显示信息保护栏](#display-the-information-protection-bar-in-office-apps) <br>- [启用从压缩文件中删除保护](#enable-removal-of-protection-from-compressed-files) <br>-  [在 (公开预览版的标签期间保留 NTFS 所有者) ](#preserve-ntfs-owners-during-labeling-public-preview) <br> -  [使用必需标签时，删除文档的 "Not now"](#remove-not-now-for-documents-when-you-use-mandatory-labeling) <br>-  [在扫描期间跳过或忽略文件，具体取决于文件属性](#skip-or-ignore-files-during-scans-depending-on-file-attributes) <br>-  [指定标签的颜色](#specify-a-color-for-the-label)<br>-  [为父标签指定默认子标签](#specify-a-default-sublabel-for-a-parent-label)<br>-  [支持更改 \<EXT> 。.PFILE 到 P\<EXT>](#additionalpprefixextensions)  <br>-  [支持断开连接的计算机](#support-for-disconnected-computers)     <br>-  [启用分类以在后台连续运行](#turn-on-classification-to-run-continuously-in-the-background) <br>- [ (公共预览版关闭文档跟踪功能) ](#turn-off-document-tracking-features-public-preview)   |
 |     |         |
-
 
 ### <a name="label-policy-advanced-setting-reference"></a>标签策略高级设置参考
 
@@ -215,7 +214,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |----------------|---------------|
 |**AdditionalPPrefixExtensions**|[支持更改 \<EXT> 。\<EXT> 使用此高级属性 .pfile 到 P](#additionalpprefixextensions)
 |**AttachmentAction**|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
-|**AttachmentActionTip**|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments) 
+|**AttachmentActionTip**|[对于带有附件的电子邮件，使用与这些附件的最高等级相匹配的标签](#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 |**DisableMandatoryInOutlook**|[使 Outlook 邮件免于强制标记](#exempt-outlook-messages-from-mandatory-labeling)
 |**EnableAudit**|[禁止向 Azure 信息保护分析发送审核数据](#disable-sending-audit-data-to-azure-information-protection-analytics)|
 |**EnableContainerSupport**|[允许从 PST、rar、7zip 和 MSG 文件中删除保护](#enable-removal-of-protection-from-compressed-files)
@@ -228,6 +227,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 |**HideBarByDefault**|[在 Office 应用程序中显示“信息保护”栏](#display-the-information-protection-bar-in-office-apps)|
 |**JustificationTextForUserText** | [自定义已修改标签的理由提示文本](#customize-justification-prompt-texts-for-modified-labels) |
 |**LogMatchedContent**|[向 Azure 信息保护分析发送信息类型匹配项](#send-information-type-matches-to-azure-information-protection-analytics)|
+|**OfficeContentExtractionTimeout** | [配置 Office 文件的 autolabeling 超时](#configure-the-autolabeling-timeout-on-office-files) |
 |**OutlookBlockTrustedDomains**|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |**OutlookBlockUntrustedCollaborationLabel**|[在 Outlook 中实现弹出消息，针对正在发送的电子邮件发出警告、进行验证或阻止](#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)|
 |**OutlookCollaborationRule**| [自定义 Outlook 弹出消息](#customize-outlook-popup-messages)|
@@ -527,7 +527,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例:
+示例：
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -576,25 +576,45 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRem
 
 #### <a name="multiline-headers-or-footers"></a>多行页眉或页脚
 
-如果页眉或页脚文本不只一行，则为每行创建一个键和值。 例如，如果您的以下页脚有两行：
+如果页眉或页脚文本超过一行，则命令将取决于要从标题中删除的部分。 在本部分中，我们将使用下面的多行页脚：
 
 The file is classified as Confidential
 
 Label applied manually
 
-若要删除此多行页脚，请为同一标签策略创建以下两个条目：
+*小心共享*
 
-- 键：ExternalContentMarkingToRemove
+根据要删除的页脚部分，使用以下方法之一：
 
-- 密钥值1： **\* 机密***
+- **如果要删除整个脚注**，只需要一个键值，在页脚中的任何单个字词前后都需要有一个星号。 
 
-- 键值2： **\* 应用标签*** 
+    例如，在标签策略中创建以下条目：
 
-示例 PowerShell 命令，其中标签策略命名为 "Global"：
+    - 键：ExternalContentMarkingToRemove
 
-```PowerShell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*,*Label applied*"}
-```
+    - 密钥值1： **\* 机密***
+    
+    示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    ```PowerShell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="*Confidential*"}
+    ```
+
+- **如果只想删除特定的行**，则需要删除每个特定行的键值。 每个键值都必须包含要删除的确切文本。
+
+    例如，在标签策略中创建以下条目：
+
+    - 键：ExternalContentMarkingToRemove
+
+    - 项值1： **手动应用的标签**
+
+    - 键值2： **谨慎共享**
+
+    示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+    ```PowerShell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{ExternalContentMarkingToRemove="Label applied manually,Share with caution"}
+    ```
 
 #### <a name="optimization-for-powerpoint"></a>针对 PowerPoint 的优化
 
@@ -1126,7 +1146,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅 [从其他标签解决方案中删除页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
-示例:
+示例：
 
 - [示例 1：相同标签名称的一对一映射](#example-1-one-to-one-mapping-of-the-same-label-name)
 - [示例 2：不同标签名称的一对一映射](#example-2-one-to-one-mapping-for-a-different-label-name)
@@ -1419,7 +1439,7 @@ Set-Label -Identity Public -AdvancedSettings @{color="#40e0d0"}
 
 此外：
 
-|方案  |说明  |
+|场景  |说明  |
 |---------|---------|
 |**仍登录到旧帐户**     |  完成这些步骤后，如果 Azure 信息保护的统一标签客户端仍以旧帐户登录，请从 Internet Explorer 中删除所有 cookie，然后重复步骤1和2。       |
 |**使用单一登录**    |    如果使用的是单一登录，必须在删除令牌文件后注销 Windows，再使用其他用户帐户登录。 <br><br>然后，Azure 信息保护的统一标签客户端会使用当前登录的用户帐户自动进行身份验证。     |
@@ -2062,6 +2082,29 @@ Set-LabelPolicy -Identity Global -AdvancedSettings @{EnableTrackAndRevoke="False
 > [!NOTE]
 > 若要启用跟踪和撤消，请将 **EnableTrackAndRevoke** 设置为 **true**，并运行 [AipServiceDocumentTrackingFeature](/powershell/module/aipservice/enable-aipservicedocumenttrackingfeature) cmdlet。
 >
+
+## <a name="configure-the-autolabeling-timeout-on-office-files"></a>配置 Office 文件的 autolabeling 超时
+
+默认情况下，扫描程序的 autolabeling 超时值为3秒。
+
+如果您有一个包含多个工作表或行的复杂 Excel 文件，3秒可能不足以自动应用标签。 若要增加所选标签策略的超时时间，请指定以下字符串：
+
+- 密钥： **OfficeContentExtractionTimeout**
+
+- 值：秒，格式如下： `hh:mm:ss` 。 
+
+> [!IMPORTANT]
+> 建议你不要将此超时值提高到超过15秒。
+> 
+
+示例 PowerShell 命令，其中标签策略命名为 "Global"：
+
+```PowerShell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OfficeContentExtractionTimeout="00:00:15"}
+```
+
+更新的超时值适用于所有 Office 文件上的 autolabeling。
+
 ## <a name="next-steps"></a>后续步骤
 
 自定义 Azure 信息保护统一标签客户端后，请参阅以下资源，了解支持此客户端所需的其他信息：

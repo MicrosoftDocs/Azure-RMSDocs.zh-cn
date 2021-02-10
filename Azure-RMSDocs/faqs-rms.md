@@ -4,7 +4,7 @@ description: 有关 Azure 信息保护中数据保护服务 Azure Rights Managem
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 31202876b035f7b5266abd006cfcd943e8eb6690
-ms.sourcegitcommit: ee20112ada09165b185d9c0c9e7f1179fc39e7cf
+ms.openlocfilehash: 31da35a9dc1f726cba86897e45f3ee6537efa0fa
+ms.sourcegitcommit: 14baaa98c5bd0136a2039a4739d59103b027f431
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98659011"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100105277"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure 信息保护中的有关数据保护的常见问题
 
@@ -162,7 +162,7 @@ Azure Rights Management 服务支持所有文件类型。 对于文字、图像�
 如果内容存储在 SharePoint 或 OneDrive 中，则管理员可以运行 [SensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedfile) cmdlet，以删除灵敏度标签和加密。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files#remove-encryption-for-a-labeled-document)。
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 可以防止屏幕截图吗？
-通过不授予复制 [使用权限](configure-usage-rights.md)，Rights Management 可以阻止许多常用屏幕捕获工具在 Windows 平台（Windows 7、Windows 8.1、Windows 10、Windows 10 移动版）和 Android 上进行屏幕捕获。 不过，iOS 和 Mac 设备不允许任何应用阻止屏幕截图。 此外，任何设备上的浏览器也都不能阻止屏幕截图。 浏览器使用包括 web 上的 Outlook 和 web 上的 Office。
+通过不授予 **复制**[使用权限](configure-usage-rights.md)，Rights Management 可以在 windows 平台 (windows 7、Windows 8.1、windows 10 和 windows 10 移动版) ，阻止许多常用屏幕捕获工具的屏幕捕获。 但是，iOS、Mac 和 Android 设备不允许任何应用阻止屏幕捕获。 此外，任何设备上的浏览器也都不能阻止屏幕截图。 浏览器使用包括 web 上的 Outlook 和 web 上的 Office。
 
 阻止屏幕捕获可帮助避免意外或疏忽披露机密或敏感信息。 但是，用户可以通过多种方式来共享显示在屏幕上的数据，拍摄屏幕截图只是一种方法。 例如，如果想要共享所显示的信息，用户可以使用带相机的手机拍照，可以重新键入相关数据，还可以直接通过口头方式将其传达给某人。
 
