@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 3e3d32dd5e66ee6948567bc43ebd5ecfa16154b6
-ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
+ms.openlocfilehash: 52e43c9c0960ca5dadcd581db53bad2be2323b25
+ms.sourcegitcommit: 0f694bf6c7ea9c7709954bfb5dbd1c5f009b85a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98215504"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100360341"
 ---
 # <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) 软件开发工具包 (SDK) 版本发行历史记录和支持策略
 
@@ -29,6 +29,15 @@ ms.locfileid: "98215504"
 > 未列出次要修补程序。 如果 SDK 出现问题，我们建议你检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版。
 >  
 > 若要获得技术支持，请访问 [Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。
+
+## <a name="version-1894"></a>版本1.8.94
+
+**发布日期：** 2021年2月8日
+
+- 修复了 NuGet 包中的 bug，其中 c + + 项目的调试配置部署了版本二进制文件。 
+- 修复了一个 bug，要求策略引擎才能删除保护。 
+  - 如果策略引擎无法加载并且存在标签元数据，则会在删除保护后丢弃该策略。 
+- 修复了在 `labelInfo.xml` 将文件更改为另一个受保护的标签时生成了空的 bug。 
 
 ## <a name="version-1886"></a>版本1.8.86
 
@@ -232,7 +241,7 @@ ms.locfileid: "98215504"
 
 - Java API (仅限 Windows 的) 
 - 异步 MIP 任务的取消
-  - 所有异步调用都使用 Cancel ( # A1 方法返回 mip：： AsyncControl 对象
+  - 所有异步调用都使用取消 () 方法返回 mip：： AsyncControl 对象
 - 延迟-加载相关二进制文件
 - 选择性地屏蔽特定遥测/审核属性
    - 可通过 mip：： TelemetryConfiguration：： maskedProperties 配置
@@ -244,25 +253,25 @@ ms.locfileid: "98215504"
 ### <a name="file-sdk"></a>文件 SDK
 
 - 无网络检查文件是否已标记或受保护
-  - mip：： FileHandler：： IsLabeledOrProtected ( # A1
+  - mip：： FileHandler：： IsLabeledOrProtected () 
   - 如果文件包含僵尸标签元数据，则为误报 (的小风险) 
 - 与特定保护类型关联的筛选标签
-  - 可通过 mip：： FileEngine：： Settings：： SetLabelFilter ( # A1 进行配置
+  - 可通过 mip：： FileEngine：： Settings：： SetLabelFilter () 配置
 - 向文件 API 公开策略数据
-  - mip：： FileEngine：： GetPolicyDataXml ( # A1
+  - mip：： FileEngine：： GetPolicyDataXml () 
 
 ### <a name="policy-sdk"></a>策略 SDK
 
 - 水印/页眉/页脚操作的动态内容标记：
   - MIP 将自动填充 $ {Item. Label}、$ {Item.Name}、$ {User.Name}、$ {}、$ {} 等字段
   - mip：： Identity 可使用用户友好的 "name" 字段进行构造，该字段由动态内容标记使用
-  - 可通过 mip 配置：:P olicyEngine：： Settings：： SetVariableTextMarkingType ( # A1
+  - 可通过 mip 配置：:P olicyEngine：： Settings：： SetVariableTextMarkingType () 
 - 无网络检查是否标记内容
-  - mip：:P olicyHandler：： IsLabeled ( # A1
+  - mip：:P olicyHandler：： IsLabeled () 
   - 如果 content 包含僵尸标签元数据，则为误报 (的小风险) 
 - 标签策略缓存 TTL
   - 默认值：30天
-  - 可通过 mip 配置：:P olicyProfile：： SetCustomSettings ( # A1
+  - 可通过 mip 配置：:P olicyProfile：： SetCustomSettings () 
 - **重大更改**
   - 已将 PolicyEngine 的列表中的 LabelFilter 更新为可为 null 的位域。
 
@@ -271,16 +280,16 @@ ms.locfileid: "98215504"
 - 预许可
   - 与以前检索到的用户证书相同，与加密的内容一起存在，允许对内容进行脱机解密
   - mip：:P rotectionHandler：： ConsumptionSettings 可以使用预许可
-  - mip：:P rotectionEngine：： LoadUserCert |异步 ( # A1 获取根据 mip：:P rotectionProfile 的缓存策略存储的用户证书
+  - mip：:P rotectionEngine：： LoadUserCert |Async () 获取根据 mip：:P rotectionProfile 的缓存策略存储的用户证书
 - 服务器特定的功能检查
   - 检查用户的租户是否支持 "仅加密" 功能 (仅在 Azure RMS 中可用) 
-  - mip：:P rotectionEngine：： IsFeatureSupported ( # A1
+  - mip：:P rotectionEngine：： IsFeatureSupported () 
 - 提取 RMS 模板时更丰富的详细信息
 - **重大更改**
   - `mip::ProtectionEngine::GetTemplates()``vector<shared_ptr<string>>` `vector<shared_ptr<mip::TemplateDescriptor>>` (c + +) 替换的返回值
   - `mip::ProtectionEngine::Observer::OnGetTemplatesSuccess()` 回调 `shared_ptr<vector<string>>` 参数替换为 `vector<shared_ptr<mip::TemplateDescriptor>>` (c + +) 
-  - IProtectionEngine. Templatedescriptor.gettemplates |Async ( # A1 返回值 `List<string>` 已替换为 `List<TemplateDescriptor>` 。 (C#)
-  - MIP_CC_ProtectionEngine_GetTemplates ( # A1 mip_cc_guid * 参数替换为 mip_cc_template_descriptor * (C API) 
+  - IProtectionEngine. Templatedescriptor.gettemplates |Async () 返回值 `List<string>` 已替换为 `List<TemplateDescriptor>` 。 (C#)
+  - MIP_CC_ProtectionEngine_GetTemplates () mip_cc_guid * 参数替换为 mip_cc_template_descriptor * (C API) 
 
 ### <a name="c-api"></a>C API
 
@@ -360,7 +369,7 @@ ms.locfileid: "98215504"
 
 - 完成 C API
 - 配置与保护关联的标签的筛选
-  - PolicyEngine：：设置也：： SetLabelFilter ( # A1
+  - PolicyEngine：：设置也：： SetLabelFilter () 
 
 ### <a name="protection-sdk"></a>保护 SDK
 
