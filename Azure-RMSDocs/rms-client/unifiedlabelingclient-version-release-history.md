@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/08/2021
+ms.date: 02/14/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 3bfd20785f1af97352a6e8094f224a3647474ba6
-ms.sourcegitcommit: 34b029c05998681ff4af845cc51ee13cf3f2b58b
+ms.openlocfilehash: bbb3d8789ddd94ee1cb9e7eb948475b559d632fc
+ms.sourcegitcommit: d9a096b021fd972324a71fa2614f8bd9893ae03e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99817799"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100521304"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -330,6 +330,8 @@ AIP 管理员现在可以在最终用户更改文档和电子邮件的分类标�
 ### <a name="audit-log-updates"></a>审核日志更新
 
 现在，仅当用户打开标记或受保护的文件时，才会发送来自统一标签客户端的访问事件的审核日志，提供用户访问的更清晰的指示。
+
+[访问事件的审核日志](../audit-logs.md#access-audit-logs)不再发送信息类型，现在仅使用[审核日志发送发现事件](../audit-logs.md#discover-audit-logs)。
 
 有关详细信息，请参阅 [访问审核日志](../audit-logs.md#access-audit-logs)。
 

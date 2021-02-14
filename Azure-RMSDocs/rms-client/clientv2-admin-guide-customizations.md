@@ -13,12 +13,12 @@ ms.subservice: v2client
 ms.reviewer: maayan
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: dec2d96f05f419c0a0f13f50210ed59d0bf67213
-ms.sourcegitcommit: 14baaa98c5bd0136a2039a4739d59103b027f431
+ms.openlocfilehash: dc8d5d5eb1bb69287439e541f1f03327394b4861
+ms.sourcegitcommit: d9a096b021fd972324a71fa2614f8bd9893ae03e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100105294"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100521321"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-unified-labeling-client"></a>管理员指南：Azure 信息保护统一标记客户端的自定义配置
 
@@ -527,7 +527,7 @@ Outlook 不支持此配置，并且请注意，在 Word、Excel 和 PowerPoint �
 
 - 值：\<**Office application types WXP**> 
 
-示例：
+示例:
 
 - 若要仅搜索 Word 文档，请指定 W。
 
@@ -1146,7 +1146,7 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 请注意，此设置不会从文档中删除原始标签，也不会删除可能已应用原始标签的文档中的任何视觉标记。 若要删除页眉和页脚，请参阅 [从其他标签解决方案中删除页眉和页脚](#remove-headers-and-footers-from-other-labeling-solutions)。
 
-示例：
+示例:
 
 - [示例 1：相同标签名称的一对一映射](#example-1-one-to-one-mapping-of-the-same-label-name)
 - [示例 2：不同标签名称的一对一映射](#example-2-one-to-one-mapping-for-a-different-label-name)
@@ -1157,6 +1157,10 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{ScannerConcurrencyLevel="8
 
 - [将标签迁移规则扩展到电子邮件](#extend-your-label-migration-rules-to-emails)
 - [将标签迁移规则扩展到 SharePoint 属性](#extend-your-label-migration-rules-to-sharepoint-properties)
+
+> [!NOTE]
+> 如果要从标签跨租户进行迁移（例如，在公司合并之后），建议阅读有关 [合并和 spinoffs 的博客文章](https://techcommunity.microsoft.com/t5/microsoft-security-and/mergers-and-spinoffs/ba-p/910455) ，了解详细信息。
+>
 
 #### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>示例 1：相同标签名称的一对一映射
 
@@ -1338,7 +1342,7 @@ Set-Label -Identity General -AdvancedSettings @{customPropertiesByLabel=ConvertT
 
 仅当使用的是 [S/MIME 部署](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) 并且需要标签以自动将此保护方法应用于电子邮件，而不是从 Azure 信息保护 Rights Management 保护时，才使用这些设置。 应用的保护与用户通过在 Outlook 中手动选择 S/MIME 选项应用的保护一样。
 
-|配置  |键/值  |
+|Configuration  |键/值  |
 |---------|---------|
 |**S/MIME 数字签名**     |   若要为 S/MIME 数字签名配置高级设置，请为所选标签输入以下字符串： <br><br>-Key： **SMimeSign** <br><br>-Value： **True**      |
 |**S/MIME 加密**     |   若要配置 S/MIME 加密的高级设置，请为所选标签输入以下字符串：<br><br>-Key： **SMimeEncrypt**<br><br>-Value： **True**      |

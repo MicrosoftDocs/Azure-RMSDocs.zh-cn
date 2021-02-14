@@ -4,7 +4,7 @@ description: 你可能想要创建和管理 Azure 信息保护的根密钥，而
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 07/14/2020
+ms.date: 02/14/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,25 +13,26 @@ ms.subservice: kms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 35c898ded852970e380c8061ba8f97d040860017
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: cf9c6dd8cfee0c800289fddf6cbb46c909d23a6d
+ms.sourcegitcommit: d9a096b021fd972324a71fa2614f8bd9893ae03e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386383"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100521287"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>计划和实施 Azure 信息保护租户密钥
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护租户密钥是组织的根密钥。 其他密钥可以从该根密钥派生，包括用户密钥、计算机密钥或文档加密密钥。 每当 Azure 信息保护对你的组织使用这些密钥时，它们将通过加密方式链接到你的 Azure 信息保护根租户密钥。
 
 除了租户根密钥外，你的组织可能需要特定文档的本地安全性。 对于少量内容，通常只需要本地密钥保护，因此与租户根密钥一起配置。
+
 
 ## <a name="azure-information-protection-key-types"></a>Azure 信息保护密钥类型
 
@@ -109,3 +110,14 @@ HYOK-保护使用客户在与云隔离的位置创建和保留的密钥。 由�
 
 有关详细信息，请参阅 [保存你自己的密钥 (HYOK) 详细](configure-adrms-restrictions.md)信息。
 
+
+## <a name="next-steps"></a>后续步骤
+
+有关特定类型的密钥的详细信息，请参阅以下任意文章：
+
+- [租户根密钥入门](get-started-tenant-root-keys.md)
+- [自带密钥 (BYOK Azure 信息保护) 详细信息](byok-price-restrictions.md)
+- [Microsoft 365 的双密钥加密](/microsoft-365/compliance/double-key-encryption)
+
+
+如果要跨租户进行迁移（如公司合并后），建议阅读有关 [合并和 spinoffs 的博客文章](https://techcommunity.microsoft.com/t5/microsoft-security-and/mergers-and-spinoffs/ba-p/910455) 以获取详细信息。
