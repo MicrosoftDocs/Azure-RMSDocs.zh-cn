@@ -4,7 +4,7 @@ description: 有关运行 Azure 信息保护统一标签扫描程序以发现、
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 06/25/2020
+ms.date: 02/01/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 9815969701e1dee352d2b2ad5d2874de6c8df204
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 13484ad0301ec8d7404c4127ff78720df81d8eb5
+ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809581"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100524772"
 ---
 # <a name="running-the-azure-information-protection-scanner"></a>运行 Azure 信息保护扫描程序
 
@@ -132,7 +132,7 @@ Azure 门户仅显示有关上次扫描的信息。 如果需要查看先前扫�
 > [!IMPORTANT]
 > 如果已升级到版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850) 或更高版本，则 AIP 会跳过完整的重新扫描以获取更新的设置，以确保性能一致。 如果已升级，请确保根据需要 [手动运行完全重新扫描](#rescanning-files) 。 
 >
-> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用**"，请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 例如，如果已将 "**强制 = 关闭**" 的 "**敏感度" 策略** 设置更改为 **"强制 = 启用**"，请确保运行完整的 "重新扫描" 以在内容中应用标签。
 > 
 
 ## <a name="next-steps"></a>后续步骤

@@ -4,7 +4,7 @@ description: 说明如何安装和配置 Azure 信息保护统一标记扫描器
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/29/2020
+ms.date: 02/01/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: ba1c39f50e6861b134d09b3ba0ec2de870437962
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 0c3aa35877ed657f81c955af0d674bde3d22a079
+ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809613"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100524823"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -189,7 +189,7 @@ ms.locfileid: "98809613"
     |设置  |说明  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
-    |**策略实施**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
+    |**敏感度策略**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
     |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 <br />- **要扫描的文件类型**：保留默认文件类型以 **排除** <br />- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
     | | |
 
@@ -222,9 +222,9 @@ ms.locfileid: "98809613"
   
     如果为 **共享文档** 添加 SharePoint 路径：
     - 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 
-    例如：`http://sp2013/SharedDocuments`
+    例如： `http://sp2013/SharedDocuments`
     - 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 
-    例如：`http://sp2013/Documents/SalesReports`
+    例如： `http://sp2013/Documents/SalesReports`
     - 或者，仅指定 Sharepoint 的 **FQDN** ，例如， `http://sp2013` 在此 url 下 [发现和扫描特定 url 和副标题下的所有 Sharepoint 网站和子网站](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) 。 授予扫描器 **站点收集器审核员** 权限以启用此权限。 
     >
 
@@ -233,7 +233,7 @@ ms.locfileid: "98809613"
 
     添加 SharePoint 路径时，请使用以下语法：
     
-    |`Path`  |语法  |
+    |路径  |语法  |
     |---------|---------|
     |**根路径**     | `http://<SharePoint server name>` <br /><br />扫描所有站点，包括任何允许用于扫描程序用户的站点集合。 <br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现根内容        |
     |**特定 SharePoint 子网站或集合**     | 下列类型作之一： <br />- `http://<SharePoint server name>/<subsite name>` <br />- `http://SharePoint server name>/<site collection name>/<site name>` <br /><br />需要 [额外的权限](quickstart-findsensitiveinfo.md#permission-users-to-scan-sharepoint-repositories) 来自动发现网站集内容         |
@@ -280,7 +280,7 @@ ms.locfileid: "98809613"
     
     出现提示时，请提供扫描程序服务帐户的 Active Directory 凭据。
 
-    使用以下语法： `\<domain\user name>` 。 例如：`contoso\scanneraccount`
+    使用以下语法： `\<domain\user name>` 。 例如： `contoso\scanneraccount`
 
 1. 使用 **管理工具** 服务验证是否已安装该服务  >  。 
     
@@ -338,7 +338,7 @@ ms.locfileid: "98809613"
 2. 在 "内容扫描作业" 窗格上，更改以下内容，然后选择 " **保存**"：
     
    - 从 "**内容扫描作业**" 部分：将 **计划** 更改为 "**始终**"
-   - 从 **策略强制** 部分：将 **强制** 更改为 **开启**
+   - 从 **敏感度策略** 部分：将 **强制** 更改为 **开启**
     
     > [!TIP]
     > 你可能需要更改此窗格上的其他设置，例如是否更改文件属性以及扫描程序是否可以重新标记文件。 使用信息弹出通知帮助了解有关每个配置设置的详细信息。

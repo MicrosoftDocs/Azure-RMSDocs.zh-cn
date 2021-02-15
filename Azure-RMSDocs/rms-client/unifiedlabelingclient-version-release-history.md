@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bbb3d8789ddd94ee1cb9e7eb948475b559d632fc
-ms.sourcegitcommit: d9a096b021fd972324a71fa2614f8bd9893ae03e
+ms.openlocfilehash: afe860e878df27b7081c4f12a9b4612cab845db9
+ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100521304"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100524789"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -255,7 +255,7 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 > [!IMPORTANT]
 > 更改其策略和内容扫描作业的管理员现在必须了解这些更改对内容的影响，并确定是否需要完全重新扫描。
 >
-> 例如，如果你已将 "**强制 = 关闭**"**策略强制** 设置更改为 **"强制 = 启用**"，请确保运行完整的 "重新扫描" 以在内容中应用标签。
+> 例如，如果已将 "**强制 = 关闭**" 的 "**敏感度" 策略** 设置更改为 **"强制 = 启用**"，请确保运行完整的 "重新扫描" 以在内容中应用标签。
 >
 
 ### <a name="configure-sharepoint-timeouts"></a>配置 SharePoint 超时
@@ -335,6 +335,7 @@ AIP 管理员现在可以在最终用户更改文档和电子邮件的分类标�
 
 有关详细信息，请参阅 [访问审核日志](../audit-logs.md#access-audit-logs)。
 
+有关详细信息，请参阅 [Azure 信息保护审核日志参考](../audit-logs.md)。
 ### <a name="dke-template-based-labeling-updates"></a>基于 DKE 模板的标记更新
 
 Azure 信息保护现在支持使用双密钥加密 (DKE 在扫描仪中进行基于) 模板的标记，以及使用文件资源管理器和 PowerShell。

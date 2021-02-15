@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: a8c0d8ae4989a31029979c819ac6c59c390a8f3c
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: f674cd162131b0a45dbefbe70e617296695d6126
+ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382541"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100524738"
 ---
 # <a name="what-is-the-azure-information-protection-unified-labeling-scanner"></a>什么是 Azure 信息保护统一标记扫描程序？
 
@@ -146,6 +146,8 @@ AIP 扫描程序在以下情况下无法标记文件：
 - [使用 AIP scanner 扫描运行扫描](deploy-aip-scanner-manage.md)
 
 **详细信息**：
+
+- [观看我们的部署视频！](https://techcommunity.microsoft.com/t5/microsoft-security-and/mip-scanner-deployment-watch-our-video/ba-p/2023277) 观看安装和配置统一标签本地扫描器的分步演示。
 
 - 查看有关统一标记扫描器的最佳实践的博客： [部署和使用 AIP UL 扫描器的最佳实践](https://aka.ms/AIPScannerBestPractices)
 
