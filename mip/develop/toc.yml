@@ -141,8 +141,8 @@
       href: concept-mip-proxies.md
     - name: 服务发现概述
       href: concept-service-discovery.md
-    - name: SDK 遥测
-      href: concept-mip-telemetry.md
+    - name: SDK 诊断
+      href: concept-mip-diagnostics.md
     - name: 支持的文件类型
       href: concept-supported-filetypes.md
     - name: 用例

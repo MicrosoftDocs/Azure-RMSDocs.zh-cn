@@ -4,19 +4,19 @@ description: 使用 Azure 信息保护扫描程序查找在本地存储的文件
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/10/2020
+ms.date: 02/01/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ROBOTS: NOINDEX
 ms.custom: admin
 ms.subservice: aiplabels
-ms.openlocfilehash: 19070e1e661718c70b21cd16d76130afed91b17f
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 61a31c458ced8f28f62de35204db180dcc785ee2
+ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809382"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100524806"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>快速入门：查找在本地存储的文件中的敏感信息
 
@@ -92,7 +92,7 @@ ms.locfileid: "98809382"
 
     （可选）指定用于管理的说明，以帮助识别扫描程序的配置文件名称。
 
-1. 找到“策略实施”部分，在此快速入门中，只选择一个设置：对于“实施”，选择“关闭”。 然后，选择“保存”，但不要关闭窗格。
+1. 找到“敏感度策略”部分，对于此快速入门，只选择该部分中的一个设置：对于“实施”，选择“关闭”。 然后，选择“保存”，但不要关闭窗格。
 
     这些设置将扫描程序配置为对指定数据存储库中的所有文件进行一次性发现。 此扫描操作会查找所有已知的敏感信息类型，不必首先配置 Azure 信息保护标签或策略设置。
 
