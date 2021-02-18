@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: batamig
 ms.author: bagol
-ms.date: 11/09/2020
+ms.date: 02/18/2021
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 99c1fa6379f346477431caa884b687d39d500b7a
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 19c6b2d4e2e7d06c7fa5552f592f69359dc039de
+ms.sourcegitcommit: 5cc3659ab7650df7ac06af7854671e952932eed9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98808817"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "101090550"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
 
@@ -41,7 +41,7 @@ ms.locfileid: "98808817"
 
 - 确定由内部或外部用户从 Windows 计算机访问受保护的文档的时间，以及是否授予或拒绝访问权限。
 
-你看到的数据是从 Azure 信息保护客户端和扫描程序、从 Microsoft Cloud App Security、使用 Microsoft Defender 高级威胁防护的 Windows 10 计算机以及 [保护使用情况日志](log-analyze-usage.md)聚合而来的。 请注意， [AIP 查看器](rms-client/clientv2-view-use-files.md) 不会发送审核日志。
+你看到的数据是从 Azure 信息保护客户端和扫描程序、从 Microsoft Cloud App Security、使用 Microsoft Defender 高级威胁防护的 Windows 10 计算机以及 [保护使用情况日志](log-analyze-usage.md)聚合而来的。 
 
 用于中心报告的 Azure 信息保护分析目前处于预览阶段。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
 
@@ -50,7 +50,7 @@ ms.locfileid: "98808817"
 
 例如，用于集中报表的 Azure 信息保护分析显示以下数据：
 
-|报表  |显示的示例数据 |
+|报告  |显示的示例数据 |
 |---------|---------|
 |**使用情况报告**     |  选择时间段以显示以下任何内容： <br /><br />     -正在应用哪些标签 <br /><br />-正在标记的文档和电子邮件数量 <br /><br />-受保护的文档和电子邮件数量 <br /><br />-为文档和电子邮件标记了多少用户和多少设备 <br /><br />-正在使用哪些应用程序进行标记     |
 |**活动日志**     | 选择时间段以显示以下任何内容： <br /><br />      -扫描程序以前发现的哪些文件已从扫描的存储库中删除 <br /> <br /> -特定用户执行了哪些标记操作 <br /><br /> -从特定设备执行了哪些标记操作<br /> <br />    -哪些用户访问了特定标记的文档<br /> <br />-对特定文件路径执行了哪些标记操作<br /> <br />-特定应用程序执行了哪些标签操作，如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security <br /> <br />-用户或拒绝用户访问哪些受保护的文档，即使这些用户未安装 Azure 信息保护客户端或组织外 <br /> <br />-向下钻取到报告文件，查看 **活动详细** 信息以了解其他信息      |
@@ -168,7 +168,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
     
 - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
-    - **安全读者**
+    - **安全读取者**
     - **全局读取者**
 
 #### <a name="required-azure-log-analytics-roles"></a>必需的 Azure Log Analytics 角色
@@ -237,7 +237,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 在 "Azure 信息保护" 窗格中，找到 " **仪表板** " 菜单选项，然后选择下列选项之一：
 
-|报表  |说明  |
+|报告  |说明  |
 |---------|---------|
 |**使用情况报表 (预览)**     |  使用此报表查看标签是如何使用的。       |
 |**(预览的活动日志)**     |  使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外，对于受保护的文档，你可以查看在组织内部和外部用户 (成功或拒绝的访问尝试) ，即使他们没有安装 Azure 信息保护客户端。 <br><br>  此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。     |
@@ -264,7 +264,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |列名称|说明|
 |-----------|-----------|
 |**时间**|事件时间：格式 YYYY-MM-YYYY-MM-DDTHH： MM： SS 中的 UTC|
-|**User**|User：格式 UPN 或 DOMAIN\USER|
+|**用户**|User：格式 UPN 或 DOMAIN\USER|
 |**ItemPath**|完整项目路径或电子邮件主题|
 |**ItemName**|文件名或电子邮件主题 |
 |**方法**|标签分配方法：手动、自动、建议、默认或强制|
