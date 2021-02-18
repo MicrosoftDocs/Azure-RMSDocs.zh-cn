@@ -14,12 +14,12 @@ ms.subservice: aiplabels
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 57f26f92535560a86377a34dcdfbb00a3453d73e
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 8030d9c276bd745a427ed5444076cea4a7a6283e
+ms.sourcegitcommit: 939dee0b096f49f5cf3df32cf800c6ae3114ce25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809830"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "100655231"
 ---
 # <a name="configuring-secure-document-collaboration-by-using-azure-information-protection"></a>使用 Azure 信息保护配置可靠的文档协作
 
@@ -142,10 +142,10 @@ ms.locfileid: "98809830"
 
 |用于查看和编辑文档的平台： <br />Word、Excel、PowerPoint|身份验证方法：<br />Azure AD|身份验证方法：<br />Microsoft 帐户|
 |---------------|----------|-----------|-----------|
-|Windows|是 [[1]](#footnote-1)|是 (仅 Microsoft 365 应用) |
+|Windows|是 [[1]](#footnote-1)|是 (Microsoft 365 应用和 Microsoft Office 2019) |
 |iOS|是 [[1]](#footnote-1)|是 (版本2.42 和更高版本)  |
 |Android|是 [[1]](#footnote-1)|是 (版本16.0.13029 和更高版本) |
-|MacOS|是 [[1]](#footnote-1)|是 (版本16.42 和更高版本) |
+|MacOS|是 [[1]](#footnote-1)|是 (Microsoft 365 应用版本16.42 和更高版本) |
 
 ###### <a name="footnote-1"></a>脚注 1
 支持用户帐户、启用电子邮件的组、所有成员。 用户帐户和启用电子邮件的组可以包括来宾帐户。 除来宾帐户外的所有成员。
