@@ -12,12 +12,12 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.custom: dev
-ms.openlocfilehash: 6742a2405471b75a70579e9fbf00a792335537d3
-ms.sourcegitcommit: 4815ab96e4596303af297ae4c13fb6d7083b21e9
+ms.openlocfilehash: dbf96e317f70e41e76223cf6512eaa32427ff4c9
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "95566445"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844296"
 ---
 # <a name="rms-sdk-42-deprecation-notice"></a>RMS SDK 4.2 弃用通知 
 
@@ -25,7 +25,7 @@ ms.locfileid: "95566445"
 
 2020年3月3日，通过 Microsoft 下载中心发布了对适用于 Android、iOS 和 OSX 的 RMS SDK 4.2 的更新。 此更新对于目前使用这些 RMS SDK 平台的所有应用程序是必需的。  
 
-2020年12月1日之后，在年 3 2020 月之前发布的 RMS SDK 版本将无法连接到 Azure Rights Management 服务终结点。 使用 RMS SDK 4.2 的应用程序必须在此日期之前更新。 
+截至2021年1月，年 3 2020 月之前发布的 RMS SDK 版本将无法连接到 Azure Rights Management 服务终结点。 尚未更新的应用程序将无法与 Azure Rights Management 服务建立 TLS 连接。 
 
 ## <a name="reason-for-change"></a>更改原因 
 

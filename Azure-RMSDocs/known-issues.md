@@ -4,19 +4,19 @@ description: 搜索并浏览 Azure 信息保护的已知问题和限制。
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/09/2021
+ms.date: 03/01/2021
 ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1b90b0df202719f6cadab0671db9f118be58ad72
-ms.sourcegitcommit: 14baaa98c5bd0136a2039a4739d59103b027f431
+ms.openlocfilehash: c6fc0880904658b76ff774de33030ce0ca8e3048
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100105243"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844347"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -71,7 +71,7 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 |功能  |已知问题  |
 |---------|---------|
-|**多个版本的 Office**    | Azure 信息保护客户端（包括经典和统一标记）都不支持在同一台计算机上使用 Office 的多个版本，也不支持在 Office 中切换用户帐户。       |
+|**多个版本的 Office <br> <br> 多个 office 帐户**    | Azure 信息保护客户端（包括经典标签和统一标签）不支持：  <br><br>-同一台计算机上有多个版本的 Office <br>-多个 Office 帐户，或在 Office 中切换用户帐户 <br>-共享邮箱     |
 |**多显示器** |如果使用多个显示器并打开 Office 应用程序： <br><br>-你可能会遇到 Office 应用中的性能问题。<br>-Azure 信息保护栏在办公室屏幕中间可能显示为浮动，其中一个或两个显示器 <br><br>若要确保性能一致，并使该条形保持在正确的位置，请打开 Office 应用程序的 " **选项** " 对话框，并在 " **常规**" 下选择 " **优化兼容性** ，而不是 **优化以获得最佳外观**"。    |
 |**Office 2016 中的 IRM 支持**| Azure 信息保护标签不支持用于控制 Office 2016 中元数据加密的 [DRMEncryptProperty](/deployoffice/security/protect-sensitive-messages-and-documents-by-using-irm-in-office#office-2016-irm-registry-key-options) 注册表设置。|
 |**Outlook 对象模型访问** | -在 Azure 信息保护标签中不支持通过 Outlook 对象模型访问通讯簿时显示的提示的 [PromptOOMAddressBookAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-accesses-an-address-book-by-using-the-outlook-object-model) 注册表设置。 <br><br>-" [PromptOOMAddressInformationAccess](/outlook/troubleshoot/security/information-about-email-security-settings#configure-a-prompt-when-a-program-reads-address-information-by-using-the-outlook-object-model) " 注册表设置，它控制在程序读取地址信息时显示的提示，不支持 Azure 信息保护标签。|
@@ -80,7 +80,68 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 |**邮件合并**    |  Office [邮件合并](https://support.office.com/article/use-mail-merge-for-bulk-email-letters-labels-and-envelopes-f488ed5b-b849-4c11-9cff-932c49474705)功能无法与 Azure 信息保护功能配合使用。       |
 | **S/MIME 电子邮件** | 在 Outlook 的阅读窗格中打开 S/MIME 电子邮件可能会造成性能问题。 <br><br>若要防止 S/MIME 电子邮件出现性能问题，请启用 [**OutlookSkipSmimeOnReadingPaneEnabled**](rms-client/clientv2-admin-guide-customizations.md#prevent-outlook-performance-issues-with-smime-emails) 高级属性。 <br><br>**注意**：启用此属性可防止 AIP 栏或电子邮件分类显示在 Outlook 的阅读窗格中。 |
 |**"发送到文件资源管理器" 选项** |如果你选择在文件资源管理器中右键单击任何文件，然后选择 " **发送到 > 邮件收件人**"，则在附加了文件的情况下打开的 Outlook 邮件可能不会显示 AIP 工具栏。 <br><br>如果发生这种情况，并且你需要使用 AIP 工具栏选项，请从 Outlook 内启动电子邮件，然后浏览到并附加要发送的文件。|
+|**共同创作** |共同创作支持由 Azure 信息保护客户端的 [专用安装](rms-client/unifiedlabelingclient-version-release-history.md#version-210460-for-co-authoring-public-preview) 提供，目前以公共预览版提供。 <br><br>有关详细信息，请参阅 [共同创作 (公开预览版) 的已知问题 ](#known-issues-for-co-authoring-public-preview)。 |
 | | |
+
+### <a name="known-issues-for-co-authoring-public-preview"></a>共同创作 (公开预览版的已知问题) 
+
+- [仅在测试环境中使用](#use-in-testing-environments-only)
+- [共同创作和敏感度标签支持的版本](#supported-versions-for-co-authoring-and-sensitivity-labels)
+- [策略更新](#policy-updates)
+- [AIP 分析和审核日志](#aip-analytics-and-audit-logs)
+- [具有用户定义的权限的标签](#labels-with-user-defined-permissions)
+- [共同创作的不支持的功能](#unsupported-features-for-co-authoring)
+
+> [!IMPORTANT]
+> 不能将共同创作和敏感度标签部署到某些用户，因为使用较早版本的 Office 客户端的用户将看不到任何新标签。
+> 
+有关共同创作支持的详细信息，包括公共预览版的限制和已知问题，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/sensitivity-labels-coauthoring)。
+
+#### <a name="use-in-testing-environments-only"></a>仅在测试环境中使用
+
+若要避免标记文件之间的冲突，在公共预览期间，不能通过客户支持来帮助共同创作共同创作。
+
+出于此原因，我们建议您仅在测试环境中对系统启用共同创作。
+
+#### <a name="supported-versions-for-co-authoring-and-sensitivity-labels"></a>共同创作和敏感度标签支持的版本
+
+租户中的所有应用、服务和操作工具都必须支持共同创作。
+
+在开始之前，请确保你的系统符合 [共同创作 Microsoft 365 先决条件](/microsoft-365/compliance/sensitivity-labels-coauthoring#prerequisites)中列出的版本要求。
+
+> [!NOTE]
+> 尽管可以对 Office 97-2003 格式的文件应用敏感度标签（例如  **.doc**、 **.ppt** 和 **.xls**），但不支持对这些文件类型进行共同创作。 将标签应用于新创建的文件或高级文件格式的文件（如 **.docx**、 **.pptx** 和 **.Xlsx**）后，以 Office 97-2003 格式保存该文件将导致删除该标签。
+> 
+
+#### <a name="policy-updates"></a>策略更新
+
+如果在使用 Azure 信息保护打开 Office 应用程序时更新了标签策略，则会显示任何新标签，但应用它们会导致错误。 
+
+如果出现这种情况，请关闭并重新打开 Office 应用程序，以便能够应用标签。
+
+#### <a name="aip-analytics-and-audit-logs"></a>AIP 分析和审核日志
+
+启用共同创作后，Azure 信息保护客户端不会发送任何 [审核日志](audit-logs.md)。
+
+#### <a name="labels-with-user-defined-permissions"></a>具有用户定义的权限的标签
+
+在 Microsoft Word、Excel 和 PowerPoint 中，具有用户定义的权限的标签仍可用，可以应用于文档，但共同创作功能不支持。 
+
+这意味着，应用具有用户定义的权限的标签将会阻止您同时处理文档。
+
+#### <a name="unsupported-features-for-co-authoring"></a>共同创作的不支持的功能
+
+使用共同创作和敏感度标签时，不支持以下功能：
+
+- **DKE 模板和 DKE 用户定义的属性**。 有关详细信息，请参阅 [双重密钥加密 (DKE) ](plan-implement-tenant-key.md#double-key-encryption-dke)。
+
+- **删除应用中的外部内容标记**。 有关详细信息，请参阅 [Azure 信息保护的客户端](rms-client/use-client.md)。
+
+- 以下高级设置：
+
+    - **customPropertiesByLabel**。 有关详细信息，请参阅 [应用标签时应用自定义属性](rms-client/clientv2-admin-guide-customizations.md#apply-a-custom-property-when-a-label-is-applied)。
+
+    - **labelByCustomProperties** 和 **EnableLabelBySharePointProperties**。 有关详细信息，请参阅 [从安全孤岛迁移标签和其他标记解决方案](rms-client/clientv2-admin-guide-customizations.md#migrate-labels-from-secure-islands-and-other-labeling-solutions)。
 
 ## <a name="known-issues-in-policies"></a>策略中的已知问题
 

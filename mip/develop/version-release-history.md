@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 11/25/2019
 ms.author: mbaldwin
-ms.openlocfilehash: 52e43c9c0960ca5dadcd581db53bad2be2323b25
-ms.sourcegitcommit: 0f694bf6c7ea9c7709954bfb5dbd1c5f009b85a7
+ms.openlocfilehash: 1b34606abcf9093bc082d11b576d5d521e4d7777
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100360341"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844194"
 ---
 # <a name="microsoft-information-protection-mip-software-development-kit-sdk-version-release-history-and-support-policy"></a>Microsoft 信息保护 (MIP) 软件开发工具包 (SDK) 版本发行历史记录和支持策略
 
@@ -30,11 +30,18 @@ ms.locfileid: "100360341"
 >  
 > 若要获得技术支持，请访问 [Microsoft 信息保护论坛 Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-information-protection)。
 
+## <a name="version-1897"></a>版本1.8.97
+
+**发布日期：** 2021年2月24日
+
+- 修复了一个 bug，其中子标签未正确筛选并包含所有类型的标签，即使未请求也是如此。 
+- 修复了标签 `RemoveProtection()` 元数据不完整时标签未在其上保留的 bug。 
+
 ## <a name="version-1894"></a>版本1.8.94
 
 **发布日期：** 2021年2月8日
 
-- 修复了 NuGet 包中的 bug，其中 c + + 项目的调试配置部署了版本二进制文件。 
+- 修复了 NuGet 包中的 bug，其中 c + + 项目的调试配置部署了版本二进制文件。 版本1.8.86 可能会导致本机 c + + 应用崩溃。 请确保更新到1.8.94 或更高版本。
 - 修复了一个 bug，要求策略引擎才能删除保护。 
   - 如果策略引擎无法加载并且存在标签元数据，则会在删除保护后丢弃该策略。 
 - 修复了在 `labelInfo.xml` 将文件更改为另一个受保护的标签时生成了空的 bug。 
@@ -50,7 +57,7 @@ ms.locfileid: "100360341"
 - 所有三个 Sdk 完全支持所有云。
 - 将 `TelemetryConfiguration` 重命名为 `DiagnosticConfiguration`。
 - 更新 `MipContext` 为接受 `DiagnosticConfiguration` 而不是 `TelemetryConfiguration` 。
-- 公开了新 `TelemetryDelegate` 的和 `AuditDelegate` 。
+- 公开 `AuditDelegate` 的新。
 - 几个自定义设置的名称已更改，并将在1.9 版中删除。 它们将继续与版本1.8 中的更新名称并行工作。 
 
 | 新名称          | 旧名称                   |
@@ -185,7 +192,7 @@ ms.locfileid: "100360341"
 - 为所有非 ADRMS HTTP 通信强制执行 TLS 1.2。
 - 已将 iOS/macOS HTTP 实现从 NSURLConnection 迁移到 NSURLSession。
 - 已将 iOS 遥测组件从 Aria SDK 迁移到 1DS SDK。
-- 遥测组件现在使用适用于 iOS、macOs 和 Linux 的 MIP HttpDelegate。  (以前仅) win32。
+- 遥测组件现在使用适用于 iOS、macOS 和 Linux 的 MIP HttpDelegate。  (以前仅) win32。
 - 提高了 C API 的类型安全性。
 - 将 AuthDelegate 从配置文件移动到 c + +、c # 和 Java Api 中的引擎。
 - AuthDelegate 从的构造函数移 `Profile::Settings` 到 `Engine::Settings` 。

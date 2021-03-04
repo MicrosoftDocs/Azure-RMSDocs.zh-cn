@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 02/02/2021
 ms.author: tommos
-ms.openlocfilehash: 27d17b14ed34ae72fafdf1084d277d3389a1790c
-ms.sourcegitcommit: 314f8109920a706bd1000dd4e63ba9cdd12cd671
+ms.openlocfilehash: 47939a37616173c456d1588e95e36f8a978ed32d
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99554188"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844177"
 ---
 # <a name="microsoft-information-protection-sdk---user-defined-permissions"></a>Microsoft 信息保护 SDK-用户定义的权限
 
@@ -94,4 +94,4 @@ catch (Microsoft.InformationProtection.Exceptions.AdhocProtectionRequiredExcepti
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看 Microsoft 365 文档中的标签加密配置。](https://docs.microsoft.com/en-us/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#understand-how-the-encryption-works)
+- [查看 Microsoft 365 文档中的标签加密配置。](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#understand-how-the-encryption-works)

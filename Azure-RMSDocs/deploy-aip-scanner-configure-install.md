@@ -4,7 +4,7 @@ description: 说明如何安装和配置 Azure 信息保护统一标记扫描器
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/01/2021
+ms.date: 03/01/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 0c3aa35877ed657f81c955af0d674bde3d22a079
-ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
+ms.openlocfilehash: 98cadb555919ecd6e95e3328ad489b29e3f5c0ef
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100524823"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844381"
 ---
 # <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
 
@@ -189,10 +189,12 @@ ms.locfileid: "100524823"
     |设置  |说明  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
+    |**DLP 策略** | 如果使用 Microsoft 365 数据丢失防护 (DLP) 策略，请将 " **启用 DLP 规则** " 设置为 **"开"**。 有关详细信息，请参阅 [使用 DLP 策略](#use-a-dlp-policy-public-preview)。 |
     |**敏感度策略**     | - **强制**：选择 "**关闭**" <br />- **基于内容标记文件**：将默认值设置为 **on** <br />- **默认标签**：保留默认的 **策略** 默认值 <br />- 重新 **标记文件**：保持默认值为 **Off**        |
-    |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 <br />- **要扫描的文件类型**：保留默认文件类型以 **排除** <br />- **默认所有者**：保留 **扫描仪帐户** 的默认值        |
+    |**配置文件设置**     | - **保留 "修改日期"、"上次修改时间" 和 "修改者"**：**保留的默认** 值 <br />- **要扫描的文件类型**：保留默认文件类型以 **排除** <br />- **默认所有者**：保留 **扫描仪帐户** 的默认值  <br /> - **设置存储库所有者**：仅当 [使用 DLP 策略](#use-a-dlp-policy-public-preview)时才使用此选项。 |
     | | |
 
+   
 1. 既然已创建并保存了内容扫描作业，你就可以返回到 " **配置存储库** " 选项来指定要扫描的数据存储。 
 
     为 SharePoint 本地文档库和文件夹指定 UNC 路径和 SharePoint Server Url。 
@@ -222,9 +224,9 @@ ms.locfileid: "100524823"
   
     如果为 **共享文档** 添加 SharePoint 路径：
     - 如果要从“共享文档”扫描所有文档和所有文件夹，请在路径中指定“共享文档”。 
-    例如： `http://sp2013/SharedDocuments`
+    例如：`http://sp2013/SharedDocuments`
     - 如果要从“共享文档”下的子文件夹扫描所有文档和所有文件夹，请在路径中指定“文档”。 
-    例如： `http://sp2013/Documents/SalesReports`
+    例如：`http://sp2013/Documents/SalesReports`
     - 或者，仅指定 Sharepoint 的 **FQDN** ，例如， `http://sp2013` 在此 url 下 [发现和扫描特定 url 和副标题下的所有 Sharepoint 网站和子网站](deploy-aip-scanner-prereqs.md#discover-and-scan-all-sharepoint-sites-and-subsites-under-a-specific-url) 。 授予扫描器 **站点收集器审核员** 权限以启用此权限。 
     >
 
@@ -280,7 +282,7 @@ ms.locfileid: "100524823"
     
     出现提示时，请提供扫描程序服务帐户的 Active Directory 凭据。
 
-    使用以下语法： `\<domain\user name>` 。 例如： `contoso\scanneraccount`
+    使用以下语法： `\<domain\user name>` 。 例如：`contoso\scanneraccount`
 
 1. 使用 **管理工具** 服务验证是否已安装该服务  >  。 
     
@@ -354,6 +356,44 @@ ms.locfileid: "100524823"
     ```
 
 现在，扫描器计划为连续运行。 当扫描程序在所有配置的文件中工作时，它会自动启动一个新循环，以便发现所有新文件和更改的文件。
+
+## <a name="use-a-dlp-policy-public-preview"></a>使用 DLP 策略 (公共预览版) 
+
+使用 Microsoft 365 数据丢失防护 (DLP) 策略使扫描程序可以通过将 DLP 规则与文件共享和 SharePoint 服务器中存储的文件进行匹配来检测潜在的数据泄露。
+
+- **在内容扫描作业中启用 DLP 规则** ，以减少与 DLP 策略匹配的任何文件的公开。 启用 DLP 规则后，扫描程序可能会减少对数据所有者的文件访问，或减少对网络范围内的组（如 **Everyone**、 **经过身份验证的用户** 或 **域用户**）的访问。 
+
+- **在 Microsoft 365 标记管理中心**，确定你是只是测试了 DLP 策略，还是希望强制执行规则，并根据这些规则更改了文件权限。 有关详细信息，请参阅 [开启 DLP 策略](/microsoft-365/compliance/create-test-tune-dlp-policy#turn-on-a-dlp-policy)。
+
+> [!TIP]
+> 即使仅测试 DLP 策略，扫描文件也会创建文件权限报告。 查询这些报表以调查特定的文件泄密或了解特定用户对扫描文件的公开。
+> 
+
+DLP 策略在您的标签管理中心（如 Microsoft 365 符合性中心）中进行配置，并在从版本 [2.10.43.0](rms-client/unifiedlabelingclient-version-release-history.md#version-210430-for-DLP-policies-public-preview)开始的 Azure 信息保护中受支持。 
+
+有关 DLP 许可的详细信息，请参阅 [数据丢失防护本地扫描器入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)。
+
+**若要将 DLP 策略与扫描程序一起使用**：
+
+1. 在 Azure 门户中，导航到内容扫描作业。 有关详细信息，请参阅 [创建内容扫描作业](#create-a-content-scan-job)。
+
+1. 在 " **DLP 策略**" 下，将 " **启用 DLP 规则** " 设置为 **"开"**。
+
+    > [!IMPORTANT]
+    > 除非在 Microsoft 365 中配置了 DLP 策略，否则不要将 " **启用 dlp 规则** " 设置为 **"开"** 。 
+    >
+    >如果在没有 DLP 策略的情况下启用此功能，扫描程序会生成错误。
+1.  (可选) 在 " **配置文件设置**" 下，将 " **设置存储库所有者** " 设置为 **"开**"，并将特定用户定义为存储库所有者。  
+
+    此选项使扫描程序能够将此存储库中找到的与 DLP 策略匹配的任何文件的泄漏降到已定义的存储库所有者。
+
+### <a name="dlp-policies-and-make-private-actions"></a>DLP 策略和 *进行专用* 操作
+
+如果你使用的是具有 " *执行专用* " 操作的 DLP 策略，并且还计划使用扫描器自动标记文件，则建议你同时定义统一标签客户端的 [**UseCopyAndPreserveNTFSOwner**](rms-client/clientv2-admin-guide-customizations.md#preserve-ntfs-owners-during-labeling-public-preview) 高级设置。 
+
+此设置可确保原始所有者保留对其文件的访问权限。
+
+有关详细信息，请参阅 [创建内容扫描作业](#create-a-content-scan-job) 和在 Microsoft 365 文档中  [自动将敏感标签应用于内容](/microsoft-365/compliance/apply-sensitivity-label-automatically) 。 
 
 ## <a name="change-which-file-types-to-protect"></a>更改要保护的文件类型
 

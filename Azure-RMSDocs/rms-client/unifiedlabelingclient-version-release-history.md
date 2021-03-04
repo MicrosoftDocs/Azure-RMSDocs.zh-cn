@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 02/14/2021
+ms.date: 03/01/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: afe860e878df27b7081c4f12a9b4612cab845db9
-ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
+ms.openlocfilehash: 6f77220e6321f8a601c936fec9a5ea4812539f01
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100524789"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844364"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -39,8 +39,6 @@ ms.locfileid: "100524789"
 
 版本的 Azure 信息保护统一标签客户端 (GA) 版本的每个正式发行版在发布后续版本后的六个月内受支持。 文档不包括关于不支持的客户端版本的信息。 修补程序和新功能始终应用于最新 GA 版，且不适用于较旧的 GA 版。
 
-所述的 Azure 信息保护功能目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
-
 ### <a name="general-availability-versions-that-are-no-longer-supported"></a>不再支持的常规可用性版本
 
 |客户端版本|发布日期|
@@ -61,7 +59,7 @@ ms.locfileid: "100524789"
 
 使用以下信息可查看 Windows 的支持版本的 Azure 信息保护统一标签客户端的新增功能或更改的内容。 最新版本会最先列出。 此页上使用的日期格式为 *月/日/年*。
 
-最新版本的 Azure 信息保护当前为预览版。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
+所述的 Azure 信息保护功能目前以预览版提供。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。
 
 > [!NOTE]
 > 不会列出小修补程序，因此，如果你遇到与统一标签客户端有关的问题，我们建议你检查是否已通过最新的 GA 版本修复了此问题。 如果问题仍然存在，请检查当前预览版本 (（如果有）) 。
@@ -69,6 +67,56 @@ ms.locfileid: "100524789"
 > 有关技术支持，请参阅[支持选项和社区资源](../information-support.md#support-options-and-community-resources)信息。 我们还邀请你加入 Azure 信息保护团队：[Yammer 站点](https://www.yammer.com/askipteam/)。
 
 统一标签客户端取代了 Azure 信息保护经典客户端。 若要将特性和功能与经典客户端进行比较，请参阅 [比较适用于 Windows 计算机的标记解决方案](use-client.md#compare-the-labeling-solutions-for-windows-computers)。
+
+## <a name="version-210460-for-co-authoring-public-preview"></a>用于共同创作 (公共预览版) 的版本2.10.46。0
+
+统一标签客户端版本2.10.46。0
+
+**版本** 03/02/2021
+
+此专用版的 Azure 信息保护提供了 Microsoft 365 中新近支持的共同创作功能的公共预览版。
+
+Office 应用的共同创作使多个用户可以编辑由 [敏感性标签](/microsoft-365/compliance/sensitivity-labels)标记和加密的文档。
+
+> [!IMPORTANT]
+> 若要利用公共预览版中的共同创作功能，你必须下载并安装此版本的专用安装文件。 在 [Microsoft 下载网站](https://www.microsoft.com/en-us/download/details.aspx?id=53018)上，下载并安装该 `AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe`  文件。
+>
+> 你的系统还必须符合 [共同创作 Microsoft 365 先决条件](/microsoft-365/compliance/sensitivity-labels-coauthoring#prerequisites)中列出的版本要求。
+>
+
+在开始之前，我们建议你查看所有相关的先决条件和限制。 有关详细信息，请参阅：
+
+- 为在 Microsoft 365 文档中[使用敏感度标签加密的文件启用共同创作](/microsoft-365/compliance/sensitivity-labels-coauthoring)。
+- [AIP 中共同创作的已知问题](../known-issues.md#known-issues-for-co-authoring-public-preview)
+## <a name="version-210430-for-dlp-policies-public-preview"></a>DLP 策略的版本 2.10.43.0 (公共预览版) 
+
+统一标记扫描器版本2.10.43。0
+
+**版本** 03/02/2021
+
+Azure 信息保护的这一专用版本提供 Microsoft 365 支持的数据丢失防护 (DLP) 策略的支持公共预览版。 
+
+- **使用 dlp 策略** ，扫描程序可以通过将 DLP 规则与文件共享和 SharePoint 服务器中存储的文件进行匹配来检测潜在的数据泄露。 
+
+- [**在内容扫描作业中启用 DLP 规则**](../deploy-aip-scanner-configure-install.md#use-a-dlp-policy-public-preview) ，以减少与 DLP 策略匹配的任何文件的公开。 
+
+    扫描程序可能会减少对数据所有者的文件访问，或减少对网络范围的组（例如 **每个人**、 **经过身份验证的用户** 或 **域用户**）的访问。
+
+- **启用 DLP 规则时扫描文件也会创建文件权限报告**。 查询这些报表以调查特定的文件泄密或了解特定用户对扫描文件的公开。
+
+在 [Microsoft 365 相容性中心](/microsoft-365/compliance/create-test-tune-dlp-policy#turn-on-a-dlp-policy)配置了用于强制或测试 DLP 策略的设置。
+
+> [!IMPORTANT]
+> 若要在公共预览版中利用 DLP 支持，必须下载并安装此版本的专用安装文件。 在 [Microsoft 下载网站](https://www.microsoft.com/en-us/download/details.aspx?id=53018)上，下载并安装该 `AzInfoProtection_2.10.43_DLP_PublicPreview.exe` 文件。
+> 
+有关详细信息，包括许可要求，请参阅：
+
+- [在 AIP 扫描程序中配置 DLP 策略](../deploy-aip-scanner-configure-install.md#use-a-dlp-policy-public-preview)
+- 在 Microsoft 365 文档中[了解 Microsoft 365 数据丢失防护本地扫描程序](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
+- [数据丢失防护本地扫描器入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
+- [使用 Microsoft 365 数据丢失防护本地扫描程序](/microsoft-365/compliance/dlp-on-premises-scanner-use)
+
+
 
 ## <a name="version-29116"></a>版本2.9.116 
 

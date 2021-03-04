@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: troubleshooting
 ms.date: 03/05/2019
 ms.author: mbaldwin
-ms.openlocfilehash: da1e3f26ca4c2a0326b6ae8dfee7a13a1855044a
-ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
+ms.openlocfilehash: 0f7fd7ebceb38700953d8b3e33daf5385176afa0
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98212597"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844279"
 ---
 # <a name="microsoft-information-protection-mip-sdk-faqs-and-issues"></a>Microsoft 信息保护 (MIP) SDK 常见问题解答和问题
 
@@ -43,7 +43,7 @@ ms.locfileid: "98212597"
 
 **问**：作为自定义属性存储的现有元数据是否 *custom.xml* 保持最新？
 
-- 不是。 启用新的存储位置后，首次保存文档时，标签元数据将移动到新位置。 通过编写的元数据 [`LabelingOptions.ExtendedProperties`](https://docs.microsoft.com/dotnet/api/microsoft.informationprotection.file.labelingoptions.extendedproperties?view=mipsdk-dotnet-1.7#Microsoft_InformationProtection_File_LabelingOptions_ExtendedProperties) 将保留在 *custom.xml* 中。
+- 否。 启用新的存储位置后，首次保存文档时，标签元数据将移动到新位置。 通过编写的元数据 [`LabelingOptions.ExtendedProperties`](/dotnet/api/microsoft.informationprotection.file.labelingoptions.extendedproperties?view=mipsdk-dotnet-1.7#Microsoft_InformationProtection_File_LabelingOptions_ExtendedProperties) 将保留在 *custom.xml* 中。
 
 **问**：是否可以读取没有 MIP SDK 的标签元数据？ 
 
@@ -51,7 +51,7 @@ ms.locfileid: "98212597"
 
 **问**：目前，可以通过从文件中提取键/值对字符串来 "读取" 标签。 仍会以这种方式读取？ 
 
-- 是的，在要读取的 Office 文件 XML 中，元数据仍可用。 但应注意，你的应用程序将需要了解是否已启用新功能集来了解哪个部分 ( # A0 与 labelinfo.xml) 具有权威性。 查看 [OFFCRYPTO： LabelInfo 与自定义文档属性 |Microsoft Docs。](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341) 了解实现的详细信息。
+- 是的，在要读取的 Office 文件 XML 中，元数据仍可用。 但应注意，你的应用程序将需要了解是否已启用新功能集来了解哪一节 (custom.xml 与 labelinfo.xml) 权威。 查看 [OFFCRYPTO： LabelInfo 与自定义文档属性 |Microsoft Docs。](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341) 了解实现的详细信息。
   
 **问题**：如何查明是否已启用新功能？ 
 
@@ -118,7 +118,7 @@ SDK 旨在跨平台使用，并使用 [UTF-8（Unicode 转换格式 - 8 位）](
 
 **问**：在使用 MIP SDK .net 包装时，为什么会收到以下错误？
 
-> System.componentmodel： Win32Exception： LoadLibrary 在调用 MIP.Initialize ( # A1 时 sdk_wrapper_dotnet.dll 失败。
+> System.componentmodel： Win32Exception： LoadLibrary 调用 MIP.Initialize () 时，为 [sdk_wrapper_dotnet.dll] 失败。
 
 你的应用程序没有所需的运行时，或未构建为发布。 有关详细信息，请参阅 [确保应用具有所需的运行时](setup-configure-mip.md#ensure-your-app-has-the-required-runtime) 。 
 

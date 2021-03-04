@@ -6,12 +6,12 @@ ms.author: v-anikep
 ms.date: 09/02/2020
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: bee7cb6854aa58f6d5c3c6781984875c8ee347a1
-ms.sourcegitcommit: 76926b357bbfc8772ed132ce5f2426fbea59e98b
+ms.openlocfilehash: 8d210d74ecfd4ebdc50ec618415191894431fcdc
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98212614"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844312"
 ---
 # <a name="quickstart-public-and-confidential-clients-c"></a>快速入门：公共和机密客户端 (c # ) 
 
@@ -52,7 +52,7 @@ public string AcquireToken(Identity identity, string authority, string resource,
 
 这些应用程序是基于云或服务的应用程序，用户不直接连接到后端 MIP 服务。 服务需要标记、保护或取消保护启用了 MIP 的内容。 在这种情况下，应用程序必须存储证书或应用程序机密。 这些机密将用于 Azure AD 身份验证，并使用该机密获取后端 MIP 服务的令牌。 然后，它可以使用 MIP SDK 的委托功能，代表经过身份验证的用户保护或使用内容。
 
-将 MIP SDK 与基于服务的应用程序集成需要使用客户端凭据授予流。  (MSAL) 的 Microsoft 身份验证库可用于在类似于公用客户端应用程序中看到的模式下实现此功能。 本文将简要介绍如何 `IAuthDelegate` 在 .net 中使用此流来更新适用于基于服务的应用程序的身份验证 SDK。 在发布时，没有适用于 c + + 的 MSAL 版本，但可以通过 [直接 REST 调用](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)来实现这一流。
+将 MIP SDK 与基于服务的应用程序集成需要使用客户端凭据授予流。  (MSAL) 的 Microsoft 身份验证库可用于在类似于公用客户端应用程序中看到的模式下实现此功能。 本文将简要介绍如何 `IAuthDelegate` 在 .net 中使用此流来更新适用于基于服务的应用程序的身份验证 SDK。 在发布时，没有适用于 c + + 的 MSAL 版本，但可以通过 [直接 REST 调用](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#get-a-token)来实现这一流。
 
 有关详细信息，请参阅 [机密客户端身份验证流文档](/azure/active-directory/develop/msal-net-initializing-client-applications#initializing-a-confidential-client-application-from-code)
 

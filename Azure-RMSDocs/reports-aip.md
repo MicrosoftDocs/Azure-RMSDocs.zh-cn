@@ -3,7 +3,7 @@ title: Azure 信息保护的中心报告
 description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
 author: batamig
 ms.author: bagol
-ms.date: 02/18/2021
+ms.date: 03/01/2021
 manager: rkarlin
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 19c6b2d4e2e7d06c7fa5552f592f69359dc039de
-ms.sourcegitcommit: 5cc3659ab7650df7ac06af7854671e952932eed9
+ms.openlocfilehash: 4c42dccc21235fe403f3c491491e0a03e015c890
+ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "101090550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844330"
 ---
 # <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
 
@@ -50,13 +50,14 @@ ms.locfileid: "101090550"
 
 例如，用于集中报表的 Azure 信息保护分析显示以下数据：
 
-|报告  |显示的示例数据 |
+|报表  |显示的示例数据 |
 |---------|---------|
 |**使用情况报告**     |  选择时间段以显示以下任何内容： <br /><br />     -正在应用哪些标签 <br /><br />-正在标记的文档和电子邮件数量 <br /><br />-受保护的文档和电子邮件数量 <br /><br />-为文档和电子邮件标记了多少用户和多少设备 <br /><br />-正在使用哪些应用程序进行标记     |
 |**活动日志**     | 选择时间段以显示以下任何内容： <br /><br />      -扫描程序以前发现的哪些文件已从扫描的存储库中删除 <br /> <br /> -特定用户执行了哪些标记操作 <br /><br /> -从特定设备执行了哪些标记操作<br /> <br />    -哪些用户访问了特定标记的文档<br /> <br />-对特定文件路径执行了哪些标记操作<br /> <br />-特定应用程序执行了哪些标签操作，如文件资源管理器和右键单击、PowerShell、扫描仪或 Microsoft Cloud App Security <br /> <br />-用户或拒绝用户访问哪些受保护的文档，即使这些用户未安装 Azure 信息保护客户端或组织外 <br /> <br />-向下钻取到报告文件，查看 **活动详细** 信息以了解其他信息      |
 |**数据发现报表**     |      -扫描的数据存储库、Windows 10 计算机或运行 Azure 信息保护客户端的计算机上的文件 <br /><br />-标记和保护哪些文件，以及按标签列出文件的位置 <br /><br />-哪些文件包含已知类别的敏感信息，例如财务数据和个人信息，以及这些类别的文件位置       |
 |**建议报表**     | -标识包含已知的敏感信息类型的未受保护的文件。 按照建议操作，可立即对其中一个标签配置相应的条件，以应用自动标签或推荐的标签。 **<br /> 如果遵循建议**：下一次用户打开文件或由 Azure 信息保护扫描程序进行扫描，则可以自动对文件进行分类和保护。 <br /><br /> -哪些数据存储库的文件具有标识的敏感信息，但未被 Azure 信息保护扫描。 按照建议操作，可立即向扫描程序的某个配置文件添加已标识的数据存储。 <br />   **如果遵循建议**：在下一个扫描程序周期中，可以自动对文件进行分类和保护。        |
- 
+| | |
+
 报表使用 [Azure Monitor](/azure/log-analytics/log-analytics-overview) 将数据存储在组织拥有的 Log Analytics 工作区中。 如果你熟悉查询语言，可以修改这些查询，并创建新报表和 Power BI 仪表板。 你可能会发现以下教程有助于了解查询语言： [Azure Monitor 日志查询入门](/azure/azure-monitor/log-query/get-started-queries)。
 
 有关详细信息，请参阅以下博客文章： 
@@ -141,6 +142,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
 |对于基于云的数据存储中的报表信息： <br /><br />-Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置 [Azure 信息保护集成](/cloud-app-security/azip-integration)。|
 |对于来自本地数据存储区的报表信息： <br /><br />-Azure 信息保护扫描程序 |有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 |
 |对于来自 Windows 10 计算机的报表信息：  <br /><br />-最小版本1809与 Microsoft defender 高级威胁防护 (Microsoft Defender ATP) |你必须从 Microsoft Defender 安全中心启用 Azure 信息保护集成功能。 有关详细信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
+| | |
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -169,7 +171,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
 - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
     - **安全读取者**
-    - **全局读取者**
+    - **全局读取器**
 
 #### <a name="required-azure-log-analytics-roles"></a>必需的 Azure Log Analytics 角色
 
@@ -237,7 +239,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 在 "Azure 信息保护" 窗格中，找到 " **仪表板** " 菜单选项，然后选择下列选项之一：
 
-|报告  |说明  |
+|报表  |说明  |
 |---------|---------|
 |**使用情况报表 (预览)**     |  使用此报表查看标签是如何使用的。       |
 |**(预览的活动日志)**     |  使用此报表查看用户执行的标记操作，以及设备上和对文件路径执行的标记操作。 此外，对于受保护的文档，你可以查看在组织内部和外部用户 (成功或拒绝的访问尝试) ，即使他们没有安装 Azure 信息保护客户端。 <br><br>  此报表有“列”选项，可用于显示比默认显示更多的活动信息。 还可以选择它来显示“活动详细信息”，方便查看文件相关的更多详细信息。     |
@@ -298,7 +300,7 @@ Azure 信息保护的记录数据存储在下表中：InformationProtectionLogs_
 |**UserJustification**|降级或删除标签时的理由|
 |**LastModifiedBy**|上次修改文件的 UPN 格式的用户。 仅适用于 Office 和 SharePoint|
 |**LastModifiedDate**|格式为 YYYY-MM-DD 的 UTC-YYYY-MM-DDTHH： MM： SS：仅适用于 Office 和 SharePoint |
-
+| | |
 #### <a name="examples-using-informationprotectionevents"></a>使用 InformationProtectionEvents 的示例
 
 使用以下示例了解如何使用友好的架构来创建自定义查询。
@@ -347,3 +349,7 @@ InformationProtectionEvents
 
 如果你有 Microsoft 365 订阅，则还可以在 Microsoft 365 合规中心和 Microsoft 365 安全中心中查看标签使用情况。 有关详细信息，请参阅[使用标签分析查看标签使用情况](/microsoft-365/compliance/label-analytics)。
 
+AIP 审核日志还将发送到 Microsoft 365 的活动资源管理器中，其中显示的名称可能不同。 有关详细信息，请参阅：
+
+- [公共预览版：活动资源管理器中的 AIP 审核日志](https://www.yammer.com/askipteam/#/Threads/show?threadId=1085834054254592)
+- [活动资源管理器入门](/microsoft-365/compliance/data-classification-activity-explorer)。
