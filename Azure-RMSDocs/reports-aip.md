@@ -1,6 +1,6 @@
 ---
-title: Azure 信息保护的中心报告
-description: 如何使用中心报告来跟踪 Azure 信息保护标签的采用和标识包含敏感信息的文件
+title: 'Azure 信息保护的分析和集中报告 (AIP) '
+description: 了解如何使用 Azure 信息保护 (AIP) analytics 和中心报表来跟踪标签使用情况并识别包含敏感信息的文件。
 author: batamig
 ms.author: bagol
 ms.date: 03/01/2021
@@ -13,14 +13,14 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4c42dccc21235fe403f3c491491e0a03e015c890
-ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
+ms.openlocfilehash: 5665a071bd99f8ed1118adffcd1ce65f20ff9aa4
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844330"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415460"
 ---
-# <a name="central-reporting-for-azure-information-protection-public-preview"></a> (公开预览版的 Azure 信息保护的中心报告) 
+# <a name="analytics-and-central-reporting-for-azure-information-protection-public-preview"></a>Azure 信息保护的分析和集中报告 (公开预览版) 
 
 >适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
@@ -29,7 +29,9 @@ ms.locfileid: "101844330"
 >[!NOTE] 
 > 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-使用 Azure 信息保护分析进行集中报告，以帮助跟踪对组织数据进行分类和保护的标签。 此外：
+本文介绍如何使用 Azure 信息保护 (AIP) analytics 进行集中报告，这有助于跟踪对组织数据进行分类和保护的标签。 
+
+AIP analytics 还能让你执行以下步骤：
 
 - 监控组织中带标签和受保护的文档以及电子邮件
 
@@ -235,7 +237,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 
 你现在可以查看报表。
 
-## <a name="how-to-view-the-reports"></a>如何查看报告
+## <a name="view-the-aip-analytics-reports"></a>查看 AIP 分析报告
 
 在 "Azure 信息保护" 窗格中，找到 " **仪表板** " 菜单选项，然后选择下列选项之一：
 
@@ -248,7 +250,7 @@ Azure Monitor 日志具有 **使用情况和预估成本** 功能，可帮助您
 |     |         |
 
 
-## <a name="how-to-modify-the-reports-and-create-custom-queries"></a>如何修改报表并创建自定义查询
+## <a name="modify-the-aip-analytics-reports-and-create-custom-queries"></a>修改 AIP 分析报表并创建自定义查询
 
 选择仪表板中的 "查询" 图标，打开 " **日志搜索** " 窗格： 
 

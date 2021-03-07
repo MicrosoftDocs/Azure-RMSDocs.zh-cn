@@ -12,12 +12,12 @@ ms.subservice: labelmigrate
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1751368b74d6ed2800bfd2e7432a4ce4a5844f0a
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 1243d62932a2cda0c6ead806e1b322324e974a9f
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809759"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415205"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-unified-sensitivity-labels"></a>如何将 Azure 信息保护标签迁移到统一敏感度标签
 
@@ -39,9 +39,9 @@ ms.locfileid: "98809759"
 
 - [Azure 信息保护中 Microsoft 365 和标签之间的标签有何区别？](faqs.md#whats-the-difference-between-labels-in-microsoft-365-and-labels-in-azure-information-protection)
 
-- [何时将标签迁移到正确的时间？](faqs.md#when-is-the-right-time-to-migrate-my-labels)
+- [将标签迁移到统一标签时的正确时间是什么？](faqs.md#when-is-the-right-time-to-migrate-my-labels-to-unified-labeling)
 
-- [迁移我的标签后，该使用哪个管理门户？](faqs.md?#after-ive-migrated-my-labels-which-management-portal-do-i-use )
+- [将标签迁移到统一标签后，使用哪种管理门户？](faqs.md#after-ive-migrated-my-labels-to-unified-labeling-which-management-portal-do-i-use)
 
 ### <a name="administrative-roles-that-support-the-unified-labeling-platform"></a>支持统一标签平台的管理角色
 
@@ -55,7 +55,7 @@ ms.locfileid: "98809759"
 
 迁移标签后，租户的全局管理员可以继续管理 Azure 门户和管理中心中的标签和策略。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>在开始之前
 
 标签迁移具有很多优点，但不可逆。 在迁移之前，请确保你已了解以下更改和注意事项：
 
@@ -106,7 +106,7 @@ ms.locfileid: "98809759"
 
 例如，请考虑以下标签列表：
 
-- **公共**
+- **Public**
 - **常规**
 - 机密
     - **Confidential\HR**

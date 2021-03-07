@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f674cd162131b0a45dbefbe70e617296695d6126
-ms.sourcegitcommit: caf2978ab03e4893b59175ce753791867793dcfe
+ms.openlocfilehash: 24429f7727800650e5ce8f5f814597dfd83de0b2
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100524738"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102414984"
 ---
 # <a name="what-is-the-azure-information-protection-unified-labeling-scanner"></a>什么是 Azure 信息保护统一标记扫描程序？
 
@@ -80,7 +80,7 @@ AIP 扫描程序可以检查 Windows 可以为其编制索引的任何文件。 
 
 ### <a name="1-determine-whether-files-are-included-or-excluded-for-scanning"></a>1. 确定是包括还是排除文件以进行扫描 
 
-扫描程序自动跳过从分类和保护中排除的文件，如可执行文件和系统文件。 有关详细信息，请参阅 [从分类和保护中排除的文件类型](./rms-client/clientv2-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)。
+扫描程序自动跳过从分类和保护中排除的文件，如可执行文件和系统文件。 有关详细信息，请参阅 [从分类和保护中排除的文件类型](rms-client/clientv2-admin-guide-file-types.md#file-types-excluded-from-classification-and-protection)。
 
 扫描器还会将显式定义的任何文件列表视为扫描，或从扫描中排除。 默认情况下，文件列表适用于所有数据存储库，并且只能为特定的存储库定义。
 
@@ -94,7 +94,7 @@ AIP 扫描程序可以检查 Windows 可以为其编制索引的任何文件。 
 
 标识排除的文件后，扫描程序会再次筛选以识别检查支持的文件。
 
-这些附加筛选器与操作系统用于 Windows 搜索和索引的筛选器相同，无需其他配置。 Windows IFilter 还用于扫描 Word、Excel 和 PowerPoint 使用的文件类型以及 PDF 文档和文本文件。
+这些筛选器与操作系统用于 Windows 搜索和索引的筛选器相同，无需额外配置。 Windows IFilter 还用于扫描 Word、Excel 和 PowerPoint 使用的文件类型以及 PDF 文档和文本文件。
 
 有关检查支持的文件类型的完整列表，以及用于将筛选器配置为包含 .zip 和 tiff 文件的其他说明，请参阅 [检查支持的文件类型](./rms-client/clientv2-admin-guide-file-types.md#file-types-supported-for-inspection)。
 
@@ -106,7 +106,7 @@ AIP 扫描程序可以检查 Windows 可以为其编制索引的任何文件。 
 
 例如，针对 SharePoint 的服务器强化是指扫描程序会超出允许的网络连接数，因此停止的原因之一。
 
-若要检查这是否是扫描仪停止的原因，请检查 **%localappdata%\Microsoft\MSIP\Logs\MSIPScanner.iplog** 中的扫描程序日志中是否存在以下错误消息 (多个日志已压缩为 zip 文件) ：
+若要检查服务器强化 for SharePoint 是否是扫描程序停止的原因，请检查 **%localappdata%\Microsoft\MSIP\Logs\MSIPScanner.iplog** 中的扫描程序日志中是否存在以下错误消息 (多个日志已压缩为 zip 文件) ：
 
 `Unable to connect to the remote server ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted IP:port`
 

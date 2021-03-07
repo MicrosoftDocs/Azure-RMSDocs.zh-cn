@@ -11,18 +11,18 @@ ms.service: information-protection
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 1c81df0928261ea50795837e8e0fe2b542d7b8af
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: c918c03616affeea1972518e5af1e439def22243
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97382150"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102414967"
 ---
 # <a name="how-to-guides-for-common-scenarios-that-use-azure-information-protection"></a>使用 Azure 信息保护的常见应用场景的操作方法指南
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
-> *适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> 相关内容：**[用于 Windows 的 Azure 信息保护统一标记客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)
 
 可以通过多种方式使用 Azure 信息保护对组织的文档和电子邮件进行分类和选择性保护。 
 
@@ -57,5 +57,3 @@ ms.locfileid: "97382150"
 ## <a name="next-steps"></a>后续步骤
 
 没有列出你的应用场景？ 有关规划和部署步骤的完整列表，请查看 [部署路线图](deployment-roadmap.md) 。
-
-如果你是初次接触 Azure 信息保护，请查看[什么是 Azure 信息保护？](what-is-information-protection.md)，快速了解服务，以便开始部署。

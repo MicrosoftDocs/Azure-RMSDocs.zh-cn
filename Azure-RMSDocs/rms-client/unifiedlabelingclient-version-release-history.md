@@ -1,5 +1,5 @@
 ---
-title: Azure 信息保护统一标签客户端版本历史记录 & 支持策略
+title: Azure 信息保护中的新增功能 (AIP) -版本历史记录 & 支持策略
 description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的统一标签客户端。
 author: batamig
 ms.author: bagol
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 6f77220e6321f8a601c936fec9a5ea4812539f01
-ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
+ms.openlocfilehash: 73d64904f3bea44e7432709773f9400ccd40da3e
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844364"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415290"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -26,6 +26,8 @@ ms.locfileid: "101844364"
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >***相关的**： [仅限 AIP 统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [AIP 经典客户端版本发行历史记录和支持策略](client-version-release-history.md)。 *
+
+本文介绍适用于统一标签客户端的新功能，以及每个 AIP 统一客户端版本的服务信息和支持时间线。
 
 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
@@ -234,9 +236,9 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 
 - 添加了对 **-**) [扫描程序数据库](../deploy-aip-scanner-prereqs.md) 名称中的连字符 (的支持
 - 当 "**[基于内容的标签文件](../deploy-aip-scanner-configure-install.md#create-a-content-scan-job)**" 选项设置为 "**关闭**" 时，报表中的更新
-- [改进了](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance) 大量信息类型匹配的内存消耗
+- [改进了](../deploy-aip-scanner-configure-install.md#optimize-scanner-performance) 大量信息类型匹配的内存消耗
 - 支持以斜杠 (结尾的 [SharePoint 本地](../deploy-aip-scanner-prereqs.md#sharepoint-requirements) 路径 **/**) 
-- 提高了 SharePoint 扫描 [速度](../deploy-aip-scanner-configure-install.md#optimizing-scanner-performance)
+- 提高了 SharePoint 扫描 [速度](../deploy-aip-scanner-configure-install.md#optimize-scanner-performance)
 - 支持在扫描 SharePoint 服务器时 [避免超时](clientv2-admin-guide-customizations.md#avoid-scanner-timeouts-in-sharepoint) 。
 
 ### <a name="fixes-and-improvements-for-the-unified-labeling-client"></a>统一标签客户端的修复和改进
@@ -259,7 +261,7 @@ AIP 经典客户端支持使用 [Microsoft 跟踪门户](client-track-revoke.md#
 
     在这种情况下，将始终应用来自第一个策略的高级设置，具体取决于管理中心中策略的顺序。 现已删除 *OutlookDefaultLabel* 的异常。
 
-- 在 **% APPDATA% (AppData\Roaming)** 指向非默认 Windows 文件夹结构的方案中，现在，映射到用户目录的文件夹中的文件会根据配置，按预期方式 [从标记和保护中排除](clientv2-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection) 。
+- 在 **% APPDATA% (AppData\Roaming)** 指向非默认 Windows 文件夹结构的方案中，现在，映射到用户目录的文件夹中的文件会根据配置，按预期方式 [从标记和保护中排除](clientv2-admin-guide-file-types.md#file-types-excluded-from-classification-and-protection) 。
 
 - [新的高级客户端设置](clientv2-admin-guide-customizations.md#remove-all-shapes-of-a-specific-shape-name) (**PowerPointRemoveAllShapesByShapeName**) ，通过使用形状名称而不是形状内的文本，将其添加到从 PowerPoint 页眉或页脚中删除形状。
 
@@ -326,7 +328,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 **使用网络发现服务**
 
 1. 升级扫描仪版本，并确保扫描仪群集配置正确。 有关详细信息，请参阅：
-    - [升级扫描仪](../deploy-aip-scanner-configure-install.md#upgrading-your-scanner)
+    - [升级扫描仪](../deploy-aip-scanner-configure-install.md#upgrade-your-scanner)
     - [创建扫描仪群集](../deploy-aip-scanner-configure-install.md#create-a-scanner-cluster)
 
 1. 请确保已启用 Azure 信息保护分析。
@@ -346,7 +348,7 @@ AIP 管理员现在还可以为所有 web 请求和文件 web 请求单独配置
 
 1. 使用 "新建 [**存储库**](../deploy-aip-scanner-configure-install.md#analyze-risky-repositories-found-public-preview) " 窗格上生成的报表查找可能存在风险的其他网络文件共享。 将所有危险的文件共享添加到 [内容扫描作业](../deploy-aip-scanner-configure-install.md#create-a-content-scan-job) ，以扫描添加的存储库中的敏感内容。
 
-#### <a name="network-discovery-cmdlets-public-preview"></a> (公开预览版的网络发现 cmdlet) 
+### <a name="network-discovery-cmdlets-public-preview"></a> (公开预览版的网络发现 cmdlet) 
 
 为网络发现添加的 PowerShell cmdlet 包括：
 

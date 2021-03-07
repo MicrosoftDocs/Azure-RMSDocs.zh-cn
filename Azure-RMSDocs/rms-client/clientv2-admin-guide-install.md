@@ -1,6 +1,6 @@
 ---
-title: 为用户安装 Azure 信息保护统一标签客户端
-description: 管理员用于在企业网络上部署 Azure 信息保护统一标签客户端的说明和信息。
+title: 为用户安装 Azure 信息保护 (AIP) 统一标签客户端
+description: 了解管理员如何通过企业网络为用户部署 Azure 信息保护 (AIP) 统一的标记客户端。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: f818a94e954b245d329a2cdb2dc1ce419e83c4ce
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: b2ffca45a0295b2264a7cfe92d7a1fe350c0f0a8
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560095"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415231"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-unified-labeling-client-for-users"></a>管理员指南：为用户安装 Azure 信息保护统一标签客户端
 
@@ -25,6 +25,8 @@ ms.locfileid: "98560095"
 >*如果你具有 Windows 7 或 Office 2010，请参阅 [AIP 和旧版 Windows 和 office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。*
 >
 >*适用 **于**： [Azure 信息保护适用于 Windows 的统一标签客户端](../faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 对于经典客户端，请参阅 [经典客户端管理员指南](client-admin-guide-install.md)。 *
+
+本文介绍管理员如何在企业网络中部署 Azure 信息保护 (AIP) 统一的标记客户端。
 
 在企业网络上安装 Azure 信息保护统一标签客户端之前，请检查计算机是否具有 Azure 信息保护所需的操作系统版本和应用程序： [Azure 信息保护要求](../requirements.md) ，以及 [在企业网络上安装统一标签客户端的其他要求](reqs-ul-client.md)。
 
@@ -46,7 +48,7 @@ Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word�
 有关支持保护服务的 Office 版本的信息，请参阅[支持 Azure Rights Management 数据保护的应用程序](../requirements-applications.md)。
 
 > [!IMPORTANT]
-> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
 
 ## <a name="unified-labeling-client-installation-options"></a>统一标签客户端安装选项
 
@@ -118,7 +120,7 @@ Azure 信息保护统一标签客户端可以使用 Office 应用程序的 Word�
 当你为具有 [Office 2010](../known-issues.md#aip-and-legacy-windows-and-office-versions) 的用户安装客户端，并且这些用户没有本地管理权限时，请为你的 Azure Rights Management 服务指定 **SERVICELOCATION** 参数和 URL。 
     
 > [!IMPORTANT]
-> Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+> Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
 >
 
 此参数和值将创建和设置以下注册表项：
@@ -182,7 +184,7 @@ AzInfoProtection_UL.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-4
     | | | | |
 
     > [!IMPORTANT]
-    > Office 2010 扩展支持于2020年10月13日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
+    > Office 2010 外延支持已于 2020 年 10 月 13 日结束。 有关详细信息，请参阅 [AIP 和旧版 Windows 和 Office 版本](../known-issues.md#aip-and-legacy-windows-and-office-versions)。
     >
 
 1. 对于默认安装，将 .msi 与 /quiet/ 一起运行，例如，`AzInfoProtection_UL.msi /quiet`。

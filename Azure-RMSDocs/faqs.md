@@ -1,6 +1,6 @@
 ---
-title: Azure 信息保护的常见问题解答
-description: 一些有关 Azure 信息保护及其保护服务、Azure Rights Management (Azure RMS) 的常见问题。
+title: 'Azure 信息保护的常见问题解答 (AIP) '
+description: 获取有关 Azure 信息保护的常见问题解答 (AIP) 及其保护服务，Azure Rights Management (Azure RMS) 。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -12,23 +12,25 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: c42f2459861b7b7167469ddadd7c3ff399d47f48
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 9f19b02045ea98fe7c7dc54299ea60abaa6d3312
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97381948"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415001"
 ---
-# <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure 信息保护的常见问题
+# <a name="frequently-asked-questions-for-azure-information-protection-aip"></a>Azure 信息保护的常见问题 (AIP) 
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
-是否有关于 Azure 信息保护或 Azure Rights Management 服务 (Azure RMS) 的问题？ 请查看此处是否有答案。
+对于 Azure 信息保护有疑问 (AIP) ，或是 Azure Rights Management 服务 (Azure RMS) ？ 
+
+请参阅下面的 [更具体的常见问题页面](#what-do-i-do-if-my-question-isnt-here)。
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-microsoft-information-protection"></a>Azure 信息保护和 Microsoft 信息保护之间有何不同？
 
@@ -75,9 +77,9 @@ ms.locfileid: "97381948"
 
 你还可以通过转到 **Azure 信息保护**  >  **管理**  >  **统一标签** 来进行检查，并查看 **统一标签** 状态：
 
-|状态 |说明  |
+|状态 |描述  |
 |---------|---------|
-|**已激活**     |  你的租户在统一的标签平台上。 <br />你可以从 "Microsoft 365 相容性中心" [创建、配置和发布标签](/microsoft-365/compliance/create-sensitivity-labels) 。       |
+|**停**     |  你的租户在统一的标签平台上。 <br />你可以从 "Microsoft 365 相容性中心" [创建、配置和发布标签](/microsoft-365/compliance/create-sensitivity-labels) 。       |
 |**未激活**    |  你的租户不在统一的标签平台上。 <br />有关迁移说明和指南，请参阅 [如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。       |
 | | |
 
@@ -95,7 +97,7 @@ ms.locfileid: "97381948"
 
 ### <a name="classic-client-deprecation"></a>经典客户端弃用
 
-为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 
+为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月 31** 日被 **弃用**。 
 
 弃用后，客户端将继续按预期方式工作。 但是，管理员将无法在门户上更新策略，也不会为经典客户端提供更多的修补程序或更改。
 
@@ -120,17 +122,17 @@ ms.locfileid: "97381948"
 
     :::image type="content" source="media/client-about.png" alt-text="查看 Azure 信息保护客户端版本":::
 
-## <a name="when-is-the-right-time-to-migrate-my-labels"></a>何时将标签迁移到正确的时间？
+## <a name="when-is-the-right-time-to-migrate-my-labels-to-unified-labeling"></a>将标签迁移到统一标签时的正确时间是什么？
 
 建议将 Azure 信息保护标签迁移到统一的标签平台，以便可以将它们用作 [支持统一标签的其他客户端和服务的](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)敏感度标签。
 
 有关详细信息和说明，请参阅 [如何将 Azure 信息保护标签迁移到统一的敏感度标签](configure-policy-migrate-labels.md)。
 
-## <a name="after-ive-migrated-my-labels-which-management-portal-do-i-use"></a>迁移我的标签后，该使用哪个管理门户？
+## <a name="after-ive-migrated-my-labels-to-unified-labeling-which-management-portal-do-i-use"></a>将标签迁移到统一标签后，使用哪种管理门户？
 
 在 Azure 门户中迁移标签后，请根据你安装的客户端，继续将其管理到以下位置之一：
 
-|客户端  |说明  |
+|客户端  |描述  |
 |---------|---------|
 |仅限[客户端和服务的统一标签](configure-policy-migrate-labels.md#clients-and-services-that-support-unified-labeling)    |  如果只安装了统一的标记客户端，请在某个管理中心中管理标签： Office 365 Security & 相容性中心、Microsoft 365 安全中心或 Microsoft 365 合规中心。 统一标签客户端从这些管理中心下载标签和策略设置。 <br /><br />有关说明，请参阅 [创建和配置敏感度标签及其策略](/microsoft-365/compliance/create-sensitivity-labels)。     |
 |仅[经典客户端](./rms-client/aip-client.md)  | 如果已迁移标签，但仍安装了经典客户端，请继续使用 Azure 门户编辑标签和策略设置。 经典客户端继续从 Azure 下载标签和策略设置。
@@ -182,7 +184,7 @@ Microsoft 365 租户或 Azure AD 租户的全局管理员可以很明显地运�
 
 此外，在管理管理任务和角色时，请注意以下事项：
 
-|主题  |详细信息  |
+|问题  |详细信息  |
 |---------|---------|
 |**支持的帐户类型**     | Microsoft 帐户不支持 Azure 信息保护的委派管理，即使这些帐户分配给列出的某个管理角色。         |
 |**载入控件**     |如果配置了[加入控制](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)，此配置不会影响管理 Azure 信息保护的能力（RMS 连接器除外）。 <br /><br />例如，如果你配置了加入控制以便保护内容的能力限制为 *IT 部门* 组，则用于安装和配置 RMS 连接器的帐户必须是该组的成员。          |
@@ -283,7 +285,7 @@ Azure 信息保护可以分类和保护电子邮件和文档，无论它们是�
 
 是的，作为预览产品，你可以为 Azure 信息保护配置 Azure AD 条件性访问。
 
-当用户打开受 Azure 信息保护保护的文档时，管理员现可基于标准条件访问控制，阻止其租户中用户的访问或授予他们访问权限。 最常见的请求条件之一是需要多重身份验证 (MFA)。 另一常见请求条件是，设备必须[遵守 Intune 策略](/intune/protect/conditional-access-intune-common-ways-use)（以便移动设备满足密码要求和最低操作系统版本），并且计算机必须已加入域。
+当用户打开受 Azure 信息保护保护的文档时，管理员现可基于标准条件访问控制，阻止其租户中用户的访问或授予他们访问权限。 最常见的请求条件之一是需要多重身份验证 (MFA)。 另一种是设备必须 [符合你的 Intune 策略](/intune/protect/conditional-access-intune-common-ways-use) ，以便例如，移动设备满足你的密码要求和最低操作系统版本，并且计算机必须已加入域。
 
 有关详细信息和演练示例，请参阅以下博客文章：[Conditional Access policies for Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)（Azure 信息保护的条件访问策略）。
 

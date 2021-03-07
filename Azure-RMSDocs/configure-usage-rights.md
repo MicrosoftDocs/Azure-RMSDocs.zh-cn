@@ -1,5 +1,5 @@
 ---
-title: 配置 Azure 信息保护的使用权限
+title: '配置 Azure 信息保护的使用权限 (AIP) '
 description: 了解和确定在使用 Azure 信息保护中的 Rights Management 保护来保护文件或电子邮件时使用的特定权限。
 author: batamig
 ms.author: bagol
@@ -13,14 +13,14 @@ ms.reviewer: esaggese
 ms.subservice: azurerms
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 16cc8ae0424f307ae7f0ed864ca36f1a91230977
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 13263b8d11829104bb0175b4ca91d023637dd1f5
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809644"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415273"
 ---
-# <a name="configuring-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
+# <a name="configure-usage-rights-for-azure-information-protection"></a>配置 Azure 信息保护的使用权限
 
 >适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
@@ -31,10 +31,15 @@ ms.locfileid: "98809644"
 > 
 > 为保持完整性，本文包括已在 2018 年 1 月 8 日停用的 Azure 经典门户中的值。
 
-当你为加密配置敏感度标签或保护模板时，你可以选择在用户、管理员或配置的服务选择标签或模板时将自动应用的使用权限。 例如，在 Azure 门户中，可以选择配置使用权限逻辑分组的角色，或者可以配置单个权限。 另外，用户还可以选择并应用使用权限本身。
+本文介绍了在用户、管理员或配置的服务选择标签或模板时，可以配置为自动应用的使用权限。
 
-本文介绍如何为所使用的应用程序配置所需的使用权限，并了解这些权限是如何由应用程序进行解释的。 但是，应用程序在实现权限的方式上可能会有所不同，因此请始终查阅其文档，并使用用户对应用程序进行测试，以便在生产环境中进行部署之前查看行为。
+在配置敏感度标签或保护模板以进行加密时，将选择使用权限。 例如，可以选择配置使用权限逻辑分组的角色，也可以单独配置各个权限。 另外，用户还可以选择并应用使用权限本身。
 
+> [!IMPORTANT]
+> 使用本文了解如何将使用权限 *设计* 为由应用程序解释。 
+>
+> 应用程序在实现使用权限的方式上可能不同，我们建议使用应用程序的文档，并在生产中部署之前，执行自己的测试来检查应用程序的行为。
+> 
 
 ## <a name="usage-rights-and-descriptions"></a>使用权限和说明
 下表列出并说明了 Rights Management 支持的使用权限，以及它们的使用和解释方式。 它们按公用名列出，公用名通常是你看待使用权限作为在代码中使用的单字值（策略中的编码值）的更友好版本进行显示或引用的方式。 
@@ -64,6 +69,7 @@ ms.locfileid: "98809644"
 |公用名：**查看权限** <br /><br />策略中的编码：**VIEWRIGHTSDATA**|允许用户查看已应用到文档的策略。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**查看分配的权限**<br /><br />标记管理中心和 Azure 门户中的名称： **(VIEWRIGHTSDATA) 的查看权限**。<br /><br />AD RMS 模板中的名称：**查看权限** <br /><br />API 常量或值：`IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
 |公用名：**更改权限** <br /><br />策略中的编码：**EDITRIGHTSDATA**|允许用户更改已应用到文档的策略。 包括删除保护。 <br /><br /> 不受 Office 应用或 Azure 信息保护客户端支持。|Office 自定义权限：未实现。<br /><br />Azure 经典门户中的名称：**更改权限**<br /><br />标记管理中心和 Azure 门户中的名称： **编辑权限 (EDITRIGHTSDATA)**。<br /><br />AD RMS 模板中的名称：**编辑权限** <br /><br />API 常量或值：`PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
 |公用名：**允许宏** <br /><br />策略中的编码：**OBJMODEL**|启用运行宏或执行其他编程或远程访问文档内容的选项。|Office 自定义权限：作为“允许编程访问”自定义策略选项。 不是特定于收件人的设置。<br /><br />Azure 经典门户中的名称：**允许宏**<br /><br />标记管理中心和 Azure 门户中的名称： **允许宏 (OBJMODEL)**<br /><br />AD RMS 模板中的名称：**允许宏** <br /><br />API 常量或值：未实现。|
+| | | |
 
 ## <a name="rights-included-in-permissions-levels"></a>权限级别中包括的权限
 
@@ -73,12 +79,11 @@ ms.locfileid: "98809644"
 
 |权限级别|应用程序|包含的使用权限|
 |---------------------|----------------|---------------------------------|
-|查看器|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；查看权限；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；允许宏 [[2]](#footnote-2)<br /><br />注意：对于电子邮件，请使用审阅者级别而不是此权限级别，确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为已实施[加入控制机制](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|
-|审阅者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；查看权限；答复：全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；允许宏 [[2]](#footnote-2)|
-|合著者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[4]](#footnote-4)；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)|
-|共有者|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；完全控制|
-
-----
+|**查看者**|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；查看权限；答复 [[1]](#footnote-1)；全部答复 [[1]](#footnote-1)；允许宏 [[2]](#footnote-2)<br /><br />注意：对于电子邮件，请使用审阅者级别而不是此权限级别，确保接收到的电子邮件答复为电子邮件而不是附件。 向使用 Outlook 客户端或 Outlook Web App 的其他组织发送电子邮件时，也需要审阅者权限。 或者，对于组织内无需使用 Azure Rights Management 服务的用户来说，也需要此权限，因为已实施[加入控制机制](/powershell/module/aipservice/set-aipserviceonboardingcontrolpolicy)。|
+|“审阅者”|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；查看权限；答复：全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；允许宏 [[2]](#footnote-2)|
+|**合著者**|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；允许宏；另存为、导出 [[4]](#footnote-4)；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)|
+|**共有者**|Azure 经典门户 <br /><br />Azure 门户<br /><br />适用于 Windows 的 Azure 信息保护客户端|查看、打开、读取；保存；编辑内容、编辑；复制；查看权限；更改权限；允许宏；另存为、导出；打印；答复 [[3]](#footnote-3)；全部答复 [[3]](#footnote-3)；转发 [[3]](#footnote-3)；完全控制|
+| | | |
 
 ###### <a name="footnote-1"></a>脚注 1
 
@@ -138,8 +143,9 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 如果确实需要附加的文档以保留原始保护，请参阅[使用 Azure 信息保护来保护文档协作](secure-collaboration-documents.md)。
 
-注意：如果看到对 **DecryptAttachmentFromPortal** 的引用，则此参数现已不推荐用于 [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration)。 除非之前设置了此参数，否则它不可用。
-
+> [!NOTE]
+> 如果看到了对 DecryptAttachmentFromPortal 的引用，请注意对于 [Set-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration)现已弃用此参数。 除非之前设置了此参数，否则它不可用。
+> 
 ## <a name="automatically-encrypt-pdf-documents-with-exchange-online"></a>通过 Exchange Online 自动加密 PDF 文档
 
 当 Exchange Online 使用 Office 365 邮件加密的新功能时，如果将未受保护的 PDF 文档附加到加密电子邮件，则可以自动对其进行加密。 该文档继承了电子邮件的相同权限。 若要启用此配置，请使用 [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/set-irmconfiguration)设置 **EnablePdfEncryption $True** 。
@@ -172,8 +178,9 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 在[使用情况日志](log-analyze-usage.md#how-to-interpret-your-usage-logs)中，文档或电子邮件的 Rights Management 所有者记录为“所有者-电子邮件”字段。
 
-请注意，Rights Management 所有者独立于 Windows 文件系统所有者。 两者通常是相同的，但也可以不同，即使不使用 SDK 或 PowerShell 也是如此。
-
+> [!NOTE]
+> Rights Management 所有者独立于 Windows 文件系统所有者。 两者通常是相同的，但也可以不同，即使不使用 SDK 或 PowerShell 也是如此。
+> 
 ## <a name="rights-management-use-license"></a>Rights Management 使用许可证
 
 用户打开已受 Azure Rights Management 保护的文档或电子邮件时，会向该用户授予 Rights Management 使用许可证。 此使用许可证是一个证书，它包含用户对文档或电子邮件的使用权限，以及用于加密内容的加密密钥。 此使用许可证还包含一个到期日期（如果已设置）及其有效时长。
@@ -204,10 +211,11 @@ Exchange 客户端和服务（例如，Outlook 客户端、网页版 Outlook、E
 
 |模板的显示名称|2017 年 10 月 6 日到当前日期的使用权限|2017 年 10 月 6 日之前的使用权限|
 |----------------|--------------------|----------|
-|\<*organization name> -仅查看机密 * <br /><br />或<br /><br /> *高度机密\所有员工*|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
-|\<*organization name>信息 <br /><br />或 <br /><br />*机密\所有员工*|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+|**\<*organization name> -仅限机密查看*** <br /><br />或<br /><br /> **_高度机密 \ 所有员工_**|查看、打开、读取；复制；查看权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑|查看、打开、读取|
+|**\<*organization name>-机密*** <br /><br />或 <br /><br />**_机密 \ 所有员工_**|查看、打开、读取；另存为、导出；复制；查看权限；更改权限；允许宏；打印；转发；答复；全部 答复；保存；编辑内容、编辑；完全控制|查看、打开、读取；另存为、导出；编辑内容、编辑；查看权限；允许宏；转发；答复；全部答复|
+| | | |
 
 ## <a name="see-also"></a>另请参阅
-[配置和管理 Azure 信息保护的模板](configure-policy-templates.md)
 
-[为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)
+- [通过使用敏感度标签来应用加密来限制对内容的访问](/microsoft-365/compliance/encryption-sensitivity-labels)
+- [为 Azure 信息保护和发现服务或数据恢复配置超级用户](configure-super-users.md)

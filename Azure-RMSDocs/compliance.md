@@ -12,21 +12,21 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: d3de605c8427745e51df2ea1ffbee110c9106138
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 708d39a5f69182225a1eea23c625b4a53a7172cd
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97383881"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102414746"
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure 信息保护的合规性和支持信息
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻找的信息与 Azure 信息保护相关，但与如何使用 Azure 信息保护服务无关，请查看以下资源：
 
@@ -58,7 +58,7 @@ Azure 信息保护支持其他服务，也依赖于其他服务。 如果你寻�
 
 ## <a name="security-compliance-and-auditing"></a>安全、合规性和审核
 
-请参阅 [Azure RMS 解决了哪些问题？](./what-is-azure-rms.md#business-problems-solved-by-azure-rights-management)一文中的[安全、合规性和法规要求](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements)，了解有关特定 Azure 权限管理服务证书的信息。 此外：
+有关 Azure Rights Management 服务的特定认证的信息，请参阅[什么是 Azure RMS？](./what-is-azure-rms.md)一文中的[安全、合规性和法规要求](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements)部分。 此外：
 
 - 对于 Azure 信息保护的外部认证：[Microsoft Azure 信任中心](https://azure.microsoft.com/support/trust-center/)
 

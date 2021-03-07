@@ -1,6 +1,6 @@
 ---
-title: 从 Azure 信息保护中激活保护服务
-description: 保护服务、Azure Rights Management 必须先激活，然后组织才能开始使用支持此信息保护解决方案的应用程序和服务来保护文档和电子邮件。
+title: " (AIP) 从 Azure 信息保护激活保护服务"
+description: 了解如何激活 Azure Rights Management 保护服务，以保护文档和电子邮件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -13,18 +13,20 @@ ms.subservice: azurerms
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 842f452a5a7a62002b4c0555580258368416d2d3
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: e3089134dc3b289d024c507aec886d622e4d6e16
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97384173"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102414763"
 ---
 # <a name="activating-the-protection-service-from-azure-information-protection"></a>从 Azure 信息保护中激活保护服务
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
->***相关** 内容： [AIP 统一标签客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+>相关内容：*[AIP 统一标记客户端和经典客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+
+本文介绍管理员如何为 Azure 信息保护激活 Azure Rights Management 保护服务 (AIP) 。 为你的组织激活保护服务后，管理员和用户可以开始使用支持此信息保护解决方案的应用程序和服务保护重要数据。 管理员还可以管理和监视你的组织拥有的受保护文档和电子邮件。
 
 > [!NOTE]
 > 此配置信息适用于负责应用于组织中所有用户的服务的管理员。 如果你要寻找针对特定应用程序使用 Rights Management 功能，或者如何打开受权限保护的文件或电子邮件的用户帮助和信息，请使用你的应用程序附带的帮助和指南。
@@ -33,18 +35,15 @@ ms.locfileid: "97384173"
 >
 > 有关技术支持和其他服务问题，请参阅[支持选项和社区资源](information-support.md#support-options-and-community-resources)信息。
 
-为组织激活 Azure 信息保护的保护服务后，管理员和用户可以使用支持此信息保护解决方案的应用程序和服务开始保护重要数据。 管理员还可以管理和监视你的组织拥有的受保护文档和电子邮件。 
+## <a name="automatic-activation-for-azure-rights-management"></a>自动激活 Azure Rights Management
 
-
-## <a name="do-you-need-to-activate-the-protection-service-azure-rights-management"></a>是否需要激活保护服务 Azure Rights Management？
-
-如果你拥有包含 Azure Rights Management 的服务计划，则可能不需要激活此服务：
+如果你有包含 Azure Rights Management 的服务计划，则可能不需要激活服务：
 
 - **如果在2018年2月结束时获得了包含 azure Rights Management 或 Azure 信息保护的订阅**：系统将自动为你激活此服务。 除非你或你组织的其他全局管理员停用了 Azure Rights Management，否则你无需激活此服务。
 
-- **如果包含 azure Rights Management 或 Azure 信息保护的订阅是在2018年2月之前或在年2月获取的，** 则如果你的租户使用 Exchange Online，Microsoft 将开始为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，自动激活将于 2018 年 8 月 1 日开始推出，届时将为你激活此服务，除非在运行 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration) 时看到 AutomaticServiceUpdateEnabled 设置为 false。 
+- **如果包含 azure Rights Management 或 Azure 信息保护的订阅是在2018年2月之前或在年2月获取的，** 则如果你的租户使用 Exchange Online，Microsoft 将为这些订阅激活 Azure Rights Management 服务。 对于这些订阅，将为你激活此服务，除非你在运行 [set-irmconfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration)时看到 **AutomaticServiceUpdateEnabled** 设置为 **false** 。 
 
-如果两种后续方案都不适用，必须手动激活保护服务。 
+如果列出的两种方案都不适用，则必须手动激活保护服务。 
 
 激活此服务后，组织中的所有用户都可以对文档和电子邮件应用信息保护，并且所有用户都能打开（使用）受 Azure Rights Management 服务保护的文档和电子邮件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
@@ -61,7 +60,7 @@ ms.locfileid: "97384173"
 
 激活保护服务后，组织中的所有用户都可以对其文档和电子邮件应用信息保护，并且所有用户都可以打开 (使用受此服务保护) 文档和电子邮件。 但是，如果你愿意，可以通过对分阶段部署使用加入控制来限制哪些人员可以应用信息保护。 有关详细信息，请参阅本文中的 [为分阶段部署配置加入控制](#configuring-onboarding-controls-for-a-phased-deployment) 部分。
 
-## <a name="choosing-your-activation-method"></a>选择激活方法
+## <a name="supported-activation-methods"></a>支持的激活方法
 
 有关如何从管理门户激活保护服务的说明，请选择是使用 Microsoft 365 管理中心还是 Azure 门户：
 

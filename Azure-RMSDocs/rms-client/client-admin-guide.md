@@ -14,12 +14,12 @@ ms.subservice: v1client
 ms.reviewer: eymanor
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 49f80d17e62bbe7e520696460ec39df396e439e4
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: 1c208a4dbea10159d2f0f8c505349d2c2acfe6c7
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560350"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415426"
 ---
 # <a name="azure-information-protection-classic-client-administrator-guide"></a>Azure 信息保护经典客户端管理员指南
 
@@ -64,7 +64,7 @@ Azure 信息保护客户端包括以下内容：
 
 - 一个 PowerShell 模块，用于从文件应用和删除分类标签和保护。 
     
-    此模块包含 [用于安装和配置 Azure 信息保护扫描程序](../deploy-aip-scanner-configure-install.md#list-of-cmdlets-for-the-scanner)（在 Windows Server 上作为服务运行）的 cmdlet。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
+    此模块包含 [用于安装和配置 Azure 信息保护扫描程序](../deploy-aip-scanner-configure-install-classic.md#list-of-cmdlets-for-the-scanner)（在 Windows Server 上作为服务运行）的 cmdlet。 借助此服务，可发现和保护数据存储（例如，网络共享和 SharePoint Server 库）中的文件并对其进行分类。
 
 - 权限管理客户端，可与 Azure 权限管理 (Azure RMS) 或 Active Directory Rights Management Services (AD RMS) 进行通信。
 

@@ -1,6 +1,6 @@
 ---
 title: 安装和配置 Azure 信息保护 (AIP) 统一标记扫描器
-description: 说明如何安装和配置 Azure 信息保护统一标记扫描器，以发现、分类和保护数据存储中的文件。
+description: 了解如何安装和配置 Azure 信息保护 (AIP) 统一标记扫描器来发现、分类和保护数据存储中的文件。
 author: batamig
 ms.author: bagol
 manager: rkarlin
@@ -12,20 +12,24 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 98cadb555919ecd6e95e3328ad489b29e3f5c0ef
-ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
+ms.openlocfilehash: ed21f867dfbd3cf6fb0e453367f9e657ba463e99
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844381"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415392"
 ---
-# <a name="configuring-and-installing-the--azure-information-protection-unified-labeling-scanner"></a>配置和安装 Azure 信息保护统一标记扫描器
+# <a name="configuring-and-installing-the-azure-information-protection-aip-unified-labeling-scanner"></a>配置和安装 Azure 信息保护 (AIP) 统一标记扫描器
 
 >***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、Windows Server 2019、Windows Server 2016、windows server 2012 R2 *
 >
 >***相关的**： [仅限 AIP 统一标签客户端](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关经典扫描程序，请参阅 [配置和安装 Azure 信息保护经典扫描程序](deploy-aip-scanner-configure-install-classic.md)。 *
 
-在开始配置和安装 Azure 信息保护扫描程序之前，请确保系统符合 [所需的先决条件](deploy-aip-scanner-prereqs.md)。 
+本文介绍如何配置和安装 Azure 信息保护统一标签本地扫描器。 
+
+## <a name="overview"></a>概述
+
+在开始之前，请确保你的系统符合 [所需的先决条件](deploy-aip-scanner-prereqs.md)。 
 
 准备就绪后，请继续执行以下步骤：
 
@@ -37,18 +41,18 @@ ms.locfileid: "101844381"
 
 1. [配置扫描程序以应用分类和保护](#configure-the-scanner-to-apply-classification-and-protection)
  
-根据系统需要执行以下附加配置过程：
+然后，根据系统需要执行以下配置过程：
 
 |过程  |说明  |
 |---------|---------|
 |[更改要保护的文件类型](#change-which-file-types-to-protect) |你可能想要扫描、分类或保护不同于默认文件类型的文件类型。 有关详细信息，请参阅 [AIP 扫描进程](deploy-aip-scanner.md#aip-scanning-process)。 |
-|[升级扫描仪](#upgrading-your-scanner) | 升级扫描仪以利用最新的功能和改进。|
-|[批量编辑数据存储库设置](#editing-data-repository-settings-in-bulk)| 使用导入和导出选项可以批量更改多个数据存储库。|
-|[使用带有备用配置的扫描程序](#using-the-scanner-with-alternative-configurations)| 在不使用任何条件配置标签的情况下使用扫描程序 |
-|[优化性能](#optimizing-scanner-performance)| 优化扫描程序性能的指导|
+|[升级扫描仪](#upgrade-your-scanner) | 升级扫描仪以利用最新的功能和改进。|
+|[批量编辑数据存储库设置](#edit-data-repository-settings-in-bulk)| 使用导入和导出选项可以批量更改多个数据存储库。|
+|[使用带有备用配置的扫描程序](#use-the-scanner-with-alternative-configurations)| 在不使用任何条件配置标签的情况下使用扫描程序 |
+|[优化性能](#optimize-scanner-performance)| 优化扫描程序性能的指导|
 | | |
 
-有关详细信息，请参阅 [扫描器的 Cmdlet 列表](#list-of-cmdlets-for-the-scanner)。
+有关详细信息，请参阅 [支持的 PowerShell cmdlet](#supported-powershell-cmdlets)。
 
 ## <a name="configure-the-scanner-in-the-azure-portal"></a>在 Azure 门户中配置扫描程序
 
@@ -93,14 +97,11 @@ ms.locfileid: "101844381"
 
 从版本 [2.8.85.0](rms-client/unifiedlabelingclient-version-release-history.md#version-28850)开始，你可以在网络中扫描有风险的存储库。 添加一个或多个发现内容扫描作业的存储库，以扫描敏感内容。
 
-- [网络发现先决条件](#network-discovery-prerequisites)
-- [创建网络扫描作业](#creating-a-network-scan-job)
-
 > [!NOTE]
 > Azure 信息保护网络发现功能目前处于预览阶段。 [Azure 预览版补充条款](https://azure.microsoft.com/support/legal/preview-supplemental-terms/)包含适用于 beta 版、预览版或其他尚未正式发布的 Azure 功能的其他法律条款。 
 > 
 
-#### <a name="network-discovery-prerequisites"></a>网络发现先决条件
+下表描述了网络发现服务所需的先决条件：
 
 |先决条件  |说明  |
 |---------|---------|
@@ -108,7 +109,7 @@ ms.locfileid: "101844381"
 |**Azure 信息保护分析**     | 请确保已启用 Azure 信息保护分析。 <br /><br />在 Azure 门户中，请参阅 **Azure 信息保护 > 管理 > 配置分析 (预览版)**。 <br /><br />有关详细信息，请参阅 [Azure 信息保护的中心报告 (公共预览版) ](reports-aip.md)。|
 | | |
 
-#### <a name="creating-a-network-scan-job"></a>创建网络扫描作业
+**创建网络扫描作业**
 
 1. 登录到 Azure 门户，并中转到 " **Azure 信息保护**"。 在左侧的 " **扫描仪** " 菜单下，选择 " **网络扫描作业" (预览)** ![网络扫描作业 "图标](media/i-network-scan-jobs.png "网络扫描作业图标")。
     
@@ -116,7 +117,7 @@ ms.locfileid: "101844381"
     
 1. 在 " **添加新的网络扫描作业** " 页上，定义以下设置：
         
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**网络扫描作业名称**     |为此作业输入有意义的名称。  此字段为必需字段。       |
     |**说明**     |   输入有意义的说明。      |
@@ -153,7 +154,7 @@ ms.locfileid: "101844381"
 
 1. 执行以下任一操作：
     
-    |选项  |说明  |
+    |选项  |描述  |
     |---------|---------|
     |![列图标](media/i-columns.png "列图标")    | 选择要更改显示的表列的 **列** 。        |
     |![刷新图标](media/i-refresh.png "刷新图标")   | 如果扫描仪最近运行过网络扫描结果，请选择 " **刷新** " 以刷新页面。      |
@@ -162,7 +163,6 @@ ms.locfileid: "101844381"
     |![Log Analytics 图标](media/i-log-analytics.png "Log Analytics 图标") |在 "非托管存储库" 关系图的右上角，单击 " **Log Analytics** " 图标以跳转到这些存储库的 Log Analytics 数据。 |
     | | |
 
-#### <a name="repositories-with-public-access"></a>具有公共访问权限的存储库
 
 发现 **公共访问** 具有 **读取** 或 **读/写** 功能的存储库可能具有必须保护的敏感内容。 如果 **公共访问** 为 false，则根本无法通过公共方式访问存储库。
 
@@ -186,7 +186,7 @@ ms.locfileid: "101844381"
  
 1. 对于此初始配置，请配置以下设置，然后选择 " **保存** "，但不要关闭窗格。
     
-    |设置  |说明  |
+    |设置  |描述  |
     |---------|---------|
     |**内容扫描作业设置**     |    - **Schedule**：保留默认值 "**手动**" <br />- **要发现的信息类型**：仅更改为 **策略** <br />- **配置存储库**：此时不配置，因为必须先保存内容扫描作业。         |
     |**DLP 策略** | 如果使用 Microsoft 365 数据丢失防护 (DLP) 策略，请将 " **启用 DLP 规则** " 设置为 **"开"**。 有关详细信息，请参阅 [使用 DLP 策略](#use-a-dlp-policy-public-preview)。 |
@@ -204,11 +204,11 @@ ms.locfileid: "101844381"
     >     
     要添加第一个数据存储，请在 " **添加新的内容扫描作业** " 窗格上，选择 " **配置存储库** " 以打开 " **存储库** " 窗格：
     
-    :::image type="content" source="media/scanner-repositories-bar.png" alt-text="为 Azure 信息保护扫描程序配置数据存储库":::
+    :::image type="content" source="media/scanner-repositories-bar.png" alt-text="配置 Azure 信息保护扫描程序的数据存储库。":::
 
     1. 在“存储库”窗格上，选择“添加”：
     
-        :::image type="content" source="media/scanner-repository-add.png" alt-text="为 Azure 信息保护扫描程序添加数据存储库":::
+        :::image type="content" source="media/scanner-repository-add.png" alt-text="添加 Azure 信息保护扫描程序的数据存储库。":::
 
     1. 在 " **存储库** " 窗格上，指定数据存储库的路径，然后选择 " **保存**"。
     
@@ -347,7 +347,7 @@ ms.locfileid: "101844381"
 
 3. 记下当前时间，然后从 " **Azure 信息保护-内容扫描作业** " 窗格中再次启动扫描仪：
 
-    :::image type="content" source="media/scanner-scan-now.png" alt-text="启动 Azure 信息保护扫描程序扫描":::
+    :::image type="content" source="media/scanner-scan-now.png" alt-text="开始扫描 Azure 信息保护扫描程序。":::
     
     或者，在 PowerShell 会话中运行以下命令：
     
@@ -369,7 +369,7 @@ ms.locfileid: "101844381"
 > 即使仅测试 DLP 策略，扫描文件也会创建文件权限报告。 查询这些报表以调查特定的文件泄密或了解特定用户对扫描文件的公开。
 > 
 
-DLP 策略在您的标签管理中心（如 Microsoft 365 符合性中心）中进行配置，并在从版本 [2.10.43.0](rms-client/unifiedlabelingclient-version-release-history.md#version-210430-for-DLP-policies-public-preview)开始的 Azure 信息保护中受支持。 
+DLP 策略在您的标签管理中心（如 Microsoft 365 符合性中心）中进行配置，并在从版本 [2.10.43.0](rms-client/unifiedlabelingclient-version-release-history.md#version-210430-for-dlp-policies-public-preview)开始的 Azure 信息保护中受支持。 
 
 有关 DLP 许可的详细信息，请参阅 [数据丢失防护本地扫描器入门](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)。
 
@@ -419,13 +419,13 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=C
 
 有关详细信息，请参阅 [更改要保护的文件类型](./rms-client/clientv2-admin-guide-customizations.md#change-which-file-types-to-protect)。
 
-## <a name="upgrading-your-scanner"></a>升级扫描仪
+## <a name="upgrade-your-scanner"></a>升级扫描仪
  
 如果以前安装了扫描程序并想要升级，请使用 [升级 Azure 信息保护扫描程序](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)中所述的说明。
 
 然后，按常规方式 [配置](deploy-aip-scanner-configure-install.md) 和 [使用扫描仪](deploy-aip-scanner-manage.md) ，跳过安装扫描程序的步骤。
 
-## <a name="editing-data-repository-settings-in-bulk"></a>批量编辑数据存储库设置
+## <a name="edit-data-repository-settings-in-bulk"></a>批量编辑数据存储库设置
 
 使用 " **导出** " 和 " **导入** " 按钮可以在多个存储库中对扫描程序进行更改。 
 
@@ -437,13 +437,13 @@ Set-LabelPolicy -Identity Scanner -AdvancedSettings @{PFileSupportedExtensions=C
 
 1. 在 " **存储库** " 窗格的 "Azure 门户" 中，选择 " **导出** " 选项。 例如：
 
-    :::image type="content" source="media/export-scanner-repositories.png" alt-text="导出 Azure 信息保护扫描程序的数据存储库设置":::
+    :::image type="content" source="media/export-scanner-repositories.png" alt-text="正在导出 Azure 信息保护扫描程序的数据存储库设置。":::
 
 1. 手动编辑导出的文件以进行更改。 
 
 1. 使用同一页面上的 " **导入** " 选项将更新导入到存储库中。
 
-## <a name="using-the-scanner-with-alternative-configurations"></a>使用具有备选配置的扫描程序
+## <a name="use-the-scanner-with-alternative-configurations"></a>使用带有备用配置的扫描程序
 
 Azure 信息保护扫描程序通常会查找为标签指定的条件，以便根据需要对内容进行分类和保护。
 
@@ -459,7 +459,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 " **自定义**"，然后选择要使用的标签       |
@@ -472,7 +472,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 配置下列设置： 
 
-|设置  |说明  |
+|设置  |描述  |
 |---------|---------|
 |**基于内容标记文件**    |设置为 **Off**         |
 |**默认标签**     | 设置为 **None**  |
@@ -487,7 +487,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 为了识别用于标记的条件和信息类型，扫描程序使用指定的任何自定义敏感信息类型以及可供选择的内置敏感信息类型列表，如您在标记管理中心中定义的那样。
 
-## <a name="optimizing-scanner-performance"></a>优化扫描程序性能
+## <a name="optimize-scanner-performance"></a>优化扫描程序性能
 
 > [!NOTE]
 > 如果希望提高扫描仪计算机的响应能力而不是扫描程序性能，请使用 "高级客户端设置" [限制扫描程序使用的线程数](./rms-client/clientv2-admin-guide-customizations.md#limit-the-number-of-threads-used-by-the-scanner)。
@@ -495,12 +495,12 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 
 使用以下选项和指南来帮助优化扫描程序性能：
 
-|选项  |说明  |
+|选项  |描述  |
 |---------|---------|
 |**在扫描程序计算机和被扫描的数据存储之间建立高速可靠的网络连接**     |  例如，将扫描仪计算机放在与扫描的数据存储相同的网络段中，或者在同一网段中放置。 <br /><br />由于要检查文件，扫描程序会将文件内容传输到运行 scanner 服务的计算机，因此网络连接的质量会影响扫描程序性能。 <br /><br />减少或消除传输数据所需的网络跃点还可以减少网络上的负载。      |
 |**确保扫描程序计算机具有可用的处理器资源**     | 检查文件内容并对文件进行加密和解密是处理密集型操作。 <br /><br />监视指定数据存储的典型扫描周期，以确定缺乏处理器资源是否会对扫描程序性能产生负面影响。        |
 |**安装扫描程序的多个实例** | 当你为扫描仪指定自定义群集名称时，Azure 信息保护扫描程序在相同的 SQL server 实例上支持多个配置数据库。 <br /><br />多个扫描程序还可以共享同一群集，从而缩短扫描时间。|
-|**检查备选配置用法** |在使用[备选配置](#using-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。 <br/><br />如果你使用[替换配置](#using-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。|
+|**检查备选配置用法** |在使用[备选配置](#use-the-scanner-with-alternative-configurations)将默认标签应用于所有文件时，扫描程序可以更快地运行，因为扫描程序不检查文件内容。 <br/><br />如果你使用[替换配置](#use-the-scanner-with-alternative-configurations)标识所有自定义条件和已知敏感信息类型，扫描程序的运行速度会更慢。|
 | | |
 
 
@@ -518,7 +518,7 @@ Azure 信息保护扫描程序通常会查找为标签指定的条件，以便�
 |**正在扫描的文件**     |-除了 Excel 文件，Office 文件的扫描速度比 PDF 文件更快。 <br /><br />与受保护的文件相比，-不受保护的文件的扫描速度更快。 <br /><br />-大型文件比小文件需要更长的时间来扫描。         |
 | | |
 
-## <a name="list-of-cmdlets-for-the-scanner"></a>适用于扫描程序的 cmdlet 列表
+## <a name="supported-powershell-cmdlets"></a>支持的 PowerShell cmdlet
 
 本部分列出 Azure 信息保护扫描程序支持的 PowerShell cmdlet。
 

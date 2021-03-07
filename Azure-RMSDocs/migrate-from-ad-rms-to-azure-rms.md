@@ -13,12 +13,12 @@ ms.subservice: migration
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 04534d6bce6c0db554a30b3690957c8aeeae433d
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: 8f4c8547a57d63bf0ae01f40b9b9e8bc49316c26
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809446"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415443"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>从 AD RMS 迁移到 Azure 信息保护
 
@@ -29,12 +29,6 @@ ms.locfileid: "98809446"
 使用下面的一组指令将 Active Directory Rights Management Services (AD RMS) 部署迁移到 Azure 信息保护。 
 
 迁移之后，AD RMS 服务器将不再可用，但用户将仍然可以访问你的组织使用 AD RMS 来保护的文档和电子邮件。 新保护的内容将使用 Azure 信息保护中的 Azure Rights Management 服务 (Azure RMS)。
-
-不确定这种 AD RMS 迁移是否适合你的组织？
-
-- 有关 Azure 信息保护的简介，请参阅[什么是 Azure 信息保护？](./what-is-information-protection.md)
-
-- 有关 Azure 信息保护与 AD RMS 的比较，请参阅[比较 Azure 信息保护与 AD RMS](./compare-on-premise.md)。
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>建议在迁移到 Azure 信息保护之前阅读的内容
 
