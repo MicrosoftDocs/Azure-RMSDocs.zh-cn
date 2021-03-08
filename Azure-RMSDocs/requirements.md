@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需满足的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 01/12/2021
+ms.date: 03/04/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 50f8a118327f5a04748c4327175298694b0c84f4
-ms.sourcegitcommit: af7ac2eeb8f103402c0036dd461c77911fbc9877
+ms.openlocfilehash: c5eade80b9e3f46e5288b4604f64063cf097a170
+ms.sourcegitcommit: 95f3b19e1034025e7de0ca523b837843d9c15d86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98560265"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102094841"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -200,6 +200,15 @@ Azure 信息保护有以下额外要求：
 
 - TLS 版本 1.2 或更高版本（仅限统一标记客户端）。 统一标记客户端需要 1.2 或更高版本的 TLS，以确保使用加密安全协议并遵循 Microsoft 安全准则。
 
+- Microsoft 365 增强型配置服务 (ECS)。 AIP 必须有权访问 config.edge.skype.com URL，它是一项 Microsoft 365 增强型配置服务 (ECS)。
+ 
+    有了 ECS，你无需重新部署 AIP，Microsoft 就能重新配置 AIP 安装项。 它用于控制功能或更新的逐步推出，同时通过收集的诊断数据监视这些推出所带来的影响。
+    
+    ECS 还用于缓解功能或更新方面的安全或性能问题。 ECS 还支持与诊断数据相关的配置更改，帮助确保收集适当的事件。 
+ 
+    如果限制 config.edge.skype.com URL，可能会影响 Microsoft 缓解错误的能力以及你测试预览功能的能力。
+ 
+    有关详细信息，请查看 [Office 的基本服务 - 部署 Office](/deployoffice/privacy/essential-services)。
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
 仅在用于 [HYOK（自留密钥）保护](configure-adrms-restrictions.md)（含 Azure 信息保护）的 AD RMS 中支持在同一组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容。
