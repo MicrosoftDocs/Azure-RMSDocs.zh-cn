@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c6fc0880904658b76ff774de33030ce0ca8e3048
-ms.sourcegitcommit: 7420cf0200c90687996124424a254c289b11a26f
+ms.openlocfilehash: 77016efd46f045f324c9dea540d3b7ce75415d1d
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844347"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446960"
 ---
 # <a name="known-issues---azure-information-protection"></a>已知问题 - Azure 信息保护
 
@@ -190,18 +190,18 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 跟踪和撤消功能不支持受密码保护的文档。
 #### <a name="multiple-attachments-in-a-protected-email"></a>受保护的电子邮件中的多个附件
 
-如果将多个文档附加到电子邮件，然后保护并发送该电子邮件，则每个附件会获得相同的 Id 为值。 
+如果将多个文档附加到电子邮件，然后保护并发送该电子邮件，则每个附件会获得相同的 Id 为值。
 
-此 Id 为值将仅与已打开的第一个文件一起返回。 搜索其他附件不会返回获取跟踪数据所需的 Id 为值。      
+此 Id 为值将仅与已打开的第一个文件一起返回。 搜索其他附件不会返回获取跟踪数据所需的 Id 为值。
 
 此外，撤消其中一个附件的访问权限还会撤消同一受保护电子邮件中其他附件的访问权限。
 
 #### <a name="documents-accessed-via-sharepoint-or-onedrive"></a>通过 SharePoint 或 OneDrive 访问的文档
-    
+
 - 上载到 SharePoint 或 OneDrive 的受保护文档将丢失其 **id 为** 值，并且无法跟踪或撤销访问权限。
 
-- 如果用户从 SharePoint 或 OneDrive 下载文件，并从本地计算机访问该文件，则在本地打开该文档时，新的 **id 为** 将应用到该文档。 
-    
+- 如果用户从 SharePoint 或 OneDrive 下载文件，并从本地计算机访问该文件，则在本地打开该文档时，新的 **id 为** 将应用到该文档。
+
     使用原始 **id 为** 值跟踪数据时，不会包括为用户下载的文件执行的任何访问权限。 此外，根据原始 **id 为** 值撤消访问权限将不会撤销对任何已下载文件的访问权限。
 
     在这种情况下，管理员可能能够使用 PowerShell 查找已下载的文件，以查找要跟踪或撤销访问权限的新 **id 为** 值。
@@ -213,20 +213,20 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 在这种情况下，请手动重新标记文档以根据需要应用保护。
 ## <a name="aip-and-legacy-windows-and-office-versions"></a>AIP 和旧版 Windows 和 Office 版本
 
-- [**Windows 7 扩展支持于2020年1月14日结束**](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。 
+- [**Windows 7 扩展支持于2020年1月14日结束**](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)。
 
-    强烈建议升级到较新版本的 Windows 10。 
+    强烈建议升级到较新版本的 Windows 10。
 
     但是，如果你有 (ESU) 的扩展安全更新和支持协定，则可以使用 AIP 支持来继续保护 Windows 7 系统的安全。
 
     有关详细信息，请与支持人员联系。
 
-- [**Office 2010 扩展支持于2020年10月13日结束**](https://support.microsoft.com/lifecycle/search?alpha=office%202010)。 
+- [**Office 2010 扩展支持于2020年10月13日结束**](https://support.microsoft.com/lifecycle/search?alpha=office%202010)。
 
-    此支持将不会扩展，并且不会为 Office 2010 提供 ESU。 
+    此支持将不会扩展，并且不会为 Office 2010 提供 ESU。
 
-    强烈建议升级到较新版本的 Office 365。 
-    
+    强烈建议升级到较新版本的 Office 365。
+
     有关详细信息，请与支持人员联系。
 
 ## <a name="aip-based-conditional-access-policies"></a>基于 AIP 的条件性访问策略
@@ -239,15 +239,15 @@ Set-ProcessMitigation -Name "OUTLOOK.EXE" -Disable EnableExportAddressFilterPlus
 
 **仅为内部用户启用 AIP 的条件性访问策略**：
 
-1.  在 Azure 门户中，导航到 " **条件性访问** " 边栏选项卡，然后选择要修改的条件性访问策略。 
+1.  在 Azure 门户中，导航到 " **条件性访问** " 边栏选项卡，然后选择要修改的条件性访问策略。
 2.  在 " **分配**" 下，选择 " **用户和组**"，然后选择 " **所有用户**"。 请确保 *未* 选中 "**所有来宾和外部用户**" 选项。
-3.  保存所做更改。 
- 
-如果你的组织不需要该功能，则还可以在 Azure 信息保护中完全禁用 CA，以避免此潜在问题。 
+3.  保存所做更改。
+
+如果你的组织不需要该功能，则还可以在 Azure 信息保护中完全禁用 CA，以避免此潜在问题。
 
 有关详细信息，请参阅 [条件访问文档](/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 以下附加文章可能有助于回答有关 Azure 信息保护中已知问题的问题：
 

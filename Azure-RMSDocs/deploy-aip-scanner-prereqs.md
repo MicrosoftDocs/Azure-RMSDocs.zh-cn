@@ -12,12 +12,12 @@ ms.subservice: scanner
 ms.reviewer: demizets
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 4e8c4444aad6185b54a6f5b5178fa225857b71d2
-ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
+ms.openlocfilehash: b81f72e0bd53e6dc518fad4c7d1bd1700044a8d5
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102414950"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446926"
 ---
 # <a name="requirements-for-installing-and-deploying-the-azure-information-protection-unified-labeling-scanner"></a>安装和部署 Azure 信息保护统一标记扫描器的要求
 
@@ -187,7 +187,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 若要扫描文件路径超过260个字符的文件，请在安装了以下 Windows 版本之一的计算机上安装扫描程序，并根据需要配置计算机：
 
-|Windows 版本  |描述  |
+|Windows 版本  |说明  |
 |---------|---------|
 |**Windows 2016 或更高版本**     |   将计算机配置为支持长路径      |
 |**Windows 10 或 Windows Server 2016**     | 定义以下 [组策略设置](/archive/blogs/jeremykuhne/net-4-6-2-and-long-paths-on-windows-10)：**本地计算机策略**  >  **计算机配置**  >  **管理模板**  >  **所有设置都**  >  **启用 Win32 长路径**。    </br></br>有关这些版本中的长文件路径支持的详细信息，请参阅 Windows 10 开发人员文档中的 [最大路径长度限制](/windows/desktop/FileIO/naming-a-file#maximum-path-length-limitation) 部分。    |
@@ -323,7 +323,7 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 根据组织的要求，执行下列操作之一：
 
-|限制  |描述  |
+|限制  |说明  |
 |---------|---------|
 |**可以暂时拥有 Sysadmin 角色**     |  如果你暂时拥有 Sysadmin 角色，系统会自动为你创建数据库，并且会自动向扫描程序的服务帐户授予所需的权限。 <br><br>但是，配置扫描程序的用户帐户仍需要扫描程序配置数据库的 **db_owner** 角色。 如果在安装程序完成之前只有 Sysadmin 角色，请手动向用户帐户授予 **db_owner** 角色。       |
 |**你根本不能拥有 Sysadmin 角色**     |  如果你不能暂时授予 Sysadmin 角色，则必须在安装 scanner 之前要求具有 Sysadmin 权限的用户手动创建数据库。 <br><br>对于此配置，必须将 **db_owner** 角色分配给以下帐户： <br>-用于扫描程序的服务帐户<br>-用于安装程序的用户帐户<br>-扫描程序配置的用户帐户 <br><br>用于安装和配置扫描程序的用户帐户通常是相同的。 如果使用不同的帐户，则它们都需要扫描程序配置数据库的 **db_owner** 角色。 根据需要创建此用户和权限。 如果指定自己的群集名称，则配置数据库将命名 **AIPScannerUL_<cluster_name>**。  |
@@ -400,13 +400,17 @@ Microsoft 365 标签管理中心包括 Microsoft 365 安全中心、Microsoft 36
 
 - **对于 scanner 服务帐户**，请使用本地 Windows 帐户或 Active Directory 帐户。
 
-- **对于 Azure Active Directory 帐户**，请指定具有 Set-aipauthentication 的 *OnBehalfOf* 参数的本地帐户。 有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
+- **对于 Azure Active Directory 帐户**，请在 *DelegatedUser* 参数中指定 [set-aipauthentication](/powershell/module/azureinformationprotection/set-aipauthentication) cmdlet 中的 AAD 用户。 
+
+    如果在除 scanner 帐户以外的任何用户下运行扫描，请确保同时在 *OnBehalfOf* 参数中指定 scanner 帐户。 
+
+    有关详细信息，请参阅[如何以非交互方式为 Azure 信息保护标记文件](./rms-client//clientv2-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)。
 
 ### <a name="restriction-your-labels-do-not-have-auto-labeling-conditions"></a>限制：标签没有自动标记条件
 
 如果标签没有任何自动标记条件，请在配置扫描仪时计划使用以下选项之一：
 
-|选项  |描述  |
+|选项  |说明  |
 |---------|---------|
 |**发现所有信息类型**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 "要 **发现的信息类型** " 选项设置为 " **所有**"。 </br></br>此选项设置内容扫描作业，以扫描所有敏感信息类型的内容。      |
 |**使用建议的标签**     |  在 [内容扫描作业](deploy-aip-scanner-configure-install.md#create-a-content-scan-job)中，将 " **建议标记为自动** " 选项设置为 **"打开**"。</br></br> 此设置将扫描程序配置为自动将所有建议的标签应用于内容。      |

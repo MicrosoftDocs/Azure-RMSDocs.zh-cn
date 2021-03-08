@@ -4,7 +4,7 @@ description: 一些有关 Azure 信息保护及其保护服务、Azure Rights Ma
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/12/2020
+ms.date: 03/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,27 +12,27 @@ ms.suite: ems
 ms.custom: admin
 search.appverid:
 - MET150
-ms.openlocfilehash: 0e63208b1188ab9580f084832293ad25df3e424f
-ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+ms.openlocfilehash: 9f53544a201d3500f63c472b5cdd58e01c69dc1f
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97386500"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446892"
 ---
 # <a name="frequently-asked-questions-for-the-azure-information-protection-classic-client"></a>Azure 信息保护经典客户端常见问题
 
->***适用** 于： [Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、 [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>适用范围：**[Azure 信息保护](https://azure.microsoft.com/pricing/details/information-protection)、[Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)
 >
 >***相关** 内容： [仅限经典客户端 AIP 统一标签](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)。 有关详细信息，请参阅 [Azure 信息保护的常见问题](faqs.md)。 *
 
 本文列出了仅与 Azure 信息保护经典客户端相关的常见问题。
 
 >[!NOTE] 
-> 为了提供统一且简化的客户体验，Azure 门户中的 **Azure 信息保护经典客户端** 和 **标签管理** 将于 **2021 年3月31日** 被 **弃用**。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
+> 为了提供统一、简化的客户体验，Azure 门户中的 Azure 信息保护经典客户端和标签管理将于 2021 年 3 月 31 日弃用   。 在此时间框架内，所有 Azure 信息保护客户都可以使用 Microsoft 信息保护统一标记平台转换到我们的统一标记解决方案。 有关详细信息，请参阅官方[弃用通知](https://aka.ms/aipclassicsunset)。
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure 信息保护客户端是否只适用于包含分类和标记的订阅？
 
-否。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
+不是。 经典 AIP 客户端还可用于仅包含 Azure Rights Management 服务的订阅，以实现数据保护。
 
 如果在未安装 Azure 信息保护策略的情况下安装经典客户端，客户端将自动在 [仅保护模式下](./rms-client/client-protection-only-mode.md)运行，这使用户可以应用 Rights Management 模板和自定义权限。 
 
@@ -70,6 +70,13 @@ Windows Server 文件分类基础结构在过去一直都有一个选项：对�
     > [!NOTE]
     > 扫描程序保护 SharePoint 网站和库上的文件时，通过使用 SharePoint 编辑者值来动态地设置每个文件的 Rights Management 所有者。
 
+## <a name="can-a-file-have-more-than-one-classification"></a>文件是否可以有多个分类？
+
+用户一次仅可为每个文档或电子邮件选择一个标签，这通常只会产生一个分类。 但如果用户选择子标签，这实际上会同时应用两个标签；主标签和次要标签。 通过使用子标签，文件可以有两个分类，表示附加控制级别的父\子关系。
+
+例如，标签“机密”可能包含子标签，如“法律”和“财务”。 可对这些子标签应用不同的分类视觉标记和不同的权限管理模板。 用户不能自行选择“机密”标签；只能选择其中一个子标签，如“法律”。 因此，会看到设置的标签是“机密\法律”。 该文件的元数据包括“Confidential”的一个自定义文本属性和“Legal”的一个自定义文本属性，以及另一个同时包含这两个值（“Confidential Legal”）的自定义文本属性。 
+
+使用子标签时，请不要在主标签处配置视觉标记、保护和条件。 使用子级别时，请仅在子标签上配置这些设置。 如果在主标签及其子标签上配置这些设置，那么子标签上的设置具有更高优先级。
 ## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>如何防止他人删除或更改标签？
 
 尽管有一个 [策略设置](configure-policy-settings.md) 要求用户指出为什么要降低分类标签、删除标签或删除保护的原因，但此设置不会阻止这些操作。 若要防止用户删除或更改标签，内容必须已受保护，并且保护权限不向用户授予 "导出" 或 "完全控制" [使用权限](configure-usage-rights.md)

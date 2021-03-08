@@ -4,7 +4,7 @@ description: 了解 Azure 信息保护的新功能 (AIP) 适用于 Windows 的�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 03/01/2021
+ms.date: 03/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.subservice: v2client
 ms.reviewer: elkamins
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 73d64904f3bea44e7432709773f9400ccd40da3e
-ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
+ms.openlocfilehash: e416a7f9b363dc1c0d773561b2c3a1eb6cd56926
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102415290"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446977"
 ---
 # <a name="azure-information-protection-unified-labeling-client---version-release-history-and-support-policy"></a>Azure 信息保护统一标签客户端-版本发行历史记录和支持策略
 
@@ -31,7 +31,7 @@ ms.locfileid: "102415290"
 
 你可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载 Azure 信息保护统一标签客户端。
 
-在通常几周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中。 Azure 信息保护版本具有 Microsoft Azure 信息保护的产品名  >  **Microsoft Azure 信息保护统一标签客户端** 和 **更新** 分类。
+通常四周的短暂延迟后，最新的正式发行版也包含在 Microsoft 更新目录中。 Azure 信息保护版本具有 Microsoft Azure 信息保护的产品名  >  **Microsoft Azure 信息保护统一标签客户端** 和 **更新** 分类。
 
 如果在目录中包括 Azure 信息保护，则意味着可以使用 WSUS 或 Configuration Manager 或使用 Microsoft 更新的其他软件部署机制来升级客户端。
 
@@ -145,7 +145,7 @@ Azure 信息保护的这一专用版本提供 Microsoft 365 支持的数据丢�
 
 - **用于扫描程序的新功能**：
 
-    - [对断开连接的扫描程序服务器的 PowerShell 支持](#powershell-support-for-disconnected-scanner-servers)
+    - [对已断开连接的扫描程序服务器的 PowerShell 支持](#powershell-support-for-disconnected-scanner-servers)
     -  (公开预览版的[内容扫描作业中的 NFS 存储库支持](#support-for-nfs-repositories-in-content-scan-jobs-public-preview)) 
     - [添加了对其他敏感信息类型的支持](#added-support-for-additional-sensitive-information-types)
 
@@ -165,7 +165,7 @@ Azure 信息保护的这一专用版本提供 Microsoft 365 支持的数据丢�
 
     - 当带有作用域标签的内容与不包括在标签范围内的用户或组共享时。 [AIP 查看器应用](clientv2-view-use-files.md)和通过[文件资源管理器](clientv2-classify-protect.md#using-file-explorer-to-classify-and-protect-files)查看或分类共享内容时，都会出现此问题。
 
-### <a name="powershell-support-for-disconnected-scanner-servers"></a>对断开连接的扫描程序服务器的 PowerShell 支持
+### <a name="powershell-support-for-disconnected-scanner-servers"></a>对已断开连接的扫描程序服务器的 PowerShell 支持
 
 [Azure 信息保护本地扫描器](../deploy-aip-scanner.md)现在支持通过 PowerShell 管理内容扫描作业，适用于无法连接到 Internet 或[Azure 中国世纪互联设施 (中国主权 cloud) ](/microsoft-365/admin/services-in-china/parity-between-azure-information-protection#manage-azure-information-protection-content-scan-jobs)的扫描仪服务器。
 

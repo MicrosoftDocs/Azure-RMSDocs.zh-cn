@@ -4,19 +4,19 @@ description: 了解 Azure 信息保护 (AIP) 适用于 Windows 的统一标签�
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 11/08/2020
+ms.date: 03/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.subservice: v2client
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: bfc773c32a7667a54abdc75985934794414d575a
-ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
+ms.openlocfilehash: 22a30abf5ea3bf63e5a352bb8b68ceb852036794
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102415256"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446909"
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-aip-unified-labeling-client"></a>Azure 信息保护支持的文件类型 (AIP) 统一标签客户端
 
@@ -113,35 +113,104 @@ Azure 信息保护统一标签客户端支持保护的最大文件大小。
 
 下表列出了支持 Azure 信息保护统一标签客户端的本机保护的文件类型的子集，还可以进行分类。
 
-这些文件类型单独进行标识，因为它们受到本机保护时，原始文件扩展名将更改，这些文件将变为只读。 当文件受常规保护时，原始文件扩展名始终更改为. .pfile。
+这些文件类型单独进行标识，因为它们受到本机保护时，原始文件扩展名将更改，这些文件将变为只读。 当文件受常规保护时，原始文件扩展名始终变为 `.p<file-type>` 。
 
 > [!WARNING]
 > 如果拥有可根据文件扩展名进行检查并采取操作的防火墙、Web 代理或者安全软件，你可能需要重新配置这些网络设备和软件以支持这些新的文件扩展名。
 
 |原始文件扩展名|受保护的文件扩展名|
 |--------------------------------|-------------------------------------|
-|.txt|.ptxt|
-|.xml|.pxml|
-|.jpg|.pjpg|
+|.bmp|.pbmp|
+|.gif|.pgif|
+|.jfif|.pjfif|
+|.jpe|.pjpe|
 |.jpeg|.pjpeg|
+|.jpg|.pjpg|
+|.jt|.pjt|
 |.png|.ppng|
 |.tif|.ptif|
 |.tiff|.ptiff|
-|.bmp|.pbmp|
-|.gif|.pgif|
-|.jpe|.pjpe|
-|.jfif|.pjfif|
-|.jt|.pjt|
+|.txt|.ptxt|
+|.xla |.pxla | 
+|.xlam |.pxlam |
+|.xml|.pxml|
 | | |
 
-下表列出了支持 Azure 信息保护统一标签客户端的本机保护的其他文件类型，还可以进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
+**Office 支持的文件类型**
 
-对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名仍保持不变。
+以下列表包括支持 Azure 信息保护统一标签客户端的本机保护的其他文件类型，还可以进行分类。 会将它们识别为用于 Microsoft Office 应用的文件类型。 这些文件类型的受支持文件格式是以下 Office 程序的 97-2003 文件格式和 Office Open XML 格式：Word、Excel 和 PowerPoint。
 
-|Office 支持的文件类型|Office 支持的文件类型|
-|----------------------------------|----------------------------------|
-|.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
-| | |
+对于这些文件，在文件受 Rights Management 服务保护后，文件扩展名 *仍保持不变* 。
+
+:::row:::
+   :::column span="4":::
+.doc
+
+.docm
+
+.docx
+
+.dot
+
+.dotm
+
+.dotx
+
+.potm
+
+   :::column-end:::
+   :::column span="":::
+
+.potx
+
+.pps
+
+.ppsm
+
+.ppsx
+
+.ppt
+
+.pptm
+
+.pptx
+
+
+   :::column-end:::
+   :::column span="":::
+.vsdm
+
+.vsdx
+
+.vssm
+
+.vssx
+
+.vstm
+
+.vstx
+
+.xls
+
+   :::column-end:::
+   :::column span="":::
+
+.xlsb
+
+.xlt
+
+.xlsm
+
+.xlsx
+
+.xltm
+
+.xltx
+
+.xps
+   :::column-end:::
+:::row-end:::
+
 ## <a name="file-types-excluded-from-classification-and-protection"></a>从分类和保护中排除的文件类型
 
 为了帮助阻止用户更改对计算机操作至关重要的文件，某些文件类型和文件夹会自动从分类和保护中排除。 如果用户尝试使用 Azure 信息保护统一标签客户端来分类或保护这些文件，则会看到一条排除的消息。

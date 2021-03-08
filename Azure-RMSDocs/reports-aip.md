@@ -13,12 +13,12 @@ ms.subservice: analytics
 ms.reviewer: lilukov
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: 5665a071bd99f8ed1118adffcd1ce65f20ff9aa4
-ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
+ms.openlocfilehash: 7d86ee43b7ccc60922dea88c76e9e0aa68474d26
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2021
-ms.locfileid: "102415460"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446943"
 ---
 # <a name="analytics-and-central-reporting-for-azure-information-protection-public-preview"></a>Azure 信息保护的分析和集中报告 (公开预览版) 
 
@@ -134,17 +134,19 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
 |     |         |
 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 若要查看 Azure 信息保护报表和创建你自己的报表，请确保满足以下要求。
 
-|要求|更多信息|
-|---------------|--------------------|
-|包含 Log Analytics 且用于与 Azure 信息保护相同的租户的 Azure 订阅|请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics)页。<br /><br />如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。|
-|对于来自标记客户端的报表信息： <br /><br />-Azure 信息保护客户端|支持统一标签客户端和经典客户端。 <br /><br />如果尚未安装，可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并安装统一的标签客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。|
-|对于基于云的数据存储中的报表信息： <br /><br />-Microsoft Cloud App Security |若要显示 Microsoft Cloud App Security 的信息，请配置 [Azure 信息保护集成](/cloud-app-security/azip-integration)。|
-|对于来自本地数据存储区的报表信息： <br /><br />-Azure 信息保护扫描程序 |有关扫描程序的安装说明，请参阅[部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。 |
-|对于来自 Windows 10 计算机的报表信息：  <br /><br />-最小版本1809与 Microsoft defender 高级威胁防护 (Microsoft Defender ATP) |你必须从 Microsoft Defender 安全中心启用 Azure 信息保护集成功能。 有关详细信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。|
-| | |
+|要求  |详细信息  |
+|---------|---------|
+|**Azure 订阅**     |   Azure 订阅必须在与 Azure 信息保护相同的租户上包含 Log Analytics。 <br><br> 有关详细信息，请参阅 [Azure Monitor 定价](https://azure.microsoft.com/pricing/details/log-analytics) 页。 <br><br>如果没有 Azure 订阅或当前未使用 Azure Log Analytics，定价页将包含免费试用版的链接。   |
+| **审核日志记录 URL 网络连接** | AIP 必须能够访问以下 Url，以便支持 AIP 审核日志：<br>- `https://*.events.data.microsoft.com` <br>- `https://*.aria.microsoft.com` 仅 (Android 设备数据) 
+|**Azure 信息保护客户端**    |用于从客户端报告。 <br><br>如果尚未安装客户端，则可以从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载并安装统一的标签客户端。      <br><br>**注意**：支持统一标签客户端和经典客户端。 若要部署 AIP 经典客户端，请打开支持票证以获取下载访问权限。     |
+|**Azure 信息保护本地扫描程序**    | 用于从本地数据存储区进行报告。 <br><br>      有关详细信息，请参阅 [部署 Azure 信息保护扫描程序以自动对文件进行分类和保护](deploy-aip-scanner.md)。   |
+|**Microsoft Cloud App Security (MCAS)**     | 用于从基于云的数据存储进行报告。 <br><br>有关详细信息，请参阅 MCAS 文档中的 [Azure 信息保护集成](/cloud-app-security/azip-integration) 。        |
+|**Microsoft defender 高级威胁防护 (Microsoft Defender ATP) 的最小内部版本1809**     | 用于从 Windows 10 计算机进行报告。 <br>  <br>   你必须从 Microsoft Defender 安全中心启用 Azure 信息保护集成功能。 <br><br>有关详细信息，请参阅 [Windows 中的信息保护概述](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)。   |
+|     |         |
+
 
 ### <a name="permissions-required-for-azure-information-protection-analytics"></a>Azure 信息保护分析必备的先决条件
 
@@ -172,7 +174,7 @@ Azure 信息保护允许收集和存储标识为敏感信息类型 (预定义或
     
 - 创建工作区后，可以使用具有较少权限的下列角色来查看所收集的数据：
     
-    - **安全读取者**
+    - **安全读者**
     - **全局读取器**
 
 #### <a name="required-azure-log-analytics-roles"></a>必需的 Azure Log Analytics 角色
