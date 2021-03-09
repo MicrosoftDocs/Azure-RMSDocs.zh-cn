@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Azure 信息保护文档
-summary: 控制并帮助保护在公司防火墙内外的电子邮件、文档和敏感数据。 从轻松分类到嵌入标签和权限，无论数据存储在何处或与谁共享，都能通过 Azure 信息保护服务随时增强保护。
+title: Azure 信息保护 (AIP) 文档
+summary: 了解如何在公司防火墙内外控制并保护电子邮件、文档和敏感数据。 从轻松分类到嵌入标签和权限，无论数据存储在何处或与谁共享，都能通过 Azure 信息保护服务随时增强保护。
 metadata:
   title: Azure 信息保护文档
   description: 控制并帮助保护你在公司防火墙外共享的电子邮件、文档和敏感数据。
@@ -12,12 +12,12 @@ metadata:
   ms.author: bagol
   manager: rkarlin
   ms.date: 12/08/2020
-  ms.openlocfilehash: ef5cc6624b8d6e1af2750ebf1f4fbb5c54f72dd2
-  ms.sourcegitcommit: 8a141858e494dd1d3e48831e6cd5a5be48ac00d2
+  ms.openlocfilehash: 0fcccc68cabda6db704c457db7b1bf8d4c344ede
+  ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/14/2020
-  ms.locfileid: "97382133"
+  ms.lasthandoff: 03/07/2021
+  ms.locfileid: "102414933"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:

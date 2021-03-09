@@ -5,19 +5,19 @@ author: batamig
 ms.author: bagol
 manager: rkarlin
 ms.date: 11/09/2020
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.service: information-protection
 Customer intent: As an administrator, I want to extend Microsoft 365's labeling and classification functionality to the File Explorer, PowerShell, third party apps and services, and more.
 ms.custom: contperf-fy21q2
 search.appverid:
 - MET150
-ms.openlocfilehash: 8bc04ea9c8d26dc33a8fbb6cdcc52bd78257f41a
-ms.sourcegitcommit: f6d536b6a3b5e14e24f0b9e58d17a3136810213b
+ms.openlocfilehash: d1316fb289c39766b956931758da438b722f018d
+ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98808527"
+ms.lasthandoff: 03/07/2021
+ms.locfileid: "102415307"
 ---
 # <a name="what-is-azure-information-protection"></a>什么是 Azure 信息保护？
 
@@ -27,14 +27,17 @@ ms.locfileid: "98808527"
 
 Azure 信息保护 (AIP) 是一种基于云的解决方案，可帮助组织通过将标签应用到内容来对文档和电子邮件进行发现、分类和保护。
 
-AIP 是 Microsoft 信息保护 (MIP) 解决方案的一部分，它扩展了 Microsoft 365 提供的标记和分类功能。
+AIP 是 Microsoft 信息保护 (MIP) 解决方案的一部分，它扩展了 Microsoft 365 提供的[标记](/microsoft-365/compliance/sensitivity-labels)和[分类](/microsoft-365/compliance/data-classification-overview)功能。
 
-下图显示了对 MIP 的 Azure 信息保护新增功能，包括[统一标记客户端](#aip-unified-labeling-client)、[扫描程序](#aip-on-premises-scanner)和 [SDK](#microsoft-information-protection-sdk)。
+下图展示了 Azure 信息保护对 MIP 的附加功能，包括[统一标记客户端](#aip-unified-labeling-client)、[扫描程序](#aip-on-premises-scanner)和 [SDK](#microsoft-information-protection-sdk)。
 
 :::image type="content" source="media/what-is-mip.png" alt-text="Microsoft 信息保护框架的 Azure 信息保护区域":::
 
 Microsoft 信息保护是 AIP 的统一标记客户端利用的通用信息保护堆栈。 有关详细信息，请参阅 [Microsoft 365 文档](/microsoft-365/compliance/protect-information)。
 
+> [!NOTE]
+> 有关统一标记客户端的最新功能和公共预览版本的详细信息，请参阅 [Azure 信息保护统一标记客户端 - 版本发布历史记录和支持策略](rms-client/unifiedlabelingclient-version-release-history.md)。
+> 
 ## <a name="aip-unified-labeling-client"></a>AIP 统一标记客户端
 
 Azure 信息保护统一标签客户端将标签、分类和保护功能扩展到其他文件类型，以及文件资源管理器和 PowerShell。 
@@ -43,7 +46,6 @@ Azure 信息保护统一标签客户端将标签、分类和保护功能扩展�
 
 :::image type="content" source="media/protect-from-file-explorer.png" alt-text="文件资源管理器的分类和保护":::
 
-有关统一标记客户端的最新功能和公共预览版本的详细信息，请参阅 [Azure 信息保护统一标记客户端 - 版本发布历史记录和支持策略](rms-client/unifiedlabelingclient-version-release-history.md)。
 
 从 [Microsoft Azure 信息保护下载页](https://www.microsoft.com/download/details.aspx?id=53018)下载客户端。
     
