@@ -12,12 +12,12 @@ metadata:
   ms.author: bagol
   manager: rkarlin
   ms.date: 12/08/2020
-  ms.openlocfilehash: 0fcccc68cabda6db704c457db7b1bf8d4c344ede
-  ms.sourcegitcommit: 74b8d03d1ede3da12842b84546417e63897778bb
+  ms.openlocfilehash: a365b5145608c9916ad142eb8a3077b7fe0ef35b
+  ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/07/2021
-  ms.locfileid: "102414933"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102446858"
 landingContent:
 - title: 关于 Azure 信息保护
   linkLists:
@@ -111,5 +111,7 @@ landingContent:
     links:
     - text: 中心报告
       url: reports-aip.md
+  - linkListType: reference
+    links:
     - text: 审核日志引用
       url: audit-logs.md

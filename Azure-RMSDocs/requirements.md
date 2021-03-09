@@ -4,7 +4,7 @@ description: 确定在组织中部署 Azure 信息保护所需满足的先决条
 author: batamig
 ms.author: bagol
 manager: rkarlin
-ms.date: 03/04/2021
+ms.date: 03/07/2021
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: information-protection
@@ -13,12 +13,12 @@ ms.subservice: prereqs
 ms.reviewer: esaggese
 ms.suite: ems
 ms.custom: admin
-ms.openlocfilehash: c5eade80b9e3f46e5288b4604f64063cf097a170
-ms.sourcegitcommit: 95f3b19e1034025e7de0ca523b837843d9c15d86
+ms.openlocfilehash: 66ce835eea1bb9d8213a78a211295dea7b93d5e4
+ms.sourcegitcommit: 8a45d209273d748ee0f2a96c97893288c0b7efa5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102094841"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102446841"
 ---
 # <a name="azure-information-protection-requirements"></a>Azure 信息保护要求
 
@@ -209,6 +209,14 @@ Azure 信息保护有以下额外要求：
     如果限制 config.edge.skype.com URL，可能会影响 Microsoft 缓解错误的能力以及你测试预览功能的能力。
  
     有关详细信息，请查看 [Office 的基本服务 - 部署 Office](/deployoffice/privacy/essential-services)。
+
+- **审核日志记录 URL 网络连接**。 AIP 必须能够访问以下 URL，以便支持 AIP 审核日志：
+
+    - `https://*.events.data.microsoft.com`
+    - `https://*.aria.microsoft.com`（仅限 Android 设备数据）
+    
+    有关详细信息，请参阅 [AIP 报告的先决条件](reports-aip.md#prerequisites)。
+
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>AD RMS 和 Azure RMS 共存
 
 仅在用于 [HYOK（自留密钥）保护](configure-adrms-restrictions.md)（含 Azure 信息保护）的 AD RMS 中支持在同一组织中并行使用 AD RMS 和 Azure RMS，以保护同一组织中的同一用户的内容。
